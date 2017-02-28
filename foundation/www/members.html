@@ -1,0 +1,35 @@
+{% extends "templates/web.html" %}
+
+{% block title %}ERPNext Foundation - Memberships{% endblock %}
+
+{% from "foundation/templates/includes/macros.html" import media %}
+
+{% block content %}
+<section>
+	<h1>Memberships</h1>
+	<p class='lead'>Be a Part of the ERPNext Foundation</p>
+</section>
+<section>
+	<h3>Introduction</h3>
+	<p>
+		The ERPNext Foundation aims to be driven by its members. By becoming a members, you get
+		a preferred listing on the ERPNext Job Board and access to incoming requests for implementation
+		and customization jobs
+	</p>
+</section>
+<section>
+	<h3>Membership Types</h3>
+	{{ media("Gold Member",
+		"By becoming a Gold Member, you show your leadership  and a premium positioning for your brand. As a Gold Member, you have priority on all the ERPNext Listings.",
+		"gold.png") }}
+	{{ media("Silver Member",
+		"Silver members also get priority listing on the Service Provider board after the Gold Members. Becoming a silver member will give you increased visibility in the ERPNext Community.",
+		"silver.png") }}
+	{{ media("Individual Member",
+		"As individual membership is ideal for users and freelancers who want to show their solidarity to the project and community. Individual members get listed above those with a free listing.",
+		"medal.png") }}
+</section>
+<section>
+	<p><a href="/members" class="button green-btn">Become A Member</a></p>
+</section>
+{% endblock %}

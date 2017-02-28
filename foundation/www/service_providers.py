@@ -1,0 +1,74 @@
+import frappe
+
+def get_context(context):
+	context.form_dict = frappe.form_dict
+	context.title = 'Service Providers'
+	context.gold_members = []
+
+	filters = dict()
+	if frappe.form_dict.country:
+		filters['country'] = frappe.form_dict.country
+
+	gold_members = [d.name for d in frappe.get_all('Member', dict(membership_type='Gold'))]
+	if gold_members:
+		filters['member'] = ('in', gold_members)
+		context.gold_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route',
+			filters)
+
+	if context.gold_members:
+		context.has_gold_member = 1
+	else:
+		context.gold_members.append(dict(
+			title='Gold Member',
+			introduction='Become a Gold Member today and get your company featured here',
+			image='/assets/foundation/img/gold.png',
+			route='/members'
+		))
+
+	context.silver_members = []
+	silver_members = [d.name for d in frappe.get_all('Member', dict(membership_type='Silver'))]
+	if silver_members:
+		filters['member'] = ('in', gold_members)
+		context.silver_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route',
+			filters, debug=1)
+
+	# round to 3 columns
+	for i in xrange(3 - (len(context.silver_members) % 3)):
+		context.silver_members.append(dict(
+			title='Silver Member',
+			introduction='Become a Silver Member today and get your company featured here',
+			image='/assets/foundation/img/silver.png',
+			route='/members'
+		))
+
+
+	if context.form_dict.country:
+		context.title = 'ERPNext Service Providers in {0}'.format(context.form_dict.country)
+
+		context.individual_members = []
+		individual_members = [d.name for d in frappe.get_all('Member', dict(membership_type='Individual'))]
+		if individual_members:
+			filters['member'] = ('in', individual_members)
+			context.individual_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route', filters)
+		else:
+			context.individual_members = [dict(
+				title='Individual Member',
+				introduction='Become an invidual member to list here',
+				route='/members'
+			)]
+
+		context.service_providers = [d for d in frappe.get_all('Service Provider', 'name, title, introduction, `image`, route',
+			dict(country=frappe.form_dict.country, show_in_website=1), order_by='name') if d.name not in individual_members]
+
+	else:
+		# countries
+		context.countries = frappe.db.sql('''select
+				distinct country, count(*)
+			from
+				`tabService Provider`
+			where
+				show_in_website = 1
+			group by
+				country
+			order by
+				country''')

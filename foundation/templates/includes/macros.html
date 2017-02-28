@@ -1,0 +1,17 @@
+{% macro media(title, content, image, link) %}
+	<div class="media"
+		style="margin: 45px 0px; {% if link %}cursor: pointer;{% endif %}"
+		{% if link %}onclick="location.href='{{ link }}'"{% endif %}>
+		<div class="media-left">
+			<a href="{{ link or "#" }}">
+				<img class="media-object"
+					src="{% if image %}{% if not '/' in image %}/assets/foundation/img/{% endif %}{{ image }}{% else %}/assets/foundation/img/frappe-bird-grey.svg{% endif %}"
+					style="width: 64px; height: 64px; max-width: 64px; {% if image and not '/' in image %}opacity: 0.4{% endif %}">
+			</a>
+		</div>
+		<div class="media-body">
+			{% if title %}<h4 class="media-heading">{{ title }}</h4>{% endif %}
+			{{ content }}
+		</div>
+	</div>
+{% endmacro %}

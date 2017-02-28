@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+	color: @text-color;
+	text-rendering: optimizeLegibility !important;
+	line-height: 1.5em;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+section {
+	padding: 30px 0px;
+	border-bottom: 1px solid #EBEFF2;
+}
+
+section:last-child {
+	border: none;
+	padding-bottom: 60px;
+}
+
+section h1 {
+	font-size: 32px;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 600;
+}
+
+.container {
+	max-width: 870px;
+}
+
+.navbar-icon {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	margin-top: -5px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 7px 12px 9px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.green-btn {
+	background: #70e079;
+	/*color: #fff;*/
+	border: 0px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+}
+
+.green-btn:hover {
+	text-decoration: none;
+	background: #458a49;
+	color: #fff;
+	border-bottom: 3px solid rgba(117, 116, 255, 0.2);
+}
+
+.web-footer {
+	padding-top: 0px;
+}
+
+.row-full{
+ width: 100vw;
+ position: relative;
+ margin-left: -50vw;
+ height: 400px;
+ margin-top: 0px;
+ left: 50%;
+}
+
+a .media-body:hover, a .media-heading:hover {
+	text-decoration: none;
+}
+

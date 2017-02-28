@@ -1,0 +1,43 @@
+{% extends "templates/web.html" %}
+
+{% from "foundation/templates/includes/macros.html" import media %}
+
+{% block page_content %}
+<p><a href="/jobs">All ERPNext Jobs</a></p>
+<h1>{{ title }}</h1>
+{% if frappe.user == owner %}
+<p><a class='btn btn-primary btn-sm' href="/my-jobs?name={{ name }}">Edit Job</a></p>
+{% endif %}
+<br>
+<table class='table table-bordered small' style='max-width: 400px; margin-bottom: 0px;'>
+	<tr>
+		<td style='width: 38.2%'>Company Name</td>
+		<td>{{ company_name }}</td>
+	</tr>
+	<tr>
+		<td>Job Type</td>
+		<td>{{ job_type }}</td>
+	</tr>
+	<tr>
+		<td>Country</td>
+		<td>{{ country }}</td>
+	</tr>
+</table>
+<h3>Details</h3>
+<p>{{ description }}</p>
+<h3>Contact</h3>
+{% if is_member %}
+<table class='table table-bordered small' style='max-width: 400px; margin-bottom: 0px;'>
+	<tr>
+		<td style='width: 38.2%'>Email</td>
+		<td>{{ owner }}</td>
+	</tr>
+	<tr>
+		<td>Phone (optional)</td>
+		<td>{{ contact_number }}</td>
+	</tr>
+</table>
+{% else %}
+<p><a class='green-btn button' href="/membership">Become an ERPNext Foundation member to view contact details</a></p>
+{% endif %}
+{% endblock %}

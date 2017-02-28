@@ -1,0 +1,52 @@
+{% extends "templates/web.html" %}
+
+{% from "foundation/templates/includes/macros.html" import media %}
+
+{% block page_content %}
+<section>
+	<h1 class="media-heading">{{ title }}</h1>
+	<p><a href="/service-providers?country={{ country }}">
+		All ERPNext Serivce Providers in {{ country }}</a></p>
+	<div class="media" style="margin: 45px 0px; ">
+		<div class="media-left">
+			<a href="#">
+				<img class="media-object"
+					src="{{ image }}"
+					style="width: 80px; height: 80px; max-width: 80px; ">
+			</a>
+		</div>
+		<div class="media-body">
+			{{ introduction }}
+		</div>
+	</div>
+	<table class='table table-bordered small' style='max-width: 400px; margin-bottom: 0px;'>
+		<tr>
+			<td style='width: 38.2%'>Country</td>
+			<td>{{ country }}</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td>{{ address.replace('\n', '<br>') }}</td>
+		</tr>
+		</tr>
+			<td>Phone</td>
+			<td>{{ phone }}</td>
+		</tr>
+		</tr>
+			<td>Email</td>
+			<td><a href="mailto:{{ email }}" target="_blank">{{ email }}</a></td>
+		</tr>
+		</tr>
+			<td>Website</td>
+			<td><a href="{{ website }}" target="_blank">{{ website }}</a></td>
+		</tr>
+	</table>
+</section>
+<section>
+	{{ details }}
+</section>
+<section>
+<p><a class='green-btn button' href="mailto:{{ email }}">Contact {{ title }}</a></p>
+</section>
+
+{% endblock %}

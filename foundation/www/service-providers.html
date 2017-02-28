@@ -1,0 +1,83 @@
+{% extends "templates/web.html" %}
+
+{% from "foundation/templates/includes/macros.html" import media %}
+
+{% macro gold_member(m) %}
+<div class='gold-member'>
+	{{ media(m.title, m.introduction, m.image, m.route) }}
+</div>
+{% endmacro %}
+
+{% macro silver_member(m) %}
+<div class='col-sm-4'>
+	<h4>{{ m.title }}</h4>
+	<p>{{ m.introduction[:100] }}</p>
+	<p><a class='btn btn-default btn-sm' href='{{ m.route }}'>Details</a></p>
+</div>
+{% endmacro %}
+
+{% macro show_member(s) %}
+	<div class='col-sm-4'>
+		<p>
+			<a class='bold' href="/{{ s.route }}">{{ s.title.title()[:25] }}</a><br>
+			<div class='small'>{{ s.introduction[:100] }}</div>
+		</p>
+	</div>
+{% endmacro %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+{% if form_dict.country %}
+<p><a href="/service-providers">All Serivce Providers</a></p>
+{% endif %}
+<section>
+	<h2>Gold Members</h2>
+	{% for m in gold_members %}
+		{{ gold_member(m) }}
+	{% endfor %}
+	{% if has_gold_member %}
+	<p><a class='text-muted' href='/members'>
+		Become a Gold Member and get your company featured here</a></p>
+	{% endif %}
+</section>
+<section>
+	<h2>Silver Members</h2>
+	<div class='row'>
+	{% for m in silver_members %}
+		{{ silver_member(m) }}
+	{% endfor %}
+	</div>
+</section>
+{% if form_dict.country %}
+<section>
+	<h2>ERPNext Foundation Members</h2>
+	<div class='row'>
+	{% for s in individual_members %}
+		{{ show_member(s) }}
+	{% endfor %}
+	</div>
+</section>
+<section>
+	<h2>Other Service Providers</h2>
+	<div class='row'>
+	{% for s in service_providers %}
+		{{ show_member(s) }}
+	{% endfor %}
+</div>
+</section>
+{% else %}
+<section>
+	<h2>Select by country</h2>
+	<div class='row'>
+	{% for c in countries %}
+	<div class='col-sm-4'>
+		<p>
+			<a href="/service-providers?country={{ c[0] }}">{{ c[0] }} ({{ c[1] }})</a>
+		</p>
+	</div>
+	{% endfor %}
+</div>
+</section>
+{% endif %}
+
+{% endblock %}
