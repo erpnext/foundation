@@ -20,8 +20,8 @@ frappe.ready(function() {
 	}
 
 	var m = moment();
-	$('[data-fieldname="from"]').val(m.format()).trigger('change');
-	$('[data-fieldname="to"]').val(m.add(1, 'year').format()).trigger('change');
+	$('[data-fieldname="from_date"]').val(m.format()).trigger('change');
+	$('[data-fieldname="to_date"]').val(m.add(1, 'year').format()).trigger('change');
 	$('[data-fieldname="membership_type"]').on('change', function() { set_amount(); });
 	$('[data-fieldname="currency"]').val('USD')
 		.on('change', function() {

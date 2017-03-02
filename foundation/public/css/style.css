@@ -3,7 +3,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-	color: @text-color;
+	color: #161c23;
 	text-rendering: optimizeLegibility !important;
 	line-height: 1.5em;
 	-moz-osx-font-smoothing: grayscale;
@@ -12,15 +12,18 @@ body {
 
 section {
 	padding: 30px 0px;
-	border-bottom: 1px solid #EBEFF2;
 }
 
 section:last-child {
-	border: none;
 	padding-bottom: 60px;
 }
 
-section h1 {
+section p, section li, section .media-body {
+	font-size: 16px;
+	line-height: 1.8em;
+}
+
+h1 {
 	font-size: 32px;
 }
 
@@ -39,27 +42,31 @@ h1, h2, h3, h4 {
 	margin-top: -5px;
 }
 
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 7px 12px 9px;
-    line-height: 1;
-    text-decoration: none;
+.page_content {
+	min-height: 400px;
+}
+
+.green-btn, .btn-primary {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 10px;
+	background: #458a49;
+	border-radius: 3px;
+	border: 0px;
+}
+
+.btn-primary, .btn-primary:visited {
+	background: #458a49;
 }
 
 .green-btn {
-	background: #70e079;
-	/*color: #fff;*/
-	border: 0px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-    font-size: 1em;
+	font-size: 14px;
 }
 
-.green-btn:hover {
-	text-decoration: none;
-	background: #458a49;
+.green-btn:hover, .btn-primary:hover, .btn-primary:focus {
+	background: #41af47;
 	color: #fff;
-	border-bottom: 3px solid rgba(117, 116, 255, 0.2);
+	text-decoration: none;
 }
 
 .web-footer {
@@ -67,15 +74,59 @@ h1, h2, h3, h4 {
 }
 
 .row-full{
- width: 100vw;
- position: relative;
- margin-left: -50vw;
- height: 400px;
- margin-top: 0px;
- left: 50%;
+	width: 100vw;
+	position: relative;
+	margin-left: -50vw;
+	height: 400px;
+	margin-top: 0px;
+	left: 50%;
+}
+
+.foundation-media {
+	border: 1px solid #161c23;
+	border-radius: 3px;
+	padding: 15px;
+	margin-bottom: 30px;
 }
 
 a .media-body:hover, a .media-heading:hover {
 	text-decoration: none;
 }
 
+.web-footer {
+	background-color: #d9f7dc;
+	border-top: 4px solid #458a49;
+	padding-bottom: 0px;
+}
+
+.navbar-default {
+	border-bottom: 4px solid #458a49;
+}
+
+.footer-group-label, .navbar-brand {
+	color: #161c23 !important;
+}
+
+.web-footer .col-sm-6:first-child {
+	width: 60%;
+}
+
+.web-footer .col-sm-6:last-child {
+	width: 40%;
+}
+
+#website-post-login {
+	display: none !important;
+}
+
+.gold-member {
+	border: 1px solid #161c23;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+.silver-member {
+	border: 1px solid #161c23;
+	border-radius: 3px;
+	padding: 0px 15px;
+}

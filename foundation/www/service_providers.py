@@ -19,7 +19,7 @@ def get_context(context):
 		context.has_gold_member = 1
 	else:
 		context.gold_members.append(dict(
-			title='Gold Member',
+			title='Your Company',
 			introduction='Become a Gold Member today and get your company featured here',
 			image='/assets/foundation/img/gold.png',
 			route='/members'
@@ -35,7 +35,7 @@ def get_context(context):
 	# round to 3 columns
 	for i in xrange(3 - (len(context.silver_members) % 3)):
 		context.silver_members.append(dict(
-			title='Silver Member',
+			title='Your Company',
 			introduction='Become a Silver Member today and get your company featured here',
 			image='/assets/foundation/img/silver.png',
 			route='/members'
@@ -52,7 +52,7 @@ def get_context(context):
 			context.individual_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route', filters)
 		else:
 			context.individual_members = [dict(
-				title='Individual Member',
+				title='Your Company',
 				introduction='Become an invidual member to list here',
 				route='/members'
 			)]

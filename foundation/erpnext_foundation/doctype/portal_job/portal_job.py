@@ -13,7 +13,7 @@ class PortalJob(WebsiteGenerator):
 	)
 	def validate(self):
 		if not self.route:
-			self.route = 'jobs/' + self.scrub(self.name)
+			self.route = 'jobs/' + self.scrub(self.title)
 
 def get_list_context(context):
 	context.title = 'ERPNext Jobs'

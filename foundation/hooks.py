@@ -39,19 +39,33 @@ home_page = "index"
 website_context = {
 	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-foundation-icon.svg' />ERPNext Foundation",
 	"top_bar_items": [
-	 	{"label": "Service Providers", "url": "/service-providers", "right":1},
-	 	{"label": "Resources", "url": "/resources", "right":1},
-	 	{"label": "About", "url": "/about", "right":1}
+	 	{"label": "My Account", "url": "/me", "right":1},
+	 	# {"label": "Resources", "url": "/resources", "right":1},
+	 	# {"label": "About", "url": "/about", "right":1}
 	# 	{"label": "Docs", "url": "http://frappe.github.io/erpnext", "right":1},
 	# 	{"label": "Blog", "url": "https://frappe.io/blog", "right":1},
 	],
 	"footer_items": [
-		{"label": "About", "url": "/about"},
-	 	{"label": "Memberships", "url": "/members"},
-	 	{"label": "Jobs", "url": "/jobs"},
-		{"label": "Contact", "url": "/contact"},
-		{"label": "Legal", "url": "/legal"},
-		{"label": "Terms", "url": "/terms"}
+		{"label": "ERPNext", "child_items": [
+			{"label": "Resources", "url": "/resources"},
+			{"label": "Documentation", "url": "https://frappe.github.io/erpnext", "target": "_blank"},
+			{"label": "Frappé Framework", "url": "https://frappe.github.io/frappe", "target": "_blank"},
+			{"label": "GitHub", "url": "https://github.com/frappe/erpnext", "target": "_blank"},
+
+		]},
+		{"label": "Foundation", "child_items": [
+			{"label": "About", "url": "/members"},
+			{"label": "Memberships", "url": "/members"},
+			{"label": "Contact", "url": "/contact"},
+			{"label": "Legal", "url": "/legal"},
+			{"label": "Terms", "url": "/terms"}
+		]},
+		{"label": "Community", "child_items": [
+			{"label": "Service Providers", "url": "/service-providers"},
+			{"label": "Jobs", "url": "/jobs"},
+			{"label": "Events", "url": "/events"},
+			{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "_blank"}
+		]},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/frappe_theme/img/favicon.ico"
@@ -59,6 +73,7 @@ website_context = {
 
 website_route_rules = [
 	{"from_route": "/jobs", "to_route": "Portal Job"},
+	{"from_route": "/events", "to_route": "Portal Event"},
 ]
 
 # website user home page (by Role)
@@ -78,7 +93,7 @@ website_generators = ["Service Provider", 'Portal Job']
 portal_menu_items = [
 	{'label': 'Service Provider Settings', 'route': '/service-provider-settings'},
 	{'label': 'Jobs', 'route': '/my-jobs'},
-	{'label': 'Membership', 'route': '/memberships'}
+	{'label': 'Membership', 'route': '/members/details'}
 ]
 
 # Installation

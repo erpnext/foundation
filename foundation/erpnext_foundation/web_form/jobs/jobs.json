@@ -17,7 +17,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-02-28 15:06:44.748171", 
+ "modified": "2017-03-02 12:09:51.793675", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "jobs", 
@@ -52,6 +52,17 @@
    "reqd": 0
   }, 
   {
+   "fieldname": "status", 
+   "fieldtype": "Select", 
+   "hidden": 0, 
+   "label": "Status", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Open\nCompleted\nExpired\nWithdrawn", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "country", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -80,17 +91,6 @@
    "max_length": 0, 
    "max_value": 0, 
    "options": "", 
-   "read_only": 0, 
-   "reqd": 0
-  }, 
-  {
-   "fieldname": "status", 
-   "fieldtype": "Select", 
-   "hidden": 0, 
-   "label": "Status", 
-   "max_length": 0, 
-   "max_value": 0, 
-   "options": "Open\nCompleted\nExpired\nWithdrawn", 
    "read_only": 0, 
    "reqd": 0
   }, 

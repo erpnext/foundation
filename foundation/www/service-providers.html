@@ -4,15 +4,28 @@
 
 {% macro gold_member(m) %}
 <div class='gold-member'>
-	{{ media(m.title, m.introduction, m.image, m.route) }}
+	<div class="media" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+		<div class="media-left">
+			<a href="{{ m.route }}">
+				<img class="media-object" src="{{ m.image or '/assets/foundation/img/gold.png' }}"
+					style="width: 72px; height: 72px; max-width: 72px; ">
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">{{ m.title }}</h4>
+			{{ m.introduction }}
+		</div>
+	</div>
 </div>
 {% endmacro %}
 
 {% macro silver_member(m) %}
 <div class='col-sm-4'>
-	<h4>{{ m.title }}</h4>
-	<p>{{ m.introduction[:100] }}</p>
-	<p><a class='btn btn-default btn-sm' href='{{ m.route }}'>Details</a></p>
+	<div class='silver-member'>
+		<h4>{{ m.title }}</h4>
+		<p>{{ m.introduction[:100] }}</p>
+		<p><a class='btn btn-default btn-sm' href='{{ m.route }}'>Details</a></p>
+	</div>
 </div>
 {% endmacro %}
 
@@ -20,7 +33,7 @@
 	<div class='col-sm-4'>
 		<p>
 			<a class='bold' href="/{{ s.route }}">{{ s.title.title()[:25] }}</a><br>
-			<div class='small'>{{ s.introduction[:100] }}</div>
+			{{ s.introduction[:100] }}
 		</p>
 	</div>
 {% endmacro %}
@@ -50,7 +63,7 @@
 </section>
 {% if form_dict.country %}
 <section>
-	<h2>ERPNext Foundation Members</h2>
+	<h2>Individual Members</h2>
 	<div class='row'>
 	{% for s in individual_members %}
 		{{ show_member(s) }}

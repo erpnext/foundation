@@ -1,6 +1,6 @@
 {% macro media(title, content, image, link) %}
-	<div class="media"
-		style="margin: 45px 0px; {% if link %}cursor: pointer;{% endif %}"
+	<div class="media foundation-media"
+		{% if link %}style="cursor: pointer;"{% endif %}
 		{% if link %}onclick="location.href='{{ link }}'"{% endif %}>
 		<div class="media-left">
 			<a href="{{ link or "#" }}">
