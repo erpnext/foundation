@@ -11,7 +11,7 @@ body {
 }
 
 section {
-	padding: 30px 0px;
+	padding: 10px 0px;
 }
 
 section:last-child {
@@ -21,6 +21,15 @@ section:last-child {
 section p, section li, section .media-body {
 	font-size: 16px;
 	line-height: 1.8em;
+}
+
+.page_content {
+	font-size: 16px;
+	line-height: 1.8em;
+}
+
+.page_content li {
+	margin: 10px 0px;
 }
 
 h1 {
@@ -55,8 +64,15 @@ h1, h2, h3, h4 {
 	border: 0px;
 }
 
-.btn-primary, .btn-primary:visited {
+.btn-primary, .btn-primary:visited, .btn-primary:active, .btn-primary:focus {
 	background: #458a49;
+}
+
+.label {
+	background-color: #d9f7dc;
+	font-size: 14px;
+	padding: 5px 10px;
+	margin-right: 10px;
 }
 
 .green-btn {
@@ -73,6 +89,11 @@ h1, h2, h3, h4 {
 	padding-top: 0px;
 }
 
+.footer-bottom-line .text-muted {
+	font-size: 14px;
+	color: #161c23 !important;
+}
+
 .row-full{
 	width: 100vw;
 	position: relative;
@@ -82,14 +103,29 @@ h1, h2, h3, h4 {
 	left: 50%;
 }
 
-.foundation-media {
+.with-border {
 	border: 1px solid #161c23;
 	border-radius: 3px;
 	padding: 15px;
 	margin-bottom: 30px;
 }
 
-a .media-body:hover, a .media-heading:hover {
+.with-border h3 {
+	margin-top: 0px;
+}
+
+a:hover {
+	background-color: #fffdaf;
+}
+
+.with-border.clickable:hover {
+	border-color: #458a49;
+	background-color: #d9f7dc;
+	background-color: #fffdaf;
+
+}
+
+.with-border a, .with-border a:hover {
 	text-decoration: none;
 }
 
@@ -97,6 +133,13 @@ a .media-body:hover, a .media-heading:hover {
 	background-color: #d9f7dc;
 	border-top: 4px solid #458a49;
 	padding-bottom: 0px;
+	padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+	.web-footer {
+		padding-left: 15px;
+	}
 }
 
 .navbar-default {
@@ -115,18 +158,16 @@ a .media-body:hover, a .media-heading:hover {
 	width: 40%;
 }
 
-#website-post-login {
+/*#website-post-login {
 	display: none !important;
 }
-
-.gold-member {
-	border: 1px solid #161c23;
-	border-radius: 3px;
-	padding: 15px;
+*/
+.silver-member {
+	padding: 0px 15px;
 }
 
-.silver-member {
-	border: 1px solid #161c23;
-	border-radius: 3px;
-	padding: 0px 15px;
+.page-breadcrumbs .breadcrumb {
+	margin-bottom: 10px;
+	font-size: 16px;
+	/*color: #8D99A6;*/
 }

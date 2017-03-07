@@ -1,5 +1,5 @@
 {% macro media(title, content, image, link) %}
-	<div class="media foundation-media"
+	<div class="media with-border {% if link %}clickable{% endif %}"
 		{% if link %}style="cursor: pointer;"{% endif %}
 		{% if link %}onclick="location.href='{{ link }}'"{% endif %}>
 		<div class="media-left">

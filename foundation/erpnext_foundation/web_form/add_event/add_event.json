@@ -1,0 +1,73 @@
+{
+ "accept_payment": 0, 
+ "allow_comments": 0, 
+ "allow_delete": 1, 
+ "allow_edit": 1, 
+ "allow_incomplete": 0, 
+ "allow_multiple": 1, 
+ "allow_print": 0, 
+ "amount": 0.0, 
+ "amount_based_on_field": 0, 
+ "creation": "2017-03-03 12:47:46.824530", 
+ "doc_type": "Portal Event", 
+ "docstatus": 0, 
+ "doctype": "Web Form", 
+ "idx": 0, 
+ "is_standard": 1, 
+ "login_required": 1, 
+ "max_attachment_size": 0, 
+ "modified": "2017-03-03 12:47:46.824530", 
+ "modified_by": "Administrator", 
+ "module": "ERPNext Foundation", 
+ "name": "add-event", 
+ "owner": "Administrator", 
+ "payment_button_label": "Buy Now", 
+ "published": 1, 
+ "route": "add-event", 
+ "show_sidebar": 1, 
+ "sidebar_items": [], 
+ "success_url": "/add-event", 
+ "title": "Add Event", 
+ "web_form_fields": [
+  {
+   "fieldname": "event_title", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Event Title", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "place", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Place", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "event_date", 
+   "fieldtype": "Date", 
+   "hidden": 0, 
+   "label": "Event Date", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "details", 
+   "fieldtype": "Text Editor", 
+   "hidden": 0, 
+   "label": "Details", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }
+ ]
+}

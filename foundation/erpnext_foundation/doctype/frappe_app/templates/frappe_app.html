@@ -1,0 +1,48 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ app_name }}</h1>
+
+{% if frappe.user == owner %}
+<p><a class='btn btn-primary btn-sm' href="/submit-app?name={{ name }}">Edit App</a></p>
+{% endif %}
+
+<table class='table table-bordered small'
+	style='max-width: 400px; margin-bottom: 0px; margin-top: 20px'>
+	<tr>
+		<td>Code</td>
+		<td><a href="{{ repository_url }}" target="_blank">{{ repository_url }}</a></td>
+	</tr>
+	{% if url and repository_url != url %}
+	<tr>
+		<td style='width: 38.2%'>Website</td>
+		<td><a href="{{ url }}" target="_blank">{{ url }}</a></td>
+	</tr>
+	{% endif %}
+</table>
+
+<div style='margin: 20px 0px;'>{{ description }}</div>
+
+<h3>Install on your Bench</h3>
+
+<pre><code>bench get-app {{ repository_url }}
+bench --site [yoursite] install-app {{ repository_url.split('/')[-1] }}
+</code></pre>
+
+<p><b>Note: </b>
+	<ol>
+		<li>Please read the app / extension README for any installation pre-requisites.
+		<li>Always best to try on a test site first.
+		<li>For help or reporting a bug, use <a href="{{ repository_url }}/issues">GitHub Issues</a> on that repository.
+	</ol>
+</p>
+<br>
+
+<p>
+	<span class='label'>{{ doc.badge }}</span>
+	<span class='label'>{{ doc.category }}</span>
+</p>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

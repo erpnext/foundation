@@ -4,7 +4,7 @@
 
 {% macro gold_member(m) %}
 <div class='gold-member'>
-	<div class="media" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+	<div class="media with-border clickable" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
 		<div class="media-left">
 			<a href="{{ m.route }}">
 				<img class="media-object" src="{{ m.image or '/assets/foundation/img/gold.png' }}"
@@ -21,10 +21,9 @@
 
 {% macro silver_member(m) %}
 <div class='col-sm-4'>
-	<div class='silver-member'>
+	<div class='silver-member with-border clickable' style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
 		<h4>{{ m.title }}</h4>
 		<p>{{ m.introduction[:100] }}</p>
-		<p><a class='btn btn-default btn-sm' href='{{ m.route }}'>Details</a></p>
 	</div>
 </div>
 {% endmacro %}
@@ -39,9 +38,8 @@
 {% endmacro %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
+<h1 class='media-heading'>{{ title }}</h1>
 {% if form_dict.country %}
-<p><a href="/service-providers">All Serivce Providers</a></p>
 {% endif %}
 <section>
 	<h2>Gold Members</h2>

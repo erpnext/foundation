@@ -1,0 +1,9 @@
+.page_content {
+	max-width: 700px;
+	font-size: 16px;
+	line-height: 1.8em;
+}
+
+.page_content li {
+	margin: 10px 0px;
+}

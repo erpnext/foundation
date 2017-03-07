@@ -1,9 +1,6 @@
 {% extends "templates/web.html" %}
 
-{% from "foundation/templates/includes/macros.html" import media %}
-
 {% block page_content %}
-<p><a href="/jobs">All ERPNext Jobs</a></p>
 <h1>{{ title }}</h1>
 {% if frappe.user == owner %}
 <p><a class='btn btn-primary btn-sm' href="/my-jobs?name={{ name }}">Edit Job</a></p>
@@ -38,6 +35,6 @@
 	</tr>
 </table>
 {% else %}
-<p><a class='green-btn button' href="/membership">Become an ERPNext Foundation member to view contact details</a></p>
+<p><a href="/membership">Become an ERPNext Foundation member to view contact details</a></p>
 {% endif %}
 {% endblock %}

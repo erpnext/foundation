@@ -7,6 +7,7 @@ import frappe
 from frappe.model.document import Document
 from frappe.utils import add_days, add_years, nowdate, getdate
 from frappe import _
+import foundation
 
 class Membership(Document):
 	def validate(self):
@@ -24,15 +25,14 @@ class Membership(Document):
 		self.member = member_name
 
 		# get last membership (if active)
-		last_membership = frappe.get_all('Membership', 'name,to_date', dict(member=member_name),
-			order_by='to_date desc', limit=1)
+		last_membership = foundation.get_last_membership()
 
 		if last_membership:
 			# if last membership does not expire in 30 days, then do not allow to renew
-			if getdate(add_days(last_membership[-1].to_date, -30)) > getdate(nowdate()):
+			if getdate(add_days(last_membership.to_date, -30)) > getdate(nowdate()):
 				frappe.throw(_('You can only renew if your membership expires within 30 days'))
 
-			self.from_date = add_days(last_membership[-1].to_date, 1)
+			self.from_date = add_days(last_membership.to_date, 1)
 		else:
 			self.from_date = nowdate()
 

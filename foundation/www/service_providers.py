@@ -5,6 +5,10 @@ def get_context(context):
 	context.title = 'Service Providers'
 	context.gold_members = []
 
+	if frappe.form_dict.country:
+		context.parents = [dict(label='All Service Providers',
+			route='service-providers')]
+
 	filters = dict()
 	if frappe.form_dict.country:
 		filters['country'] = frappe.form_dict.country

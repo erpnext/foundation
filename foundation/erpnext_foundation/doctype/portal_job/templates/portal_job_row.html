@@ -1,0 +1,11 @@
+<div style='margin-bottom: 30px; max-width: 600px;'
+	class='with-border clickable'>
+	<a href="/{{ doc.route }}">
+		<h3 style='margin-top: 0px;'>{{ doc.title }}</h3>
+		<p>
+			<span class='label'>{{ doc.country }}</span>
+			<span class='label'>{{ doc.job_type }}</span>
+		</p>
+		<p>{{ html2text(doc.description[:200]) }}{% if doc.description|len > 200 %}...{% endif %}</p>
+	</a>
+</div>

@@ -37,24 +37,15 @@ web_include_css = "/assets/foundation/css/style.css"
 home_page = "index"
 
 website_context = {
+	"navbar_search": 1,
 	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-foundation-icon.svg' />ERPNext Foundation",
+	"copyright": "ERPNext Open Source Software Foundation",
+	"footer_address": "<br>ERPNext is and will always be 100% Open Source",
 	"top_bar_items": [
-	 	{"label": "My Account", "url": "/me", "right":1},
-	 	# {"label": "Resources", "url": "/resources", "right":1},
-	 	# {"label": "About", "url": "/about", "right":1}
-	# 	{"label": "Docs", "url": "http://frappe.github.io/erpnext", "right":1},
-	# 	{"label": "Blog", "url": "https://frappe.io/blog", "right":1},
 	],
 	"footer_items": [
-		{"label": "ERPNext", "child_items": [
-			{"label": "Resources", "url": "/resources"},
-			{"label": "Documentation", "url": "https://frappe.github.io/erpnext", "target": "_blank"},
-			{"label": "Frappé Framework", "url": "https://frappe.github.io/frappe", "target": "_blank"},
-			{"label": "GitHub", "url": "https://github.com/frappe/erpnext", "target": "_blank"},
-
-		]},
 		{"label": "Foundation", "child_items": [
-			{"label": "About", "url": "/members"},
+			{"label": "About", "url": "/about"},
 			{"label": "Memberships", "url": "/members"},
 			{"label": "Contact", "url": "/contact"},
 			{"label": "Legal", "url": "/legal"},
@@ -63,18 +54,22 @@ website_context = {
 		{"label": "Community", "child_items": [
 			{"label": "Service Providers", "url": "/service-providers"},
 			{"label": "Jobs", "url": "/jobs"},
+			{"label": "Apps", "url": "/apps"},
 			{"label": "Events", "url": "/events"},
 			{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "_blank"}
+		]},
+		{"label": "ERPNext", "child_items": [
+			{"label": "Resources", "url": "/resources"},
+			{"label": "Documentation", "url": "https://frappe.github.io/erpnext", "target": "_blank"},
+			{"label": "Frappé Framework", "url": "https://frappe.github.io/frappe", "target": "_blank"},
+			{"label": "GitHub", "url": "https://github.com/frappe/erpnext", "target": "_blank"},
+			{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "_blank"},
+
 		]},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/frappe_theme/img/favicon.ico"
 }
-
-website_route_rules = [
-	{"from_route": "/jobs", "to_route": "Portal Job"},
-	{"from_route": "/events", "to_route": "Portal Event"},
-]
 
 # website user home page (by Role)
 # role_home_page = {
@@ -88,12 +83,14 @@ website_route_rules = [
 # ----------
 
 # automatically create page for each record of this doctype
-website_generators = ["Service Provider", 'Portal Job']
+# website_generators = ["Service Provider", 'Portal Job', 'Portal Event']
 
 portal_menu_items = [
-	{'label': 'Service Provider Settings', 'route': '/service-provider-settings'},
+	{'label': 'My Profile', 'route': '/service-provider-settings'},
+	{'label': 'Membership', 'route': '/members/details'},
 	{'label': 'Jobs', 'route': '/my-jobs'},
-	{'label': 'Membership', 'route': '/members/details'}
+	{'label': 'Events', 'route': '/add-event'},
+	{'label': 'Apps', 'route': '/submit-app'},
 ]
 
 # Installation

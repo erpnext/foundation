@@ -1,5 +1,0 @@
-<div style='margin-bottom: 30px; max-width: 600px;'>
-<a href="/{{ doc.route }}"><h3>{{ doc.title }}</h3></a>
-<p class='text-muted small'>{{ doc.place }} | {{ frappe.format_date(date) }}</p>
-<p>{{ html2text(doc.description[:200]) }}{% if doc.description|len > 200 %}...{% endif %}</p>
-</div>

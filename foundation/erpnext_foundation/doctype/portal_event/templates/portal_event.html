@@ -1,0 +1,14 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ event_title }}</h1>
+{% if frappe.user == owner %}
+<p><a class='btn btn-primary btn-sm' href="/add-event?name={{ name }}">Edit Event</a></p>
+{% endif %}
+<div>{{ details }}</div>
+<hr>
+<p>
+	<span class='label'>{{ doc.place }}</span>
+	<span class='label'>{{ frappe.format_date(date) }}</span>
+</p>
+{% endblock %}

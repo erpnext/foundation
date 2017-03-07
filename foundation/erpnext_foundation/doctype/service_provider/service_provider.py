@@ -9,12 +9,13 @@ from frappe.website.website_generator import WebsiteGenerator
 class ServiceProvider(WebsiteGenerator):
 	_website = frappe._dict(
 		condition_field = "show_in_website",
-		template = "templates/generators/service_provider.html"
 	)
 	def validate(self):
 		if not self.route:
 			self.route = 'service-providers/' + self.scrub(self.name)
 
 	def get_context(self, context):
+		context.parents = [dict(label='All Service Providers in {0}'.format(self.country),
+			route='service-providers?country={0}'.format(self.country))]
 		if not context.website.startswith('http'):
 			context.website = 'http://' + context.website
