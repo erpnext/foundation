@@ -1,0 +1,24 @@
+{% extends "templates/web.html" %}
+
+{% block title %}Setup Payment Method{% endblock %}
+
+{% block page_content %}
+<section>
+	<input type="radio" name="gender" value="USD" checked> USD <br>
+	<input type="radio" name="gender" value="INR" style="margin-top: 15px;"> INR <br>
+</section>
+<div class="section" style="margin-top:10px;"><a class="btn btn-primary next"> Next </a></div>
+
+<script>
+	frappe.ready(function() {
+		$('.next').on('click', function() {
+			if($("input[type=radio]:checked").val() == 'INR'){
+				window.location = '/memberships?new=1'
+			}
+			else{
+				window.location = '/memberships-usd?new=1'
+			}
+		})
+	})
+</script>
+{% endblock %}

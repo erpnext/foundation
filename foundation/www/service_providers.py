@@ -1,5 +1,6 @@
 import frappe
 
+no_cache = 1
 def get_context(context):
 	context.form_dict = frappe.form_dict
 	context.title = 'Service Providers'
@@ -60,7 +61,7 @@ def get_context(context):
 				introduction='Become an invidual member to list here',
 				route='/members'
 			)]
-
+		
 		context.service_providers = [d for d in frappe.get_all('Service Provider', 'name, title, introduction, `image`, route',
 			dict(country=frappe.form_dict.country, show_in_website=1), order_by='name') if d.name not in individual_members]
 
