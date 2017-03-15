@@ -8,7 +8,7 @@ def get_context(context):
 	pass
 
 def get_list_context(context):
-	context.row_template = 'foundation/templates/includes/membership_list.html'
+	context.row_template = 'erpnext_foundation/doctype/membership/templates/membership_list.html'
 	context.get_list = get_site_list
 
 def get_site_list(doctype, txt, filters, limit_start, limit_page_length=20, order_by=None):
