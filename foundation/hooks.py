@@ -55,8 +55,7 @@ website_context = {
 			{"label": "Service Providers", "url": "/service-providers"},
 			{"label": "Jobs", "url": "/jobs"},
 			{"label": "Apps", "url": "/apps"},
-			{"label": "Events", "url": "/events"},
-			{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "_blank"}
+			{"label": "Events", "url": "/events"}
 		]},
 		{"label": "ERPNext", "child_items": [
 			{"label": "Resources", "url": "/resources"},

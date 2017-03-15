@@ -1,5 +1,6 @@
 import frappe
 
+no_cache = 1
 def get_context(context):
 	context.form_dict = frappe.form_dict
 	context.title = 'Service Providers'
