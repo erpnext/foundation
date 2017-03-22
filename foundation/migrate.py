@@ -10,7 +10,7 @@ def migrate():
 
 	users = source.sql('select * from tabUser', as_dict=1)
 	for u in users:
-		if validate_email_add(u.email.strip()):
+		if validate_email_add(u.email.strip()) and not frappe.db.exists("User", u.email):
 			frappe.get_doc(dict(
 				doctype='User',
 				name=u.name,
@@ -23,10 +23,11 @@ def migrate():
 	print "sync auth"
 	auth = source.sql('select * from __Auth where name != "Administrator"', as_dict=1)
 	for user in auth:
-		frappe.db.sql("""insert into __Auth
-			(doctype, name, fieldname, password, salt, encrypted)
-			values (%s, %s, %s, %s, %s, %s)""",
-				(user.doctype, user.name, user.fieldname, user.password, user.salt, user.encrypted), debug=1)
+		if not frappe.db.sql("select doctype from __Auth where name = %s", user.name):
+			frappe.db.sql("""insert into __Auth
+				(doctype, name, fieldname, password, salt, encrypted)
+				values (%s, %s, %s, %s, %s, %s)""",
+					(user.doctype, user.name, user.fieldname, user.password, user.salt, user.encrypted))
 		print user.name
 
 	frappe.db.sql('delete from `tabService Provider`')
