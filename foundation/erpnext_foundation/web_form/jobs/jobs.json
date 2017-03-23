@@ -27,7 +27,7 @@
  "route": "my-jobs", 
  "show_sidebar": 1, 
  "sidebar_items": [], 
- "success_url": "/jobs", 
+ "success_url": "/erpnext-jobs", 
  "title": "Jobs", 
  "web_form_fields": [
   {

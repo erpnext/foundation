@@ -53,7 +53,7 @@ website_context = {
 		]},
 		{"label": "Community", "child_items": [
 			{"label": "Service Providers", "url": "/service-providers"},
-			{"label": "Jobs", "url": "/jobs"},
+			{"label": "Jobs", "url": "/erpnext-jobs"},
 			{"label": "Apps", "url": "/apps"},
 			{"label": "Events", "url": "/events"}
 		]},
@@ -69,7 +69,6 @@ website_context = {
 	"hide_login": 1,
 	"favicon": "/assets/frappe_theme/img/favicon.ico"
 }
-
 # website user home page (by Role)
 # role_home_page = {
 #	"Role": "home_page"
