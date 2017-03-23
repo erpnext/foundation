@@ -18,17 +18,19 @@ def migrate():
 				last_name=u.last_name,
 				email=u.email
 			)).insert(ignore_if_duplicate=True)
-			print u.name
 
-	print "sync auth"
-	auth = source.sql('select * from __Auth where name != "Administrator"', as_dict=1)
-	for user in auth:
-		if not frappe.db.sql("select doctype from __Auth where name = %s", user.name):
-			frappe.db.sql("""insert into __Auth
-				(doctype, name, fieldname, password, salt, encrypted)
-				values (%s, %s, %s, %s, %s, %s)""",
-					(user.doctype, user.name, user.fieldname, user.password, user.salt, user.encrypted))
-		print user.name
+			auth_details = source.sql('select * from __Auth where name = %s', u.email, as_dict=1)
+			
+			if auth_details:
+				auth = auth_details[0]
+			
+				if not frappe.db.sql("select doctype from __Auth where name = %s", auth.name):
+					frappe.db.sql("""insert into __Auth
+						(doctype, name, fieldname, password, salt, encrypted)
+						values (%s, %s, %s, %s, %s, %s)""",
+							(auth.doctype, auth.name, auth.fieldname, auth.password, auth.salt, auth.encrypted))
+
+			print u.name
 
 	frappe.db.sql('delete from `tabService Provider`')
 	partners = source.sql('select * from `tabFrappe Partner`', as_dict=True)
