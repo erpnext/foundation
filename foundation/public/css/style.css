@@ -102,6 +102,10 @@ h1, h2, h3, h4 {
 	left: 50%;
 }
 
+.row-full img {
+	width: 100%;
+}
+
 .with-border {
 	border: 1px solid #161c23;
 	border-radius: 3px;
