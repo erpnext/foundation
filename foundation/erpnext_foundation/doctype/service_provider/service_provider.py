@@ -16,6 +16,7 @@ class ServiceProvider(WebsiteGenerator):
 
 	def get_context(self, context):
 		context.parents = [dict(label='All Service Providers in {0}'.format(self.country),
-			route='service-providers?country={0}'.format(self.country))]
+			route='service-providers?country={0}'.format(self.country),
+			title='All Service Providers in {0}'.format(self.country))]
 		if not context.website.startswith('http'):
 			context.website = 'http://' + context.website
