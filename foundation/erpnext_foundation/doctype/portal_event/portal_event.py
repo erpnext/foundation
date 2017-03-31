@@ -17,7 +17,7 @@ class PortalEvent(WebsiteGenerator):
 
 	def get_context(self, context):
 		context.parents = [dict(label='All Events',
-			route='/events')]
+			route='/events', title='All Events')]
 
 
 def get_list_context(context):

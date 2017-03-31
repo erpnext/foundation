@@ -12,7 +12,7 @@ class FrappeApp(WebsiteGenerator):
 			self.route = 'apps/' + self.scrub(self.app_name)
 
 	def get_context(self, context):
-		context.parents = [dict(label='All Apps', route='apps')]
+		context.parents = [dict(label='All Apps', route='apps', title='All Apps')]
 
 
 def get_list_context(context):

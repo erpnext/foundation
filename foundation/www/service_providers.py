@@ -8,7 +8,7 @@ def get_context(context):
 
 	if frappe.form_dict.country:
 		context.parents = [dict(label='All Service Providers',
-			route='service-providers')]
+			route='service-providers', title='All Service Providers')]
 
 	filters = dict()
 	if frappe.form_dict.country:
