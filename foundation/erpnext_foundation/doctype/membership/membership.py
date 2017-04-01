@@ -19,7 +19,7 @@ class Membership(Document):
 				doctype='Member',
 				email=frappe.session.user,
 				member_name=user.get_fullname()
-			)).insert()
+			)).insert(ignore_permissions=True)
 			member_name = member.name
 
 		self.member = member_name
