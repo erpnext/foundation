@@ -9,7 +9,7 @@ import frappe
 def get_last_membership():
 	'''Returns last membership if exists'''
 	last_membership = frappe.get_all('Membership', 'name,to_date,membership_type',
-		dict(member=frappe.session.user), order_by='to_date desc', limit=1)
+		dict(member=frappe.session.user, paid=1), order_by='to_date desc', limit=1)
 
 	return last_membership and last_membership[0]
 
