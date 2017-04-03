@@ -38,3 +38,8 @@ class Membership(Document):
 
 		self.to_date = add_years(self.from_date, 1)
 
+	def on_payment_authorized(self, status_changed_to=None):
+		if status_changed_to in ("Completed", "Authorized"):
+			self.load_from_db()
+			self.db_set('paid', 1)
+
