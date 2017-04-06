@@ -11,6 +11,7 @@ This Privacy Policy covers EOSSF’s treatment of aggregate information collecte
 
 ###How EOSSF uses the Information Collected
 EOSSF may use collected information for any lawful purpose, including, but not limited to:
+
 1. To communicate back to the user
 1. To notify the user about EOSSF activities
 
