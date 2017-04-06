@@ -15,5 +15,10 @@ EOSSF may use collected information for any lawful purpose, including, but not l
 1. To communicate back to the user
 1. To notify the user about EOSSF activities
 
+###Information About Users That EOSSF Collects
+On the Site, users may subscribe membership, post jobs, and become service provider. Information collected on the Sites includes profiles, photographs, names, unique identifiers, contact information (e.g., email address, telephone, fax).
+
+We ensure users, that EOSSF will not sell any of the information to any 3rd party. Also EOSSF requests users, to not put any confidential information. If EOSSF wants any confidential information, EOSSF will contact you personally.
+
 ###Is Information About Me Secure?
 We will ensure that Your Confidential Information is managed with the same level of security as Our Confidential Information. We will take all reasonable effort to ensure that any Confidential Information is managed in a secure manner by using rights management and password encryption. We may or may not publish our security measures to maintain their secrecy.
