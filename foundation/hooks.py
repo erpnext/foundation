@@ -49,7 +49,8 @@ website_context = {
 			{"label": "Memberships", "url": "/members"},
 			{"label": "Contact", "url": "/contact"},
 			{"label": "Legal", "url": "/legal"},
-			{"label": "Terms", "url": "/terms"}
+			{"label": "Terms", "url": "/terms"},
+			{"label": "Privacy Policy", "url": "/privacy"}
 		]},
 		{"label": "Community", "child_items": [
 			{"label": "Service Providers", "url": "/service-providers"},
