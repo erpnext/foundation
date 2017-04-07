@@ -33,7 +33,7 @@ def get_context(context):
 	context.silver_members = []
 	silver_members = [d.name for d in frappe.get_all('Member', dict(membership_type='Silver'))]
 	if silver_members:
-		filters['member'] = ('in', gold_members)
+		filters['member'] = ('in', silver_members)
 		context.silver_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route',
 			filters, debug=1)
 
