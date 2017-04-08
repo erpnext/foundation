@@ -3,6 +3,7 @@
 	<a href="/{{ doc.route }}">
 		<h3 style='margin-top: 0px;'>{{ doc.title }}</h3>
 		<p>
+			<span class='label'>{{ frappe.format_date(doc.creation) }}</span>
 			<span class='label'>{{ doc.country }}</span>
 			<span class='label'>{{ doc.job_type }}</span>
 		</p>

@@ -23,7 +23,7 @@
 <h3>Details</h3>
 <p>{{ description }}</p>
 <h3>Contact</h3>
-{% if is_member %}
+{% if frappe.session.user != 'Guest' %}
 <table class='table table-bordered small' style='max-width: 400px; margin-bottom: 0px;'>
 	<tr>
 		<td style='width: 38.2%'>Email</td>
@@ -35,6 +35,6 @@
 	</tr>
 </table>
 {% else %}
-<p><a href="/members">Become an ERPNext Foundation member to view contact details</a></p>
+<p><a href="/members">You must register and login to view contact details</a></p>
 {% endif %}
 {% endblock %}
