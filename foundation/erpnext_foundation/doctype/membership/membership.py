@@ -22,7 +22,8 @@ class Membership(Document):
 			)).insert(ignore_permissions=True)
 			member_name = member.name
 
-		self.member = member_name
+		if self.get("__islocal"):
+			self.member = member_name
 
 		# get last membership (if active)
 		last_membership = foundation.get_last_membership()
