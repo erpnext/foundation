@@ -44,3 +44,12 @@ class Membership(Document):
 			self.load_from_db()
 			self.db_set('paid', 1)
 
+			self.link_member_with_service_provider()
+
+	def link_member_with_service_provider(self):
+		service_provider = frappe.db.get_value("Service Provider", dict(owner=frappe.session.user))
+
+		if service_provider:
+			frappe.db.set_value("Service Provider", service_provider, "member", frappe.session.user,
+				update_modified=False)
+
