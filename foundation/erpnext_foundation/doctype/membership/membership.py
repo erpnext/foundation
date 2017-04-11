@@ -22,7 +22,8 @@ class Membership(Document):
 			)).insert(ignore_permissions=True)
 			member_name = member.name
 
-		self.member = member_name
+		if self.get("__islocal"):
+			self.member = member_name
 
 		# get last membership (if active)
 		last_membership = foundation.get_last_membership()
@@ -42,4 +43,13 @@ class Membership(Document):
 		if status_changed_to in ("Completed", "Authorized"):
 			self.load_from_db()
 			self.db_set('paid', 1)
+
+			self.link_member_with_service_provider()
+
+	def link_member_with_service_provider(self):
+		service_provider = frappe.db.get_value("Service Provider", dict(owner=frappe.session.user))
+
+		if service_provider:
+			frappe.db.set_value("Service Provider", service_provider, "member", frappe.session.user,
+				update_modified=False)
 
