@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*/
 body {
-	font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+/*	font-family: 'Open Sans', sans-serif;
+*/    font-size: 14px;
 	color: #161c23;
 	text-rendering: optimizeLegibility !important;
 	line-height: 1.5em;
@@ -19,13 +19,13 @@ section:last-child {
 }
 
 section p, section li, section .media-body {
-	font-size: 16px;
-	line-height: 1.8em;
+	font-size: 14px;
+	line-height: 1.6em;
 }
 
 .page_content {
-	font-size: 16px;
-	line-height: 1.8em;
+	font-size: 14px;
+	line-height: 1.6em;
 }
 
 .page_content li {
@@ -69,9 +69,10 @@ h1, h2, h3, h4 {
 }
 
 .label {
+	font-weight: normal;
 	background-color: #d9f7dc;
-	font-size: 14px;
-	padding: 5px 10px;
+	font-size: 13px;
+	padding: 3px 7px;
 	margin-right: 10px;
 }
 
@@ -167,6 +168,6 @@ a:hover {
 
 .page-breadcrumbs .breadcrumb {
 	margin-bottom: 10px;
-	font-size: 16px;
+	font-size: 14px;
 	/*color: #8D99A6;*/
 }

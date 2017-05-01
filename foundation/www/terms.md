@@ -12,3 +12,8 @@ These terms apply if you choose to become an ERPNext Open Source Software Founda
 1. The membership does not give you any decision making right on the foundation unless you are a member of a committee.
 
 If you have questions, please feel to email us at [foundation@erpnext.org](mailto:foundation@erpnext.com)
+
+---
+
+- [Legal](/legal)
+- [Privacy](/privacy)

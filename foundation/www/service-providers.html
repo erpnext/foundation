@@ -13,6 +13,7 @@
 		</div>
 		<div class="media-body">
 			<h4 class="media-heading">{{ m.title }}</h4>
+			<p><span class=label>Gold Member</span></p>
 			{{ m.introduction }}
 		</div>
 	</div>
@@ -23,13 +24,14 @@
 <div class='col-sm-4'>
 	<div class='silver-member with-border clickable' style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
 		<h4>{{ m.title }}</h4>
+			<p><span class=label>Silver Member</span></p>
 		<p>{{ m.introduction[:100] }}</p>
 	</div>
 </div>
 {% endmacro %}
 
 {% macro show_member(s) %}
-	<div class='col-sm-4'>
+	<div class='col-sm-4' style='height: 130px; padding-bottom: 30px'>
 		<p>
 			<a class='bold' href="/{{ s.route }}">{{ s.title.title()[:25] }}</a><br>
 			{{ s.introduction[:100] }}
@@ -38,11 +40,10 @@
 {% endmacro %}
 
 {% block page_content %}
-<h1 class='media-heading'>{{ title }}</h1>
+<h1 class='media-heading' style='margin-bottom: 30px;'>{{ title }}</h1>
 {% if form_dict.country %}
 {% endif %}
 <section>
-	<h2>Gold Members</h2>
 	{% for m in gold_members %}
 		{{ gold_member(m) }}
 	{% endfor %}
@@ -52,14 +53,12 @@
 	{% endif %}
 </section>
 <section>
-	<h2>Silver Members</h2>
 	<div class='row'>
 	{% for m in silver_members %}
 		{{ silver_member(m) }}
 	{% endfor %}
 	</div>
 </section>
-{% if form_dict.country %}
 <section>
 	<h2>Individual Members</h2>
 	<div class='row'>
@@ -68,6 +67,7 @@
 	{% endfor %}
 	</div>
 </section>
+{% if form_dict.country %}
 <section>
 	<h2>Other Service Providers</h2>
 	<div class='row'>

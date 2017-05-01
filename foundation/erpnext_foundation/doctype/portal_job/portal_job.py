@@ -9,6 +9,7 @@ import foundation
 
 class PortalJob(WebsiteGenerator):
 	def get_context(self, context):
+		context.no_cache = True
 		context.parents = [dict(label='View All Jobs',
 			route='erpnext-jobs', title='View All Jobs')]
 		context.is_member = foundation.is_member()

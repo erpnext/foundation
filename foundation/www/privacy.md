@@ -19,7 +19,7 @@ EOSSF may use collected information for any lawful purpose, including, but not l
 1. To notify the user about EOSSF activities
 
 ###Is Information About Me Secure?
-We will ensure that Your Confidential Information is managed with the same level of security as Our Confidential Information. We will take all reasonable effort to ensure that any Confidential Information is managed in a secure manner by using rights management and password encryption. We may or may not publish our security measures to maintain their secrecy. 
+We will ensure that Your Confidential Information is managed with the same level of security as Our Confidential Information. We will take all reasonable effort to ensure that any Confidential Information is managed in a secure manner by using rights management and password encryption. We may or may not publish our security measures to maintain their secrecy.
 
 **Please Note**
 
@@ -27,3 +27,8 @@ We will ensure that Your Confidential Information is managed with the same level
 1. Public profiles are visible to all, including, Job posts and Service Provider profile
 1. Please do not put any confidential information on site. If EOSSF wants any confidential information, EOSSF will contact you personally.
 1. EOSSF will keep your membership data confidential, if you explicitly inform EOSSF
+
+---
+
+- [Legal](/legal)
+- [Terms of Use](/terms)

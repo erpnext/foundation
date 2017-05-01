@@ -1,12 +1,12 @@
-# ERPNext Opens Source Software Foundation
-
-## Memorandum of Association
-
-Company Registration Number (CIN): U74999MH2016NPL288653
-
----
-
+<!-- title: ERPNext Open Source Software Foundation -->
 <div class='text-center'>
+
+<h1>ERPNext Open Source Software Foundation</h1>
+
+<h2>Memorandum of Association</h2>
+
+Company Registration Number (CIN): U74999MH2016NPL288653<br><br>
+
 THE COMPANIES ACT, 2013<br><br>
 
 MEMORANDUM OF ASSOCIATION<br><br>
@@ -105,3 +105,7 @@ If upon a winding up or dissolution of the company, there remains, after the sat
 
 The Company can be amalgamated only with another company registered under section 8 of the Companies Act, 2013 and having similar objects.
 
+---
+
+- [Terms of Membership](/terms)
+- [Privacy](/privacy)

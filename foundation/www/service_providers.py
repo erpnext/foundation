@@ -47,20 +47,22 @@ def get_context(context):
 		))
 
 
+	context.individual_members = []
+	individual_members = [d.name for d in frappe.get_all('Member',
+		dict(membership_type='Individual'))]
+	if individual_members:
+		filters['member'] = ('in', individual_members)
+		context.individual_members = frappe.get_all('Service Provider',
+			'title, introduction, `image`, route', filters)
+	else:
+		context.individual_members = [dict(
+			title='Your Company',
+			introduction='Become an invidual member to list here',
+			route='/members'
+		)]
+
 	if context.form_dict.country:
 		context.title = 'ERPNext Service Providers in {0}'.format(context.form_dict.country)
-
-		context.individual_members = []
-		individual_members = [d.name for d in frappe.get_all('Member', dict(membership_type='Individual'))]
-		if individual_members:
-			filters['member'] = ('in', individual_members)
-			context.individual_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route', filters)
-		else:
-			context.individual_members = [dict(
-				title='Your Company',
-				introduction='Become an invidual member to list here',
-				route='/members'
-			)]
 
 		context.service_providers = [d for d in frappe.get_all('Service Provider', 'name, title, introduction, `image`, route',
 			dict(country=frappe.form_dict.country, show_in_website=1), order_by='name') if d.name not in individual_members]

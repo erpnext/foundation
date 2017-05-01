@@ -47,10 +47,9 @@ website_context = {
 		{"label": "Foundation", "child_items": [
 			{"label": "About", "url": "/about"},
 			{"label": "Memberships", "url": "/members"},
+			{"label": "Blog", "url": "/blog"},
 			{"label": "Contact", "url": "/contact"},
 			{"label": "Legal", "url": "/legal"},
-			{"label": "Terms", "url": "/terms"},
-			{"label": "Privacy Policy", "url": "/privacy"}
 		]},
 		{"label": "Community", "child_items": [
 			{"label": "Service Providers", "url": "/service-providers"},
