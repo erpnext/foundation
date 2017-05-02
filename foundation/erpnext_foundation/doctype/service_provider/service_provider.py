@@ -20,5 +20,5 @@ class ServiceProvider(WebsiteGenerator):
 			title='All Service Providers in {0}'.format(self.country))]
 		if self.member:
 			context.membership_type = frappe.get_value('Member', self.member, 'membership_type')
-		if not context.website.startswith('http'):
+		if context.website and not context.website.startswith('http'):
 			context.website = 'http://' + context.website
