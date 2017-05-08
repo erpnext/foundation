@@ -42,6 +42,8 @@ website_context = {
 	"copyright": "ERPNext Open Source Software Foundation",
 	"footer_address": "<br>ERPNext is and will always be 100% Open Source",
 	"top_bar_items": [
+			{"label": "Service Providers", "url": "/service-providers"},
+			{"label": "Jobs", "url": "/erpnext-jobs"},
 	],
 	"footer_items": [
 		{"label": "Foundation", "child_items": [
