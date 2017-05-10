@@ -37,13 +37,14 @@ web_include_css = "/assets/foundation/css/style.css"
 home_page = "index"
 
 website_context = {
-	"navbar_search": 1,
+	# "navbar_search": 1,
 	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-foundation-icon.svg' />ERPNext Foundation",
 	"copyright": "ERPNext Open Source Software Foundation",
 	"footer_address": "<br>ERPNext is and will always be 100% Open Source",
 	"top_bar_items": [
 			{"label": "Service Providers", "url": "/service-providers"},
 			{"label": "Jobs", "url": "/erpnext-jobs"},
+			{"label": "Chapters", "url": "/chapters"},
 	],
 	"footer_items": [
 		{"label": "Foundation", "child_items": [

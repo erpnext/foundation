@@ -3,9 +3,13 @@
 {% block page_content %}
 {% if frappe.session.user=='Guest' %}
 	<p>Please signup and login to join this chapter</p>
-	<p><a href="/login" class='btn btn-primary'>Login</a></p>
+	<p><a href="/login?redirect-to=/{{ chapter.route }}" class='btn btn-primary'>Login</a></p>
 {% else %}
+	{% if already_member %}
+	<p>You are already a member of {{ chapter.title }}!</p>
+	{% else %}
 	<p>Welcome to chapter {{ chapter.title }}!</p>
+	{% endif %}
 	<p><a href="/{{ chapter.route }}" class='btn btn-primary'>Go to Chapter Page</a></p>
 {% endif %}
 

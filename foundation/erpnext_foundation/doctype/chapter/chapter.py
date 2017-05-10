@@ -7,6 +7,8 @@ import frappe
 from frappe.website.website_generator import WebsiteGenerator
 
 class Chapter(WebsiteGenerator):
+	def get_context(self, context):
+		context.no_cache = True
 	pass
 
 def get_list_context(context):
