@@ -27,7 +27,8 @@ def get_context(context):
 			title='Your Company',
 			introduction='Become a Gold Member today and get your company featured here',
 			image='/assets/foundation/img/gold.png',
-			route='/members'
+			route='/members',
+			placeholder=True
 		))
 
 	context.silver_members = []
@@ -43,7 +44,8 @@ def get_context(context):
 			title='Your Company',
 			introduction='Become a Silver Member today and get your company featured here',
 			image='/assets/foundation/img/silver.png',
-			route='/members'
+			route='/members',
+			placeholder=True
 		))
 
 

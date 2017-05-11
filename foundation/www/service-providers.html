@@ -4,7 +4,7 @@
 
 {% macro gold_member(m) %}
 <div class='gold-member'>
-	<div class="media with-border clickable" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+	<div class="media with-border clickable {% if m.placeholder == True %} text-muted {% endif %}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
 		<div class="media-left">
 			<a href="{{ m.route }}">
 				<img class="media-object" src="{{ m.image or '/assets/foundation/img/gold.png' }}"
@@ -22,7 +22,7 @@
 
 {% macro silver_member(m) %}
 <div class='col-sm-4'>
-	<div class='silver-member with-border clickable' style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+	<div class="silver-member with-border clickable {% if m.placeholder == True %} text-muted {% endif %}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
 		<h4>{{ m.title }}</h4>
 			<p><span class=label>Silver Member</span></p>
 		<p>{{ m.introduction[:100] }}</p>
