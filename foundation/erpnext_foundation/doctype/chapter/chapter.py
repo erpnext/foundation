@@ -5,11 +5,20 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.website.website_generator import WebsiteGenerator
+from frappe.model.document import Document
+from frappe import _
 
 class Chapter(WebsiteGenerator):
 	def get_context(self, context):
 		context.no_cache = True
-	pass
+
+	def validate(self):
+		chapter_head = self.chapter_head
+		chapter = frappe.get_all('Chapter', filters={'published': True}, fields=['chapter_head'])
+
+		if chapter_head in [d.chapter_head for d in chapter]:
+			frappe.throw(_('You are not allow to create more than one Chapter'))
+
 
 def get_list_context(context):
 	context.allow_guest = True

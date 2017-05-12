@@ -43,24 +43,6 @@
 
 <p style="margin: 20px 0 30px;"><a href="/join-chapter?name={{ name }}" class='btn btn-primary'>Join this Chapter</a></p>
 
-<div class="form-wrapper">
-	<div class="row">
-		<div class="col-lg-6">
-			<form method="post" action="/post-comments.html?name={{ name }}">
-				<div class="form-group">
-					<label for="name">Enter Name</label>
-					<input type="text" class="form-control" placeholder="Enter Name" name="name" value= "{{ frappe.session.user }}" />
-				</div>
-				<div class="form-group">
-				<label for="">Enter Comment</label>
-					<textarea class="form-control" placeholder="Enter your comment"></textarea>
-				</div>
-				<div class="filed-wrap"><button class="btn-primary btn" type="submit">Post comment</button></div>
-			</form>
-		</div>
-	</div>
-</div>
-
 {% endblock %}
 
 <!-- this is a sample default web page template -->
