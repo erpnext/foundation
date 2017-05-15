@@ -5,7 +5,7 @@ def get_context(context):
 	chapter = frappe.get_doc('Chapter', frappe.form_dict.name)
 	print chapter
 	if frappe.session.user!='Guest':
-		if frappe.session.user in [d.user for d in chapter.members]:
+		if chapter in [d.name for d in chapter]:
 			context.already_member = True
 		else:
 			chapter.append('members', dict(user=frappe.session.user))

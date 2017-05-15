@@ -9,5 +9,4 @@ frappe.ui.form.on('Chapter Message', {
 		  frm.set_value('chapter', data.name); 
 		})
 	},
-	// refs
 });

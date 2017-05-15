@@ -16,8 +16,14 @@ class Chapter(WebsiteGenerator):
 		chapter_head = self.chapter_head
 		chapter = frappe.get_all('Chapter', filters={'published': True}, fields=['chapter_head'])
 
-		if chapter_head in [d.chapter_head for d in chapter]:
-			frappe.throw(_('You are not allow to create more than one Chapter'))
+		# if chapter_head in [d.chapter_head for d in chapter]:
+			# frappe.throw(_('You are not allow to create more than one Chapter'))
+
+	def enable(self):
+		chapter = frappe.get_doc('Chapter', frappe.form_dict.name)
+		chapter.append('members', dict(enable=self.value))
+		chapter.save(ignore_permissions=1)
+		frappe.db.commit()
 
 
 def get_list_context(context):
