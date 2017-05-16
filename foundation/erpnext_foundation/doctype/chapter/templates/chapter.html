@@ -10,23 +10,25 @@
 		<tr>
 			<th>Member Name</th>
 			<th>Member Email</th>
-			<th>Introduction</th>
 			<th>Website URL</th>
-			<th>Enable</th>
 		</tr>
 		{% for user in members %}
 		    <tr>
 		    	<td>{{ frappe.db.get_value('User', user.user, 'full_name') }}</td>
 		    	<td>{{ frappe.db.get_value('User', user.user, 'email') }}</td>
-		    	<td>{{ user.introduction }}</td>
 		    	<td>
 			    	{% if user.website_url %}
-			    		<a href="{{ user.website_url }}">{{ user.website_url }}</a></td>
+			    		<a href="{{ user.website_url }}">{{ user.website_url }}</a>
 			    	{% else %}
 			    		{{ user.website_url }}
 					{% endif %}
-		    	<td><label><input type="checkbox" name="enable" {{ checked if user.enabled == 1 else '' }}></label></td>
+		    	</td>
 	    	</tr>
+	    	<tr>
+	    		<td colspan="3">
+		    		{{ user.introduction }}
+    			</td>
+			</tr>
 			
 		{% endfor %}
 	</table>
