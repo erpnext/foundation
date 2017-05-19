@@ -8,14 +8,14 @@
 {% if members %}
 	<table class="table table-bordered small" style="max-width: 600px;">
 		<tr>
+			<th>Serial No.</th>
 			<th>Member Name</th>
-			<th>Member Email</th>
 			<th>Website URL</th>
 		</tr>
 		{% for user in members %}
 		    <tr>
+		    	<td>{{ i }}</td>
 		    	<td>{{ frappe.db.get_value('User', user.user, 'full_name') }}</td>
-		    	<td>{{ frappe.db.get_value('User', user.user, 'email') }}</td>
 		    	<td>
 			    	{% if user.website_url %}
 			    		<a href="{{ user.website_url }}">{{ user.website_url }}</a>
@@ -29,7 +29,6 @@
 		    		{{ user.introduction }}
     			</td>
 			</tr>
-			
 		{% endfor %}
 	</table>
 {% else %}
@@ -55,6 +54,7 @@
 <p>{{ address }}</p>
 
 <p style="margin: 20px 0 30px;"><a href="/join-chapter?name={{ name }}" class='btn btn-primary'>Join this Chapter</a></p>
+<p style="margin: 20px 0 30px;"><a href="/leave-chapter?name={{ name }}" class=''>Leave this Chapter</a></p>
 
 {% endblock %}
 
