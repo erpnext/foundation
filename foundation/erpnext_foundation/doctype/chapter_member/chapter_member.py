@@ -7,4 +7,8 @@ import frappe
 from frappe.model.document import Document
 
 class ChapterMember(Document):
-	pass
+	def get_context(self, context):
+		context.no_cache = True
+
+
+	
