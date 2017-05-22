@@ -9,26 +9,26 @@
 	<table class="table table-bordered small" style="max-width: 600px;">
 		<tr>
 			<th>Serial No.</th>
-			<th>Member Name</th>
-			<th>Website URL</th>
+			<th>Member Details</th>
 		</tr>
 		{% for user in members %}
 		    <tr>
-		    	<td>{{ i }}</td>
-		    	<td>{{ frappe.db.get_value('User', user.user, 'full_name') }}</td>
+		    	<td>{{ loop.index }}</td>
 		    	<td>
-			    	{% if user.website_url %}
-			    		<a href="{{ user.website_url }}">{{ user.website_url }}</a>
-			    	{% else %}
-			    		{{ user.website_url }}
-					{% endif %}
+		    		<div class="row">
+		    			<div class="col-lg-6 col-md-6">{{ frappe.db.get_value('User', user.user, 'full_name') }}</div>
+		    			<div class="col-lg-6 col-md-6">
+					    	{% if user.website_url %}
+					    		<a href="{{ user.website_url }}">{{ user.website_url }}</a>
+					    	{% else %}
+					    		{{ user.website_url }}
+							{% endif %}
+						</div>
+						<div class="col-lg-12">
+		    		{{ user.introduction }}</div>
+					</div>
 		    	</td>
 	    	</tr>
-	    	<tr>
-	    		<td colspan="3">
-		    		{{ user.introduction }}
-    			</td>
-			</tr>
 		{% endfor %}
 	</table>
 {% else %}

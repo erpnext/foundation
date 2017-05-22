@@ -24,9 +24,9 @@
 					<div class="col-lg-8 col-md-8">
 						<form name="user-intro" action="/join-chapter" method='POST'>
 							<div class="form-group">
-								<input name="name" class="form-control" type="text" 
+								<input name="name" class="hidden form-control" type="text" 
 									value="{{chapter.name}}">
-								<input name="csrf_token" class="form-control" type="text" 
+								<input name="csrf_token" class="hidden  form-control" type="text" 
 									value="{{frappe.session.csrf_token}}">
 							</div>
 							<div class="form-group">
