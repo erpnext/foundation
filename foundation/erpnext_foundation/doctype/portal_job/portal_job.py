@@ -6,6 +6,8 @@ from __future__ import unicode_literals
 import frappe
 from frappe.website.website_generator import WebsiteGenerator
 import foundation
+from frappe import _
+
 
 class PortalJob(WebsiteGenerator):
 	def get_context(self, context):
@@ -17,6 +19,21 @@ class PortalJob(WebsiteGenerator):
 	def validate(self):
 		if not self.route:
 			self.route = 'erpnext-jobs/' + self.scrub(self.title)
+
+	def on_update(self):
+		service_provider = frappe.get_all('Service Provider', fields=['name', 'email', 'route'])
+		recipients = [d.email for d in service_provider]
+		message = '<h2>'+ self.title + '</h2>'
+		message += '<table width=300 border=1 cellpadding=0 cellspacing=0><tr><td">Company Name</td><td">' + self.company_name + '</td></tr>'
+		message += '<tr><td">Country</td><td">' + self.country + '</td></tr>'
+		message += '<tr><td">Job Type</td><td">' + self.job_type + '</td></tr></table>'
+		message += '<h3>Details</h3>'
+		message += '<p>'+ self.description +'</p>'
+		message += '<p><a href="'+ self.route +'">View all jobs</a></p>'
+		print recipients
+		frappe.sendmail(recipients = service_provider[0].email,
+				message = message,
+				subject = "New job posted")
 
 def get_list_context(context):
 	context.allow_guest = True
