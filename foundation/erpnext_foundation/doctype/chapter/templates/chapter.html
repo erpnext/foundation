@@ -8,28 +8,31 @@
 {% if members %}
 	<table class="table table-bordered small" style="max-width: 600px;">
 		<tr>
-			<th>Member Name</th>
-			<th>Member Email</th>
-			<th>Website URL</th>
+			<th width="10%" ></th>
+			<th>Member Details</th>
 		</tr>
 		{% for user in members %}
 		    <tr>
-		    	<td>{{ frappe.db.get_value('User', user.user, 'full_name') }}</td>
-		    	<td>{{ frappe.db.get_value('User', user.user, 'email') }}</td>
+		    	<td>{{ loop.index }}</td>
 		    	<td>
-			    	{% if user.website_url %}
-			    		<a href="{{ user.website_url }}">{{ user.website_url }}</a>
-			    	{% else %}
-			    		{{ user.website_url }}
-					{% endif %}
+		    		<div class="row">
+		    			<div class="col-lg-6 col-md-6 col-sm-6">{{ frappe.db.get_value('User', user.user, 'full_name') }}</div>
+		    			<div class="col-lg-6 col-md-6 col-sm-6 text-right">
+					    	{% if user.website_url %}
+					    		<a href="{{ user.website_url }}">{{ user.website_url }}</a>
+					    	{% else %}
+
+							{% endif %}
+						</div>
+						<div class="col-lg-12">
+				    	{% if user.website_url %}
+
+		    				{{ user.introduction }}
+						{% endif %}
+	    				</div>
+					</div>
 		    	</td>
 	    	</tr>
-	    	<tr>
-	    		<td colspan="3">
-		    		{{ user.introduction }}
-    			</td>
-			</tr>
-			
 		{% endfor %}
 	</table>
 {% else %}
@@ -55,6 +58,7 @@
 <p>{{ address }}</p>
 
 <p style="margin: 20px 0 30px;"><a href="/join-chapter?name={{ name }}" class='btn btn-primary'>Join this Chapter</a></p>
+<p style="margin: 20px 0 30px;"><a href="/leave-chapter?name={{ name }}" class=''>Leave this Chapter</a></p>
 
 {% endblock %}
 
