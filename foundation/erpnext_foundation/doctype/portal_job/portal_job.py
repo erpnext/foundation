@@ -24,14 +24,16 @@ class PortalJob(WebsiteGenerator):
 		service_provider = frappe.get_all('Service Provider', fields=['name', 'email', 'route'])
 		recipients = [d.email for d in service_provider]
 		message = '<h2>'+ self.title + '</h2>'
-		message += '<table width=300 border=1 cellpadding=0 cellspacing=0><tr><td">Company Name</td><td">' + self.company_name + '</td></tr>'
-		message += '<tr><td">Country</td><td">' + self.country + '</td></tr>'
-		message += '<tr><td">Job Type</td><td">' + self.job_type + '</td></tr></table>'
+		message += '<table border=1 cellpadding=0 cellspacing=0 style="width: 350px; border-collapse: collapse;"><tr><td style="width: 100px; border: 1px solid #dadada; padding: 5px 10px;">Company Name</td><td style="border: 1px solid #dadada; padding: 5px 10px;">' + self.company_name + '</td></tr>'
+		message += '<tr><td style="border: 1px solid #dadada; padding: 5px 10px;">Country</td><td style="border: 1px solid #dadada; padding: 5px 10px;">' + self.country + '</td></tr>'
+		message += '<tr><td style="border: 1px solid #dadada; padding: 5px 10px;">Job Type</td><td style="border: 1px solid #dadada; padding: 5px 10px;">' + self.job_type + '</td></tr></table>'
 		message += '<h3>Details</h3>'
 		message += '<p>'+ self.description +'</p>'
-		message += '<p><a href="'+ self.route +'">View all jobs</a></p>'
-		print recipients
-		frappe.sendmail(recipients = service_provider[0].email,
+		message += '<table border=0 cellpadding=0 cellspacing=0 style="border-collapse: collapse; width: 350px;"><tr><td style="width: 100px; border: 1px solid #dadada; padding: 5px 10px;">Contact Name</td><td style="border: 1px solid #dadada; padding: 5px 10px;">' + frappe.session.user + '</td></tr>'
+		message += '<tr><td style="border: 1px solid #dadada; padding: 5px 10px;">Contact Number</td><td style="border: 1px solid #dadada; padding: 5px 10px;">' + self.contact_number + '</td></tr></table>'
+		message += '<p><a href="'+ self.route +'">View this Job Online</a></p>'
+		message += '<p style="font-style:italic;paddng-top:20px;">Note: You are getting this job notification, because you are a gold/silver/individual member in the ERPNext Foundation.</p>'
+		frappe.sendmail(recipients = recipients,
 				message = message,
 				subject = "New job posted")
 
