@@ -26,25 +26,42 @@ class PortalJob(WebsiteGenerator):
 		sender_fullname = get_fullname(frappe.session.user)
 		subject = _("New Job Posted by {0}").format(sender_fullname)
 		recipients = [d.email for d in service_providers]
-		message = _("""<h2> {0} </h2>"""\
-			.format(self.title))
-		message += _("""<table border=1 cellpadding=0 cellspacing=0 style="width: 350px; border-collapse: collapse;"><tr><td style="width: 100px; border: 1px solid #dadada; padding: 5px 10px;">Company Name</td><td style="border: 1px solid #dadada; padding: 5px 10px;"> {0} </td></tr>"""\
-			.format(self.company_name))
-		message += _("""<tr><td style="border: 1px solid #dadada; padding: 5px 10px;">Country</td><td style="border: 1px solid #dadada; padding: 5px 10px;"> {0}</td></tr>"""\
-			.format(self.country))
-		message += _("""<tr><td style="border: 1px solid #dadada; padding: 5px 10px;">Job Type</td><td style="border: 1px solid #dadada; padding: 5px 10px;">{0}</td></tr></table>"""\
-			.format(self.job_type))
-		message += '<h3>Details</h3>'
-		message += _("""<p>{0}</p>"""\
-			.format(self.description))
-		message += _("""<table border=0 cellpadding=0 cellspacing=0 style="border-collapse: collapse; width: 350px;"><tr><td style="width: 100px; border: 1px solid #dadada; padding: 5px 10px;">Contact Name</td><td style="border: 1px solid #dadada; padding: 5px 10px;">{0}</td></tr>"""\
-			.format(frappe.session.user))
-		message += _("""<tr><td style="border: 1px solid #dadada; padding: 5px 10px;">Contact Number</td><td style="border: 1px solid #dadada; padding: 5px 10px;">{0}</td></tr></table>"""\
-			.format(self.contact_number))
-		message += _("""<p><a href="{0}">View this Job Online</a></p>"""\
-			.format(self.route))
-		message += '<p style="font-style:italic;paddng-top:20px;">' + frappe._("Note: You are getting this job notification, because you are a gold/silver/individual member in the ERPNext Foundation.")+'</p>'
-		message +="<p>&nbsp;</p>"
+
+		message = """
+			<h2>{title}</h2>
+			<table border=1 cellpadding=0 cellspacing=0 style="width: 350px; border-collapse: collapse;">
+				<tr>
+					<td style="width: 100px; border: 1px solid #dadada; padding: 5px 10px;">Company Name</td>
+					<td style="border: 1px solid #dadada; padding: 5px 10px;"> {company_name} </td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dadada; padding: 5px 10px;">Country</td>
+					<td style="border: 1px solid #dadada; padding: 5px 10px;"> {country}</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dadada; padding: 5px 10px;">Job Type</td>
+					<td style="border: 1px solid #dadada; padding: 5px 10px;">{job_type}</td>
+				</tr>
+			</table>
+			<h3>{details}</h3>
+			<p>{description}</p>
+			<h3>{contact_details}</h3>
+			<table border=0 cellpadding=0 cellspacing=0 style="border-collapse: collapse; width: 350px;">
+				<tr>
+					<td style="width: 100px; border: 1px solid #dadada; padding: 5px 10px;">Contact Name</td>
+					<td style="border: 1px solid #dadada; padding: 5px 10px;">{contact_name}</td>
+				</tr>
+				<tr>
+					<td style="border: 1px solid #dadada; padding: 5px 10px;">Contact Number</td>
+					<td style="border: 1px solid #dadada; padding: 5px 10px;">{contact_number}</td>
+				</tr>
+			</table>
+			<p><a href="{url}">{view_job}</a></p>
+			<p style="font-style:italic;paddng-top:20px;">{note_msg}</p>
+			<p>&nbsp;</p>
+
+
+		""".format(title=self.title, company_name= self.company_name, country=self.country, job_type=self.job_type, details="Details", description= self.description, contact_details="Contact Details", contact_name=sender_fullname, contact_number=self.contact_number, url=self.route, view_job="View this Job Online", note_msg="Note: You are getting this job notification, because you are a member of ERPNext Foundation.")
 		frappe.sendmail(recipients = recipients,
 				message = message,
 				subject = subject)
