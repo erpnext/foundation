@@ -1,0 +1,16 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ talk_title }}</h1>
+<p><span class='label'>{{ status or 'Pending Review' }}</span></p>
+<section>
+	<h3>Speaker {{ speaker }}</h3>
+	<p>{{ speaker_bio }}</p>
+</section>
+<section>
+	<h3>Talk Summary</h3>
+	<p>{{ talk_summary }}</p>
+</section>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

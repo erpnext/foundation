@@ -38,13 +38,15 @@ home_page = "index"
 
 website_context = {
 	# "navbar_search": 1,
-	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-foundation-icon.svg' />ERPNext Foundation",
+	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.jpg' />ERPNext Foundation",
 	"copyright": "ERPNext Open Source Software Foundation",
 	"footer_address": "<br>ERPNext is and will always be 100% Open Source",
 	"top_bar_items": [
-			{"label": "Service Providers", "url": "/service-providers"},
-			{"label": "Jobs", "url": "/erpnext-jobs"},
-			{"label": "Chapters", "url": "/chapters"},
+			{"label": "Service Providers", "url": "/service-providers", "right": 1},
+			{"label": "Jobs", "url": "/erpnext-jobs", "right": 1},
+			{"label": "Chapters", "url": "/chapters", "right": 1},
+			{"label": "Conference", "url": "/conf/2017", "right": 1},
+			{"label": "About", "url": "/about", "right": 1},
 	],
 	"footer_items": [
 		{"label": "Foundation", "child_items": [
@@ -89,6 +91,7 @@ website_context = {
 portal_menu_items = [
 	{'label': 'My Profile', 'route': '/service-provider-settings'},
 	{'label': 'Membership', 'route': '/members/details'},
+	{'label': 'Conference Talks', 'route': '/conference-talk-proposal'},
 	{'label': 'Jobs', 'route': '/my-jobs'},
 	{'label': 'Events', 'route': '/add-event'},
 	{'label': 'Apps', 'route': '/submit-app'},

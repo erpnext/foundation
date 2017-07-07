@@ -24,4 +24,4 @@ def get_list_context(context):
 	context.title = 'ERPNext Jobs'
 	context.no_breadcrumbs = True
 	context.order_by = 'creation desc'
-	context.introduction = '<div>Jobs for ERPNext Service Providers</div><br><a class="green-btn" href="/my-jobs?new=1">Post A Job</a>'
+	context.introduction = '<div>Jobs for ERPNext Service Providers</div><br><a class="btn btn-primary" href="/my-jobs?new=1">Post A Job</a>'

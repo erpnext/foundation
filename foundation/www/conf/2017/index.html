@@ -1,0 +1,155 @@
+{% extends "templates/web.html" %}
+
+{% block title %}ERPNext Conference 2017{% endblock %}
+
+{% block script %}
+<script src="/assets/foundation/js/masonry.min.js"></script>
+<script>
+	frappe.ready(function() {
+		console.log('here');
+		$('.grid').masonry({
+		// options
+			itemSelector: '.grid-item',
+			columnWidth: 400
+		});
+	})
+</script>
+{% endblock %}
+
+
+{% block page_content %}
+
+<section class='hero text-center' style='margin-top: -30px'>
+	<div class='text-center'>
+		<img src='/assets/foundation/img/conf/mumbai.png' style='width: 300px; margin-bottom: 50px;'>
+	</div>
+	<!--<h1>Better Together</h1>-->
+	<h1>ERPNext Conference 2017, Mumbai</h1>
+	<!--<h1>Better Together</h1>
+	<p class='lead'>Join the community for a three day sharing of ideas and opportunities.</p>-->
+	<p><a href="/conf/2017/register" class='btn btn-primary'>Register Now</a></p>
+</section>
+<hr>
+<section>
+	<h2>Better Together</h2>
+	<p>Started more than 10 years ago, ERPNext has come a long way as a project and a viable community.
+		Over the last year we kick started the ERPNext Foundation and the community
+		is more growing and vibrant than ever.</p>
+
+	<p>Working together ultimately makes us better. Life on earth evolved
+		from single-cell organisms to multi-celled organisms when some
+		cells started to specialise and co-operate with each other, increasing their
+		chance of survival and growth. Similary the ERPNext community is now coming togther,
+		where by specialization and co-operation,
+		all of us become better.</p>
+</section>
+<section>
+	<div class='grid'>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img1.jpg'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img2.jpg'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img8.png'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img7.png'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img9.png'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img3.jpg'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img4.png'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img5.jpg'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img6.jpg'></div>
+		<div class="grid-item"><img src='/assets/foundation/img/conf/img10.png'></div>
+	</div>
+	<div class='clearfix'></div>
+</section>
+<hr>
+
+<section>
+	<h2>Agenda</h2>
+	<p>This conference will be divided in three days. On the first day, we will have a
+		community code sprint, where developers will from groups to work on specific problems.
+		On the second and third days we will have talks focussed on developers and end users.
+		Over this time there will be plenty of opportunity to network with developers,
+		service providers and users across the world.</p>
+	<p>
+		<a class="btn btn-primary" href='/conference-talk-proposal'>Propose A Talk</a>
+	</p>
+</section>
+<hr>
+<section>
+
+	<div class='row'>
+	<div class="col-sm-12 text-center">
+		<h2>Sponsored By</h2>
+	</div>
+
+	<div class="col-sm-4">
+		<div class='sponsor' style='padding-top: 20px'>
+			<p class='lead'>Your Company</p>
+		</div>
+	</div>
+
+	<div class="col-sm-4">
+		<div class='sponsor' style='padding-top: 20px'>
+			<p class='lead'>Your Company</p>
+		</div>
+	</div>
+
+	<div class="col-sm-4">
+		<div class='sponsor' >
+			<a href="http://www.frappe.io/" class="no-decoration" target="_blank">
+				<img src="/assets/erpnext_com/images/conf-2016/frappe.png" alt="Frappé" />
+			</a>
+		</div>
+	</div>
+
+	<div class="col-sm-12">
+		<div style="margin-top: 40px;">
+		<p>Become a patron for the conference and get associated with a global community<br>
+			of tens of thousands of users and developers.</p>
+		<a href="mailto:foundation@erpnext.org" class="btn btn-primary">Become A Sponsor</a>
+		</div>
+	</div>
+	</div>
+
+</section>
+<hr>
+<section>
+	<h3>Brought to you by the ERPNext Foundation</h3>
+	<p>ERPNext Foundation is a not-for-profit company registered with the objective of
+		building and enhancing ERPNext as an open source project. The ERPNext Foundation is
+		funded by annual memberships of individuals and companies who use ERPNext or support it.</p>
+	<p><a href="/members">Learn about Memberships</a></p>
+</section>
+<hr>
+<section>
+	<div class='row'>
+		<div class='col-md-7'>
+			<h4>Venue:</h4>
+			<p>
+				The Mysore Association Auditorium,<br>
+				393, Bhau Daji Road, Matunga (East)<br>
+				Mumbai – 400 019<br>
+				Maharashtra<br>
+			</p>
+			<br>
+			<h4>Dates:</h4>
+			<p>
+				Oct 10: Developer Code Sprint<br>
+				Oct 11: Developer Talks<br>
+				Oct 12: User + Community Talks<br>
+			</p>
+
+		</div>
+		<div class='col-md-5'>
+			<h4>Phone:</h4>
+			<p>+ 91-22-25155667</p>
+			<br>
+			<h4>Email:</h4>
+			<p><a href='mailto:foundation@erpnext.org'>foundation@erpnext.org</a></p>
+		</div>
+	</div>
+</section>
+<hr>
+<section>
+		<p class=text-center>
+			<a href="/conf/2017/register" class='btn btn-primary'>Register Now</a></p>
+</section>
+{% endblock %}
+

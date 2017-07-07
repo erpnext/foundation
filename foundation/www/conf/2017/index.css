@@ -1,0 +1,27 @@
+
+.grid {
+	margin: 0px 20px;
+}
+
+.grid-item {
+	width: 400px;
+	padding: 5px;
+}
+
+.sponsor {
+	height: 200px;
+	margin-top: 30px;
+	text-align: center;
+	vertical-align: center;
+	border: 1px solid #d1d8dd;
+	border-radius: 3px;
+	padding: 20px;
+}
+
+.sponsor .lead {
+	margin-top: 60px;
+}
+
+.sponsor img {
+	max-width: 200px;
+}

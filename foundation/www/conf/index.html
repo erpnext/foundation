@@ -1,0 +1,30 @@
+{% extends "templates/web.html" %}
+
+{% block title %}Conference Home{% endblock %}
+
+{% from "foundation/templates/includes/macros.html" import media %}
+
+{% block page_content %}
+<section>
+	<h1>ERPNext Conferences</h1>
+	<p class='lead'>Meet the community at the ERPNext Conferences.</p>
+</section>
+<section style='max-width: 500px'>
+	<h3>ERPNext Conference 2017</h3>
+	<p>
+		Join us for the annual confereence in Mumbai from October 10-12, 2017.
+		There will be a code sprints, developer sessions and talks.
+		<br><br><a href="/conf/2017" class="btn btn-primary">Learn More</a>
+	</p>
+</section>
+<section>
+	<br><br><br>
+	<h3>Past Conferences</h3>
+	<ul>
+		<li><a href="https://erpnext.com/conf/2017-eu">ERPNext Europe Conference 2017, Frankfurt</a></li>
+		<li><a href="https://erpnext.com/conf/2016">ERPNext Conference 2016, Mumbai</a></li>
+		<li><a href="https://erpnext.com/conf/2015">ERPNext Conference 2015, Mumbai</a></li>
+		<li><a href="https://erpnext.com/conf/2014">ERPNext Conference 2014, Mumbai</a></li>
+	</ul>
+</section>
+{% endblock %}

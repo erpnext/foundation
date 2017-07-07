@@ -1,0 +1,94 @@
+{% extends "templates/web.html" %}
+
+{% block title %}ERPNext Conference 2017 - Tickets and Registration{% endblock %}
+
+{% block page_content %}
+
+<section class='hero text-center' style='margin-top: -80px'>
+	<h3 class='text-muted'>ERPNext Conference 2017, Mumbai</h3>
+	<h1>Tickets and Registration</h1>
+</section>
+
+<section>
+	<h3>For International Participants</h3>
+	<table class='table table-bordered'>
+		<thead>
+			<tr>
+				<td>
+					Ticket Type
+				</td>
+				<td width=20%>
+					Rate
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					Full Conference (Code Sprint + Dev Talks + User Talks)
+					<br>Oct 10-12
+					<br>Includes Lunch
+				</td>
+				<td>
+					$100
+				</td>
+			</tr>
+			<tr>
+				<td>
+					User Conference (User + Community Talks)
+					<br>Oct 12
+					<br>Includes Lunch
+				</td>
+				<td>
+					$30
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>
+		<a class='btn btn-primary' href='/buy-tickets-paypal'>Pay by PayPal</a>
+	</p>
+</section>
+<hr>
+<section>
+	<h3>For Indian Participants</h3>
+	<table class='table table-bordered'>
+		<thead>
+			<tr>
+				<td>
+					Ticket Type
+				</td>
+				<td width=20%>
+					Rate
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					Full Conference (Code Sprint + Dev Talks + User Talks)
+					<br>Oct 10-12
+					<br>Includes Lunch
+				</td>
+				<td>
+					Rs 3,000
+				</td>
+			</tr>
+			<tr>
+				<td>
+					User Conference (User + Community Talks)
+					<br>Oct 12
+					<br>Includes Lunch
+				</td>
+				<td>
+					Rs 600
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>
+		<a class='btn btn-primary' href='/buy-tickets-inr'>Pay by Credit Card</a>
+	</p>
+</section>
+
+{% endblock %}

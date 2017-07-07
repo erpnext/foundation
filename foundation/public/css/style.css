@@ -1,8 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-*/
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 body {
-/*	font-family: 'Open Sans', sans-serif;
-*/    font-size: 14px;
+	font-family: 'Rubik', sans-serif;
+    font-size: 15px;
 	color: #161c23;
 	text-rendering: optimizeLegibility !important;
 	line-height: 1.5em;
@@ -19,12 +18,12 @@ section:last-child {
 }
 
 section p, section li, section .media-body {
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.6em;
 }
 
 .page_content {
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.6em;
 }
 
@@ -37,7 +36,7 @@ h1 {
 }
 
 h1, h2, h3, h4 {
-	font-weight: 600;
+	font-weight: 300;
 }
 
 .container {
@@ -55,35 +54,16 @@ h1, h2, h3, h4 {
 	min-height: 400px;
 }
 
-.green-btn, .btn-primary {
-	text-decoration: none;
-	color: #fff;
-	padding: 5px 10px;
-	background: #458a49;
-	border-radius: 3px;
-	border: 0px;
-}
-
-.btn-primary, .btn-primary:visited, .btn-primary:active, .btn-primary:focus {
-	background: #458a49;
+.hero {
+	padding: 90px 0px;
 }
 
 .label {
 	font-weight: normal;
-	background-color: #d9f7dc;
+	background-color: #d1d8dd;
 	font-size: 13px;
 	padding: 3px 7px;
 	margin-right: 10px;
-}
-
-.green-btn {
-	font-size: 14px;
-}
-
-.green-btn:hover, .btn-primary:hover, .btn-primary:focus {
-	background: #41af47;
-	color: #fff;
-	text-decoration: none;
 }
 
 .web-footer {
@@ -91,7 +71,7 @@ h1, h2, h3, h4 {
 }
 
 .footer-bottom-line .text-muted {
-	font-size: 14px;
+	font-size: 15px;
 	color: #161c23 !important;
 }
 
@@ -104,7 +84,7 @@ h1, h2, h3, h4 {
 }
 
 .with-border {
-	border: 1px solid #161c23;
+	border: 1px solid #d1d8dd;
 	border-radius: 3px;
 	padding: 15px;
 	margin-bottom: 30px;
@@ -114,14 +94,21 @@ h1, h2, h3, h4 {
 	margin-top: 0px;
 }
 
+a {
+	color: #5E64FF;
+}
+
+.clickable a {
+	color: #161c23;
+}
+
 a:hover {
-	background-color: #fffdaf;
+	background-color: #fafbfc;
 }
 
 .with-border.clickable:hover {
-	border-color: #458a49;
-	background-color: #d9f7dc;
-	background-color: #fffdaf;
+	border-color: #36414C;
+	background-color: #fafbfc;
 
 }
 
@@ -130,8 +117,8 @@ a:hover {
 }
 
 .web-footer {
-	background-color: #d9f7dc;
-	border-top: 4px solid #458a49;
+	background-color: #fafbfc;
+	border-top: 4px solid #d1d8dd;
 	padding-bottom: 0px;
 	padding-top: 20px;
 }
@@ -143,7 +130,7 @@ a:hover {
 }
 
 .navbar-default {
-	border-bottom: 4px solid #458a49;
+	border-bottom: 1px solid #d1d8dd;
 }
 
 .footer-group-label, .navbar-brand {
@@ -168,6 +155,6 @@ a:hover {
 
 .page-breadcrumbs .breadcrumb {
 	margin-bottom: 10px;
-	font-size: 14px;
+	font-size: 15px;
 	/*color: #8D99A6;*/
 }
