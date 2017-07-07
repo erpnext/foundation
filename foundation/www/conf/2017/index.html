@@ -4,15 +4,17 @@
 
 {% block script %}
 <script src="/assets/foundation/js/masonry.min.js"></script>
+<script src="/assets/foundation/js/imagesloaded.min.js"></script>
 <script>
 	frappe.ready(function() {
-		console.log('here');
-		$('.grid').masonry({
-		// options
-			itemSelector: '.grid-item',
-			columnWidth: 400
+		$('.grid').imagesLoaded(function() {
+			$('.grid').masonry({
+			// options
+				itemSelector: '.grid-item',
+				columnWidth: 400
+			});
 		});
-	})
+	});
 </script>
 {% endblock %}
 
