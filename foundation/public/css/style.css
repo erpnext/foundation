@@ -7,6 +7,7 @@ body {
 	line-height: 1.5em;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
 }
 
 section {
@@ -81,6 +82,10 @@ h1, h2, h3, h4 {
 	margin-left: -50vw;
 	margin-top: 0px;
 	left: 50%;
+}
+
+.row-full img {
+	width: 100%;
 }
 
 .with-border {
