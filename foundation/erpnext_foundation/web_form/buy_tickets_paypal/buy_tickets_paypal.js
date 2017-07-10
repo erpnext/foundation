@@ -1,8 +1,9 @@
 frappe.ready(function() {
 	// bind events here
 	var calculate = function() {
-		var amount = parseInt($('input[name="full_conference_tickets"]').val() || 0) * 100
-			+ parseInt($('input[name="user_conference_tickets"]').val() || 0) * 300;
+		var amount =
+			(parseInt($('input[name="full_conference_tickets"]').val() || 0) * 10)
+			+ (parseInt($('input[name="user_conference_tickets"]').val() || 0) * 50);
 		$('input[name="amount"]').val(amount);
 		$('input[name="amount"]').closest('.form-group').toggleClass('has-error', amount == 0);
 	};
