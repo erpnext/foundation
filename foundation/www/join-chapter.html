@@ -24,9 +24,9 @@
 					<div class="col-lg-8 col-md-8">
 						<form name="user-intro" action="/join-chapter" method='POST'>
 							<div class="form-group">
-								<input name="name" class="hidden form-control" type="text" 
+								<input name="name" class="hidden form-control" type="text"
 									value="{{chapter.name}}">
-								<input name="csrf_token" class="hidden  form-control" type="text" 
+								<input name="csrf_token" class="hidden  form-control" type="text"
 									value="{{frappe.session.csrf_token}}">
 							</div>
 							<div class="form-group">
@@ -35,16 +35,16 @@
 							</div>
 							<div class="form-group">
 								<label for="website_url" class="">Website URL</label>
-								<input name="website_url" required class="form-control" type="text" 
+								<input name="website_url" required class="form-control" type="text"
 									placeholder="https://example.com" />
 							</div>
 							<div class="form-group">
 								<label for="introduction" class="">Introduction</label>
-								<textarea name="introduction" required class="form-control" 
+								<textarea name="introduction" required class="form-control"
 									placeholder="Your profession and how you are associated with ERPNext"></textarea>
 							</div>
 							<div class="form-group">
-								<button type="Submit" id="update_member" class="btn-primary">
+								<button type="Submit" id="update_member" class="btn btn-primary">
 									Submit</button>
 							</div>
 						</form>
