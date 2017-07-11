@@ -17,7 +17,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-07-06 15:03:16.289503", 
+ "modified": "2017-07-11 15:38:10.150031", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "conference-talk-proposal", 
@@ -31,7 +31,7 @@
  "title": "Conference Talk Proposal", 
  "web_form_fields": [
   {
-   "fieldname": "talk_title", 
+   "fieldname": "title", 
    "fieldtype": "Data", 
    "hidden": 0, 
    "label": "Talk Title", 
