@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Instructor
 
-<img class="screenshot" alt="Instructor" src="{{url_prefix}}/assets/img/schools/setup/instructor.png">
+<img class="screenshot" alt="Instructor" src="{{docs_base_url}}/assets/img/schools/setup/instructor.png">
 
 {next}

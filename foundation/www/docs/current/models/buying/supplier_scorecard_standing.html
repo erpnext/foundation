@@ -1,0 +1,287 @@
+<!-- title: Supplier Scorecard Standing -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Supplier Scorecard Standing</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.6.3</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/buying/doctype/supplier_scorecard_standing"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabSupplier Scorecard Standing</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>standing_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Standing Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>standing_color</code></td>
+            <td >
+                Select</td>
+            <td >
+                Color
+                
+            </td>
+            <td>
+                <pre>Blue
+Purple
+Green
+Yellow
+Orange
+Red</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>min_grade</code></td>
+            <td >
+                Percent</td>
+            <td >
+                Min Grade
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>max_grade</code></td>
+            <td >
+                Percent</td>
+            <td >
+                Max Grade
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_5</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>warn_rfqs</code></td>
+            <td >
+                Check</td>
+            <td >
+                Warn RFQs
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>warn_pos</code></td>
+            <td >
+                Check</td>
+            <td >
+                Warn Purchase Orders
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>prevent_rfqs</code></td>
+            <td >
+                Check</td>
+            <td >
+                Prevent RFQs
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>prevent_pos</code></td>
+            <td >
+                Check</td>
+            <td >
+                Prevent Purchase Orders
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>notify_supplier</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                Notify Supplier
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>notify_employee</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                Notify Other
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>employee_link</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Other
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="{{ docs_base_url }}/current/models/hr/employee">Employee</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>SupplierScorecardStanding</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing.get_scoring_standing</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing.get_scoring_standing" href="#erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing.get_scoring_standing" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing.<b>get_scoring_standing</b>
+        <i class="text-muted">(standing_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing.get_standings_list</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing.get_standings_list" href="#erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing.get_standings_list" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.buying.doctype.supplier_scorecard_standing.supplier_scorecard_standing.<b>get_standings_list</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="{{ docs_base_url }}/current/models/buying/supplier_scorecard_scoring_standing">Supplier Scorecard Scoring Standing</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->
