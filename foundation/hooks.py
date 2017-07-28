@@ -19,7 +19,7 @@ app_license = "MIT"
 # app_include_js = "/assets/foundation/js/foundation.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/foundation/css/style.css"
+# web_include_css = "/assets/foundation/css/style.css"
 # web_include_js = "/assets/foundation/js/foundation.js"
 
 # include js in page
@@ -36,40 +36,19 @@ web_include_css = "/assets/foundation/css/style.css"
 # application home page (will override Website Settings)
 home_page = "index"
 
+template_apps = ['foundation', 'frappe_theme', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
-	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.jpg' />ERPNext Foundation",
+	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.jpg' />ERPNext.org",
 	"copyright": "ERPNext Open Source Software Foundation",
 	"footer_address": "<br>ERPNext is and will always be 100% Open Source",
 	"top_bar_items": [
-			{"label": "Service Providers", "url": "/service-providers", "right": 1},
+			{"label": "Docs", "url": "/docs", "right": 1},
+			{"label": "Services", "url": "/service-providers", "right": 1},
 			{"label": "Jobs", "url": "/erpnext-jobs", "right": 1},
 			{"label": "Chapters", "url": "/chapters", "right": 1},
 			{"label": "Conference", "url": "/conf/2017", "right": 1},
 			{"label": "About", "url": "/about", "right": 1},
-	],
-	"footer_items": [
-		{"label": "Foundation", "child_items": [
-			{"label": "About", "url": "/about"},
-			{"label": "Memberships", "url": "/members"},
-			{"label": "Blog", "url": "/blog"},
-			{"label": "Contact", "url": "/contact"},
-			{"label": "Legal", "url": "/legal"},
-		]},
-		{"label": "Community", "child_items": [
-			{"label": "Service Providers", "url": "/service-providers"},
-			{"label": "Jobs", "url": "/erpnext-jobs"},
-			{"label": "Apps", "url": "/apps"},
-			{"label": "Events", "url": "/events"}
-		]},
-		{"label": "ERPNext", "child_items": [
-			{"label": "Resources", "url": "/resources"},
-			{"label": "Documentation", "url": "https://frappe.github.io/erpnext", "target": "_blank"},
-			{"label": "Frappé Framework", "url": "https://frappe.github.io/frappe", "target": "_blank"},
-			{"label": "GitHub", "url": "https://github.com/frappe/erpnext", "target": "_blank"},
-			{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "_blank"},
-
-		]},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/frappe_theme/img/favicon.ico"

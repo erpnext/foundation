@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+body {
+	font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+	color: #161c23;
+	text-rendering: optimizeLegibility !important;
+	line-height: 1.5em;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+section {
+	padding: 10px 0px;
+}
+
+section:last-child {
+	padding-bottom: 60px;
+}
+
+section p, section li, section .media-body {
+	font-size: 15px;
+	line-height: 1.6em;
+}
+
+.page_content {
+	font-size: 15px;
+	line-height: 1.6em;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 300;
+}
+
+.container {
+	max-width: 870px;
+}
+
+.page_content {
+	min-height: 400px;
+}
+
+.conf-hero {
+	padding: 90px 0px;
+}
+
+.label {
+	font-weight: normal;
+	background-color: #d1d8dd;
+	font-size: 13px;
+	padding: 3px 7px;
+	margin-right: 10px;
+}
+
+.web-footer {
+	padding-top: 0px;
+}
+
+.footer-bottom-line .text-muted {
+	font-size: 15px;
+	color: #161c23 !important;
+}
+
+.row-full{
+	width: 100vw;
+	position: relative;
+	margin-left: -50vw;
+	margin-top: 0px;
+	left: 50%;
+}
+
+.with-border {
+	border: 1px solid #d1d8dd;
+	border-radius: 3px;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+.with-border h3 {
+	margin-top: 0px;
+}
+
+a {
+	color: #5E64FF;
+}
+
+.clickable a {
+	color: #161c23;
+}
+
+.with-border.clickable:hover {
+	border-color: #36414C;
+	background-color: #fafbfc;
+
+}
+
+.with-border a, .with-border a:hover {
+	text-decoration: none;
+}
+
+.web-footer {
+	background-color: #fafbfc;
+	border-top: 4px solid #d1d8dd;
+	padding-bottom: 0px;
+	padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+	.web-footer {
+		padding-left: 15px;
+	}
+}
+
+.footer-group-label, .navbar-brand {
+	color: #161c23 !important;
+}
+
+.web-footer .col-sm-6:first-child {
+	width: 60%;
+}
+
+.web-footer .col-sm-6:last-child {
+	width: 40%;
+}
+
+/*#website-post-login {
+	display: none !important;
+}
+*/
+.silver-member {
+	padding: 0px 15px;
+}
+
+.page-breadcrumbs .breadcrumb {
+	margin-bottom: 10px;
+	font-size: 15px;
+	/*color: #8D99A6;*/
+}
+
+.full-name {
+	display: none;
+}

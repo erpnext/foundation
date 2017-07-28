@@ -20,8 +20,8 @@ Before you sell anything to anyone, you must be completely convinced that it is 
 
 You need not pay for self implementation, you can either use the 30-day trial at [erpnext.com](https://erpnext.com) or use the [Virtual Machine](https://erpnext.com/download). If you need support, you can first go through:
 
-1. [ERPNext user guide.](http://frappe.github.io/erpnext/user/manual/en/)
-1. [Help product videos.](http://frappe.github.io/erpnext/user/videos/learn)
+1. [ERPNext user guide.](http://erpnext.org/docs/user/manual/en/)
+1. [Help product videos.](http://frappe.io/docs/user/videos/learn)
 1. [Ask questions at the forum.](https://discuss.erpnext.com)
 
 If you need priority one-on-one help sessions, you can also buy a subscription service for it.
@@ -79,7 +79,7 @@ With ERPNext compared to other ERPs, the cost of license is zero, so there is mo
 
 Listing on our community portal is free. You can list yourself as a Service Provider, and provide details about services you offer on ERPNext. Following are the plan for the paid listing. To become Verified Service Provider, you should fulfil following conditions.
 
-1. Experience of implementing ERPNext for at-least one Customer. 
+1. Experience of implementing ERPNext for at-least one Customer.
 1. Your Company website briefing services you offer on ERPNext.
 1. Subscription of $600/year.
 
@@ -89,7 +89,7 @@ Listing on our community portal is free. You can list yourself as a Service Prov
 
 No, we (Frappe Technologies) do not do any paid development. All our energy is used in supporting and enhancing the ERPNext product. If you want to develop a feature or customization, you can engage a freelancer or drop in a request on the [discussion forum](https://discuss.erpnext.com). If you are planning do this on any scale, it is best to [get one of your developers trained on ERPNext](https://www.youtube.com/watch?v=eCAMPcl7NKc&list=PL3lFfCEoMxvzHtsZHFJ4T3n5yMM3nGJ1W).
 
-[It is very easy to build new apps / extensions to ERPNext.](http://frappe.github.io/frappe/user/tutorial/)
+[It is very easy to build new apps / extensions to ERPNext.](http://frappe.io/docs/user/tutorial/)
 
 ---
 
