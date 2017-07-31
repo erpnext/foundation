@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Calculate Incentive For Sales Team
+
 Can be used in any Sales Transaction with **Sales Team** Table:
 
     

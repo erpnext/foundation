@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Credit Limit
+
   
 
 A credit limit is the maximum amount of credit that a financial institution or
@@ -13,7 +15,7 @@ To set credit limit go to Customer - Master
   
 #### Figure 1: Credit Limit
 
-<img class="screenshot" alt="Credit Limit" src="{{docs_base_url}}/assets/img/accounts/credit-limit-1.png">
+<img class="screenshot" alt="Credit Limit" src="/docs/assets/img/accounts/credit-limit-1.png">
 
 Go to the 'More Info section' and enter the amount in the field Credit Limit.
 
@@ -28,7 +30,7 @@ accept orders or raise credit limits of customers.
   
 #### Figure 2: Credit Controller
 
-<img class="screenshot" alt="Credit Limit" src="{{docs_base_url}}/assets/img/accounts/credit-limit-2.png">
+<img class="screenshot" alt="Credit Limit" src="/docs/assets/img/accounts/credit-limit-2.png">
 
 Save the changes.
 

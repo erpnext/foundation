@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Restrict Cancel Rights
+
 Add a handler to `custom_before_cancel` event:
 
 

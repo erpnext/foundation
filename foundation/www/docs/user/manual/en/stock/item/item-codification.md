@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Item Codification
+
 If you already have a full-fledged business with a number of physical items,
 you would have probably coded your items. If you have not, you have a choice.
 We recommend that you should codify if you have lot of products with long or

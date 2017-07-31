@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Restrict Purpose Of Stock Entry
+
 
     frappe.ui.form.on("Material Request", "validate", function(frm) {
         if(frappe.user=="user1@example.com" && frm.doc.purpose!="Material Receipt") {

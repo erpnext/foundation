@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Manage Rejected Finished Goods Items
+
 #Manage Rejected Finished Goods Items
 
 There could be manufactured Items which would not pass quality test, hence rejected.

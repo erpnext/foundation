@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Using Erpnext
+
 We live in an era when people are very comfortable communicating, discussing,
 asking, assigning work and getting feedback electronically. The Internet acts
 as a great medium to collaborate on work too. Taking this concept into ERP

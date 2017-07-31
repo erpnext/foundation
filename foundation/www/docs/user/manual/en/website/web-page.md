@@ -1,11 +1,13 @@
 <!-- add-breadcrumbs -->
+# Web Page
+
 <p class="lead">Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page. </p>
 
 To create a new Web Page, go to:
 
 > Website > Web Page > New
 
-<img class="screenshot" alt="Web Page" src="{{docs_base_url}}/assets/img/website/web-page.png">
+<img class="screenshot" alt="Web Page" src="/docs/assets/img/website/web-page.png">
 
 #### Title
 

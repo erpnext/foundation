@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Item Group
+
 Item Group is the classification category. Depending on the type of product,
 categorise it under its respective field. If the product is
 service oriented, name it under the group head - service. If the
@@ -6,7 +8,7 @@ product is used as a raw-material, you have to name it under the Raw-material
 category. In case, your product is used only in trading, you can categorise it
 under Trading.
 
-<img class="screenshot" alt="Item Group Tree" src="{{docs_base_url}}/assets/img/stock/item-group-tree.png">
+<img class="screenshot" alt="Item Group Tree" src="/docs/assets/img/stock/item-group-tree.png">
 
 ### Create a Item Group
 
@@ -14,7 +16,7 @@ under Trading.
 
 * Select 'Add Child'
 
-<img class="screenshot" alt="Add Item Group" src="{{docs_base_url}}/assets/img/stock/item-group-new.gif">
+<img class="screenshot" alt="Add Item Group" src="/docs/assets/img/stock/item-group-new.gif">
 
 ### Delete an Item Group
 
@@ -22,6 +24,6 @@ under Trading.
 
 * Select 'delete'
 
-<img class="screenshot" alt="Add Item Group" src="{{docs_base_url}}/assets/img/stock/item-group-del.gif">
+<img class="screenshot" alt="Add Item Group" src="/docs/assets/img/stock/item-group-del.gif">
 
 {next}

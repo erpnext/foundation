@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Customer Portal
+
 Customer Portal is designed to give easy accesibility to customers of a
 company.
 

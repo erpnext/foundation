@@ -34,7 +34,7 @@ To implement ERPNext, you must have a general understanding of financial account
 
 If you also want to offer customization services on ERPNext, you should have some expertise on:
 
-1. [Frappe Framework](https://frappe.io)
+1. [Frappé Framework](https://frappe.io)
 1. Python
 1. Java Script
 
@@ -87,7 +87,7 @@ Listing on our community portal is free. You can list yourself as a Service Prov
 
 #### 9. I want to sell services but pass on development support to you. Does that work?
 
-No, we (Frappe Technologies) do not do any paid development. All our energy is used in supporting and enhancing the ERPNext product. If you want to develop a feature or customization, you can engage a freelancer or drop in a request on the [discussion forum](https://discuss.erpnext.com). If you are planning do this on any scale, it is best to [get one of your developers trained on ERPNext](https://www.youtube.com/watch?v=eCAMPcl7NKc&list=PL3lFfCEoMxvzHtsZHFJ4T3n5yMM3nGJ1W).
+No, we (Frappé Technologies) do not do any paid development. All our energy is used in supporting and enhancing the ERPNext product. If you want to develop a feature or customization, you can engage a freelancer or drop in a request on the [discussion forum](https://discuss.erpnext.com). If you are planning do this on any scale, it is best to [get one of your developers trained on ERPNext](https://www.youtube.com/watch?v=eCAMPcl7NKc&list=PL3lFfCEoMxvzHtsZHFJ4T3n5yMM3nGJ1W).
 
 [It is very easy to build new apps / extensions to ERPNext.](http://frappe.io/docs/user/tutorial/)
 
@@ -101,7 +101,7 @@ Yes, we are in the process of generalising our tools that we use to power erpnex
 
 #### 11. I want to sell ERPNext in my brand name, will you do that?
 
-ERPNext is our brand and identity. All work we do will be under the brand name of ERPNext and Frappe. If you want to disguise this as your work, you are free to do it, but don't expect any help from us. If you are using our help documentation, you must attribute us publicly because the documentation is licensed as [Creative Commons BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)
+ERPNext is our brand and identity. All work we do will be under the brand name of ERPNext and Frappé. If you want to disguise this as your work, you are free to do it, but don't expect any help from us. If you are using our help documentation, you must attribute us publicly because the documentation is licensed as [Creative Commons BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)
 
 [Check why you should not rebrand ERPNext.](https://frappe.io/blog/general/why-you-should-not-rebrand-erpnext)
 

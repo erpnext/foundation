@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Projects
+
 ERPNext helps you manage your Projects by breaking them into Tasks and
 allocating them to different people.
 

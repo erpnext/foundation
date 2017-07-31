@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Journal Entry
+
 All types of accounting entries other than **Sales Invoice** and **Purchase
 Invoice** are made using the **Journal Entry**. A **Journal Entry** 
 is a standard accounting transaction that affects
@@ -8,7 +10,7 @@ To create a Journal Entry go to:
 
 > Accounts > Documents > Journal Entry > New
 
-<img class="screenshot" alt="Journal Entry" src="{{docs_base_url}}/assets/img/accounts/journal-entry.png">
+<img class="screenshot" alt="Journal Entry" src="/docs/assets/img/accounts/journal-entry.png">
 
 In a Journal Entry, you must select.
 

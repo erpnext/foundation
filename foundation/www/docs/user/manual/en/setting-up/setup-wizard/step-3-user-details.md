@@ -4,7 +4,7 @@
 Enter Users Profile Details like Name, User ID and preferred password.
 
 <img alt="User" class="screenshot"
-src="{{docs_base_url}}/assets/img/setup-wizard/step-3.png">
+src="/docs/assets/img/setup-wizard/step-3.png">
 
 ---
 

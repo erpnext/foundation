@@ -43,7 +43,7 @@ name and the starting point in the “Update Series” section.
 
 See how to set the naming series
 
-<img class="screenshot" alt="Naming Series" src="{{docs_base_url}}/assets/img/setup/settings/naming-series.gif">
+<img class="screenshot" alt="Naming Series" src="/docs/assets/img/setup/settings/naming-series.gif">
 
 {next}
 

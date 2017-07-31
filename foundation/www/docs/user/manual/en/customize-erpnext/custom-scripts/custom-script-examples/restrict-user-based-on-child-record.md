@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Restrict User Based On Child Record
+
 
     // restrict certain warehouse to Material Manager
     cur_frm.cscript.custom_validate = function(doc) {

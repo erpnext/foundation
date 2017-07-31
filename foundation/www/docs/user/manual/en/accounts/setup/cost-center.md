@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Cost Center
+
 Your Chart of Accounts is mainly designed to provide reports to the government
 and tax authorities. Most businesses have multiple activities like different
 product lines, market segments, areas of business, etc that share some common
@@ -33,6 +35,6 @@ To setup your Chart of Cost Centers go to:
 
 > Accounts > Setup > Chart of Cost Centers
 
-<img class="screenshot" alt="Cost Center" src="{{docs_base_url}}/assets/img/chart-of-cost-center.png">
+<img class="screenshot" alt="Cost Center" src="/docs/assets/img/chart-of-cost-center.png">
 
 {next}

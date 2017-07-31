@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Withdrawing Salary From Owners Equity Account
+
 #Withdrawing Salary from Owner's Equity Account
 
 ### Question

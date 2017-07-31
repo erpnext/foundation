@@ -1,4 +1,6 @@
 <!-- add-breadcrumbs -->
+# Introduction
+
 ## What is an ERP and why should I care?
 
 (If you are already convinced you need an all-in-one system for your

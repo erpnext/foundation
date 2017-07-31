@@ -24,9 +24,9 @@ II. The registered office of the Company will be situated in the State of Mahara
 
 III. (A) THE OBJECTS FOR WHICH THE COMPANY IS ESTABLISHED ARE:
 
-1. Educating, inspiring, improving, and furthering the development of the open-source enterprise resource planning (ERP) software “ERPNext” as well as the underlying software framework “Frappe Framework” and promoting its value to both users and developers.
-1. Soliciting and managing contributions to the Frappe Framework and ERPNext code base.
-1. Publicising, promoting the adoption of, and facilitating the ongoing development of related technology to Frappe Framework and ERPNext as well as educational resources. This includes, but is not limited to, maintaining a public web site, planning conferences and offering grants to Frappe Framework or ERPNext-related open source projects.
+1. Educating, inspiring, improving, and furthering the development of the open-source enterprise resource planning (ERP) software “ERPNext” as well as the underlying software framework “Frappé Framework” and promoting its value to both users and developers.
+1. Soliciting and managing contributions to the Frappé Framework and ERPNext code base.
+1. Publicising, promoting the adoption of, and facilitating the ongoing development of related technology to Frappé Framework and ERPNext as well as educational resources. This includes, but is not limited to, maintaining a public web site, planning conferences and offering grants to Frappé Framework or ERPNext-related open source projects.
 1. Building an ecosystem and enhancing communication within the ecosystem.
 1. Creating products and marketplaces with which the community can interact and share information and services.
 1. Continuously improving the project by sponsoring features, documentation, and fixing bugs.

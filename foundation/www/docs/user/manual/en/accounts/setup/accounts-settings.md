@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
+# Accounts Settings
 
-<img class="screenshot" alt="Account Settings" src="{{docs_base_url}}/assets/img/accounts/account-settings.png">
+
+<img class="screenshot" alt="Account Settings" src="/docs/assets/img/accounts/account-settings.png">
 
 * Accounts Frozen Upto: Freeze accounting transactions upto specified date, nobody can make / modify entry except specified role.
 

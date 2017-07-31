@@ -22,21 +22,9 @@ section p, section li, section .media-body {
 	line-height: 1.6em;
 }
 
-.page_content {
-	font-size: 15px;
-	line-height: 1.6em;
-}
 
 h1 {
 	font-size: 32px;
-}
-
-h1, h2, h3, h4 {
-	font-weight: 300;
-}
-
-.container {
-	max-width: 870px;
 }
 
 .page_content {
