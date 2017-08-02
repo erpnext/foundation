@@ -23,10 +23,10 @@ def get_context(context):
 					description='How to build web views, web forms, customize templates and other website related topics'),
 				dict(time='3pm-4pm',
 					title='Deployment and Release',
-					description='Understanding the Frappé Release process and best practices for deployment and updating'),
+					description='Understanding the Frappé release process and best practices for deployment and updating'),
 				dict(time='4pm-5pm',
 					title='Contributing to ERPNext',
-					description='Constribution best practices, writing tests, updating docs and planning your contributions')
+					description='Contributing best practices, writing tests, updating docs and planning your contributions')
 
 			]
 		),
