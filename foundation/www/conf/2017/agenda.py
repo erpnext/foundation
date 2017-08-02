@@ -70,8 +70,8 @@ def get_context(context):
 					title='The Road Ahead',
 					description='Panel Disussion with Gold Members on how do we make ERPNext a mainstream ERP alternative to paid ERPs'),
 				dict(time='4pm-5pm',
-					title='Lightening Talks and Q&A',
-					description='5 min lightening talks by the audience and Q&A with the foundation members'),
+					title='Lightning Talks and Q&A',
+					description='5 min lightning talks by the audience and Q&A with the foundation members'),
 
 			]
 		)
