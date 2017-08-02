@@ -2,22 +2,6 @@
 
 {% block title %}ERPNext Conference 2017{% endblock %}
 
-{% block script %}
-<script src="/assets/foundation/js/masonry.min.js"></script>
-<script src="/assets/foundation/js/imagesloaded.min.js"></script>
-<script>
-	frappe.ready(function() {
-		$('.grid').imagesLoaded(function() {
-			$('.grid').masonry({
-			// options
-				itemSelector: '.grid-item',
-				columnWidth: 400
-			});
-		});
-	});
-</script>
-{% endblock %}
-
 
 {% block page_content %}
 
@@ -28,7 +12,10 @@
 	<!--<h1>Better Together</h1>-->
 	<h1>ERPNext Conference 2017, Mumbai</h1>
 	<p class='lead'>October 12th to 14th</p>
-	<p><a href="/conf/2017/register" class='btn btn-primary'>Register Now</a></p>
+	<p><a href="/conf/2017/register" class='btn btn-primary'>Register Now</a>
+	</p>
+	<p><a href="/conf/2017/agenda">Three days of amazing talks and discussions. See the full agenda.</a>
+
 </section>
 <hr>
 <section>
@@ -44,76 +31,9 @@
 		where by specialization and co-operation,
 		all of us become better.</p>
 </section>
-<section>
-	<div class='grid'>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img1.jpg'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img2.jpg'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img8.png'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img7.png'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img9.png'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img3.jpg'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img4.png'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img5.jpg'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img6.jpg'></div>
-		<div class="grid-item"><img src='/assets/foundation/img/conf/img10.png'></div>
-	</div>
-	<div class='clearfix'></div>
-</section>
 <hr>
-
-<section>
-	<h2>Agenda</h2>
-	<p>This conference will be divided in three days. On the first day, we will have a
-		community code sprint, where developers will from groups to work on specific problems.
-		On the second and third days we will have talks focussed on developers and end users.
-		Over this time there will be plenty of opportunity to network with developers,
-		service providers and users across the world.</p>
-	<p>
-		<a class="btn btn-primary" href='/conference-talk-proposal'>Propose A Talk</a>
-	</p>
-</section>
-<hr>
-<section>
-
-	<div class='row'>
-	<div class="col-sm-12 text-center">
-		<h2>Sponsored By</h2>
-	</div>
-
-	<div class="col-sm-4">
-		<div class='sponsor' style='padding-top: 20px'>
-			<p class='lead'>Your Company</p>
-		</div>
-	</div>
-
-	<div class="col-sm-4">
-		<div class='sponsor' >
-			<a href="https://mntechnique.com/" class="no-decoration" target="_blank">
-				<img src="/assets/foundation/img/conf/mnt-logo.png" alt="Frappé"
-					style="margin-top: 20px;"/>
-			</a>
-		</div>
-	</div>
-
-	<div class="col-sm-4">
-		<div class='sponsor' >
-			<a href="https://frappe.io/" class="no-decoration" target="_blank">
-				<img src="/assets/foundation/img/frappe-bird-thin.png" alt="Frappé"
-					style="margin-top: 20px;"/>
-			</a>
-		</div>
-	</div>
-
-	<div class="col-sm-12">
-		<div style="margin-top: 40px;">
-		<p>Become a patron for the conference and get associated with a global community<br>
-			of tens of thousands of users and developers.</p>
-		<a href="mailto:foundation@erpnext.org" class="btn btn-primary">Become A Sponsor</a>
-		</div>
-	</div>
-	</div>
-
-</section>
+<h2>Sponsored By</h2>
+{% include "foundation/templates/includes/sponsors.html" %}
 <hr>
 <section>
 	<h3>Brought to you by the ERPNext Foundation</h3>
@@ -123,6 +43,7 @@
 	<p><a href="/members">Learn about Memberships</a></p>
 </section>
 <hr>
+
 <section>
 	<div class='row'>
 		<div class='col-md-7'>
@@ -153,8 +74,10 @@
 </section>
 <hr>
 <section>
-		<p class=text-center>
-			<a href="/conf/2017/register" class='btn btn-primary'>Register Now</a></p>
+	<p class=text-center>
+		<a href="/conf/2017/register" class='btn btn-primary'>Register Now</a>
+	</p>
+	<p class=text-center><a href="/conf/2017/agenda">See the full agenda.</a>
 </section>
 {% endblock %}
 

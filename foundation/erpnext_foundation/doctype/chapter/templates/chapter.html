@@ -4,11 +4,14 @@
 <h1>{{ title }}</h1>
 <h3>Details</h3>
 <p>{{ introduction }}</p>
+{% if meetup_embed_html %}
+{{ meetup_embed_html }}
+{% endif %}
 <h3>List of Members</h3>
 {% if members %}
-	<table class="table table-bordered small" style="max-width: 600px;">
+	<table class="table table-bordered small" style="max-width: 500px;">
 		<tr>
-			<th width="10%" ></th>
+			<th width="15%" ></th>
 			<th>Member Details</th>
 		</tr>
 		{% for user in members %}
@@ -19,14 +22,11 @@
 		    			<div class="col-lg-6 col-md-6 col-sm-6">{{ frappe.db.get_value('User', user.user, 'full_name') }}</div>
 		    			<div class="col-lg-6 col-md-6 col-sm-6 text-right">
 					    	{% if user.website_url %}
-					    		<a href="{{ user.website_url }}">{{ user.website_url }}</a>
-					    	{% else %}
-
-							{% endif %}
+					    		<a href="{{ user.website_url }}">{{ user.website_url or '' }}</a>
+					    	{% endif %}
 						</div>
 						<div class="col-lg-12">
-				    	{% if user.website_url %}
-
+				    	{% if user.introduction %}
 		    				{{ user.introduction }}
 						{% endif %}
 	    				</div>
@@ -40,18 +40,18 @@
 {% endif %}
 
 <h3>Chapter Head</h3>
-<table class="table table-bordered" style="max-width: 400px;">
+<table class="table table-bordered small" style="max-width: 500px;">
 	<tr>
-		<td>Name</td>
+		<td style='width: 15%'>Name</td>
 		<td>{{ frappe.db.get_value('User', chapter_head, 'full_name') }}</td>
 	</tr>
 	<tr>
 		<td>Email</td>
-		<td>{{ frappe.db.get_value('User', chapter_head, 'email') }}</td>
+		<td>{{ frappe.db.get_value('User', chapter_head, 'email') or '' }}</td>
 	</tr>
 	<tr>
 		<td>Phone</td>
-		<td>{{ frappe.db.get_value('User', chapter_head, 'phone') }}</td>
+		<td>{{ frappe.db.get_value('User', chapter_head, 'phone') or '' }}</td>
 	</tr>
 </table>
 <h3>Address</h3>

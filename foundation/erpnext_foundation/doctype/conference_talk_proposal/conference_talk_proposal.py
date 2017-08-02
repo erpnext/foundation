@@ -13,7 +13,6 @@ class ConferenceTalkProposal(WebsiteGenerator):
 
 
 def get_list_context(context):
-	context.show_sidebar = 1
-	context.website_sidebar = 'Conference 2017 Sidebar'
+	context.title = 'Talk Proposals'
 	context.no_breadcrumbs = 1
 

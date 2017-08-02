@@ -1,0 +1,42 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<style>
+	section {
+		max-width: 600px;
+		margin: auto;
+		padding: 50px 0px;
+		border-bottom: 1px solid {{ style.border_color }};
+	}
+	section:last-child {
+		border-bottom: 0px;
+	}
+</style>
+
+<section class='hero text-center' style='margin-top: -50px'>
+	<h4 class='text-muted'>ERPNext Conference 2017, Mumbai</h4>
+	<h1>Agenda</h1>
+</section>
+
+<div>
+{% for day in agenda %}
+<section>
+	<h3 style='text-center'>{{ day.title }}</h3>
+	<br>
+	{% for item in day['items'] %}
+	<div class='row' style='margin-bottom: 15px;'>
+		<div class='col-sm-3'><p>{{ item.time }}</p></div>
+		<div class='col-sm-9'>
+			<p class='h4'>{{ item.title }}</p>
+			{% if item.description %}
+			<p>{{ item.description }}</p>
+			{% endif %}
+		</div>
+	</div>
+	{% endfor %}
+</section>
+{% endfor %}
+</div>
+<p class=text-center><a href="/conf/2017/register" class='btn btn-primary'>Register Now</a></p>
+
+{% endblock %}

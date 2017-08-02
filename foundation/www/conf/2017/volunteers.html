@@ -1,0 +1,19 @@
+<section class='hero text-center' style='margin-top: -50px'>
+	<h4 class='text-muted'>ERPNext Conference 2017, Mumbai</h4>
+	<h1>Volunteers</h1>
+</section>
+
+<section>
+	<div>
+		{% for person in volunteers %}
+		<h4>{{ person.name }}</h4>
+		<p>
+			{{ person.title }}
+			<br><a href="mailto:{{ person.contact }}">{{ person.contact }}</a>
+		</p>
+		<br>
+		{% endfor %}
+	</div>
+</section>
+<hr>
+Interested in volunteering? Email us at <a href='mailto:foundation@erpnext.org'>foundation@erpnext.org</a>

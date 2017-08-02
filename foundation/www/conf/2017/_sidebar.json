@@ -1,0 +1,31 @@
+[
+ {
+  "route": "/conf/2017",
+  "title": "Conference Home"
+ },
+ {
+  "route": "/conf/2017/sponsors",
+  "title": "Sponsors"
+ },
+ {
+  "route": "/conf/2017/agenda",
+  "title": "Agenda"
+ },
+ {
+  "route": "/conf/2017/register",
+  "title": "Register"
+ },
+ {
+  "route": "/conf/2017/proposals",
+  "title": "Talk Proposals"
+ },
+ {
+  "route": "/conf/2017/volunteers",
+  "title": "Volunteers"
+ },
+ {
+  "route": "/conf/2017/memories",
+  "title": "Memories"
+ }
+
+]

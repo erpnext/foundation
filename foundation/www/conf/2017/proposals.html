@@ -1,0 +1,14 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<section class='hero text-center' style='margin-top: -50px'>
+	<h4 class='text-muted'>ERPNext Conference 2017, Mumbai</h4>
+	<h1>Talk Proposals</h1>
+</section>
+
+{% include "templates/includes/list/list.html" %}
+{% endblock %}
+
+{% block script %}
+<script>{% include "templates/includes/list/list.js" %}</script>
+{% endblock %}
