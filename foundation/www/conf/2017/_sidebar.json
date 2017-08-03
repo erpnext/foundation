@@ -24,6 +24,10 @@
   "title": "Volunteers"
  },
  {
+  "route": "/conf/2017/travel",
+  "title": "Hotels"
+ },
+ {
   "route": "/conf/2017/memories",
   "title": "Memories"
  }
