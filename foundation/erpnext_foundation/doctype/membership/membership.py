@@ -52,4 +52,12 @@ class Membership(Document):
 		if service_provider:
 			frappe.db.set_value("Service Provider", service_provider, "member", frappe.session.user,
 				update_modified=False)
-
+		else:
+			# create new service provider for the member
+			doc = frappe.get_doc({
+				"doctype": "Service Provider",
+				"email": frappe.session.user,
+				"title": frappe.db.get_value("Member", self.member, "member_name"),
+				"member": self.member,
+				"show_in_website": 1
+			}).insert(ignore_mandatory=True, ignore_permissions = True)
