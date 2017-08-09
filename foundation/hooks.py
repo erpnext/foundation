@@ -47,7 +47,7 @@ website_context = {
 			{"label": "Services", "url": "/service-providers", "right": 1},
 			{"label": "Jobs", "url": "/erpnext-jobs", "right": 1},
 			{"label": "Chapters", "url": "/chapters", "right": 1},
-			{"label": "Conference", "url": "/conf/2017", "right": 1},
+			{"label": '<span class="indicator blue">Conference</span>', "url": "/conf/2017", "right": 1},
 			{"label": "About", "url": "/about", "right": 1},
 	],
 	"hide_login": 1,
