@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Manufacturing Settings
-
 #Manufacturing Settings
 
 Manufacturing Settings can be found at:

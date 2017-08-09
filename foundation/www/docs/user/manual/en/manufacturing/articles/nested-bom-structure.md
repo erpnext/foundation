@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Nested Bom Structure
-
 #Nested BOM Structure
 
 **Question:** Our manufacturing process involves producing sub-assembly items before final product. How should we manage BOM master in this scenario?

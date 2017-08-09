@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Creating Depreciation For Item
-
 #Depreciation Entry
 
 **Question:** A Fixed Asset Item has been purchased and stored in a warehouse. How to create a depreciation for a Fixed Asset Item?

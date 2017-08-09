@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Close Sales Order
-
 #Close Sales Order
 
 In the submitted Sales Orders, you will find **Stop** option. Stopping Sales Order will restrict user from creating Delivery Note and Sales Invoice against it.

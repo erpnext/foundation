@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Module Visibility
-
 #Module Visibility
 
 If you have permission on specific module, but it is still not visible, following are the possibilities of issues you should look at. Let's consider a scenario that user is permission of Website module, but not able to access it.

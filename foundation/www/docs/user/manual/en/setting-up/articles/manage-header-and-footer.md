@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Manage Header And Footer
-
 #Manage Header And Footer
 
 Check following to learn how to setup Letter Head in ERPNext.

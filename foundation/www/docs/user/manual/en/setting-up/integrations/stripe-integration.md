@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Stripe Integration
-
 #Setting up Stripe
 
 To setup Stripe,

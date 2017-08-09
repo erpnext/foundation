@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Ldap Integration
-
 #Setting up LDAP
 
 Lightweight Directory Access Protocol is a centralised access controll system used by many small medium scale organisations.

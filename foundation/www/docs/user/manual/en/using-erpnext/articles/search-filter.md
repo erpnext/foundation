@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Search Filter
-
 #Search Filter
 
 Search Filter option allow user to filter records based on value in the specific field of that document. Search Filters are available on the List View of Document Type and in the Report Builder.

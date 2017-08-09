@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Set Precision
-
 #Set Precision
 
 In ERPNext, default precision for `Float`, `Currency` and `Percent` field is three. It allows you to enter value having value upto three decimal places.

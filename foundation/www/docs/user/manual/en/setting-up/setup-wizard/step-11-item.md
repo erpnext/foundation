@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Step 9: Item Names
+# Step 11: Item Names
 
 In this final step, please enter the names of the Items you buy or sell.
 

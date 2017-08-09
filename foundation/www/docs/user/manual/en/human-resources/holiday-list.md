@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Holiday List
-
 #Holiday List
 
 Holiday List is a list which contains the dates of holidays.

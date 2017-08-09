@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Adding Attachments To Outgoing Messages
-
 #Adding Attachments to Outgoing Messages
 
 ERPNext has in-built file manager. Click [here](/docs/user/videos/learn/file-manager.html) to learn more on how attachments are managed in ERPNext.

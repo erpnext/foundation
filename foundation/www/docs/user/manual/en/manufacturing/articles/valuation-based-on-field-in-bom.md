@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Valuation Based On Field In Bom
-
 #Valuation Based On in BOM
 
 **Question:** What are for various options in `Valuation Based On` in the Bill Of Materials (BOM)? 

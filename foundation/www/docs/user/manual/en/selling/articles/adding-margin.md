@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Adding Margin
-
 #Adding Margin
 
 User Can apply the margin on Quotation Item and Sales Order Item using following two options.

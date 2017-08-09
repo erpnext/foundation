@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Creating Custom Link Field
-
 #Creating Custom Link Fields
 
 Links field are the ones linked to another document type. For example, customer field is a link field in Sales Order. This field is linked to the Customer master.

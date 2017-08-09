@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Adjust Withhold Amount Payment Entry
-
 #Adjust Withhold Amount in the Payment Entry
 
 ###Question

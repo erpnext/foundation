@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Salary Slip From Timesheet
-
 #Salary Slip from Timesheet
 
 If salary / wages for your employees are calculated based on number of hours worked, you can use Timesheet to track actual hours worked, and for creating Salary Slip.

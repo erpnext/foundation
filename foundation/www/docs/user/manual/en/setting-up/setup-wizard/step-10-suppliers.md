@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Step 8: Suppliers
+# Step 10: Suppliers
 
 Enter a few of your Suppliers' names.
 

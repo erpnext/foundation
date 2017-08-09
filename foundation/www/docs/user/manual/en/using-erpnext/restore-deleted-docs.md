@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Restore Deleted Docs
-
 #Restore Deleted Documents
 
 In ERPNext, you can delete a records if not needed. They can be masters like Items, Customer or transactions like Sales Order, Payment Entries etc.

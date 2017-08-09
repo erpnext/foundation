@@ -1,6 +1,4 @@
 <!-- add-breadcrumbs -->
-# Razorpay Integration
-
 #Setting up Razorpay
 
 A payment gateway is an e-commerce application service provider service that authorizes credit card payments for e-businesses, online retailers, bricks and clicks, or traditional brick and mortar.
