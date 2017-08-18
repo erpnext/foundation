@@ -1,0 +1,27 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+{% set bounty_progress = ((doc.bounty_collected/doc.goal)*100) %}
+<div class="progress">
+	<div class="progress-bar progress-bar-success" role="progressbar"
+		aria-valuenow="{{bounty_progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{bounty_progress}}%">
+		<span class="sr-only">{{ doc.bounty_collected }} of {{ doc.goal }}</span>
+	</div>
+</div>
+<p>
+	<p class="lead">{{ frappe.utils.fmt_money(doc.bounty_collected, currency="USD") }}
+		<span class="text-muted small"> of {{ frappe.utils.fmt_money(doc.goal, currency="USD") }}</span>
+		<span class="text-muted small"></span>
+	</p>
+</p>
+<p>{{ doc.end_date }}</p>
+
+<a class="btn btn-primary" href="/bounty/back-this-bounty?bounty={{doc.name}}">Back this bounty</a>
+
+<h3>Discuss</h3>
+{% include 'templates/includes/comments/comments.html' %}
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->
