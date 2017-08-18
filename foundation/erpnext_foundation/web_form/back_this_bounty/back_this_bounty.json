@@ -19,7 +19,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-08-18 08:18:03.166262", 
+ "modified": "2017-08-18 14:41:04.132808", 
  "modified_by": "faris@erpnext.com", 
  "module": "ERPNext Foundation", 
  "name": "back-this-bounty", 
@@ -34,16 +34,6 @@
  "title": "Back this bounty", 
  "web_form_fields": [
   {
-   "fieldname": "bounty_name", 
-   "fieldtype": "Data", 
-   "hidden": 0, 
-   "label": "Bounty Name", 
-   "max_length": 0, 
-   "max_value": 0, 
-   "read_only": 1, 
-   "reqd": 0
-  }, 
-  {
    "fieldname": "user", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -51,6 +41,16 @@
    "max_length": 0, 
    "max_value": 0, 
    "options": "User", 
+   "read_only": 1, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "bounty_name", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Bounty Name", 
+   "max_length": 0, 
+   "max_value": 0, 
    "read_only": 1, 
    "reqd": 0
   }, 

@@ -1,24 +1,59 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
+<style>
+	.main {
+		margin-bottom: 50px;
+	}
+
+	input[type=number] {
+		width: 200px;
+		margin-bottom: 12px;
+	}
+</style>
+
+<div class="main">
+<h1>{{ title }} <span style="font-size: 14px; line-height: 44px;" class="pull-right small">{{days_to_go}} days to go</span></h1>
 {% set bounty_progress = ((doc.bounty_collected/doc.goal)*100) %}
-<div class="progress">
+<div class="progress" style="height: 12px;">
 	<div class="progress-bar progress-bar-success" role="progressbar"
 		aria-valuenow="{{bounty_progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{bounty_progress}}%">
 		<span class="sr-only">{{ doc.bounty_collected }} of {{ doc.goal }}</span>
 	</div>
 </div>
 <p>
-	<p class="lead">{{ frappe.utils.fmt_money(doc.bounty_collected, currency="USD") }}
-		<span class="text-muted small"> of {{ frappe.utils.fmt_money(doc.goal, currency="USD") }}</span>
-		<span class="text-muted small"></span>
+	<p class="lead">{{ fmt_money(doc.bounty_collected, currency="USD") }}
+		<span class="text-muted small"> of {{ fmt_money(doc.goal, currency="USD") }}</span>
+	</p>
+	<p class="lead">
+		<span>{{ no_of_backers }}</span>
+	</p>
+	<p>
+		<input type="number" data-field="amount" class="form-control" placeholder="{{fmt_money(bounty_left)}}">
+		<a data-action="primary" class="btn btn-primary">
+			Back this bounty
+		</a>
 	</p>
 </p>
-<p>{{ doc.end_date }}</p>
+<script>
+	frappe.ready(function() {
+		$('[data-action="primary"]').click(function() {
+			var url = "/bounty/back-this-bounty?bounty_name={{doc.name}}&user=" + frappe.session.user;
+			var amount = $('[data-field="amount"]').val();
+			if(amount > 0) {
+				url += '&amount=' + amount;
+			}
+			window.location.href = url;
+		})
+	})
+</script>
 
-<a class="btn btn-primary" href="/bounty/back-this-bounty?bounty={{doc.name}}">Back this bounty</a>
-
+</div>
+<p>
+	<h4>About this feature</h4>
+	<p>{{doc.description}}</p>
+</p>
+<hr style="margin: 50px 0;">
 <h3>Discuss</h3>
 {% include 'templates/includes/comments/comments.html' %}
 

@@ -2,9 +2,16 @@
 	<a href={{ route }}>
 		<h3>{{ doc.feature_name }}</h3>
 		<p>
-			<span class="label">{{ frappe.format(doc.goal) }}</span>
+			<span class="label">{{ fmt_money(doc.goal, currency="USD") }}</span>
 			<span class="label">{{ doc.end_date }}</span>
-			<span class="label">{{ doc.bounty_backer }} Backers</span>
+			<span class="label">
+				{{ doc.bounty_backer|len }}
+				{% if doc.bounty_backer|len > 1 %}
+					Backers
+				{% else %}
+					Backer
+				{% endif %}
+			</span>
 		</p>
 		<p>{{ html2text(doc.description[:200]) }}{% if doc.description|len > 200 %}...{% endif %}</p>
 	</a>
