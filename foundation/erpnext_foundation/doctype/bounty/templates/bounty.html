@@ -10,6 +10,10 @@
 		width: 200px;
 		margin-bottom: 12px;
 	}
+
+	p.lead {
+		margin-bottom: 10px;
+	}
 </style>
 
 <div class="main">
@@ -28,6 +32,11 @@
 	<p class="lead">
 		<span>{{ no_of_backers }}</span>
 	</p>
+	{% if doc.github_issue %}
+	<p>
+		<a href="{{doc.github_issue}}" target="_blank">GitHub Issue</a>
+	</p>
+	{% endif %}
 	<p>
 		<input type="number" data-field="amount" class="form-control" placeholder="{{fmt_money(bounty_left)}}">
 		<a data-action="primary" class="btn btn-primary">
