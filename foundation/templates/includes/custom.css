@@ -120,6 +120,7 @@ a {
 */
 .silver-member {
 	padding: 0px 15px;
+	min-height: 205px;
 }
 
 .page-breadcrumbs .breadcrumb {
