@@ -1,9 +1,18 @@
+{% if doc.published %}
 <div style="margin-bottom: 30px; max-width: 600px" class="with-border clickable">
 	<a href={{ route }}>
 		<h3>{{ doc.feature_name }}</h3>
+		{% set bounty_progress = ((doc.bounty_collected/doc.goal)*100) %}
+		<div class="progress" style="height: 6px;">
+			<div class="progress-bar progress-bar-success" role="progressbar"
+				aria-valuenow="{{bounty_progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{bounty_progress}}%">
+				<span class="sr-only">{{ doc.bounty_collected }} of {{ doc.goal }}</span>
+			</div>
+		</div>
 		<p>
 			<span class="label">{{ fmt_money(doc.goal, currency="USD") }}</span>
 			<span class="label">{{ doc.end_date }}</span>
+			{% if doc.bounty_backer %}
 			<span class="label">
 				{{ doc.bounty_backer|len }}
 				{% if doc.bounty_backer|len > 1 %}
@@ -12,7 +21,9 @@
 					Backer
 				{% endif %}
 			</span>
+			{% endif %}
 		</p>
 		<p>{{ html2text(doc.description[:200]) }}{% if doc.description|len > 200 %}...{% endif %}</p>
 	</a>
 </div>
+{% endif %}

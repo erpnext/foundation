@@ -17,6 +17,7 @@ class BountyBacker(Document):
 
 	def on_payment_authorized(self, *args, **kwargs):
 		self.db_set('paid', 1)
+		# to trigger form events of Bounty doctype
 		doc = frappe.get_doc('Bounty', self.bounty_name)
 		doc.save()
 

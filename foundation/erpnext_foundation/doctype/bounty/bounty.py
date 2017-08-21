@@ -34,6 +34,9 @@ class Bounty(WebsiteGenerator):
 
 	def validate(self):
 		self.bounty_collected = sum([backer.amount for backer in self.bounty_backer if backer.paid])
+		if not self.route:
+			self.published = 1
+			self.route = 'bounty/' + self.feature_name.lower().replace(' ', '-')
 
 def get_list_context(context):
 	context.allow_guest = True
@@ -41,5 +44,5 @@ def get_list_context(context):
 	context.title = 'ERPNext Bounties'
 	context.no_breadcrumbs = True
 	context.order_by = 'creation desc'
-	context.introduction = '<p>List of all ERPNext bounties</p>'
+	context.introduction = '<a href="new-bounty" class="btn btn-primary">Start a new Bounty</a>'
 	context.fmt_money = fmt_money
