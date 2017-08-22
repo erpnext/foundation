@@ -1,2 +1,2 @@
-erpnext.buying
 erpnext.buying.utils
+erpnext.buying
