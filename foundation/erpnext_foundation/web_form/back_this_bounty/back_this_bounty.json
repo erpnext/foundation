@@ -19,8 +19,8 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-08-21 16:36:33.431742", 
- "modified_by": "Administrator", 
+ "modified": "2017-08-23 18:05:50.695856", 
+ "modified_by": "faris@erpnext.com", 
  "module": "ERPNext Foundation", 
  "name": "back-this-bounty", 
  "owner": "faris@erpnext.com", 
@@ -30,7 +30,7 @@
  "route": "bounty/back-this-bounty", 
  "show_sidebar": 1, 
  "sidebar_items": [], 
- "success_url": "/bounty", 
+ "success_url": "/bounties", 
  "title": "Back this bounty", 
  "web_form_fields": [
   {

@@ -18,8 +18,8 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-08-21 16:36:27.918067", 
- "modified_by": "Administrator", 
+ "modified": "2017-08-23 18:04:50.092049", 
+ "modified_by": "faris@erpnext.com", 
  "module": "ERPNext Foundation", 
  "name": "start-a-new-bounty", 
  "owner": "Administrator", 
@@ -28,7 +28,7 @@
  "route": "new-bounty", 
  "show_sidebar": 1, 
  "sidebar_items": [], 
- "success_url": "/bounty", 
+ "success_url": "/bounties", 
  "title": "Start a new Bounty", 
  "web_form_fields": [
   {

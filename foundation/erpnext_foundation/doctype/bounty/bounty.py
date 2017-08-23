@@ -36,7 +36,7 @@ class Bounty(WebsiteGenerator):
 		self.bounty_collected = sum([backer.amount for backer in self.bounty_backer if backer.paid])
 		if not self.route:
 			self.published = 1
-			self.route = 'bounty/' + self.feature_name.lower().replace(' ', '-')
+			self.route = 'bounties/' + self.feature_name.lower().replace(' ', '-')
 
 def get_list_context(context):
 	context.allow_guest = True
