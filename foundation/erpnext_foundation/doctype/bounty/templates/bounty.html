@@ -47,7 +47,7 @@
 <script>
 	frappe.ready(function() {
 		$('[data-action="primary"]').click(function() {
-			var url = "/bounty/back-this-bounty?bounty_name={{doc.name}}&user=" + frappe.session.user;
+			var url = "/back-this-bounty?bounty_name={{doc.name}}&user=" + frappe.session.user;
 			var amount = $('[data-field="amount"]').val();
 			if(amount > 0) {
 				url += '&amount=' + amount;

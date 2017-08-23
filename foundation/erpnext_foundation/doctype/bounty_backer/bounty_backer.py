@@ -15,9 +15,12 @@ class BountyBacker(Document):
 		doc = frappe.get_doc('Bounty', self.bounty_name)
 		self.idx = len(doc.bounty_backer)
 
-	def on_payment_authorized(self, *args, **kwargs):
-		self.db_set('paid', 1)
-		# to trigger form events of Bounty doctype
-		doc = frappe.get_doc('Bounty', self.bounty_name)
-		doc.save()
+	def on_payment_authorized(self, status_changed_to=None):
+		if status_changed_to in ("Completed", "Authorized"):
+			self.db_set('paid', 1)
+			# to trigger form events of Bounty doctype
+			doc = frappe.get_doc('Bounty', self.bounty_name)
+			doc.save()
+			return '/' + doc.route
+		return '/bounties'
 
