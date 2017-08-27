@@ -25,8 +25,9 @@ class Bounty(WebsiteGenerator):
 			bounty_left = self.goal * 0.1
 
 		context.no_cache = True
+		context.no_breadcrumbs = False
 		context.days_to_go = date_diff(self.end_date, nowdate())
-		context.paid_backers = paid_backers
+		context.paid_backers = ", ".join([backer.full_name or backer.user for backer in paid_backers])
 		context.no_of_backers = no_of_backers
 		context.fmt_money = fmt_money
 		context.bounty_left = bounty_left

@@ -45,11 +45,9 @@
 	</p>
 	<p class="lead">
 		<span>{{ no_of_backers }}</span>
-		(
-		{% for backer in paid_backers %}
-		<span class="small">{{ backer.full_name }}</span>,
-		{% endfor %}
-		)
+		{% if paid_backers %}
+		<span class="small">({{ paid_backers }})</span>
+		{% endif %}
 	</p>
 	{% if doc.github_issue %}
 	<p>
