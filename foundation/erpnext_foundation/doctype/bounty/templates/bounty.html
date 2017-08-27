@@ -6,9 +6,23 @@
 		margin-bottom: 50px;
 	}
 
-	input[type=number] {
+	.bounty-amount {
 		width: 200px;
 		margin-bottom: 12px;
+	}
+
+	.bounty-amount .dropdown-menu {
+		min-width: 100px;
+	}
+
+	.bounty-amount .dropdown-toggle {
+		border: 1px solid #d1d8dd;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
 	}
 
 	p.lead {
@@ -26,35 +40,64 @@
 	</div>
 </div>
 <p>
-	<p class="lead">{{ fmt_money(doc.bounty_collected, currency="INR") }}
-		<span class="text-muted small"> of {{ fmt_money(doc.goal, currency="INR") }}</span>
+	<p class="lead">{{ fmt_money(doc.bounty_collected, currency="USD") }}
+		<span class="text-muted small"> of {{ fmt_money(doc.goal, currency="USD") }}</span>
 	</p>
 	<p class="lead">
 		<span>{{ no_of_backers }}</span>
+		(
+		{% for backer in paid_backers %}
+		<span class="small">{{ backer.full_name }}</span>,
+		{% endfor %}
+		)
 	</p>
 	{% if doc.github_issue %}
 	<p>
 		<a href="{{doc.github_issue}}" target="_blank">GitHub Issue</a>
 	</p>
 	{% endif %}
-	<p>
-		<input type="number" data-field="amount" class="form-control" placeholder="{{fmt_money(bounty_left)}}">
-		<a data-action="primary" class="btn btn-primary">
-			Back this bounty
-		</a>
-	</p>
+
+	<div class="input-group bounty-amount">
+		<input type="number" data-field="amount"
+			class="form-control" aria-label="Bounty Amount"
+			placeholder="{{fmt_money(bounty_left)}}">
+
+		<div class="input-group-btn">
+			<button type="button" class="btn btn-default dropdown-toggle"
+				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="bounty-currency">USD</span>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li><a data-currency="USD">USD</a></li>
+				<li><a data-currency="INR">INR</a></li>
+			</ul>
+		</div>
+	</div>
+	<a data-action="primary" class="btn btn-primary">
+		Back this bounty
+	</a>
 </p>
 <script>
 	frappe.ready(function() {
+		const $bounty_amount = $('.bounty-amount');
+
 		$('[data-action="primary"]').click(function() {
-			var url = "/back-this-bounty?bounty_name={{doc.name}}&user=" + frappe.session.user;
-			var amount = $('[data-field="amount"]').val();
+			const currency = $bounty_amount.find('.bounty-currency').text();
+			let url = `/back-this-bounty-${currency.toLowerCase()}`;
+			url += `?bounty_name={{doc.name}}&user=${frappe.session.user}&currency=${currency}`;
+			let amount = $('[data-field="amount"]').val();
 			if(amount > 0) {
 				url += '&amount=' + amount;
 			}
 			window.location.href = url;
-		})
-	})
+		});
+
+		$bounty_amount.on('click', '[data-currency]', function() {
+			const currency = $(this).attr('data-currency');
+			$bounty_amount.find('.bounty-currency').text(currency);
+		});
+	});
 </script>
 
 </div>

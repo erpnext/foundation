@@ -11,32 +11,41 @@ from frappe.website.utils import get_comment_list
 
 class Bounty(WebsiteGenerator):
 	def get_context(self, context):
-		context.no_cache = True
-		context.days_to_go = date_diff(self.end_date, nowdate())
-
-		no_of_backers = len(self.bounty_backer)
+		paid_backers = [backer for backer in self.bounty_backer if backer.paid]
+		no_of_backers = len(paid_backers)
 		if no_of_backers == 0:
 			no_of_backers = 'No backers yet'
 		elif no_of_backers == 1:
 			no_of_backers = str(no_of_backers) + ' backer'
 		else:
 			no_of_backers = str(no_of_backers) + ' backers'
-		context.no_of_backers = no_of_backers
-		context.fmt_money = fmt_money
 
 		bounty_left = self.goal - self.bounty_collected
-
 		if bounty_left > (self.goal * 0.1) or bounty_left < 0:
 			bounty_left = self.goal * 0.1
 
+		context.no_cache = True
+		context.days_to_go = date_diff(self.end_date, nowdate())
+		context.paid_backers = paid_backers
+		context.no_of_backers = no_of_backers
+		context.fmt_money = fmt_money
 		context.bounty_left = bounty_left
 		context.comment_list = get_comment_list(self.doctype, self.name)
 
 	def validate(self):
+		from frappe.utils.user import get_user_fullname
+
 		self.bounty_collected = sum([backer.amount for backer in self.bounty_backer if backer.paid])
 		if not self.route:
 			self.published = 1
 			self.route = 'bounties/' + self.feature_name.lower().replace(' ', '-')
+
+		bounty_backers = []
+		for backer in self.bounty_backer:
+			if backer.user and not backer.full_name:
+				backer.full_name = get_user_fullname(backer.user)
+			bounty_backers.append(backer)
+		self.bounty_backer = bounty_backers
 
 def get_list_context(context):
 	context.allow_guest = True
