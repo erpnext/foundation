@@ -1,3 +1,7 @@
 frappe.ready(function() {
-	// bind events here
+	setTimeout(() => {
+		if ($('select[name=user]').val() === "") {
+			window.location.href = '/bounties';
+		}
+	}, 1000);
 })

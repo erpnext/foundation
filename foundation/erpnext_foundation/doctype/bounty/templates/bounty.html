@@ -31,7 +31,13 @@
 </style>
 
 <div class="main">
-<h1>{{ title }} <span style="font-size: 14px; line-height: 44px;" class="pull-right small">{{days_to_go}} days to go</span></h1>
+<h1>
+	{{ title }}
+	{% if doc.owner == frappe.session.user %}
+	<a href="/new-bounty?name={{doc.name}}" class="btn btn-default btn-xs">Edit</a>
+	{% endif %}
+	<span style="font-size: 14px; line-height: 44px;" class="pull-right small">{{days_to_go}} days to go</span>
+</h1>
 {% set bounty_progress = ((doc.bounty_collected/doc.goal)*100) %}
 <div class="progress" style="height: 12px;">
 	<div class="progress-bar progress-bar-success" role="progressbar"
@@ -100,7 +106,7 @@
 
 </div>
 <p>
-	<h4>About this feature</h4>
+	<h6 class="text-muted uppercase">About this feature</h6>
 	<p>{{doc.description}}</p>
 </p>
 <hr style="margin: 50px 0;">

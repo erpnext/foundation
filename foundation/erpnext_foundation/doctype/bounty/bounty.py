@@ -14,7 +14,7 @@ class Bounty(WebsiteGenerator):
 		paid_backers = [backer for backer in self.bounty_backer if backer.paid]
 		no_of_backers = len(paid_backers)
 		if no_of_backers == 0:
-			no_of_backers = 'No backers yet'
+			no_of_backers = 'Be the first to back this bounty'
 		elif no_of_backers == 1:
 			no_of_backers = str(no_of_backers) + ' backer'
 		else:
