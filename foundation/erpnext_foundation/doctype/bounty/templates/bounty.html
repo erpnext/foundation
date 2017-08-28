@@ -1,0 +1,118 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<style>
+	.main {
+		margin-bottom: 50px;
+	}
+
+	.bounty-amount {
+		width: 200px;
+		margin-bottom: 12px;
+	}
+
+	.bounty-amount .dropdown-menu {
+		min-width: 100px;
+	}
+
+	.bounty-amount .dropdown-toggle {
+		border: 1px solid #d1d8dd;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	p.lead {
+		margin-bottom: 10px;
+	}
+</style>
+
+<div class="main">
+<h1>
+	{{ title }}
+	{% if doc.owner == frappe.session.user %}
+	<a href="/new-bounty?name={{doc.name}}" class="btn btn-default btn-xs">Edit</a>
+	{% endif %}
+	<span style="font-size: 14px; line-height: 44px;" class="pull-right small">{{days_to_go}} days to go</span>
+</h1>
+{% set bounty_progress = ((doc.bounty_collected/doc.goal)*100) %}
+<div class="progress" style="height: 12px;">
+	<div class="progress-bar progress-bar-success" role="progressbar"
+		aria-valuenow="{{bounty_progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{bounty_progress}}%">
+		<span class="sr-only">{{ doc.bounty_collected }} of {{ doc.goal }}</span>
+	</div>
+</div>
+<p>
+	<p class="lead">{{ fmt_money(doc.bounty_collected, currency="USD") }}
+		<span class="text-muted small"> of {{ fmt_money(doc.goal, currency="USD") }}</span>
+	</p>
+	<p class="lead">
+		<span>{{ no_of_backers }}</span>
+		{% if paid_backers %}
+		<span class="small">({{ paid_backers }})</span>
+		{% endif %}
+	</p>
+	{% if doc.github_issue %}
+	<p>
+		<a href="{{doc.github_issue}}" target="_blank">GitHub Issue</a>
+	</p>
+	{% endif %}
+
+	<div class="input-group bounty-amount">
+		<input type="number" data-field="amount"
+			class="form-control" aria-label="Bounty Amount"
+			placeholder="{{fmt_money(bounty_left)}}">
+
+		<div class="input-group-btn">
+			<button type="button" class="btn btn-default dropdown-toggle"
+				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="bounty-currency">USD</span>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li><a data-currency="USD">USD</a></li>
+				<li><a data-currency="INR">INR</a></li>
+			</ul>
+		</div>
+	</div>
+	<a data-action="primary" class="btn btn-primary">
+		Back this bounty
+	</a>
+</p>
+<script>
+	frappe.ready(function() {
+		const $bounty_amount = $('.bounty-amount');
+
+		$('[data-action="primary"]').click(function() {
+			const currency = $bounty_amount.find('.bounty-currency').text();
+			let url = `/back-this-bounty-${currency.toLowerCase()}`;
+			url += `?bounty_name={{doc.name}}&user=${frappe.session.user}&currency=${currency}`;
+			let amount = $('[data-field="amount"]').val();
+			if(amount > 0) {
+				url += '&amount=' + amount;
+			}
+			window.location.href = url;
+		});
+
+		$bounty_amount.on('click', '[data-currency]', function() {
+			const currency = $(this).attr('data-currency');
+			$bounty_amount.find('.bounty-currency').text(currency);
+		});
+	});
+</script>
+
+</div>
+<p>
+	<h6 class="text-muted uppercase">About this feature</h6>
+	<p>{{doc.description}}</p>
+</p>
+<hr style="margin: 50px 0;">
+<h3>Discuss</h3>
+{% include 'templates/includes/comments/comments.html' %}
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->
