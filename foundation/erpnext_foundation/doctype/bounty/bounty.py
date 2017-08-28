@@ -11,7 +11,7 @@ from frappe.website.utils import get_comment_list
 
 class Bounty(WebsiteGenerator):
 	def get_context(self, context):
-		paid_backers = [backer for backer in self.bounty_backer if backer.paid]
+		paid_backers = get_paid_backers(self.bounty_backer)
 		no_of_backers = len(paid_backers)
 		if no_of_backers == 0:
 			no_of_backers = 'Be the first to back this bounty'
@@ -37,12 +37,11 @@ class Bounty(WebsiteGenerator):
 		from frappe.utils.user import get_user_fullname
 
 		self.bounty_collected = 0.0
-		for backer in self.bounty_backer:
-			if backer.paid:
-				amount = backer.amount
-				if backer.currency == 'INR':
-					amount = backer.amount / 65.00
-				self.bounty_collected += amount
+		for backer in get_paid_backers(self.bounty_backer):
+			amount = backer.amount
+			if backer.currency == 'INR':
+				amount = backer.amount / 65.00
+			self.bounty_collected += amount
 
 		if not self.route:
 			self.published = 1
@@ -63,3 +62,7 @@ def get_list_context(context):
 	context.order_by = 'creation desc'
 	context.introduction = '<a href="new-bounty" class="btn btn-primary">Start a new Bounty</a>'
 	context.fmt_money = fmt_money
+	context.get_paid_backers = get_paid_backers
+
+def get_paid_backers(backers):
+	return [backer for backer in backers if backer.paid]
