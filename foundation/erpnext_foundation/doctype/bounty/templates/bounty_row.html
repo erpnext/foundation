@@ -12,10 +12,11 @@
 		<p>
 			<span class="label">{{ fmt_money(doc.goal, currency="USD") }}</span>
 			<span class="label">Ends on {{ doc.end_date }}</span>
-			{% if doc.bounty_backer %}
+			{% set paid_backers = get_paid_backers(doc.bounty_backer) %}
+			{% if paid_backers|len > 0 %}
 			<span class="label">
-				{{ doc.bounty_backer|len }}
-				{% if doc.bounty_backer|len > 1 %}
+				{{ paid_backers|len }}
+				{% if paid_backers|len > 1 %}
 					Backers
 				{% else %}
 					Backer
