@@ -36,7 +36,14 @@ class Bounty(WebsiteGenerator):
 	def validate(self):
 		from frappe.utils.user import get_user_fullname
 
-		self.bounty_collected = sum([backer.amount for backer in self.bounty_backer if backer.paid])
+		self.bounty_collected = 0.0
+		for backer in self.bounty_backer:
+			if backer.paid:
+				amount = backer.amount
+				if backer.currency == 'INR':
+					amount = backer.amount / 65.00
+				self.bounty_collected += amount
+
 		if not self.route:
 			self.published = 1
 			self.route = 'bounties/' + self.feature_name.lower().replace(' ', '-')
