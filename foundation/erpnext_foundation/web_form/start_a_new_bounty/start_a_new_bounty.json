@@ -18,8 +18,8 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-08-23 18:04:50.092049", 
- "modified_by": "faris@erpnext.com", 
+ "modified": "2017-08-29 13:03:00.918927", 
+ "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "start-a-new-bounty", 
  "owner": "Administrator", 
@@ -45,21 +45,11 @@
    "fieldname": "goal", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Goal", 
+   "label": "Goal (in USD)", 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 1
-  }, 
-  {
-   "fieldname": "end_date", 
-   "fieldtype": "Date", 
-   "hidden": 0, 
-   "label": "End Date", 
-   "max_length": 0, 
-   "max_value": 0, 
-   "read_only": 0, 
-   "reqd": 0
   }, 
   {
    "fieldname": "description", 
