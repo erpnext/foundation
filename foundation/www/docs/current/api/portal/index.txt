@@ -1,2 +1,2 @@
-erpnext.portal
 erpnext.portal.utils
+erpnext.portal
