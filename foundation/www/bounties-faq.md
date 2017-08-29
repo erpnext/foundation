@@ -19,7 +19,13 @@ After the bounty is created, you (and others) can back it by going to the Bounty
 
 ---
 
-### 4. What if the goal is not reached?
+### 4. I am a developer. How do I pitch for the Bounty?
+
+You can indicate your interest in taking on the bounty in the discussion section of the Bounty page. Once the goal is reached, you can start development of the feature by sending pull requests against the GitHub Issue for this feature.
+
+---
+
+### 5. What if the goal is not reached?
 
 If the goal is not reached, the bounty will be closed. Each participant who backed the bounty will have their amount refunded in full.
 
@@ -27,6 +33,6 @@ But if any developer is happy with the Bounty Amount collected so far and is rea
 
 ---
 
-### 5. How to track the development of the feature?
+### 6. How to track the development of the feature?
 
 There is an option of linking the bounty to a GitHub Issue. You can see it on the Bounty page.
