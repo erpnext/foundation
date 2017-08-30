@@ -11,6 +11,8 @@ ERPNext Bounties is the feature funding platform for development of ERPNext. Use
 
 You can start a new bounty by going to our [Bounties](https://erpnext.org/bounties) page. Enter the Bounty Title and set an achievable goal (in USD). Make sure to write a detailed description of the feature you are adding, so that it is easier for developers to understand the requirement who would later take on the bounty. A page will be created for this bounty where all these information will be listed.
 
+These bounties will be moderated by the Frappé Team and other foundation members. Their details can also be edited as they see fit.
+
 ---
 
 ### 3. How do I contribute?
@@ -27,7 +29,7 @@ You can indicate your interest in taking on the bounty in the discussion section
 
 ### 5. What if the goal is not reached?
 
-If the goal is not reached, the bounty will be closed. Each participant who backed the bounty will have their amount refunded in full.
+If the goal is not reached, the bounty will be remain open until the moderators decide whether it should be closed. In that case, each participant who backed the bounty will have their amount refunded in full.
 
 But if any developer is happy with the Bounty Amount collected so far and is ready to start the development, it will not be closed.
 
