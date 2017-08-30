@@ -33,7 +33,7 @@
 <div class="main">
 <h1>
 	{{ title }}
-	{% if doc.owner == frappe.session.user %}
+	{% if can_edit %}
 	<a href="/new-bounty?name={{doc.name}}" class="btn btn-default btn-xs">Edit</a>
 	{% endif %}
 	<span style="font-size: 14px; line-height: 44px;" class="pull-right small">{{days_to_go}} days to go</span>

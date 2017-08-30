@@ -24,6 +24,11 @@ class Bounty(WebsiteGenerator):
 		if bounty_left > (self.goal * 0.1) or bounty_left < 0:
 			bounty_left = self.goal * 0.1
 
+		# edit permission
+		can_edit = False
+		if 'System Manager' in frappe.get_roles() or self.owner == frappe.session.user:
+			can_edit = True
+
 		context.no_cache = True
 		context.no_breadcrumbs = False
 		context.days_to_go = date_diff(self.end_date, nowdate())
@@ -32,6 +37,7 @@ class Bounty(WebsiteGenerator):
 		context.fmt_money = fmt_money
 		context.bounty_left = bounty_left
 		context.comment_list = get_comment_list(self.doctype, self.name)
+		context.can_edit = can_edit
 
 	def validate(self):
 		from frappe.utils.user import get_user_fullname
