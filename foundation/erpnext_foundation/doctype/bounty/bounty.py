@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 import frappe
 from frappe.website.website_generator import WebsiteGenerator
 from frappe.website.utils import get_comment_list
-from frappe.utils import date_diff, nowdate, fmt_money
+from frappe.utils import date_diff, nowdate, fmt_money, add_months
 from frappe.website.utils import get_comment_list
 
 class Bounty(WebsiteGenerator):
@@ -24,6 +24,9 @@ class Bounty(WebsiteGenerator):
 		if bounty_left > (self.goal * 0.1) or bounty_left < 0:
 			bounty_left = self.goal * 0.1
 
+		# edit permission
+		can_edit = self.owner == frappe.session.user
+
 		context.no_cache = True
 		context.no_breadcrumbs = False
 		context.days_to_go = date_diff(self.end_date, nowdate())
@@ -32,6 +35,7 @@ class Bounty(WebsiteGenerator):
 		context.fmt_money = fmt_money
 		context.bounty_left = bounty_left
 		context.comment_list = get_comment_list(self.doctype, self.name)
+		context.can_edit = can_edit
 
 	def validate(self):
 		from frappe.utils.user import get_user_fullname
@@ -54,13 +58,16 @@ class Bounty(WebsiteGenerator):
 			bounty_backers.append(backer)
 		self.bounty_backer = bounty_backers
 
+		if not self.end_date:
+			self.end_date = add_months(nowdate(), 1)
+
 def get_list_context(context):
 	context.allow_guest = True
 	context.no_cache = True
 	context.title = 'ERPNext Bounties'
 	context.no_breadcrumbs = True
 	context.order_by = 'creation desc'
-	context.introduction = '<a href="new-bounty" class="btn btn-primary">Start a new Bounty</a>'
+	context.introduction = '<div style="margin-bottom: 20px;"><a href="new-bounty" class="btn btn-primary">Start a new Bounty</a><a style="margin-left: 10px;" href="/bounties-faq">FAQ</a></div>'
 	context.fmt_money = fmt_money
 	context.get_paid_backers = get_paid_backers
 
