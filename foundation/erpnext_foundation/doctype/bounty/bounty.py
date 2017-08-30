@@ -25,9 +25,7 @@ class Bounty(WebsiteGenerator):
 			bounty_left = self.goal * 0.1
 
 		# edit permission
-		can_edit = False
-		if 'System Manager' in frappe.get_roles() or self.owner == frappe.session.user:
-			can_edit = True
+		can_edit = self.owner == frappe.session.user
 
 		context.no_cache = True
 		context.no_breadcrumbs = False
