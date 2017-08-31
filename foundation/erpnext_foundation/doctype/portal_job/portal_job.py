@@ -4,6 +4,7 @@
 
 from __future__ import unicode_literals
 import frappe
+from frappe import _
 from frappe.website.website_generator import WebsiteGenerator
 import foundation
 
@@ -17,6 +18,9 @@ class PortalJob(WebsiteGenerator):
 	def validate(self):
 		if not self.route:
 			self.route = 'erpnext-jobs/' + self.scrub(self.title)
+		if not self.title:
+			frappe.throw(_("Job Title is Mandatory for posting a job"))
+
 
 def get_list_context(context):
 	context.allow_guest = True

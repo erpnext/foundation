@@ -17,7 +17,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-03-02 12:09:51.793675", 
+ "modified": "2017-08-31 16:58:13.787406", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "jobs", 
@@ -38,7 +38,7 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 1
   }, 
   {
    "fieldname": "job_type", 
