@@ -7,7 +7,8 @@ def get_context(context):
 	if frappe.session.user in [d.user for d in chapter.members]:
 		user = frappe.session.user
 		parent = frappe.form_dict.name
-        frappe.db.sql("""delete from `tabChapter Member` where parent = %s and user = %s """, (parent, user))
+		frappe.db.sql("""delete from `tabChapter Member` where parent = %s and user = %s """, (parent, user))
+		frappe.db.commit()
 
 	context.member_deleted = True
 
