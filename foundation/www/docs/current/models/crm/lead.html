@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.8.2</a>
+	Version 8.10.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/crm/doctype/lead"
@@ -70,27 +70,6 @@
         
         <tr >
             <td>3</td>
-            <td ><code>salutation</code></td>
-            <td >
-                Link</td>
-            <td >
-                Salutation
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/contacts/salutation">Salutation</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>4</td>
             <td class="danger" title="Mandatory"><code>lead_name</code></td>
             <td >
                 Data</td>
@@ -102,28 +81,19 @@
         </tr>
         
         <tr >
-            <td>5</td>
-            <td ><code>gender</code></td>
+            <td>4</td>
+            <td ><code>company_name</code></td>
             <td >
-                Link</td>
+                Data</td>
             <td >
-                Gender
+                Organization Name
                 
             </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/contacts/gender">Gender</a>
-
-
-                
-            </td>
+            <td></td>
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>5</td>
             <td ><code>email_id</code></td>
             <td >
                 Data</td>
@@ -137,7 +107,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>6</td>
             <td ><code>col_break123</code></td>
             <td class="info">
                 Column Break</td>
@@ -149,7 +119,7 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>7</td>
             <td class="danger" title="Mandatory"><code>status</code></td>
             <td >
                 Select</td>
@@ -167,6 +137,27 @@ Lost Quotation
 Interested
 Converted
 Do Not Contact</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>gender</code></td>
+            <td >
+                Link</td>
+            <td >
+                Gender
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/contacts/gender">Gender</a>
+
+
+                
             </td>
         </tr>
         
@@ -193,18 +184,6 @@ Do Not Contact</pre>
         
         <tr >
             <td>10</td>
-            <td ><code>company_name</code></td>
-            <td >
-                Data</td>
-            <td >
-                Organization Name
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>11</td>
             <td ><code>customer</code></td>
             <td >
                 Link</td>
@@ -225,7 +204,7 @@ Do Not Contact</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>11</td>
             <td ><code>campaign_name</code></td>
             <td >
                 Link</td>
@@ -246,7 +225,7 @@ Do Not Contact</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>12</td>
             <td ><code>image</code></td>
             <td >
                 Attach Image</td>
@@ -258,19 +237,19 @@ Do Not Contact</pre>
         </tr>
         
         <tr class="info">
-            <td>14</td>
+            <td>13</td>
             <td ><code>section_break_12</code></td>
             <td >
                 Section Break</td>
             <td >
-                
+                Follow Up
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>14</td>
             <td ><code>lead_owner</code></td>
             <td >
                 Link</td>
@@ -291,12 +270,24 @@ Do Not Contact</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>15</td>
             <td ><code>column_break_14</code></td>
             <td class="info">
                 Column Break</td>
             <td >
                 
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>contact_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Next Contact Date
                 
             </td>
             <td></td>
@@ -323,21 +314,8 @@ Do Not Contact</pre>
             </td>
         </tr>
         
-        <tr >
-            <td>18</td>
-            <td ><code>contact_date</code></td>
-            <td >
-                Datetime</td>
-            <td >
-                Next Contact Date
-                <p class="text-muted small">
-                    Add to calendar on this date</p>
-            </td>
-            <td></td>
-        </tr>
-        
         <tr class="info">
-            <td>19</td>
+            <td>18</td>
             <td ><code>contact_info</code></td>
             <td >
                 Section Break</td>
@@ -351,7 +329,7 @@ Do Not Contact</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>19</td>
             <td ><code>address_desc</code></td>
             <td >
                 HTML</td>
@@ -363,7 +341,7 @@ Do Not Contact</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>20</td>
             <td ><code>address_html</code></td>
             <td >
                 HTML</td>
@@ -375,7 +353,7 @@ Do Not Contact</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>21</td>
             <td ><code>column_break2</code></td>
             <td class="info">
                 Column Break</td>
@@ -387,7 +365,7 @@ Do Not Contact</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>22</td>
             <td ><code>phone</code></td>
             <td >
                 Data</td>
@@ -396,6 +374,27 @@ Do Not Contact</pre>
                 
             </td>
             <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>salutation</code></td>
+            <td >
+                Link</td>
+            <td >
+                Salutation
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/contacts/salutation">Salutation</a>
+
+
+                
+            </td>
         </tr>
         
         <tr >

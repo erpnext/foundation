@@ -6,3 +6,4 @@ erpnext.setup.setup_wizard.domainify
 erpnext.setup.setup_wizard.industry_type
 erpnext.setup.setup_wizard.sample_data
 erpnext.setup.setup_wizard.setup_wizard
+erpnext.setup.setup_wizard.test_setup_wizard

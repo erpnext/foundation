@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.8.2</a>
+	Version 8.10.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/setup/doctype/company"
@@ -121,6 +121,70 @@ Other</pre>
         
         <tr class="info">
             <td>7</td>
+            <td ><code>sales_settings</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Sales
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>sales_monthly_history</code></td>
+            <td >
+                Small Text</td>
+            <td class="text-muted" title="Hidden">
+                Sales Monthly History
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>monthly_sales_target</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Monthly Sales Target
+                
+            </td>
+            <td>
+                <pre>default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>column_break_goals</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>total_monthly_sales</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Total Monthly Sales
+                
+            </td>
+            <td>
+                <pre>default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
             <td ><code>charts_section</code></td>
             <td >
                 Section Break</td>
@@ -132,7 +196,7 @@ Other</pre>
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>13</td>
             <td ><code>default_letter_head</code></td>
             <td >
                 Link</td>
@@ -153,7 +217,7 @@ Other</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>14</td>
             <td ><code>default_holiday_list</code></td>
             <td >
                 Link</td>
@@ -174,7 +238,7 @@ Other</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>15</td>
             <td ><code>default_terms</code></td>
             <td >
                 Link</td>
@@ -195,7 +259,7 @@ Other</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>16</td>
             <td class="danger" title="Mandatory"><code>default_currency</code></td>
             <td >
                 Link</td>
@@ -216,7 +280,7 @@ Other</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>17</td>
             <td ><code>column_break_10</code></td>
             <td class="info">
                 Column Break</td>
@@ -228,7 +292,7 @@ Other</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>18</td>
             <td class="danger" title="Mandatory"><code>country</code></td>
             <td >
                 Link</td>
@@ -249,7 +313,7 @@ Other</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>19</td>
             <td ><code>create_chart_of_accounts_based_on</code></td>
             <td >
                 Select</td>
@@ -265,7 +329,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>20</td>
             <td ><code>chart_of_accounts</code></td>
             <td >
                 Select</td>
@@ -277,7 +341,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>21</td>
             <td ><code>existing_company</code></td>
             <td >
                 Link</td>
@@ -294,70 +358,6 @@ Existing Company</pre>
 
 
                 
-            </td>
-        </tr>
-        
-        <tr class="info">
-            <td>17</td>
-            <td ><code>sales_settings</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                Sales
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>18</td>
-            <td ><code>sales_monthly_history</code></td>
-            <td >
-                Small Text</td>
-            <td class="text-muted" title="Hidden">
-                Sales Monthly History
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>19</td>
-            <td ><code>sales_target</code></td>
-            <td >
-                Currency</td>
-            <td >
-                Sales Target
-                
-            </td>
-            <td>
-                <pre>default_currency</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>20</td>
-            <td ><code>column_break_goals</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>21</td>
-            <td ><code>total_monthly_sales</code></td>
-            <td >
-                Currency</td>
-            <td >
-                Total Monthly Sales
-                
-            </td>
-            <td>
-                <pre>default_currency</pre>
             </td>
         </tr>
         
@@ -1209,20 +1209,6 @@ Last Day of the Next Month</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="install_country_fixtures" href="#install_country_fixtures" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>install_country_fixtures</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
         <a name="on_trash" href="#on_trash" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>on_trash</b>
@@ -1404,6 +1390,22 @@ Last Day of the Next Month</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.setup.doctype.company.company.<b>get_name_with_abbr</b>
         <i class="text-muted">(name, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.setup.doctype.company.company.install_country_fixtures" href="#erpnext.setup.doctype.company.company.install_country_fixtures" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.setup.doctype.company.company.<b>install_country_fixtures</b>
+        <i class="text-muted">(company)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

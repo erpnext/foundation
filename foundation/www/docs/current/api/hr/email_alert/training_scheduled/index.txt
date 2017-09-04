@@ -1,0 +1,2 @@
+erpnext.hr.email_alert.training_scheduled.training_scheduled
+erpnext.hr.email_alert.training_scheduled
