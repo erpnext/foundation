@@ -67,7 +67,15 @@ def get_list_context(context):
 	context.title = 'ERPNext Bounties'
 	context.no_breadcrumbs = True
 	context.order_by = 'creation desc'
-	context.introduction = '<div style="margin-bottom: 20px;"><a href="new-bounty" class="btn btn-primary">Start a new Bounty</a><a style="margin-left: 10px;" href="/bounties-faq">FAQ</a></div>'
+	context.introduction = '''
+	<div style="margin-bottom: 20px;">
+		<a href="new-bounty" class="btn btn-primary">
+			Start a new Bounty</a>
+	</div>'''
+	context.list_footer = '''
+		<p><a class='text-muted small'
+			href="/bounties-faq">Bounty FAQ</a></p>
+	'''
 	context.fmt_money = fmt_money
 	context.get_paid_backers = get_paid_backers
 

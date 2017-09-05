@@ -3,6 +3,7 @@
 	<a href={{ route }}>
 		<h3>{{ doc.feature_name }}</h3>
 		{% set bounty_progress = ((doc.bounty_collected/doc.goal)*100) %}
+		{% set comments = (json.loads(doc._comments or '[]'))|len %}
 		<div class="progress" style="height: 6px;">
 			<div class="progress-bar progress-bar-success" role="progressbar"
 				aria-valuenow="{{bounty_progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{bounty_progress}}%">
@@ -11,7 +12,10 @@
 		</div>
 		<p>
 			<span class="label">{{ fmt_money(doc.goal, currency="USD") }}</span>
-			<span class="label">Ends on {{ doc.end_date }}</span>
+			{% if comments %}
+			<span class="label">{{ comments }} <i
+				class='octicon octicon-comment-discussion'></i></span>
+			{% endif %}
 			{% set paid_backers = get_paid_backers(doc.bounty_backer) %}
 			{% if paid_backers|len > 0 %}
 			<span class="label">

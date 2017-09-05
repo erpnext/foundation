@@ -36,7 +36,6 @@
 	{% if can_edit %}
 	<a href="/new-bounty?name={{doc.name}}" class="btn btn-default btn-xs">Edit</a>
 	{% endif %}
-	<span style="font-size: 14px; line-height: 44px;" class="pull-right small">{{days_to_go}} days to go</span>
 </h1>
 {% set bounty_progress = ((doc.bounty_collected/doc.goal)*100) %}
 <div class="progress" style="height: 12px;">
@@ -109,6 +108,10 @@
 	<h6 class="text-muted uppercase">About this feature</h6>
 	<p>{{doc.description}}</p>
 </p>
+<p>
+	<p><a href="/bounties-faq" class='text-muted'>Bounties FAQ</a></p>
+</p>
+
 <hr style="margin: 50px 0;">
 <h3>Discuss</h3>
 {% include 'templates/includes/comments/comments.html' %}
