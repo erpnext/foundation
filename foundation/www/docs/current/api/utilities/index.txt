@@ -1,4 +1,6 @@
+erpnext.utilities.user_progress_utils
 erpnext.utilities.transaction_base
+erpnext.utilities.user_progress
 erpnext.utilities.bot
 erpnext.utilities.activation
 erpnext.utilities

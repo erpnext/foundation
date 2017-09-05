@@ -1,0 +1,7 @@
+<!-- add-breadcrumbs -->
+# Término Académico
+
+<img class="screenshot" alt="Academic Term" src="/docs/assets/img/schools/setup/academic-term.png">
+
+
+{next}

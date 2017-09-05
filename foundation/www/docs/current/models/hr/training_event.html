@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.8.2</a>
+	Version 8.10.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/training_event"
@@ -95,7 +95,8 @@ Theory
 Workshop
 Conference
 Exam
-Internet</pre>
+Internet
+Self-Study</pre>
             </td>
         </tr>
         
@@ -299,19 +300,6 @@ Internet</pre>
         
         <tr >
             <td>20</td>
-            <td ><code>send_email</code></td>
-            <td >
-                Check</td>
-            <td >
-                Send Email
-                <p class="text-muted small">
-                    Will send an email about the event to employees with status 'Open'</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>21</td>
             <td ><code>employees</code></td>
             <td >
                 Table</td>
@@ -332,7 +320,7 @@ Internet</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>21</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -349,6 +337,20 @@ Internet</pre>
 
 
                 
+            </td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>employee_emails</code></td>
+            <td >
+                Small Text</td>
+            <td class="text-muted" title="Hidden">
+                Employee Emails
+                
+            </td>
+            <td>
+                <pre>Email</pre>
             </td>
         </tr>
         
@@ -378,37 +380,9 @@ Internet</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="invite_employee" href="#invite_employee" class="text-muted small">
+        <a name="validate" href="#validate" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>invite_employee</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_update" href="#on_update" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_update</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_update_after_submit" href="#on_update_after_submit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_update_after_submit</b>
+		<b>validate</b>
         <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>

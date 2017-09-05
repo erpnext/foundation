@@ -1,0 +1,22 @@
+[
+ {
+  "route": "/docs", 
+  "title": "Docs Home"
+ }, 
+ {
+  "route": "/docs/user", 
+  "title": "User Guide"
+ }, 
+ {
+  "route": "/docs/current/api", 
+  "title": "Server API"
+ }, 
+ {
+  "route": "/docs/current/models", 
+  "title": "Models (Reference)"
+ }, 
+ {
+  "route": "https://github.com/frappe/erpnext/tree/develop/erpnext/docs", 
+  "title": "Improve Docs"
+ }
+]
