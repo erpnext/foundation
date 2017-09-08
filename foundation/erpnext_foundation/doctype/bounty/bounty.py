@@ -80,4 +80,7 @@ def get_list_context(context):
 	context.get_paid_backers = get_paid_backers
 
 def get_paid_backers(backers):
-	return [backer for backer in backers if backer.paid]
+	if backers:
+		return [backer for backer in backers if backer.paid]
+	else:
+		return 0
