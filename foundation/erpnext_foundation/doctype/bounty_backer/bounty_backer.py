@@ -20,7 +20,7 @@ class BountyBacker(Document):
 			self.db_set('paid', 1)
 			# to trigger form events of Bounty doctype
 			doc = frappe.get_doc('Bounty', self.bounty_name)
-			doc.save()
+			doc.save(ignore_permissions=True)
 			return '/' + doc.route
 		return '/bounties'
 
