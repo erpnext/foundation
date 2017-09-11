@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.10.2</a>
+	Version 8.11.1</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/sales_invoice"
@@ -2083,10 +2083,43 @@ Yes</pre>
         
         <tr class="info">
             <td>136</td>
-            <td ><code>recurring_invoice</code></td>
+            <td ><code>subscription_section</code></td>
             <td >
                 Section Break</td>
             <td >
+                Subscription Section
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>137</td>
+            <td ><code>subscription</code></td>
+            <td >
+                Link</td>
+            <td >
+                Subscription
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/subscription/subscription">Subscription</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>138</td>
+            <td ><code>recurring_invoice</code></td>
+            <td >
+                Section Break</td>
+            <td class="text-muted" title="Hidden">
                 Recurring Invoice
                 
             </td>
@@ -2096,7 +2129,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>137</td>
+            <td>139</td>
             <td ><code>column_break11</code></td>
             <td class="info">
                 Column Break</td>
@@ -2108,7 +2141,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>138</td>
+            <td>140</td>
             <td ><code>is_recurring</code></td>
             <td >
                 Check</td>
@@ -2120,7 +2153,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>139</td>
+            <td>141</td>
             <td ><code>recurring_id</code></td>
             <td >
                 Link</td>
@@ -2141,7 +2174,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>140</td>
+            <td>142</td>
             <td ><code>recurring_type</code></td>
             <td >
                 Select</td>
@@ -2159,7 +2192,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>141</td>
+            <td>143</td>
             <td ><code>repeat_on_day_of_month</code></td>
             <td >
                 Int</td>
@@ -2171,7 +2204,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>142</td>
+            <td>144</td>
             <td ><code>end_date</code></td>
             <td >
                 Date</td>
@@ -2183,7 +2216,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>143</td>
+            <td>145</td>
             <td ><code>submit_on_creation</code></td>
             <td >
                 Check</td>
@@ -2195,7 +2228,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>144</td>
+            <td>146</td>
             <td ><code>notify_by_email</code></td>
             <td >
                 Check</td>
@@ -2207,7 +2240,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>145</td>
+            <td>147</td>
             <td ><code>notification_email_address</code></td>
             <td >
                 Code</td>
@@ -2221,7 +2254,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>146</td>
+            <td>148</td>
             <td ><code>recurring_print_format</code></td>
             <td >
                 Link</td>
@@ -2242,7 +2275,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>147</td>
+            <td>149</td>
             <td ><code>column_break12</code></td>
             <td class="info">
                 Column Break</td>
@@ -2254,7 +2287,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>148</td>
+            <td>150</td>
             <td ><code>from_date</code></td>
             <td >
                 Date</td>
@@ -2266,7 +2299,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>149</td>
+            <td>151</td>
             <td ><code>to_date</code></td>
             <td >
                 Date</td>
@@ -2278,7 +2311,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>150</td>
+            <td>152</td>
             <td ><code>next_date</code></td>
             <td >
                 Date</td>
@@ -2290,7 +2323,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>151</td>
+            <td>153</td>
             <td ><code>against_income_account</code></td>
             <td >
                 Small Text</td>
@@ -2610,7 +2643,7 @@ Yearly</pre>
         <a name="on_recurring" href="#on_recurring" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>on_recurring</b>
-        <i class="text-muted">(self, reference_doc)</i>
+        <i class="text-muted">(self, reference_doc, subscription_doc)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
