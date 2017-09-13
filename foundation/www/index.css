@@ -2,3 +2,24 @@
 	padding-top: 0px;
 	margin-top: -3px;
 }
+
+section {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e1e9f0;
+}
+
+section h3 {
+	margin-bottom: 0px;
+}
+section p.small {
+	margin-top: 0px;
+}
+
+section:last-child, .hero {
+	border-bottom: none;
+}
+
+.section-grid .col-sm-4 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
