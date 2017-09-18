@@ -1,0 +1,2 @@
+erpnext.healthcare.web_form.patient_appointments
+erpnext.healthcare.web_form.patient_appointments.patient_appointments
