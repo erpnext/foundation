@@ -1,12 +1,9 @@
 <!-- add-breadcrumbs -->
-
-# Subscription
-
-If you have a contract with the Customer where your organization gives bill to the Customer on a monthly, quarterly, half-yearly or annual basis, you can use subscription feature to make automatic invoices.
+If you have a contract with the Customer where your organization gives bill to the Customer on a monthly, quarterly, half-yearly or annual basis, you can use subscription feature to make auto invoicing.
 
 <img class="screenshot" alt="Subscription" src="{{docs_base_url}}/assets/img/subscription/subscription.png">
 
-### Example
+#### Scenario
 
 Subscription for your hosted ERPNext account requires yearly renewal. We use Sales Invoice for generating proforma invoices. To automate proforma invoicing for renewal, we set original Sales Invoice on the subscription form. Recurring proforma invoice is created automatically just before customer's account is about to expire, and requires renewal. This recurring Proforma Invoice is also emailed automatically to the customer.
 

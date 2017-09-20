@@ -1,6 +1,7 @@
 erpnext.setup.setup_wizard
 erpnext.setup.setup_wizard.utils
 erpnext.setup.setup_wizard.default_website
+erpnext.setup.setup_wizard.healthcare
 erpnext.setup.setup_wizard.install_fixtures
 erpnext.setup.setup_wizard.domainify
 erpnext.setup.setup_wizard.industry_type

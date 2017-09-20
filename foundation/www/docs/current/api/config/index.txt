@@ -3,6 +3,7 @@ erpnext.config.stock
 erpnext.config.desktop
 erpnext.config.maintenance
 erpnext.config.schools
+erpnext.config.healthcare
 erpnext.config.website
 erpnext.config.projects
 erpnext.config.selling
