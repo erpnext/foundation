@@ -1,0 +1,605 @@
+<!-- title: Healthcare Settings -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Healthcare Settings</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.11.4</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/healthcare_settings"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+<span class="label label-info">Single</span>
+
+
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="info">
+            <td>1</td>
+            <td ><code>sb_op_settings</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Out Patient Settings
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>patient_master_name</code></td>
+            <td >
+                Select</td>
+            <td >
+                Patient Name By
+                
+            </td>
+            <td>
+                <pre>Patient Name
+Naming Series</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>manage_customer</code></td>
+            <td >
+                Check</td>
+            <td >
+                Manage Customer
+                <p class="text-muted small">
+                    If checked, a customer will be created, mapped to Patient.
+Patient Invoices will be created against this Customer. You can also select existing Customer while creating Patient.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>default_medical_code_standard</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Medical Code Standard
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/medical_code_standard">Medical Code Standard</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_9</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>collect_registration_fee</code></td>
+            <td >
+                Check</td>
+            <td >
+                Collect Fee for Patient Registration
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>registration_fee</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Registration Fee
+                
+            </td>
+            <td>
+                <pre>Currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>max_visit</code></td>
+            <td >
+                Int</td>
+            <td >
+                Consultations in valid days
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>valid_days</code></td>
+            <td >
+                Int</td>
+            <td >
+                Valid number of days
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>out_patient_sms_alerts</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Out Patient SMS Alerts
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>reg_sms</code></td>
+            <td >
+                Check</td>
+            <td >
+                Patient Registration
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>reg_msg</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Registration Message
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>app_con</code></td>
+            <td >
+                Check</td>
+            <td >
+                Appointment Confirmation
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>app_con_msg</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Confirmation Message
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>no_con</code></td>
+            <td >
+                Check</td>
+            <td >
+                Avoid Confirmation
+                <p class="text-muted small">
+                    Do not confirm if appointment is created for the same day</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>column_break_16</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>app_rem</code></td>
+            <td >
+                Check</td>
+            <td >
+                Appointment Reminder
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>app_rem_msg</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Reminder Message
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>rem_before</code></td>
+            <td >
+                Time</td>
+            <td >
+                Remind Before
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
+            <td ><code>sb_in_ac</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Income Account
+                <p class="text-muted small">
+                    Default income accounts to be used if not set in Physician to book Consultation charges.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>income_account</code></td>
+            <td >
+                Table</td>
+            <td >
+                Income Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/party_account">Party Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>22</td>
+            <td ><code>sb_r_ac</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Receivable Account
+                <p class="text-muted small">
+                    Default receivable accounts to be used if not set in Patient to book Consultation charges.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>receivable_account</code></td>
+            <td >
+                Table</td>
+            <td >
+                Receivable Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/party_account">Party Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>24</td>
+            <td ><code>sb_lab_settings</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Laboratory Settings
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>require_sample_collection</code></td>
+            <td >
+                Check</td>
+            <td >
+                Manage Sample Collection
+                <p class="text-muted small">
+                    Create documents for sample collection</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>require_test_result_approval</code></td>
+            <td >
+                Check</td>
+            <td >
+                Require Lab Test Approval
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>column_break_34</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>28</td>
+            <td ><code>employee_name_and_designation_in_print</code></td>
+            <td >
+                Check</td>
+            <td >
+                Employee name and designation in print
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>29</td>
+            <td ><code>custom_signature_in_print</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Custom Signature in Print
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>30</td>
+            <td ><code>laboratory_sms_alerts</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Laboratory SMS Alerts
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>31</td>
+            <td ><code>sms_printed</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Result Printed
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>32</td>
+            <td ><code>column_break_28</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>sms_emailed</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Result Emailed
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.healthcare.doctype.healthcare_settings.healthcare_settings</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>HealthcareSettings</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_account" href="#erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_account" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.<b>get_account</b>
+        <i class="text-muted">(parent_type, parent_field, parent, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_income_account" href="#erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_income_account" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.<b>get_income_account</b>
+        <i class="text-muted">(physician, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_receivable_account" href="#erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_receivable_account" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.<b>get_receivable_account</b>
+        <i class="text-muted">(company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_sms_text</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_sms_text" href="#erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.get_sms_text" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.<b>get_sms_text</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.send_registration_sms" href="#erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.send_registration_sms" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.healthcare_settings.healthcare_settings.<b>send_registration_sms</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

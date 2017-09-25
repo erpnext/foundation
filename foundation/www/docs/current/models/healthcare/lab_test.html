@@ -1,0 +1,1154 @@
+<!-- title: Lab Test -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Lab Test</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.11.4</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/lab_test"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabLab Test</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Series
+                
+            </td>
+            <td>
+                <pre>LP-</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>invoice</code></td>
+            <td >
+                Link</td>
+            <td >
+                Invoice
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/sales_invoice">Sales Invoice</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>patient</code></td>
+            <td >
+                Link</td>
+            <td >
+                Patient
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/patient">Patient</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>patient_name</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Patient Name
+                
+            </td>
+            <td>
+                <pre>patient.patient_name</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>patient_age</code></td>
+            <td >
+                Data</td>
+            <td >
+                Age
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td class="danger" title="Mandatory"><code>patient_sex</code></td>
+            <td >
+                Select</td>
+            <td >
+                Gender
+                
+            </td>
+            <td>
+                <pre>
+Male
+Female</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>physician</code></td>
+            <td >
+                Link</td>
+            <td >
+                Doctor
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/physician">Physician</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>email</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Email
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>mobile</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Mobile
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>c_b</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/medical_department">Medical Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td class="text-muted" title="Hidden">
+                Status
+                
+            </td>
+            <td>
+                <pre>Draft
+Completed
+Approved
+Rejected
+Cancelled</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>submitted_date</code></td>
+            <td >
+                Datetime</td>
+            <td class="text-muted" title="Hidden">
+                Submitted Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>approved_date</code></td>
+            <td >
+                Datetime</td>
+            <td class="text-muted" title="Hidden">
+                Approved Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>sample</code></td>
+            <td >
+                Link</td>
+            <td >
+                Sample ID
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/sample_collection">Sample Collection</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>result_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Result Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>employee</code></td>
+            <td >
+                Link</td>
+            <td >
+                Lab Technician
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee">Employee</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>employee_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Technician Name
+                
+            </td>
+            <td>
+                <pre>employee.employee_name</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>employee_designation</code></td>
+            <td >
+                Data</td>
+            <td >
+                Designation
+                
+            </td>
+            <td>
+                <pre>employee.designation</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>user</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                User
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>report_preference</code></td>
+            <td >
+                Data</td>
+            <td >
+                Report Preference
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>23</td>
+            <td ><code>sb_first</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>test_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Test Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>column_break_26</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td class="danger" title="Mandatory"><code>template</code></td>
+            <td >
+                Link</td>
+            <td >
+                Test Template
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/lab_test_template">Lab Test Template</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>test_group</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Test Group
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/item_group">Item Group</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>28</td>
+            <td ><code>sb_normal</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>29</td>
+            <td ><code>normal_test_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/normal_test_items">Normal Test Items</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>30</td>
+            <td ><code>sb_special</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>31</td>
+            <td ><code>special_test_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/special_test_items">Special Test Items</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>32</td>
+            <td ><code>sb_sensitivity</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>sensitivity_test_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/sensitivity_test_items">Sensitivity Test Items</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>34</td>
+            <td ><code>sb_comments</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>35</td>
+            <td ><code>test_comment</code></td>
+            <td >
+                Text</td>
+            <td >
+                Comments
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>36</td>
+            <td ><code>sb_customresult</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Custom Result
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>37</td>
+            <td ><code>custom_result</code></td>
+            <td >
+                Text Editor</td>
+            <td >
+                Custom Result
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>38</td>
+            <td ><code>email_sent</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>39</td>
+            <td ><code>sms_sent</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>40</td>
+            <td ><code>printed</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>41</td>
+            <td ><code>normal_toggle</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>42</td>
+            <td ><code>special_toggle</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>43</td>
+            <td ><code>sensitivity_toggle</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>44</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/lab_test">Lab Test</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>45</td>
+            <td ><code>prescription</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Prescription
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/lab_prescription">Lab Prescription</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.healthcare.doctype.lab_test.lab_test</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>LabTest</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="after_insert" href="#after_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>after_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="load_test_from_template" href="#load_test_from_template" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>load_test_from_template</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_cancel" href="#on_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_submit" href="#on_submit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_submit</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update" href="#on_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_compounds" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_compounds" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_compounds</b>
+        <i class="text-muted">(template, lab_test, is_group)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.lab_test.lab_test.create_invoice</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_invoice" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_invoice</b>
+        <i class="text-muted">(company, patient, lab_tests, prescriptions)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_item_line" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_item_line" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_item_line</b>
+        <i class="text-muted">(test_code, sales_invoice)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_lab_test" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_lab_test" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_lab_test</b>
+        <i class="text-muted">(patient, template, prescription, consultation, invoice)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_lab_test_doc" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_lab_test_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_lab_test_doc</b>
+        <i class="text-muted">(invoice, consultation, patient, template)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.lab_test.lab_test.create_lab_test_from_desk</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_lab_test_from_desk" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_lab_test_from_desk" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_lab_test_from_desk</b>
+        <i class="text-muted">(patient, template, prescription, invoice=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_normals" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_normals" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_normals</b>
+        <i class="text-muted">(template, lab_test)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_sample_collection" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_sample_collection" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_sample_collection</b>
+        <i class="text-muted">(lab_test, template, patient, invoice)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_sample_doc" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_sample_doc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_sample_doc</b>
+        <i class="text-muted">(template, patient, invoice)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_specials" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_specials" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_specials</b>
+        <i class="text-muted">(template, lab_test)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.create_test_from_template" href="#erpnext.healthcare.doctype.lab_test.lab_test.create_test_from_template" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>create_test_from_template</b>
+        <i class="text-muted">(lab_test)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.delete_lab_test_from_medical_record" href="#erpnext.healthcare.doctype.lab_test.lab_test.delete_lab_test_from_medical_record" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>delete_lab_test_from_medical_record</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.lab_test.lab_test.get_employee_by_user_id</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.get_employee_by_user_id" href="#erpnext.healthcare.doctype.lab_test.lab_test.get_employee_by_user_id" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>get_employee_by_user_id</b>
+        <i class="text-muted">(user_id)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.lab_test.lab_test.get_lab_test_prescribed</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.get_lab_test_prescribed" href="#erpnext.healthcare.doctype.lab_test.lab_test.get_lab_test_prescribed" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>get_lab_test_prescribed</b>
+        <i class="text-muted">(patient)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.insert_lab_test_to_medical_record" href="#erpnext.healthcare.doctype.lab_test.lab_test.insert_lab_test_to_medical_record" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>insert_lab_test_to_medical_record</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.load_result_format" href="#erpnext.healthcare.doctype.lab_test.lab_test.load_result_format" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>load_result_format</b>
+        <i class="text-muted">(lab_test, template, prescription, invoice)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.lab_test.lab_test.update_lab_test_print_sms_email_status</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.update_lab_test_print_sms_email_status" href="#erpnext.healthcare.doctype.lab_test.lab_test.update_lab_test_print_sms_email_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>update_lab_test_print_sms_email_status</b>
+        <i class="text-muted">(print_sms_email, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.lab_test.lab_test.update_status</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.lab_test.lab_test.update_status" href="#erpnext.healthcare.doctype.lab_test.lab_test.update_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.lab_test.lab_test.<b>update_status</b>
+        <i class="text-muted">(status, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/lab_test">Lab Test</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

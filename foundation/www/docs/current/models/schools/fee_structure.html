@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.1</a>
+	Version 8.11.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/schools/doctype/fee_structure"
@@ -42,7 +42,42 @@
         
         <tr >
             <td>1</td>
-            <td class="danger" title="Mandatory"><code>program</code></td>
+            <td ><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Naming Series
+                
+            </td>
+            <td>
+                <pre>FS.</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>student_category</code></td>
+            <td >
+                Link</td>
+            <td >
+                Student Category
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/schools/student_category">Student Category</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>program</code></td>
             <td >
                 Link</td>
             <td >
@@ -62,21 +97,7 @@
         </tr>
         
         <tr >
-            <td>2</td>
-            <td ><code>naming_series</code></td>
-            <td >
-                Select</td>
-            <td >
-                Naming Series
-                
-            </td>
-            <td>
-                <pre>FS.</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>3</td>
+            <td>4</td>
             <td ><code>column_break_2</code></td>
             <td class="info">
                 Column Break</td>
@@ -88,7 +109,7 @@
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>5</td>
             <td class="danger" title="Mandatory"><code>academic_term</code></td>
             <td >
                 Link</td>
@@ -109,12 +130,12 @@
         </tr>
         
         <tr >
-            <td>5</td>
-            <td ><code>student_category</code></td>
+            <td>6</td>
+            <td ><code>academic_year</code></td>
             <td >
                 Link</td>
             <td >
-                Student Category
+                Academic Year
                 
             </td>
             <td>
@@ -122,7 +143,7 @@
                 
 
 
-<a href="/docs/current/models/schools/student_category">Student Category</a>
+<a href="/docs/current/models/schools/academic_year">Academic Year</a>
 
 
                 
@@ -130,7 +151,7 @@
         </tr>
         
         <tr class="info">
-            <td>6</td>
+            <td>7</td>
             <td ><code>section_break_4</code></td>
             <td >
                 Section Break</td>
@@ -142,7 +163,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>8</td>
             <td class="danger" title="Mandatory"><code>components</code></td>
             <td >
                 Table</td>
@@ -163,7 +184,7 @@
         </tr>
         
         <tr class="info">
-            <td>8</td>
+            <td>9</td>
             <td ><code>section_break_6</code></td>
             <td >
                 Section Break</td>
@@ -175,7 +196,19 @@
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>10</td>
+            <td ><code>column_break_11</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
             <td ><code>total_amount</code></td>
             <td >
                 Currency</td>
@@ -184,6 +217,135 @@
                 
             </td>
             <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>accounts</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Accounts
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td class="danger" title="Mandatory"><code>receivable_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Receivable Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>income_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Income Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>column_break_16</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>cost_center</code></td>
+            <td >
+                Link</td>
+            <td >
+                Cost Center
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/cost_center">Cost Center</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/schools/fee_structure">Fee Structure</a>
+
+
+                
+            </td>
         </tr>
         
     </tbody>
@@ -241,11 +403,47 @@
 
 	
 
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.schools.doctype.fee_structure.fee_structure.make_fee_schedule</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.schools.doctype.fee_structure.fee_structure.make_fee_schedule" href="#erpnext.schools.doctype.fee_structure.fee_structure.make_fee_schedule" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.schools.doctype.fee_structure.fee_structure.<b>make_fee_schedule</b>
+        <i class="text-muted">(source_name, target_doc=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
 
     
     
         <h4>Linked In:</h4>
         <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/schools/fee_schedule">Fee Schedule</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/schools/fee_structure">Fee Structure</a>
+
+</li>
+			
         
 			
             <li>
