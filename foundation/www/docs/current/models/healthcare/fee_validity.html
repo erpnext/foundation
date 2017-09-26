@@ -1,0 +1,176 @@
+<!-- title: Fee Validity -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Fee Validity</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.11.4</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/fee_validity"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabFee Validity</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>physician</code></td>
+            <td >
+                Link</td>
+            <td >
+                Physician
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/physician">Physician</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>patient</code></td>
+            <td >
+                Link</td>
+            <td >
+                Patient
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/patient">Patient</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>max_visit</code></td>
+            <td >
+                Int</td>
+            <td >
+                Max number of visit
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>visited</code></td>
+            <td >
+                Int</td>
+            <td >
+                Visited yet
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>valid_till</code></td>
+            <td >
+                Date</td>
+            <td >
+                Valid till
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>ref_invoice</code></td>
+            <td >
+                Link</td>
+            <td >
+                Reference Inv
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/sales_invoice">Sales Invoice</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.healthcare.doctype.fee_validity.fee_validity</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>FeeValidity</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

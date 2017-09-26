@@ -1,0 +1,866 @@
+<!-- title: Patient -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Patient</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.11.4</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/patient"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabPatient</code></p>
+
+
+Patient
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="info">
+            <td>1</td>
+            <td ><code>basic_info</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Patient Demographics
+                
+            </td>
+            <td>
+                <pre>fa fa-user</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Patient ID
+                
+            </td>
+            <td>
+                <pre>PID-</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>patient_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Full Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>sex</code></td>
+            <td >
+                Select</td>
+            <td >
+                Gender
+                
+            </td>
+            <td>
+                <pre>
+Male
+Female</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>blood_group</code></td>
+            <td >
+                Select</td>
+            <td >
+                Blood Group
+                
+            </td>
+            <td>
+                <pre>
+A Positive
+A Negative
+AB Positive
+AB Negative
+B Positive
+B Negative
+O Positive
+O Negative</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>dob</code></td>
+            <td >
+                Date</td>
+            <td >
+                DOB
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>age_html</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Age
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td class="text-muted" title="Hidden">
+                Status
+                
+            </td>
+            <td>
+                <pre>Active
+Dormant
+Open</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>image</code></td>
+            <td >
+                Attach Image</td>
+            <td class="text-muted" title="Hidden">
+                Image
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>column_break_14</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>customer</code></td>
+            <td >
+                Link</td>
+            <td >
+                Customer
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/selling/customer">Customer</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>report_preference</code></td>
+            <td >
+                Select</td>
+            <td >
+                Report Preference
+                
+            </td>
+            <td>
+                <pre>
+Email
+Print</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>mobile</code></td>
+            <td >
+                Data</td>
+            <td >
+                Mobile
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>email</code></td>
+            <td >
+                Data</td>
+            <td >
+                Email
+                
+            </td>
+            <td>
+                <pre>Email</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>phone</code></td>
+            <td >
+                Data</td>
+            <td >
+                Phone
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>disabled</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                Disabled
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>18</td>
+            <td ><code>sb_relation</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Patient Relation
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>patient_relation</code></td>
+            <td >
+                Table</td>
+            <td >
+                Patient Relation
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/patient_relation">Patient Relation</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
+            <td ><code>allergy_medical_and_surgical_history</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Allergies, Medical and Surgical History
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>allergies</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Allergies
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>medication</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Medication
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>column_break_20</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>medical_history</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Medical History
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>surgical_history</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Surgical History
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>26</td>
+            <td ><code>personal_and_social_history</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Personal and Social History
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>occupation</code></td>
+            <td >
+                Data</td>
+            <td >
+                Occupation
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>28</td>
+            <td ><code>column_break_25</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>29</td>
+            <td ><code>marital_status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Marital Status
+                
+            </td>
+            <td>
+                <pre>Single
+Married
+Divorced
+Widow</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>30</td>
+            <td ><code>risk_factors</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Risk Factors
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>31</td>
+            <td ><code>tobacco_past_use</code></td>
+            <td >
+                Data</td>
+            <td >
+                Tobacco Past Use
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>32</td>
+            <td ><code>tobacco_current_use</code></td>
+            <td >
+                Data</td>
+            <td >
+                Tobacco Current Use
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>alcohol_past_use</code></td>
+            <td >
+                Data</td>
+            <td >
+                Alcohol Past Use
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>34</td>
+            <td ><code>alcohol_current_use</code></td>
+            <td >
+                Data</td>
+            <td >
+                Alcohol Current Use
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>35</td>
+            <td ><code>column_break_32</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>36</td>
+            <td ><code>surrounding_factors</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Occupational Hazards and Environmental Factors
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>37</td>
+            <td ><code>other_risk_factors</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Other Risk Factors
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>38</td>
+            <td ><code>more_info</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                More Information
+                
+            </td>
+            <td>
+                <pre>fa fa-file-text</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>39</td>
+            <td ><code>patient_details</code></td>
+            <td >
+                Text</td>
+            <td >
+                Patient Details
+                <p class="text-muted small">
+                    Additional information regarding the patient</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>40</td>
+            <td ><code>ac_sb</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Account Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>41</td>
+            <td ><code>default_currency</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Default Currency
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/geo/currency">Currency</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.healthcare.doctype.patient.patient</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Patient</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_as_website_user" href="#add_as_website_user" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_as_website_user</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="after_insert" href="#after_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>after_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="autoname" href="#autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>autoname</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_age" href="#get_age" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_age</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_patient_name" href="#get_patient_name" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_patient_name</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="invoice_patient_registration" href="#invoice_patient_registration" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>invoice_patient_registration</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update" href="#on_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.patient.patient.create_customer" href="#erpnext.healthcare.doctype.patient.patient.create_customer" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.patient.patient.<b>create_customer</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.patient.patient.get_patient_detail</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.patient.patient.get_patient_detail" href="#erpnext.healthcare.doctype.patient.patient.get_patient_detail" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.patient.patient.<b>get_patient_detail</b>
+        <i class="text-muted">(patient, company=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.patient.patient.make_invoice" href="#erpnext.healthcare.doctype.patient.patient.make_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.patient.patient.<b>make_invoice</b>
+        <i class="text-muted">(patient, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/consultation">Consultation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/fee_validity">Fee Validity</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/lab_test">Lab Test</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/patient_appointment">Patient Appointment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/patient_medical_record">Patient Medical Record</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/patient_relation">Patient Relation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/sample_collection">Sample Collection</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/vital_signs">Vital Signs</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->
