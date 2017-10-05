@@ -1,0 +1,237 @@
+<!-- title: Drug Prescription -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Drug Prescription</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.11.4</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/drug_prescription"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+<span class="label label-info">Child Table</span>
+
+
+    <p><b>Table Name:</b> <code>tabDrug Prescription</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>drug_code</code></td>
+            <td >
+                Link</td>
+            <td >
+                Drug Code
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/item">Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>drug_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Description/Strength
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>dosage</code></td>
+            <td >
+                Link</td>
+            <td >
+                Dosage
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/prescription_dosage">Prescription Dosage</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>period</code></td>
+            <td >
+                Link</td>
+            <td >
+                Period
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/prescription_duration">Prescription Duration</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>dosage_form</code></td>
+            <td >
+                Link</td>
+            <td >
+                Dosage Form
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/dosage_form">Dosage Form</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>column_break_7</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>comment</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Comment
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>use_interval</code></td>
+            <td >
+                Check</td>
+            <td >
+                Dosage by time interval
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>interval</code></td>
+            <td >
+                Int</td>
+            <td >
+                Interval
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>in_every</code></td>
+            <td >
+                Select</td>
+            <td >
+                Interval UOM
+                
+            </td>
+            <td>
+                <pre>
+Hour
+Day</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>update_schedule</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                Update Schedule
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    
+    
+    <h4>Child Table Of</h4>
+    <ul>
+    
+        <li>
+
+
+<a href="/docs/current/models/healthcare/consultation">Consultation</a>
+
+</li>
+    
+    </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

@@ -1,0 +1,504 @@
+<!-- title: Vital Signs -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Vital Signs</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 8.11.4</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/vital_signs"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabVital Signs</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>patient</code></td>
+            <td >
+                Link</td>
+            <td >
+                Patient
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/patient">Patient</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>appointment</code></td>
+            <td >
+                Link</td>
+            <td >
+                Appointment
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/patient_appointment">Patient Appointment</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>consultation</code></td>
+            <td >
+                Link</td>
+            <td >
+                Consultation
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/consultation">Consultation</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>column_break_2</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td class="danger" title="Mandatory"><code>signs_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td class="danger" title="Mandatory"><code>signs_time</code></td>
+            <td >
+                Time</td>
+            <td >
+                Time
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>8</td>
+            <td ><code>sb_vs</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Vital Signs
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>temperature</code></td>
+            <td >
+                Data</td>
+            <td >
+                Body Temperature
+                <p class="text-muted small">
+                    Presence of a fever (temp &gt; 38.5 °C/101.3 °F or sustained temp &gt; 38 °C/100.4 °F)</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>pulse</code></td>
+            <td >
+                Data</td>
+            <td >
+                Heart Rate / Pulse
+                <p class="text-muted small">
+                    Adults' pulse rate is anywhere between 50 and 80 beats per minute.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>respiratory_rate</code></td>
+            <td >
+                Data</td>
+            <td >
+                Respiratory rate
+                <p class="text-muted small">
+                    Normal reference range for an adult is 16–20 breaths/minute (RCP 2012)</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>column_break_8</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>bp_systolic</code></td>
+            <td >
+                Data</td>
+            <td >
+                Blood Pressure (systolic)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>bp_diastolic</code></td>
+            <td >
+                Data</td>
+            <td >
+                Blood Pressure (diastolic)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>bp</code></td>
+            <td >
+                Data</td>
+            <td >
+                Blood Pressure
+                <p class="text-muted small">
+                    Normal resting blood pressure in an adult is approximately 120 mmHg systolic, and 80 mmHg diastolic, abbreviated "120/80 mmHg"</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>vital_signs_note</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Notes
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>17</td>
+            <td ><code>sb_nutrition_values</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Nutrition Values
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>height</code></td>
+            <td >
+                Float</td>
+            <td >
+                Height (In Meter)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>weight</code></td>
+            <td >
+                Float</td>
+            <td >
+                Weight (In Kilogram)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>bmi</code></td>
+            <td >
+                Float</td>
+            <td >
+                BMI
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>column_break_14</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>nutrition_note</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Notes
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/vital_signs">Vital Signs</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.healthcare.doctype.vital_signs.vital_signs</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>VitalSigns</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_cancel" href="#on_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_submit" href="#on_submit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_submit</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.vital_signs.vital_signs.delete_vital_signs_from_medical_record" href="#erpnext.healthcare.doctype.vital_signs.vital_signs.delete_vital_signs_from_medical_record" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.vital_signs.vital_signs.<b>delete_vital_signs_from_medical_record</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.vital_signs.vital_signs.insert_vital_signs_to_medical_record" href="#erpnext.healthcare.doctype.vital_signs.vital_signs.insert_vital_signs_to_medical_record" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.vital_signs.vital_signs.<b>insert_vital_signs_to_medical_record</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.vital_signs.vital_signs.set_subject_field" href="#erpnext.healthcare.doctype.vital_signs.vital_signs.set_subject_field" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.vital_signs.vital_signs.<b>set_subject_field</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/vital_signs">Vital Signs</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->
