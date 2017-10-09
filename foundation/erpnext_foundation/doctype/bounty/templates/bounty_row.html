@@ -17,7 +17,7 @@
 				class='octicon octicon-comment-discussion'></i></span>
 			{% endif %}
 			{% set paid_backers = get_paid_backers(doc.bounty_backer) %}
-			{% if paid_backers and paid_backers|len > 0 %}
+			{% if paid_backers|len > 0 %}
 			<span class="label">
 				{{ paid_backers|len }}
 				{% if paid_backers|len > 1 %}
