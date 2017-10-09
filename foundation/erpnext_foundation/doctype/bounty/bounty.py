@@ -37,6 +37,7 @@ class Bounty(WebsiteGenerator):
 		context.comment_list = get_comment_list(self.doctype, self.name)
 		context.can_edit = can_edit
 
+
 	def validate(self):
 		from frappe.utils.user import get_user_fullname
 
@@ -70,14 +71,14 @@ def get_list_context(context):
 	context.introduction = '''
 	<div style="margin-bottom: 20px;">
 		<a href="new-bounty" class="btn btn-primary">
-			Start a new Bounty</a>
+			Start a new bounty</a>
 	</div>'''
 	context.list_footer = '''
 		<p><a class='text-muted small'
 			href="/bounties-faq">Bounty FAQ</a></p>
 	'''
 	context.fmt_money = fmt_money
-	context.get_paid_backers = get_paid_backers
+
 
 def get_paid_backers(backers):
 	return [backer for backer in backers if backer.paid]
