@@ -34,8 +34,8 @@
 {% macro show_member(s) %}
 	<div class='col-sm-4' style='height: 130px; padding-bottom: 30px'>
 		<p>
-			<a class='bold' href="/{{ s.route }}">{{ s.title[:25] }}</a><br>
-			{{ s.introduction[:100] }}
+			<a class='bold' href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a><br>
+			{{ s.introduction and s.introduction[:100] }}
 		</p>
 	</div>
 {% endmacro %}
