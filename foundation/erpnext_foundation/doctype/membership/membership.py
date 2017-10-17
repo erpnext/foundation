@@ -5,9 +5,24 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
-from frappe.utils import add_days, add_years, nowdate, getdate
+from frappe.utils import add_days, add_years, nowdate, getdate, cint, fmt_money
 from frappe import _
 import foundation
+
+currency_wise_membership_plan_mapper = {
+		"Gold": {
+			"USD": 5000,
+			"INR": 300000,
+		},
+		"Silver": {
+			"USD": 1500,
+			"INR": 100000,
+		},
+		"Individual": {
+			"USD": 200,
+			"INR": 10000,
+		}
+	}
 
 class Membership(Document):
 	def validate(self):
@@ -61,3 +76,14 @@ class Membership(Document):
 				"member": self.member,
 				"show_in_website": 1
 			}).insert(ignore_mandatory=True, ignore_permissions = True)
+
+	def validate_payment(self):
+		membership_fees = currency_wise_membership_plan_mapper\
+					.get(self.membership_type, {}).get(self.currency)
+
+		if cint(membership_fees) != cint(self.amount):
+			formated_membership_fees = fmt_money(membership_fees, precision=0, currency=self.currency)
+
+			frappe.msgprint("For Membership Type: {0}, the fees are {1}".format(self.membership_type,
+				formated_membership_fees), raise_exception=frappe.ValidationError,
+				title="Validate Payment Amount", indicator='red')
