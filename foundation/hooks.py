@@ -121,8 +121,8 @@ scheduler_events = {
 	# 	"foundation.tasks.all"
 	# ],
 	"daily": [
-		"erpnext_foundation.doctype.service_provider.service_provider.send_alert_to_inactive_service_providers",
-		"erpnext_foundation.doctype.service_provider.service_provider.unpublish_service_provider",
+		"foundation.erpnext_foundation.doctype.service_provider.service_provider.send_alert_to_inactive_service_providers",
+		"foundation.erpnext_foundation.doctype.service_provider.service_provider.unpublish_service_provider",
 	],
 	# "hourly": [
 	# 	"foundation.tasks.hourly"
