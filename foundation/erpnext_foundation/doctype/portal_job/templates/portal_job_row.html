@@ -6,6 +6,7 @@
 			<span class='label'>{{ frappe.format_date(doc.creation) }}</span>
 			<span class='label'>{{ doc.country }}</span>
 			<span class='label'>{{ doc.job_type }}</span>
+			<span class='label'>{{ doc.status }}</span>
 		</p>
 		<p>{{ html2text(doc.description)[:200] }}{% if doc.description|len > 200 %}...{% endif %}</p>
 	</a>
