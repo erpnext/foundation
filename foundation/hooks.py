@@ -116,23 +116,25 @@ portal_menu_items = [
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"foundation.tasks.all"
-# 	],
-# 	"daily": [
-# 		"foundation.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"foundation.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"foundation.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"foundation.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+	# "all": [
+	# 	"foundation.tasks.all"
+	# ],
+	"daily": [
+		"foundation.erpnext_foundation.doctype.service_provider.service_provider.send_alert_to_inactive_service_providers",
+		"foundation.erpnext_foundation.doctype.service_provider.service_provider.unpublish_service_provider",
+		"foundation.erpnext_foundation.doctype.service_provider.service_provider.publish_service_provider",
+	],
+	# "hourly": [
+	# 	"foundation.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"foundation.tasks.weekly"
+	# ]
+	# "monthly": [
+	# 	"foundation.tasks.monthly"
+	# ]
+}
 
 # Testing
 # -------
