@@ -43,15 +43,19 @@ website_context = {
 	"copyright": "ERPNext Open Source Software Foundation",
 	"footer_address": "<br>ERPNext is and will always be 100% Open Source",
 	"top_bar_items": [
-			{"label": "Docs", "url": "/docs", "right": 1},
-			{"label": "Services", "url": "/service-providers", "right": 1},
-			{"label": "Jobs", "url": "/erpnext-jobs", "right": 1},
-			{"label": "Chapters", "url": "/chapters", "right": 1},
-			{"label": "Bounties", "url": "/bounties", "right": 1},
-			{"label": '<span class="indicator blue">Conference</span>', "url": "/conf/2017", "right": 1},
+			{"label": "User Manual", "url": "/docs", "right": 1},
+			{"label": "Foundation", "child_items":[
+				{"label": "Chapter", "url": "/service-providers","right": 1},
+				{"label": "Module Leader", "url": "module-leaders","right": 1},
+				{"label": "Foundation Fellow", "url": "#","right": 1}
+			], "right":1},
+			{"label": "Services", "child_items":[
+				{"label": "Service Providers", "url": "/service-providers","right": 1},
+				{"label": "Hire Developer", "url": "/erpnext-jobs", "right": 1},
+			], "right":1},
 			{"label": "About", "url": "/about", "right": 1},
 	],
-	"hide_login": 1,
+	"hide_login": 0,
 	"favicon": "/assets/frappe_theme/img/favicon.ico"
 }
 # website user home page (by Role)
@@ -70,6 +74,7 @@ website_context = {
 
 portal_menu_items = [
 	{'label': 'My Profile', 'route': '/service-provider-settings'},
+	{'label': 'Module Leader', 'route': '/module-leader-settings'},
 	{'label': 'Membership', 'route': '/members/details'},
 	{'label': 'Conference Talks', 'route': '/conference-talk-proposal'},
 	{'label': 'Jobs', 'route': '/my-jobs'},

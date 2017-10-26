@@ -1,0 +1,61 @@
+{% extends "templates/web.html" %}
+
+{% from "foundation/templates/includes/macros.html" import media %}
+
+{% block page_content %}
+<h1 class="media-heading">{{ title }}</h1>
+<section>
+    <div class="media" style="margin: 45px 0px; ">
+        <div class="media-left" style='min-width: 80px;'>
+            <a href="#">
+                <img class="media-object"
+                    src="{{ image }}"
+                    style="max-width: 80px; ">
+            </a>
+        </div>
+        <div class="media-body">
+            {{ introduction }}
+            <table class='table table-bordered small'
+                style='max-width: 400px; margin-bottom: 0px; margin-top: 20px'>
+                 <tr>
+                    <td style='width: 38.2%'>Module Name</td>
+                    <td>{{ module_name }}</td>
+                </tr>
+                <tr>
+                    <td style='width: 38.2%'>Country</td>
+                    <td>{{ country }}</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>{{ (address or '').replace('\n', '<br>') }}</td>
+                </tr>
+                </tr>
+                    <td>Phone</td>
+                    <td>{{ phone }}</td>
+                </tr>
+                </tr>
+                    <td>Email</td>
+                    <td><a href="mailto:{{ email }}" target="_blank">
+                        {{ email }}</a></td>
+                </tr>
+                 </tr>
+                    <td>Disscuss Id</td>
+                    <td>{{ discuss_ids }}</td>
+                </tr>
+                </tr>
+                    <td>Website</td>
+                    <td><a href="{{ website }}" target="_blank">{{ website }}</a></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</section>
+<section>
+    {{ details }}
+</section>
+<section>
+<p><a class='btn-primary btn' href="mailto:{{ email }}">Contact {{ title }}</a></p>
+</section>
+
+{% endblock %}
