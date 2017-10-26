@@ -51,7 +51,7 @@ website_context = {
 			], "right":1},
 			{"label": "Services", "child_items":[
 				{"label": "Service Providers", "url": "/service-providers","right": 1},
-				{"label": "Hire Developer", "url": "/erpnext-jobs", "right": 1},
+				{"label": "Freelancer Jobs", "url": "/erpnext-jobs", "right": 1},
 			], "right":1},
 			{"label": "About", "url": "/about", "right": 1},
 	],
