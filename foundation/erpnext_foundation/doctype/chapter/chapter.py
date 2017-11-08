@@ -11,13 +11,20 @@ from frappe import _
 class Chapter(WebsiteGenerator):
 	def get_context(self, context):
 		context.no_cache = True
+		context.parents = [dict(label='View Chapters',
+			route='chapters', title='View Chapters')]
+		context.published = self.published
 
 	def validate(self):
+		if not self.route:
+			self.route = 'chapters/' + self.scrub(self.title)
+
+
 		chapter_head = self.chapter_head
 		chapter = frappe.get_all('Chapter', filters={'published': True}, fields=['chapter_head'])
 
 		# if chapter_head in [d.chapter_head for d in chapter]:
-			# frappe.throw(_('You are not allow to create more than one Chapter'))
+		# 	frappe.throw(_('You are not allow to create more than one Chapter'))
 
 	def enable(self):
 		chapter = frappe.get_doc('Chapter', frappe.form_dict.name)
