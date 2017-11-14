@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 9.2.10</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/party.py"
@@ -194,6 +194,35 @@
         <i class="text-muted">(party_type, party, company)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.party.get_party_shipping_address" href="#erpnext.accounts.party.get_party_shipping_address" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.party.<b>get_party_shipping_address</b>
+        <i class="text-muted">(doctype, name)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Returns an Address name (best guess) for the given doctype and name for which `address_type == 'Shipping'` is true.
+and/or `is_shipping_address = 1`.
+
+It returns an empty string if there is no matching record.
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>doctype</code></strong> -  Party Doctype</li>
+<li><p><strong><code>name</code></strong> -  Party name</p>
+
+<p>:return: String</p></li>
+</ul>
 </div>
 	<br>
 

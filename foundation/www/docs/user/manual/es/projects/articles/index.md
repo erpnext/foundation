@@ -1,0 +1,4 @@
+<!-- add-breadcrumbs -->
+# Artículos
+
+{index}

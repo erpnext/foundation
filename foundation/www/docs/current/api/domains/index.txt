@@ -1,0 +1,8 @@
+erpnext.domains.education
+erpnext.domains.manufacturing
+erpnext.domains.healthcare
+erpnext.domains.distribution
+erpnext.domains.retail
+erpnext.domains
+erpnext.domains.services
+erpnext.domains.hospitality

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 9.2.10</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/patient_appointment"
@@ -451,6 +451,20 @@ Cancelled</pre>
 	<br>
 
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="save" href="#save" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>save</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
 
@@ -464,7 +478,7 @@ Cancelled</pre>
         <a name="erpnext.healthcare.doctype.patient_appointment.patient_appointment.appointment_cancel" href="#erpnext.healthcare.doctype.patient_appointment.patient_appointment.appointment_cancel" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.healthcare.doctype.patient_appointment.patient_appointment.<b>appointment_cancel</b>
-        <i class="text-muted">(appointmentId)</i>
+        <i class="text-muted">(appointment_id)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -568,7 +582,17 @@ Cancelled</pre>
 		erpnext.healthcare.doctype.patient_appointment.patient_appointment.<b>get_availability_data</b>
         <i class="text-muted">(date, physician)</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><pre><code>Get availability data of 'physician' on 'date'
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>date</code></strong> -  Date to check in schedule</li>
+<li><p><strong><code>physician</code></strong> -  Name of the physician</p>
+
+<p>:return: dict containing a list of available slots, list of appointments and time of appointments</p></li>
+</ul>
 </div>
 	<br>
 
@@ -710,7 +734,7 @@ Cancelled</pre>
         <a name="erpnext.healthcare.doctype.patient_appointment.patient_appointment.update_status" href="#erpnext.healthcare.doctype.patient_appointment.patient_appointment.update_status" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.healthcare.doctype.patient_appointment.patient_appointment.<b>update_status</b>
-        <i class="text-muted">(appointmentId, status)</i>
+        <i class="text-muted">(appointment_id, status)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

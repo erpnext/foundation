@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 9.2.10</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/schools/doctype/student_admission"
@@ -42,6 +42,54 @@
         
         <tr >
             <td>1</td>
+            <td ><code>title</code></td>
+            <td >
+                Data</td>
+            <td >
+                Title
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>route</code></td>
+            <td >
+                Data</td>
+            <td >
+                Route
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>application_form_route</code></td>
+            <td >
+                Data</td>
+            <td >
+                Application Form Route
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
             <td class="danger" title="Mandatory"><code>academic_year</code></td>
             <td >
                 Link</td>
@@ -62,7 +110,7 @@
         </tr>
         
         <tr >
-            <td>2</td>
+            <td>6</td>
             <td ><code>admission_start_date</code></td>
             <td >
                 Date</td>
@@ -74,7 +122,7 @@
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>7</td>
             <td ><code>admission_end_date</code></td>
             <td >
                 Date</td>
@@ -86,32 +134,8 @@
         </tr>
         
         <tr >
-            <td>4</td>
-            <td ><code>title</code></td>
-            <td >
-                Data</td>
-            <td >
-                Title
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>5</td>
-            <td ><code>naming_series_for_student_applicant</code></td>
-            <td >
-                Data</td>
-            <td >
-                Naming Series (for Student Applicant)
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>6</td>
-            <td ><code>publish</code></td>
+            <td>8</td>
+            <td ><code>published</code></td>
             <td >
                 Check</td>
             <td >
@@ -121,60 +145,25 @@
             <td></td>
         </tr>
         
-        <tr >
-            <td>7</td>
-            <td ><code>column_break_3</code></td>
-            <td class="info">
-                Column Break</td>
+        <tr class="info">
+            <td>9</td>
+            <td ><code>section_break_5</code></td>
             <td >
-                
+                Section Break</td>
+            <td >
+                Eligibility and Details
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>8</td>
-            <td ><code>program</code></td>
-            <td >
-                Link</td>
-            <td >
-                Program
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/schools/program">Program</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>9</td>
-            <td ><code>application_fee</code></td>
-            <td >
-                Currency</td>
-            <td >
-                Application Fee
-                
-            </td>
-            <td>
-                <pre>currency</pre>
-            </td>
-        </tr>
-        
-        <tr >
             <td>10</td>
-            <td ><code>currency</code></td>
+            <td ><code>program_details</code></td>
             <td >
-                Link</td>
+                Table</td>
             <td >
-                Currency
+                Eligibility and Details
                 
             </td>
             <td>
@@ -182,7 +171,7 @@
                 
 
 
-<a href="/docs/current/models/geo/currency">Currency</a>
+<a href="/docs/current/models/schools/student_admission_program">Student Admission Program</a>
 
 
                 
@@ -191,59 +180,11 @@
         
         <tr >
             <td>11</td>
-            <td class="danger" title="Mandatory"><code>route</code></td>
-            <td >
-                Data</td>
-            <td >
-                Route
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>12</td>
-            <td ><code>application_form_route</code></td>
-            <td >
-                Data</td>
-            <td >
-                Application Form Route
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr class="info">
-            <td>13</td>
-            <td ><code>section_break_5</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>14</td>
             <td ><code>introduction</code></td>
             <td >
                 Text Editor</td>
             <td >
                 Introduction
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>15</td>
-            <td ><code>eligibility</code></td>
-            <td >
-                Text Editor</td>
-            <td >
-                Eligibility
                 
             </td>
             <td></td>
@@ -313,8 +254,38 @@
 	<br>
 
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.schools.doctype.student_admission.student_admission.get_admission_list" href="#erpnext.schools.doctype.student_admission.student_admission.get_admission_list" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.schools.doctype.student_admission.student_admission.<b>get_admission_list</b>
+        <i class="text-muted">(doctype, txt, filters, limit_start, limit_page_length=20, order_by=modified)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 
@@ -326,7 +297,7 @@
         <a name="erpnext.schools.doctype.student_admission.student_admission.get_list_context" href="#erpnext.schools.doctype.student_admission.student_admission.get_list_context" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.schools.doctype.student_admission.student_admission.<b>get_list_context</b>
-        <i class="text-muted">(context)</i>
+        <i class="text-muted">(context=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

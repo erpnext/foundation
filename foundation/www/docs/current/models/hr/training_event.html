@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 9.2.10</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/training_event"
@@ -54,6 +54,27 @@
         
         <tr >
             <td>2</td>
+            <td ><code>training_program</code></td>
+            <td >
+                Link</td>
+            <td >
+                Training Program
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/training_program">Training Program</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
             <td class="danger" title="Mandatory"><code>event_status</code></td>
             <td >
                 Select</td>
@@ -69,7 +90,19 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>4</td>
+            <td ><code>has_certificate</code></td>
+            <td >
+                Check</td>
+            <td >
+                Has Certificate
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
             <td ><code>column_break_2</code></td>
             <td class="info">
                 Column Break</td>
@@ -81,7 +114,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>6</td>
             <td class="danger" title="Mandatory"><code>type</code></td>
             <td >
                 Select</td>
@@ -100,8 +133,46 @@ Self-Study</pre>
             </td>
         </tr>
         
+        <tr >
+            <td>7</td>
+            <td ><code>level</code></td>
+            <td >
+                Select</td>
+            <td >
+                Level
+                
+            </td>
+            <td>
+                <pre>
+Beginner
+Expert
+Advance</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
         <tr class="info">
-            <td>5</td>
+            <td>9</td>
             <td ><code>section_break_4</code></td>
             <td >
                 Section Break</td>
@@ -113,7 +184,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>10</td>
             <td ><code>trainer_name</code></td>
             <td >
                 Data</td>
@@ -125,7 +196,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>11</td>
             <td ><code>trainer_email</code></td>
             <td >
                 Data</td>
@@ -137,7 +208,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>12</td>
             <td ><code>column_break_7</code></td>
             <td class="info">
                 Column Break</td>
@@ -149,7 +220,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>13</td>
             <td ><code>supplier</code></td>
             <td >
                 Link</td>
@@ -170,7 +241,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>14</td>
             <td ><code>contact_number</code></td>
             <td >
                 Data</td>
@@ -182,7 +253,7 @@ Self-Study</pre>
         </tr>
         
         <tr class="info">
-            <td>11</td>
+            <td>15</td>
             <td ><code>section_break_9</code></td>
             <td >
                 Section Break</td>
@@ -194,7 +265,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>16</td>
             <td ><code>course</code></td>
             <td >
                 Link</td>
@@ -215,7 +286,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>17</td>
             <td class="danger" title="Mandatory"><code>location</code></td>
             <td >
                 Data</td>
@@ -227,7 +298,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>18</td>
             <td ><code>column_break_12</code></td>
             <td class="info">
                 Column Break</td>
@@ -239,7 +310,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>19</td>
             <td class="danger" title="Mandatory"><code>start_time</code></td>
             <td >
                 Datetime</td>
@@ -251,7 +322,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>20</td>
             <td class="danger" title="Mandatory"><code>end_time</code></td>
             <td >
                 Datetime</td>
@@ -263,7 +334,7 @@ Self-Study</pre>
         </tr>
         
         <tr class="info">
-            <td>17</td>
+            <td>21</td>
             <td ><code>section_break_15</code></td>
             <td >
                 Section Break</td>
@@ -275,7 +346,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>22</td>
             <td class="danger" title="Mandatory"><code>introduction</code></td>
             <td >
                 Text Editor</td>
@@ -287,7 +358,7 @@ Self-Study</pre>
         </tr>
         
         <tr class="info">
-            <td>19</td>
+            <td>23</td>
             <td ><code>section_break_18</code></td>
             <td >
                 Section Break</td>
@@ -299,7 +370,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>24</td>
             <td ><code>employees</code></td>
             <td >
                 Table</td>
@@ -320,7 +391,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>25</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -341,7 +412,7 @@ Self-Study</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>26</td>
             <td ><code>employee_emails</code></td>
             <td >
                 Small Text</td>
@@ -392,6 +463,32 @@ Self-Study</pre>
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.training_event.training_event.get_events</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.training_event.training_event.get_events" href="#erpnext.hr.doctype.training_event.training_event.get_events" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.training_event.training_event.<b>get_events</b>
+        <i class="text-muted">(start, end, filters=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns events for Gantt / Calendar view rendering.</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>start</code></strong> -  Start date-time.</li>
+<li><strong><code>end</code></strong> -  End date-time.</li>
+<li><strong><code>filters</code></strong> -  Filters (JSON).</li>
+</ul>
+</div>
+	<br>
 
 	
 
