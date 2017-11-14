@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 9.2.10</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/pos_profile"
@@ -42,6 +42,42 @@
         
         <tr >
             <td>1</td>
+            <td ><code>disabled</code></td>
+            <td >
+                Check</td>
+            <td >
+                Disabled
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>2</td>
+            <td ><code>section_break_2</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>pos_profile_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                POS Profile Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
             <td ><code>user</code></td>
             <td >
                 Link</td>
@@ -62,7 +98,7 @@
         </tr>
         
         <tr >
-            <td>2</td>
+            <td>5</td>
             <td class="danger" title="Mandatory"><code>naming_series</code></td>
             <td >
                 Select</td>
@@ -76,7 +112,7 @@
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>6</td>
             <td ><code>update_stock</code></td>
             <td >
                 Check</td>
@@ -88,49 +124,43 @@
         </tr>
         
         <tr >
-            <td>4</td>
-            <td ><code>warehouse</code></td>
+            <td>7</td>
+            <td ><code>ignore_pricing_rule</code></td>
             <td >
-                Link</td>
+                Check</td>
             <td >
-                Warehouse
+                Ignore Pricing Rule
                 
             </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/stock/warehouse">Warehouse</a>
-
-
-                
-            </td>
+            <td></td>
         </tr>
         
         <tr >
-            <td>5</td>
-            <td ><code>campaign</code></td>
+            <td>8</td>
+            <td ><code>allow_delete</code></td>
             <td >
-                Link</td>
+                Check</td>
             <td >
-                Campaign
+                Allow Delete
                 
             </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/selling/campaign">Campaign</a>
-
-
-                
-            </td>
+            <td></td>
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>9</td>
+            <td ><code>allow_user_to_edit_rate</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow user to edit Rate
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
             <td ><code>column_break_4</code></td>
             <td class="info">
                 Column Break</td>
@@ -142,7 +172,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>11</td>
             <td ><code>customer</code></td>
             <td >
                 Link</td>
@@ -163,7 +193,7 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>12</td>
             <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
@@ -184,7 +214,7 @@
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>13</td>
             <td ><code>country</code></td>
             <td >
                 Read Only</td>
@@ -198,12 +228,12 @@
         </tr>
         
         <tr >
-            <td>10</td>
-            <td class="danger" title="Mandatory"><code>currency</code></td>
+            <td>14</td>
+            <td ><code>warehouse</code></td>
             <td >
                 Link</td>
             <td >
-                Currency
+                Warehouse
                 
             </td>
             <td>
@@ -211,7 +241,7 @@
                 
 
 
-<a href="/docs/current/models/geo/currency">Currency</a>
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
 
 
                 
@@ -219,43 +249,61 @@
         </tr>
         
         <tr >
-            <td>11</td>
-            <td ><code>ignore_pricing_rule</code></td>
+            <td>15</td>
+            <td ><code>campaign</code></td>
             <td >
-                Check</td>
+                Link</td>
             <td >
-                Ignore Pricing Rule
+                Campaign
                 
             </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>12</td>
-            <td ><code>allow_delete</code></td>
-            <td >
-                Check</td>
-            <td >
-                Allow Delete
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/selling/campaign">Campaign</a>
+
+
                 
             </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>13</td>
-            <td ><code>allow_user_to_edit_rate</code></td>
-            <td >
-                Check</td>
-            <td >
-                Allow user to edit Rate
-                
-            </td>
-            <td></td>
         </tr>
         
         <tr class="info">
-            <td>14</td>
+            <td>16</td>
+            <td ><code>section_break_15</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Applicable for Users
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>applicable_for_users</code></td>
+            <td >
+                Table</td>
+            <td >
+                Applicable for Users
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/pos_profile_user">POS Profile User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>18</td>
             <td ><code>section_break_11</code></td>
             <td >
                 Section Break</td>
@@ -267,7 +315,7 @@
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>19</td>
             <td ><code>payments</code></td>
             <td >
                 Table</td>
@@ -288,7 +336,7 @@
         </tr>
         
         <tr class="info">
-            <td>16</td>
+            <td>20</td>
             <td ><code>section_break_14</code></td>
             <td >
                 Section Break</td>
@@ -300,7 +348,7 @@
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>21</td>
             <td ><code>item_groups</code></td>
             <td >
                 Table</td>
@@ -321,7 +369,7 @@
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>22</td>
             <td ><code>column_break_16</code></td>
             <td class="info">
                 Column Break</td>
@@ -333,7 +381,7 @@
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>23</td>
             <td ><code>customer_groups</code></td>
             <td >
                 Table</td>
@@ -354,7 +402,7 @@
         </tr>
         
         <tr class="info">
-            <td>20</td>
+            <td>24</td>
             <td ><code>section_break_16</code></td>
             <td >
                 Section Break</td>
@@ -366,7 +414,7 @@
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>25</td>
             <td ><code>print_format_for_online</code></td>
             <td >
                 Link</td>
@@ -387,7 +435,7 @@
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>26</td>
             <td ><code>letter_head</code></td>
             <td >
                 Link</td>
@@ -408,7 +456,7 @@
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>27</td>
             <td ><code>select_print_heading</code></td>
             <td >
                 Link</td>
@@ -429,7 +477,7 @@
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>28</td>
             <td ><code>column_break0</code></td>
             <td class="info">
                 Column Break</td>
@@ -441,7 +489,7 @@
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>29</td>
             <td ><code>selling_price_list</code></td>
             <td >
                 Link</td>
@@ -462,7 +510,7 @@
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>30</td>
             <td ><code>tc_name</code></td>
             <td >
                 Link</td>
@@ -483,7 +531,7 @@
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>31</td>
             <td ><code>apply_discount</code></td>
             <td >
                 Check</td>
@@ -495,7 +543,7 @@
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>32</td>
             <td ><code>apply_discount_on</code></td>
             <td >
                 Select</td>
@@ -510,7 +558,7 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>29</td>
+            <td>33</td>
             <td ><code>offline_pos_section</code></td>
             <td >
                 Section Break</td>
@@ -522,7 +570,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>34</td>
             <td class="danger" title="Mandatory"><code>territory</code></td>
             <td >
                 Link</td>
@@ -543,7 +591,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>35</td>
             <td ><code>column_break_31</code></td>
             <td class="info">
                 Column Break</td>
@@ -555,7 +603,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>36</td>
             <td ><code>print_format</code></td>
             <td >
                 Link</td>
@@ -576,7 +624,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>37</td>
             <td class="danger" title="Mandatory"><code>customer_group</code></td>
             <td >
                 Link</td>
@@ -597,19 +645,40 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>34</td>
+            <td>38</td>
             <td ><code>section_break_19</code></td>
             <td >
                 Section Break</td>
             <td >
-                
+                Accounting
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>39</td>
+            <td class="danger" title="Mandatory"><code>currency</code></td>
+            <td >
+                Link</td>
+            <td >
+                Currency
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/geo/currency">Currency</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>40</td>
             <td class="danger" title="Mandatory"><code>write_off_account</code></td>
             <td >
                 Link</td>
@@ -630,7 +699,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>41</td>
             <td class="danger" title="Mandatory"><code>write_off_cost_center</code></td>
             <td >
                 Link</td>
@@ -651,7 +720,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>42</td>
             <td ><code>account_for_change_amount</code></td>
             <td >
                 Link</td>
@@ -672,28 +741,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>38</td>
-            <td ><code>taxes_and_charges</code></td>
-            <td >
-                Link</td>
-            <td >
-                Taxes and Charges
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/sales_taxes_and_charges_template">Sales Taxes and Charges Template</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>39</td>
+            <td>43</td>
             <td ><code>column_break_23</code></td>
             <td class="info">
                 Column Break</td>
@@ -705,7 +753,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>44</td>
             <td ><code>income_account</code></td>
             <td >
                 Link</td>
@@ -726,7 +774,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>45</td>
             <td ><code>expense_account</code></td>
             <td >
                 Link</td>
@@ -747,7 +795,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>46</td>
             <td ><code>cost_center</code></td>
             <td >
                 Link</td>
@@ -761,6 +809,27 @@ Net Total</pre>
 
 
 <a href="/docs/current/models/accounts/cost_center">Cost Center</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>47</td>
+            <td ><code>taxes_and_charges</code></td>
+            <td >
+                Link</td>
+            <td >
+                Taxes and Charges
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/sales_taxes_and_charges_template">Sales Taxes and Charges Template</a>
 
 
                 
@@ -931,6 +1000,42 @@ Net Total</pre>
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.pos_profile.pos_profile.get_pos_profile</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.pos_profile.pos_profile.get_pos_profile" href="#erpnext.accounts.doctype.pos_profile.pos_profile.get_pos_profile" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.pos_profile.pos_profile.<b>get_pos_profile</b>
+        <i class="text-muted">(pos_profile_name=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.pos_profile.pos_profile.get_pos_profiles_for_user</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.pos_profile.pos_profile.get_pos_profiles_for_user" href="#erpnext.accounts.doctype.pos_profile.pos_profile.get_pos_profiles_for_user" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.pos_profile.pos_profile.<b>get_pos_profiles_for_user</b>
+        <i class="text-muted">(user=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 

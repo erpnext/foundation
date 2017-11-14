@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 9.2.10</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/purchase_invoice"
@@ -1690,6 +1690,44 @@ Cancelled</pre>
         
         <tr >
             <td>112</td>
+            <td ><code>from_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                From Date
+                <p class="text-muted small">
+                    Start date of current invoice's period</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>113</td>
+            <td ><code>to_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                To Date
+                <p class="text-muted small">
+                    End date of current invoice's period</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>114</td>
+            <td ><code>column_break_114</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>115</td>
             <td ><code>subscription</code></td>
             <td >
                 Link</td>
@@ -1703,198 +1741,6 @@ Cancelled</pre>
 
 
 <a href="/docs/current/models/accounts/subscription">Subscription</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr class="info">
-            <td>113</td>
-            <td ><code>recurring_invoice</code></td>
-            <td >
-                Section Break</td>
-            <td class="text-muted" title="Hidden">
-                Recurring Invoice
-                
-            </td>
-            <td>
-                <pre>fa fa-time</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>114</td>
-            <td ><code>is_recurring</code></td>
-            <td >
-                Check</td>
-            <td >
-                Is Recurring
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>115</td>
-            <td ><code>recurring_type</code></td>
-            <td >
-                Select</td>
-            <td >
-                Recurring Type
-                <p class="text-muted small">
-                    Select the period when the invoice will be generated automatically</p>
-            </td>
-            <td>
-                <pre>Monthly
-Quarterly
-Half-yearly
-Yearly</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>116</td>
-            <td ><code>from_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                From Date
-                <p class="text-muted small">
-                    Start date of current invoice's period</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>117</td>
-            <td ><code>to_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                To Date
-                <p class="text-muted small">
-                    End date of current invoice's period</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>118</td>
-            <td ><code>submit_on_creation</code></td>
-            <td >
-                Check</td>
-            <td >
-                Submit on creation
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>119</td>
-            <td ><code>notify_by_email</code></td>
-            <td >
-                Check</td>
-            <td >
-                Notify by email
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>120</td>
-            <td ><code>repeat_on_day_of_month</code></td>
-            <td >
-                Int</td>
-            <td >
-                Repeat on Day of Month
-                <p class="text-muted small">
-                    The day of the month on which auto invoice will be generated e.g. 05, 28 etc</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>121</td>
-            <td ><code>end_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                End Date
-                <p class="text-muted small">
-                    The date on which recurring invoice will be stop</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>122</td>
-            <td ><code>column_break_82</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>123</td>
-            <td ><code>next_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                Next Date
-                <p class="text-muted small">
-                    The date on which next invoice will be generated. It is generated on submit.</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>124</td>
-            <td ><code>recurring_id</code></td>
-            <td >
-                Data</td>
-            <td >
-                Recurring Id
-                <p class="text-muted small">
-                    The unique id for tracking all recurring invoices. It is generated on submit.</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>125</td>
-            <td ><code>notification_email_address</code></td>
-            <td >
-                Small Text</td>
-            <td >
-                Notification Email Address
-                <p class="text-muted small">
-                    Enter Email Address separated by commas, invoice will be mailed automatically on particular date</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>126</td>
-            <td ><code>recurring_print_format</code></td>
-            <td >
-                Link</td>
-            <td >
-                Recurring Print Format
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/printing/print_format">Print Format</a>
 
 
                 
@@ -1930,7 +1776,7 @@ Yearly</pre>
         <a name="__init__" href="#__init__" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>__init__</b>
-        <i class="text-muted">(self, arg1, arg2=None)</i>
+        <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

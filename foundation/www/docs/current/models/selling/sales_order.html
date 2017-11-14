@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 9.2.10</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/selling/doctype/sales_order"
@@ -1618,6 +1618,42 @@ Closed</pre>
         
         <tr >
             <td>106</td>
+            <td ><code>from_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                From Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>107</td>
+            <td ><code>to_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                To Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>108</td>
+            <td ><code>column_break_108</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>109</td>
             <td ><code>subscription</code></td>
             <td >
                 Link</td>
@@ -1635,214 +1671,6 @@ Closed</pre>
 
                 
             </td>
-        </tr>
-        
-        <tr class="info">
-            <td>107</td>
-            <td ><code>recurring_order</code></td>
-            <td >
-                Section Break</td>
-            <td class="text-muted" title="Hidden">
-                Recurring Order
-                
-            </td>
-            <td>
-                <pre>fa fa-time</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>108</td>
-            <td ><code>settings</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                Settings
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>109</td>
-            <td ><code>is_recurring</code></td>
-            <td >
-                Check</td>
-            <td >
-                Is Recurring
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>110</td>
-            <td ><code>recurring_id</code></td>
-            <td >
-                Link</td>
-            <td >
-                Reference Document
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/selling/sales_order">Sales Order</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>111</td>
-            <td ><code>recurring_type</code></td>
-            <td >
-                Select</td>
-            <td >
-                Frequency
-                
-            </td>
-            <td>
-                <pre>
-Monthly
-Quarterly
-Half-yearly
-Yearly</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>112</td>
-            <td ><code>repeat_on_day_of_month</code></td>
-            <td >
-                Int</td>
-            <td >
-                Repeat on Day of Month
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>113</td>
-            <td ><code>end_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                Recurring Upto
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>114</td>
-            <td ><code>submit_on_creation</code></td>
-            <td >
-                Check</td>
-            <td >
-                Submit on creation
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>115</td>
-            <td ><code>notify_by_email</code></td>
-            <td >
-                Check</td>
-            <td >
-                Notify by email
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>116</td>
-            <td ><code>notification_email_address</code></td>
-            <td >
-                Code</td>
-            <td >
-                Notification Email Address
-                
-            </td>
-            <td>
-                <pre>Email</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>117</td>
-            <td ><code>recurring_print_format</code></td>
-            <td >
-                Link</td>
-            <td >
-                Recurring Print Format
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/printing/print_format">Print Format</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>118</td>
-            <td ><code>column_break83</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                This Document
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>119</td>
-            <td ><code>from_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                From Date
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>120</td>
-            <td ><code>to_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                To Date
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>121</td>
-            <td ><code>next_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                Next Date
-                
-            </td>
-            <td></td>
         </tr>
         
     </tbody>
@@ -1874,7 +1702,7 @@ Yearly</pre>
         <a name="__init__" href="#__init__" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>__init__</b>
-        <i class="text-muted">(self, arg1, arg2=None)</i>
+        <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
