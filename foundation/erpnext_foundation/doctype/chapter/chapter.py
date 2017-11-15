@@ -39,8 +39,6 @@ def get_list_context(context):
 def leave(title, user_id, leave_reason):
 	chapter = frappe.get_doc("Chapter", title)
 	for member in chapter.members:
-		for x in xrange(1,10):
-			print(member.user, user_id)
 		if member.user == user_id:
 			member.enabled = 0
 			member.leave_reason = leave_reason

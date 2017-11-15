@@ -1,10 +1,4 @@
 {% extends "templates/web.html" %}
-<!--
-{% macro chapter_button() %}
-	<p><a href="/{{ chapter.route }}" class='btn btn-primary'>
-		Go to Chapter Page</a></p>
-{% endmacro %}
- -->
 {% block page_content %}
 
 	{% if member_deleted %}
@@ -29,7 +23,6 @@
 				var leave =  $("#leave").val();
 				var user_id = frappe.session.user;
 				var title =  $(this).attr("data-title");
-				console.log(leave, user_id, title);
 				frappe.call({
 						method: 'foundation.erpnext_foundation.doctype.chapter.chapter.leave',
 						args: {
