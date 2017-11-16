@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Student Admission
 
-The admission process begins with filling the admission form. The Student Admission record enables to intitate your admission process for a given **Academic year**. ERPNext admission module allow you to create an admission record which can be then published on the ERPNext generate website. 
+The admission process begins with filling the admission form. The Student Admission record enables to intitiate your admission process for a given **Academic year**. ERPNext admission module allow you to create an admission record which can be then published on the ERPNext generate website. 
 
 To create a Student Admission record  go to :
 

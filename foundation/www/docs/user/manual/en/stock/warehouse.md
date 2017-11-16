@@ -13,7 +13,7 @@ practically is a shelf inside your actual location.
 This can become quite a detailed Tree like >Warehouse >Room >Row >Shelf >Box
 
 To go to Warehouse, click on Stock and go to Warehouse under Setup.  You
-could also switch to 'Tree' View or simply type warehouse tree in the awsone bar.
+could also switch to 'Tree' View or simply type warehouse tree in the search bar.
 
 <img class="screenshot" alt="Warehouse" src="/docs/assets/img/stock/warehouse.png">
 

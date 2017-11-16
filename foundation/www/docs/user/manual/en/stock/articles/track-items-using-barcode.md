@@ -9,7 +9,7 @@ To set the barcode of a particular item, you will have to open the Item record. 
 
 <img alt="Material Transfer" class="screenshot" src="/docs/assets/img/articles/barcode-item-master.png">
 
-Once barcode field is updated in item master, items can be fetched using barcode. This feature will be availble in Delivery Note, Sales Invoice and Purchase Receipt transactions only.
+Once barcode field is updated in item master, items can be fetched using barcode. This feature will be available in Delivery Note, Sales Invoice and Purchase Receipt transactions only.
 
 <img alt="Material Transfer" class="screenshot" src="/docs/assets/img/articles/barcode-item-selection.gif">
 

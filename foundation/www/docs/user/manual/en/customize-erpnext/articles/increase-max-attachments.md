@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 #Increase Max Attachments
 
-In ERPNext, you can limit how many files can be attached to specific Document. Using Custmize Form, you can set **Max(imum) Attachments** which can be added to a particular documents.
+In ERPNext, you can limit how many files can be attached to specific Document. Using Customize Form, you can set **Max(imum) Attachments** which can be added to a particular documents.
 
 Let's assume we need to update Max Attachment for Quotation to five.
 

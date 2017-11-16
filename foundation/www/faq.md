@@ -1,6 +1,6 @@
 # Community FAQ
 
-> If you are an independant software vendor or service provider wanting to offer ERPNext services to your customer base, this is for you.
+> If you are an independent software vendor or service provider wanting to offer ERPNext services to your customer base, this is for you.
 
 ### 1. What is ERPNext?
 
@@ -83,7 +83,7 @@ With ERPNext compared to other ERPs, the cost of license is zero, so there is mo
 
 Listing on our community portal is free. You can list yourself as a Service Provider, and provide details about services you offer on ERPNext. To get a priority listing, you must become a member of the ERPNext Foundation.
 
-By becoming a member, you will not only support the ongoing development and enhancement of ERPNext that is so criticial to your business but also get a say in what features get built next.
+By becoming a member, you will not only support the ongoing development and enhancement of ERPNext that is so critical to your business but also get a say in what features get built next.
 
 [Learn more about memberships](/memberships)
 

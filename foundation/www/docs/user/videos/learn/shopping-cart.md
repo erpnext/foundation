@@ -5,4 +5,4 @@
 
 **Duration: 6:32**
 
-ERPNext has Customers Portal. It allos Customer to login, and place new orderes using shopping cart. From Customer Portal, customer can also track progress on their existing orders, view history of transactions and communicate via Issues.
+ERPNext has a Customers Portal. It allows a Customer to login, and place new orders using shopping cart. From Customer Portal,a Customer can also track the progress of their existing orders, view history of transactions and communicate via Issues.

@@ -7,7 +7,7 @@ Once a student have applied for the **Program** and the application is approved,
 
 <img class="screenshot" alt="Student Applicant Enrollment" src="/docs/assets/img/schools/admission/program-enrollment.gif">
 
-- A student can be enrolled in multiple Course for a program in a given academeic year. 
-- Based on the Fee structure selected at the time of enrollment Fee detials are created of the student.
+- A student can be enrolled in multiple Course for a program in a given academic year. 
+- Based on the Fee structure selected at the time of enrollment Fee details are created of the student.
 
 {next}

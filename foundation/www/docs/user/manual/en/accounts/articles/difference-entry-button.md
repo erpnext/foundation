@@ -11,6 +11,6 @@ On clicking 'Make Difference Entry' button, new Row will be added under Journal 
 
 <img alt="Debit Credit Not Equal" class="screenshot" src="/docs/assets/img/articles/difference-entry-2.gif">
 
-On selecting account under new row, debit and credit an entry will be tallying, and you should be able to submit Journal Entri correctly.
+On selecting account under new row, debit and credit an entry will be tallying, and you should be able to submit Journal Entry correctly.
 
 <!-- markdown -->

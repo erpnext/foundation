@@ -29,7 +29,7 @@ From Sales Order, all items, having **Supplier delivers to Customer**  checked o
 
 It will automatically set Customer, Customer Address and Contact Person.
 
-After submitting Purchase Order, to update delivery status, use **Mark as Delivered** button on Purchase Order. It will update delivery percetage and delivered quantity on Sales Order.
+After submitting Purchase Order, to update delivery status, use **Mark as Delivered** button on Purchase Order. It will update delivery percentage and delivered quantity on Sales Order.
 
 <img class="screenshot" alt="Purchase Order for Drop Shipping" src="/docs/assets/img/selling/drop-ship-purchase-order.png">
 

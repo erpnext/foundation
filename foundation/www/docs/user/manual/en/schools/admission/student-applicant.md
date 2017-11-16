@@ -23,7 +23,7 @@ Once the form is submitted you can either approve or reject the application form
 
 <img class="screenshot" alt="Student Applicant Enrollment" src="/docs/assets/img/schools/admission/student-application-actions.png">
 
-Once you approve a Student Applicant you can enroll them to a program. When you click the 'Enroll' buttom,
+Once you approve a Student Applicant you can enroll them to a program. When you click the 'Enroll' button,
 the system shall create a student against that applicant and redirect you to the [Program Enrollment form](/docs/user/manual/en/schools/student/program-enrollment.html).
 
 <img class="screenshot" alt="Student Applicant Enrollment" src="/docs/assets/img/schools/admission/student-applicant-enroll.png">

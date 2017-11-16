@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Selling Settings
 
-Selling Setting is where you can define propertiese which will be applied in your selling transactions. 
+Selling Setting is where you can define properties which will be applied in your selling transactions. 
 Let's check into each property one by one.
 
 <img class="screenshot" alt="Selling Settings" src="/docs/assets/img/selling/selling-settings.png">
@@ -65,7 +65,7 @@ and you need to bypass validation of same rate throughout cycle, then you should
 
 ####9. Allow User to Edit Price List Rate in Transaction
 
-Item table of the sale transactions has field called Price List Rate. This field be non-editale 
+Item table of the sale transactions has field called Price List Rate. This field be non-editable 
 by default in all the sales transactions. This is to ensure that price of an item is fetched from 
 Item Price record, and user is not able to edit it.
 

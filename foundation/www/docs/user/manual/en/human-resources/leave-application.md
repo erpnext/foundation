@@ -2,7 +2,7 @@
 # Leave Application
 
 If your company has a formal system where Employees have to apply for leaves
-to be able to qualify as paid leaveas, you can create Leave Application to
+to be able to qualify as paid leaves, you can create Leave Application to
 track approval and usage of leaves. You have to mention the Employee, Leave
 Type and the period for which the leave is taken.
 
@@ -23,5 +23,5 @@ their “Employee ID” as a match rule in the Leave Application Permission
 settings. See the earlier discussion on [Setting Up Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions.html)
 for more info.
 
-You assign Leaves aginast an Employee check [Leave Allocation](/docs/user/manual/en/human-resources/leave.html)
+You assign Leaves against an Employee check [Leave Allocation](/docs/user/manual/en/human-resources/leave.html)
 {next}
