@@ -2,14 +2,8 @@
 	<a href={{ route }}>
 		<h3>{{ doc.title }}</h3>
 		<p>
-			<span class="label">{{ frappe.db.get_value('User', chapter_head, 'full_name') }}</span>
-			<span class="label">
-				{% if members %}
-					Members: {{ members|length }}
-				{% else %}
-					Members: 0
-				{% endif %}
-			</span>
+			<span class="label"> Chapter Head : {{ frappe.db.get_value('User', chapter_head, 'full_name') }} </span>
+			<!-- Assignment of value to global variable not working in jinja -->
 		</p>
 		<p>{{ html2text(doc.introduction[:200]) }}{% if introduction|len > 200 %}...{% endif %}</p>
 	</a>
