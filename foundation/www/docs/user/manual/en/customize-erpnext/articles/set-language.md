@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 #Change the Language
 
-ERPNext is an multi-lingual application. It allows each user to select preferred lannguage. Following is how User can customize language in one's account.
+ERPNext is an multi-lingual application. It allows each user to select preferred language. Following is how User can customize language in one's account.
 
 ### 1. Setting Language in User's Account
 

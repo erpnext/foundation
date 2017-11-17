@@ -7,7 +7,7 @@ Links option shows one document is linked to which other documents. Check Menu f
 
 ####Scenario
 
-If you need that against Sales Order, which Delivery Note and Sales Invoice has been created, you should open Sales Order document, and check Links. Same way, you can also check Purchase Order, and find which Purchase Receipt and Purchase Ivoice is linked with it.
+If you need that against Sales Order, which Delivery Note and Sales Invoice has been created, you should open Sales Order document, and check Links. Same way, you can also check Purchase Order, and find which Purchase Receipt and Purchase Invoice is linked with it.
 
 ####How It Works?
 

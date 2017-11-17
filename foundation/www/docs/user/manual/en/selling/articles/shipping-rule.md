@@ -13,7 +13,7 @@ To setup Shipping Rule, go to:
 
 <img alt="Shipping Rule Prices" class="screenshot"  src="/docs/assets/img/articles/shipping-charges-1.png">
 
-Referring above, you will notice that shipping charges are reducing as valye is increasing. This shipping charge will only be applied if transaction total falls under one of the above range.
+Referring above, you will notice that shipping charges are reducing as value is increasing. This shipping charge will only be applied if transaction total falls under one of the above range.
 
 ####Valid for Countries
 

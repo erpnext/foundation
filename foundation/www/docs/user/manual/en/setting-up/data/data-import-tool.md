@@ -44,9 +44,9 @@ file. To export the document in Excel tick the checkbox for Download in Excel Fi
 
 <img alt="Download Template" class="screenshot" src="/docs/assets/img/setup/data-import/data-import-excel.png">
 
-### 3\. Upload the File ethier in .xlsx or .csv 
+### 3\. Upload the File either in .xlsx or .csv 
 
-Finally attach the  file in the section. Click on the "Upload". Once the upload is successfull click Import"
+Finally attach the  file in the section. Click on the "Upload". Once the upload is successful click Import"
 button.
 
 <img alt="Upload" class="screenshot" src="/docs/assets/img/setup/data-import/data-import-3.png">

@@ -1,9 +1,9 @@
 <!-- add-breadcrumbs -->
 # Instructor
 
-An instructoe is a teacher, or professor, of a specialised subject that involves skill. 
+An instructor is a teacher, or professor, of a specialised subject that involves skill. 
 
-You can create an Instructor and link it to the Employee master and a Departmemt.
+You can create an Instructor and link it to the Employee master and a Department.
 
 <img class="screenshot" alt="Instructor" src="/docs/assets/img/schools/setup/instructor.png">
 
@@ -14,6 +14,6 @@ It is also linked to **Student group** where an **Instructor** is assigned to th
 
 <img class="screenshot" alt="Instructor" src="/docs/assets/img/schools/setup/student-group-instructor.gif">
 
-An **Instructor** is also linked to an **Assesment Plan** for a Student group. The Instructor can be an Examiner or the supervisor for the assesment. 
+An **Instructor** is also linked to an **Assessment Plan** for a Student group. The Instructor can be an Examiner or the supervisor for the assessment. 
 
 {next}

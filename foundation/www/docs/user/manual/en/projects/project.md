@@ -53,7 +53,7 @@ The Actual Start and End Time along with the costing shall then be updated based
 
 <img class="screenshot" alt="Project - Time Log List" src="/docs/assets/img/project/project_time_log_list.png">
 
-* You can also create a Time Log directlly and link it to the Project.
+* You can also create a Time Log directly and link it to the Project.
 
 <img class="screenshot" alt="Project - Link Time Log" src="/docs/assets/img/project/project_time_log_link.png">
 

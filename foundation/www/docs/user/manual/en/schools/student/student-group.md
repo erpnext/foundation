@@ -11,13 +11,13 @@ Schools >> Student >> New Student Group
 
 <img class="screenshot" alt="Student Group" src="/docs/assets/img/schools/student/Student-group.gif">
 
-To create a Student group based on **Batch**, select the **Progam** and **Batch**, where as to create a Student group based on **Course**, you will only have to select the Course Code. Creating a student group based on activity allows you to group of student for events and activities happening in the institute. 
+To create a Student group based on **Batch**, select the **Program** and **Batch**, where as to create a Student group based on **Course**, you will only have to select the Course Code. Creating a student group based on activity allows you to group of student for events and activities happening in the institute. 
 
 Once a student group is created you can mark attendance for the group. 
 
 <img class="screenshot" alt="Student Group" src="/docs/assets/img/schools/student/student-group-attendance.gif">
 
-You can also update the **Email Group** for the Student Group. Click on Update Email Group to add all the email ids of the gaurdians in the respective email group and **Newsletter** can be created and sent to the Email group.
+You can also update the **Email Group** for the Student Group. Click on Update Email Group to add all the email ids of the guardians in the respective email group and **Newsletter** can be created and sent to the Email group.
 
 
 {next}

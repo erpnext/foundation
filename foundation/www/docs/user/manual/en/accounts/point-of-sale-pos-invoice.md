@@ -50,7 +50,7 @@ in Search box.
 
 ### Removing an Item from the Cart
 
-1. Select row in the cart and clik on delete button in the numeric keypad
+1. Select row in the cart and click on delete button in the numeric keypad
   
 <img class="screenshot" alt="POS Item" src="/docs/assets/img/accounts/pos_deleted_item.gif">
 
@@ -90,7 +90,7 @@ POS calculate the extra amount paid by the customer, which user can return from 
 <img class="screenshot" alt="POS Payment" src="/docs/assets/img/accounts/change-amount.png">
 
 ### Offline Records
-All the records from the POS stores into the browser's local storegae and sync submitted records after every minute of the interval if system is connected to internet. User can view the offline records by clicking on Menu > View Offline Records
+All the records from the POS stores into the browser's local storage and sync submitted records after every minute of the interval if system is connected to internet. User can view the offline records by clicking on Menu > View Offline Records
 
 <img class="screenshot" alt="POS Payment" src="/docs/assets/img/accounts/offline-records.png">
 

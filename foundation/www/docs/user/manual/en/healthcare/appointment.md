@@ -13,7 +13,7 @@ If you have a front desk executive to manage your appointments, you can configur
 
 <img class="screenshot" alt="ERPNext Healthcare" src="/docs/assets/img/healthcare/appointment_2.png">
 
-After Booking, the scheduled time of the Appointment and duration will be updated and seved in the document.
+After Booking, the scheduled time of the Appointment and duration will be updated and saved in the document.
 
 <img class="screenshot" alt="ERPNext Healthcare" src="/docs/assets/img/healthcare/appointment_3.png">
 

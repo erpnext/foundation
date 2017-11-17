@@ -79,7 +79,7 @@ Small Text field carries text content, has more character limit than the Data fi
 
 - Table
 
-Table will be (sort of) Link field which renders another docytpe within the current form. For example, Item table in the Sales Order is a Table field, which is linked to Sales Order Item doctype.
+Table will be (sort of) Link field which renders another doctype within the current form. For example, Item table in the Sales Order is a Table field, which is linked to Sales Order Item doctype.
 
 - Text Editor
 

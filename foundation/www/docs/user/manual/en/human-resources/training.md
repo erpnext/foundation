@@ -15,11 +15,11 @@ By default the status of the employee will be 'Open'.
 
 <img class="screenshot" alt="Employee" src="/docs/assets/img/human-resources/training_event_employee.png">
 
-When you submit the Training Event, a notifcation will be sent to the employee notifying that the Training has been scheduled. This is sent via Email Alert "Training Scheduled". You can modifiy this Email Alert to customize the message.
+When you submit the Training Event, a notification will be sent to the employee notifying that the Training has been scheduled. This is sent via Email Alert "Training Scheduled". You can modify this Email Alert to customize the message.
 
 ### Training Result
 
-After compleation of the training Employee-wise training results can be stored based on the Feedback received from the Trainer.
+After completion of the training Employee-wise training results can be stored based on the Feedback received from the Trainer.
 
 <img class="screenshot" alt="Employee" src="/docs/assets/img/human-resources/training_result.png">
 

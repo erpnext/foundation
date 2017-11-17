@@ -15,6 +15,6 @@ Add the relevant Course and the Fee details for a program.
 
 <img class="screenshot" alt="Program" src="/docs/assets/img/schools/setup/course-fee-program.png">
 
-The Program Doctype is further linked to the **Student applicant**, **Program enrollment, Student group, Fee structre and Fee**. The links allow to view or create the related document for a Program.
+The Program Doctype is further linked to the **Student applicant**, **Program enrollment, Student group, Fee structure and Fee**. The links allow to view or create the related document for a Program.
 
 {next}

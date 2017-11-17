@@ -29,7 +29,7 @@ For more details about payment entry [check here.](/docs/user/manual/en/accounts
 
 ## Journal Entry
 
-To make paymant using journal entry, check below steps
+To make payment using journal entry, check below steps
 
 ####Step 1: Activate Payment via Journal Entry
 
@@ -45,7 +45,7 @@ On submitting a document against which Journal Entry can be made, you will find 
 
 ####Step 3: Journal Entry
 
-Save and submit the journal entry to record the payament against the invoice
+Save and submit the journal entry to record the payment against the invoice
 <img class="screenshot" alt="Making Payment" src="/docs/assets/img/accounts/journal-entry.png">
 
 For more details about journal entry [check here.](/docs/user/manual/en/accounts/journal-entry)
