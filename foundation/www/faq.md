@@ -106,13 +106,6 @@ ERPNext is our brand and identity. All work we do will be under the brand name o
 
 ---
 
-### 11. I want to place/claim bounty amount on ERPNext portal?
-
-Payment will be subject to transfer fee (bank and payment gateway charges).
-Final amount received will be after deducting transfer fees.
-
----
-
 
 [Still have questions? Ask them at the forum](https://discuss.erpnext.com).
 

@@ -62,3 +62,12 @@ If any developer is happy with the Bounty Amount collected so far and is ready t
 ### 10. How to track the development of the feature?
 
 There is an option of linking the bounty to a GitHub Issue. You can see it on the Bounty page.
+
+---
+
+### 11. I want to place/claim bounty amount on ERPNext portal?
+
+Payment will be subject to transfer fee (bank and payment gateway charges).
+Final amount received will be after deducting transfer fees.
+
+---
