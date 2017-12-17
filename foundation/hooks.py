@@ -152,3 +152,11 @@ scheduler_events = {
 # 	"frappe.desk.doctype.event.event.get_events": "foundation.event.get_events"
 # }
 
+fixtures = [
+	{
+		"dt": "Custom Field",
+		"filters": [["name", "in",
+			["About Us Team Member-avatar"]
+		]]
+	}
+]
