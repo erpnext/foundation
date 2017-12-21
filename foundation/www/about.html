@@ -11,7 +11,7 @@
 <section>
 	<h3>People</h3>
 	{% for member in doc.team_members  %}
-		{{ media(member.full_name, member.bio, member.image_link or member.avatar) }}
+		{{ media(member.full_name, member.bio, member.image_link) }}
 	{% endfor %}
 <p><a href="/contact">Want to talk to someone in the foundation? Get in touch</a></p>
 
