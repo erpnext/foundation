@@ -151,4 +151,3 @@ scheduler_events = {
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "foundation.event.get_events"
 # }
-
