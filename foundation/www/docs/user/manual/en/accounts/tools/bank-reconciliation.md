@@ -11,7 +11,7 @@ The Bank Reconciliation Report provide the difference between the bank balance s
 
 <img class="screenshot" alt="Bank Reconciliation statement" src="/docs/assets/img/accounts/bank-reconciliation-2.png">  
 
-In the report, check whether the field 'Balance as per bank' matches the Bank Account Statement. If it is matching, it means that Clearance Date is correctly updated for all the bank entries. If there is a mismatch, Its because of bank entries for which Clearance Date is not yet updated.
+In the report, check whether the field 'Balance as per bank' matches the Bank Account Statement. If it is matching, it means that Clearance Date is correctly updated for all the bank entries. If there is a mismatch, Its because of bank entries for which Cleanrane Date is not yet updated.
 
 ###Bank Reconciliation Tool
 

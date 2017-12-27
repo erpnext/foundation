@@ -9,7 +9,7 @@ Enter Company Details like Name, Abbreviation and Financial Year Details.
 
 ### Company Abbreviation
 
-These will be appended to your **Account** Heads, for example if your abbreviation is **WP**, then your Sales account will be **Sales - WPL**
+These will be appened to your **Account** Heads, for example if your abbreviation is **WP**, then your Sales account will be **Sales - WPL**
 
 For Example: East Wind will be abbreviated as EW. Shades of Green will be abbreviated as SOG. In case you wish to give your own abbreviation, you can do so. The text field allows any type of text.
 

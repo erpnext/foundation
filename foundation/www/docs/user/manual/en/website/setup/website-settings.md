@@ -34,7 +34,7 @@ You can set the menus items in the Top Bar here.
 
 <img class="screenshot" alt="Top Bar" src="/docs/assets/img/website/top-bar.png">
 
- * Similarly you can also set sidebar and footer links.
+ * Similarlly you can also set sidebar and footer links.
  
 ####Integrations & Miscellaneous Settings
 

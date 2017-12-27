@@ -1,1 +1,0 @@
-erpnext.schools.web_form

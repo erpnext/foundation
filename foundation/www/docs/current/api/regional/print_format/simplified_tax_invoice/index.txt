@@ -1,0 +1,1 @@
+erpnext.regional.print_format.simplified_tax_invoice

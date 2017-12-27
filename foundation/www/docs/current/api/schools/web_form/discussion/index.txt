@@ -1,2 +1,0 @@
-erpnext.schools.web_form.discussion.discussion
-erpnext.schools.web_form.discussion

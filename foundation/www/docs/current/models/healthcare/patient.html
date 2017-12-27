@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/patient"
@@ -92,7 +92,8 @@ Patient
             <td>
                 <pre>
 Male
-Female</pre>
+Female
+Other</pre>
             </td>
         </tr>
         
@@ -124,7 +125,7 @@ O Negative</pre>
             <td >
                 Date</td>
             <td >
-                DOB
+                Date of birth
                 
             </td>
             <td></td>
@@ -205,27 +206,6 @@ Open</pre>
         
         <tr >
             <td>12</td>
-            <td ><code>company</code></td>
-            <td >
-                Link</td>
-            <td class="text-muted" title="Hidden">
-                Company
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/setup/company">Company</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>13</td>
             <td ><code>report_preference</code></td>
             <td >
                 Select</td>
@@ -241,7 +221,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>13</td>
             <td ><code>mobile</code></td>
             <td >
                 Data</td>
@@ -253,7 +233,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>14</td>
             <td ><code>email</code></td>
             <td >
                 Data</td>
@@ -267,7 +247,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>15</td>
             <td ><code>phone</code></td>
             <td >
                 Data</td>
@@ -279,7 +259,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>16</td>
             <td ><code>disabled</code></td>
             <td >
                 Check</td>
@@ -291,7 +271,7 @@ Print</pre>
         </tr>
         
         <tr class="info">
-            <td>18</td>
+            <td>17</td>
             <td ><code>sb_relation</code></td>
             <td >
                 Section Break</td>
@@ -303,7 +283,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>18</td>
             <td ><code>patient_relation</code></td>
             <td >
                 Table</td>
@@ -324,7 +304,7 @@ Print</pre>
         </tr>
         
         <tr class="info">
-            <td>20</td>
+            <td>19</td>
             <td ><code>allergy_medical_and_surgical_history</code></td>
             <td >
                 Section Break</td>
@@ -336,7 +316,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>20</td>
             <td ><code>allergies</code></td>
             <td >
                 Small Text</td>
@@ -348,7 +328,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>21</td>
             <td ><code>medication</code></td>
             <td >
                 Small Text</td>
@@ -360,7 +340,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>22</td>
             <td ><code>column_break_20</code></td>
             <td class="info">
                 Column Break</td>
@@ -372,7 +352,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>23</td>
             <td ><code>medical_history</code></td>
             <td >
                 Small Text</td>
@@ -384,7 +364,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>24</td>
             <td ><code>surgical_history</code></td>
             <td >
                 Small Text</td>
@@ -396,7 +376,7 @@ Print</pre>
         </tr>
         
         <tr class="info">
-            <td>26</td>
+            <td>25</td>
             <td ><code>personal_and_social_history</code></td>
             <td >
                 Section Break</td>
@@ -408,7 +388,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>26</td>
             <td ><code>occupation</code></td>
             <td >
                 Data</td>
@@ -420,7 +400,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>27</td>
             <td ><code>column_break_25</code></td>
             <td class="info">
                 Column Break</td>
@@ -432,7 +412,7 @@ Print</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>28</td>
             <td ><code>marital_status</code></td>
             <td >
                 Select</td>
@@ -441,7 +421,8 @@ Print</pre>
                 
             </td>
             <td>
-                <pre>Single
+                <pre>
+Single
 Married
 Divorced
 Widow</pre>
@@ -449,7 +430,7 @@ Widow</pre>
         </tr>
         
         <tr class="info">
-            <td>30</td>
+            <td>29</td>
             <td ><code>risk_factors</code></td>
             <td >
                 Section Break</td>
@@ -461,7 +442,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>30</td>
             <td ><code>tobacco_past_use</code></td>
             <td >
                 Data</td>
@@ -473,7 +454,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>31</td>
             <td ><code>tobacco_current_use</code></td>
             <td >
                 Data</td>
@@ -485,7 +466,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>32</td>
             <td ><code>alcohol_past_use</code></td>
             <td >
                 Data</td>
@@ -497,7 +478,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>33</td>
             <td ><code>alcohol_current_use</code></td>
             <td >
                 Data</td>
@@ -509,7 +490,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>34</td>
             <td ><code>column_break_32</code></td>
             <td class="info">
                 Column Break</td>
@@ -521,7 +502,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>35</td>
             <td ><code>surrounding_factors</code></td>
             <td >
                 Small Text</td>
@@ -533,7 +514,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>36</td>
             <td ><code>other_risk_factors</code></td>
             <td >
                 Small Text</td>
@@ -545,7 +526,7 @@ Widow</pre>
         </tr>
         
         <tr class="info">
-            <td>38</td>
+            <td>37</td>
             <td ><code>more_info</code></td>
             <td >
                 Section Break</td>
@@ -559,7 +540,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>38</td>
             <td ><code>patient_details</code></td>
             <td >
                 Text</td>
@@ -572,7 +553,7 @@ Widow</pre>
         </tr>
         
         <tr class="info">
-            <td>40</td>
+            <td>39</td>
             <td ><code>ac_sb</code></td>
             <td >
                 Section Break</td>
@@ -584,7 +565,7 @@ Widow</pre>
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>40</td>
             <td ><code>default_currency</code></td>
             <td >
                 Link</td>
@@ -755,7 +736,7 @@ Widow</pre>
         <a name="erpnext.healthcare.doctype.patient.patient.get_patient_detail" href="#erpnext.healthcare.doctype.patient.patient.get_patient_detail" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.healthcare.doctype.patient.patient.<b>get_patient_detail</b>
-        <i class="text-muted">(patient, company=None)</i>
+        <i class="text-muted">(patient)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

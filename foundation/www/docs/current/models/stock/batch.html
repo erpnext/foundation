@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/stock/doctype/batch"
@@ -335,14 +335,27 @@
 	
         
     
-    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.doctype.batch.batch.get_batch_no</code>
+    </p>
 	<p class="docs-attr-name">
         <a name="erpnext.stock.doctype.batch.batch.get_batch_no" href="#erpnext.stock.doctype.batch.batch.get_batch_no" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.stock.doctype.batch.batch.<b>get_batch_no</b>
-        <i class="text-muted">(item_code, warehouse, qty, throw=False)</i>
+        <i class="text-muted">(item_code, warehouse, qty=1, throw=False)</i>
     </p>
-	<div class="docs-attr-desc"><p>get the smallest batch with for the given item_code, warehouse and qty</p>
+	<div class="docs-attr-desc"><pre><code>Get batch number using First Expiring First Out method.
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>item_code</code></strong> -  <code>item_code</code> of Item Document</li>
+<li><strong><code>warehouse</code></strong> -  name of Warehouse to check</li>
+<li><p><strong><code>qty</code></strong> -  quantity of Items</p>
+
+<p>:return: String represent batch number of batch with sufficient quantity else an empty String</p></li>
+</ul>
 </div>
 	<br>
 
@@ -373,6 +386,22 @@
 <li><strong><code>warehouse</code></strong> -  Optional - give qty for this warehouse</li>
 <li><strong><code>item_code</code></strong> -  Optional - give qty for this item</li>
 </ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.batch.batch.get_batches" href="#erpnext.stock.doctype.batch.batch.get_batches" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.batch.batch.<b>get_batches</b>
+        <i class="text-muted">(item_code, warehouse, qty=1, throw=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 

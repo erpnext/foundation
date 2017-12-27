@@ -1,3 +1,4 @@
+erpnext.utilities.product
 erpnext.utilities.user_progress_utils
 erpnext.utilities.transaction_base
 erpnext.utilities.user_progress

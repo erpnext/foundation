@@ -1,9 +1,14 @@
 <!-- add-breadcrumbs -->
 # Training
+### Training Program
+
+Create Training Program and schedule Training Events under it. It has a dashboard linked to Training Event to view which event is under the Training Program.
+
+<img class="screenshot" alt="Employee" src="/docs/assets/img/human-resources/training_program.png">
 
 ### Training Event
 
-Schedule seminars, workshops, conferences etc using Training Event. You can also invite your employees to attend the event using this feature.
+Schedule seminars, workshops, conferences etc using Training Event linked to a Training Program. You can also invite your employees to attend the event using this feature.
 
 <img class="screenshot" alt="Employee" src="/docs/assets/img/human-resources/training_event.png">
 

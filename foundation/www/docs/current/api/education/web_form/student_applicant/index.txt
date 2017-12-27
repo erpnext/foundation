@@ -1,0 +1,2 @@
+erpnext.education.web_form.student_applicant
+erpnext.education.web_form.student_applicant.student_applicant

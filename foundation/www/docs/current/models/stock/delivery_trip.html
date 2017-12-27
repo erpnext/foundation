@@ -1,0 +1,475 @@
+<!-- title: Delivery Trip -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Delivery Trip</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.0.2</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/stock/doctype/delivery_trip"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabDelivery Trip</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Series
+                
+            </td>
+            <td>
+                <pre>TOUR-.#####</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>column_break_2</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>email_notification_sent</code></td>
+            <td >
+                Check</td>
+            <td >
+                Initial Email Notification Sent
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>5</td>
+            <td ><code>section_break_3</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td class="danger" title="Mandatory"><code>date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td class="danger" title="Mandatory"><code>departure_time</code></td>
+            <td >
+                Time</td>
+            <td >
+                Departure Time
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td class="danger" title="Mandatory"><code>driver</code></td>
+            <td >
+                Link</td>
+            <td >
+                Driver
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/driver">Driver</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>driver_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Driver Name
+                
+            </td>
+            <td>
+                <pre>driver.full_name</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td class="danger" title="Mandatory"><code>vehicle</code></td>
+            <td >
+                Link</td>
+            <td >
+                Vehicle
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/vehicle">Vehicle</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>delivery_service_stops</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Delivery Stops
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>delivery_stops</code></td>
+            <td >
+                Table</td>
+            <td >
+                Delivery Stop
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/delivery_stop">Delivery Stop</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>calculate_arrival_time</code></td>
+            <td >
+                Button</td>
+            <td >
+                Calculate Estimated Arrival Times
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>15</td>
+            <td ><code>section_break_13</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td class="danger" title="Mandatory"><code>delivery_notification</code></td>
+            <td >
+                Link</td>
+            <td >
+                Delivery Notification
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/email/standard_reply">Standard Reply</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/delivery_trip">Delivery Trip</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.stock.doctype.delivery_trip.delivery_trip</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>DeliveryTrip</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.doctype.delivery_trip.delivery_trip.calculate_time_matrix</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.delivery_trip.delivery_trip.calculate_time_matrix" href="#erpnext.stock.doctype.delivery_trip.delivery_trip.calculate_time_matrix" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.delivery_trip.delivery_trip.<b>calculate_time_matrix</b>
+        <i class="text-muted">(name)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Calucation and round in closest 15 minutes, delivery stops</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.doctype.delivery_trip.delivery_trip.get_contact_and_address</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.delivery_trip.delivery_trip.get_contact_and_address" href="#erpnext.stock.doctype.delivery_trip.delivery_trip.get_contact_and_address" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.delivery_trip.delivery_trip.<b>get_contact_and_address</b>
+        <i class="text-muted">(name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.doctype.delivery_trip.delivery_trip.get_contact_display</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.delivery_trip.delivery_trip.get_contact_display" href="#erpnext.stock.doctype.delivery_trip.delivery_trip.get_contact_display" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.delivery_trip.delivery_trip.<b>get_contact_display</b>
+        <i class="text-muted">(contact)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.delivery_trip.delivery_trip.get_default_address" href="#erpnext.stock.doctype.delivery_trip.delivery_trip.get_default_address" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.delivery_trip.delivery_trip.<b>get_default_address</b>
+        <i class="text-muted">(out, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.delivery_trip.delivery_trip.get_default_contact" href="#erpnext.stock.doctype.delivery_trip.delivery_trip.get_default_contact" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.delivery_trip.delivery_trip.<b>get_default_contact</b>
+        <i class="text-muted">(out, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.doctype.delivery_trip.delivery_trip.get_delivery_notes</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.delivery_trip.delivery_trip.get_delivery_notes" href="#erpnext.stock.doctype.delivery_trip.delivery_trip.get_delivery_notes" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.delivery_trip.delivery_trip.<b>get_delivery_notes</b>
+        <i class="text-muted">(customer)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.doctype.delivery_trip.delivery_trip.notify_customers</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.delivery_trip.delivery_trip.notify_customers" href="#erpnext.stock.doctype.delivery_trip.delivery_trip.notify_customers" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.delivery_trip.delivery_trip.<b>notify_customers</b>
+        <i class="text-muted">(docname, date, driver, vehicle, sender_email, delivery_notification)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/delivery_trip">Delivery Trip</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

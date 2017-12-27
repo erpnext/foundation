@@ -73,7 +73,7 @@ This report will provide you variance between target and actual performance of S
 
 ###3. Target Distribution
 
-Target Distribution document allows you to divide allocated target across multiple months. If your product and services is seasonal, you can distribute the sales target accordingly. For example, if you are into umbrella business, then target allocated in the monsoon season will be higher than in other months.
+Target Distribution document allows you to divide allocated target across multiple months. If your product and services is seasonal, you can distribute the sales target accordingly. For example, if you are into umbrella business, then target allocated in the monsoon seasion will be higher than in other months.
 
 To create new Monthly Distriibution, go to:
 

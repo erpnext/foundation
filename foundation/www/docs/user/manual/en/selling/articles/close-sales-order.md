@@ -15,6 +15,6 @@ In this case, create Delivery Note and Sales Invoice will be created only for th
 
 Once Sales Order is set as stopped, you will not have pending quantities (three in this case) reflecting in Pending to Deliver and Pending to Invoice reports. To make further transactions against Stopped Sales Order, you should first Unstop it.
 
-You will find same functionality in the Purchase Order as well.
+You will find same funtionality in the Purchase Order as well.
 
 <!-- markdown -->

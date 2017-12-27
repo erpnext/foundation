@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Time Log Batch
 
-You can bill Time Logs by batching them together. This gives you the flexibility to manage your customer billing in the way you want. To create a new Time Sheet, go to 
+You can bill Time Logs by batching them together. This gives you the flexiblity to manage your customer billing in the way you want. To create a new Time Sheet, go to 
 
 > Projects > Time Sheet > New Time Sheet
 

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/setup/doctype/company"
@@ -104,18 +104,20 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
             <td>6</td>
             <td ><code>domain</code></td>
             <td >
-                Select</td>
+                Link</td>
             <td >
                 Domain
                 
             </td>
             <td>
-                <pre>Distribution
-Manufacturing
-Retail
-Services
-Education
-Other</pre>
+                
+                
+
+
+<a href="/docs/current/models/core/domain">Domain</a>
+
+
+                
             </td>
         </tr>
         
@@ -361,8 +363,20 @@ Existing Company</pre>
             </td>
         </tr>
         
-        <tr class="info">
+        <tr >
             <td>22</td>
+            <td ><code>tax_id</code></td>
+            <td >
+                Data</td>
+            <td >
+                Tax ID
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>23</td>
             <td ><code>default_settings</code></td>
             <td >
                 Section Break</td>
@@ -374,7 +388,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>24</td>
             <td ><code>default_bank_account</code></td>
             <td >
                 Link</td>
@@ -395,7 +409,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>25</td>
             <td ><code>default_cash_account</code></td>
             <td >
                 Link</td>
@@ -416,7 +430,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>26</td>
             <td ><code>default_receivable_account</code></td>
             <td >
                 Link</td>
@@ -437,7 +451,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>27</td>
             <td ><code>round_off_account</code></td>
             <td >
                 Link</td>
@@ -458,7 +472,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>28</td>
             <td ><code>write_off_account</code></td>
             <td >
                 Link</td>
@@ -479,7 +493,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>29</td>
             <td ><code>exchange_gain_loss_account</code></td>
             <td >
                 Link</td>
@@ -500,7 +514,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>30</td>
             <td ><code>column_break0</code></td>
             <td class="info">
                 Column Break</td>
@@ -512,7 +526,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>31</td>
             <td ><code>default_payable_account</code></td>
             <td >
                 Link</td>
@@ -533,7 +547,28 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>32</td>
+            <td ><code>default_employee_advance_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Employee Advance Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
             <td ><code>default_expense_account</code></td>
             <td >
                 Link</td>
@@ -554,7 +589,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>34</td>
             <td ><code>default_income_account</code></td>
             <td >
                 Link</td>
@@ -575,7 +610,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>35</td>
             <td ><code>default_payroll_payable_account</code></td>
             <td >
                 Link</td>
@@ -596,7 +631,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>36</td>
             <td ><code>round_off_cost_center</code></td>
             <td >
                 Link</td>
@@ -617,7 +652,7 @@ Existing Company</pre>
         </tr>
         
         <tr class="info">
-            <td>35</td>
+            <td>37</td>
             <td ><code>section_break_22</code></td>
             <td >
                 Section Break</td>
@@ -629,7 +664,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>38</td>
             <td ><code>cost_center</code></td>
             <td >
                 Link</td>
@@ -650,7 +685,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>39</td>
             <td ><code>credit_limit</code></td>
             <td >
                 Currency</td>
@@ -664,7 +699,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>40</td>
             <td ><code>column_break_26</code></td>
             <td class="info">
                 Column Break</td>
@@ -676,7 +711,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>41</td>
             <td ><code>credit_days_based_on</code></td>
             <td >
                 Select</td>
@@ -692,7 +727,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>42</td>
             <td ><code>credit_days</code></td>
             <td >
                 Int</td>
@@ -704,7 +739,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr class="info">
-            <td>41</td>
+            <td>43</td>
             <td ><code>auto_accounting_for_stock_settings</code></td>
             <td >
                 Section Break</td>
@@ -716,7 +751,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>44</td>
             <td ><code>enable_perpetual_inventory</code></td>
             <td >
                 Check</td>
@@ -728,7 +763,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>43</td>
+            <td>45</td>
             <td ><code>default_inventory_account</code></td>
             <td >
                 Link</td>
@@ -749,7 +784,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>46</td>
             <td ><code>stock_adjustment_account</code></td>
             <td >
                 Link</td>
@@ -770,7 +805,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>45</td>
+            <td>47</td>
             <td ><code>column_break_32</code></td>
             <td class="info">
                 Column Break</td>
@@ -782,7 +817,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>48</td>
             <td ><code>stock_received_but_not_billed</code></td>
             <td >
                 Link</td>
@@ -803,7 +838,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>49</td>
             <td ><code>expenses_included_in_valuation</code></td>
             <td >
                 Link</td>
@@ -824,7 +859,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr class="info">
-            <td>48</td>
+            <td>50</td>
             <td ><code>fixed_asset_depreciation_settings</code></td>
             <td >
                 Section Break</td>
@@ -836,7 +871,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>49</td>
+            <td>51</td>
             <td ><code>accumulated_depreciation_account</code></td>
             <td >
                 Link</td>
@@ -857,7 +892,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>50</td>
+            <td>52</td>
             <td ><code>depreciation_expense_account</code></td>
             <td >
                 Link</td>
@@ -878,7 +913,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>51</td>
+            <td>53</td>
             <td ><code>series_for_depreciation_entry</code></td>
             <td >
                 Data</td>
@@ -890,7 +925,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>52</td>
+            <td>54</td>
             <td ><code>column_break_40</code></td>
             <td class="info">
                 Column Break</td>
@@ -902,7 +937,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>53</td>
+            <td>55</td>
             <td ><code>disposal_account</code></td>
             <td >
                 Link</td>
@@ -923,7 +958,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>54</td>
+            <td>56</td>
             <td ><code>depreciation_cost_center</code></td>
             <td >
                 Link</td>
@@ -944,7 +979,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr class="info">
-            <td>55</td>
+            <td>57</td>
             <td ><code>company_info</code></td>
             <td >
                 Section Break</td>
@@ -957,7 +992,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>56</td>
+            <td>58</td>
             <td ><code>address_html</code></td>
             <td >
                 HTML</td>
@@ -969,7 +1004,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>57</td>
+            <td>59</td>
             <td ><code>column_break1</code></td>
             <td class="info">
                 Column Break</td>
@@ -981,7 +1016,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>58</td>
+            <td>60</td>
             <td ><code>phone_no</code></td>
             <td >
                 Data</td>
@@ -995,7 +1030,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>59</td>
+            <td>61</td>
             <td ><code>fax</code></td>
             <td >
                 Data</td>
@@ -1009,7 +1044,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>60</td>
+            <td>62</td>
             <td ><code>email</code></td>
             <td >
                 Data</td>
@@ -1023,7 +1058,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>61</td>
+            <td>63</td>
             <td ><code>website</code></td>
             <td >
                 Data</td>
@@ -1035,7 +1070,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr class="info">
-            <td>62</td>
+            <td>64</td>
             <td ><code>registration_info</code></td>
             <td >
                 Section Break</td>
@@ -1047,7 +1082,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>63</td>
+            <td>65</td>
             <td ><code>registration_details</code></td>
             <td >
                 Code</td>
@@ -1060,7 +1095,7 @@ Last Day of the Next Month</pre>
         </tr>
         
         <tr >
-            <td>64</td>
+            <td>66</td>
             <td ><code>delete_company_transactions</code></td>
             <td >
                 Button</td>
@@ -1384,6 +1419,24 @@ Last Day of the Next Month</pre>
 	
         
     
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.setup.doctype.company.company.enqueue_replace_abbr</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.setup.doctype.company.company.enqueue_replace_abbr" href="#erpnext.setup.doctype.company.company.enqueue_replace_abbr" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.setup.doctype.company.company.<b>enqueue_replace_abbr</b>
+        <i class="text-muted">(company, old, new)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     
 	<p class="docs-attr-name">
         <a name="erpnext.setup.doctype.company.company.get_name_with_abbr" href="#erpnext.setup.doctype.company.company.get_name_with_abbr" class="text-muted small">
@@ -1491,7 +1544,7 @@ Last Day of the Next Month</pre>
             <li>
 
 
-<a href="/docs/current/models/accounts/asset">Asset</a>
+<a href="/docs/current/models/assets/asset">Asset</a>
 
 </li>
 			
@@ -1500,7 +1553,7 @@ Last Day of the Next Month</pre>
             <li>
 
 
-<a href="/docs/current/models/accounts/asset_category_account">Asset Category Account</a>
+<a href="/docs/current/models/assets/asset_category_account">Asset Category Account</a>
 
 </li>
 			
@@ -1509,7 +1562,25 @@ Last Day of the Next Month</pre>
             <li>
 
 
-<a href="/docs/current/models/accounts/asset_movement">Asset Movement</a>
+<a href="/docs/current/models/assets/asset_maintenance">Asset Maintenance</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/asset_maintenance_team">Asset Maintenance Team</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/asset_movement">Asset Movement</a>
 
 </li>
 			
@@ -1617,6 +1688,15 @@ Last Day of the Next Month</pre>
             <li>
 
 
+<a href="/docs/current/models/stock/delivery_trip">Delivery Trip</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/setup/email_digest">Email Digest</a>
 
 </li>
@@ -1627,6 +1707,15 @@ Last Day of the Next Month</pre>
 
 
 <a href="/docs/current/models/hr/employee">Employee</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_advance">Employee Advance</a>
 
 </li>
 			
@@ -1680,7 +1769,7 @@ Last Day of the Next Month</pre>
             <li>
 
 
-<a href="/docs/current/models/schools/fee_schedule">Fee Schedule</a>
+<a href="/docs/current/models/education/fee_schedule">Fee Schedule</a>
 
 </li>
 			
@@ -1689,7 +1778,7 @@ Last Day of the Next Month</pre>
             <li>
 
 
-<a href="/docs/current/models/schools/fee_structure">Fee Structure</a>
+<a href="/docs/current/models/education/fee_structure">Fee Structure</a>
 
 </li>
 			
@@ -1698,7 +1787,7 @@ Last Day of the Next Month</pre>
             <li>
 
 
-<a href="/docs/current/models/schools/fees">Fees</a>
+<a href="/docs/current/models/education/fees">Fees</a>
 
 </li>
 			
@@ -1734,7 +1823,25 @@ Last Day of the Next Month</pre>
             <li>
 
 
+<a href="/docs/current/models/non_profit/grant_application">Grant Application</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/portal/homepage">Homepage</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hub_node/hub_settings">Hub Settings</a>
 
 </li>
 			
@@ -1869,6 +1976,15 @@ Last Day of the Next Month</pre>
             <li>
 
 
+<a href="/docs/current/models/accounts/opening_invoice_creation_tool">Opening Invoice Creation Tool</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/crm/opportunity">Opportunity</a>
 
 </li>
@@ -1879,15 +1995,6 @@ Last Day of the Next Month</pre>
 
 
 <a href="/docs/current/models/accounts/party_account">Party Account</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/healthcare/patient">Patient</a>
 
 </li>
 			
@@ -1923,6 +2030,15 @@ Last Day of the Next Month</pre>
             <li>
 
 
+<a href="/docs/current/models/hr/payroll_entry">Payroll Entry</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/accounts/period_closing_voucher">Period Closing Voucher</a>
 
 </li>
@@ -1942,15 +2058,6 @@ Last Day of the Next Month</pre>
 
 
 <a href="/docs/current/models/accounts/pricing_rule">Pricing Rule</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/hr/process_payroll">Process Payroll</a>
 
 </li>
 			
@@ -2032,6 +2139,15 @@ Last Day of the Next Month</pre>
 
 
 <a href="/docs/current/models/buying/request_for_quotation">Request for Quotation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/restaurant/restaurant">Restaurant</a>
 
 </li>
 			
@@ -2185,6 +2301,24 @@ Last Day of the Next Month</pre>
 
 
 <a href="/docs/current/models/projects/timesheet">Timesheet</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/training_event">Training Event</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/training_program">Training Program</a>
 
 </li>
 			

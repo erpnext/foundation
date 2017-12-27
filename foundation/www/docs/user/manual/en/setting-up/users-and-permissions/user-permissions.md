@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # User Permissions
 
-Along with Role based permissions, you can also set user level permissions that are based on rules that are evaluated against the data contained in the document being accessed. This is particularly useful when you want to restrict based on:
+Along with Role based permissions, you can also set user level permissions that are based on rules that are evaluated against the data containted in the document being accessed. This is particularly useful when you want to restrict based on:
 
 1. Allow user to access data belonging to one Company
 1. Allow user to access data related to a specific Customer or Territory
@@ -34,13 +34,13 @@ Here you will see that Company has already been checked. If you want user permis
 
 ### Ignoring User Permissions on Certain Fields
 
-Another way of allowing documents to be seen that have been restricted by User Permissions is to check "Ignore User Permissions" on a particular field by going to **Customize Form**
+Another way of allowing documents to be seen that have been restricited by User Permissions is to check "Ignore User Permissions" on a particular field by going to **Customize Form**
 
 For example you don't want Assets to be restricited for any user, then select **Asset** in **Customize Form** and in the Company field, check on "Ignore User Permissions"
 
 <img src="/docs/assets/img/users-and-permissions/user-perms/ignore-user-user-permissions.png" class="screenshot" alt="Ignore User Permissions on specific properties">
 
-### Strict Permissions
+### Strict Permisssions
 
 Since User Permissions are applied via Roles, there may be many users belonging to a particular Role. Suppose you have three users belonging to Role "Accounts User" and you have applied **User Permissions** to only one user, then the permissions will only be restricted to that user.
 

@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 #Purchasing in Different Unit (UoM)
 
-Each item has stock unit of measurement (UoM) associated to it. For example UoM of pen could be numbers (Nos) and sand could be stocked kgs. However, when we place an order with Supplier, UoM for an item could change. Like we can order 1 set/box of Pen, or one truck of sand to our Supplier. When creating purchase transaction, you can change Purchase UoM for an item.
+Each item has stock unit of measument (UoM) associated to it. For example UoM of pen could be numbers (Nos) and sand could be stocked kgs. However, when we place an order with Supplier, UoM for an item could change. Like we can order 1 set/box of Pen, or one truck of sand to our Supplier. When creating purchase transacton, you can change Purchase UoM for an item.
 
 ### Scenario:
 

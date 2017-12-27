@@ -19,9 +19,9 @@ requirement.
 
 **Is Carry Forward:** If checked, the balance leave will be carried forwarded to the next allocation period.
 
-**Is Leave Without Pay:** This ensures that the Leave Type will be treated as leaves without pay and salary will get deducted for this Leave Type.
+**Is Leave Without Pay:** This ensures that the Leave Type will be treated as leaves whithout pay and salary will get deducted for this Leave Type.
 
-**Allow Negative Balance:** If checked, system will always allow to approve leave application for the Leave Type, even if there is no leave balance.
+**Allow Nagative Balance:** If checked, system will always allow to approve leave application for the Leave Type, even if there is no leave balance.
 
 **Include holidays within leaves as leaves:** Check this option if you wish to count holidays within leaves as a ‘leave’. Such holidays will be deducted from the total number of leaves.
 
