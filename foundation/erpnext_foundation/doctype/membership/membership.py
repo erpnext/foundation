@@ -56,6 +56,7 @@ class Membership(Document):
 			self.from_date = nowdate()
 
 		self.to_date = add_years(self.from_date, 1)
+		frappe.db.set_value("Member", self.member, "expires_on", self.to_date)
 
 	def on_payment_authorized(self, status_changed_to=None):
 		if status_changed_to in ("Completed", "Authorized"):
