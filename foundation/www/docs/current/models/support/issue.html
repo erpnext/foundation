@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/support/doctype/issue"
@@ -82,14 +82,23 @@
         
         <tr >
             <td>4</td>
-            <td ><code>mins_to_first_response</code></td>
+            <td ><code>issue_type</code></td>
             <td >
-                Float</td>
+                Link</td>
             <td >
-                Mins to First Response
+                Issue Type
                 
             </td>
-            <td></td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/support/issue_type">Issue Type</a>
+
+
+                
+            </td>
         </tr>
         
         <tr >
@@ -180,13 +189,13 @@ Closed</pre>
             <td></td>
         </tr>
         
-        <tr >
+        <tr class="info">
             <td>11</td>
-            <td ><code>column_break_9</code></td>
-            <td class="info">
-                Column Break</td>
+            <td ><code>response</code></td>
             <td >
-                
+                Section Break</td>
+            <td >
+                Response
                 
             </td>
             <td></td>
@@ -194,11 +203,11 @@ Closed</pre>
         
         <tr >
             <td>12</td>
-            <td ><code>resolution_date</code></td>
+            <td ><code>mins_to_first_response</code></td>
             <td >
-                Datetime</td>
+                Float</td>
             <td >
-                Resolution Date
+                Mins to First Response
                 
             </td>
             <td></td>
@@ -222,7 +231,7 @@ Closed</pre>
             <td >
                 Section Break</td>
             <td >
-                Contact
+                Reference
                 
             </td>
             <td>
@@ -317,68 +326,8 @@ Closed</pre>
             </td>
         </tr>
         
-        <tr class="info">
+        <tr >
             <td>20</td>
-            <td ><code>section_break_19</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                Resolution
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>21</td>
-            <td ><code>resolution_details</code></td>
-            <td >
-                Text Editor</td>
-            <td >
-                Resolution Details
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>22</td>
-            <td ><code>column_break1</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>23</td>
-            <td ><code>opening_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                Opening Date
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>24</td>
-            <td ><code>opening_time</code></td>
-            <td >
-                Time</td>
-            <td >
-                Opening Time
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>25</td>
             <td ><code>company</code></td>
             <td >
                 Link</td>
@@ -398,8 +347,80 @@ Closed</pre>
             </td>
         </tr>
         
+        <tr class="info">
+            <td>21</td>
+            <td ><code>section_break_19</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Resolution
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>resolution_details</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Resolution Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>column_break1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>opening_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Opening Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>opening_time</code></td>
+            <td >
+                Time</td>
+            <td >
+                Opening Time
+                
+            </td>
+            <td></td>
+        </tr>
+        
         <tr >
             <td>26</td>
+            <td ><code>resolution_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Resolution Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
             <td ><code>content_type</code></td>
             <td >
                 Data</td>
@@ -411,7 +432,7 @@ Closed</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>28</td>
             <td ><code>attachment</code></td>
             <td >
                 Attach</td>

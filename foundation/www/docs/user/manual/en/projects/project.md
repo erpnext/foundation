@@ -53,7 +53,7 @@ The Actual Start and End Time along with the costing shall then be updated based
 
 <img class="screenshot" alt="Project - Time Log List" src="/docs/assets/img/project/project_time_log_list.png">
 
-* You can also create a Time Log directly and link it to the Project.
+* You can also create a Time Log directlly and link it to the Project.
 
 <img class="screenshot" alt="Project - Link Time Log" src="/docs/assets/img/project/project_time_log_link.png">
 
@@ -82,13 +82,13 @@ You can make a [Cost Center](/docs/user/manual/en/accounts/setup/cost-center.htm
 
 ###Project Costing
 
-The Project Costing section helps you track the time and expenses incurred against the project.
+The Project Costing section helps you track the time, expenses and purchases incurred against the project.
 
 <img class="screenshot" alt="Project - Costing" src="/docs/assets/img/project/project_costing.png">
 
-* The Costing Section is updated based on Time Logs made.
+* The Total Cost is composed of the costing amount from timesheets, the total cost from expense claims and the total cost from purchase invoices created against this project.
 
-* Gross Margin is the difference between Total Costing Amount and Total Billing Amount
+* The Gross Margin is the difference between Total Billed Amount and the Total Cost Amount for this project.
 
 ###Billing
 

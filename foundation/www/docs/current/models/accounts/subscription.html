@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/subscription"
@@ -103,30 +103,6 @@
         
         <tr >
             <td>5</td>
-            <td ><code>disabled</code></td>
-            <td >
-                Check</td>
-            <td >
-                Disabled
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>6</td>
-            <td ><code>submit_on_creation</code></td>
-            <td >
-                Check</td>
-            <td >
-                Submit on Creation
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>7</td>
             <td ><code>column_break_5</code></td>
             <td class="info">
                 Column Break</td>
@@ -138,7 +114,7 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>6</td>
             <td class="danger" title="Mandatory"><code>start_date</code></td>
             <td >
                 Date</td>
@@ -150,7 +126,7 @@
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>7</td>
             <td ><code>end_date</code></td>
             <td >
                 Date</td>
@@ -162,20 +138,32 @@
         </tr>
         
         <tr >
-            <td>10</td>
-            <td ><code>next_schedule_date</code></td>
+            <td>8</td>
+            <td ><code>submit_on_creation</code></td>
             <td >
-                Date</td>
+                Check</td>
             <td >
-                Next Schedule Date
+                Submit on Creation
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>disabled</code></td>
+            <td >
+                Check</td>
+            <td >
+                Disabled
                 
             </td>
             <td></td>
         </tr>
         
         <tr class="info">
-            <td>11</td>
-            <td ><code>frequency_detail</code></td>
+            <td>10</td>
+            <td ><code>section_break_10</code></td>
             <td >
                 Section Break</td>
             <td >
@@ -186,7 +174,7 @@
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>11</td>
             <td class="danger" title="Mandatory"><code>frequency</code></td>
             <td >
                 Select</td>
@@ -206,8 +194,8 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>13</td>
-            <td ><code>column_break_12</code></td>
+            <td>12</td>
+            <td ><code>column_break_13</code></td>
             <td class="info">
                 Column Break</td>
             <td >
@@ -218,12 +206,24 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>13</td>
             <td ><code>repeat_on_day</code></td>
             <td >
                 Int</td>
             <td >
                 Repeat on Day
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>next_schedule_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Next Schedule Date
                 
             </td>
             <td></td>
@@ -255,6 +255,21 @@ Yearly</pre>
         
         <tr >
             <td>17</td>
+            <td ><code>subject</code></td>
+            <td >
+                Data</td>
+            <td >
+                Subject
+                <p class="text-muted small">
+                    To add dynamic subject, use jinja tags like
+
+<div><pre><code>New {{ doc.doctype }} #{{ doc.name }}</code></pre></div></p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
             <td ><code>column_break_17</code></td>
             <td class="info">
                 Column Break</td>
@@ -266,7 +281,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td ><code>recipients</code></td>
             <td >
                 Small Text</td>
@@ -278,7 +293,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>20</td>
             <td ><code>print_format</code></td>
             <td >
                 Link</td>
@@ -299,7 +314,31 @@ Yearly</pre>
         </tr>
         
         <tr class="info">
-            <td>20</td>
+            <td>21</td>
+            <td ><code>section_break_20</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Message
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>message</code></td>
+            <td >
+                Text</td>
+            <td >
+                Message
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>23</td>
             <td ><code>section_break_16</code></td>
             <td >
                 Section Break</td>
@@ -311,7 +350,7 @@ Yearly</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>24</td>
             <td ><code>status</code></td>
             <td >
                 Select</td>
@@ -330,7 +369,7 @@ Completed</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>25</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -371,6 +410,20 @@ Completed</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="before_cancel" href="#before_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>before_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
         
         
     
@@ -421,6 +474,20 @@ Completed</pre>
         <a name="set_next_schedule_date" href="#set_next_schedule_date" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>set_next_schedule_date</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="unlink_subscription_id" href="#unlink_subscription_id" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>unlink_subscription_id</b>
         <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
@@ -512,6 +579,20 @@ Completed</pre>
 	<br>
 
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_reference_doctype" href="#validate_reference_doctype" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_reference_doctype</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
 
@@ -554,9 +635,9 @@ Completed</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.disabled_subscription" href="#erpnext.accounts.doctype.subscription.subscription.disabled_subscription" class="text-muted small">
+        <a name="erpnext.accounts.doctype.subscription.subscription.disable_subscription" href="#erpnext.accounts.doctype.subscription.subscription.disable_subscription" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>disabled_subscription</b>
+		erpnext.accounts.doctype.subscription.subscription.<b>disable_subscription</b>
         <i class="text-muted">(data)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
@@ -703,9 +784,25 @@ Completed</pre>
         <a name="erpnext.accounts.doctype.subscription.subscription.send_notification" href="#erpnext.accounts.doctype.subscription.subscription.send_notification" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.doctype.subscription.subscription.<b>send_notification</b>
-        <i class="text-muted">(new_rv, print_format=Standard, recipients=None)</i>
+        <i class="text-muted">(new_rv, subscription_doc, print_format=Standard)</i>
     </p>
 	<div class="docs-attr-desc"><p>Notify concerned persons about recurring document generation</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.subscription.subscription.set_subscription_period" href="#erpnext.accounts.doctype.subscription.subscription.set_subscription_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.subscription.subscription.<b>set_subscription_period</b>
+        <i class="text-muted">(args, mcount, new_document)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -722,6 +819,22 @@ Completed</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.doctype.subscription.subscription.<b>stop_resume_subscription</b>
         <i class="text-muted">(subscription, status)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.subscription.subscription.subscription_doctype_query" href="#erpnext.accounts.doctype.subscription.subscription.subscription_doctype_query" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.subscription.subscription.<b>subscription_doctype_query</b>
+        <i class="text-muted">(doctype, txt, searchfield, start, page_len, filters)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

@@ -3,7 +3,7 @@
 
 Chart of Account has hierarchical structure. Each account has a parent it is listed under. 
 
-There are some accounts which are auto-created. For example, Account for Warehouse is auto-created when new Warehouse is added in the system. These accounts are added under pre-defined account ledger. Warehouse Account is always added under Stock Assets, under Current Assets.
+There are some accounts which are auto-created. For example, Account for Warehouse is auto-created when new Wareouse is added in the system. These accounts are added under pre-defined account ledger. Warehouse Account is always added under Stock Assets, under Current Assets.
 
 If you wish to place specific Account into another parent Account, you can achieve the same as below.
 

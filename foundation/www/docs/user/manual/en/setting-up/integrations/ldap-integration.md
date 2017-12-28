@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 #Setting up LDAP
 
-Lightweight Directory Access Protocol is a centralised access control system used by many small medium scale organisations.
+Lightweight Directory Access Protocol is a centralised access controll system used by many small medium scale organisations.
 
 By settings up LDAP service, you able to login to ERPNext account by using LDAP credentials.
 

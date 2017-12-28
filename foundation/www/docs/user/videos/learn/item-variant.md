@@ -5,4 +5,4 @@
 
 **Duration: 2:38**
 
-This video tutorial helps you in setting up Item Attributes (like Size, Length etc.) and creating item variants using these attributes.
+This video tutorial helps you in setting up Item Attributes (like Size, Lenthg etc.) and creating item variants using these attributes.

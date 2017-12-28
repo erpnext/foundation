@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/expense_claim"
@@ -56,18 +56,6 @@
         
         <tr >
             <td>2</td>
-            <td ><code>is_paid</code></td>
-            <td >
-                Check</td>
-            <td >
-                Is Paid
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>3</td>
             <td ><code>approval_status</code></td>
             <td >
                 Select</td>
@@ -83,7 +71,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>3</td>
             <td ><code>exp_approver</code></td>
             <td >
                 Link</td>
@@ -105,7 +93,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>4</td>
             <td ><code>column_break0</code></td>
             <td class="info">
                 Column Break</td>
@@ -117,7 +105,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>5</td>
             <td ><code>total_claimed_amount</code></td>
             <td >
                 Currency</td>
@@ -131,7 +119,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>6</td>
             <td ><code>total_sanctioned_amount</code></td>
             <td >
                 Currency</td>
@@ -142,6 +130,18 @@ Rejected</pre>
             <td>
                 <pre>Company:company:default_currency</pre>
             </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>is_paid</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Paid
+                
+            </td>
+            <td></td>
         </tr>
         
         <tr class="info">
@@ -233,7 +233,9 @@ Rejected</pre>
                 Employee Name
                 
             </td>
-            <td></td>
+            <td>
+                <pre>employee.employee_name</pre>
+            </td>
         </tr>
         
         <tr >
@@ -521,6 +523,53 @@ Cancelled</pre>
             </td>
         </tr>
         
+        <tr class="info">
+            <td>31</td>
+            <td ><code>advance_payments</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Advance Payments
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>32</td>
+            <td ><code>advances</code></td>
+            <td >
+                Table</td>
+            <td >
+                Advances
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/expense_claim_advance">Expense Claim Advance</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>total_advance_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Total Advance Amount
+                
+            </td>
+            <td>
+                <pre>Company:company:default_currency</pre>
+            </td>
+        </tr>
+        
     </tbody>
 </table>
 
@@ -701,6 +750,20 @@ Cancelled</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="update_claimed_amount_in_employee_advance" href="#update_claimed_amount_in_employee_advance" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_claimed_amount_in_employee_advance</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="update_task" href="#update_task" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>update_task</b>
@@ -757,6 +820,20 @@ Cancelled</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="validate_advances" href="#validate_advances" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_advances</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="validate_expense_approver" href="#validate_expense_approver" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>validate_expense_approver</b>
@@ -798,6 +875,24 @@ Cancelled</pre>
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.expense_claim.expense_claim.get_advances</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.expense_claim.expense_claim.get_advances" href="#erpnext.hr.doctype.expense_claim.expense_claim.get_advances" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.expense_claim.expense_claim.<b>get_advances</b>
+        <i class="text-muted">(employee, advance_id=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 

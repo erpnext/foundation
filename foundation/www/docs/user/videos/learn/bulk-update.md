@@ -5,4 +5,4 @@
 
 **Duration: 1:38**
 
-The Bulk Update Tool helps you over-write a value in a specific field of existing records.
+Bulk Update Tool help you in over-writing value in the specific field of exitsting records.

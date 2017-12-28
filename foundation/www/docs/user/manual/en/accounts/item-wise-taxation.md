@@ -29,7 +29,7 @@ In Sales Taxes and Other Charges master, select GST 16% account and mention Tax 
 
 ####Step 3: Tax Calculation in transaction	
 
-In the Sales Order, we have selected many Items. For the items mentioned in blue, tax rate is applied based on tax rate mentioned in the taxes table. For the items highlighted in red, tax rate has fetched for them from the respective item master.
+In the Sales Order, we have selected many Items. For the items mentioned in blue, tax rate is applied based on tax rate mentioned in the taxes table. For the items highlited in red, tax rate has fetched for them from the respective item master.
 
 <img class="screenshot" alt="Opening Account" src="/docs/assets/img/accounts/tax-calulation.png">
 

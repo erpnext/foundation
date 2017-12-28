@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Job Applicant
 
-You can maintain a list of People who have applied for a [Job Opening](/docs/user/manual/en/human-resources/job-opening.html).
+You can mantain a list of People who have applied for a [Job Opening](/docs/user/manual/en/human-resources/job-opening.html).
 
 To create a new Job Applicant go to 
 

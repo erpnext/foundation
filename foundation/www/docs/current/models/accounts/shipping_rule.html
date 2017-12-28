@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/shipping_rule"
@@ -67,111 +67,45 @@ Specify conditions to calculate shipping amount
         
         <tr >
             <td>3</td>
-            <td ><code>calculate_based_on</code></td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>shipping_rule_type</code></td>
             <td >
                 Select</td>
-            <td class="text-muted" title="Hidden">
-                Calculate Based On
+            <td >
+                Shipping Rule Type
                 
             </td>
             <td>
-                <pre>Net Total
-Net Weight</pre>
+                <pre>Selling
+Buying</pre>
             </td>
         </tr>
         
         <tr class="info">
-            <td>4</td>
-            <td ><code>rule_conditions_section</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                Shipping Rule Conditions
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
             <td>5</td>
-            <td class="danger" title="Mandatory"><code>conditions</code></td>
-            <td >
-                Table</td>
-            <td >
-                Shipping Rule Conditions
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/shipping_rule_condition">Shipping Rule Condition</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr class="info">
-            <td>6</td>
-            <td ><code>section_break_6</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                Valid for Countries
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>7</td>
-            <td ><code>worldwide_shipping</code></td>
-            <td >
-                Check</td>
-            <td >
-                Worldwide Shipping
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>8</td>
-            <td ><code>countries</code></td>
-            <td >
-                Table</td>
-            <td >
-                Valid for Countries
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/shipping_rule_country">Shipping Rule Country</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr class="info">
-            <td>9</td>
             <td ><code>section_break_10</code></td>
             <td >
                 Section Break</td>
             <td >
-                
+                Accounting
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>6</td>
             <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
@@ -192,7 +126,7 @@ Net Weight</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>7</td>
             <td ><code>column_break_12</code></td>
             <td class="info">
                 Column Break</td>
@@ -204,7 +138,7 @@ Net Weight</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>8</td>
             <td class="danger" title="Mandatory"><code>account</code></td>
             <td >
                 Link</td>
@@ -225,7 +159,7 @@ Net Weight</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>9</td>
             <td class="danger" title="Mandatory"><code>cost_center</code></td>
             <td >
                 Link</td>
@@ -239,6 +173,124 @@ Net Weight</pre>
 
 
 <a href="/docs/current/models/accounts/cost_center">Cost Center</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>shipping_amount_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>calculate_based_on</code></td>
+            <td >
+                Select</td>
+            <td >
+                Calculate Based On
+                
+            </td>
+            <td>
+                <pre>Fixed
+Net Total
+Net Weight</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>column_break_8</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>shipping_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Shipping Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>14</td>
+            <td ><code>rule_conditions_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Shipping Rule Conditions
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>conditions</code></td>
+            <td >
+                Table</td>
+            <td >
+                Shipping Rule Conditions
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/shipping_rule_condition">Shipping Rule Condition</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>16</td>
+            <td ><code>section_break_6</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Restrict to Countries
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>countries</code></td>
+            <td >
+                Table</td>
+            <td >
+                Valid for Countries
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/shipping_rule_country">Shipping Rule Country</a>
 
 
                 
@@ -316,6 +368,48 @@ Net Weight</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="add_shipping_rule_to_tax_table" href="#add_shipping_rule_to_tax_table" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_shipping_rule_to_tax_table</b>
+        <i class="text-muted">(self, doc, shipping_amount)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="apply" href="#apply" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>apply</b>
+        <i class="text-muted">(self, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Apply shipping rule on given doc. Called from accounts controller</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_shipping_amount_from_rules" href="#get_shipping_amount_from_rules" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_shipping_amount_from_rules</b>
+        <i class="text-muted">(self, value)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="sort_shipping_rule_conditions" href="#sort_shipping_rule_conditions" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>sort_shipping_rule_conditions</b>
@@ -334,6 +428,20 @@ Net Weight</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>validate</b>
         <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_countries" href="#validate_countries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_countries</b>
+        <i class="text-muted">(self, doc)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -392,6 +500,33 @@ Net Weight</pre>
             <li>
 
 
+<a href="/docs/current/models/accounts/purchase_invoice">Purchase Invoice</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/buying/purchase_order">Purchase Order</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/purchase_receipt">Purchase Receipt</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/selling/quotation">Quotation</a>
 
 </li>
@@ -411,6 +546,15 @@ Net Weight</pre>
 
 
 <a href="/docs/current/models/selling/sales_order">Sales Order</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/buying/supplier_quotation">Supplier Quotation</a>
 
 </li>
 			

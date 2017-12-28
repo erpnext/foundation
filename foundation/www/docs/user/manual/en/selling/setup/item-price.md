@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Item Price
 
-Item Price is the record in which you can log selling and buying rate of an item.
+Item Price is the record in which you can log sellig and buying rate of an item.
 
 There are two ways to reach to new Item Price form.
 
@@ -15,7 +15,7 @@ Following are the steps to create new Item Price.
 
 Step 1: Select Price List
 
-You can create multiple Price List in ERPNext to track Selling and Buying Price List of an item separately. Also if item's selling prices id changing based on territory, or due to other criteria, you can create multiple selling Price List for it.
+You can create multiple Price List in ERPNext to track Selling and Buying Price List of an item separtely. Also if item's selling prices id changing based on territory, or due to other criteria, you can create multiple selling Price List for it.
 
 +<img class="screenshot" alt="Item Price list" src="/docs/assets/img/stock/item-price-1.png">
 

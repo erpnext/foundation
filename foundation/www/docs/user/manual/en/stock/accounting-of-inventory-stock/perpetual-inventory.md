@@ -25,7 +25,7 @@ On receipt of items in a particular warehouse, the balance in the Warehouse Acco
 
   * If user wants to set an individual account for each warehouse, create account head for each account under `Assets > Current Asset > Stock Assets > (Warehouse)` and set it on the respective warehouse under field 'Account'.
 
-  * For stock transactions, general ledger entries made against the account head set on the warehouse, if user had not set the account for the warehouse then system gets the account head from the parent warehouse. If account had not set for parent warehouse then system gets the account(Default Inventory Account) from the company master.
+  * For stock transactions, general ledger entries made against the account head set on the warehouse, if user had not set the account for the warhouse then system gets the account head from the parent warehouse. If account had not set for parent warehouse then system gets the account(Default Inventory Account) from the company master.
 
 * * *
 

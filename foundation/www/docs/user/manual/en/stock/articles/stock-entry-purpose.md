@@ -5,7 +5,7 @@ Stock Entry is a stock transaction, which can be used for multiple purposes. Let
 
 #### 1.Purpose: Material Issue
 
-Material Issue entry create to issue item(s) from a warehouse. On submission of Material Issue, stock of item is deducted from the Source Warehouse. 
+Material Issue entry create to issue item(s) from a warehouse. On submission of Material Issue, stock of item is deducated from the Source Warehouse. 
 
 Material Issue is generally made for the low value consumable items like office stationary, product consumables etc. Also you can create Material Issue to reconcile serialized and batched item's stock.
 

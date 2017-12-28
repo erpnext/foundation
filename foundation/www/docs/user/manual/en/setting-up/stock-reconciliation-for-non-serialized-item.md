@@ -36,7 +36,7 @@ A predefined template of an spreadsheet file should be followed for importing it
 
 <img class="screenshot" alt="Stock Reconciliation" src="/docs/assets/img/setup/stock-reco-data.png">
 
-The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quantity, enter stock level you wish to set for that item, in a specific warehouse.
+The csv format is case-sensitive. Do not edit the headers which are preset in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quatity, enter stock level you wish to set for that item, in a specific warehouse.
 
 #### Step 3: Upload file and Enter Values in Stock Reconciliation Form
 
@@ -44,7 +44,7 @@ The csv format is case-sensitive. Do not edit the headers which are preset in th
 
 **Posting Date**
 
-Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date selection option allows you making back dated stock reconciliation as well.
+Posting Date will be date when you want uploaded stock to reflect in the report. Posting Date selection option allows you making back dated stock reconcialiation as well.
 
 **Difference Account:**
 

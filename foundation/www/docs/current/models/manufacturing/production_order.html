@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/manufacturing/doctype/production_order"
@@ -686,6 +686,18 @@ Cancelled</pre>
         
         <tr >
             <td>43</td>
+            <td ><code>sales_order_item</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Sales Order Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>44</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -988,6 +1000,20 @@ Cancelled</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="set_default_warehouse" href="#set_default_warehouse" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_default_warehouse</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="set_production_order_operations" href="#set_production_order_operations" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>set_production_order_operations</b>
@@ -1005,7 +1031,7 @@ Cancelled</pre>
         <a name="set_required_items" href="#set_required_items" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>set_required_items</b>
-        <i class="text-muted">(self)</i>
+        <i class="text-muted">(self, reset_only_qty=False)</i>
     </p>
 	<div class="docs-attr-desc"><p>set required_items for production to keep track of reserved qty</p>
 </div>
@@ -1333,32 +1359,6 @@ Cancelled</pre>
         
     
     <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.manufacturing.doctype.production_order.production_order.get_events</code>
-    </p>
-	<p class="docs-attr-name">
-        <a name="erpnext.manufacturing.doctype.production_order.production_order.get_events" href="#erpnext.manufacturing.doctype.production_order.production_order.get_events" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.manufacturing.doctype.production_order.production_order.<b>get_events</b>
-        <i class="text-muted">(start, end, filters=None)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Returns events for Gantt / Calendar view rendering.</p>
-
-<p><strong>Parameters:</strong></p>
-
-<ul>
-<li><strong><code>start</code></strong> -  Start date-time.</li>
-<li><strong><code>end</code></strong> -  End date-time.</li>
-<li><strong><code>filters</code></strong> -  Filters (JSON).</li>
-</ul>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.manufacturing.doctype.production_order.production_order.get_item_details</code>
     </p>
 	<p class="docs-attr-name">
@@ -1420,6 +1420,24 @@ Cancelled</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.manufacturing.doctype.production_order.production_order.<b>make_timesheet</b>
         <i class="text-muted">(production_order, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.production_order.production_order.query_sales_order</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.production_order.production_order.query_sales_order" href="#erpnext.manufacturing.doctype.production_order.production_order.query_sales_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.production_order.production_order.<b>query_sales_order</b>
+        <i class="text-muted">(production_item)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

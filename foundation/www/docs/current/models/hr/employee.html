@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.0.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/employee"
@@ -1180,6 +1180,42 @@ Health Concerns</pre>
             <td></td>
         </tr>
         
+        <tr >
+            <td>80</td>
+            <td ><code>lft</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                lft
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>81</td>
+            <td ><code>rgt</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                rgt
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>82</td>
+            <td ><code>old_parent</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Old Parent
+                
+            </td>
+            <td></td>
+        </tr>
+        
     </tbody>
 </table>
 
@@ -1196,7 +1232,7 @@ Health Concerns</pre>
         
 	<h3 style="font-weight: normal;">Class <b>Employee</b></h3>
     
-    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    <p style="padding-left: 30px;"><i>Inherits from frappe.utils.nestedset.NestedSet</i></h4>
     
     <div class="docs-attr-desc"><p></p>
 </div>
@@ -1237,6 +1273,20 @@ Health Concerns</pre>
         <a name="on_update" href="#on_update" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_nsm_model" href="#update_nsm_model" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_nsm_model</b>
         <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
@@ -1457,6 +1507,24 @@ Health Concerns</pre>
 	
         
     
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.employee.employee.get_children</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.employee.employee.get_children" href="#erpnext.hr.doctype.employee.employee.get_children" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.employee.employee.<b>get_children</b>
+        <i class="text-muted">(doctype, parent=None, company=None, is_root=False, is_tree=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     
 	<p class="docs-attr-name">
         <a name="erpnext.hr.doctype.employee.employee.get_employee_emails" href="#erpnext.hr.doctype.employee.employee.get_employee_emails" class="text-muted small">
@@ -1653,7 +1721,25 @@ Health Concerns</pre>
             <li>
 
 
+<a href="/docs/current/models/hr/driver">Driver</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/employee">Employee</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_advance">Employee Advance</a>
 
 </li>
 			
@@ -1689,7 +1775,7 @@ Health Concerns</pre>
             <li>
 
 
-<a href="/docs/current/models/schools/instructor">Instructor</a>
+<a href="/docs/current/models/education/instructor">Instructor</a>
 
 </li>
 			
@@ -1717,6 +1803,15 @@ Health Concerns</pre>
 
 
 <a href="/docs/current/models/hr/leave_application">Leave Application</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/payroll_employee_detail">Payroll Employee Detail</a>
 
 </li>
 			

@@ -12,7 +12,7 @@ Following are the few cases which can be addressed using Pricing Rule.
 
 3. Items categorized under specific Item Group has same selling or buying price.
 
-4. Customers belonging to specific Customer Group should get ### selling price, ot % of Discount on Items.
+4. Customers balonging to specific Customer Group should get ### selling price, ot % of Discount on Items.
 
 5. Supplier's categorized under specific Supplier Type should have ### buying rate applied.
 
@@ -88,7 +88,7 @@ For example :  User want to add 10% margin on the supplier price list at the tim
 
 ####1. Make Price List
 
-Create price list for supplier and create item price against the price list.
+Create price list for supllier and create item price against the price list.
 
 <img alt="Disable" class="screenshot" src="/docs/assets/img/articles/price-list.png">
 

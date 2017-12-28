@@ -9,7 +9,7 @@ You can define Tax Rules for Sales or Purchase Taxes.
 While making a Transaction the system will select and apply tax template based on the tax rule defined.
 The system selects Tax Rule with maximum matching Filters.
 
-Let us consider a scenario to understand Tax Rule Better.
+Let us consider a senario to understand Tax Rule Better.
 
 Suppose we define 2 Tax Rules as below.
 

@@ -1,0 +1,1 @@
+erpnext.hub_node.data_migration_mapping.company_to_hub_company

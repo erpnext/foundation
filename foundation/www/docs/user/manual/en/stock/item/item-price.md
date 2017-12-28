@@ -15,7 +15,7 @@ Following are the steps to create new Item Price.
 
 Step 1: Select Price List
 
-You can create multiple Price List in ERPNext to track Selling and Buying Price List of an item separately. Also if item's selling prices id changing based on territory, or due to other criteria, you can create multiple selling Price List for it.
+You can create multiple Price List in ERPNext to track Selling and Buying Price List of an item separtely. Also if item's selling prices id changing based on territory, or due to other criteria, you can create multiple selling Price List for it.
 
 ![Item Price list](/docs/assets/old_images/erpnext/item-price-list.png)
 
@@ -39,7 +39,7 @@ Step 4: Save Item Price
 
 To check all Item Price together, go to:
 
-Stock >> Main Report >> Item wise Price List Rate
+Stock >> Main Report >> Itemwise Price List Rate
 
 You will find option to create new Item Price record (+) in this report as well.
 
