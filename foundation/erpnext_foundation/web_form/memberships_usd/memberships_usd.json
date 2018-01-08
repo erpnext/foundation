@@ -15,10 +15,11 @@
  "docstatus": 0, 
  "doctype": "Web Form", 
  "idx": 0, 
+ "introduction_text": "", 
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-03-14 18:38:07.785349", 
+ "modified": "2018-01-08 15:53:23.345945", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "memberships-usd", 
@@ -35,12 +36,12 @@
  "web_form_fields": [
   {
    "fieldname": "membership_type", 
-   "fieldtype": "Select", 
+   "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Membership Type", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "Gold\nSilver\nIndividual", 
+   "options": "Membership Type", 
    "read_only": 0, 
    "reqd": 1
   }, 
