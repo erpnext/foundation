@@ -9,10 +9,10 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 0.0.1</a>
+	Version 10.0.7</a>
 
 
-	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/erpnext_foundation/doctype/chapter"
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/non_profit/doctype/chapter"
 		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
 
 </div>
@@ -42,18 +42,6 @@
         
         <tr >
             <td>1</td>
-            <td class="danger" title="Mandatory"><code>title</code></td>
-            <td >
-                Data</td>
-            <td >
-                Title
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>2</td>
             <td class="danger" title="Mandatory"><code>chapter_head</code></td>
             <td >
                 Link</td>
@@ -66,7 +54,7 @@
                 
 
 
-<a href="/docs/current/models/core/user">User</a>
+<a href="/docs/current/models/non_profit/member">Member</a>
 
 
                 
@@ -74,7 +62,43 @@
         </tr>
         
         <tr >
+            <td>2</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
             <td>3</td>
+            <td class="danger" title="Mandatory"><code>region</code></td>
+            <td >
+                Data</td>
+            <td >
+                Region
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>4</td>
+            <td ><code>section_break_5</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
             <td class="danger" title="Mandatory"><code>introduction</code></td>
             <td >
                 Text Editor</td>
@@ -86,7 +110,7 @@
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>6</td>
             <td ><code>meetup_embed_html</code></td>
             <td >
                 Code</td>
@@ -98,43 +122,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
-            <td ><code>published</code></td>
-            <td >
-                Check</td>
-            <td >
-                Published
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>6</td>
-            <td class="danger" title="Mandatory"><code>route</code></td>
-            <td >
-                Data</td>
-            <td >
-                Route
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
             <td>7</td>
-            <td class="danger" title="Mandatory"><code>region</code></td>
-            <td >
-                Data</td>
-            <td >
-                Region
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>8</td>
             <td ><code>address</code></td>
             <td >
                 Text</td>
@@ -146,7 +134,45 @@
         </tr>
         
         <tr >
+            <td>8</td>
+            <td ><code>route</code></td>
+            <td >
+                Data</td>
+            <td >
+                Route
+                <p class="text-muted small">
+                    chapters/chapter_name
+leave blank automatically set after saving chapter.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
             <td>9</td>
+            <td ><code>published</code></td>
+            <td >
+                Check</td>
+            <td >
+                Published
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>chapter_members</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Chapter Members
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
             <td ><code>members</code></td>
             <td >
                 Table</td>
@@ -159,7 +185,7 @@
                 
 
 
-<a href="/docs/current/models/erpnext_foundation/chapter_member">Chapter Member</a>
+<a href="/docs/current/models/non_profit/chapter_member">Chapter Member</a>
 
 
                 
@@ -172,7 +198,7 @@
 
     <hr>
     <h3>Controller</h3>
-    <h4>foundation.erpnext_foundation.doctype.chapter.chapter</h4>
+    <h4>erpnext.non_profit.doctype.chapter.chapter</h4>
 
     
 
@@ -240,9 +266,9 @@
     
     
 	<p class="docs-attr-name">
-        <a name="foundation.erpnext_foundation.doctype.chapter.chapter.get_list_context" href="#foundation.erpnext_foundation.doctype.chapter.chapter.get_list_context" class="text-muted small">
+        <a name="erpnext.non_profit.doctype.chapter.chapter.get_list_context" href="#erpnext.non_profit.doctype.chapter.chapter.get_list_context" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		foundation.erpnext_foundation.doctype.chapter.chapter.<b>get_list_context</b>
+		erpnext.non_profit.doctype.chapter.chapter.<b>get_list_context</b>
         <i class="text-muted">(context)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
