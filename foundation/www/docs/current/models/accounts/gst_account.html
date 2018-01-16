@@ -1,18 +1,18 @@
-<!-- title: Training Event Employee -->
+<!-- title: GST Account -->
 <!-- add-breadcrumbs -->
 
 
 
 
 
-<h1>Training Event Employee</h1>
+<h1>GST Account</h1>
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
 	Version 10.0.9</a>
 
 
-	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/training_event_employee"
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/gst_account"
 		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
 
 </div>
@@ -21,7 +21,7 @@
 <span class="label label-info">Child Table</span>
 
 
-    <p><b>Table Name:</b> <code>tabTraining Event Employee</code></p>
+    <p><b>Table Name:</b> <code>tabGST Account</code></p>
 
 
 
@@ -42,11 +42,11 @@
         
         <tr >
             <td>1</td>
-            <td ><code>employee</code></td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
             <td >
-                Employee
+                Company
                 
             </td>
             <td>
@@ -54,7 +54,7 @@
                 
 
 
-<a href="/docs/current/models/hr/employee">Employee</a>
+<a href="/docs/current/models/setup/company">Company</a>
 
 
                 
@@ -63,59 +63,85 @@
         
         <tr >
             <td>2</td>
-            <td ><code>employee_name</code></td>
+            <td class="danger" title="Mandatory"><code>cgst_account</code></td>
             <td >
-                Read Only</td>
+                Link</td>
             <td >
-                Employee Name
+                CGST Account
                 
             </td>
             <td>
-                <pre>employee.employee_name</pre>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
             </td>
         </tr>
         
         <tr >
             <td>3</td>
-            <td ><code>column_break_3</code></td>
-            <td class="info">
-                Column Break</td>
+            <td class="danger" title="Mandatory"><code>sgst_account</code></td>
             <td >
-                
+                Link</td>
+            <td >
+                SGST Account
                 
             </td>
-            <td></td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
         </tr>
         
         <tr >
             <td>4</td>
-            <td ><code>status</code></td>
+            <td class="danger" title="Mandatory"><code>igst_account</code></td>
             <td >
-                Select</td>
+                Link</td>
             <td >
-                Status
+                IGST Account
                 
             </td>
             <td>
-                <pre>Open
-Invited
-Completed
-Feedback Submitted</pre>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
             </td>
         </tr>
         
         <tr >
             <td>5</td>
-            <td ><code>attendance</code></td>
+            <td ><code>cess_account</code></td>
             <td >
-                Select</td>
+                Link</td>
             <td >
-                Attendance
+                CESS Account
                 
             </td>
             <td>
-                <pre>Mandatory
-Optional</pre>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
             </td>
         </tr>
         
@@ -131,7 +157,7 @@ Optional</pre>
         <li>
 
 
-<a href="/docs/current/models/hr/training_event">Training Event</a>
+<a href="/docs/current/models/regional/gst_settings">GST Settings</a>
 
 </li>
     
