@@ -19,7 +19,7 @@ app_license = "MIT"
 # app_include_js = "/assets/foundation/js/foundation.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/foundation/css/style.css"
+web_include_css = "/assets/foundation/css/main.css"
 # web_include_js = "/assets/foundation/js/foundation.js"
 
 # include js in page
@@ -36,14 +36,13 @@ app_license = "MIT"
 # application home page (will override Website Settings)
 home_page = "index"
 
-template_apps = ['foundation', 'frappe_theme', 'erpnext', 'frappe']
+template_apps = ['foundation', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
 	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.jpg' />ERPNext.org",
 	"copyright": "ERPNext Open Source Software Foundation",
 	"footer_address": "<br>ERPNext is and will always be 100% Open Source",
 	"top_bar_items": [
-			{"label": "User Manual", "url": "/docs", "right": 1},
 			{"label": "Foundation", "child_items":[
 				{"label": "Chapter", "url": "/chapters","right": 1},
 				{"label": "Foundation Fellow", "url": "/foundation-fellow","right": 1}
@@ -52,10 +51,9 @@ website_context = {
 				{"label": "Service Providers", "url": "/service-providers","right": 1},
 				{"label": "Freelancer Jobs", "url": "/erpnext-jobs", "right": 1},
 			], "right":1},
-			{"label": "About", "url": "/about", "right": 1},
 	],
-	"hide_login": 0,
-	"favicon": "/assets/frappe_theme/img/favicon.ico"
+	"hide_login": 1,
+	"favicon": "/assets/foundation/img/favicon.ico"
 }
 # website user home page (by Role)
 # role_home_page = {

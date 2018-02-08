@@ -1,0 +1,71 @@
+.navbar-icon{
+	width:1.5em;
+	margin-right:1em;
+}
+
+.navbar-brand {
+	width: 190px;
+}
+
+.primary-button {
+    background: #7575ff;
+    color: #fff;
+    border: 0px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	font-size: 1.75em;
+	text-decoration: none;
+	padding: .35em 1em;
+	border-radius: .25em;
+}
+.primary-button:hover{
+	color: #fff;
+	text-decoration: none;
+	background: #5b5be5;
+
+}
+
+.hero{
+	margin-top: 3em;
+}
+
+.hero h1{
+	font-size: 2.5em;
+	font-weight: 700;
+	line-height: 1.125;
+	margin: 1em auto .5em;
+}
+
+.hero .lead{
+	max-width: 400px;
+	font-size: 1.5em;
+	margin: 1em auto 1.5em;
+	font-weight: normal;
+	color: #6c7680;
+}
+
+.hero img{
+	max-width: 850px;
+}
+
+.subtitle {
+    font-size: 2em;
+    line-height: 1.125;
+    font-weight: bold;
+    margin-bottom:1em;
+}
+
+.feature{
+	margin: 10em 0 0 0;
+	padding: 0 0 10em 0;
+}
+
+.domain-links{
+	font-size:1.5em;
+	text-decoration:none;
+}
+
+.domain-links:hover {
+    text-decoration: none;
+    color: #7575ff;
+
+}
