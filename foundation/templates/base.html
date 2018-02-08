@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Built on Frappe. https://frappe.io/ -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %} {{ title | striptags }} {% endblock %}</title>
+	<meta name="generator" content="frappe">
+    {% block favicon %}
+	<link rel="shortcut icon"
+		href="{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}"
+		type="image/x-icon">
+	<link rel="icon"
+		href="{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}"
+		type="image/x-icon">
+    {% endblock %}
+	{%- block head -%}
+		{% block meta_block %}{% endblock %}
+        <link href="assets/foundation/css/erpnext-org-theme.css" rel="stylesheet">
+	{%- endblock -%}
+</head>
+<body data-path="{{ path }}">
+    <div class="wrapper">
+        {% block content %}
+            {{ content }}
+        {% endblock %}
+        {%- block footer -%}{% include "foundation/templates/includes/footer/footer.html" %}{%- endblock -%}
+    </div>
+</body>
+</html>
