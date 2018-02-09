@@ -1,131 +1,117 @@
-{% extends "templates/web.html" %}
-
+{% extends "templates/base.html" %}
 {% block title %}ERPNext Foundation{% endblock %}
-
-{% block page_content %}
-
-<!--<div class='row-full'>
-<img src="/assets/foundation/img/community.png" class='img-responsive'>
-</div>-->
-<section class='hero text-center'>
-	<div class='text-center'>
-		<img class="homepage-illustration" src='/assets/foundation/img/hero-illustration-erpnext.png'>
-	</div>
-	<h1>ERP for Everybody</h1>
-	<p class='lead'>Do-It-Yourself Business Management System that will help you stay in control. 100% Opensource Forever</p>
-	<p class="mar-t-50 mar-b-50">
-			<a class="primary-button" href="https://erpnext.com/pricing">
-			Get Started Now</a>
-	</p>
+{% block content %}
+<section class='feature hero'>
+    <div class="container">
+        <img class="homepage-illustration" src='/assets/foundation/img/hero-illustration-erpnext.png'>
+        <h1 class="title">ERP for Everybody</h1>
+        <p class='intro-copy'>A free and opensource do-it-yourself business management system that will help you stay in control.</p>
+        <a class="button button-primary" href="https://erpnext.com/pricing">Get Started</a>
+    </div>
 </section>
-<section class="feature">
-	<h2 class="subtitle">Domains</h2>
-	<div class='row section-grid'>
-		<div class=col-sm-3>
-			<a class="domain-links" href="/docs/user/manual/en/manufacturing">Manufacturing</a>
-		</div>
-		<div class="col-sm-3">
-			<a class="domain-links" href="/docs/user/manual/en/projects">Services</a>
-		</div>
-		<div class="col-sm-3">
-			<a class="domain-links" href="/docs/user/manual/en/accounts/point-of-sale-pos-invoice">Retail</a>
-		</div>
-		<div class="col-sm-3">
-			<a class="domain-links"  href="/docs/user/manual/en/stock">Distribution</a>
-		</div>
-		<div class="col-sm-3"">
-			<a class="domain-links" href="/docs/user/manual/en/schools">Education</a>
-		</div>
-		<div class="col-sm-3">
-			<a class="domain-links" href="/agriculture">Agiculture</a>
-		</div>
-		<div class="col-sm-3">
-			<a class="domain-links" href="/healthcare">Healthcare</a>
-		</div>
-		<div class="col-sm-3">
-			<a class="domain-links" href="/Non-Profits">Non-Profits</a>
-		</div>
+<section class="feature gray-bg left-aligned">
+    <div class="container">
+        <h1 class="subtitle">One App Many Domains</h1>
+          <ul class="list grid-of-four">
+            <li class="list-items grid-items">
+                <a class="primary-links domain-links" href="/docs/user/manual/en/manufacturing">
+                <img class="domain-image" src="manufacturing.svg">Manufacturing</a>
+            </li>
+            <li class="list-items">
+                <a class="primary-links domain-links" href="/docs/user/manual/en/projects">
+                <img class="domain-image" src="services.svg">Services</a>
+            </li>
+            <li class="list-items">
+                <a class="primary-links domain-links" href="/docs/user/manual/en/accounts/point-of-sale-pos-invoice">
+                <img class="domain-image" src="retail.svg">Retail</a>
+            </li>
+            <li class="list-items">
+                <a class="primary-links domain-links"  href="/docs/user/manual/en/stock">
+                <img class="domain-image" src="distribution.svg">Distribution</a>
+            </li>
+            <li class="list-items">
+                <a class="primary-links domain-links" href="/docs/user/manual/en/schools">
+                <img class="domain-image" src="education.svg">Education</a>
+            </li>
+            <li class="list-items">
+                <a class="primary-links domain-links" href="/agriculture">
+                <img class="domain-image" src="agriculture.svg">Agiculture</a>
+            </li>
+            <li class="list-items">
+                <a class="primary-links domain-links" href="/healthcare">
+                <img class="domain-image" src="healthcare.svg">Healthcare</a>
+            </li>
+            <li class="list-items">
+                <a class="primary-links domain-links" href="/Non-Profits">
+                <img class="domain-image" src="non-profit.svg">Non-Profits</a>
+            </li>
+        </ul>
 	</div>
 </section>
-<!--<section>
-	<h3>Standard Modules</h3>
-	<p class='text-muted small'>ERPNext comes with hundreds of features and is very customizable</p>
-	<div class='row section-grid'>
-		<div class=col-sm-4>
-			<a href="docs/user/manual/en/accounts">Accounting</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/CRM">CRM</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/stock">Inventory</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/selling">Selling (Sales)</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/buying">Buying (Purchasing)</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/hr">Human Resources</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/website">Website / E-Commerce</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/portal">Customer / Supplier Portal</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/support">Customer Support</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/customize-erpnext">Customization</a>
-		</div>
-	</div>
-	<p></p>
-</section>-->
-<!--<section>
-	<h3>Community</h3>
-	<p class='text-muted small'>Use and build ERPNext with a community of over 5000 strong</p>
-	<div class='row section-grid'>
-		<div class=col-sm-4>
-			<a href="https://discuss.erpnext.com">User Forum</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/service-providers">Service Providers</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/bounties">Bounties</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/apps">Apps</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/erpnext-jobs">ERPNext Jobs</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://github.com/frappe/erpnext">GitHub (ERPNext)</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://github.com/frappe/frappe">GitHub (Frappé Framework)</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://gitter.im/frappe/erpnext">Chat (Gitter)</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://twitter.com/erpnext">Twitter (News / Updates)</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://frappe.io">Frappé Technologies</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://frappe.io/blog">Frappé Blog</a>
-		</div>
-	</div>
-</section>-->
-
+<section class="feature community-bg">
+    <div class="container">
+        <div class="two-column">
+            <div class="left-column">
+                <h1 class="subtitle">Amazing Community</h1>
+                <p class="info">The forum is the hub of activity related to ERPNext. You can ask a question, find developers or hire service providers.</p>
+                <a class="secondary-links">Become a Member</a>
+            </div>
+            <div class="right-column">
+                <img src="community.png">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feature gray-bg">
+    <div class="container">
+        <div class="three-column left-aligned">
+            <div class="first-column">
+                <h1 class="subtitle">Events & Meetups</h1>
+                <ul class="bulleted-list">
+                    <li>
+                        <a href="" class="secondary-link">2nd Indonesian Meetup</a>
+                    </li>
+                    <li>
+                        <a href="" class="secondary-link">2nd Indonesian Meetup</a>
+                    </li>
+                    <li>
+                        <a href="" class="secondary-link">2nd Indonesian Meetup</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="second-column">
+                <h1 class="subtitle">Help Us Improve</h1>
+                <ul class="bulleted-list">
+                    <li>
+                        <a href="" class="secondary-link">Write Documentation</a>
+                    </li>
+                    <li>
+                        <a href="" class="secondary-link">Help Us Translate</a>
+                    </li>
+                    <li>
+                        <a href="" class="secondary-link">Test Public Beta</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="third-column">
+                <h1 class="subtitle">Need Help</h1>
+                <ul class="bulleted-list">
+                    <li>
+                        <a href="" class="secondary-link">User Manual</a>
+                    </li>
+                    <li>
+                        <a href="" class="secondary-link">Ask in our forum</a>
+                    </li>
+                    <li>
+                        <a href="" class="secondary-link">Get Paid Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 <section>
-	<h3>Get Started</h3>
+	<h2>Get Started</h2>
 	<div class="row section-grid">
 		<div class="col-sm-4"">
 			<a href="https://erpnext.com">ERPNext.com (30 day free trial)</a>
@@ -141,74 +127,4 @@
 		</div>
 	</div>
 </section>
-
-<!--
-<section>
-	<h3>Documentation</h3>
-	<p class='text-muted small'>Learn to use or develop on ERPNext</p>
-	<div class='row section-grid'>
-		<div class=col-sm-4>
-			<a href="/docs">ERPNext User Manual</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://frappe.io/docs/user/">Frappé Framework Tutorial</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://www.youtube.com/c/erpnext">YouTube</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://frappe.io/docs/user/en/guides/integration/rest_api">REST API</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/current">ERPNext Models and API</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://frappe.io/docs/current">Frappé Models and API</a>
-		</div>
-
-	</div>
-</section>-->
-<!--
-<section>
-	<h3>Localize</h3>
-	<p class='text-muted small'>Help in updating translations and accounting features specific to your country or region</p>
-	<div class='row section-grid'>
-		<div class=col-sm-4>
-			<a href="https://translate.erpnext.com">Translation Portal</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="https://charts.erpnext.com">Chart of Accounts</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/docs/user/manual/en/regional">Regional Features</a>
-		</div>
-	</div>
-</section>-->
-
-<!--<section>
-	<h3>Foundation</h3>
-	<p class='text-muted small'>Join the not-for-profit that brings the community together on a common platform</p>
-	<div class='row section-grid'>
-		<div class=col-sm-4>
-			<a href="/members">Memberships</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/chapters">Chapters</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/login">Member Login</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/conf">Conferences</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/about">About</a>
-		</div>
-		<div class=col-sm-4>
-			<a href="/contact">Contact</a>
-		</div>
-	</div>
-</section>-->
-
-
 {% endblock %}
