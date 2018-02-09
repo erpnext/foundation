@@ -4,3 +4,5 @@
 *.swp
 tags
 foundation/docs/current
+.kdev4/
+*.kdev4
