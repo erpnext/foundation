@@ -10,9 +10,9 @@ text-align:center;
     margin: 0 auto;
 }
 
-.feature {
+.feature, .footer {
     padding: 8rem 2.5rem;
-    border-bottom: 1px solid @light-border-color;
+    border-top: 1px solid @light-border-color;
 }
 
 .homepage-illustration {
@@ -97,7 +97,7 @@ text-align:center;
 
 
 .secondary-link{
-    color:@brand-primary;
+    color:@text-light;
     transition: color .5s ease-in;
     &:hover{
         color: @text-dark;
@@ -117,4 +117,24 @@ text-align:center;
 
 .bulleted-list li {
   padding-bottom: 1em;
+}
+
+.row {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+
+.footer-list {
+  padding-left: 0;
+  padding: ;
+}
+.list-unstyled li {
+  list-style: none;
+  margin: 1em 0;
+}
+
+.top-spacer {
+margin-top: 3rem;
 }
