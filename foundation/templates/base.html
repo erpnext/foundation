@@ -21,6 +21,7 @@
 </head>
 <body data-path="{{ path }}">
     <div class="wrapper">
+        {%- block navbar -%}{% include "foundation/templates/includes/navbar/navbar.html" %}{%- endblock -%}
         {% block content %}
             {{ content }}
         {% endblock %}

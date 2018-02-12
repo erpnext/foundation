@@ -4,6 +4,32 @@
 .wrapper {
 text-align:center;
 }
+.navbar{
+    padding: 1rem 2.5rem;
+}
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-icon {
+    width: 25px;
+    margin-right: .5rem;
+    padding-bottom: 0.07rem;
+}
+.navbar-brand {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: @text-color;
+
+    &:hover{
+    text-decoration:none;
+    color: @text-dark;
+    }
+}
+.navbar-brand:visited{
+    color: @text-color;
+}
 
 .container {
     max-width: 1366px;
@@ -33,6 +59,17 @@ text-align:center;
 .domain-links{
     font-size: 1.5rem;
 }
+
+.centered-text{
+    max-width: 300px;
+    text-align:center;
+    margin: 0 auto;
+}
+.info {
+  line-height: 2;
+}
+
+
 .list.grid-of-four{
     grid-gap: 4rem;
 }
@@ -95,6 +132,14 @@ text-align:center;
     background-color: @light-bg;
 }
 
+.community-bg {
+  background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), rgb(117, 116, 254)), url("/assets/foundation/img/community.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 .secondary-link{
     color:@text-light;
@@ -105,14 +150,14 @@ text-align:center;
 }
 
 .three-column {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .bulleted-list {
-  margin: 0;
-  list-style: circle;
-  padding-left: 1em;
+    margin: 0;
+    list-style: circle;
+    padding-left: 1em;
 }
 
 .bulleted-list li {
@@ -120,21 +165,21 @@ text-align:center;
 }
 
 .row {
-  display: flex;
-  text-align: left;
-  justify-content: space-between;
-  margin-bottom: 8rem;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 8rem;
 }
 
 .footer-list {
-  padding-left: 0;
-  padding: ;
+    padding-left: 0;
+    padding: ;
 }
 .list-unstyled li {
-  list-style: none;
-  margin: 1em 0;
+    list-style: none;
+    margin: 1em 0;
 }
 
 .top-spacer {
-margin-top: 3rem;
+    margin-top: 3rem;
 }

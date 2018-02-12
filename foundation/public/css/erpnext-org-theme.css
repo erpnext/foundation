@@ -2,6 +2,31 @@
 .wrapper {
   text-align: center;
 }
+.navbar {
+  padding: 1rem 2.5rem;
+}
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-icon {
+  width: 25px;
+  margin-right: .5rem;
+  padding-bottom: 0.07rem;
+}
+.navbar-brand {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #36414C;
+}
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #2E3338;
+}
+.navbar-brand:visited {
+  color: #36414C;
+}
 .container {
   max-width: 1366px;
   margin: 0 auto;
@@ -25,6 +50,14 @@
 }
 .domain-links {
   font-size: 1.5rem;
+}
+.centered-text {
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+.info {
+  line-height: 2;
 }
 .list.grid-of-four {
   grid-gap: 4rem;
@@ -80,6 +113,14 @@
 }
 .gray-bg {
   background-color: #fafbfc;
+}
+.community-bg {
+  background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), #7574fe), url("/assets/foundation/img/community.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  background-position: center;
+  background-attachment: fixed;
 }
 .secondary-link {
   color: #6c7680;
