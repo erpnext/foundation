@@ -118,7 +118,7 @@ a:hover {
   border-top: 1px solid #EBEFF2;
 }
 .homepage-illustration {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   width: 100%;
   max-width: 900px;
 }
@@ -128,6 +128,17 @@ a:hover {
 }
 .domain-links {
   font-size: 1.5rem;
+}
+.domain-image {
+  width: 200px;
+  padding-bottom: 1.5rem;
+}
+.list-items {
+  text-align: center;
+  padding: 2em;
+  border: 1px solid #d1d8dd;
+  border-radius: .5rem;
+  background-color: #fff;
 }
 .list.grid-of-four {
   grid-gap: 4rem;
@@ -139,6 +150,9 @@ a:hover {
 /*utilities*/
 .left-aligned {
   text-align: left;
+}
+.right-aligned {
+  text-align: right;
 }
 .centered {
   text-align: center;
@@ -210,6 +224,9 @@ a:hover {
 .gray-bg {
   background-color: #fafbfc;
 }
+.dark-bg {
+  background-color: #2E3338;
+}
 .community-bg {
   background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), #7574fe), url("/assets/foundation/img/community-2016.jpg");
   background-size: cover;
@@ -244,7 +261,6 @@ a:hover {
   display: flex;
   text-align: left;
   justify-content: space-between;
-  margin-bottom: 8rem;
 }
 .footer-list {
   padding-left: 0;
@@ -304,6 +320,22 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #EBEFF2;
+}
+.footer-end {
+  border-top: 1px solid #EBEFF2;
+  padding: 2rem 2.5rem;
+  font-size: 0.75rem;
+}
+.footer-end a {
+  text-decoration: underline;
+  color: #8D99A6;
+}
+.footer-end a:hover {
+  color: #fff;
+}
+.footer-icon {
+  width: 1.5rem;
+  margin-right: .5em;
 }
 /* loaned from bootstrap*/
 .btn-default {
@@ -374,6 +406,13 @@ hr {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
+code {
+  color: #FC4F51;
+  background: #fff5f5;
+  padding: .25em;
+  border-radius: .25em;
+  font-size: .85em;
+}
 /*loaned from frappe*/
 .page-card {
   max-width: 360px;
@@ -396,4 +435,30 @@ hr {
 .btn-primary {
   background-color: #7575ff;
   border-color: #7575ff;
+  color: #fff;
+  transition: background-color 0.5s ease-in;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #5e5ec9;
+  border-color: #5e5ec9;
+  text-decoration: none;
+}
+.screenshot {
+  width: 100%;
+  margin: auto;
+}
+img.blog-cover-image,
+.blog-text img,
+.screenshot {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d1d8dd;
+}
+.btn-next-wrapper {
+  margin-top: 4rem;
 }

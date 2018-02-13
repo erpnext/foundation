@@ -18,10 +18,9 @@
 		{% block meta_block %}{% endblock %}
         <link href="/assets/foundation/css/erpnext-org-theme.css" rel="stylesheet">
         {% if 'docs' in  path %}
-                <link type="text/css" rel="stylesheet" href="/docs/assets/css/hljs.css">
-                <link type="text/css" rel="stylesheet" href="/docs/assets/css/font-awesome.css">
-                <link type="text/css" rel="stylesheet" href="/docs/assets/css/octicons/octicons.css">
-                <link type="text/css" rel="stylesheet" href="/docs/assets/css/docs.css">
+                <link type="text/css" rel="stylesheet" href="/assets/frappe/css/hljs.css">
+                <link type="text/css" rel="stylesheet" href="/assets/frappe/css/font-awesome.css">
+                <link type="text/css" rel="stylesheet" href="/assets/frappe/css/octicons/octicons.css">
         {% endif %}
 	{%- endblock -%}
     {# loading required JS for login #}
@@ -43,14 +42,12 @@
         {% endblock %}
         {%- block footer -%}{% include "foundation/templates/includes/footer/footer.html" %}{%- endblock -%}
     </div>
-    {# loading required JS for login #}
-    {% if path == 'login' or 'docs' in path %}
         {% block base_scripts %}
         <!-- js should be loaded in body! -->
         <script type="text/javascript"
             src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>
         <script type="text/javascript"
-            src="/assets/frappe/js/frappe-web.min.js"></script>
+            src="/assets/js/frappe-web.min.js"></script>
         {% endblock %}
         {%- if js_globals is defined %}
         <script>
@@ -65,7 +62,5 @@
         {%- block script %}{%- endblock %}
         <!-- csrf_token -->
         {%- block body_include %}{{ body_include or "" }}{% endblock -%}
-    {% endif %}
-
 </body>
 </html>

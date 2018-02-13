@@ -1,4 +1,5 @@
-<footer class="footer">
+<footer class="gray-bg">
+<div class="footer">
  <div class="container">
 	<div class="footer-row clearfix">
 		<div class="columned">
@@ -113,15 +114,34 @@
             </ul>
         </div>
     </div>
-    <div class="social centered">
-        <p>Find us on
-            <a class="secondary-link" href="https://twitter.com/erpnext" target="_blank">Twitter</a>,
-            <a class="secondary-link" href="https://www.facebook.com/ERPNext/" target="_blank">Facebook</a> &
-            <a class="secondary-link" href="https://medium.com/frappé-thoughts/" target="_blank">Medium</a>
-        </p>
     </div>
-    <div class="copyright centered">
-        <p> &copy;<span id="year"></span> ERPNext Open Source Software Foundation.Content licensed under <a class="secondary-link" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank"> CC-BY-SA 3.0</a>. Read the <a href="/terms" class="secondary-link">terms of use</a>.
-        </p>
     </div>
+    <div class="footer-end dark-bg text-muted">
+        <div class="container">
+            <div class="footer-row">
+                <div class="logo-footer">
+                <p><img class="footer-icon" src="/assets/foundation/img/erpnext-logo.svg">
+                    &copy; <span id="year"></span> ERPNext Open Source Software Foundation.</p>
+                </div>
+                <div class="centered">
+                    <p>Find us on
+                        <a class="secondary-link" href="https://twitter.com/erpnext" target="_blank">Twitter</a>,
+                        <a class="secondary-link" href="https://www.facebook.com/ERPNext/" target="_blank">Facebook</a> &
+                        <a class="secondary-link" href="https://medium.com/frappé-thoughts/" target="_blank">Medium</a>
+                    </p>
+                </div>
+                <div class="right-aligned">
+                    <p>Content licensed under <a class="secondary-link" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank"> CC-BY-SA 3.0</a>. Read the <a href="/terms" class="secondary-link">terms of use</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        frappe.ready(function(){
+        var d = new Date();
+        var currentYear = d.getFullYear();
+        $("#year").text(currentYear);
+        });
+    </script>
 </footer>

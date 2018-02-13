@@ -5,7 +5,7 @@
 a {
     color:@brand-primary;
     text-decoration:none;
-    transition: color .5s ease-in;
+    transition: @transition-color;
     &:hover{
     color:@text-dark;
     text-decoration:underline
@@ -52,7 +52,7 @@ a {
 }
 
 .homepage-illustration {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     width: 100%;
     max-width: 900px;
 }
@@ -67,6 +67,19 @@ a {
     font-size: 1.5rem;
 }
 
+.domain-image {
+    width: 200px;
+    padding-bottom: 1.5rem;
+}
+
+.list-items {
+    text-align: center;
+    padding: 2em;
+    border: 1px solid @border-color;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+
 .list.grid-of-four{
     grid-gap: 4rem;
 }
@@ -79,6 +92,10 @@ a {
 
 .left-aligned{
     text-align: left;
+}
+
+.right-aligned{
+    text-align: right;
 }
 
 .centered{
@@ -110,7 +127,7 @@ a {
 
 .primary-links {
     color: @brand-primary;
-    transition: color .5s ease-in;
+    transition: @transition-color;
     &:hover{
         color: @text-dark;
         text-decoration: none;
@@ -160,6 +177,9 @@ a {
 .gray-bg{
     background-color: @light-bg;
 }
+.dark-bg{
+    background-color: @text-dark;
+}
 
 .community-bg {
   background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), rgb(117, 116, 254)), url("/assets/foundation/img/community-2016.jpg");
@@ -171,7 +191,7 @@ a {
 
 .secondary-link{
     color:@text-light;
-    transition: color .5s ease-in;
+    transition: @transition-color;
     &:hover{
         color: @text-dark;
     }
@@ -201,7 +221,6 @@ a {
     display: flex;
     text-align: left;
     justify-content: space-between;
-    margin-bottom: 8rem;
 }
 
 .footer-list {
@@ -237,7 +256,7 @@ a {
 
 .breadcrumb a:hover{
     color: @text-dark;
-    transition: color .5s ease-in;
+    transition: @transition-color;
 }
 
 .breadcrumb > li {
@@ -268,6 +287,25 @@ hr {
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid @light-border-color;
+}
+
+.footer-end {
+    border-top: 1px solid @light-border-color;
+    padding: 2rem 2.5rem;
+    font-size: 0.75rem;
+}
+
+.footer-end a{
+    text-decoration: underline;
+    color: @text-muted;
+    &:hover{
+    color: #fff;
+    }
+}
+
+.footer-icon {
+    width: 1.5rem;
+    margin-right: .5em;
 }
 
 /* loaned from bootstrap*/
@@ -338,6 +376,14 @@ hr {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
+code {
+    color: @red;
+    background: lighten(@red-extra-light, 10%);
+    padding: .25em;
+    border-radius: .25em;
+    font-size: .85em;
+}
+
 /*loaned from frappe*/
 .page-card {
     max-width: 360px;
@@ -363,4 +409,27 @@ hr {
 .btn-primary {
     background-color: @brand-primary;
     border-color: @brand-primary;
+    color: #fff;
+    transition: background-color .5s ease-in;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: @button-primary-hover;
+    border-color: @button-primary-hover;
+    text-decoration:none;
+}
+
+.screenshot {
+    width: 100%;
+    margin: auto;
+}
+
+img.blog-cover-image, .blog-text img, .screenshot {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1d8dd;
+}
+
+.btn-next-wrapper {
+    margin-top: 4rem;
 }
