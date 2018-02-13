@@ -1,8 +1,15 @@
 @import (css) "reset.css";
 @import "variables.less";
+@import "indicator.less";
 
-.wrapper {
-text-align:center;
+a {
+    color:@brand-primary;
+    text-decoration:none;
+    transition: color .5s ease-in;
+    &:hover{
+    color:@text-dark;
+    text-decoration:underline
+    }
 }
 .navbar{
     padding: 1rem 2.5rem;
@@ -30,14 +37,17 @@ text-align:center;
 .navbar-brand:visited{
     color: @text-color;
 }
-
 .container {
-    max-width: 1366px;
+    max-width: @screen-max;
     margin: 0 auto;
 }
 
 .feature, .footer {
     padding: 8rem 2.5rem;
+    border-top: 1px solid @light-border-color;
+}
+.page{
+    padding: 0 2.5rem;
     border-top: 1px solid @light-border-color;
 }
 
@@ -52,23 +62,10 @@ text-align:center;
     line-height: 1.025;
 }
 
-.left-aligned{
-    text-align: left;
-}
 
 .domain-links{
     font-size: 1.5rem;
 }
-
-.centered-text{
-    max-width: 300px;
-    text-align:center;
-    margin: 0 auto;
-}
-.info {
-  line-height: 2;
-}
-
 
 .list.grid-of-four{
     grid-gap: 4rem;
@@ -79,6 +76,26 @@ text-align:center;
     padding-left: 0;
 }
 /*utilities*/
+
+.left-aligned{
+    text-align: left;
+}
+
+.centered{
+    text-align: center;
+}
+
+.text-muted{
+    color: @text-muted;
+}
+
+.text-light{
+    color: @text-light;
+}
+
+.text-white{
+    color:#fff;
+}
 .grid-of-four{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -86,10 +103,8 @@ text-align:center;
 
 .intro-copy{
     font-size: 1.5rem;
-    max-width: 35%;
-    min-width: 30%;
+    max-width: @screen-max/2;
     margin: 0 auto 1.5rem auto;
-    color: @text-light;
     line-height: 1.5em;
 }
 
@@ -128,15 +143,28 @@ text-align:center;
     }
 }
 
+.button-secondary{
+    font-size: 1.5em;
+    color: @text-light;
+    background: @btn-bg;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    line-height: 3;
+    &:hover{
+        background: @button-secondary-hover;
+        color: @text-dark;
+    }
+}
+
 .gray-bg{
     background-color: @light-bg;
 }
 
 .community-bg {
-  background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), rgb(117, 116, 254)), url("/assets/foundation/img/community.jpg");
+  background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), rgb(117, 116, 254)), url("/assets/foundation/img/community-2016.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
   background-position: center;
   background-attachment: fixed;
 }
@@ -154,6 +182,11 @@ text-align:center;
     justify-content: space-between;
 }
 
+.list-unstyled{
+    padding: 0;
+    margin: 0;
+}
+
 .bulleted-list {
     margin: 0;
     list-style: circle;
@@ -164,7 +197,7 @@ text-align:center;
   padding-bottom: 1em;
 }
 
-.row {
+.footer-row {
     display: flex;
     text-align: left;
     justify-content: space-between;
@@ -177,9 +210,157 @@ text-align:center;
 }
 .list-unstyled li {
     list-style: none;
-    margin: 1em 0;
+    margin-bottom: 1em;
 }
 
 .top-spacer {
     margin-top: 3rem;
+}
+.page-container {
+    display: flex;
+    max-width: @screen-max;
+    margin: 0 auto;
+}
+
+.active{
+    color: @text-dark;
+}
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb a, .breadcrumb a:focus, .breadcrumb a:visited {
+    background-color: transparent;
+    color: @text-muted;
+}
+
+.breadcrumb a:hover{
+    color: @text-dark;
+    transition: color .5s ease-in;
+}
+
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: @text-muted;
+    content: "/\00a0";
+}
+
+.sidebar-block {
+    padding: 4rem 0;
+    border-right: 1px solid black;
+    min-width: 200px;
+    border-right: 1px solid @light-border-color;
+}
+
+.page-content{
+    width:100%;
+}
+
+.page-content.with-sidebar {
+    padding: 4rem 0 4rem 2.5rem;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid @light-border-color;
+}
+
+/* loaned from bootstrap*/
+
+
+.btn-default {
+    color: inherit;
+    background-color: @btn-bg;
+    border-color: transparent;
+}
+.btn {
+    display: inline-block;
+    padding: .25em .75em;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: .25em;
+}
+
+.table-bordered {
+    border: 1px solid @border-color;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid @border-color;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: .5em;
+    vertical-align: top;
+    border-top: 1px solid @light-border-color;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .5rem ;
+    margin-bottom: .5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2em;
+    padding: .5em;
+    color: @text-dark;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid @border-color;
+    border-radius: .25em;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/*loaned from frappe*/
+.page-card {
+    max-width: 360px;
+    padding: 1em;
+    margin: 8rem auto;
+    border: 1px solid @border-color;
+    border-radius: .25em;
+    background-color: #fff;
+    box-shadow: 0px .25em .5em rgba(0, 0, 0, 0.1);
+}
+
+.page-card .page-card-head {
+    padding: .75em 1em;
+    margin: -1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid @border-color;
+}
+
+.login-content .btn {
+    margin-top: 3rem;
+}
+
+.btn-primary {
+    background-color: @brand-primary;
+    border-color: @brand-primary;
 }
