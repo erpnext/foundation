@@ -288,7 +288,7 @@ a:hover {
 }
 .list-unstyled li {
   list-style: none;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 .top-spacer {
   margin-top: 3rem;
@@ -508,10 +508,11 @@ img.blog-cover-image,
   border-bottom: 0;
 }
 .blog-list-item a {
-  color: #8D99A6;
+  color: #36414C;
 }
 .blog-list-item h1 {
   margin-bottom: .5em;
+  font-weight: normal;
 }
 .blogpost-cover-img {
   width: 75%;
@@ -567,4 +568,7 @@ img.blog-cover-image,
 }
 .inline-block {
   display: inline-block;
+}
+.blog-container {
+  max-width: 800px;
 }
