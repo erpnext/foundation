@@ -9,7 +9,7 @@
                     {% include "templates/includes/web_sidebar.html" %}
                 </div>
             {% endif %}
-        <div class="{% if show_sidebar %}page-content with-sidebar{% else %}page-content without-sidebar{% endif %}">
+        <div class="{% if show_sidebar %}page-content with-sidebar{% elif doctype == 'Blog Post' %} blog-page {% else %}page-content without-sidebar{% endif %}">
             <div class="page-content-wrapper">
                 <div class="row page-head">
                     <div class='col-sm-12'>
@@ -21,9 +21,11 @@
                         </div>
                         {% endif %}
                     </div>
-                    <div class="col-sm-8 col-xs-6">
-                        {% block header %}{% endblock %}
-                    </div>
+                    {% if doctype != 'Blog Post' %}
+                        <div class="col-sm-8 col-xs-6">
+                            {% block header %}{% endblock %}
+                        </div>
+                    {% endif %}
                     <div class="col-sm-4 col-xs-6">
                         {% if show_search %}
                             <div class="page-search-block">

@@ -17,7 +17,7 @@
 	{%- block head -%}
 		{% block meta_block %}{% endblock %}
         <link href="/assets/foundation/css/erpnext-org-theme.css" rel="stylesheet">
-        {% if 'docs' in  path %}
+        {% if 'docs' in  path or doctype == 'Blog Post' %}
                 <link type="text/css" rel="stylesheet" href="/assets/frappe/css/hljs.css">
                 <link type="text/css" rel="stylesheet" href="/assets/frappe/css/font-awesome.css">
                 <link type="text/css" rel="stylesheet" href="/assets/frappe/css/octicons/octicons.css">

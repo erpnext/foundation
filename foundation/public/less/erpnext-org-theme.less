@@ -17,6 +17,7 @@ a {
 .navbar-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navbar-icon {
     width: 25px;
@@ -81,7 +82,12 @@ a {
 
 .domain-links{
     font-size: 1.5rem;
+    display: block;
+    padding: 1.5rem;
+
+    span{
     display:block;
+    }
 }
 
 .domain-image {
@@ -91,10 +97,13 @@ a {
 
 .list-items {
     text-align: center;
-    padding: 2em;
-   /* border: 1px solid @border-color;*/
     border-radius: .5rem;
     background-color: #fff;
+    min-width:200px;
+    transition: @transition-all;
+    &:hover{
+        box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.05);
+    }
 }
 
 .list.grid-of-four{
@@ -115,7 +124,7 @@ a {
     text-align: right;
 }
 
-.centered{
+.centered, .text-center{
     text-align: center;
 }
 
@@ -159,7 +168,7 @@ a {
     padding: .75em 1.5em .5em;
     border-radius:.25em;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: @transition-all;
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
     text-decoration: none;
     &:hover{
@@ -226,19 +235,23 @@ a {
 .list-unstyled{
     padding: 0;
     margin: 0;
+
+    li {
+        list-style: none;
+    }
+
 }
-.list-unstyled li {
-	list-style: none;
-}
+
 
 .bulleted-list {
     margin: 0;
     list-style: circle;
     padding-left: 1em;
-}
 
-.bulleted-list li {
-  padding-bottom: 1em;
+    li {
+        padding-bottom: 1em;
+    }
+
 }
 
 .footer-row {
@@ -247,15 +260,18 @@ a {
     justify-content: space-between;
 }
 
+.footer-end .footer-row{
+    align-items: center;
+}
+
 .footer-list {
     padding-left: 0;
     padding: ;
 }
-.list-unstyled li {
-    list-style: none;
-	margin-bottom: 1rem;
-}
+.page_content li, .sidebar-item, .footer-list li{
+    margin-bottom: 1em;
 
+}
 .top-spacer {
     margin-top: 3rem;
 }
@@ -265,24 +281,29 @@ a {
     margin: 0 auto;
 }
 
-.active{
+.active {
     color: @text-dark;
 }
 .breadcrumb {
     padding: 0;
     margin-bottom: 1.5rem;
-}
 
-.breadcrumb a, .breadcrumb a:focus, .breadcrumb a:visited {
-    background-color: transparent;
-    color: @text-muted;
-}
+    a {
+        background-color: transparent;
+        color: @text-muted;
 
-.breadcrumb a:hover{
-    color: @text-dark;
-    transition: @transition-color;
-}
+        &:focus, &:visited {
+            background-color: transparent;
+            color: @text-muted;
+        }
+        &:hover{
+            color: @text-dark;
+            transition: @transition-color;
+        }
+    }
 
+
+}
 .breadcrumb > li {
     display: inline-block;
 }
@@ -302,6 +323,12 @@ a {
 .page-content{
     width:100%;
     padding: 4rem 0;
+}
+
+.blog-page{
+    padding: 4rem 0;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .page-content.with-sidebar {
@@ -398,7 +425,7 @@ hr {
     border-radius: .25em;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-out .15s, box-shadow ease-out .15s;
 }
 
 code {
@@ -435,7 +462,7 @@ code {
     background-color: @brand-primary;
     border-color: @brand-primary;
     color: #fff;
-    transition: background-color .5s ease-in;
+    transition: background-color .3s ease-in;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
@@ -481,8 +508,7 @@ img.blog-cover-image, .blog-text img, .screenshot {
 }
 
 .blog-list-item {
-	padding-top: 4em;
-	padding-bottom: 4em;
+    padding-bottom: 4rem;
 	border-bottom: 1px solid @navbar-default-border;
 	&:last-child{
 	border-bottom: 0;
@@ -492,27 +518,29 @@ img.blog-cover-image, .blog-text img, .screenshot {
 	}
 	h1{
 	margin-bottom: .5em;
-	font-weight:normal
 	}
 }
 
+.blog-list-item:not(:first-child){
+    padding-top: 4rem;
+    }
 
 
 .blogpost-cover-img{
 width: 75%;
 }
 
-.blog-list-item .avatar {
-    margin-right: 1em;
-}
 
 .blog-list-item .blog-header {
-    font-size: 1.6em;
+    font-size: 2.5rem;
+}
+
+.blog-container img {
+    margin-bottom: 1.5rem;
 }
 
 .blog-header {
-	font-size: 2em;
-	font-weight:bold;
+	font-size: 2.5rem;
 }
 .blog-comments {
 	position: relative;
@@ -522,7 +550,6 @@ width: 75%;
 	margin: 2em 0;
 }
 .blog-text {
-	line-height: 2;
 	font-size: 1.25em;
 	letter-spacing: 0.01em;
 }
@@ -564,5 +591,5 @@ margin-bottom: 3em;
 }
 
 .blog-container {
-    max-width: 800px;
+    max-width: 700px;
 }
