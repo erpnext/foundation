@@ -1,19 +1,29 @@
-{% extends "templates/web.html" %}
+{% extends "templates/base.html" %}
 
 {% block title %}About ERPNext Foundation{% endblock %}
 
 {% from "foundation/templates/includes/macros.html" import media %}
 
-{% block page_content %}
-<section>
-	{{ doc.company_introduction }}
-</section>
-<section>
-	<h3>People</h3>
-	{% for member in doc.team_members  %}
-		{{ media(member.full_name, member.bio, member.image_link) }}
-	{% endfor %}
-<p><a href="/contact">Want to talk to someone in the foundation? Get in touch</a></p>
-
-</section>
+{% block content%}
+	<div class="page">
+		<div class="page-content">
+			<section class="two-column container">
+				<div class="left">
+					{{ doc.company_introduction }}
+				</div>
+				<div class="right">
+					<img src="/assets/foundation/img/foundation-image.svg">
+				</div>
+			</section>
+			<section class="container">
+				<hr>
+				{{ doc.team_members_heading }}
+				{% for member in doc.team_members  %}
+					{{ media(member.full_name, member.bio, member.image_link) }}
+				{% endfor %}
+			<p><a href="/contact">Want to talk to someone in the foundation? Get in touch</a></p>
+			</section>
+		</div>
+	</div>
 {% endblock %}
+

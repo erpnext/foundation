@@ -134,7 +134,7 @@ a:hover {
 .homepage-illustration {
   margin-bottom: 2.5rem;
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
 }
 .title {
   font-size: 2.5rem;
@@ -267,7 +267,8 @@ a:hover {
 .secondary-link:hover {
   color: #2E3338;
 }
-.three-column {
+.three-column,
+.two-column {
   display: flex;
   justify-content: space-between;
 }
