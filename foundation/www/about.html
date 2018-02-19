@@ -6,18 +6,17 @@
 
 {% block content%}
 	<div class="page">
-		<div class="page-content">
-			<section class="two-column container">
-				<div class="left">
-					{{ doc.company_introduction }}
-				</div>
-				<div class="right">
-					<img src="/assets/foundation/img/foundation-image.svg">
-				</div>
-			</section>
+        <section class='top-spacer hero centered about'>
+            <div class="container">
+                <img class="about-img" src="/assets/foundation/img/community-colored.png">
+                <h1 class="title">ERPNext Foundation</h1>
+                <p class="intro-copy">We are a Non Profit Foundation representing a community of ERPNext Users, Developers and Service Providers. Our goal is to provide a platform for the ERPNext Community to come together, join hands and build assets to help build and enhance ERPNext around the world.</p><p class="intro-copy"> ERPNext Foundation aims to be a community driven organization and run in a transparent manner. If you want to be more involved in the ERPNext Community, read the <a href="/faq" class="secondary-links" target="_blank">FAQ</a>.
+            </div>
+        </section>
+        <div class="page-content">
 			<section class="container">
 				<hr>
-				{{ doc.team_members_heading }}
+                <h1>{{ doc.team_members_heading }}</h1>
 				{% for member in doc.team_members  %}
 					{{ media(member.full_name, member.bio, member.image_link) }}
 				{% endfor %}

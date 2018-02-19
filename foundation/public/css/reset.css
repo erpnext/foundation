@@ -56,8 +56,8 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+
 }
 
 p {
@@ -183,6 +183,8 @@ figure {
 img {
     vertical-align: middle;
     border-style: none;
+    width: 100%;
+    border-radius: 0.25em;
 }
 
 svg:not(:root) {
