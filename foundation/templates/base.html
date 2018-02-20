@@ -17,12 +17,14 @@
 	{%- block head -%}
 		{% block meta_block %}{% endblock %}
         <link href="/assets/foundation/css/erpnext-org-theme.css" rel="stylesheet">
+        {% if path != '' %}
         <link type="text/css" rel="stylesheet" href="/assets/frappe/css/hljs.css">
         <link type="text/css" rel="stylesheet" href="/assets/frappe/css/font-awesome.css">
         <link type="text/css" rel="stylesheet" href="/assets/frappe/css/octicons/octicons.css">
+        {% endif %}
 	{%- endblock -%}
-    {# loading required JS for login #}
-	<script>
+	{%- block style %}{%- endblock -%}
+    <script>
 		window.frappe = {};
 		frappe.ready_events = [];
 		frappe.ready = function(fn) {
@@ -30,7 +32,6 @@
 		}
 		window.dev_server = {{ dev_server }};
     </script>
-        {# loading required JS for login #}
 </head>
 <body data-path="{{ path }}">
     <div class="wrapper">

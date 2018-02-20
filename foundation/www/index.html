@@ -55,30 +55,26 @@
         <div class="centered">
             <h1 class="title">ERPNext Foundation</h1>
             <p class="intro-copy">ERPNext Foundation is a community of ERPNext Users, Developers and Service Providers. The goal of the ERPNext Foundation is to provide a platform for the ERPNext Community to come together, join hands and build assets to help build and enhance ERPNext around the world.</p>
-            <a href="" class="button button-secondary">Become a Member</a>
+            <a href="/members/details" class="button button-secondary">Become a Member</a>
         </div>
     </div>
 </section>
 <section class="feature">
     <div class="container">
         <div class="three-column left-aligned">
-            <div class="first-column">
+            <div class="columns">
                 <h1 class="subtitle">Events & Meetups</h1>
-                <ul class="bulleted-list">
-                    <li>
-                        <a href="" class="secondary-link">2nd Indonesian Meetup</a>
-                    </li>
-                    <li>
-                        <a href="" class="secondary-link">2nd Indonesian Meetup</a>
-                    </li>
-                    <li>
-                        <a href="/members" class="secondary-link">2nd Indonesian Meetup</a>
-                    </li>
+                <ul class="bulleted-list list-circle">
+                {% for e in events %}
+					<li>
+						<a href="{{ e.route }}" class="secondary-link">{{ frappe.format_date(e.event_date, "medium") }} - {{ e.event_title }}</a>
+					</li>
+					{% endfor %}
                 </ul>
             </div>
-            <div class="second-column">
+            <div class="columns">
                 <h1 class="subtitle">Help Us Improve</h1>
-                <ul class="bulleted-list">
+                <ul class="bulleted-list list-circle">
                     <li>
                         <a href="https://github.com/frappe/erpnext/tree/develop/erpnext/docs" class="secondary-link">Write Documentation</a>
                     </li>
@@ -90,14 +86,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="third-column">
+            <div class="columns">
                 <h1 class="subtitle">Need Help?</h1>
-                <ul class="bulleted-list">
+                <ul class="bulleted-list list-circle">
                     <li>
-                        <a href="" class="secondary-link">User Manual</a>
+                        <a href="/docs/user/manual" class="secondary-link">User Manual</a>
                     </li>
                     <li>
-                        <a href="" class="secondary-link">Ask in our forum</a>
+                        <a href="https://discuss.erpnext.com/" class="secondary-link">Ask in our forum</a>
                     </li>
                     <li>
                         <a href="" class="secondary-link">Get Paid Support</a>

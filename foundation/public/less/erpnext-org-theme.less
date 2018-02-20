@@ -1,4 +1,5 @@
 @import (css) "reset.css";
+/*@import (css) "bootstrap-temp.css";*/
 @import "variables.less";
 @import "indicator.less";
 
@@ -231,9 +232,12 @@ a {
 
 }
 
+.list-circle {
+    list-style: circle;
+}
+
 .bulleted-list {
     margin: 0;
-    list-style: circle;
     padding-left: 1em;
 
     li {
@@ -337,7 +341,6 @@ hr {
 }
 
 .footer-end a{
-    text-decoration: underline;
     color: @text-muted;
     &:hover{
     color: #fff;
@@ -351,6 +354,44 @@ hr {
 
 /* loaned from bootstrap*/
 
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #8d99a6;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
+
+.note-popover .popover-content > .btn-group, .panel-heading.note-toolbar > .btn-group {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 0;
+}
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.note-popover .popover-content, .panel-heading.note-toolbar {
+    padding: 0 0 5px 5px;
+    margin: 0;
+}
+.panel-default > .panel-heading {
+    color: #333;
+    background-color:@panel-bg;
+    border-color: @border-color;
+}
+.panel-heading, .panel-body {
+    padding-left: 1rem;
+}
+.panel-heading {
+    padding: .5rem 1rem;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+}
 .modal-open .modal {
     overflow-x: hidden;
     overflow-y: auto;
@@ -451,20 +492,6 @@ hr {
     background-image: none;
     border: 1px solid transparent;
     border-radius: .25em;
-}
-
-.table-bordered {
-    border: @border;
-}
-
-.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
-    border: @border;
-}
-
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-    padding: .5em;
-    vertical-align: top;
-    border-top: 1px solid @light-border-color;
 }
 
 .btn-block {
@@ -676,7 +703,7 @@ img.blog-cover-image, .blog-text img, .screenshot {
 .media {
   display: flex;
   padding: 1.5rem;
-  background: #fafbfc;
+  background: @light-bg;
   margin-bottom: 1.5rem;
   border-radius: .25em;
   border: 1px solid lightgray;
@@ -689,7 +716,15 @@ img.blog-cover-image, .blog-text img, .screenshot {
 .media-heading {
   margin-top: 0;
 }
-.media-object {
+.with-border {
+    border: @border;
+    border-radius: 0.25em;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    &:hover{
+		border-color: @text-light:;
+		background-color: @light-bg;
+    }
 }
 /* individual elements */
 

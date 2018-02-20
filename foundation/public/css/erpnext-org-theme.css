@@ -1,4 +1,5 @@
 @import "reset.css";
+/*@import (css) "bootstrap-temp.css";*/
 .indicator,
 .indicator-right {
   background: none;
@@ -360,7 +361,6 @@ hr {
   font-size: 0.75rem;
 }
 .footer-end a {
-  text-decoration: underline;
   color: #8D99A6;
 }
 .footer-end a:hover {
@@ -371,6 +371,47 @@ hr {
   margin-right: .5em;
 }
 /* loaned from bootstrap*/
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #8d99a6;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
+.note-popover .popover-content > .btn-group,
+.panel-heading.note-toolbar > .btn-group {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 0;
+}
+.btn-group,
+.btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.note-popover .popover-content,
+.panel-heading.note-toolbar {
+  padding: 0 0 5px 5px;
+  margin: 0;
+}
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #F7FAFC;
+  border-color: #d1d8dd;
+}
+.panel-heading,
+.panel-body {
+  padding-left: 1rem;
+}
+.panel-heading {
+  padding: .5rem 1rem;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: .25em;
+  border-top-right-radius: .25em;
+}
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -466,27 +507,6 @@ hr {
   background-image: none;
   border: 1px solid transparent;
   border-radius: .25em;
-}
-.table-bordered {
-  border: 1px solid #d1d8dd;
-}
-.table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > th,
-.table-bordered > tfoot > tr > th,
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > td {
-  border: 1px solid #d1d8dd;
-}
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > td,
-.table > tfoot > tr > td {
-  padding: .5em;
-  vertical-align: top;
-  border-top: 1px solid #EBEFF2;
 }
 .btn-block {
   display: block;
@@ -681,6 +701,12 @@ img.blog-cover-image,
 }
 .media-heading {
   margin-top: 0;
+}
+.with-border {
+  border: 1px solid #d1d8dd;
+  border-radius: 0.25em;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 /* individual elements */
 .domain-links {
