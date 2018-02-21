@@ -1,5 +1,4 @@
 @import (css) "reset.css";
-/*@import (css) "bootstrap-temp.css";*/
 @import "variables.less";
 @import "indicator.less";
 
@@ -117,7 +116,6 @@ a {
     padding-left: 0;
 }
 /*utilities*/
-
 .gray-bg {
     background-color: @light-bg;
 }
@@ -222,6 +220,12 @@ a {
     justify-content: space-between;
 }
 
+.three-column .columns {
+    max-width: 33.33%;
+}
+.two-column{
+	max-width: 50%;
+}
 .list-unstyled {
     padding: 0;
     margin: 0;
@@ -353,7 +357,23 @@ hr {
 }
 
 /* loaned from bootstrap*/
+.fade.in {
+  opacity: 1;
+}
 
+
+.with-border {
+	a{
+    text-decoration: none;
+
+		&:hover{
+			text-decoration: none;
+		}
+    }
+}
+.clickable a {
+    color: @text-color;
+}
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -717,12 +737,12 @@ img.blog-cover-image, .blog-text img, .screenshot {
   margin-top: 0;
 }
 .with-border {
-    border: @border;
-    border-radius: 0.25em;
-    padding: 1rem;
-    margin-bottom: 2rem;
+	border: @border;
+	border-radius: 0.25em;
+	padding: 1rem;
+	margin-bottom: 2rem;
     &:hover{
-		border-color: @text-light:;
+		border-color: @text-light;
 		background-color: @light-bg;
     }
 }

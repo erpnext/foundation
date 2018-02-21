@@ -1,4 +1,4 @@
-{% extends "foundation/templates/web.html" %}
+{% extends "templates/web.html" %}
 
 {% block title %}{{ _(title) }}{% endblock %}
 
@@ -43,7 +43,7 @@
 
 {% block page_content %}
 <div class="introduction">
-	{% if introduction_text %} hello
+	{% if introduction_text %}
 	<p class="text-muted">{{ _(introduction_text) }}</p>
 	{% endif %}
 </div>

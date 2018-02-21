@@ -19,7 +19,7 @@ app_license = "MIT"
 # app_include_js = "/assets/foundation/js/foundation.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/foundation/css/main.css"
+# web_include_css = "/assets/foundation/css/style.css"
 # web_include_js = "/assets/foundation/js/foundation.js"
 
 # include js in page
@@ -50,7 +50,7 @@ website_context = {
 				{"label": "Freelancer Jobs", "url": "/erpnext-jobs", "right": 1},
 			], "right":1},
 	],
-	"hide_login": 1,
+	"hide_login": 0,
 	"favicon": "/assets/foundation/img/favicon.ico"
 }
 # website user home page (by Role)

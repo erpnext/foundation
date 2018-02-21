@@ -23,6 +23,7 @@
         <link type="text/css" rel="stylesheet" href="/assets/frappe/css/octicons/octicons.css">
         {% endif %}
 	{%- endblock -%}
+	{%- block head_include %}{{ head_include or "" }}{% endblock -%}
 	{%- block style %}{%- endblock -%}
     <script>
 		window.frappe = {};

@@ -1106,15 +1106,7 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity .15s linear;
-       -o-transition: opacity .15s linear;
-          transition: opacity .15s linear;
-}
-.fade.in {
-  opacity: 1;
-}
+
 .collapse {
   display: none;
   visibility: hidden;
@@ -1707,4 +1699,27 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #000;
+}
+
+.popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    max-width: 276px;
+    padding: 1px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: left;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }

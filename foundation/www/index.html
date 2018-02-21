@@ -32,7 +32,7 @@
 					<img class="domain-image" src="/assets/foundation/img/distribution.svg"><span>Distribution</span></a>
             </li>
             <li class="list-items">
-				<a class="primary-links domain-links" href="/docs/user/manual/en/schools">
+				<a class="primary-links domain-links" href="/docs/user/manual/en/education">
 					<img class="domain-image" src="/assets/foundation/img/education.svg"><span>Education</span></a>
             </li>
             <li class="list-items">
@@ -65,7 +65,8 @@
             <div class="columns">
                 <h1 class="subtitle">Events & Meetups</h1>
                 <ul class="bulleted-list list-circle">
-                {% for e in events %}
+                {# get first three events from portal events doctype #}
+                {% for e in events[:3] %}
 					<li>
 						<a href="{{ e.route }}" class="secondary-link">{{ frappe.format_date(e.event_date, "medium") }} - {{ e.event_title }}</a>
 					</li>
