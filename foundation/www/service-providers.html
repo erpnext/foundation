@@ -1,95 +1,95 @@
-{% extends "templates/web.html" %}
+{% extends "foundation/templates/web.html" %}
 
 {% from "foundation/templates/includes/macros.html" import media %}
 
 {% macro gold_member(m) %}
-<div class='gold-member'>
-	<div class="media with-border clickable {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+<div class="media {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+		{% if m.image %}
 		<div class="media-left">
 			<a href="{{ m.route }}">
-				<img class="media-object" src="{{ m.image or '/assets/foundation/img/gold.png' }}"
-					style="max-width: 72px;">
+				<img class="thumb-small media-object" src="{{ m.image or '/assets/foundation/img/gold.png' }}">
 			</a>
 		</div>
+		{% endif %}
 		<div class="media-body">
 			<h4 class="media-heading">{{ m.title }}</h4>
-			<p><span class=label>Gold Member</span></p>
 			{{ m.introduction }}
 		</div>
-	</div>
 </div>
 {% endmacro %}
 
 {% macro silver_member(m) %}
-<div class='col-sm-4'>
-	<div class="silver-member with-border clickable {{ 'text-muted' if m.placeholder else '' }}"
+	<div class="silver-member clickable {{ 'text-muted' if m.placeholder else '' }}"
 		 style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
 		<h4>{{ m.title }}</h4>
-			<p><span class=label>Silver Member</span></p>
-		<p>{{ m.introduction[:100] }}</p>
+		<p>{{ m.introduction | truncate(140) }}</p>
 	</div>
-</div>
 {% endmacro %}
 
 {% macro show_member(s) %}
-	<div class='col-sm-4' style='height: 130px; padding-bottom: 30px'>
+	<div class='columns'>
+		<h3><a class='secondary-link bold' href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a></h3>
 		<p>
-			<a class='bold' href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a><br>
-			{{ s.introduction and s.introduction[:100] }}
+			{{ s.introduction and s.introduction | truncate(140) }}
 		</p>
 	</div>
 {% endmacro %}
 
 {% block page_content %}
-<h1 class='media-heading' style='margin-bottom: 30px;'>{{ title }}</h1>
 {% if form_dict.country %}
 {% endif %}
-<section>
+<section class="gold bottom-spacer-4">
+	<h2 class='media-heading'>Gold Members</h2>
 	{% for m in gold_members %}
 		{{ gold_member(m) }}
 	{% endfor %}
 	{% if has_gold_member %}
-	<p><a class='text-muted' href='/members'>
+	<p class="top-spacer text-center"><a class='text-muted' href='/members'>
 		Become a Gold Member and get your company featured here</a></p>
 	{% endif %}
 </section>
-<section>
-	<div class='row'>
+
+<section class="silver bottom-spacer-4">
+<h2 class='media-heading'>Silver Members</h2>
+<div class="grid-of-three">
 	{% for m in silver_members %}
 		{{ silver_member(m) }}
 	{% endfor %}
-	</div>
+</div>
+	{% if has_silver_member %}
+		<p class="top-spacer text-center"><a class='text-muted' href='/members'>
+			Become a Silver Member and get your company featured here</a></p>
+	{% endif %}
 </section>
-<section>
+<section class="bottom-spacer-4">
 	<h2>Individual Members</h2>
-	<div class='row'>
-	{% for s in individual_members %}
-		{{ show_member(s) }}
-	{% endfor %}
+	<div class="grid-of-three">
+		{% for s in individual_members %}
+			{{ show_member(s) }}
+		{% endfor %}
 	</div>
 </section>
 {% if form_dict.country %}
-<section>
+<section class="bottom-spacer-4">
 	<h2>Other Service Providers</h2>
-	<div class='row'>
-	{% for s in service_providers %}
-		{{ show_member(s) }}
-	{% endfor %}
-</div>
+	<div class="grid-of-three">
+		{% for s in service_providers %}
+			{{ show_member(s) }}
+		{% endfor %}
+	</div>
 </section>
 {% else %}
 <section>
 	<h2>Select by country</h2>
-	<div class='row'>
+	<div class='four-column flex-wrap'>
 	{% for c in countries %}
-	<div class='col-sm-4'>
+	<div class='countries columns'>
 		<p>
-			<a href="/service-providers?country={{ c[0] }}">{{ c[0] }} ({{ c[1] }})</a>
+			<a class="secondary-link" href="/service-providers?country={{ c[0] }}">{{ c[0] }} ({{ c[1] }})</a>
 		</p>
 	</div>
 	{% endfor %}
 </div>
 </section>
 {% endif %}
-
 {% endblock %}

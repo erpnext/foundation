@@ -1,17 +1,17 @@
-{% extends "templates/base.html" %}
+{% extends "foundation/templates/base.html" %}
 {% block title %}ERPNext Foundation{% endblock %}
 {% block content %}
-<section class='feature hero centered'>
+<section class='feature hero text-center'>
     <div class="container">
         <img class="hero-illustration" src='/assets/foundation/img/hero-illustration-erpnext.png'>
-        <h1 class="title">ERP for Everybody</h1>
+        <h1 class="header1">ERP for Everybody</h1>
         <p class='intro-copy text-light'>A free and opensource do-it-yourself business management system that will help you stay in control.</p>
         <a class="button button-primary" href="https://erpnext.com/pricing">Get Started</a>
     </div>
 </section>
 <section class="feature gray-bg left-aligned">
     <div class="container">
-        <h1 class="subtitle">One App Many Domains</h1>
+        <h2 class="header1 bottom-spacer-4 text-center">One App Many Domains</h1>
           <ul class="list grid-of-four">
             <li class="list-items grid-items">
 				<a class="primary-links domain-links" href="/docs/user/manual/en/manufacturing">
@@ -52,9 +52,9 @@
 </section>
 <section class="feature community-bg text-white">
     <div class="container">
-        <div class="centered">
-            <h1 class="title">ERPNext Foundation</h1>
-            <p class="intro-copy">ERPNext Foundation is a community of ERPNext Users, Developers and Service Providers. The goal of the ERPNext Foundation is to provide a platform for the ERPNext Community to come together, join hands and build assets to help build and enhance ERPNext around the world.</p>
+        <div class="text-center">
+            <h1 class="header1">ERPNext Foundation</h1>
+            <p class="intro-copy">ERPNext Foundation is a community of ERPNext users, developers and service providers. The goal of the ERPNext Foundation is to provide a platform for the ERPNext Community to come together, join hands and build assets to help build and enhance ERPNext around the world.</p>
             <a href="/members/details" class="button button-secondary">Become a Member</a>
         </div>
     </div>
@@ -68,7 +68,7 @@
                 {# get first three events from portal events doctype #}
                 {% for e in events[:3] %}
 					<li>
-						<a href="{{ e.route }}" class="secondary-link">{{ frappe.format_date(e.event_date, "medium") }} - {{ e.event_title }}</a>
+						<a href="{{ e.route }}" class="secondary-link"><b>{{ e.event_title }}</b><br>{{ frappe.format_date(e.event_date, "medium") }}</a>
 					</li>
 					{% endfor %}
                 </ul>
@@ -96,9 +96,9 @@
                     <li>
                         <a href="https://discuss.erpnext.com/" class="secondary-link">Ask in our forum</a>
                     </li>
-                    <li>
+<!--                    <li>
                         <a href="" class="secondary-link">Get Paid Support</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>

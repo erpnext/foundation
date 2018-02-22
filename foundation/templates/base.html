@@ -18,10 +18,13 @@
 		{% block meta_block %}{% endblock %}
         <link href="/assets/foundation/css/erpnext-org-theme.css" rel="stylesheet">
         {% if path != '' %}
-        <link type="text/css" rel="stylesheet" href="/assets/frappe/css/hljs.css">
-        <link type="text/css" rel="stylesheet" href="/assets/frappe/css/font-awesome.css">
-        <link type="text/css" rel="stylesheet" href="/assets/frappe/css/octicons/octicons.css">
+			<link type="text/css" rel="stylesheet" href="/assets/frappe/css/hljs.css">
+			<link type="text/css" rel="stylesheet" href="/assets/frappe/css/font-awesome.css">
+			<link type="text/css" rel="stylesheet" href="/assets/frappe/css/octicons/octicons.css">
         {% endif %}
+        {% if path == 'contact' %}
+			<link type="text/css" rel="stylesheet" href="/assets/foundation/css/bootstrap-for-webform.css">
+		{% endif %}
 	{%- endblock -%}
 	{%- block head_include %}{{ head_include or "" }}{% endblock -%}
 	{%- block style %}{%- endblock -%}

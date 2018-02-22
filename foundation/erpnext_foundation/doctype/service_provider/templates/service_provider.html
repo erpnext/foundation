@@ -8,18 +8,18 @@
 <p><span class=label>{{ membership_type }} Member<span></p>
 {% endif %}
 <section>
-	<div class="media" style="margin: 45px 0px; ">
-		<div class="media-left" style='min-width: 80px;'>
+	<div class="media">
+		{% if image %}
+		<div class="media-left">
 			<a href="#">
 				<img class="media-object"
-					src="{{ image }}"
-					style="max-width: 80px; ">
+					src="{{ image }}">
 			</a>
 		</div>
+		{% endif %}
 		<div class="media-body">
 			{{ introduction }}
-			<table class='table table-bordered small'
-				style='max-width: 400px; margin-bottom: 0px; margin-top: 20px'>
+			<table class='table table-bordered small'>
 				<tr>
 					<td style='width: 38.2%'>Country</td>
 					<td>{{ country }}</td>
