@@ -5,7 +5,7 @@
 a {
     color: @brand-primary;
     text-decoration: none;
-    transition: @transition-color;
+    transition: color @transition;
     &:hover{
     color: @text-dark;
     text-decoration: underline;
@@ -91,7 +91,7 @@ a {
     padding: 8rem 2.5rem;
 	}
 }
-.page{
+.page {
     padding: 0 1rem;
     border-top: 1px solid @light-border-color;
 }
@@ -111,34 +111,24 @@ a {
     border-radius: .5rem;
     background-color: #fff;
     min-width:200px;
-    transition: @transition-all;
+    transition: all @transition;
     &:hover{
         box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.05);
     }
 }
 
-.list.grid-of-four, .grid-of-three {
+.grid-of-four, .grid-of-three {
     grid-gap: 2.5rem;
+	display: grid;
 }
 
 .grid-of-four {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-	@media screen and (min-width: @screen-palm) {
-	grid-template-columns: repeat(2, 1fr);
-	}
-    @media screen and (min-width: @screen-xs) {
-	grid-template-columns: repeat(3, 1fr);
-	}
 	@media screen and (min-width: @screen-sm) {
 	grid-template-columns: repeat(4, 1fr);
 	}
 }
 
-
-
-.grid-of-three{
-	display: grid;
+.grid-of-three, .grid-of-four{
     grid-template-columns: repeat(1, 1fr);
 	@media screen and (min-width: @screen-palm) {
 	grid-template-columns: repeat(2, 1fr);
@@ -158,6 +148,11 @@ a {
 @spacer-2: @spacer-1 * 2;
 
 /*utilities*/
+.hide, .hidden {
+    display: none;
+	visibility: hidden;
+}
+
 .top-zero {
     margin-top: 0;
 }
@@ -182,7 +177,7 @@ a {
     text-align: right;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -198,11 +193,11 @@ a {
     color:#fff;
 }
 
-.centered{
+.centered {
 	margin: 0 auto;
 }
 
-.bold{
+.bold {
 	font-weight: bold;
 }
 
@@ -263,7 +258,7 @@ a {
 
 .primary-links {
     color: @text-light;
-    transition: @transition-color;
+    transition: color @transition;
     &:hover{
         color: @text-dark;
         text-decoration: none;
@@ -274,7 +269,7 @@ a {
     padding: 1rem 1.5rem;
     border-radius:.25em;
     cursor: pointer;
-    transition: @transition-all;
+    transition: all @transition;
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
     text-decoration: none;
     &:hover{
@@ -312,7 +307,7 @@ a {
 
 .secondary-link {
     color:@text-light;
-    transition: @transition-color;
+    transition: color @transition;
     &:hover{
         color: @text-dark;
     }
@@ -337,7 +332,7 @@ a {
     padding: ;
 }
 .page_content li, .sidebar-item, .footer-list li{
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 
 }
 
@@ -345,9 +340,14 @@ a {
     display: flex;
     max-width: @screen-md;
     margin: 0 auto;
+    flex-direction: column-reverse;
+    @media screen and (min-width: @screen-xs) {
+		flex-direction: row
+	}
+
 }
 
-.page-content{
+.page-content {
     width:100%;
     padding: 4rem 0;
 
@@ -370,7 +370,7 @@ a {
         }
         &:hover{
             color: @text-dark;
-            transition: @transition-color;
+            transition: color @transition;
         }
     }
 
@@ -387,19 +387,27 @@ a {
 
 .sidebar-block {
     padding: 4rem 0;
-    border-right: 1px solid black;
     min-width: 200px;
-    border-right: 1px solid @light-border-color;
+    border-top: 1px solid @light-border-color;
+	@media screen and (min-width: @screen-xs) {
+		border-right: 1px solid @light-border-color;
+    }
+
 }
 
-.blog-page{
+.blog-page {
     padding: 4rem 0;
     max-width: 700px;
     margin: 0 auto;
 }
 
 .page-content.with-sidebar {
-    padding: 4rem 0 4rem 2.5rem;
+
+	@media screen and (min-width: @screen-xs) {
+		 padding: 4rem 0 4rem 2.5rem;
+    }
+    padding: 1rem;
+
 }
 
 hr {
@@ -415,9 +423,9 @@ hr {
     font-size: 0.75rem;
 }
 
-.footer-end a{
+.footer-end a {
     color: @text-muted;
-    &:hover{
+    &:hover {
     color: #fff;
     }
 }
@@ -428,13 +436,47 @@ hr {
 }
 
 /* loaned from bootstrap*/
+
+
+
+/*progress bar*/
+.progress {
+    height: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: .25rem;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.progress-bar-success {
+    background-color: @indicator-green;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+/*progress bar*/
+
+.clickable a {
+    color: @text-color;
+	&:focus {
+		outline:0;
+	}
+}
+
 .fade.in {
   opacity: 1;
 }
 
-.clickable a {
-    color: @text-color;
-}
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -614,6 +656,10 @@ code {
 }
 
 /*loaned from frappe*/
+.comment-view {
+    padding-bottom: 2.5rem;
+}
+
 .no-results {
     text-align: center;
     padding: 10rem 0px;
@@ -754,7 +800,7 @@ img.blog-cover-image, .blog-text img, .screenshot {
 	margin-top: .25em;
     font-weight: normal;
     font-size: 1rem;
-    a{
+    a {
     color: @text-color;
     }
 }
@@ -830,7 +876,7 @@ img.blog-cover-image, .blog-text img, .screenshot {
     }
 }
 
-.silver-member{
+.box {
 	padding: 1.5rem;
 	border: 1px solid @border-color;
 	border-radius: .25em;
@@ -865,6 +911,6 @@ img.blog-cover-image, .blog-text img, .screenshot {
   background-attachment: fixed;
 }
 
-.community-bg .intro-copy, .about .intro-copy{
+.community-bg .intro-copy, .about .intro-copy {
 	max-width:800px;
 }

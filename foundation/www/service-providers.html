@@ -4,13 +4,11 @@
 
 {% macro gold_member(m) %}
 <div class="media {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
-		{% if m.image %}
 		<div class="media-left">
 			<a href="{{ m.route }}">
 				<img class="thumb-small media-object" src="{{ m.image or '/assets/foundation/img/gold.png' }}">
 			</a>
 		</div>
-		{% endif %}
 		<div class="media-body">
 			<h4 class="media-heading">{{ m.title }}</h4>
 			{{ m.introduction }}
@@ -19,7 +17,7 @@
 {% endmacro %}
 
 {% macro silver_member(m) %}
-	<div class="silver-member clickable {{ 'text-muted' if m.placeholder else '' }}"
+	<div class="box clickable {{ 'text-muted' if m.placeholder else '' }}"
 		 style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
 		<h4>{{ m.title }}</h4>
 		<p>{{ m.introduction | truncate(140) }}</p>

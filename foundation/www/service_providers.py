@@ -26,6 +26,7 @@ def get_context(context):
 		context.gold_members.append(dict(
 			title='Your Company',
 			introduction='Become a Gold Member today and get your company featured here',
+			image='/assets/foundation/img/gold.png',
 			route='/members',
 			placeholder=True
 		))
@@ -43,6 +44,7 @@ def get_context(context):
 		context.silver_members.append(dict(
 			title='Your Company',
 			introduction='Become a silver Member today and get your company featured here',
+			image='/assets/foundation/img/silver.png',
 			route='/members',
 			placeholder=True
 		))
