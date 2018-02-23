@@ -39,7 +39,7 @@ home_page = "index"
 template_apps = ['foundation', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
-	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.svg' />ERPNext.org",
+	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
 			{"label": "Foundation", "child_items":[
 				{"label": "Chapter", "url": "/chapters","right": 1},

@@ -23,6 +23,14 @@ class ServiceProvider(WebsiteGenerator):
 			context.membership_type = frappe.get_value('Member', self.member, 'membership_type')
 		if context.website and not context.website.startswith('http'):
 			context.website = 'http://' + context.website
+		if not context.image:
+			if context.membership_type == "Gold":
+				context.image = "/assets/foundation/img/gold.png"
+			elif context.membership_type == "Silver":
+				context.image = "/assets/foundation/img/silver.png"
+			else:
+				context.image = "/assets/foundation/img/default-membership-logo.png"
+
 
 
 def send_alert_to_inactive_service_providers():

@@ -25,7 +25,7 @@
 {% endmacro %}
 
 {% macro show_member(s) %}
-	<div class='columns'>
+	<div class='individual-member columns'>
 		<h3><a class='secondary-link bold' href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a></h3>
 		<p>
 			{{ s.introduction and s.introduction | truncate(140) }}
