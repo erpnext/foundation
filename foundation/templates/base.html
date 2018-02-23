@@ -39,11 +39,11 @@
 </head>
 <body data-path="{{ path }}">
     <div class="wrapper">
-        {%- block navbar -%}{% include "foundation/templates/includes/navbar/navbar.html" %}{%- endblock -%}
+        {%- block navbar -%}{% include "templates/includes/navbar/navbar.html" %}{%- endblock -%}
         {% block content %}
             {{ content }}
         {% endblock %}
-        {%- block footer -%}{% include "foundation/templates/includes/footer/footer.html" %}{%- endblock -%}
+        {%- block footer -%}{% include "templates/includes/footer/footer.html" %}{%- endblock -%}
     </div>
         {% block base_scripts %}
         <!-- js should be loaded in body! -->

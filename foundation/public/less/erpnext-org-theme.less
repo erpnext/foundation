@@ -161,6 +161,10 @@ a {
 }
 
 /*utilities*/
+.align-items-center {
+	align-items: center;
+}
+
 .hide, .hidden {
     display: none;
 	visibility: hidden;
@@ -438,8 +442,11 @@ hr {
 
 .footer-end {
     border-top: 1px solid @light-border-color;
-    padding: 2rem 2.5rem;
-    font-size: 0.75rem;
+    padding: 2rem 1rem;
+	font-size: 0.75rem;
+	@media screen and (min-width: @screen-xs) {
+		padding: 2rem 2.5rem;
+	}
 }
 
 .footer-end a {
@@ -453,7 +460,7 @@ hr {
     width: 1.5rem;
     margin-right: .5em;
 }
-/* loaned from bootstrap*/
+/* loaned from bootstrap need to cleanup*/
 /*progress bar*/
 .progress {
   height: 1.5rem;
@@ -852,7 +859,7 @@ img.blog-cover-image, .blog-text img, .screenshot {
     display: inline-block;
 }
 
-.blog-container {
+.blog-container, .max-width-medium {
     max-width: 700px;
 }
 
@@ -891,7 +898,7 @@ img.blog-cover-image, .blog-text img, .screenshot {
 }
 
 /* individual elements */
-.row.page-head {
+/*.row.page-head {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -906,7 +913,7 @@ img.blog-cover-image, .blog-text img, .screenshot {
 .item-search i {
     margin-right: -1.5rem;
     margin-top: .5rem;
-}
+}*/
 .gold-member{
     display: flex;
     padding: 2.5rem 0;
