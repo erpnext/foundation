@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/party.py"
@@ -38,7 +38,7 @@
         <a name="erpnext.accounts.party._get_party_details" href="#erpnext.accounts.party._get_party_details" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>_get_party_details</b>
-        <i class="text-muted">(party=None, account=None, party_type=Customer, company=None, posting_date=None, price_list=None, currency=None, doctype=None, ignore_permissions=False)</i>
+        <i class="text-muted">(party=None, account=None, party_type=Customer, company=None, posting_date=None, bill_date=None, price_list=None, currency=None, doctype=None, ignore_permissions=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -88,7 +88,7 @@
         <a name="erpnext.accounts.party.get_due_date" href="#erpnext.accounts.party.get_due_date" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>get_due_date</b>
-        <i class="text-muted">(posting_date, party_type, party)</i>
+        <i class="text-muted">(posting_date, party_type, party, company=None, bill_date=None)</i>
     </p>
 	<div class="docs-attr-desc"><p>Get due date from <code>Payment Terms Template</code></p>
 </div>
@@ -104,7 +104,7 @@
         <a name="erpnext.accounts.party.get_due_date_from_template" href="#erpnext.accounts.party.get_due_date_from_template" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>get_due_date_from_template</b>
-        <i class="text-muted">(template_name, posting_date)</i>
+        <i class="text-muted">(template_name, posting_date, bill_date)</i>
     </p>
 	<div class="docs-attr-desc"><pre><code>Inspects all `Payment Term`s from the a `Payment Terms Template` and returns the due
 date after considering all the `Payment Term`s requirements.
@@ -169,7 +169,7 @@ date after considering all the `Payment Term`s requirements.
         <a name="erpnext.accounts.party.get_party_details" href="#erpnext.accounts.party.get_party_details" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>get_party_details</b>
-        <i class="text-muted">(party=None, account=None, party_type=Customer, company=None, posting_date=None, price_list=None, currency=None, doctype=None, ignore_permissions=False)</i>
+        <i class="text-muted">(party=None, account=None, party_type=Customer, company=None, posting_date=None, bill_date=None, price_list=None, currency=None, doctype=None, ignore_permissions=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -248,7 +248,7 @@ It returns an empty string if there is no matching record.
         <a name="erpnext.accounts.party.get_pyt_term_template" href="#erpnext.accounts.party.get_pyt_term_template" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>get_pyt_term_template</b>
-        <i class="text-muted">(party_name, party_type)</i>
+        <i class="text-muted">(party_name, party_type, company=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -280,7 +280,7 @@ It returns an empty string if there is no matching record.
         <a name="erpnext.accounts.party.set_account_and_due_date" href="#erpnext.accounts.party.set_account_and_due_date" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>set_account_and_due_date</b>
-        <i class="text-muted">(party, account, party_type, company, posting_date, doctype)</i>
+        <i class="text-muted">(party, account, party_type, company, posting_date, bill_date, doctype)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -378,7 +378,7 @@ It returns an empty string if there is no matching record.
         <a name="erpnext.accounts.party.validate_due_date" href="#erpnext.accounts.party.validate_due_date" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>validate_due_date</b>
-        <i class="text-muted">(posting_date, due_date, party_type, party)</i>
+        <i class="text-muted">(posting_date, due_date, party_type, party, company=None, bill_date=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
