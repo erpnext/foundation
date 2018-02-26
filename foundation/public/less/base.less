@@ -63,6 +63,14 @@
   color: #fff;
 }
 
+.text-medium {
+  font-size: 1.5rem;
+}
+
+.text-small {
+  font-size: 0.5rem;
+}
+
 .centered {
   margin: 0 auto;
 }
@@ -83,3 +91,14 @@
   list-style: circle;
 }
 
+.border {
+  border: 1px solid @border-color;
+}
+
+.saturate {
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}

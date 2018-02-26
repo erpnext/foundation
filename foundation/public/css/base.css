@@ -10,8 +10,14 @@
 .top-zero {
   margin-top: 0;
 }
+.bottom-zero {
+  margin-bottom: 0;
+}
 .top-spacer {
   margin-top: 2.5rem;
+}
+.bottom-spacer {
+  margin-bottom: 2.5rem;
 }
 .bottom-spacer-4 {
   margin-bottom: 4rem;

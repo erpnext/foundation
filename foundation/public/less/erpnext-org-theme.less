@@ -214,14 +214,13 @@ a {
 }
 
 .intro-copy {
-  font-size: 1.5rem;
   max-width: @screen-md/2;
   margin: 0 auto 1.5rem auto;
 }
 
 .primary-links {
   color: @text-light;
-  transition: color @transition;
+  transition: all @transition;
 
   &:hover {
     color: @text-dark;
@@ -384,16 +383,18 @@ hr {
 }
 
 .footer-end {
-  border-top: 1px solid @light-border-color;
-  padding: 2rem 1rem;
+  border-top: 1px solid @dark-border-color;
+  padding-top: 1rem;
+  margin-top: 1rem;
   font-size: 0.75rem;
 
   @media screen and (min-width: @screen-xs) {
-    padding: 2rem 2.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
   }
 }
 
-.footer-end a {
+.footer a {
   color: @text-muted;
 
   &:hover {
@@ -895,22 +896,6 @@ img.blog-cover-image,
 
 /* individual elements */
 
-.row.page-head {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.item-search .input-wrapper {
-  margin-right: 1.5rem;
-}
-
-.item-search i {
-  margin-right: -1.5rem;
-  margin-top: 0.5rem;
-}
-
 .gold-member {
   display: flex;
   padding: 2.5rem 0;
@@ -938,7 +923,7 @@ img.blog-cover-image,
   }
 }
 
-.domain-links {
+.grid-boxes {
   font-size: 1.5rem;
   display: block;
   padding: 1.5rem;
@@ -952,7 +937,7 @@ img.blog-cover-image,
   width: 100px;
 }
 
-.domain-image {
+.grid-images {
   width: 150px;
   padding-bottom: 1.5rem;
 }
