@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/stock/doctype/batch"
@@ -272,12 +272,56 @@
     
     
 	<p class="docs-attr-name">
+        <a name="after_delete" href="#after_delete" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>after_delete</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="autoname" href="#autoname" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>autoname</b>
         <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p>Generate random ID for batch if not specified</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="before_save" href="#before_save" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>before_save</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_name_from_naming_series" href="#get_name_from_naming_series" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_name_from_naming_series</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Get a name generated for a Batch from the Batch's naming series.
+    :return: The string that was generated.
+</code></pre>
 </div>
 	<br>
 
@@ -341,6 +385,92 @@
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.batch.batch._get_batch_prefix" href="#erpnext.stock.doctype.batch.batch._get_batch_prefix" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.batch.batch.<b>_get_batch_prefix</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Get the naming series prefix set in Stock Settings.
+
+It does not do any sanity checks so make sure to use it after checking if the Batch
+is set to use naming series.
+:return: The naming series.
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.batch.batch._make_naming_series_key" href="#erpnext.stock.doctype.batch.batch._make_naming_series_key" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.batch.batch.<b>_make_naming_series_key</b>
+        <i class="text-muted">(prefix)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Make naming series key for a Batch.
+
+Naming series key is in the format [prefix].[#####]
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><p><strong><code>prefix</code></strong> -  Naming series prefix gotten from Stock Settings</p>
+
+<p>:return: The derived key. If no prefix is given, an empty string is returned</p></li>
+</ul>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.batch.batch.batch_uses_naming_series" href="#erpnext.stock.doctype.batch.batch.batch_uses_naming_series" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.batch.batch.<b>batch_uses_naming_series</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Verify if the Batch is to be named using a naming series
+:return: bool
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.batch.batch.get_batch_naming_series" href="#erpnext.stock.doctype.batch.batch.get_batch_naming_series" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.batch.batch.<b>get_batch_naming_series</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Get naming series key for a Batch.
+
+Naming series key is in the format [prefix].[#####]
+:return: The naming series or empty string if not available
+</code></pre>
+</div>
+	<br>
 
 	
 
@@ -447,23 +577,9 @@
 		erpnext.stock.doctype.batch.batch.<b>get_name_from_hash</b>
         <i class="text-muted">()</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.stock.doctype.batch.batch.get_name_from_naming_series" href="#erpnext.stock.doctype.batch.batch.get_name_from_naming_series" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.stock.doctype.batch.batch.<b>get_name_from_naming_series</b>
-        <i class="text-muted">()</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><pre><code>Get a name for a Batch by generating a unique hash.
+:return: The hash that was generated.
+</code></pre>
 </div>
 	<br>
 

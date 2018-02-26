@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/manufacturing/doctype/production_plan_item"
@@ -42,6 +42,18 @@
         
         <tr >
             <td>1</td>
+            <td ><code>include_exploded_items</code></td>
+            <td >
+                Check</td>
+            <td >
+                Include Exploded Items
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
             <td class="danger" title="Mandatory"><code>item_code</code></td>
             <td >
                 Link</td>
@@ -62,7 +74,7 @@
         </tr>
         
         <tr >
-            <td>2</td>
+            <td>3</td>
             <td class="danger" title="Mandatory"><code>bom_no</code></td>
             <td >
                 Link</td>
@@ -83,7 +95,7 @@
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>4</td>
             <td class="danger" title="Mandatory"><code>planned_qty</code></td>
             <td >
                 Float</td>
@@ -95,7 +107,7 @@
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>5</td>
             <td class="danger" title="Mandatory"><code>planned_start_date</code></td>
             <td >
                 Datetime</td>
@@ -107,7 +119,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>6</td>
             <td ><code>column_break_6</code></td>
             <td class="info">
                 Column Break</td>
@@ -119,7 +131,7 @@
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>7</td>
             <td ><code>warehouse</code></td>
             <td >
                 Link</td>
@@ -141,7 +153,19 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>8</td>
+            <td ><code>produced_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Produced Qty
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
             <td ><code>sales_order</code></td>
             <td >
                 Link</td>
@@ -162,7 +186,19 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>10</td>
+            <td ><code>sales_order_item</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Sales Order Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
             <td ><code>material_request</code></td>
             <td >
                 Link</td>
@@ -183,7 +219,7 @@
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>12</td>
             <td ><code>pending_qty</code></td>
             <td >
                 Float</td>
@@ -195,7 +231,7 @@
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>13</td>
             <td class="danger" title="Mandatory"><code>stock_uom</code></td>
             <td >
                 Link</td>
@@ -216,7 +252,7 @@
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>14</td>
             <td ><code>description</code></td>
             <td >
                 Text Editor</td>
@@ -228,12 +264,24 @@
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>15</td>
             <td ><code>material_request_item</code></td>
             <td >
                 Data</td>
             <td class="text-muted" title="Hidden">
                 material_request_item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>ordered_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Ordered Qty
                 
             </td>
             <td></td>
@@ -251,7 +299,7 @@
         <li>
 
 
-<a href="/docs/current/models/manufacturing/production_planning_tool">Production Planning Tool</a>
+<a href="/docs/current/models/manufacturing/production_plan">Production Plan</a>
 
 </li>
     

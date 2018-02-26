@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/hub_node/__init__.py"
@@ -43,7 +43,7 @@
         <a name="erpnext.hub_node.get_categories" href="#erpnext.hub_node.get_categories" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.hub_node.<b>get_categories</b>
-        <i class="text-muted">()</i>
+        <i class="text-muted">(parent=All Categories)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -71,13 +71,13 @@
         
     
     <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.hub_node.get_company_details</code>
+        <br><code>/api/method/erpnext.hub_node.get_details</code>
     </p>
 	<p class="docs-attr-name">
-        <a name="erpnext.hub_node.get_company_details" href="#erpnext.hub_node.get_company_details" class="text-muted small">
+        <a name="erpnext.hub_node.get_details" href="#erpnext.hub_node.get_details" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.hub_node.<b>get_company_details</b>
-        <i class="text-muted">(hub_sync_id)</i>
+		erpnext.hub_node.<b>get_details</b>
+        <i class="text-muted">(hub_sync_id=None, doctype=Hub Item)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -105,13 +105,13 @@
         
     
     <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.hub_node.get_item_details</code>
+        <br><code>/api/method/erpnext.hub_node.get_list</code>
     </p>
 	<p class="docs-attr-name">
-        <a name="erpnext.hub_node.get_item_details" href="#erpnext.hub_node.get_item_details" class="text-muted small">
+        <a name="erpnext.hub_node.get_list" href="#erpnext.hub_node.get_list" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.hub_node.<b>get_item_details</b>
-        <i class="text-muted">(hub_sync_id=None)</i>
+		erpnext.hub_node.<b>get_list</b>
+        <i class="text-muted">(doctype, start=0, limit=20, fields=[u'*'], filters={}, order_by=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -123,13 +123,13 @@
         
     
     <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.hub_node.get_items</code>
+        <br><code>/api/method/erpnext.hub_node.get_meta</code>
     </p>
 	<p class="docs-attr-name">
-        <a name="erpnext.hub_node.get_items" href="#erpnext.hub_node.get_items" class="text-muted small">
+        <a name="erpnext.hub_node.get_meta" href="#erpnext.hub_node.get_meta" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.hub_node.<b>get_items</b>
-        <i class="text-muted">(start=0, limit=20, category=None, order_by=None, company=None, text=None)</i>
+		erpnext.hub_node.<b>get_meta</b>
+        <i class="text-muted">(doctype)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -244,6 +244,24 @@
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.hub_node.<b>send_opportunity</b>
         <i class="text-muted">(contact)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hub_node.update_category</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hub_node.update_category" href="#erpnext.hub_node.update_category" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hub_node.<b>update_category</b>
+        <i class="text-muted">(item_name, category)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

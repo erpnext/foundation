@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/daily_work_summary"
@@ -42,11 +42,11 @@
         
         <tr >
             <td>1</td>
-            <td ><code>company</code></td>
+            <td ><code>daily_work_summary_group</code></td>
             <td >
                 Link</td>
             <td >
-                Company
+                Daily Work Summary Group
                 
             </td>
             <td>
@@ -54,7 +54,7 @@
                 
 
 
-<a href="/docs/current/models/setup/company">Company</a>
+<a href="/docs/current/models/hr/daily_work_summary_group">Daily Work Summary Group</a>
 
 
                 
@@ -131,9 +131,9 @@ Sent</pre>
         <a name="send_mails" href="#send_mails" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>send_mails</b>
-        <i class="text-muted">(self, settings, emails)</i>
+        <i class="text-muted">(self, dws_group, emails)</i>
     </p>
-	<div class="docs-attr-desc"><p>Send emails to get daily work summary to all employees</p>
+	<div class="docs-attr-desc"><p>Send emails to get daily work summary to all users          in selected daily work summary group</p>
 </div>
 	<br>
 
@@ -162,17 +162,17 @@ Sent</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="erpnext.hr.doctype.daily_work_summary.daily_work_summary.get_employee_emails" href="#erpnext.hr.doctype.daily_work_summary.daily_work_summary.get_employee_emails" class="text-muted small">
+        <a name="erpnext.hr.doctype.daily_work_summary.daily_work_summary.get_user_emails_from_group" href="#erpnext.hr.doctype.daily_work_summary.daily_work_summary.get_user_emails_from_group" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.hr.doctype.daily_work_summary.daily_work_summary.<b>get_employee_emails</b>
-        <i class="text-muted">(company, only_working=True)</i>
+		erpnext.hr.doctype.daily_work_summary.daily_work_summary.<b>get_user_emails_from_group</b>
+        <i class="text-muted">(group)</i>
     </p>
-	<div class="docs-attr-desc"><p>Returns list of Employee user ids for the given company who are working today</p>
+	<div class="docs-attr-desc"><p>Returns list of email of users from the given group</p>
 
 <p><strong>Parameters:</strong></p>
 
 <ul>
-<li><strong><code>company</code></strong> -  Company <code>name</code></li>
+<li><strong><code>group</code></strong> -  Daily Work Summary Group <code>name</code></li>
 </ul>
 </div>
 	<br>

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/buying/doctype/purchase_order"
@@ -1503,6 +1503,18 @@ Delivered</pre>
         
         <tr class="info">
             <td>101</td>
+            <td ><code>raw_material_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Raw Materials Supplied
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>102</td>
             <td ><code>supplied_items_section</code></td>
             <td >
                 Section Break</td>
@@ -1514,7 +1526,7 @@ Delivered</pre>
         </tr>
         
         <tr >
-            <td>102</td>
+            <td>103</td>
             <td ><code>supplied_items</code></td>
             <td >
                 Table</td>
@@ -1535,7 +1547,7 @@ Delivered</pre>
         </tr>
         
         <tr class="info">
-            <td>103</td>
+            <td>104</td>
             <td ><code>subscription_section</code></td>
             <td >
                 Section Break</td>
@@ -1547,7 +1559,7 @@ Delivered</pre>
         </tr>
         
         <tr >
-            <td>104</td>
+            <td>105</td>
             <td ><code>from_date</code></td>
             <td >
                 Date</td>
@@ -1559,7 +1571,7 @@ Delivered</pre>
         </tr>
         
         <tr >
-            <td>105</td>
+            <td>106</td>
             <td ><code>to_date</code></td>
             <td >
                 Date</td>
@@ -1571,7 +1583,7 @@ Delivered</pre>
         </tr>
         
         <tr >
-            <td>106</td>
+            <td>107</td>
             <td ><code>column_break_97</code></td>
             <td class="info">
                 Column Break</td>
@@ -1583,7 +1595,7 @@ Delivered</pre>
         </tr>
         
         <tr >
-            <td>107</td>
+            <td>108</td>
             <td ><code>subscription</code></td>
             <td >
                 Link</td>
@@ -2026,13 +2038,13 @@ Delivered</pre>
         
     
     <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.buying.doctype.purchase_order.purchase_order.make_stock_entry</code>
+        <br><code>/api/method/erpnext.buying.doctype.purchase_order.purchase_order.make_rm_stock_entry</code>
     </p>
 	<p class="docs-attr-name">
-        <a name="erpnext.buying.doctype.purchase_order.purchase_order.make_stock_entry" href="#erpnext.buying.doctype.purchase_order.purchase_order.make_stock_entry" class="text-muted small">
+        <a name="erpnext.buying.doctype.purchase_order.purchase_order.make_rm_stock_entry" href="#erpnext.buying.doctype.purchase_order.purchase_order.make_rm_stock_entry" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.buying.doctype.purchase_order.purchase_order.<b>make_stock_entry</b>
-        <i class="text-muted">(purchase_order, item_code)</i>
+		erpnext.buying.doctype.purchase_order.purchase_order.<b>make_rm_stock_entry</b>
+        <i class="text-muted">(purchase_order, rm_items)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

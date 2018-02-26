@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.4</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/manufacturing/doctype/bom"
@@ -89,6 +89,39 @@
         
         <tr >
             <td>4</td>
+            <td ><code>inspection_required</code></td>
+            <td >
+                Check</td>
+            <td >
+                Inspection Required
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>quality_inspection_template</code></td>
+            <td >
+                Link</td>
+            <td >
+                Quality Inspection Template
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/quality_inspection_template">Quality Inspection Template</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
             <td ><code>cb0</code></td>
             <td class="info">
                 Column Break</td>
@@ -100,7 +133,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>7</td>
             <td ><code>is_active</code></td>
             <td >
                 Check</td>
@@ -112,7 +145,7 @@
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>8</td>
             <td ><code>is_default</code></td>
             <td >
                 Check</td>
@@ -124,7 +157,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>9</td>
             <td ><code>with_operations</code></td>
             <td >
                 Check</td>
@@ -137,7 +170,7 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>10</td>
             <td ><code>rm_cost_as_per</code></td>
             <td >
                 Select</td>
@@ -153,7 +186,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>11</td>
             <td ><code>buying_price_list</code></td>
             <td >
                 Link</td>
@@ -174,7 +207,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>12</td>
             <td ><code>set_rate_of_sub_assembly_item_based_on_bom</code></td>
             <td >
                 Check</td>
@@ -186,7 +219,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>11</td>
+            <td>13</td>
             <td ><code>currency_detail</code></td>
             <td >
                 Section Break</td>
@@ -198,7 +231,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>14</td>
             <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
@@ -219,7 +252,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>15</td>
             <td ><code>column_break_12</code></td>
             <td class="info">
                 Column Break</td>
@@ -231,7 +264,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>16</td>
             <td class="danger" title="Mandatory"><code>currency</code></td>
             <td >
                 Link</td>
@@ -252,7 +285,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>17</td>
             <td class="danger" title="Mandatory"><code>conversion_rate</code></td>
             <td >
                 Float</td>
@@ -264,7 +297,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>16</td>
+            <td>18</td>
             <td ><code>operations_section</code></td>
             <td >
                 Section Break</td>
@@ -277,7 +310,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>19</td>
             <td ><code>operations</code></td>
             <td >
                 Table</td>
@@ -298,7 +331,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>18</td>
+            <td>20</td>
             <td ><code>materials_section</code></td>
             <td >
                 Section Break</td>
@@ -310,7 +343,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>21</td>
             <td class="danger" title="Mandatory"><code>items</code></td>
             <td >
                 Table</td>
@@ -331,7 +364,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>20</td>
+            <td>22</td>
             <td ><code>scrap_section</code></td>
             <td >
                 Section Break</td>
@@ -343,7 +376,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>23</td>
             <td ><code>scrap_items</code></td>
             <td >
                 Table</td>
@@ -364,7 +397,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>22</td>
+            <td>24</td>
             <td ><code>costing</code></td>
             <td >
                 Section Break</td>
@@ -376,7 +409,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>25</td>
             <td ><code>operating_cost</code></td>
             <td >
                 Currency</td>
@@ -390,7 +423,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>26</td>
             <td ><code>raw_material_cost</code></td>
             <td >
                 Currency</td>
@@ -404,7 +437,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>27</td>
             <td ><code>scrap_material_cost</code></td>
             <td >
                 Currency</td>
@@ -418,7 +451,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>28</td>
             <td ><code>cb1</code></td>
             <td class="info">
                 Column Break</td>
@@ -430,7 +463,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>29</td>
             <td ><code>base_operating_cost</code></td>
             <td >
                 Currency</td>
@@ -444,7 +477,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>30</td>
             <td ><code>base_raw_material_cost</code></td>
             <td >
                 Currency</td>
@@ -458,7 +491,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>31</td>
             <td ><code>base_scrap_material_cost</code></td>
             <td >
                 Data</td>
@@ -472,7 +505,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>30</td>
+            <td>32</td>
             <td ><code>total_cost_of_bom</code></td>
             <td >
                 Section Break</td>
@@ -484,7 +517,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>33</td>
             <td ><code>total_cost</code></td>
             <td >
                 Currency</td>
@@ -498,7 +531,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>34</td>
             <td ><code>column_break_26</code></td>
             <td class="info">
                 Column Break</td>
@@ -510,7 +543,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>35</td>
             <td ><code>base_total_cost</code></td>
             <td >
                 Currency</td>
@@ -524,7 +557,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>34</td>
+            <td>36</td>
             <td ><code>more_info_section</code></td>
             <td >
                 Section Break</td>
@@ -536,7 +569,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>37</td>
             <td ><code>project</code></td>
             <td >
                 Link</td>
@@ -557,7 +590,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>38</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -578,7 +611,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>39</td>
             <td ><code>col_break23</code></td>
             <td class="info">
                 Column Break</td>
@@ -590,7 +623,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>40</td>
             <td ><code>uom</code></td>
             <td >
                 Link</td>
@@ -611,7 +644,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>39</td>
+            <td>41</td>
             <td ><code>section_break_25</code></td>
             <td >
                 Section Break</td>
@@ -623,7 +656,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>42</td>
             <td ><code>description</code></td>
             <td >
                 Small Text</td>
@@ -635,7 +668,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>43</td>
             <td ><code>column_break_27</code></td>
             <td class="info">
                 Column Break</td>
@@ -647,7 +680,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>44</td>
             <td ><code>image</code></td>
             <td >
                 Attach</td>
@@ -659,7 +692,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>43</td>
+            <td>45</td>
             <td ><code>image_view</code></td>
             <td >
                 Image</td>
@@ -673,7 +706,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>44</td>
+            <td>46</td>
             <td ><code>section_break0</code></td>
             <td >
                 Section Break</td>
@@ -685,7 +718,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>45</td>
+            <td>47</td>
             <td ><code>exploded_items</code></td>
             <td >
                 Table</td>
@@ -706,7 +739,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>46</td>
+            <td>48</td>
             <td ><code>website_section</code></td>
             <td >
                 Section Break</td>
@@ -718,7 +751,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>49</td>
             <td ><code>show_in_website</code></td>
             <td >
                 Check</td>
@@ -730,7 +763,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>48</td>
+            <td>50</td>
             <td ><code>route</code></td>
             <td >
                 Small Text</td>
@@ -742,7 +775,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>49</td>
+            <td>51</td>
             <td ><code>website_image</code></td>
             <td >
                 Attach Image</td>
@@ -755,7 +788,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>50</td>
+            <td>52</td>
             <td ><code>thumbnail</code></td>
             <td >
                 Data</td>
@@ -767,7 +800,7 @@ Price List</pre>
         </tr>
         
         <tr class="info">
-            <td>51</td>
+            <td>53</td>
             <td ><code>sb_web_spec</code></td>
             <td >
                 Section Break</td>
@@ -779,7 +812,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>52</td>
+            <td>54</td>
             <td ><code>web_long_description</code></td>
             <td >
                 Text Editor</td>
@@ -791,7 +824,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>53</td>
+            <td>55</td>
             <td ><code>show_items</code></td>
             <td >
                 Check</td>
@@ -803,7 +836,7 @@ Price List</pre>
         </tr>
         
         <tr >
-            <td>54</td>
+            <td>56</td>
             <td ><code>show_operations</code></td>
             <td >
                 Check</td>
@@ -1248,6 +1281,20 @@ Price List</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="update_parent_cost" href="#update_parent_cost" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_parent_cost</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="update_stock_qty" href="#update_stock_qty" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>update_stock_qty</b>
@@ -1581,6 +1628,15 @@ Price List</pre>
 
 
 <a href="/docs/current/models/stock/purchase_receipt_item">Purchase Receipt Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/quality_inspection">Quality Inspection</a>
 
 </li>
 			

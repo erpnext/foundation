@@ -14,7 +14,7 @@ Frappé system.
 
 > Support > Issue > New Issue
 
-<img class="screenshot" alt="Issue" src="/docs/assets/img/support/issue.png">
+<img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/issue.png">
 
 #### Discussion Thread
 
