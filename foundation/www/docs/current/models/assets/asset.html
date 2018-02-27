@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/assets/doctype/asset"
@@ -331,6 +331,18 @@ Customer</pre>
         
         <tr >
             <td>17</td>
+            <td ><code>available_for_use_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Available-for-use Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
             <td ><code>is_existing_asset</code></td>
             <td >
                 Check</td>
@@ -342,7 +354,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td ><code>disposal_date</code></td>
             <td >
                 Date</td>
@@ -354,7 +366,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>20</td>
             <td ><code>journal_entry_for_scrap</code></td>
             <td >
                 Link</td>
@@ -375,7 +387,7 @@ Customer</pre>
         </tr>
         
         <tr class="info">
-            <td>20</td>
+            <td>21</td>
             <td ><code>section_break_5</code></td>
             <td >
                 Section Break</td>
@@ -387,7 +399,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>22</td>
             <td class="danger" title="Mandatory"><code>gross_purchase_amount</code></td>
             <td >
                 Currency</td>
@@ -401,7 +413,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>23</td>
             <td ><code>column_break_18</code></td>
             <td class="info">
                 Column Break</td>
@@ -413,7 +425,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>24</td>
             <td ><code>expected_value_after_useful_life</code></td>
             <td >
                 Currency</td>
@@ -427,7 +439,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>25</td>
             <td ><code>opening_accumulated_depreciation</code></td>
             <td >
                 Currency</td>
@@ -441,7 +453,7 @@ Customer</pre>
         </tr>
         
         <tr class="info">
-            <td>25</td>
+            <td>26</td>
             <td ><code>section_break_20</code></td>
             <td >
                 Section Break</td>
@@ -453,7 +465,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>27</td>
             <td ><code>calculate_depreciation</code></td>
             <td >
                 Check</td>
@@ -465,7 +477,7 @@ Customer</pre>
         </tr>
         
         <tr class="info">
-            <td>27</td>
+            <td>28</td>
             <td ><code>section_break_23</code></td>
             <td >
                 Section Break</td>
@@ -477,7 +489,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>29</td>
             <td ><code>depreciation_method</code></td>
             <td >
                 Select</td>
@@ -494,7 +506,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>30</td>
             <td ><code>value_after_depreciation</code></td>
             <td >
                 Currency</td>
@@ -508,7 +520,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>31</td>
             <td ><code>total_number_of_depreciations</code></td>
             <td >
                 Int</td>
@@ -520,7 +532,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>32</td>
             <td ><code>column_break_24</code></td>
             <td class="info">
                 Column Break</td>
@@ -532,7 +544,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>33</td>
             <td ><code>number_of_depreciations_booked</code></td>
             <td >
                 Int</td>
@@ -544,7 +556,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>34</td>
             <td ><code>frequency_of_depreciation</code></td>
             <td >
                 Int</td>
@@ -556,7 +568,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>35</td>
             <td ><code>next_depreciation_date</code></td>
             <td >
                 Date</td>
@@ -568,7 +580,7 @@ Manual</pre>
         </tr>
         
         <tr class="info">
-            <td>35</td>
+            <td>36</td>
             <td ><code>section_break_14</code></td>
             <td >
                 Section Break</td>
@@ -580,7 +592,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>37</td>
             <td ><code>schedules</code></td>
             <td >
                 Table</td>
@@ -601,7 +613,7 @@ Manual</pre>
         </tr>
         
         <tr class="info">
-            <td>37</td>
+            <td>38</td>
             <td ><code>section_break_31</code></td>
             <td >
                 Section Break</td>
@@ -613,7 +625,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>39</td>
             <td ><code>maintenance_required</code></td>
             <td >
                 Check</td>
@@ -626,7 +638,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>40</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -690,6 +702,20 @@ Manual</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>get_depreciation_amount</b>
         <i class="text-muted">(self, depreciable_value)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_depreciation_amount_prorata_temporis" href="#get_depreciation_amount_prorata_temporis" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_depreciation_amount_prorata_temporis</b>
+        <i class="text-muted">(self, depreciable_value, start_date=None, end_date=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

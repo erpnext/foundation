@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Programa
 
-<img class="screenshot" alt="Program" src="/docs/assets/img/education/setup/program.png">
+<img class="screenshot" alt="Program" src="{{docs_base_url}}/assets/img/education/setup/program.png">
 
 {next}

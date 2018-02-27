@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.0.13</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/pricing_rule"
@@ -536,8 +536,29 @@ Supplier Type</pre>
             </td>
         </tr>
         
-        <tr class="info">
+        <tr >
             <td>31</td>
+            <td class="danger" title="Mandatory"><code>currency</code></td>
+            <td >
+                Link</td>
+            <td >
+                Currency
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/geo/currency">Currency</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>32</td>
             <td ><code>margin</code></td>
             <td >
                 Section Break</td>
@@ -549,7 +570,7 @@ Supplier Type</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>33</td>
             <td ><code>margin_type</code></td>
             <td >
                 Select</td>
@@ -565,7 +586,7 @@ Amount</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>34</td>
             <td ><code>column_break_33</code></td>
             <td class="info">
                 Column Break</td>
@@ -577,7 +598,7 @@ Amount</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>35</td>
             <td ><code>margin_rate_or_amount</code></td>
             <td >
                 Float</td>
@@ -589,7 +610,7 @@ Amount</pre>
         </tr>
         
         <tr class="info">
-            <td>35</td>
+            <td>36</td>
             <td ><code>price_discount_section</code></td>
             <td >
                 Section Break</td>
@@ -601,23 +622,23 @@ Amount</pre>
         </tr>
         
         <tr >
-            <td>36</td>
-            <td class="danger" title="Mandatory"><code>price_or_discount</code></td>
+            <td>37</td>
+            <td class="danger" title="Mandatory"><code>rate_or_discount</code></td>
             <td >
                 Select</td>
             <td >
-                Price or Discount
+                Rate or Discount
                 
             </td>
             <td>
                 <pre>
-Price
+Rate
 Discount Percentage</pre>
             </td>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>38</td>
             <td ><code>col_break2</code></td>
             <td class="info">
                 Column Break</td>
@@ -629,19 +650,19 @@ Discount Percentage</pre>
         </tr>
         
         <tr >
-            <td>38</td>
-            <td ><code>price</code></td>
+            <td>39</td>
+            <td ><code>rate</code></td>
             <td >
                 Currency</td>
             <td >
-                Price
+                Rate
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>40</td>
             <td ><code>discount_percentage</code></td>
             <td >
                 Float</td>
@@ -653,7 +674,7 @@ Discount Percentage</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>41</td>
             <td ><code>for_price_list</code></td>
             <td >
                 Link</td>
@@ -674,7 +695,7 @@ Discount Percentage</pre>
         </tr>
         
         <tr class="info">
-            <td>41</td>
+            <td>42</td>
             <td ><code>help_section</code></td>
             <td >
                 Section Break</td>
@@ -688,7 +709,7 @@ Discount Percentage</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>43</td>
             <td ><code>pricing_rule_help</code></td>
             <td >
                 HTML</td>
@@ -824,9 +845,9 @@ Discount Percentage</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="validate_price_or_discount" href="#validate_price_or_discount" class="text-muted small">
+        <a name="validate_rate_or_discount" href="#validate_rate_or_discount" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_price_or_discount</b>
+		<b>validate_rate_or_discount</b>
         <i class="text-muted">(self)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
