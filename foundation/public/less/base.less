@@ -1,104 +1,110 @@
-@import "variables.less";
-
 /*utilities*/
 .align-items-center {
-  align-items: center;
+	align-items: center;
 }
 
 .hide,
 .hidden {
-  display: none;
-  visibility: hidden;
+	display: none;
+	visibility: hidden;
 }
 
 .top-zero {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 .bottom-zero {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .top-spacer {
-  margin-top: 2.5rem;
+	margin-top: 2.5rem;
 }
 
 .bottom-spacer {
-  margin-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.top-spacer-4 {
+	margin-top: 4rem;
 }
 
 .bottom-spacer-4 {
-  margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
 .gray-bg {
-  background-color: @light-bg;
+	background-color: @light-bg;
 }
 
 .dark-bg {
-  background-color: @text-dark;
+	background-color: @text-dark;
 }
 
 .left-aligned {
-  text-align: left;
+	text-align: left;
 }
 
 .right-aligned {
-  text-align: right;
+	text-align: right;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .text-muted {
-  color: @text-muted;
+	color: @text-muted;
 }
 
 .text-light {
-  color: @text-light;
+	color: @text-light;
 }
 
 .text-white {
-  color: #fff;
+	color: #fff;
 }
 
 .text-medium {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .text-small {
-  font-size: 0.5rem;
+	font-size: 0.5rem;
 }
 
 .centered {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .bold {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .list-unstyled {
-  padding: 0;
+	padding: 0;
 
-  li {
-    list-style: none;
-  }
+	li {
+		list-style: none;
+	}
 }
 
 .list-circle {
-  list-style: circle;
+	list-style: circle;
 }
 
 .border {
-  border: 1px solid @border-color;
+	border: @border;
+}
+
+.border-top {
+	border-top: @border;
 }
 
 .saturate {
-  filter: grayscale(100%);
+	filter: grayscale(100%);
 
-  &:hover {
-    filter: grayscale(0%);
-  }
+	&:hover {
+		filter: grayscale(0%);
+	}
 }
