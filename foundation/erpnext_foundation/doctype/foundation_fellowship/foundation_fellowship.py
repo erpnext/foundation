@@ -10,7 +10,7 @@ class FoundationFellowship(WebsiteGenerator):
     website = frappe._dict(
         condition_field = "show_in_website"
     )
-    print( "website", website )
+
     def validate(self):
         if not self.route:
             self.route = 'foundation-fellow/' + self.scrub(self.name)
