@@ -9,6 +9,6 @@ You can also create a Operation by:
 
 > Manufacturing > Documents > Operation > New
 
-<img class="screenshot" alt="Operation" src="/docs/assets/img/manufacturing/operation.png">
+<img class="screenshot" alt="Operation" src="{{docs_base_url}}/assets/img/manufacturing/operation.png">
 
 {next}
