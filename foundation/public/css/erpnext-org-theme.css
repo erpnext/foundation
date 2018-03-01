@@ -1024,7 +1024,7 @@ img.blog-cover-image,
   padding-bottom: 1.5rem;
 }
 .feature-img {
-  width: 300px;
+  max-width: 250px;
 }
 .community-bg {
   background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), #7574fe), url("/assets/foundation/img/community-2016.jpg");
