@@ -38,16 +38,16 @@ def get_context(context):
 		context.silver_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route',
 			filters, debug=1)
 
-	# round to 3 columns
-	for i in xrange(3 - (len(context.silver_members) % 3)):
+	if context.silver_members:
+		context.has_silver_member = 1
+	else:
 		context.silver_members.append(dict(
 			title='Your Company',
-			introduction='Become a Silver Member today and get your company featured here',
+			introduction='Become a silver Member today and get your company featured here',
 			image='/assets/foundation/img/silver.png',
 			route='/members',
 			placeholder=True
 		))
-
 
 	context.individual_members = []
 	individual_members = [d.name for d in frappe.get_all('Member',

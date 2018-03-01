@@ -1,0 +1,110 @@
+/*utilities*/
+.align-items-center {
+	align-items: center;
+}
+
+.hide,
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.top-zero {
+	margin-top: 0;
+}
+
+.bottom-zero {
+	margin-bottom: 0;
+}
+
+.top-spacer {
+	margin-top: 2.5rem;
+}
+
+.bottom-spacer {
+	margin-bottom: 2.5rem;
+}
+
+.top-spacer-4 {
+	margin-top: 4rem;
+}
+
+.bottom-spacer-4 {
+	margin-bottom: 4rem;
+}
+
+.gray-bg {
+	background-color: @light-bg;
+}
+
+.dark-bg {
+	background-color: @text-dark;
+}
+
+.left-aligned {
+	text-align: left;
+}
+
+.right-aligned {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-muted {
+	color: @text-muted;
+}
+
+.text-light {
+	color: @text-light;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-medium {
+	font-size: 1.5rem;
+}
+
+.text-small {
+	font-size: 0.5rem;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.list-unstyled {
+	padding: 0;
+
+	li {
+		list-style: none;
+	}
+}
+
+.list-circle {
+	list-style: circle;
+}
+
+.border {
+	border: @border;
+}
+
+.border-top {
+	border-top: @border;
+}
+
+.saturate {
+	filter: grayscale(100%);
+
+	&:hover {
+		filter: grayscale(0%);
+	}
+}

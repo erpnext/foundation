@@ -1,11 +1,16 @@
-<div style='margin-bottom: 30px; max-width: 600px;'
-    class='with-border clickable'>
-    <a href="/{{ doc.route }}">
-        <h3 style='margin-top: 0px;'>{{ doc.title }}</h3>
-        <p>
+<div class="media max-width-medium clickable" style="cursor: pointer;" onclick="location.href='{{ doc.route }}'">
+	<div class="media-left">
+			<a href="{{ link or "#" }}">
+				<img class="media-object"
+					src="{% if image %}{% if not '/' in image %}/assets/foundation/img/{% endif %}{{ image }}{% else %}/assets/foundation/img/frappe-bird-grey.svg{% endif %}"
+					style="{% if image and not '/' in image %}opacity: 0.4{% endif %}">
+			</a>
+		</div>
+		<div class="media-body">
+			{% if title %}<h4 class="media-heading">{{ doc.title }}</h4>{% endif %}
+			 <p>
             <span class='label'>{{ frappe.format_date(doc.creation) }}</span>
             <span class='label'>{{ doc.country }}</span>
-
-        </p>
-    </a>
+			</p>
+        </div>
 </div>

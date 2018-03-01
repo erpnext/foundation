@@ -7,9 +7,10 @@ import frappe
 from frappe.website.website_generator import WebsiteGenerator
 
 class FoundationFellowship(WebsiteGenerator):
-    _website = frappe._dict(
-        condition_field = "show_in_website",
+    website = frappe._dict(
+        condition_field = "show_in_website"
     )
+
     def validate(self):
         if not self.route:
             self.route = 'foundation-fellow/' + self.scrub(self.name)
