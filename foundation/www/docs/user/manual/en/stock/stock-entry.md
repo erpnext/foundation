@@ -39,8 +39,6 @@ The added additional costs will be distributed among the receiving items (where 
 If perpetual inventory system is enabled, additional costs will be booked in "Expense Included In Valuation" account.
 
 <img class="screenshot" alt="Additional Costs General Ledger" src="/docs/assets/img/stock/additional-costs-general-ledger.png">
-
-
 > **Note:** To update Stock from a spreadsheet, see [Stock Reconciliation]({{doc_base_url}}/user/manual/en/setting-up/stock-reconciliation-for-non-serialized-item.html).
 
 {next}

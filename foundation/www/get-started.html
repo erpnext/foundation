@@ -1,37 +1,65 @@
 {% extends "foundation/templates/base.html" %}
 {% block title %} Get Started - ERPNext Foundation{% endblock %}
 {% block content %}
-<section class="feature">
+<section class="feature text-center">
+	<div class="container">
+		<p class="text-center"><a class=""> 
+			<img class="grid-images" src="/assets/foundation/img/bench-logo.png">
+		</a></p>
+		<h1 class="header-1 text-center">Install ERPNext with Bench</h1>
+		<p class="text-medium text-light text-center">Bench is our in-house tool to install and manage ERPNext.</p>
+		<a class="primary-link text-medium" target="_blank"  href="https://github.com/frappe/bench#manual-install">Read the instructions on our wiki</a>
+	</div>
+</section>
+<section class="feature text-center">
+	<div class="container">
+		<p class="text-center"><a class=""> 
+			<img class="feature-img bottom-spacer" src="/assets/foundation/img/cloud.png">
+		</a></p>
+		<h1 class="header-1">Get ERPNext on cloud</h1>
+		<p class="text-medium intro-copy text-light">Start right away with a free trial account </br>and get priority support.</p>
+		<a class="button button-primary text-center" href="https://erpnext.com/pricing?source=org">Free 30 Day Trial</a></p>
+	</div>
+</section>
+<section class="feature gray-bg">
     <div class="container">
-        <h1 class="header1 text-center">Virtual Machine Images</h1>
+        <h1 class="header-1 text-center">Virtual Machine Images</h1>
         <p class='text-medium text-light text-center bottom-spacer-4'>Download a pre-installed Virtual Box Images</p>
         <ul class="list-unstyled grid-of-three">
-            <li class="list-items border grid-items">
+            <li class="list-items grid-items">
                 <a class="primary-links grid-boxes saturate" href="http://build.erpnext.com/ERPNext-Production.ova">
                     <img class="grid-images" src="/assets/foundation/img/vm-production.png" alt="Download ERPNext Production Image">
                 </a>
-                <h2 class="header3">Download Production Image</h2>
+                <h2 class="header-3">Download Production Image</h2>
                 <p class="text-muted">Stable build for Production use<br>(approx 1.5GB) | <a href="http://build.erpnext.com/ERPNext-Production.ova.md5">MD5</a></p>
             </li>
-            <li class="list-items border grid-items">
+            <li class="list-items grid-items">
                 <a class="primary-links grid-boxes saturate" href="http://build.erpnext.com/ERPNext-Dev.ova">
                     <img class="grid-images" src="/assets/foundation/img/vm-development.png" alt="Download ERPNext Development Image">
                 </a>
-                <h2 class="header3">Download Development Image</h2>
+                <h2 class="header-3">Download Development Image</h2>
                 <p class="text-muted">Bleeding edge build for development only<br>(approx 1.5GB) | <a href="http://build.erpnext.com/ERPNext-Dev.ova.md5">MD5</a>
                 </p>
             </li>
-            <li class="list-items border grid-items">
+            <li class="list-items grid-items">
                 <a class="primary-links grid-boxes saturate" href="http://build.erpnext.com/ERPNext-Vagrant.box">
                     <img class="grid-images" src="/assets/foundation/img/vm-dev-vagrant.png" alt="Download ERPNext Vagrant Box">
                 </a>
-                <h2 class="header3">Download Vagrant Box</h2>
+                <h2 class="header-3">Download Vagrant Box</h2>
                 <p class="text-muted">Bleeding edge Vagrant box for development only<br>(approx 1.5GB) | <a href="http://build.erpnext.com/ERPNext-Vagrant.box.md5">MD5</a>
                 </p>
             </li>
         </ul>
-        <p class="text-center top-spacer-4"><a class="secondary-link" href="https://github.com/frappe/frappe/wiki/The-Hitchhiker%27s-Guide-to-Installing-Frapp%C3%A9-on-Linux-OS">Read more in the wiki for manually installing ERPNext on your
-            machine</a></p>
     </div>
+</section>
+<section class="feature text-center">
+	<div class="container">
+		<p class="text-center"><a class=""> 
+			<img class="feature-img bottom-spacer" src="/assets/foundation/img/service-providers.png">
+		</a></p>
+		<h1 class="header-1">Contact Service Providers</h1>
+		<p class="text-medium intro-copy text-light">For additional customisations, implementation and training requirements.</p>
+		<a class="primary-link text-medium text-center" href="/service-providers">See the list of all Service Providers</a>
+	</div>
 </section>
 {% endblock %}

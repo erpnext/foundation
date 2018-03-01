@@ -16,21 +16,20 @@ a {
 	&:focus,
 	&:visited {
 		outline: 0;
-		background-color: transparent;
 	}
 }
 
-.header1 {
+.header-1 {
 	font-size: 2.5rem;
 	line-height: 1.025;
 }
 
-.header2 {
+.header-2 {
 	font-size: 1.5rem;
 	line-height: 1.025;
 }
 
-.header3 {
+.header-3 {
 	font-size: 1rem;
 	line-height: 1.025;
 }
@@ -469,6 +468,12 @@ th {
 	text-align: left;
 }
 
+.input-group {
+	position: relative;
+	display: table;
+	border-collapse: separate;
+}
+
 .btn-group,
 .btn-group-vertical {
 	position: relative;
@@ -758,6 +763,57 @@ img.blog-cover-image,
 	margin-top: 4rem;
 }
 
+.input-group-btn {
+	display: table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+	height: 2rem;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+
+	li {
+		padding: 0.5rem;
+		margin: 0;
+		transition: background-color @transition;
+		cursor: pointer;
+
+		&:hover {
+			background-color: @btn-bg;
+		}
+	}
+}
+
+.display-block {
+	display: block;
+}
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 0.25rem solid;
+	border-right: 0.25rem solid transparent;
+	border-left: 0.25rem solid transparent;
+}
+
+.bounty-amount .form-control {
+	margin-right: 1.5rem;
+}
+
+.input-group-btn .dropdown-toggle {
+	margin-left: 1.5rem;
+}
+
 /*blog*/
 
 /*TODO Needs refactor in frappe to use utilities.less*/
@@ -872,6 +928,11 @@ img.blog-cover-image,
 	margin-bottom: 1.5rem;
 	border-radius: 0.25em;
 	padding: 1.5rem;
+	flex-direction: column;
+
+	@media screen and (min-width: @screen-palm) {
+		flex-direction: row;
+	}
 }
 
 .media-left {
@@ -952,6 +1013,10 @@ img.blog-cover-image,
 	padding-bottom: 1.5rem;
 }
 
+.feature-img {
+	width: 300px;
+}
+
 .community-bg {
 	background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), rgb(117, 116, 254)), url("/assets/foundation/img/community-2016.jpg");
 	background-size: cover;
@@ -963,4 +1028,24 @@ img.blog-cover-image,
 .community-bg .intro-copy,
 .about .intro-copy {
 	max-width: 800px;
+}
+
+/* added to make iframe responsive */
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 800px;
+	width: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
