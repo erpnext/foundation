@@ -936,12 +936,20 @@ img.blog-cover-image,
 }
 
 .media-left {
-	width: 10%;
-	margin-right: 2.5rem;
+	margin-bottom: 1.5rem;
+
+	@media screen and (min-width: @screen-palm) {
+		margin-right: 2.5rem;
+		margin-bottom: 0;
+	}
 }
 
 .media-heading {
 	margin-top: 0;
+}
+
+.media-object {
+	width: 6.5rem;
 }
 
 .with-border {
