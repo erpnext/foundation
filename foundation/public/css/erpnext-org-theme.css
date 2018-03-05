@@ -314,13 +314,17 @@ a:visited {
 }
 .feature,
 .footer {
-  padding: 4rem 1rem;
+  padding: 2.5rem 1rem;
   border-top: 1px solid #EBEFF2;
 }
 @media screen and (min-width: 767px) {
-  .feature,
+  .feature {
+    padding: 10.5rem 1.5rem;
+  }
+}
+@media screen and (min-width: 767px) {
   .footer {
-    padding: 8rem 2.5rem;
+    padding: 4rem 1.5rem;
   }
 }
 .feature .bullet {
@@ -445,7 +449,7 @@ a:visited {
 .page_content li,
 .sidebar-item,
 .footer-list li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .page-container {
   display: flex;
@@ -988,6 +992,7 @@ img.blog-cover-image,
 }
 .media-object {
   width: 6.5rem;
+  max-width: inherit;
 }
 .with-border {
   border-radius: 0.25em;

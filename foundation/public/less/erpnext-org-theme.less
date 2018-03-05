@@ -105,11 +105,19 @@ a {
 
 .feature,
 .footer {
-	padding: 4rem 1rem;
+	padding: 2.5rem 1rem;
 	border-top: 1px solid @light-border-color;
+}
 
+.feature {
 	@media screen and (min-width: @screen-xs) {
-		padding: 8rem 2.5rem;
+		padding: 10.5rem 1.5rem;
+	}
+}
+
+.footer {
+	@media screen and (min-width: @screen-xs) {
+		padding: 4rem 1.5rem;
 	}
 }
 
@@ -253,7 +261,7 @@ a {
 .page_content li,
 .sidebar-item,
 .footer-list li {
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .page-container {
@@ -895,6 +903,7 @@ img.blog-cover-image,
 
 .media-object {
 	width: 6.5rem;
+	max-width:inherit;
 }
 
 .with-border {
