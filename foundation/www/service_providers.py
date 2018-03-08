@@ -56,12 +56,15 @@ def get_context(context):
 		filters['member'] = ('in', individual_members)
 		context.individual_members = frappe.get_all('Service Provider',
 			'title, introduction, `image`, route', filters)
+
+	if context.individual_members:
+		context.has_individual_member = 1
 	else:
-		context.individual_members = [dict(
+		context.individual_members.append(dict(
 			title='Your Company',
 			introduction='Become an invidual member to list here',
 			route='/members'
-		)]
+		))
 
 	if context.form_dict.country:
 		context.title = 'ERPNext Service Providers in {0}'.format(context.form_dict.country)

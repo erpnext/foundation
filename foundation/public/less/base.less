@@ -41,7 +41,8 @@
 	background-color: @text-dark;
 }
 
-.left-aligned {
+.left-aligned,
+.text-left {
 	text-align: left;
 }
 
@@ -65,6 +66,10 @@
 	color: #fff;
 }
 
+.text-normal {
+	font-size: 1rem;
+}
+
 .text-medium {
 	font-size: 1.5rem;
 }
@@ -74,7 +79,8 @@
 }
 
 .centered {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .bold {
@@ -93,6 +99,19 @@
 	list-style: circle;
 }
 
+.bullet {
+	&::before {
+		content: "\2022";
+		display: inline-block;
+		width: 1em;
+		font-size: 1.25rem;
+	}
+}
+
+.half-width {
+	max-width: 50%;
+}
+
 .border {
 	border: @border;
 }
@@ -106,5 +125,67 @@
 
 	&:hover {
 		filter: grayscale(0%);
+	}
+}
+
+/* colors */
+
+.green-bullet {
+	&::before {
+		color: @indicator-green;
+	}
+}
+
+/* components */
+
+.grid-of-four,
+.grid-of-three {
+	grid-gap: 2.5rem;
+	display: grid;
+}
+
+.grid-of-four {
+	grid-template-columns: repeat(1, 1fr);
+
+	@media screen and (min-width: @screen-palm) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (min-width: @screen-xs) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media screen and (min-width: @screen-sm) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.grid-of-three {
+	grid-template-columns: repeat(1, 1fr);
+
+	@media screen and (min-width: @screen-palm) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (min-width: @screen-xs) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.columns {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	@media screen and (min-width: @screen-xs) {
+		flex-direction: row;
+	}
+}
+
+.column {
+	margin-bottom: 1rem;
+
+	@media screen and (min-width: @screen-xs) {
+		margin: 0;
 	}
 }
