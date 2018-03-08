@@ -57,8 +57,8 @@ def get_context(context):
 		context.individual_members = frappe.get_all('Service Provider',
 			'title, introduction, `image`, route', filters)
 
-        if context.individual_members:
-                context.has_individual_member = 1
+	if context.individual_members:
+		context.has_individual_member = 1
 	else:
 		context.individual_members.append(dict(
 			title='Your Company',
