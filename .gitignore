@@ -4,5 +4,5 @@
 *.swp
 tags
 foundation/docs/current
-__pycache__
+__pycache__/
 *.pyc
