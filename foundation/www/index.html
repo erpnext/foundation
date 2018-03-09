@@ -2,106 +2,106 @@
 {% block title %}ERPNext Foundation{% endblock %}
 {% block content %}
 <section class='feature hero text-center'>
-    <div class="container">
-        <img class="hero-illustration bottom-spacer" src='/assets/foundation/img/hero-illustration-erpnext.png' alt="ERP software for Everybody">
-        <h1 class="header-1">ERP for Everybody</h1>
-        <p class='intro-copy text-medium text-light'>World's leading fully open source ERP software that helps you stay in control of your business</p>
-        <a class="button button-primary" href="/get-started.html">Get Started</a>
-    </div>
+	<div class="container">
+		<img class="hero-illustration bottom-spacer" src='/assets/foundation/img/hero-illustration-erpnext.png' alt="ERP software for everybody">
+		<h1 class="header-1">ERP for Everybody</h1>
+		<p class='intro-copy text-medium text-light'>World's leading fully open source ERP software that helps you stay in control of your business</p>
+		<a class="button button-primary" href="/get-started.html">Get Started</a>
+	</div>
 </section>
 <section class="feature gray-bg text-left">
-    <div class="container">
-        <h2 class="header-1 bottom-spacer text-center">Industries</h1>
-          <ul class="list-unstyled grid-of-four">
-            <li class="list-items grid-items">
+	<div class="container">
+		<h1 class="header-1 bottom-spacer text-center">Industries</h1>
+			<ul class="list-unstyled grid-of-four">
+			<li class="list-items grid-items">
 				<a class="primary-links grid-boxes" href="/docs/user/manual/en/manufacturing">
-					<img class="grid-images" src="/assets/foundation/img/manufacturing-domain.png" alt="ERP software for manufacturing"><span>Manufacturing</span>
-                </a>
-            </li>
-            <li class="list-items">
+					<img class="grid-images" src="/assets/foundation/img/manufacturing.png" alt="ERP software for manufacturing"><span>Manufacturing</span>
+				</a>
+			</li>
+			<li class="list-items">
 				<a class="primary-links grid-boxes" href="/docs/user/manual/en/projects">
 					<img class="grid-images" src="/assets/foundation/img/services.png" alt="ERP software for Services"><span>Services</span>
 				</a>
-            </li>
-            <li class="list-items">
+			</li>
+			<li class="list-items">
 				<a class="primary-links grid-boxes" href="/docs/user/manual/en/accounts/point-of-sale-pos-invoice">
 					<img class="grid-images" src="/assets/foundation/img/retail.png" alt="ERP software for retail"><span>Retail</span></a>
-            </li>
-            <li class="list-items">
+			</li>
+			<li class="list-items">
 				<a class="primary-links grid-boxes"  href="/docs/user/manual/en/stock">
 					<img class="grid-images" src="/assets/foundation/img/distribution.png" alt="ERP software for Distribution"><span>Distribution</span></a>
-            </li>
-            <li class="list-items">
+			</li>
+			<li class="list-items">
 				<a class="primary-links grid-boxes" href="/docs/user/manual/en/education">
 					<img class="grid-images" src="/assets/foundation/img/education.png" alt="ERP software for Education"><span>Education</span></a>
-            </li>
-            <li class="list-items">
+			</li>
+			<li class="list-items">
 				<a class="primary-links grid-boxes" href="/docs/user/manual/en/agriculture">
 					<img class="grid-images" src="/assets/foundation/img/agriculture.png" alt="ERP software for Agriculture"><span>Agriculture</span></a>
-            </li>
-            <li class="list-items">
+			</li>
+			<li class="list-items">
 				<a class="primary-links grid-boxes" href="/docs/user/manual/en/healthcare">
 					<img class="grid-images" src="/assets/foundation/img/healthcare.png" alt="ERP software for Healthcare"><span>Healthcare</span></a>
-            </li>
-            <li class="list-items">
+			</li>
+			<li class="list-items">
 				<a class="primary-links grid-boxes" href="/docs/user/manual/en/non_profit">
-                <img class="grid-images" src="/assets/foundation/img/non-profit.png" alt="ERP software for Non-Profits"><span>Non Profit</span></a>
-            </li>
-        </ul>
+				<img class="grid-images" src="/assets/foundation/img/non-profit.png" alt="ERP software for Non-Profits"><span>Non Profit</span></a>
+			</li>
+		</ul>
 	</div>
 </section>
 <section class="feature community-bg text-white">
-    <div class="container">
-        <div class="text-center">
-            <h1 class="header-1">ERPNext Foundation</h1>
-            <p class="intro-copy text-medium">ERPNext Foundation is a community of ERPNext users, developers and service providers. The goal of the ERPNext Foundation is to provide a platform for the ERPNext Community to come together, join hands and build assets to help build and enhance ERPNext around the world.</p>
-            <a href="/members/details" class="button button-secondary">Become a Member</a>
-        </div>
-    </div>
+	<div class="container">
+		<div class="text-center">
+			<h1 class="header-1">ERPNext Foundation</h1>
+			<p class="intro-copy text-medium">ERPNext Foundation is a community of ERPNext users, developers and service providers. The goal of the ERPNext Foundation is to provide a platform for the ERPNext Community to come together, join hands and build assets to help build and enhance ERPNext around the world.</p>
+			<a href="/members/details" class="button button-secondary">Become a Member</a>
+		</div>
+	</div>
 </section>
 <section class="feature">
-    <div class="container">
-        <div class="columns text-left">
-            <div class="column">
-                <h1 class="header-2">Events & Meetups</h1>
-                <ul class="bulleted-list list-circle">
-                {# get first three events from portal events doctype #}
-                {% for e in events[:3] %}
+	<div class="container">
+		<div class="columns text-left">
+			<div class="column">
+				<h1 class="header-2">Events & Meetups</h1>
+				<ul class="bulleted-list list-circle">
+				{# get first three events from portal events doctype #}
+				{% for e in events[:3] %}
 					<li>
 						<a href="{{ e.route }}" class="secondary-link"><b>{{ e.event_title }}</b><br>{{ frappe.format_date(e.event_date, "medium") }}</a>
 					</li>
 					{% endfor %}
-                </ul>
-            </div>
-            <div class="column">
-                <h1 class="header-2">Help Us Improve</h1>
-                <ul class="bulleted-list list-circle">
-                    <li>
-                        <a href="https://github.com/frappe/erpnext/tree/develop/erpnext/docs" class="secondary-link">Write Documentation</a>
-                    </li>
-                    <li>
-                        <a href="https://charts.erpnext.com/" class="secondary-link">Help build Chart of Accounts</a>
-                    </li>
-                    <li>
-                        <a href="https://translate.erpnext.com/" class="secondary-link">Help Us Translate</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="column">
-                <h1 class="header-2">Need Help?</h1>
-                <ul class="bulleted-list list-circle">
-                    <li>
-                        <a href="/docs/user/manual" class="secondary-link">User Manual</a>
-                    </li>
-                    <li>
-                        <a href="https://discuss.erpnext.com/" class="secondary-link">Ask in our forum</a>
-                    </li>
-<!--                    <li>
-                        <a href="" class="secondary-link">Get Paid Support</a>
-                    </li>-->
-                </ul>
-            </div>
-        </div>
-    </div>
+				</ul>
+			</div>
+			<div class="column">
+				<h1 class="header-2">Help Us Improve</h1>
+				<ul class="bulleted-list list-circle">
+					<li>
+						<a href="https://github.com/frappe/erpnext/tree/develop/erpnext/docs" class="secondary-link">Write Documentation</a>
+					</li>
+					<li>
+						<a href="https://charts.erpnext.com/" class="secondary-link">Help build Chart of Accounts</a>
+					</li>
+					<li>
+						<a href="https://translate.erpnext.com/" class="secondary-link">Help Us Translate</a>
+					</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h1 class="header-2">Need Help?</h1>
+				<ul class="bulleted-list list-circle">
+					<li>
+						<a href="/docs/user/manual" class="secondary-link">User Manual</a>
+					</li>
+					<li>
+						<a href="https://discuss.erpnext.com/" class="secondary-link">Ask in our forum</a>
+					</li>
+					<!--<li>
+						<a href="" class="secondary-link">Get Paid Support</a>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+	</div>
 </section>
 {% endblock %}
