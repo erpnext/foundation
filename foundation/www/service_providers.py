@@ -11,6 +11,7 @@ def get_context(context):
 			route='service-providers', title='All Service Providers')]
 
 	filters = dict()
+	filters['show_in_website'] = 1
 	if frappe.form_dict.country:
 		filters['country'] = frappe.form_dict.country
 

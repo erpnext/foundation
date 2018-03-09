@@ -349,6 +349,12 @@ a:visited {
   background-color: #fff;
   min-width: 200px;
   transition: all 0.3s ease-out;
+  margin: 0 1rem;
+}
+@media screen and (min-width: 500px) {
+  .list-items {
+    margin: 0;
+  }
 }
 .list-items:hover {
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.05);
