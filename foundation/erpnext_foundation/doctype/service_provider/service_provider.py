@@ -8,7 +8,7 @@ from frappe.website.website_generator import WebsiteGenerator
 from frappe.utils import get_datetime
 
 class ServiceProvider(WebsiteGenerator):
-	_website = frappe._dict(
+	website = frappe._dict(
 		condition_field = "show_in_website",
 	)
 	def validate(self):
@@ -31,8 +31,6 @@ class ServiceProvider(WebsiteGenerator):
 			else:
 				context.image = "/assets/foundation/img/default-membership-logo.png"
 
-
-
 def send_alert_to_inactive_service_providers():
 	for service_provider in frappe.get_all("Service Provider", fields=['email', 'title']):
 		if get_last_login_diff(service_provider.email) == 80:
@@ -54,7 +52,6 @@ def publish_service_provider():
 	for service_provider in frappe.get_all("Service Provider", fields=['email','name', 'title', 'show_in_website']):
 		if get_last_login_diff(service_provider.email) == 0 and service_provider.show_in_website == 0:
 			frappe.db.set_value('Service Provider', service_provider.name, 'show_in_website', 1, update_modified=False)
-
 
 def get_last_login_diff(user):
 	"""

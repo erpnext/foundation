@@ -145,6 +145,11 @@ a {
 	background-color: #fff;
 	min-width: 200px;
 	transition: all @transition;
+	margin: 0 1rem;
+
+	@media screen and (min-width: @screen-palm) {
+		margin: 0;
+	}
 
 	&:hover {
 		box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.05);
