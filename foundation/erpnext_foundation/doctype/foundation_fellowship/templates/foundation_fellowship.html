@@ -42,9 +42,12 @@
                     <td>Github Id</td>
                     <td>{{ github_id }}</td>
                 </tr>
+                {% if website_url %}
                 </tr>
                     <td>Website</td>
+                    <td><a href="{{ website_url }}">{{ website_url }}</a></td>
                 </tr>
+                {% endif %}
             </table>
 
         </div>
