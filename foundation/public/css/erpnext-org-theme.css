@@ -142,6 +142,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin: 0 -2.5rem;
 }
 @media screen and (min-width: 767px) {
   .columns {
@@ -150,10 +151,19 @@
 }
 .column {
   margin-bottom: 1rem;
+  padding: 0 2.5rem;
 }
 @media screen and (min-width: 767px) {
   .column {
     margin: 0;
+  }
+}
+.three-column {
+  max-width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .three-column {
+    max-width: 33%;
   }
 }
 .indicator,
@@ -321,6 +331,10 @@ a:visited {
   .feature {
     padding: 10.5rem 1.5rem;
   }
+}
+.stars {
+  width: 125px;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 767px) {
   .footer {

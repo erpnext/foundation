@@ -176,6 +176,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	margin: 0 -2.5rem;
 
 	@media screen and (min-width: @screen-xs) {
 		flex-direction: row;
@@ -184,8 +185,17 @@
 
 .column {
 	margin-bottom: 1rem;
+	padding: 0 2.5rem;
 
 	@media screen and (min-width: @screen-xs) {
 		margin: 0;
+	}
+}
+
+.three-column {
+	max-width: 100%;
+
+	@media screen and (min-width: @screen-xs) {
+		max-width: 33%;
 	}
 }

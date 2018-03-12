@@ -61,47 +61,33 @@
 </section>
 <section class="feature">
 	<div class="container">
-		<div class="columns text-left">
-			<div class="column">
-				<h1 class="header-2">Events & Meetups</h1>
-				<ul class="bulleted-list list-circle">
-				{# get first three events from portal events doctype #}
-				{% for e in events[:3] %}
-					<li>
-						<a href="{{ e.route }}" class="secondary-link"><b>{{ e.event_title }}</b><br>{{ frappe.format_date(e.event_date, "medium") }}</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
-			<div class="column">
-				<h1 class="header-2">Help Us Improve</h1>
-				<ul class="bulleted-list list-circle">
-					<li>
-						<a href="https://github.com/frappe/erpnext/tree/develop/erpnext/docs" class="secondary-link">Write Documentation</a>
-					</li>
-					<li>
-						<a href="https://charts.erpnext.com/" class="secondary-link">Help build Chart of Accounts</a>
-					</li>
-					<li>
-						<a href="https://translate.erpnext.com/" class="secondary-link">Help Us Translate</a>
-					</li>
-				</ul>
-			</div>
-			<div class="column">
-				<h1 class="header-2">Need Help?</h1>
-				<ul class="bulleted-list list-circle">
-					<li>
-						<a href="/docs/user/manual" class="secondary-link">User Manual</a>
-					</li>
-					<li>
-						<a href="https://discuss.erpnext.com/" class="secondary-link">Ask in our forum</a>
-					</li>
-					<!--<li>
-						<a href="" class="secondary-link">Get Paid Support</a>
-					</li>-->
-				</ul>
-			</div>
+	<h1 class="header-1 text-center bottom-spacer">Reviews</h1>
+	<div class="columns">
+		<div class="column text-center">
+			<a class="secondary-link" href="https://www.capterra.com/p/164441/ERPNext/">
+				<img alt="captera-erpnext review" src="/assets/foundation/img/captera.png" class="review-img">
+				<img alt-"above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
+			</a>
 		</div>
+		<div class="column text-center">
+		<a class="secondary-link" href="https://www.softwareadvice.com/erp/erpnext-profile/">
+			<img alt="software advice erpnext review" src="/assets/foundation/img/software-advice.png" class="review-img">
+			<img alt="above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
+		</a>
+		</div>
+		<div class="column text-center">
+		<a class="secondary-link" href="https://www.g2crowd.com/products/erpnext/reviews">
+			<img alt="g2-crowd review" src="/assets/foundation/img/g2-crowd.png" class="review-img">
+			<img alt="above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
+		</a>
+		</div>
+		<div class="column text-center">
+		<a class="secondary-link" href="https://www.getapp.com/operations-management-software/a/iwebnotes/">
+			<img alt="get app review" src="/assets/foundation/img/getapp.png" class="review-img">
+			<img alt="above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
+		</a>
+		</div>
+	</div>
 	</div>
 </section>
 {% endblock %}
