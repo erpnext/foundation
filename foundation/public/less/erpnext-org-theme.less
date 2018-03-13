@@ -19,6 +19,10 @@ a {
 	}
 }
 
+[ data-path = "" ] .get-started {
+	display: none;
+}
+
 .header-1,
 .header-2,
 .header-3 {
@@ -277,8 +281,20 @@ a {
 	}
 }
 
+.footer-title {
+	margin-bottom: 0.5rem;
+}
+
 .footer-list {
 	padding-left: 0;
+}
+
+.footer-email-input {
+	border: 1px solid @text-muted;
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+	color: @text-muted;
+	margin-right: 0.5rem;
 }
 
 .page_content li,
@@ -370,29 +386,31 @@ hr {
 	border-top: 1px solid @light-border-color;
 }
 
-.footer-end {
-	border-top: 1px solid @dark-border-color;
-	padding-top: 1rem;
-	margin-top: 1rem;
-	font-size: 0.75rem;
-
-	@media screen and (min-width: @screen-xs) {
-		padding-top: 2.5rem;
-		margin-top: 1.5rem;
-	}
-}
-
-.footer a {
+.footer-link {
 	color: @text-muted;
+	transition: color @transition;
 
 	&:hover {
 		color: #fff;
 	}
 }
 
+.button-dark {
+	color: #fff;
+	background: @text-muted;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	padding: 0.45rem 1rem;
+}
+
 .footer-icon {
-	width: 1.5rem;
+	width: 6.5rem;
 	margin-right: 0.5em;
+}
+
+.footer-email-title {
+	margin-bottom: 0.5rem;
 }
 
 /* loaned from bootstrap need to cleanup*/

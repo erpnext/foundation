@@ -36,7 +36,8 @@
 .text-left {
   text-align: left;
 }
-.right-aligned {
+.right-aligned,
+.text-right {
   text-align: right;
 }
 .text-center {
@@ -166,6 +167,9 @@
     max-width: 33%;
   }
 }
+.copyright {
+  font-size: 0.75rem;
+}
 .indicator,
 .indicator-right {
   background: none;
@@ -249,6 +253,9 @@ a:hover {
 a:focus,
 a:visited {
   outline: 0;
+}
+[data-path=""] .get-started {
+  display: none;
 }
 .header-1,
 .header-2,
@@ -474,8 +481,18 @@ a:visited {
 .bulleted-list li {
   padding-bottom: 1em;
 }
+.footer-title {
+  margin-bottom: 0.5rem;
+}
 .footer-list {
   padding-left: 0;
+}
+.footer-email-input {
+  border: 1px solid #8D99A6;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  color: #8D99A6;
+  margin-right: 0.5rem;
 }
 .page_content li,
 .sidebar-item,
@@ -555,27 +572,27 @@ hr {
   border: 0;
   border-top: 1px solid #EBEFF2;
 }
-.footer-end {
-  border-top: 1px solid #354047;
-  padding-top: 1rem;
-  margin-top: 1rem;
-  font-size: 0.75rem;
-}
-@media screen and (min-width: 767px) {
-  .footer-end {
-    padding-top: 2.5rem;
-    margin-top: 1.5rem;
-  }
-}
-.footer a {
+.footer-link {
   color: #8D99A6;
+  transition: color 0.3s ease-out;
 }
-.footer a:hover {
+.footer-link:hover {
   color: #fff;
 }
+.button-dark {
+  color: #fff;
+  background: #8D99A6;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  padding: 0.45rem 1rem;
+}
 .footer-icon {
-  width: 1.5rem;
+  width: 6.5rem;
   margin-right: 0.5em;
+}
+.footer-email-title {
+  margin-bottom: 0.5rem;
 }
 /* loaned from bootstrap need to cleanup*/
 /*progress bar*/
