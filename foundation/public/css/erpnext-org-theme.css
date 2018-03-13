@@ -301,8 +301,8 @@ a:visited {
   display: flex;
   margin: 0;
 }
-.menu-items {
-  padding-left: 1.5rem;
+.menu-item {
+  margin-left: 1.5rem;
 }
 .menu-links {
   color: #6c7680;
@@ -334,7 +334,6 @@ a:visited {
 }
 .stars {
   width: 125px;
-  margin-top: 1rem;
 }
 @media screen and (min-width: 767px) {
   .footer {
@@ -433,6 +432,18 @@ a:visited {
   line-height: 3;
 }
 .button-primary:hover {
+  background: #5e5ec9;
+  color: #fff;
+}
+.button-primary-small {
+  color: #fff;
+  background: #7575ff;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  padding: 0.45rem 1rem;
+}
+.button-primary-small:hover {
   background: #5e5ec9;
   color: #fff;
 }

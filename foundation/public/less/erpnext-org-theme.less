@@ -80,8 +80,8 @@ a {
 	margin: 0;
 }
 
-.menu-items {
-	padding-left: 1.5rem;
+.menu-item {
+	margin-left: 1.5rem;
 }
 
 .menu-links {
@@ -117,7 +117,6 @@ a {
 
 .stars {
 	width: 125px;
-	margin-top: 1rem;
 }
 
 .footer {
@@ -224,6 +223,20 @@ a {
 	border-left: 0;
 	border-top: 0;
 	line-height: 3;
+
+	&:hover {
+		background: @button-primary-hover;
+		color: #fff;
+	}
+}
+
+.button-primary-small {
+	color: #fff;
+	background: #7575ff;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	padding: 0.45rem 1rem;
 
 	&:hover {
 		background: @button-primary-hover;
