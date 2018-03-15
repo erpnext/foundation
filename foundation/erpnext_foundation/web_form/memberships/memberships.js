@@ -14,14 +14,23 @@ frappe.ready(function() {
 		$('[data-fieldname="amount"]').val(amount[membership_type]);
 	}
 
-	if(get_url_arg('name')) {
+	var get_date = (add_year = 0) => {
+		const today = new Date();
+		const year = today.getFullYear() + add_year;
+		const month = ((today.getMonth() + 1) + '').padStart(2, '0');
+		const day = today.getDate();
+		return year + '-' + month + '-' + day;
+	}
+
+	if(frappe.utils.get_url_arg('name')) {
 		$('[data-fieldname="membership_type"]').prop('disabled', true);
 		$('[data-fieldname="currency"]').prop('disabled', true);
 		$('.page-content .btn-form-submit').addClass('hidden');
 	} else {
-		var m = moment();
-		$('[data-fieldname="from_date"]').val(m.format()).trigger('change');
-		$('[data-fieldname="to_date"]').val(m.add(1, 'year').format()).trigger('change');
+		const from_date = get_date();
+		const to_date = get_date(1);
+		$('[data-fieldname="from_date"]').val(from_date).trigger('change');
+		$('[data-fieldname="to_date"]').val(to_date).trigger('change');
 		$('[data-fieldname="membership_type"]').on('change', function() { set_amount(); });
 		$('[data-fieldname="currency"]').val("INR");
 		set_amount();
