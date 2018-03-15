@@ -3,8 +3,6 @@ frappe.ready(function() {
 	$(".page-header-actions-block .btn-primary, .page-header-actions-block .btn-default").addClass('hidden');
 	$(".text-right .btn-primary").addClass('hidden');
 
-	var m = moment();
-
 	var set_amount = function() {
 		var membership_type = $('[data-fieldname="membership_type"]').val();
 		var currency = $('[data-fieldname="currency"]').val();
