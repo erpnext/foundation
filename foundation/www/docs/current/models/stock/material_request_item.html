@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/stock/doctype/material_request_item"
@@ -159,7 +159,7 @@
         
         <tr >
             <td>10</td>
-            <td class="danger" title="Mandatory"><code>uom</code></td>
+            <td class="danger" title="Mandatory"><code>stock_uom</code></td>
             <td >
                 Link</td>
             <td >
@@ -201,6 +201,18 @@
         
         <tr >
             <td>12</td>
+            <td class="danger" title="Mandatory"><code>schedule_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Required Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
             <td ><code>col_break2</code></td>
             <td class="info">
                 Column Break</td>
@@ -212,19 +224,52 @@
         </tr>
         
         <tr >
-            <td>13</td>
-            <td class="danger" title="Mandatory"><code>schedule_date</code></td>
+            <td>14</td>
+            <td class="danger" title="Mandatory"><code>uom</code></td>
             <td >
-                Date</td>
+                Link</td>
             <td >
-                Required Date
+                UOM
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/uom">UOM</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td class="danger" title="Mandatory"><code>conversion_factor</code></td>
+            <td >
+                Float</td>
+            <td >
+                UOM Conversion Factor
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>stock_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Stock Qty
                 
             </td>
             <td></td>
         </tr>
         
         <tr class="info">
-            <td>14</td>
+            <td>17</td>
             <td ><code>more_info</code></td>
             <td >
                 Section Break</td>
@@ -236,7 +281,7 @@
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>18</td>
             <td ><code>item_group</code></td>
             <td >
                 Link</td>
@@ -257,7 +302,7 @@
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>19</td>
             <td ><code>brand</code></td>
             <td >
                 Link</td>
@@ -278,7 +323,7 @@
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>20</td>
             <td ><code>lead_time_date</code></td>
             <td >
                 Date</td>
@@ -290,7 +335,7 @@
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>21</td>
             <td ><code>sales_order</code></td>
             <td >
                 Link</td>
@@ -311,7 +356,7 @@
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>22</td>
             <td ><code>project</code></td>
             <td >
                 Link</td>
@@ -332,7 +377,40 @@
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>23</td>
+            <td ><code>production_plan</code></td>
+            <td >
+                Link</td>
+            <td >
+                Production Plan
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/production_plan">Production Plan</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>material_request_plan_item</code></td>
+            <td >
+                Data</td>
+            <td >
+                Material Request Plan Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
             <td ><code>col_break3</code></td>
             <td class="info">
                 Column Break</td>
@@ -344,7 +422,7 @@
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>26</td>
             <td ><code>min_order_qty</code></td>
             <td >
                 Float</td>
@@ -356,7 +434,7 @@
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>27</td>
             <td ><code>projected_qty</code></td>
             <td >
                 Float</td>
@@ -368,7 +446,7 @@
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>28</td>
             <td ><code>actual_qty</code></td>
             <td >
                 Float</td>
@@ -380,7 +458,7 @@
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>29</td>
             <td ><code>ordered_qty</code></td>
             <td >
                 Float</td>
@@ -392,7 +470,7 @@
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>30</td>
             <td ><code>page_break</code></td>
             <td >
                 Check</td>

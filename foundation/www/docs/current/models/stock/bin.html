@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/stock/doctype/bin"
@@ -168,6 +168,18 @@
         
         <tr >
             <td>10</td>
+            <td ><code>reserved_qty_for_sub_contract</code></td>
+            <td >
+                Float</td>
+            <td >
+                Reserved Qty for sub contract
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
             <td ><code>ma_rate</code></td>
             <td >
                 Float</td>
@@ -179,7 +191,7 @@
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>12</td>
             <td ><code>stock_uom</code></td>
             <td >
                 Link</td>
@@ -200,7 +212,7 @@
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>13</td>
             <td ><code>fcfs_rate</code></td>
             <td >
                 Float</td>
@@ -212,7 +224,7 @@
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td ><code>valuation_rate</code></td>
             <td >
                 Float</td>
@@ -224,7 +236,7 @@
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td ><code>stock_value</code></td>
             <td >
                 Float</td>
@@ -275,20 +287,6 @@
     
     
 	<p class="docs-attr-name">
-        <a name="on_update" href="#on_update" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_update</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
         <a name="set_projected_qty" href="#set_projected_qty" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		<b>set_projected_qty</b>
@@ -324,6 +322,20 @@
     </p>
 	<div class="docs-attr-desc"><p>Update qty reserved for production from Production Item tables
             in open production orders</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_reserved_qty_for_sub_contracting" href="#update_reserved_qty_for_sub_contracting" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_reserved_qty_for_sub_contracting</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -386,22 +398,6 @@
         <i class="text-muted">()</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.stock.doctype.bin.bin.update_item_projected_qty" href="#erpnext.stock.doctype.bin.bin.update_item_projected_qty" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.stock.doctype.bin.bin.<b>update_item_projected_qty</b>
-        <i class="text-muted">(item_code)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Set total<em>projected</em>qty in Item as sum of projected qty in all warehouses</p>
 </div>
 	<br>
 

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/buying/doctype/supplier_quotation_item"
@@ -289,6 +289,18 @@
         
         <tr >
             <td>19</td>
+            <td ><code>stock_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Qty as per Stock UOM
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
             <td ><code>base_price_list_rate</code></td>
             <td >
                 Currency</td>
@@ -302,7 +314,7 @@
         </tr>
         
         <tr class="info">
-            <td>20</td>
+            <td>21</td>
             <td ><code>sec_break1</code></td>
             <td >
                 Section Break</td>
@@ -314,7 +326,7 @@
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>22</td>
             <td ><code>rate</code></td>
             <td >
                 Currency</td>
@@ -328,7 +340,7 @@
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>23</td>
             <td ><code>amount</code></td>
             <td >
                 Currency</td>
@@ -342,7 +354,7 @@
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>24</td>
             <td ><code>col_break3</code></td>
             <td class="info">
                 Column Break</td>
@@ -354,7 +366,7 @@
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>25</td>
             <td class="danger" title="Mandatory"><code>base_rate</code></td>
             <td >
                 Currency</td>
@@ -368,7 +380,7 @@
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>26</td>
             <td class="danger" title="Mandatory"><code>base_amount</code></td>
             <td >
                 Currency</td>
@@ -382,7 +394,7 @@
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>27</td>
             <td ><code>pricing_rule</code></td>
             <td >
                 Link</td>
@@ -403,7 +415,7 @@
         </tr>
         
         <tr class="info">
-            <td>27</td>
+            <td>28</td>
             <td ><code>section_break_24</code></td>
             <td >
                 Section Break</td>
@@ -415,7 +427,7 @@
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>29</td>
             <td ><code>net_rate</code></td>
             <td >
                 Currency</td>
@@ -427,7 +439,7 @@
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>30</td>
             <td ><code>net_amount</code></td>
             <td >
                 Currency</td>
@@ -441,7 +453,7 @@
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>31</td>
             <td ><code>column_break_27</code></td>
             <td class="info">
                 Column Break</td>
@@ -453,7 +465,7 @@
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>32</td>
             <td ><code>base_net_rate</code></td>
             <td >
                 Currency</td>
@@ -467,7 +479,7 @@
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>33</td>
             <td ><code>base_net_amount</code></td>
             <td >
                 Currency</td>
@@ -481,7 +493,76 @@
         </tr>
         
         <tr class="info">
-            <td>33</td>
+            <td>34</td>
+            <td ><code>item_weight_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Item Weight Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>35</td>
+            <td ><code>weight_per_unit</code></td>
+            <td >
+                Float</td>
+            <td >
+                Weight Per Unit
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>36</td>
+            <td ><code>total_weight</code></td>
+            <td >
+                Float</td>
+            <td >
+                Total Weight
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>37</td>
+            <td ><code>column_break_23</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>38</td>
+            <td ><code>weight_uom</code></td>
+            <td >
+                Link</td>
+            <td >
+                Weight UOM
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/uom">UOM</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>39</td>
             <td ><code>warehouse_and_reference</code></td>
             <td >
                 Section Break</td>
@@ -493,7 +574,7 @@
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>40</td>
             <td ><code>warehouse</code></td>
             <td >
                 Link</td>
@@ -514,7 +595,7 @@
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>41</td>
             <td ><code>project</code></td>
             <td >
                 Link</td>
@@ -535,7 +616,7 @@
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>42</td>
             <td ><code>prevdoc_doctype</code></td>
             <td >
                 Data</td>
@@ -547,7 +628,7 @@
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>43</td>
             <td ><code>material_request</code></td>
             <td >
                 Link</td>
@@ -568,7 +649,28 @@
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>44</td>
+            <td ><code>sales_order</code></td>
+            <td >
+                Link</td>
+            <td >
+                Sales Order
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/selling/sales_order">Sales Order</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>45</td>
             <td ><code>request_for_quotation</code></td>
             <td >
                 Link</td>
@@ -589,7 +691,7 @@
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>46</td>
             <td ><code>col_break4</code></td>
             <td class="info">
                 Column Break</td>
@@ -601,7 +703,7 @@
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>47</td>
             <td ><code>material_request_item</code></td>
             <td >
                 Data</td>
@@ -613,7 +715,7 @@
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>48</td>
             <td ><code>request_for_quotation_item</code></td>
             <td >
                 Data</td>
@@ -625,7 +727,7 @@
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>49</td>
             <td ><code>brand</code></td>
             <td >
                 Link</td>
@@ -646,7 +748,7 @@
         </tr>
         
         <tr >
-            <td>43</td>
+            <td>50</td>
             <td ><code>item_group</code></td>
             <td >
                 Link</td>
@@ -667,7 +769,7 @@
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>51</td>
             <td ><code>item_tax_rate</code></td>
             <td >
                 Code</td>
@@ -681,7 +783,7 @@ Used for Taxes and Charges</p>
         </tr>
         
         <tr class="info">
-            <td>45</td>
+            <td>52</td>
             <td ><code>section_break_44</code></td>
             <td >
                 Section Break</td>
@@ -693,19 +795,7 @@ Used for Taxes and Charges</p>
         </tr>
         
         <tr >
-            <td>46</td>
-            <td ><code>stock_qty</code></td>
-            <td >
-                Float</td>
-            <td >
-                Qty as per Stock UOM
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>47</td>
+            <td>53</td>
             <td ><code>page_break</code></td>
             <td >
                 Check</td>

@@ -1,33 +1,29 @@
-{% extends "templates/web.html" %}
+{% extends "templates/base.html" %}
 
 {% block title %}About ERPNext Foundation{% endblock %}
 
 {% from "foundation/templates/includes/macros.html" import media %}
 
-{% block page_content %}
-<section>
-	<h1>About ERPNext Foundation</h1>
-	<p class='lead'>Community of ERPNext Users, Developers and Service Providers</p>
-</section>
-<section>
-	<h3>Goals</h3>
-	<p>The goal of the ERPNext Foundation is to provide a platform for the ERPNext Community to come together, join hands and build assets to help build and enhance ERPNext around the world. ERPNext Foundation aims to be a community driven organization and run in a transparent.
-	</p>
-	<p>If you want to be more involved in the ERPNext Community, read the <a href="/faq">FAQ</a></p>
-</section>
-<section>
-	<h3>People</h3>
-	{{ media("Jay Ram, CEO",
-		"Jay is a Mechanical Engineer with an MBA (PGDM) from IIM, Bangalore and has worked in Information Security and Risk areas for large enterprises. He is passionate about helping small and medium businesses overcome thier challenges to grow and thinks ERPNext and his skills and interests are a perfect alignment for what what he wants to do with the rest of his life. In his spare time he plays golf, rides (Bicycling and motorbiking) and travels and would like to combine all his interests on his trips - ERPNext, riding and golf.",
-	"https://discuss.erpnext.com/user_avatar/discuss.erpnext.com/jayram/240/6872_1.png") }}
-	{{ media("Rushabh Mehta, Director", "Rushabh is the CEO of Frappé Technologies Private Limited and one of the original creators of Frappé Framework and ERPNext. He built ERPNext for his family's business and then later published it as an open source project. Rushabh is an Industrial Engineer by training but a software developer by profession. In his free time, he likes to read and spend time relaxing at home.",
-	"https://discuss.erpnext.com/user_avatar/discuss.erpnext.com/rmehta/240/4147_1.png") }}
-	{{ media("Nabin Hait, Director", "Nabin is the Chief Operating Officer of Frappé Technologies Private Limited and the lead developer at ERPNext. Nabin is responsible for managing the ERPNext project and managing the team at Frappé. Nabin is a great cook and likes cooking and watching movies in his free time.",
-	"https://discuss.erpnext.com/user_avatar/discuss.erpnext.com/nabinhait/240/7_1.png") }}
-	{{ media("Prakash Hodage, Administrative Officer", "Prakash is the accountant and administrative officer of Frappé Technologies Private Limited. He is the person responsible for getting the foundation registered. Prakash has extensive experience in managing accounting and administration and is an expert ERPNext user, also handling user support from time to time. In his free time, Prakash loves to read and help people around him.",
-	"https://discuss.erpnext.com/user_avatar/discuss.erpnext.com/prakash/240/2703_1.png") }}
-
-<p><a href="/contact">Want to talk to someone in the foundation? Get in touch</a></p>
-
-</section>
+{% block content%}
+	<div class="page">
+        <section class='top-spacer hero text-center about'>
+            <div class="container">
+                <img class="about-img bottom-spacer" src="/assets/foundation/img/community-colored.jpg">
+                <h1 class="header-1">ERPNext Foundation</h1>
+                <p class="intro-copy text-medium">We are a Non Profit Foundation representing a community of ERPNext Users, Developers and Service Providers. Our goal is to provide a platform for the ERPNext Community to
+                come together, join hands and build assets to help build and enhance ERPNext around the world.</p><p class="intro-copy text-medium"> ERPNext Foundation aims to be a community driven organization and run in a transparent manner. If you want to be more involved in the ERPNext Community, read the <a href="/faq" class="secondary-link" target="_blank">FAQ</a>.
+            </div>
+        </section>
+        <div class="page-content">
+			<section class="container">
+				<hr>
+                <h1>{{ doc.team_members_heading }}</h1>
+				{% for member in doc.team_members  %}
+					{{ media(member.full_name, member.bio, member.image_link) }}
+				{% endfor %}
+			<p><a href="/contact">Want to talk to someone in the foundation? Get in touch</a></p>
+			</section>
+		</div>
+	</div>
 {% endblock %}
+

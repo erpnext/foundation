@@ -17,7 +17,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2017-08-31 16:58:13.787406", 
+ "modified": "2017-10-25 05:36:04.935016", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "jobs", 
@@ -58,7 +58,7 @@
    "label": "Status", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "Open\nCompleted\nExpired\nWithdrawn", 
+   "options": "Open\nCompleted\nDeveloper Hired\nExpired\nWithdrawn", 
    "read_only": 0, 
    "reqd": 0
   }, 

@@ -1,0 +1,24 @@
+<nav class="navbar navbar-default navbar-main" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="left">
+                <a class="navbar-brand" href="{{ url_prefix }}{{ home_page or "/"}}">
+                    <span>{{ brand_html or (frappe.get_hooks("brand_html") or ["Home"])[0] }}</span>
+                </a>
+            </div>
+            <div class="right">
+                <ul class="menu list-unstyled">
+                    <li class="menu-items">
+                        <a href="/service-providers" class="menu-links">Services</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="/blog" class="menu-links">Blog</a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="/about" class="menu-links">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,250 @@
+<!-- title: Restaurant -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Restaurant</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.2</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/restaurant/doctype/restaurant"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabRestaurant</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>image</code></td>
+            <td >
+                Attach Image</td>
+            <td class="text-muted" title="Hidden">
+                Image
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>default_customer</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Customer
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/selling/customer">Customer</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>invoice_series_prefix</code></td>
+            <td >
+                Data</td>
+            <td >
+                Invoice Series Prefix
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>active_menu</code></td>
+            <td >
+                Link</td>
+            <td >
+                Active Menu
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/restaurant/restaurant_menu">Restaurant Menu</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>default_tax_template</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Tax Template
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/sales_taxes_and_charges_template">Sales Taxes and Charges Template</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>address</code></td>
+            <td >
+                Link</td>
+            <td >
+                Address
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/contacts/address">Address</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.restaurant.doctype.restaurant.restaurant</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Restaurant</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/restaurant/restaurant_menu">Restaurant Menu</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/restaurant/restaurant_reservation">Restaurant Reservation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/restaurant/restaurant_table">Restaurant Table</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

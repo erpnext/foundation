@@ -1,9 +1,11 @@
 erpnext.config.setup
 erpnext.config.stock
+erpnext.config.non_profit
+erpnext.config.education
 erpnext.config.desktop
 erpnext.config.maintenance
-erpnext.config.schools
 erpnext.config.healthcare
+erpnext.config.agriculture
 erpnext.config.website
 erpnext.config.projects
 erpnext.config.selling
@@ -12,7 +14,9 @@ erpnext.config.docs
 erpnext.config.hr
 erpnext.config.accounts
 erpnext.config.crm
+erpnext.config.assets
 erpnext.config.manufacturing
 erpnext.config
+erpnext.config.hub_node
 erpnext.config.buying
 erpnext.config.learn

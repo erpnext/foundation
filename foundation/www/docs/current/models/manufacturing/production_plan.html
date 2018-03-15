@@ -1,0 +1,1029 @@
+<!-- title: Production Plan -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Production Plan</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.2</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/manufacturing/doctype/production_plan"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabProduction Plan</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Naming Series
+                
+            </td>
+            <td>
+                <pre>PLN-</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>get_items_from</code></td>
+            <td >
+                Select</td>
+            <td >
+                Get Items From
+                
+            </td>
+            <td>
+                <pre>
+Sales Order
+Material Request</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>column_break1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td class="danger" title="Mandatory"><code>posting_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Posting Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>6</td>
+            <td ><code>filters</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Filters
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>item_code</code></td>
+            <td >
+                Link</td>
+            <td >
+                Item Code
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/item">Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>customer</code></td>
+            <td >
+                Link</td>
+            <td >
+                Customer
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/selling/customer">Customer</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>warehouse</code></td>
+            <td >
+                Link</td>
+            <td >
+                Warehouse
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>project</code></td>
+            <td >
+                Link</td>
+            <td >
+                Project
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/projects/project">Project</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>column_break2</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>from_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                From Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>to_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                To Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>14</td>
+            <td ><code>sales_orders_detail</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Sales Orders Detail
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>get_sales_orders</code></td>
+            <td >
+                Button</td>
+            <td >
+                Get Sales Orders
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>sales_orders</code></td>
+            <td >
+                Table</td>
+            <td >
+                Sales Orders
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/production_plan_sales_order">Production Plan Sales Order</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>17</td>
+            <td ><code>material_request_detail</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Material Request Detail
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>get_material_request</code></td>
+            <td >
+                Button</td>
+            <td >
+                Get Material Request
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>material_requests</code></td>
+            <td >
+                Table</td>
+            <td >
+                Material Requests
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/production_plan_material_request">Production Plan Material Request</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
+            <td ><code>items_for_production</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Select Items
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>get_items</code></td>
+            <td >
+                Button</td>
+            <td >
+                Get Items For Production Order
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td class="danger" title="Mandatory"><code>po_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                Items
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/production_plan_item">Production Plan Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>23</td>
+            <td ><code>material_request_planning</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Material Request Planning
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>include_non_stock_items</code></td>
+            <td >
+                Check</td>
+            <td >
+                Include Non Stock Items
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>ignore_existing_ordered_qty</code></td>
+            <td >
+                Check</td>
+            <td >
+                Ignore Existing Ordered Quantity
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>column_break_25</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>include_subcontracted_items</code></td>
+            <td >
+                Check</td>
+            <td >
+                Include Subcontracted Items
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>28</td>
+            <td ><code>section_break_27</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>29</td>
+            <td ><code>get_items_for_mr</code></td>
+            <td >
+                Button</td>
+            <td >
+                Get Raw Materials For Production
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>30</td>
+            <td ><code>mr_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                Material Request Plan Item
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/material_request_plan_item">Material Request Plan Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>31</td>
+            <td ><code>other_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Other Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>32</td>
+            <td ><code>total_planned_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Total Planned Qty
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>total_produced_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Total Produced Qty
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>34</td>
+            <td ><code>column_break_32</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>35</td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Status
+                
+            </td>
+            <td>
+                <pre>
+Draft
+Submitted
+Not Started
+In Process
+Completed
+Stopped
+Cancelled
+Material Requested</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>36</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/production_plan">Production Plan</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.manufacturing.doctype.production_plan.production_plan</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ProductionPlan</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_item_in_material_request_items" href="#add_item_in_material_request_items" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_item_in_material_request_items</b>
+        <i class="text-muted">(self, item, row, data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_items" href="#add_items" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_items</b>
+        <i class="text-muted">(self, items)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_mr_in_table" href="#add_mr_in_table" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_mr_in_table</b>
+        <i class="text-muted">(self, pending_mr)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Add Material Requests in the table</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_so_in_table" href="#add_so_in_table" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_so_in_table</b>
+        <i class="text-muted">(self, open_so)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Add sales orders in the table</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_total_planned_qty" href="#calculate_total_planned_qty" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_total_planned_qty</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_total_produced_qty" href="#calculate_total_produced_qty" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_total_produced_qty</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_production_order" href="#create_production_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_production_order</b>
+        <i class="text-muted">(self, item)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="delete_draft_production_order" href="#delete_draft_production_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>delete_draft_production_order</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_items" href="#get_items" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_items</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_items_for_material_requests" href="#get_items_for_material_requests" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_items_for_material_requests</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_itemwise_qty" href="#get_itemwise_qty" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_itemwise_qty</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_mr_items" href="#get_mr_items" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_mr_items</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_open_sales_orders" href="#get_open_sales_orders" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_open_sales_orders</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Pull sales orders  which are pending to deliver based on criteria selected</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_pending_material_requests" href="#get_pending_material_requests" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_pending_material_requests</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Pull Material Requests that are pending based on criteria selected</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_production_items" href="#get_production_items" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_production_items</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_so_items" href="#get_so_items" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_so_items</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_subitems" href="#get_subitems" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_subitems</b>
+        <i class="text-muted">(self, data, bom_wise_item_details, bom_no, parent_qty)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="make_material_request" href="#make_material_request" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>make_material_request</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="make_production_order" href="#make_production_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>make_production_order</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_cancel" href="#on_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_status" href="#set_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_ordered_status" href="#update_ordered_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_ordered_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_produced_qty" href="#update_produced_qty" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_produced_qty</b>
+        <i class="text-muted">(self, produced_qty, production_plan_item)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_requested_status" href="#update_requested_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_requested_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_data" href="#validate_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_data</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.production_plan.production_plan.get_bin_details</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.production_plan.production_plan.get_bin_details" href="#erpnext.manufacturing.doctype.production_plan.production_plan.get_bin_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.production_plan.production_plan.<b>get_bin_details</b>
+        <i class="text-muted">(row)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/material_request_item">Material Request Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/production_order">Production Order</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/production_plan">Production Plan</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

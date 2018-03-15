@@ -36,23 +36,22 @@ app_license = "MIT"
 # application home page (will override Website Settings)
 home_page = "index"
 
-template_apps = ['foundation', 'frappe_theme', 'erpnext', 'frappe']
+template_apps = ['foundation', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
-	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.jpg' />ERPNext.org",
-	"copyright": "ERPNext Open Source Software Foundation",
-	"footer_address": "<br>ERPNext is and will always be 100% Open Source",
+	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
-			{"label": "Docs", "url": "/docs", "right": 1},
-			{"label": "Services", "url": "/service-providers", "right": 1},
-			{"label": "Jobs", "url": "/erpnext-jobs", "right": 1},
-			{"label": "Chapters", "url": "/chapters", "right": 1},
-			{"label": "Bounties", "url": "/bounties", "right": 1},
-			{"label": '<span class="indicator blue">Conference</span>', "url": "/conf/2017", "right": 1},
-			{"label": "About", "url": "/about", "right": 1},
+			{"label": "Foundation", "child_items":[
+				{"label": "Chapter", "url": "/chapters","right": 1},
+				{"label": "Foundation Fellow", "url": "/foundation-fellow","right": 1}
+			], "right":1},
+			{"label": "Services", "child_items":[
+				{"label": "Service Providers", "url": "/service-providers","right": 1},
+				{"label": "Freelancer Jobs", "url": "/erpnext-jobs", "right": 1},
+			], "right":1},
 	],
-	"hide_login": 1,
-	"favicon": "/assets/frappe_theme/img/favicon.ico"
+	"hide_login": 0,
+	"favicon": "/assets/foundation/img/favicon.ico"
 }
 # website user home page (by Role)
 # role_home_page = {
@@ -70,6 +69,7 @@ website_context = {
 
 portal_menu_items = [
 	{'label': 'My Profile', 'route': '/service-provider-settings'},
+	{'label': 'Module Leader', 'route': '/module-leader-settings'},
 	{'label': 'Membership', 'route': '/members/details'},
 	{'label': 'Conference Talks', 'route': '/conference-talk-proposal'},
 	{'label': 'Jobs', 'route': '/my-jobs'},
@@ -116,23 +116,25 @@ portal_menu_items = [
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"foundation.tasks.all"
-# 	],
-# 	"daily": [
-# 		"foundation.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"foundation.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"foundation.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"foundation.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+	# "all": [
+	# 	"foundation.tasks.all"
+	# ],
+	"daily": [
+		"foundation.erpnext_foundation.doctype.service_provider.service_provider.send_alert_to_inactive_service_providers",
+		"foundation.erpnext_foundation.doctype.service_provider.service_provider.unpublish_service_provider",
+		"foundation.erpnext_foundation.doctype.service_provider.service_provider.publish_service_provider",
+	],
+	# "hourly": [
+	# 	"foundation.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"foundation.tasks.weekly"
+	# ]
+	# "monthly": [
+	# 	"foundation.tasks.monthly"
+	# ]
+}
 
 # Testing
 # -------
@@ -145,4 +147,3 @@ portal_menu_items = [
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "foundation.event.get_events"
 # }
-

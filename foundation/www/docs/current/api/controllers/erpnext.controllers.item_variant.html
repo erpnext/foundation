@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/controllers/item_variant.py"
@@ -79,6 +79,22 @@
 	
         
     
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.controllers.item_variant.create_multiple_variants" href="#erpnext.controllers.item_variant.create_multiple_variants" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.controllers.item_variant.<b>create_multiple_variants</b>
+        <i class="text-muted">(item, args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.controllers.item_variant.create_variant</code>
     </p>
@@ -86,6 +102,42 @@
         <a name="erpnext.controllers.item_variant.create_variant" href="#erpnext.controllers.item_variant.create_variant" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.controllers.item_variant.<b>create_variant</b>
+        <i class="text-muted">(item, args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.controllers.item_variant.create_variant_doc_for_quick_entry</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.controllers.item_variant.create_variant_doc_for_quick_entry" href="#erpnext.controllers.item_variant.create_variant_doc_for_quick_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.controllers.item_variant.<b>create_variant_doc_for_quick_entry</b>
+        <i class="text-muted">(template, args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.controllers.item_variant.enqueue_multiple_variant_creation</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.controllers.item_variant.enqueue_multiple_variant_creation" href="#erpnext.controllers.item_variant.enqueue_multiple_variant_creation" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.controllers.item_variant.<b>enqueue_multiple_variant_creation</b>
         <i class="text-muted">(item, args)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
@@ -115,10 +167,40 @@
     
     
 	<p class="docs-attr-name">
+        <a name="erpnext.controllers.item_variant.generate_keyed_value_combinations" href="#erpnext.controllers.item_variant.generate_keyed_value_combinations" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.controllers.item_variant.<b>generate_keyed_value_combinations</b>
+        <i class="text-muted">(args)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>From this:
+
+    args = {"attr1": ["a", "b", "c"], "attr2": ["1", "2"], "attr3": ["A"]}
+
+To this:
+
+    [
+        {u'attr1': u'a', u'attr2': u'1', u'attr3': u'A'},
+        {u'attr1': u'b', u'attr2': u'1', u'attr3': u'A'},
+        {u'attr1': u'c', u'attr2': u'1', u'attr3': u'A'},
+        {u'attr1': u'a', u'attr2': u'2', u'attr3': u'A'},
+        {u'attr1': u'b', u'attr2': u'2', u'attr3': u'A'},
+        {u'attr1': u'c', u'attr2': u'2', u'attr3': u'A'}
+    ]
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="erpnext.controllers.item_variant.get_attribute_values" href="#erpnext.controllers.item_variant.get_attribute_values" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.controllers.item_variant.<b>get_attribute_values</b>
-        <i class="text-muted">()</i>
+        <i class="text-muted">(item)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

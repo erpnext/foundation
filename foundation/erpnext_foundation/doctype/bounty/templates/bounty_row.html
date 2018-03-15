@@ -13,19 +13,18 @@
 		<p>
 			<span class="label">{{ fmt_money(doc.goal, currency="USD") }}</span>
 			{% if comments %}
-			<span class="label">{{ comments }} <i
-				class='octicon octicon-comment-discussion'></i></span>
+				<span class="label">{{ comments }} <i
+					class='octicon octicon-comment-discussion'></i></span>
 			{% endif %}
-			{% set paid_backers = get_paid_backers(doc.bounty_backer) %}
-			{% if paid_backers and paid_backers|len > 0 %}
-			<span class="label">
-				{{ paid_backers|len }}
-				{% if paid_backers|len > 1 %}
-					Backers
-				{% else %}
-					Backer
-				{% endif %}
-			</span>
+			{% if paid_backers|len > 0 %}
+				<span class="label">
+					{{ paid_backers|len }}
+					{% if paid_backers|len > 1 %}
+						Backers
+					{% else %}
+						Backer
+					{% endif %}
+				</span>
 			{% endif %}
 		</p>
 		<p>{{ html2text(doc.description[:200]) }}{% if doc.description|len > 200 %}...{% endif %}</p>

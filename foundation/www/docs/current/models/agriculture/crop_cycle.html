@@ -1,0 +1,612 @@
+<!-- title: Crop Cycle -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Crop Cycle</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.2</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/agriculture/doctype/crop_cycle"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabCrop Cycle</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>title</code></td>
+            <td >
+                Data</td>
+            <td >
+                Title
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>crop</code></td>
+            <td >
+                Link</td>
+            <td >
+                Crop
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/agriculture/crop">Crop</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                Linked Land Unit
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>linked_land_unit</code></td>
+            <td >
+                Table</td>
+            <td >
+                Linked Land Unit
+                <p class="text-muted small">
+                    A link to all the Land Units in which the Crop is growing</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/agriculture/linked_land_unit">Linked Land Unit</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>5</td>
+            <td ><code>section_break_3</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>project</code></td>
+            <td >
+                Link</td>
+            <td >
+                Project
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/projects/project">Project</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>column_break_12</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>start_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Start Date
+                <p class="text-muted small">
+                    This will be day 1 of the crop cycle</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>end_date</code></td>
+            <td >
+                Data</td>
+            <td >
+                End Date
+                
+            </td>
+            <td>
+                <pre>project.expected_end_date</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>section_break_7</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>iso_8016_standard</code></td>
+            <td >
+                Check</td>
+            <td >
+                ISO 8016 standard
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>column_break_5</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>cycle_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Cycle Type
+                
+            </td>
+            <td>
+                <pre>Yearly
+Less than a year</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>14</td>
+            <td ><code>section_break_12</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>crop_spacing</code></td>
+            <td >
+                Float</td>
+            <td >
+                Crop Spacing
+                <p class="text-muted small">
+                    The minimum length between each plant in the field for optimum growth</p>
+            </td>
+            <td>
+                <pre>crop.crop_spacing</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>crop_spacing_uom</code></td>
+            <td >
+                Link</td>
+            <td >
+                Crop Spacing UOM
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/uom">UOM</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>column_break_11</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>row_spacing</code></td>
+            <td >
+                Float</td>
+            <td >
+                Row Spacing
+                <p class="text-muted small">
+                    The minimum distance between rows of plants for optimum growth</p>
+            </td>
+            <td>
+                <pre>crop.row_spacing</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>row_spacing_uom</code></td>
+            <td >
+                Link</td>
+            <td >
+                Row Spacing UOM
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/uom">UOM</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
+            <td ><code>section_break_14</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Detected Diseases
+                <p class="text-muted small">
+                    List of diseases detected on the field. When selected it'll automatically add a list of tasks to deal with the disease </p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>detected_disease</code></td>
+            <td >
+                Table</td>
+            <td >
+                Detected Disease
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/agriculture/detected_disease">Detected Disease</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>22</td>
+            <td ><code>section_break_22</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                LInked Analysis
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>soil_texture</code></td>
+            <td >
+                Table</td>
+            <td >
+                Soil Texture
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/agriculture/linked_soil_texture">Linked Soil Texture</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>soil_analysis</code></td>
+            <td >
+                Table</td>
+            <td >
+                Soil Analysis
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/agriculture/linked_soil_analysis">Linked Soil Analysis</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>plant_analysis</code></td>
+            <td >
+                Table</td>
+            <td >
+                Plant Analysis
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/agriculture/linked_plant_analysis">Linked Plant Analysis</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.agriculture.doctype.crop_cycle.crop_cycle</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>CropCycle</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="append_to_child" href="#append_to_child" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>append_to_child</b>
+        <i class="text-muted">(self, obj_to_append)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_project" href="#create_project" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_project</b>
+        <i class="text-muted">(self, period, crop_tasks)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_task" href="#create_task" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_task</b>
+        <i class="text-muted">(self, crop_tasks, project_name, start_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_coordinates" href="#get_coordinates" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_coordinates</b>
+        <i class="text-muted">(self, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_geometry_type" href="#get_geometry_type" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_geometry_type</b>
+        <i class="text-muted">(self, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="import_disease_tasks" href="#import_disease_tasks" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>import_disease_tasks</b>
+        <i class="text-muted">(self, disease, start_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="is_in_land_unit" href="#is_in_land_unit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>is_in_land_unit</b>
+        <i class="text-muted">(self, point, vs)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="reload_linked_analysis" href="#reload_linked_analysis" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>reload_linked_analysis</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_disease" href="#update_disease" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_disease</b>
+        <i class="text-muted">(self, disease_hashes)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

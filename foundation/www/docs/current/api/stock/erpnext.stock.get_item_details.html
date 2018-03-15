@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/stock/get_item_details.py"
@@ -43,6 +43,7 @@
     "conversion_rate": 1.0,
     "selling_price_list": None,
     "price_list_currency": None,
+    "price_list_uom_dependant": None,
     "plc_conversion_rate": 1.0,
     "doctype": "",
     "name": "",
@@ -85,7 +86,53 @@
 		erpnext.stock.get_item_details.<b>get_basic_details</b>
         <i class="text-muted">(args, item)</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><p><strong>Parameters:</strong></p>
+
+<ul>
+<li><p><strong><code>args</code></strong> -  {</p>
+
+<pre><code>    "item_code": "",
+    "warehouse": None,
+    "customer": "",
+    "conversion_rate": 1.0,
+    "selling_price_list": None,
+    "price_list_currency": None,
+    "price_list_uom_dependant": None,
+    "plc_conversion_rate": 1.0,
+    "doctype": "",
+    "name": "",
+    "supplier": None,
+    "transaction_date": None,
+    "conversion_rate": 1.0,
+    "buying_price_list": None,
+    "is_subcontracted": "Yes" / "No",
+    "ignore_pricing_rule": 0/1
+    "project": "",
+    barcode: "",
+    serial_no: "",
+    warehouse: "",
+    currency: "",
+    update_stock: "",
+    price_list: "",
+    company: "",
+    order_type: "",
+    is_pos: "",
+    ignore_pricing_rule: "",
+    project: "",
+    qty: "",
+    stock_qty: "",
+    conversion_factor: ""
+}
+</code></pre></li>
+</ul>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><p><strong><code>item</code></strong> -  <code>item_code</code> of Item object</p>
+
+<p>:return: frappe._dict</p></li>
+</ul>
 </div>
 	<br>
 
@@ -325,7 +372,7 @@
         <a name="erpnext.stock.get_item_details.get_pos_profile" href="#erpnext.stock.get_item_details.get_pos_profile" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.stock.get_item_details.<b>get_pos_profile</b>
-        <i class="text-muted">(company)</i>
+        <i class="text-muted">(company, pos_profile=None, user=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -406,6 +453,22 @@
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.stock.get_item_details.<b>get_price_list_rate_for</b>
         <i class="text-muted">(price_list, item_code)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.get_item_details.get_price_list_uom_dependant" href="#erpnext.stock.get_item_details.get_price_list_uom_dependant" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.get_item_details.<b>get_price_list_uom_dependant</b>
+        <i class="text-muted">(price_list)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

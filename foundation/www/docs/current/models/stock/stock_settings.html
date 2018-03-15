@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 8.11.4</a>
+	Version 10.1.2</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/stock/doctype/stock_settings"
@@ -118,6 +118,27 @@ Naming Series</pre>
         
         <tr >
             <td>5</td>
+            <td ><code>sample_retention_warehouse</code></td>
+            <td >
+                Link</td>
+            <td >
+                Sample Retention Warehouse
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
             <td ><code>column_break_4</code></td>
             <td class="info">
                 Column Break</td>
@@ -129,7 +150,7 @@ Naming Series</pre>
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>7</td>
             <td ><code>valuation_method</code></td>
             <td >
                 Select</td>
@@ -144,7 +165,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>8</td>
             <td ><code>tolerance</code></td>
             <td >
                 Float</td>
@@ -157,7 +178,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>9</td>
             <td ><code>show_barcode_field</code></td>
             <td >
                 Check</td>
@@ -168,8 +189,20 @@ Moving Average</pre>
             <td></td>
         </tr>
         
+        <tr >
+            <td>10</td>
+            <td ><code>clean_description_html</code></td>
+            <td >
+                Check</td>
+            <td >
+                Convert Item Description to Clean HTML
+                
+            </td>
+            <td></td>
+        </tr>
+        
         <tr class="info">
-            <td>9</td>
+            <td>11</td>
             <td ><code>section_break_7</code></td>
             <td >
                 Section Break</td>
@@ -181,7 +214,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>12</td>
             <td ><code>auto_insert_price_list_rate_if_missing</code></td>
             <td >
                 Check</td>
@@ -193,7 +226,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>13</td>
             <td ><code>allow_negative_stock</code></td>
             <td >
                 Check</td>
@@ -205,7 +238,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>14</td>
             <td ><code>column_break_10</code></td>
             <td class="info">
                 Column Break</td>
@@ -217,7 +250,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>15</td>
             <td ><code>automatically_set_serial_nos_based_on_fifo</code></td>
             <td >
                 Check</td>
@@ -229,7 +262,7 @@ Moving Average</pre>
         </tr>
         
         <tr class="info">
-            <td>14</td>
+            <td>16</td>
             <td ><code>auto_material_request</code></td>
             <td >
                 Section Break</td>
@@ -241,7 +274,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>17</td>
             <td ><code>auto_indent</code></td>
             <td >
                 Check</td>
@@ -253,7 +286,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>18</td>
             <td ><code>reorder_email_notify</code></td>
             <td >
                 Check</td>
@@ -265,7 +298,7 @@ Moving Average</pre>
         </tr>
         
         <tr class="info">
-            <td>17</td>
+            <td>19</td>
             <td ><code>freeze_stock_entries</code></td>
             <td >
                 Section Break</td>
@@ -277,7 +310,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>20</td>
             <td ><code>stock_frozen_upto</code></td>
             <td >
                 Date</td>
@@ -289,7 +322,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>21</td>
             <td ><code>stock_frozen_upto_days</code></td>
             <td >
                 Int</td>
@@ -301,7 +334,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>22</td>
             <td ><code>stock_auth_role</code></td>
             <td >
                 Link</td>
@@ -319,6 +352,42 @@ Moving Average</pre>
 
                 
             </td>
+        </tr>
+        
+        <tr class="info">
+            <td>23</td>
+            <td ><code>batch_id_sb</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Batch Identification
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>use_naming_series</code></td>
+            <td >
+                Check</td>
+            <td >
+                Use Naming Series
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>naming_series_prefix</code></td>
+            <td >
+                Data</td>
+            <td >
+                Naming Series Prefix
+                
+            </td>
+            <td></td>
         </tr>
         
     </tbody>
@@ -371,8 +440,38 @@ Moving Average</pre>
 	<br>
 
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_clean_description_html" href="#validate_clean_description_html" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_clean_description_html</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.stock_settings.stock_settings.clean_all_descriptions" href="#erpnext.stock.doctype.stock_settings.stock_settings.clean_all_descriptions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.stock_settings.stock_settings.<b>clean_all_descriptions</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 

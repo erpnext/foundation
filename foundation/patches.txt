@@ -1,1 +1,3 @@
 foundation.patches.v0_0.update_erpnext_job_route
+foundation.patches.v0_0.change_website_to_website_url
+foundation.patches.v0_0.service_providers_website_to_website_url

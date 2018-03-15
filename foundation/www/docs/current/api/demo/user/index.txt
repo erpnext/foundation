@@ -1,6 +1,6 @@
 erpnext.demo.user.projects
-erpnext.demo.user.schools
 erpnext.demo.user.fixed_asset
+erpnext.demo.user.education
 erpnext.demo.user.hr
 erpnext.demo.user.manufacturing
 erpnext.demo.user.purchase
