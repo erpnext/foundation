@@ -14,7 +14,7 @@ frappe.ready(function() {
 		$('[data-fieldname="amount"]').val(amount[membership_type]);
 	}
 
-	if(get_url_arg('name')) {
+	if(frappe.utils.get_url_arg('name')) {
 		$('[data-fieldname="membership_type"]').prop('disabled', true);
 		$('[data-fieldname="currency"]').prop('disabled', true);
 		$('.page-content .btn-form-submit').addClass('hidden');
