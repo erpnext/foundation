@@ -119,6 +119,10 @@ a {
 	}
 }
 
+.reviews {
+	max-width: 200px;
+}
+
 .stars {
 	width: 125px;
 }
@@ -126,6 +130,16 @@ a {
 .footer {
 	@media screen and (min-width: @screen-xs) {
 		padding: 4rem 1.5rem;
+	}
+}
+
+.footer-brand {
+	order: 10;
+	text-align: center;
+
+	@media screen and (min-width: @screen-xs) {
+		order: unset;
+		text-align: inherit;
 	}
 }
 
@@ -184,11 +198,6 @@ a {
 		max-width: 25%;
 		min-width: 25%;
 	}
-}
-
-.flex-wrap {
-	flex-wrap: wrap;
-	justify-content: flex-start;
 }
 
 .intro-copy {
@@ -406,7 +415,11 @@ hr {
 
 .footer-icon {
 	width: 6.5rem;
-	margin-right: 0.5em;
+	margin-right: unset;
+
+	@media screen and (min-width: @screen-xs) {
+		margin-right: 0.5rem;
+	}
 }
 
 .footer-email-title {

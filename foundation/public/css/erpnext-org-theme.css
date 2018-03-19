@@ -143,16 +143,14 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: 0 -2.5rem;
 }
 @media screen and (min-width: 767px) {
   .columns {
-    flex-direction: row;
+    flex-direction: inherit;
   }
 }
 .column {
   margin-bottom: 1rem;
-  padding: 0 2.5rem;
 }
 @media screen and (min-width: 767px) {
   .column {
@@ -168,7 +166,19 @@
   }
 }
 .copyright {
-  font-size: 0.75rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 767px) {
+  .copyright {
+    font-size: 0.75rem;
+  }
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.grid-center {
+  justify-items: center;
 }
 .indicator,
 .indicator-right {
@@ -339,12 +349,25 @@ a:visited {
     padding: 10.5rem 1.5rem;
   }
 }
+.reviews {
+  max-width: 200px;
+}
 .stars {
   width: 125px;
 }
 @media screen and (min-width: 767px) {
   .footer {
     padding: 4rem 1.5rem;
+  }
+}
+.footer-brand {
+  order: 10;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  .footer-brand {
+    order: unset;
+    text-align: inherit;
   }
 }
 .feature .bullet {
@@ -401,10 +424,6 @@ a:visited {
     max-width: 25%;
     min-width: 25%;
   }
-}
-.flex-wrap {
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
 .intro-copy {
   max-width: 599.5px;
@@ -589,7 +608,12 @@ hr {
 }
 .footer-icon {
   width: 6.5rem;
-  margin-right: 0.5em;
+  margin-right: unset;
+}
+@media screen and (min-width: 767px) {
+  .footer-icon {
+    margin-right: 0.5rem;
+  }
 }
 .footer-email-title {
   margin-bottom: 0.5rem;

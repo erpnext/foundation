@@ -177,16 +177,14 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	margin: 0 -2.5rem;
 
 	@media screen and (min-width: @screen-xs) {
-		flex-direction: row;
+		flex-direction: inherit;
 	}
 }
 
 .column {
 	margin-bottom: 1rem;
-	padding: 0 2.5rem;
 
 	@media screen and (min-width: @screen-xs) {
 		margin: 0;
@@ -202,5 +200,18 @@
 }
 
 .copyright {
-	font-size: 0.75rem;
+	font-size: 1rem;
+
+	@media screen and (min-width: @screen-xs) {
+		font-size: 0.75rem;
+	}
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.grid-center {
+	justify-items: center;
 }
