@@ -9,10 +9,14 @@
 							Content licensed under <a class="footer-link" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank"> CC-BY-SA 3.0</a> | <a href="/terms" class="footer-link">Terms of use</a>.</p>
 					</div>
 					<div class="bottom-spacer">
-						<p class="text-muted footer-email-title">Stay Updated</p>
 						<div class="inline-block">
-							<label class="footer-email"><input class="footer-email-input dark-bg" type="email" placeholder="Your email address"></label>
-							<a href="" class="button button-dark">Subscribe</a>
+							<form class="js-subscribe-form">
+								<label class="footer-email">
+									<input class="footer-email-input dark-bg"
+										name="email" type="email" placeholder="Your email address">
+								</label>
+								<button type="submit" class="button button-dark">Subscribe</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -131,10 +135,33 @@
 				</div>
 			</div>
 			<script type="text/javascript">
-				frappe.ready(function(){
+				frappe.ready(function() {
 					var d = new Date();
 					var currentYear = d.getFullYear();
 					$("#year").text(currentYear);
+
+					$('.js-subscribe-form').on('submit', function(e) {
+						e.preventDefault();
+						const form = this;
+						const formdata = new FormData(this);
+						const email = formdata.get('email');
+
+						const input = $(form).find('input');
+						const button = $(form).find('button');
+
+						erpnext.subscribe_to_newsletter({
+							email,
+							callback(r) {
+								if (!r.exc) {
+									form.reset();
+									button.text('Added');
+									setTimeout(() => {
+										button.text('Subscribe');
+									}, 3000);
+								}
+							}
+						})
+					});
 				});
 			</script>
 		</div>
