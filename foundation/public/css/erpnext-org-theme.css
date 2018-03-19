@@ -339,14 +339,20 @@ a:visited {
     max-width: 1199px;
   }
 }
-.feature,
-.footer {
+.section-padding.hero {
   padding: 2.5rem 1rem;
-  border-top: 1px solid #EBEFF2;
 }
 @media screen and (min-width: 767px) {
-  .feature {
+  .section-padding.hero {
     padding: 10.5rem 1.5rem;
+  }
+}
+.section-padding {
+  padding: 2.5rem 1rem;
+}
+@media screen and (min-width: 767px) {
+  .section-padding {
+    padding: 6.5rem 1.5rem;
   }
 }
 .reviews {
@@ -354,11 +360,6 @@ a:visited {
 }
 .stars {
   width: 125px;
-}
-@media screen and (min-width: 767px) {
-  .footer {
-    padding: 4rem 1.5rem;
-  }
 }
 .footer-brand {
   order: 10;
@@ -370,7 +371,7 @@ a:visited {
     text-align: inherit;
   }
 }
-.feature .bullet {
+.section-bullet {
   margin-bottom: 0.5rem;
 }
 .page {
@@ -607,7 +608,7 @@ hr {
   padding: 0.45rem 1rem;
 }
 .footer-icon {
-  width: 6.5rem;
+  width: 4rem;
   margin-right: unset;
 }
 @media screen and (min-width: 767px) {
@@ -1125,7 +1126,7 @@ img.blog-cover-image,
   max-width: 250px;
 }
 .community-bg {
-  background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), #7574fe), url("/assets/foundation/img/community-2016.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 51, 56, 0.5), #2E3338), url("/assets/foundation/img/community-2016.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

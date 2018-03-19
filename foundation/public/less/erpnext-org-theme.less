@@ -107,15 +107,19 @@ a {
 	}
 }
 
-.feature,
-.footer {
+.section-padding.hero {
 	padding: 2.5rem 1rem;
-	border-top: 1px solid @light-border-color;
-}
 
-.feature {
 	@media screen and (min-width: @screen-xs) {
 		padding: 10.5rem 1.5rem;
+	}
+}
+
+.section-padding {
+	padding: 2.5rem 1rem;
+
+	@media screen and (min-width: @screen-xs) {
+		padding: 6.5rem 1.5rem;
 	}
 }
 
@@ -125,12 +129,6 @@ a {
 
 .stars {
 	width: 125px;
-}
-
-.footer {
-	@media screen and (min-width: @screen-xs) {
-		padding: 4rem 1.5rem;
-	}
 }
 
 .footer-brand {
@@ -143,7 +141,7 @@ a {
 	}
 }
 
-.feature .bullet {
+.section-bullet {
 	margin-bottom: 0.5rem;
 }
 
@@ -414,7 +412,7 @@ hr {
 }
 
 .footer-icon {
-	width: 6.5rem;
+	width: 4rem;
 	margin-right: unset;
 
 	@media screen and (min-width: @screen-xs) {
@@ -1034,7 +1032,7 @@ img.blog-cover-image,
 }
 
 .community-bg {
-	background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), rgb(117, 116, 254)), url("/assets/foundation/img/community-2016.jpg");
+	background-image: linear-gradient(to bottom, rgba(46, 51, 56, 0.5), @text-dark), url("/assets/foundation/img/community-2016.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
