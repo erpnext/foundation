@@ -90,6 +90,9 @@
 .border-top {
   border-top: 1px solid #d1d8dd;
 }
+.border-top-light {
+  border-top: 1px solid #EBEFF2;
+}
 .saturate {
   filter: grayscale(100%);
 }
@@ -367,12 +370,10 @@ a:visited {
 }
 .footer-brand {
   order: 10;
-  text-align: center;
 }
 @media screen and (min-width: 767px) {
   .footer-brand {
     order: unset;
-    text-align: inherit;
   }
 }
 .section-bullet {
