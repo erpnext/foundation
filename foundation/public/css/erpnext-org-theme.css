@@ -337,13 +337,13 @@ a:visited {
 @media screen and (min-width: 991px) {
   .container,
   .page-content-wrapper {
-    max-width: 959px;
+    max-width: 991px;
   }
 }
 @media screen and (min-width: 1199px) {
   .container,
   .page-content-wrapper {
-    max-width: 1167px;
+    max-width: 1199px;
   }
 }
 .section-padding.hero {
