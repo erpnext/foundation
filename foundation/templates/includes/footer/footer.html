@@ -128,13 +128,32 @@
 					</li>
 				</ul>
 			</div>
-		</div>
 		<script type="text/javascript">
-			frappe.ready(function(){
+			frappe.ready(function() {
 				var d = new Date();
 				var currentYear = d.getFullYear();
 				$("#year").text(currentYear);
+				$('.js-subscribe-form').on('submit', function(e) {
+					e.preventDefault();
+					const form = this;
+					const formdata = new FormData(this);
+					const email = formdata.get('email');
+					const input = $(form).find('input');
+					const button = $(form).find('button');
+					erpnext.subscribe_to_newsletter({
+						email,
+						callback(r) {
+							if (!r.exc) {
+								form.reset();
+								button.text('Added');
+								setTimeout(() => {
+									button.text('Subscribe');
+								}, 3000);
+							}
+						}
+					})
+				});
 			});
-	</script>
-</div>
+		</script>
+	</div>
 </footer>

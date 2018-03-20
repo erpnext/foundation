@@ -32,11 +32,9 @@
 .dark-bg {
   background-color: #2E3338;
 }
-.left-aligned,
 .text-left {
   text-align: left;
 }
-.right-aligned,
 .text-right {
   text-align: right;
 }
@@ -332,6 +330,12 @@ a:visited {
 .page-content-wrapper {
   max-width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 991px) {
+  .container,
+  .page-content-wrapper {
+    max-width: 991px;
+  }
 }
 @media screen and (min-width: 1199px) {
   .container,
