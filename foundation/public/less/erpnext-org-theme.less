@@ -19,6 +19,10 @@ a {
 	}
 }
 
+[ data-path = "" ] .get-started {
+	display: none;
+}
+
 .header-1,
 .header-2,
 .header-3 {
@@ -80,8 +84,8 @@ a {
 	margin: 0;
 }
 
-.menu-items {
-	padding-left: 1.5rem;
+.menu-item {
+	margin-left: 1.5rem;
 }
 
 .menu-links {
@@ -98,30 +102,48 @@ a {
 	max-width: 100%;
 	margin: 0 auto;
 
+	@media screen and (min-width: @screen-sm) {
+		max-width: @screen-sm - 32px;
+	}
+
 	@media screen and (min-width: @screen-md) {
-		max-width: @screen-md;
+		max-width: @screen-md - 32px;
 	}
 }
 
-.feature,
-.footer {
+.section-padding.hero {
 	padding: 2.5rem 1rem;
-	border-top: 1px solid @light-border-color;
-}
 
-.feature {
 	@media screen and (min-width: @screen-xs) {
 		padding: 10.5rem 1.5rem;
 	}
 }
 
-.footer {
+.section-padding {
+	padding: 2.5rem 1rem;
+
 	@media screen and (min-width: @screen-xs) {
-		padding: 4rem 1.5rem;
+		padding: 6.5rem 1.5rem;
 	}
 }
 
-.feature .bullet {
+.reviews {
+	max-width: 200px;
+}
+
+.stars {
+	width: 125px;
+}
+
+.footer-brand {
+	order: 10;
+
+	@media screen and (min-width: @screen-xs) {
+		order: unset;
+	}
+}
+
+.section-bullet {
 	margin-bottom: 0.5rem;
 }
 
@@ -178,11 +200,6 @@ a {
 	}
 }
 
-.flex-wrap {
-	flex-wrap: wrap;
-	justify-content: flex-start;
-}
-
 .intro-copy {
 	max-width: @screen-md/2;
 	margin: 0 auto 1.5rem auto;
@@ -226,6 +243,20 @@ a {
 	}
 }
 
+.button-primary-small {
+	color: #fff;
+	background: #7575ff;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	padding: 0.45rem 1rem;
+
+	&:hover {
+		background: @button-primary-hover;
+		color: #fff;
+	}
+}
+
 .button-secondary {
 	font-size: 1.5em;
 	color: @text-light;
@@ -259,8 +290,20 @@ a {
 	}
 }
 
+.footer-title {
+	margin-bottom: 0.5rem;
+}
+
 .footer-list {
 	padding-left: 0;
+}
+
+.footer-email-input {
+	border: 1px solid @text-muted;
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+	color: @text-muted;
+	margin-right: 0.5rem;
 }
 
 .page_content li,
@@ -352,29 +395,35 @@ hr {
 	border-top: 1px solid @light-border-color;
 }
 
-.footer-end {
-	border-top: 1px solid @dark-border-color;
-	padding-top: 1rem;
-	margin-top: 1rem;
-	font-size: 0.75rem;
-
-	@media screen and (min-width: @screen-xs) {
-		padding-top: 2.5rem;
-		margin-top: 1.5rem;
-	}
-}
-
-.footer a {
+.footer-link {
 	color: @text-muted;
+	transition: color @transition;
 
 	&:hover {
 		color: #fff;
 	}
 }
 
+.button-dark {
+	color: #fff;
+	background: @text-muted;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	padding: 0.45rem 1rem;
+}
+
 .footer-icon {
-	width: 1.5rem;
-	margin-right: 0.5em;
+	width: 4rem;
+	margin-right: unset;
+
+	@media screen and (min-width: @screen-xs) {
+		margin-right: 0.5rem;
+	}
+}
+
+.footer-email-title {
+	margin-bottom: 0.5rem;
 }
 
 /* loaned from bootstrap need to cleanup*/
@@ -985,7 +1034,7 @@ img.blog-cover-image,
 }
 
 .community-bg {
-	background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), rgb(117, 116, 254)), url("/assets/foundation/img/community-2016.jpg");
+	background-image: linear-gradient(to bottom, rgba(46, 51, 56, 0.5), @text-dark), url("/assets/foundation/img/community-2016.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

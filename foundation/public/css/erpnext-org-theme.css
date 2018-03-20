@@ -32,11 +32,10 @@
 .dark-bg {
   background-color: #2E3338;
 }
-.left-aligned,
 .text-left {
   text-align: left;
 }
-.right-aligned {
+.text-right {
   text-align: right;
 }
 .text-center {
@@ -90,6 +89,9 @@
 }
 .border-top {
   border-top: 1px solid #d1d8dd;
+}
+.border-top-light {
+  border-top: 1px solid #EBEFF2;
 }
 .saturate {
   filter: grayscale(100%);
@@ -145,7 +147,7 @@
 }
 @media screen and (min-width: 767px) {
   .columns {
-    flex-direction: row;
+    flex-direction: inherit;
   }
 }
 .column {
@@ -155,6 +157,29 @@
   .column {
     margin: 0;
   }
+}
+.three-column {
+  max-width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .three-column {
+    max-width: 33%;
+  }
+}
+.copyright {
+  font-size: 1rem;
+}
+@media screen and (min-width: 767px) {
+  .copyright {
+    font-size: 0.75rem;
+  }
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.grid-center {
+  justify-items: center;
 }
 .indicator,
 .indicator-right {
@@ -240,6 +265,9 @@ a:focus,
 a:visited {
   outline: 0;
 }
+[data-path=""] .get-started {
+  display: none;
+}
 .header-1,
 .header-2,
 .header-3 {
@@ -291,8 +319,8 @@ a:visited {
   display: flex;
   margin: 0;
 }
-.menu-items {
-  padding-left: 1.5rem;
+.menu-item {
+  margin-left: 1.5rem;
 }
 .menu-links {
   color: #6c7680;
@@ -306,28 +334,49 @@ a:visited {
   max-width: 100%;
   margin: 0 auto;
 }
+@media screen and (min-width: 991px) {
+  .container,
+  .page-content-wrapper {
+    max-width: 959px;
+  }
+}
 @media screen and (min-width: 1199px) {
   .container,
   .page-content-wrapper {
-    max-width: 1199px;
+    max-width: 1167px;
   }
 }
-.feature,
-.footer {
+.section-padding.hero {
   padding: 2.5rem 1rem;
-  border-top: 1px solid #EBEFF2;
 }
 @media screen and (min-width: 767px) {
-  .feature {
+  .section-padding.hero {
     padding: 10.5rem 1.5rem;
   }
 }
+.section-padding {
+  padding: 2.5rem 1rem;
+}
 @media screen and (min-width: 767px) {
-  .footer {
-    padding: 4rem 1.5rem;
+  .section-padding {
+    padding: 6.5rem 1.5rem;
   }
 }
-.feature .bullet {
+.reviews {
+  max-width: 200px;
+}
+.stars {
+  width: 125px;
+}
+.footer-brand {
+  order: 10;
+}
+@media screen and (min-width: 767px) {
+  .footer-brand {
+    order: unset;
+  }
+}
+.section-bullet {
   margin-bottom: 0.5rem;
 }
 .page {
@@ -382,10 +431,6 @@ a:visited {
     min-width: 25%;
   }
 }
-.flex-wrap {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
 .intro-copy {
   max-width: 599.5px;
   margin: 0 auto 1.5rem auto;
@@ -422,6 +467,18 @@ a:visited {
   background: #5e5ec9;
   color: #fff;
 }
+.button-primary-small {
+  color: #fff;
+  background: #7575ff;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  padding: 0.45rem 1rem;
+}
+.button-primary-small:hover {
+  background: #5e5ec9;
+  color: #fff;
+}
 .button-secondary {
   font-size: 1.5em;
   color: #6c7680;
@@ -449,8 +506,18 @@ a:visited {
 .bulleted-list li {
   padding-bottom: 1em;
 }
+.footer-title {
+  margin-bottom: 0.5rem;
+}
 .footer-list {
   padding-left: 0;
+}
+.footer-email-input {
+  border: 1px solid #8D99A6;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  color: #8D99A6;
+  margin-right: 0.5rem;
 }
 .page_content li,
 .sidebar-item,
@@ -530,27 +597,32 @@ hr {
   border: 0;
   border-top: 1px solid #EBEFF2;
 }
-.footer-end {
-  border-top: 1px solid #354047;
-  padding-top: 1rem;
-  margin-top: 1rem;
-  font-size: 0.75rem;
-}
-@media screen and (min-width: 767px) {
-  .footer-end {
-    padding-top: 2.5rem;
-    margin-top: 1.5rem;
-  }
-}
-.footer a {
+.footer-link {
   color: #8D99A6;
+  transition: color 0.3s ease-out;
 }
-.footer a:hover {
+.footer-link:hover {
   color: #fff;
 }
+.button-dark {
+  color: #fff;
+  background: #8D99A6;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  padding: 0.45rem 1rem;
+}
 .footer-icon {
-  width: 1.5rem;
-  margin-right: 0.5em;
+  width: 4rem;
+  margin-right: unset;
+}
+@media screen and (min-width: 767px) {
+  .footer-icon {
+    margin-right: 0.5rem;
+  }
+}
+.footer-email-title {
+  margin-bottom: 0.5rem;
 }
 /* loaned from bootstrap need to cleanup*/
 /*progress bar*/
@@ -1059,7 +1131,7 @@ img.blog-cover-image,
   max-width: 250px;
 }
 .community-bg {
-  background-image: linear-gradient(to bottom, rgba(117, 116, 254, 0.52), #7574fe), url("/assets/foundation/img/community-2016.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 51, 56, 0.5), #2E3338), url("/assets/foundation/img/community-2016.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

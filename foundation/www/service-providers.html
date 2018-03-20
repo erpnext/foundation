@@ -25,7 +25,7 @@
 {% endmacro %}
 
 {% macro show_member(s) %}
-<div class='individual-member column'>
+<div class='individual-member'>
 	<h3><a class='secondary-link bold' href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a></h3>
 	<p>
 	{{ s.introduction and s.introduction | truncate(140) }}
@@ -74,7 +74,7 @@
 	<h2>Select by country</h2>
 	<div class='columns flex-wrap'>
 		{% for c in countries %}
-		<div class='countries column'>
+		<div class='column countries'>
 			<p>
 			<a class="secondary-link" href="/service-providers?country={{ c[0] }}">{{ c[0] }} ({{ c[1] }})</a>
 			</p>
