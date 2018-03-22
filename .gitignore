@@ -3,6 +3,7 @@
 *.egg-info
 *.swp
 tags
+node_modules
 foundation/docs/current
 __pycache__/
 *.pyc

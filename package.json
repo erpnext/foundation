@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "frappe-css": "frappe/css"
+  }
+}
