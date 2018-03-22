@@ -252,19 +252,6 @@
   margin-top: 7.5px;
   margin-right: 3px;
 }
-a {
-  color: #7575ff;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-}
-a:hover {
-  color: #2E3338;
-  text-decoration: underline;
-}
-a:focus,
-a:visited {
-  outline: 0;
-}
 [data-path=""] .get-started {
   display: none;
 }
