@@ -15,3 +15,19 @@
 		</div>
 	</div>
 {% endmacro %}
+
+{% macro list(link, image, title, subtitle) %}
+	<div class="list list-unstyled">
+		<div class="list-item flex">
+			<div class="flex1">
+				<a class="flex1" href="{{ link or "#" }}"
+				<img class="thumbnail" src="{% if image %}{% if not '/' in image %}/assets/foundation/img/{% endif %}{{ image }}{% else %}/assets/foundation/img/frappe-bird-grey.svg{% endif %}">
+				</a>
+			</div>
+			<div class="flex4">
+				{% if title %}<h3 class="h3">{{ title }}</h3>{% endif %}
+				{{ content }}
+			</div>
+		</div>
+	</div>
+{% endmacro %}

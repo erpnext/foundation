@@ -1,0 +1,16 @@
+<header class="page-head flex space-between">
+	<div class="ellipsis">
+		<h1 class="h1">
+			{{ title }}
+		</h1>
+	</div>
+	<div class="">
+		<button class="btn">Refresh</button>
+		<button class="btn btn-blue">New</button>
+		{% if self.header_actions() %}
+		<div class="page-header-actions-block">
+			{% block header_actions %}{% endblock %}
+		</div>
+		{% endif %}
+	</div>
+</header>

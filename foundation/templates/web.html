@@ -8,40 +8,11 @@
 			{% include "templates/includes/web_sidebar.html" %}
 		</div>
 		<div class="page-main">
-			<div class="page-head">
-				<div class=''>
-					<div class="page-breadcrumbs">
-						{% block breadcrumbs %}
-							{% include 'templates/includes/breadcrumbs.html' %}
-						{% endblock %}
-					</div>
-				</div>
-				<div class="">
-					{% block header %}{% endblock %}
-				</div>
-				<div class="">
-					{% if show_search %}
-					<div class="page-search-block">
-						{% block search %}
-						{% include
-						'templates/includes/search_box.html' %}
-						{% endblock %}
-					</div>
-					{% endif %}
-
-					{% if self.header_actions() %}
-					<div class="page-header-actions-block">
-						{% block header_actions %}{% endblock %}
-					</div>
-					{% endif %}
-				</div>
-			</div>
+			{% include "foundation/templates/includes/page-head.html" %}
 			<div class="page-body">
 				{%- block page_content -%}{%- endblock -%}
 			</div>
 		</div>
-	</div>
-		<!-- sidebar ends -->
 	</div>
 </main>
 {% endblock %}
