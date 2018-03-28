@@ -16,7 +16,7 @@
 {% endblock %}
 
 {% block body %}
-<body data-path="{{ path }}">
+<body class="container m0auto page-shadow" data-path="{{ path }}">
     {%- block navbar -%}{% include "templates/includes/navbar/navbar.html" %}{%- endblock -%}
     {% block content %}
     {{ content }}

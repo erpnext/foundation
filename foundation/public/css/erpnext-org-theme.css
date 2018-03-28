@@ -1,5 +1,5 @@
-@import "/assets/css/frappe-css.css";
 @import "reset.css";
+@import "/assets/css/frappe-css.css";
 .indicator,
 .indicator-right {
   background: none;
@@ -73,4 +73,7 @@
 }
 .logo-img {
   width: var(--unit-3);
+}
+.page-shadow {
+  box-shadow: 0 0 30px -5px var(--light-grey);
 }
