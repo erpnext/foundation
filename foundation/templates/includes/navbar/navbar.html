@@ -1,13 +1,16 @@
 <nav class="navbar" role="navigation">
-	<div class="flex space-between align-item-center border-bottom ph4 pv1">
+	<div class="flex space-between align-item-center border-bottom ph4 pv2">
 		<div class="left">
 			<a class="logo flex align-item-center" href="{{ url_prefix }}{{ home_page or "/"}}">
 				<img class="logo-img mr1" src="/assets/foundation/img/erpnext-logo.svg" alt="Open Source ERP Software">
 			<span>ERPNext.org</span>
 			</a>
 		</div>
-		<div class="right">
-			{% include 'templates/includes/search_box.html' %}
+		<div class="right flex align-item-center">
+			{% include 'foundation/templates/includes/search-box.html' %}
+			<a class="p1 hover-light-grey border-radius" href="/login">
+				Login
+			</a>
 		</div>
 	</div>
 </nav>
