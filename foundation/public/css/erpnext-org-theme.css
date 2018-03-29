@@ -75,7 +75,7 @@
   width: var(--unit-3);
 }
 .page-shadow {
-  box-shadow: 0 0 30px -5px var(--light-grey);
+  box-shadow: 0 0 0.5rem 0 var(--light-grey);
 }
 .search-icon {
   fill: var(--dark-grey);
