@@ -1,0 +1,37 @@
+{% extends "foundation/templates/web.html" %}
+{% block meta_block %}
+	{% include "templates/includes/meta_block.html" %}
+{% endblock %}
+{% block page_content %}
+<article class="blog-content" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="blog-info">
+	<p class="post-by">
+		<a href="/blog?blogger={{ blogger }}" class="no-decoration">{{ _("By") }} {{ blogger_info and blogger_info.full_name or full_name }}</a>
+		Posted on {{ frappe.format_date(published_on) }} in <a href="/blog?blog_category={{ blog_category }}" class="no-decoration">{{ category.title }}</a> .{{ comment_text }}
+	</p>
+	</div>
+	<div itemprop="articleBody" class="longform blog-text">
+	{{ content }}
+	</div>
+</article>
+{% if blogger_info %}
+<div class="flex align-item-center mb4">
+	<div class="thumb-medium pr2">
+	<img itemprop="thumbnailUrl" src="{{ blogger_info.avatar or "/assets/frappe/images/default-avatar.png" }}" />
+	</div>
+	<div class="inline-block">
+		<h3 class="h3">
+			<a href="/blog?blogger={{ blogger_info.name }}">{{ blogger_info.full_name }}</a>
+		</h3>
+		<p class="text-light-grey">{%if blogger_info.bio %}{{ blogger_info.bio }}{% endif %}</p>
+	</div>
+</div>
+{% endif %}
+<div class="blog-comments pv4 border-top">
+	{% include 'templates/includes/comments/comments.html' %}
+</div>
+</div>
+<script>
+    frappe.ready(function() { frappe.set_search_path("/blog"); })
+</script>
+{% endblock %}

@@ -1,20 +1,26 @@
-<nav class="navbar top-sticky bg-light" role="navigation">
+<nav class="navbar top-sticky bg-white" role="navigation">
 	<div class="flex space-between align-item-center border-bottom ph4 pv2">
 		<div class="left flex align-item-center">
-			<a class="logo flex align-item-center p1" href="{{ url_prefix }}{{ home_page or "/"}}">
+			<a class="logo flex align-item-center pr1" href="{{ url_prefix }}{{ home_page or "/"}}">
 				<img class="logo-img" src="/assets/foundation/img/erpnext-logo.svg" alt="Open Source ERP Software">
 			<!-- <span>ERPNext.org</span> -->
 			</a>
-			<ul class="list-unstyled flex">
-				<li>
-					<span class="fg-light-grey">&#10095;</span>
-					<a class="hover:bg-light-grey p1 border-radius" href="">Service Providers</a>
-				</li>
-				<li>
-					<span class="fg-light-grey">&#10095;</span>
-					<a class="hover:bg-light-grey p1 border-radius" href="">Cloud8</a>
-				</li>
+			<!-- breadcrumbs -->
+			{% if parents and parents|length > 0 %}
+			<ul class="breadcrumb list-unstyled flex" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<span class="text-dark-grey">&#10093;</span>
+				{% for parent in parents %}
+					<li>
+						<a class="hover:bg-light-grey p1 border-radius" href="{{ url_prefix }}{{ parent.route | abs_url }}" itemprop="url">
+						<span itemprop="title">{{ parent.title or parent.label or parent.name or "" }}</span>
+						</a>
+						<span class="text-dark-grey">&#10093;</span>
+					</li>
+				{% endfor %}
+				<li class="pl1 text-black"><span itemprop="title">{{ title or "" }}</span></li>
 			</ul>
+			{% endif %}
+			<!-- breadcrumbs -->
 		</div>
 		<div class="right flex align-item-center">
 			{% include 'foundation/templates/includes/search-box.html' %}

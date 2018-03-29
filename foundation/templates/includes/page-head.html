@@ -1,12 +1,10 @@
-<header class="page-head flex space-between align-item-center mb4">
+<header class="page-head flex space-between align-item-center">
 	<div class="ellipsis">
-		<h1 class="h1 mb0">
+		<h1 class="h1 text-black">
 			{{ title }}
 		</h1>
 	</div>
 	<div class="">
-		<button class="btn">Refresh</button>
-		<button class="btn btn-blue">New</button>
 		{% if self.header_actions() %}
 		<div class="page-header-actions-block">
 			{% block header_actions %}{% endblock %}
