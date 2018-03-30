@@ -8,7 +8,10 @@
 			{% include "foundation/templates/includes/sidebar/sidebar.html" %}
 		</div>
 		<div class="page-main flex-4 p6">
-			{% include "foundation/templates/includes/page-head.html" %}
+			<div class="mb4">
+				{% include "foundation/templates/includes/page-head.html" %}
+				{% block page_subtitle %}{% endblock %}
+			</div>
 			<div class="page-body">
 				{%- block page_content -%}{%- endblock -%}
 			</div>

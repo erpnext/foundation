@@ -3,7 +3,9 @@
 		<div class="left flex align-item-center">
 			<a class="logo flex align-item-center pr1" href="{{ url_prefix }}{{ home_page or "/"}}">
 				<img class="logo-img" src="/assets/foundation/img/erpnext-logo.svg" alt="Open Source ERP Software">
-			<!-- <span>ERPNext.org</span> -->
+			{% if not parents %}
+					<span class="pl2">ERPNext.org</span>
+			{% endif %}	
 			</a>
 			<!-- breadcrumbs -->
 			{% if parents and parents|length > 0 %}
