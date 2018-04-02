@@ -1,0 +1,300 @@
+{
+ "accept_payment": 0, 
+ "allow_comments": 0, 
+ "allow_delete": 0, 
+ "allow_edit": 0, 
+ "allow_incomplete": 0, 
+ "allow_multiple": 0, 
+ "allow_print": 0, 
+ "amount": 0.0, 
+ "amount_based_on_field": 0, 
+ "creation": "2018-03-27 14:58:13.838189", 
+ "currency": "INR", 
+ "doc_type": "ESoC Applicant", 
+ "docstatus": 0, 
+ "doctype": "Web Form", 
+ "idx": 0, 
+ "introduction_text": "", 
+ "is_standard": 1, 
+ "login_required": 0, 
+ "max_attachment_size": 0, 
+ "modified": "2018-04-02 19:02:37.665216", 
+ "modified_by": "Administrator", 
+ "module": "ERPNext Foundation", 
+ "name": "apply-for-esoc", 
+ "owner": "Administrator", 
+ "payment_button_label": "Buy Now", 
+ "published": 1, 
+ "route": "apply-for-esoc", 
+ "show_sidebar": 0, 
+ "sidebar_items": [], 
+ "success_message": "", 
+ "success_url": "/esoc#timeline", 
+ "title": "Apply for ESoC", 
+ "web_form_fields": [
+  {
+   "fieldname": "username", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Username", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "first_name", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "First Name", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "last_name", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Last Name", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "mobile_no", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Mobile No.", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Column Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "email_id", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Email ID", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "date_of_birth", 
+   "fieldtype": "Date", 
+   "hidden": 0, 
+   "label": "Date of Birth", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "nationality", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Nationality", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "gender", 
+   "fieldtype": "Link", 
+   "hidden": 0, 
+   "label": "Gender", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "Gender", 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "university_name", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "University Name", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "university_city", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "University City", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "field_of_study", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Field of Study", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Column Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "college_name", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "College Name", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "university_country", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "University Country", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "university_website", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "University Website", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "project_description", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "Briefly describe the Projects you've worked on", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "github_link", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Your Github Link", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Column Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "noc", 
+   "fieldtype": "Attach", 
+   "hidden": 0, 
+   "label": "NOC", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "project_details", 
+   "fieldtype": "Table", 
+   "hidden": 0, 
+   "label": "Project Details", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "options": "ESoC Project Detail", 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "", 
+   "fieldtype": "Section Break", 
+   "hidden": 0, 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
+   "fieldname": "terms_and_conditions", 
+   "fieldtype": "Check", 
+   "hidden": 0, 
+   "label": "I agree with the ", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 1
+  }
+ ]
+}
