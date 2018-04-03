@@ -48,6 +48,10 @@
 	font-size: 1.5rem;
 }
 
+.text-small {
+	font-size: 1.2rem;
+}
+
 .bottom-spacer {
 	margin-top: 2.5rem;
 	margin-bottom: 2.5rem;
@@ -178,11 +182,10 @@ ul, ol{
 }
 
 /* ----------- INDEX ----------- */
-.container {
+.container-wrapper {
 	width: 80%;
 	max-width: 1200px;
 	margin: 0 auto;
-	/* text-align: center; */
 }
 
 .tiny-content {
@@ -406,11 +409,11 @@ time {
 	font-weight: 400;
 }
 .help-padding {
-	padding: 1rem 4rem !important;
+	padding: 1rem 1rem;
 }
 @media screen and (min-width: 767px) {
 	.help-padding {
-		padding: 3rem 8rem !important;
+		padding: 3rem 1.5rem;
 	}
 }
 
