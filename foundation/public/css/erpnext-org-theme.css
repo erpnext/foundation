@@ -295,6 +295,17 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 767px) {
+  .navbar-header {
+	  flex-direction: inherit;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .right {
+	padding-top: 1rem;
+  }
 }
 .navbar-icon {
   width: 1.5rem;
