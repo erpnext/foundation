@@ -1,12 +1,6 @@
 {%- set post = doc -%}
-<div class="list-item">
-	<div class="flex">
-		<div class="mr2">
-			<img class="thumb-medium" alt="{{ post.full_name }}'s profile picture" itemprop="thumbnailUrl" src='{{ post.avatar or "/assets/frappe/images/default-avatar.png" }}' />
-		</div>
-		<div class="text-dark-grey">
-			<h2 class="h2 text-black"><a href="/{{ post.route }}">{{ post.title }}</a></h1>
-			<p>By <a href="/blog?blogger={{ post.blogger }}">{{ post.full_name }}</a>. Posted on
+{% macro  meta() %}
+<p>By <a href="/blog?blogger={{ post.blogger }}">{{ post.full_name }}</a>. Posted on
 				{{ frappe.format_date(post.published_on) }}
 				{% if post.comments %}
 				<span style='display: inline-block; margin-left: 10px;'>
@@ -14,6 +8,6 @@
 				</span>
 				{% endif %}
 			</p>
-		</div>
-	</div>
-</div>
+{% endmacro %}
+{% from "foundation/templates/includes/macros.html" import list_item%}
+{{list_item(post.route, post.avatar, post.title, meta())}}

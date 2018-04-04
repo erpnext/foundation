@@ -1,3 +1,4 @@
+/* palette colors*/
 @import "reset.css";
 @import "/assets/css/frappe-css.css";
 .indicator,
@@ -24,7 +25,7 @@
 }
 .indicator.grey::before,
 .indicator-right.grey::after {
-  background: #F0F4F7;
+  background: #f0f4f7;
 }
 .indicator.blue::before,
 .indicator-right.blue::after {
@@ -52,19 +53,19 @@
 }
 .indicator.black::before,
 .indicator-right.black::after {
-  background: #36414C;
+  background: #36414c;
 }
 .indicator.yellow::before,
 .indicator-right.yellow::after {
-  background: #FEEF72;
+  background: #feef72;
 }
 .indicator.light-blue::before,
 .indicator-right.light-blue::after {
-  background: #7CD6FD;
+  background: #7cd6fd;
 }
 .indicator.lightblue::before,
 .indicator-right.lightblue::after {
-  background: #7CD6FD;
+  background: #7cd6fd;
 }
 .modal-header .indicator {
   float: left;

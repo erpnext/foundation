@@ -16,18 +16,26 @@
 	</div>
 {% endmacro %}
 
-{% macro list(link, image, title, subtitle) %}
-	<div class="list list-unstyled">
-		<div class="list-item flex">
-			<div class="flex1">
-				<a class="flex1" href="{{ link or "#" }}"
-				<img class="thumbnail" src="{% if image %}{% if not '/' in image %}/assets/foundation/img/{% endif %}{{ image }}{% else %}/assets/foundation/img/frappe-bird-grey.svg{% endif %}">
-				</a>
-			</div>
-			<div class="flex4">
-				{% if title %}<h3 class="h3">{{ title }}</h3>{% endif %}
-				{{ content }}
-			</div>
-		</div>
+{% macro list_item(link, image, title, subtitle) %}
+<div class="list-item flex mb2">
+	<div>
+		<a href="{{ link or "#" }}">
+			<img class="thumb-medium mr2" src="{% if image %}{% if not '/' in image %}/assets/foundation/img/{% endif %}{{ image }}{% else %}/assets/foundation/img/frappe-bird-grey.svg{% endif %}">
+		</a>
 	</div>
+	<div>
+		<a href="{{ link or "#" }}">
+			{% if title %}<h3 class="h3">{{ title }}</h3>{% endif %}
+		</a>
+		<a href="{{ link or "#" }}">
+			{% if subtitle %}<p>{{ subtitle }}</p>{% endif %}
+		</a>
+		<a href="{{ link or "#" }}">
+			{% if meta %}{{ meta  }}{% endif %}
+		</a>
+		{% if content %}
+		{{ content }}
+		{% endif %}
+	</div>
+</div>
 {% endmacro %}
