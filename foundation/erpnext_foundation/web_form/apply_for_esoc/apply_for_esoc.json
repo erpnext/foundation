@@ -18,7 +18,7 @@
  "is_standard": 1, 
  "login_required": 0, 
  "max_attachment_size": 0, 
- "modified": "2018-04-03 11:26:06.421781",
+ "modified": "2018-04-07 11:19:35.909966", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "apply-for-esoc", 
@@ -248,15 +248,15 @@
    "reqd": 0
   }, 
   {
-   "fieldname": "project_details", 
-   "fieldtype": "Table", 
+   "fieldname": "app_of_interest", 
+   "fieldtype": "Select", 
    "hidden": 0, 
-   "label": "Project Details", 
+   "label": "Which app are you interested in?", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "ESoC Project Detail", 
+   "options": "Accounting App\nCRM\nPOS\nInventory", 
    "read_only": 0, 
-   "reqd": 1
+   "reqd": 0
   }, 
   {
    "fieldname": "", 
