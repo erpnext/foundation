@@ -1,3 +1,4 @@
+/* palette colors*/
 /*utilities*/
 @import "reset.css";
 .align-items-center {
@@ -30,7 +31,7 @@
   background-color: #fafbfc;
 }
 .dark-bg {
-  background-color: #2E3338;
+  background-color: #2e3338;
 }
 .text-left {
   text-align: left;
@@ -42,7 +43,7 @@
   text-align: center;
 }
 .text-muted {
-  color: #8D99A6;
+  color: #8d99a6;
 }
 .text-light {
   color: #6c7680;
@@ -91,7 +92,7 @@
   border-top: 1px solid #d1d8dd;
 }
 .border-top-light {
-  border-top: 1px solid #EBEFF2;
+  border-top: 1px solid #ebeff2;
 }
 .saturate {
   filter: grayscale(100%);
@@ -205,7 +206,7 @@
 }
 .indicator.grey::before,
 .indicator-right.grey::after {
-  background: #F0F4F7;
+  background: #f0f4f7;
 }
 .indicator.blue::before,
 .indicator-right.blue::after {
@@ -233,19 +234,19 @@
 }
 .indicator.black::before,
 .indicator-right.black::after {
-  background: #36414C;
+  background: #36414c;
 }
 .indicator.yellow::before,
 .indicator-right.yellow::after {
-  background: #FEEF72;
+  background: #feef72;
 }
 .indicator.light-blue::before,
 .indicator-right.light-blue::after {
-  background: #7CD6FD;
+  background: #7cd6fd;
 }
 .indicator.lightblue::before,
 .indicator-right.lightblue::after {
-  background: #7CD6FD;
+  background: #7cd6fd;
 }
 .modal-header .indicator {
   float: left;
@@ -258,7 +259,7 @@ a {
   transition: color 0.3s ease-out;
 }
 a:hover {
-  color: #2E3338;
+  color: #2e3338;
   text-decoration: underline;
 }
 a:focus,
@@ -295,17 +296,6 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-}
-@media screen and (min-width: 767px) {
-  .navbar-header {
-	  flex-direction: inherit;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .right {
-	padding-top: 1rem;
-  }
 }
 .navbar-icon {
   width: 1.5rem;
@@ -317,14 +307,14 @@ a:visited {
   font-weight: bold;
   letter-spacing: 0.005em;
   text-decoration: none;
-  color: #36414C;
+  color: #36414c;
 }
 .navbar-brand:hover {
   text-decoration: none;
-  color: #2E3338;
+  color: #2e3338;
 }
 .navbar-brand:visited {
-  color: #36414C;
+  color: #36414c;
 }
 .menu {
   display: flex;
@@ -392,7 +382,7 @@ a:visited {
 }
 .page {
   padding: 0 1rem;
-  border-top: 1px solid #EBEFF2;
+  border-top: 1px solid #ebeff2;
 }
 @media screen and (min-width: 767px) {
   .page {
@@ -451,7 +441,7 @@ a:visited {
   transition: all 0.3s ease-out;
 }
 .primary-links:hover {
-  color: #2E3338;
+  color: #2e3338;
   text-decoration: none;
 }
 .button {
@@ -493,7 +483,7 @@ a:visited {
 .button-secondary {
   font-size: 1.5em;
   color: #6c7680;
-  background: #F0F4F7;
+  background: #f0f4f7;
   border-right: 0;
   border-left: 0;
   border-top: 0;
@@ -501,14 +491,14 @@ a:visited {
 }
 .button-secondary:hover {
   background: #ffffff;
-  color: #2E3338;
+  color: #2e3338;
 }
 .secondary-link {
   color: #6c7680;
   transition: color 0.3s ease-out;
 }
 .secondary-link:hover {
-  color: #2E3338;
+  color: #2e3338;
 }
 .bulleted-list {
   margin: 0;
@@ -524,10 +514,10 @@ a:visited {
   padding-left: 0;
 }
 .footer-email-input {
-  border: 1px solid #8D99A6;
+  border: 1px solid #8d99a6;
   border-radius: 0.25rem;
   padding: 0.25rem;
-  color: #8D99A6;
+  color: #8d99a6;
   margin-right: 0.5rem;
 }
 .page_content li,
@@ -559,15 +549,15 @@ a:visited {
 }
 .breadcrumb a {
   background-color: transparent;
-  color: #8D99A6;
+  color: #8d99a6;
 }
 .breadcrumb a:focus,
 .breadcrumb a:visited {
   background-color: transparent;
-  color: #8D99A6;
+  color: #8d99a6;
 }
 .breadcrumb a:hover {
-  color: #2E3338;
+  color: #2e3338;
   transition: color 0.3s ease-out;
 }
 .breadcrumb > li {
@@ -575,17 +565,17 @@ a:visited {
 }
 .breadcrumb > li + li::before {
   padding: 0 5px;
-  color: #8D99A6;
+  color: #8d99a6;
   content: "/\00a0";
 }
 .sidebar-block {
   padding: 4rem 0;
   min-width: 200px;
-  border-top: 1px solid #EBEFF2;
+  border-top: 1px solid #ebeff2;
 }
 @media screen and (min-width: 767px) {
   .sidebar-block {
-    border-right: 1px solid #EBEFF2;
+    border-right: 1px solid #ebeff2;
     border-top: 0;
   }
 }
@@ -606,10 +596,10 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #EBEFF2;
+  border-top: 1px solid #ebeff2;
 }
 .footer-link {
-  color: #8D99A6;
+  color: #8d99a6;
   transition: color 0.3s ease-out;
 }
 .footer-link:hover {
@@ -617,7 +607,7 @@ hr {
 }
 .button-dark {
   color: #fff;
-  background: #8D99A6;
+  background: #8d99a6;
   border-right: 0;
   border-left: 0;
   border-top: 0;
@@ -664,7 +654,7 @@ hr {
 }
 /*progress bar*/
 .clickable a {
-  color: #36414C;
+  color: #36414c;
 }
 .clickable a:focus {
   outline: 0;
@@ -675,7 +665,7 @@ hr {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #8D99A6;
+  color: #8d99a6;
   text-align: left;
 }
 th {
@@ -949,7 +939,7 @@ img.blog-cover-image,
   cursor: pointer;
 }
 .dropdown-menu li:hover {
-  background-color: #F0F4F7;
+  background-color: #f0f4f7;
 }
 .display-block {
   display: block;
@@ -978,13 +968,13 @@ img.blog-cover-image,
 }
 .blog-list-item {
   padding-bottom: 4rem;
-  border-bottom: 1px solid #EBEFF2;
+  border-bottom: 1px solid #ebeff2;
 }
 .blog-list-item:last-child {
   border-bottom: 0;
 }
 .blog-list-item a {
-  color: #36414C;
+  color: #36414c;
 }
 .blog-list-item h1 {
   margin-top: 0;
@@ -1026,7 +1016,7 @@ img.blog-cover-image,
   font-size: 1rem;
 }
 .blogger-name a {
-  color: #36414C;
+  color: #36414c;
 }
 .avatar {
   display: inline-block;
@@ -1091,11 +1081,11 @@ img.blog-cover-image,
 }
 .with-border a {
   text-decoration: none;
-  color: #36414C;
+  color: #36414c;
 }
 .with-border a:hover {
   text-decoration: none;
-  color: #2E3338;
+  color: #2e3338;
 }
 .with-border:hover {
   background-color: #fafbfc;
@@ -1142,7 +1132,7 @@ img.blog-cover-image,
   max-width: 250px;
 }
 .community-bg {
-  background-image: linear-gradient(to bottom, rgba(46, 51, 56, 0.5), #2E3338), url("/assets/foundation/img/community-2016.jpg");
+  background-image: linear-gradient(to bottom, rgba(46, 51, 56, 0.5), #2e3338), url("/assets/foundation/img/community-2016.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
