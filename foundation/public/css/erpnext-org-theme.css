@@ -2,33 +2,39 @@
 @import "font.css";
 @import "/assets/css/frappe-css.css";
 @import "variables.css";
+
 a {
-  color: var(--dark-grey);
-  /*  */
+	color: var(--dark-grey);
 }
+
 .js-search-form {
-  position: relative;
+	position: relative;
 }
+
 .js-search-input-icon {
-  position: absolute;
-  right: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
+	position: absolute;
+	right: 1.5rem;
+	top: 50%;
+	transform: translateY(-50%);
 }
+
 .js-search-icon {
-  cursor: pointer;
+	cursor: pointer;
 }
+
 .js-search-input {
-  margin: 0 0.75rem;
-  border: 1px solid var(--fn-green-light);
+	border: 1px solid var(--fn-green-light);
+	margin: 0 0.75rem;
 }
 
 .logo {
-  color: var(--fn-black);
+	color: var(--fn-black);
 }
+
 .logo:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
+
 .logo-img {
-  width: var(--unit-3);
+	width: var(--unit-3);
 }

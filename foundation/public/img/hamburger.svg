@@ -1,0 +1,51 @@
+<svg
+   width="6.0839844mm"
+   height="4.4414072mm"
+   viewBox="0 0 6.0839844 4.4414072"
+   version="1.1"
+   id="svg2976"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="hamburger.svg">
+  <defs
+     id="defs2970" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="31.678384"
+     inkscape:cx="10.920143"
+     inkscape:cy="7.2635739"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2973">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.9941406,-91.664062)">
+    <path
+       d="M 0 0 L 0 2 L 22.994141 2 L 22.994141 0 L 0 0 z M 0 7.3886719 L 0 9.390625 L 22.994141 9.390625 L 22.994141 7.3886719 L 0 7.3886719 z M 0 14.785156 L 0 16.787109 L 22.994141 16.787109 L 22.994141 14.785156 L 0 14.785156 z "
+       transform="matrix(0.26458333,0,0,0.26458333,5.9941406,91.664062)"
+       id="path2530" />
+  </g>
+</svg>
