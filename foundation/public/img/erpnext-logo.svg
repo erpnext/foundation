@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg5271"
    version="1.1"
    viewBox="0 0 87.312531 87.312515"
    height="330.00006"
-   width="330.00012">
+   width="330.00012"
+   sodipodi:docname="erpnext-logo.svg"
+   inkscape:version="0.92.2 2405546, 2018-03-11">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="1.0113768"
+     inkscape:cx="32.54099"
+     inkscape:cy="112.60495"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5271" />
   <defs
      id="defs5265" />
   <metadata
@@ -20,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -60,7 +84,7 @@
              transform="translate(-95.250002)"
              id="g1416-4-9">
             <path
-               style="opacity:1;vector-effect:none;fill:#7574ff;fill-opacity:1;stroke:none;stroke-width:3.96875262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+               style="opacity:1;vector-effect:none;fill:#00e45a;fill-opacity:0.98039216;stroke:none;stroke-width:3.96875262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
                d="m 1501.1846,130.70348 h 60.8542 c 7.329,0 13.2292,5.9002 13.2292,13.22916 v 60.85419 c 0,7.32896 -5.9002,13.22917 -13.2292,13.22917 h -60.8542 c -7.3289,0 -13.2292,-5.90021 -13.2292,-13.22917 v -60.85419 c 0,-7.32896 5.9003,-13.22916 13.2292,-13.22916 z"
                id="path1414-3-4" />
           </g>
@@ -75,7 +99,7 @@
          transform="matrix(0.26458333,0,0,0.26458333,1646.1645,569.35379)"
          d="M 164.92578 228.00977 A 412.60453 412.60453 0 0 0 0 262.94922 L 0 280 C 0 307.70001 22.30022 330 50 330 L 280 330 C 307.69978 330 330 307.70001 330 280 L 330 262.70508 A 412.60453 412.60453 0 0 0 164.92578 228.00977 z "
          clip-path="none"
-         style="opacity:1;vector-effect:none;fill:#6564f9;fill-opacity:1;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+         style="opacity:1;vector-effect:none;fill:#05d456;fill-opacity:1;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
       <g
          style="fill:#4a15c6;fill-opacity:1"
          transform="translate(2.8144523,0.84784259)"
