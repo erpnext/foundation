@@ -34,7 +34,7 @@ section {
 }
 
 body {
-	font-family: 'Metropolis', sans-serif;
+	font-family: "Metropolis", sans-serif;
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
 	text-rendering: optimizeLegibility;
