@@ -26,7 +26,11 @@
     <script type="text/javascript" src="{{ link|abs_url }}"></script>
     {%- endfor -%}
 
-    {%- block script %}{%- endblock %}
+    {%- block script %}
+        <script>
+        {% include 'public/js/index.js' %}
+        </script>
+    {%- endblock %}
 
     <!-- csrf_token -->
 </body>

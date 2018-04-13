@@ -6,15 +6,18 @@ a {
   color: var(--dark-grey);
   /*  */
 }
+
 .js-search-form {
-  position: relative;
+  right: 0.75rem;
 }
+
 .js-search-input-icon {
   position: absolute;
-  right: 1.5rem;
+  right: 1.75rem;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .js-search-icon {
   cursor: pointer;
 }
