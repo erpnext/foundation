@@ -9,29 +9,30 @@
 {% endblock %}
 
 {% block body %}
-<body class="container m0auto page-shadow text-dark-grey" data-path="{{ path }}">
-    {%- block navbar -%}{% include "templates/includes/navbar/navbar.html" %}{%- endblock -%}
-    {% block content %}
-    {{ content }}
-    {% endblock %}
-    {%- block footer -%}{% include "templates/includes/footer/footer.html" %}{%- endblock -%}
+<body class="bg-light-grey text-dark-grey" data-path="{{ path }}">
+    <div class="outter-container m0auto">
+        {%- block navbar -%}{% include "templates/includes/navbar/navbar.html" %}{%- endblock -%}
+        {% block content %}
+        {{ content }}
+        {% endblock %}
+        {%- block footer -%}{% include "templates/includes/footer/footer.html" %}{%- endblock -%}
 
-    {% block base_scripts %}
-    <!-- js should be loaded in body! -->
-    <script type="text/javascript" src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/frappe-web.min.js"></script>
-    {% endblock %}
+        {% block base_scripts %}
+        <!-- js should be loaded in body! -->
+        <script type="text/javascript" src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/frappe-web.min.js"></script>
+        {% endblock %}
 
-    {%- for link in web_include_js %}
-    <script type="text/javascript" src="{{ link|abs_url }}"></script>
-    {%- endfor -%}
+        {%- for link in web_include_js %}
+        <script type="text/javascript" src="{{ link|abs_url }}"></script>
+        {%- endfor -%}
 
-    {%- block script %}
+        {%- block script %}
         <script>
-        {% include 'public/js/index.js' %}
+            {% include 'public/js/index.js' %}
         </script>
-    {%- endblock %}
-
+        {%- endblock %}
+</div>
     <!-- csrf_token -->
 </body>
 {% endblock %}

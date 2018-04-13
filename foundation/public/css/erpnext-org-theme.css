@@ -37,3 +37,11 @@ a {
 .logo-img {
 	width: var(--unit-3);
 }
+
+.outter-container {
+	max-width: var(--screen-laptop);
+}
+
+.inner-container {
+	max-width: var(--screen-palm);
+}

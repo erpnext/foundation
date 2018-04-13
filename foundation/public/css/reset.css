@@ -38,6 +38,7 @@ body {
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
 	text-rendering: optimizeLegibility;
+	margin: 0;
 }
 
 [ tabindex = "-1" ]:focus {
