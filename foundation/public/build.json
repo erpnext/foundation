@@ -1,8 +1,0 @@
-{
-    "css/frappe-css-bak.css": [
-        "node_modules/frappe-css/dist/frappe-css.css"
-    ],
-    "foundation/css/erpnext-org-theme.css": [
-        "public/less/erpnext-org-theme.less"
-    ]
-}

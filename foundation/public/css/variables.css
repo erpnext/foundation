@@ -1,0 +1,20 @@
+/* variables */
+
+:root {
+	/* colors */
+	--fn-green: #10ce4c;
+	--fn-green-dark: #0ab862;
+	--fn-green-light: #cdf3d6;
+	--fn-green-light-ultra: #ecf9ef;
+	--fn-green-muted: #ecf0ee;
+
+	--fn-black: #434a44;
+	--dark-grey: #8c9591;
+	// --grey: #adb5bb;
+	// --light-grey: #ebeff2;
+	// --bg-light: #fafbfc;
+	// --white: #ffffff;
+	// --primary-color: var(--purple);
+
+	// --border-value: 1px solid var(--light-grey);
+}
