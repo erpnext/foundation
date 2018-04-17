@@ -39,8 +39,9 @@ home_page = "index"
 template_apps = ['foundation', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
-	"brand_html": "<img class='d-inline-block align-top' width='1.5rem' height='1.5rem' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
+	"brand_html": "<img class='d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
+			{"label": "blog", "url": "/blog", "right":1},
 			{"label": "Foundation", "child_items":[
 				{"label": "Chapter", "url": "/chapters","right": 1},
 				{"label": "Foundation Fellow", "url": "/foundation-fellow","right": 1}
