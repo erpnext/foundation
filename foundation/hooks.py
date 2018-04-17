@@ -41,6 +41,7 @@ website_context = {
 	# "navbar_search": 1,
 	"brand_html": "<img class='mr-1 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
+			{"label": "About", "url": "/about", "right":1},
 			{"label": "Blog", "url": "/blog", "right":1},
 			{"label": "Foundation", "child_items":[
 				{"label": "Chapter", "url": "/chapters","right": 1},
