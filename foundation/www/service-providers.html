@@ -15,15 +15,19 @@
 {% endmacro %}
 
 {% macro silver_member(m) %}
-<div class="box clickable {{ 'text-muted' if m.placeholder else '' }}"
-	 style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
-	<h4>{{ m.title }}</h4>
-	<p>{{ m.introduction | truncate(140) }}</p>
+<div class="col-sm-4">
+	<div class="card">
+		<div class="box clickable {{ 'text-muted' if m.placeholder else '' }}"
+			 style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+			<h4>{{ m.title }}</h4>
+			<p>{{ m.introduction | truncate(140) }}</p>
+		</div>
+	</div>
 </div>
 {% endmacro %}
 
 {% macro show_member(s) %}
-<div class='individual-member'>
+<div class='col-sm-4'>
 	<h3><a class='secondary-link bold' href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a></h3>
 	<p>
 	{{ s.introduction and s.introduction | truncate(140) }}
@@ -45,7 +49,7 @@
 
 <section class="silver bottom-spacer-4">
 	<h2>Silver Members</h2>
-	<div class="grid-of-three">
+	<div class="row">
 		{% for m in silver_members %}
 		{{ silver_member(m) }}
 		{% endfor %}
@@ -57,7 +61,7 @@
 </section>
 <section class="bottom-spacer-4">
 	<h2>Individual Members</h2>
-	<div class="grid-of-three">
+	<div class="row page-padding">
 		{% for s in individual_members %}
 		{{ show_member(s) }}
 		{% endfor %}
@@ -70,9 +74,9 @@
 {% if not form_dict.country %}
 <section>
 	<h2>Select by country</h2>
-	<div class='columns flex-wrap'>
+	<div class='row'>
 		{% for c in countries %}
-		<div class='column countries'>
+		<div class='col-sm-3'>
 			<p>
 			<a class="secondary-link" href="/service-providers?country={{ c[0] }}">{{ c[0] }} ({{ c[1] }})</a>
 			</p>
