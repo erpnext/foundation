@@ -5,3 +5,8 @@
 .stars {
 	width: 125px;
 }
+
+.breadcrumb {
+	background-color: #ffffff;
+	margin:  0 -2rem;
+}
