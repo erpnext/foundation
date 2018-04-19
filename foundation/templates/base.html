@@ -6,63 +6,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{% block title %} {{ title | striptags }} {% endblock %}</title>
 	<meta name="generator" content="frappe">
-    {% block favicon %}
+	{% block favicon %}
 	<link rel="shortcut icon"
-		href="{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}"
-		type="image/x-icon">
+	href="{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}"
+	type="image/x-icon">
 	<link rel="icon"
-		href="{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}"
-		type="image/x-icon">
-    {% endblock %}
+	href="{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}"
+	type="image/x-icon">
+	{% endblock %}
 	{%- block head -%}
-		{% block meta_block %}{% endblock %}
-        <link href="/assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
-        {% if path != '' %}
-			<link type="text/css" rel="stylesheet" href="/assets/frappe/css/hljs.css">
-			<link type="text/css" rel="stylesheet" href="/assets/frappe/css/font-awesome.css">
-			<link type="text/css" rel="stylesheet" href="/assets/frappe/css/octicons/octicons.css">
-        {% endif %}
+	{% block meta_block %}{% endblock %}
+	<link href="/assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/foundation/css/style.css" rel="stylesheet">
 	{%- endblock -%}
 	{%- block head_include %}{{ head_include or "" }}{% endblock -%}
 	{%- block style %}{%- endblock -%}
-    <script>
-		window.frappe = {};
-		frappe.ready_events = [];
-		frappe.ready = function(fn) {
-			frappe.ready_events.push(fn);
-		}
-		window.dev_server = {{ dev_server }};
-    </script>
+	<script>
+	window.frappe = {};
+	frappe.ready_events = [];
+	frappe.ready = function(fn) {
+	frappe.ready_events.push(fn);
+	}
+	window.dev_server = {{ dev_server }};
+	</script>
 </head>
 <body data-path="{{ path }}">
-    <div class="container">
-        {%- block navbar -%}{% include "templates/includes/navbar/navbar.html" %}{%- endblock -%}
-        {% block content %}
-            {{ content }}
-        {% endblock %}
-        {%- block footer -%}{% include "templates/includes/footer/footer.html" %}{%- endblock -%}
-    </div>
-        {% block base_scripts %}
-        <!-- js should be loaded in body! -->
-        <script type="text/javascript"
-            src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>
-        <script type="text/javascript"
-            src="/assets/js/frappe-web.min.js"></script>
+	<div class="container">
+		{%- block navbar -%}{% include "templates/includes/navbar/navbar.html" %}{%- endblock -%}
+		{% block content %}
+		{{ content }}
+		{% endblock %}
+		{%- block footer -%}{% include "templates/includes/footer/footer.html" %}{%- endblock -%}
+	</div>
+	{% block base_scripts %}
+	<!-- js should be loaded in body! -->
+	<script type="text/javascript"
+	src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript"
+	src="/assets/js/frappe-web.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="assets/bootstrap-4/js/bootstrap.min.js"></script>
-        {% endblock %}
-        {%- if js_globals is defined %}
-        <script>
-        {%- for key, value in js_globals.iteritems() %}
-        window.{{ key }} = "{{ value[0] }}";
-        {%- endfor -%}
-        </script>
-        {% endif -%}
-        {%- for link in web_include_js %}
-        <script type="text/javascript" src="{{ link|abs_url }}"></script>
-        {%- endfor -%}
-        {%- block script %}{%- endblock %}
-        <!-- csrf_token -->
-        {%- block body_include %}{{ body_include or "" }}{% endblock -%}
+{% endblock %}
+{%- if js_globals is defined %}
+<script>
+	{%- for key, value in js_globals.iteritems() %}
+window.{{ key }} = "{{ value[0] }}";
+{%- endfor -%}
+</script>
+{% endif -%}
+{%- for link in web_include_js %}
+<script type="text/javascript" src="{{ link|abs_url }}"></script>
+{%- endfor -%}
+{%- block script %}{%- endblock %}
+<!-- csrf_token -->
+{%- block body_include %}{{ body_include or "" }}{% endblock -%}
 </body>
 </html>

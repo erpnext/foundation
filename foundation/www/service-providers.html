@@ -5,7 +5,7 @@
 {% macro gold_member(m) %}
 <div class="media {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
 	<a class="mr-3" href="{{ m.route }}">
-		<img class="img-thumbnail" src="{{ m.image or '/assets/foundation/img/gold.png' }}">
+		<img class="media-img img-thumbnail" src="{{ m.image or '/assets/foundation/img/gold.png' }}">
 	</a>
 	<div class="media-body">
 		<h4 class="media-heading">{{ m.title }}</h4>
@@ -36,7 +36,7 @@
 {% endmacro %}
 
 {% block page_content %}
-<section class="gold bottom-spacer-4">
+<section class="my-5 px-3">
 	<h2>Gold Members</h2>
 	{% for m in gold_members %}
 	{{ gold_member(m) }}
@@ -47,7 +47,7 @@
 	{% endif %}
 </section>
 
-<section class="silver bottom-spacer-4">
+<section class="my-5 px-3">
 	<h2>Silver Members</h2>
 	<div class="row">
 		{% for m in silver_members %}
@@ -59,7 +59,7 @@
 		Become a Silver Member and get your company featured here</a></p>
 	{% endif %}
 </section>
-<section class="bottom-spacer-4">
+<section class="my-5 px-3">
 	<h2>Individual Members</h2>
 	<div class="row page-padding">
 		{% for s in individual_members %}
