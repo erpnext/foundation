@@ -6,22 +6,23 @@
 
 {% block content%}
 	<div class="page">
-        <section class='top-spacer hero text-center about'>
+        <section class='text-center my-3'>
             <div class="container">
-                <img class="about-img bottom-spacer" src="/assets/foundation/img/community-colored.jpg">
-                <h1 class="header-1">ERPNext Foundation</h1>
-                <p class="intro-copy text-medium">We are a Non Profit Foundation representing a community of ERPNext Users, Developers and Service Providers. Our goal is to provide a platform for the ERPNext Community to
-                come together, join hands and build assets to help build and enhance ERPNext around the world.</p><p class="intro-copy text-medium"> ERPNext Foundation aims to be a community driven organization and run in a transparent manner. If you want to be more involved in the ERPNext Community, read the <a href="/faq" class="secondary-link" target="_blank">FAQ</a>.
+                <img class="rounded mw-100 my-5" src="/assets/foundation/img/community-colored.jpg">
+                <h1 class="display-4 my-4">ERPNext Foundation</h1>
+                <p class="lead w-75 m-auto p-2">We are a Non Profit Foundation representing a community of ERPNext Users, Developers and Service Providers. Our goal is to provide a platform for the ERPNext Community to
+                come together, join hands and build assets to help build and enhance ERPNext around the world.</p>
+                <p class="lead w-75 m-auto p-2"> ERPNext Foundation aims to be a community driven organization and run in a transparent manner. If you want to be more involved in the ERPNext Community, read the <a href="/faq" class="secondary-link" target="_blank">FAQ</a>.
             </div>
         </section>
-        <div class="page-content">
-			<section class="container">
-				<hr>
-                <h1>{{ doc.team_members_heading }}</h1>
+        <hr class="my-5">
+        <section class="my-3">
+            <div class="container">
+                <h1 class="font-weight-light my-4">{{ doc.team_members_heading }}</h1>
 				{% for member in doc.team_members  %}
 					{{ media(member.full_name, member.bio, member.image_link) }}
 				{% endfor %}
-			<p><a href="/contact">Want to talk to someone in the foundation? Get in touch</a></p>
+			    <p class="lead p-2"><a href="/contact">Want to talk to someone in the foundation? Get in touch</a></p>
 			</section>
 		</div>
 	</div>
