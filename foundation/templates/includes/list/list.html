@@ -1,0 +1,26 @@
+{% if sub_title %}
+<h4 class="text-muted">{{ sub_title }}</h4>
+{% endif %}
+{% if not result -%}
+    <div class="text-muted no-results" style="min-height: 300px;">
+				<i class="mega-octicon octicon-telescope"></i>
+    		{{ no_result_message or _("Nothing to show") }}
+    </div>
+{% else %}
+    <div class="website-list" data-doctype="{{ doctype }}"
+        data-txt="{{ txt or '[notxt]' }}">
+        <!-- {% if not hide_filters -%}
+            {% include "templates/includes/list/filters.html" %}
+        {%- endif %} -->
+		{% if result_heading_template %}{% include result_heading_template %}{% endif %}
+
+    	<div class="row result">
+    		{% for item in result %}
+    			{{ item }}
+    		{% endfor %}
+    	</div>
+    	<div class="more-block mb-4 {% if not show_more -%} hide {%- endif %}">
+    		<button class="btn btn-more btn-secondary">{{ _("More") }}</button>
+    	</div>
+    </div>
+{%- endif %}

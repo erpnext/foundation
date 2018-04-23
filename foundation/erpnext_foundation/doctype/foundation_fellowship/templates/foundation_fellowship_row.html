@@ -1,14 +1,15 @@
-<div class="media my-3 bg-light p-4 clickable" style="cursor: pointer;" onclick="location.href='{{ doc.route }}'">
-	<a href="{{ link or "#" }}">
-		<img class="mr-3 media-img"
-		src="{% if image %}{% if not '/' in image %}/assets/foundation/img/{% endif %}{{ image }}{% else %}/assets/foundation/img/frappe-bird-grey.svg{% endif %}"
+<div class="col-xs-6 col-sm-3 p-4" style="cursor: pointer;" onclick="location.href='{{ doc.route }}'">
+	<div class="card">
+		<a href="{{ link or "#" }}">
+		<img class="card-img-top" src="{% if image %}{% if not '/' in image %}/assets/foundation/img/{% endif %}{{ image }}{% else %}/assets/foundation/img/frappe-bird-grey.svg{% endif %}"
 		style="{% if image and not '/' in image %}opacity: 0.4{% endif %}">
-	</a>
-		<div class="media-body mt-0">
-			{% if title %}<h4 class="media-heading">{{ doc.title }}</h4>{% endif %}
+		</a>
+		<div class="card-body mt-0">
+			{% if title %}<h5>{{ doc.title }}</h5>{% endif %}
 			 <p>
-            <span class='label'>{{ frappe.format_date(doc.creation) }}</span>
-            <span class='label'>{{ doc.country }}</span>
+				 <span class='label'>{{ frappe.format_date(doc.creation) }}</span><br>
+				<span class='label'>{{ doc.country }}</span>
 			</p>
-        </div>
+		</div>
+	</div>
 </div>

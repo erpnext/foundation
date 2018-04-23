@@ -3,7 +3,7 @@
 	{% for parent in parents %}
 		<li class="breadcrumb-item">
 			<a href="{{ url_prefix }}{{ parent.route | abs_url }}" itemprop="url">
-			<span itemprop="title">{{ parent.title or parent.label or parent.name or "" }}</span>
+				<span itemprop="title">{{ parent.title or parent.label or parent.name or "" }} </span>
 			</a>
 		</li>
 	{% endfor %}

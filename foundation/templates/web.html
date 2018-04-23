@@ -1,55 +1,53 @@
 {% extends base_template_path %}
 {% block hero %}{% endblock %}
 {% block content %}
-<div class="page px-3 pt-3">
-    <div class="row" id="page-{{ name or route }}"
-        data-path="{{ pathname }}" {%- if page_or_generator=="Generator" %} data-doctype="{{ doctype }}"{% endif %}>
-            {% if show_sidebar %}
-                <div class="pt-3 col-sm-2 border-right">
-                    {% include "templates/includes/web_sidebar.html" %}
-                </div>
-            {% endif %}
-        <div class="{% if show_sidebar %}pt-3 col-sm-10{% else %} col-sm-12 {% endif %}">
-            <div class="page-content-wrapper px-3">
-                <div class="row page-head">
-                    <div class='col-sm-12'>
-                        {% if not no_breadcrumbs and parents %}
-                        <div class="page-breadcrumbs">
-                            {% block breadcrumbs %}
-                            {% include 'templates/includes/breadcrumbs.html' %}
-                            {% endblock %}
-                        </div>
-                        {% endif %}
-                    </div>
-                    {% if doctype != 'Blog Post' %}
-                        <div class="col-sm-8 col-xs-6">
-                            {% block header %}{% endblock %}
-                        </div>
-                    {% endif %}
-                    <div class="col-sm-4 col-xs-6">
-                        {% if show_search %}
-                            <div class="page-search-block">
-                            {% block search %}
-                                {% include
-                                    'templates/includes/search_box.html' %}
-                            {% endblock %}
-                            </div>
-                        {% endif %}
+<div class="page">
+	<div class="row" id="page-{{ name or route }}" data-path="{{ pathname }}" {%- if page_or_generator=="Generator" %} data-doctype="{{ doctype }}"{% endif %}>
+		{% if show_sidebar %}
+		<div class="pt-4 col-sm-2 border-right">
+			{% include "templates/includes/web_sidebar.html" %}
+		</div>
+		{% endif %}
+		<div class="pt-3 {% if show_sidebar %}px-3 col-sm-10{% else %} col-sm-12 {% endif %}">
+			<div class="page-content-wrapper">
+				<div class="row page-head">
+					<div class='col-sm-12'>
+						{% if not no_breadcrumbs and parents %}
+						<div class="page-breadcrumbs">
+							{% block breadcrumbs %}
+							{% include 'templates/includes/breadcrumbs.html' %}
+							{% endblock %}
+						</div>
+						{% endif %}
+					</div>
+					{% if doctype != 'Blog Post' %}
+					<div class="col-sm-8 col-xs-6">
+						{% block header %}{% endblock %}
+					</div>
+					{% endif %}
+					<div class="col-sm-4 col-xs-6">
+						{% if show_search %}
+						<div class="page-search-block">
+							{% block search %}
+							{% include
+							'templates/includes/search_box.html' %}
+							{% endblock %}
+						</div>
+						{% endif %}
 
-                        {% if self.header_actions() %}
-                        <div class="page-header-actions-block">
-                            {% block header_actions %}{% endblock %}
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="page_content">
-                    {%- block page_content -%}{%- endblock -%}
-                </div>
-            </div>
-            <!-- sidebar ends -->
-        </div>
-    </div>
+						{% if self.header_actions() %}
+						<div class="page-header-actions-block">
+							{% block header_actions %}{% endblock %}
+						</div>
+						{% endif %}
+					</div>
+				</div>
+				<div class="page_content">
+					{%- block page_content -%}{%- endblock -%}
+				</div>
+			</div>
+			<!-- sidebar ends -->
+		</div>
+	</div>
 </div>
 {% endblock %}
-
