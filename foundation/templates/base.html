@@ -18,7 +18,9 @@
 	{% block meta_block %}{% endblock %}
 	<link href="/assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/assets/foundation/css/style.css" rel="stylesheet">
+	{% if path == 'login' or template == 'website/doctype/web_form/templates/web_form.html' %}
 	<link type="text/css" rel="stylesheet" href="/assets/css/frappe-web.css">
+	{% endif %}
 	{%- endblock -%}
 	{%- block head_include %}{{ head_include or "" }}{% endblock -%}
 	{%- block style %}{%- endblock -%}
