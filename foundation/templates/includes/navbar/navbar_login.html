@@ -10,13 +10,13 @@
 	<div class="dropdown-menu" role="menu">
 		{%- for child in post_login -%}
 			{%- if child.url -%}
-				<a href="{{ child.url | abs_url }}" {{ child.target or '' }}
+				<a class="dropdown-item" href="{{ child.url | abs_url }}" {{ child.target or '' }}
 					rel="nofollow">
 					{{ child.label }}
 				</a>
 			{%- endif -%}
 		{%- endfor -%}
-		<a href="/desk">{{ _('Switch To Desk') }}</a>
+		<a class="dropdown-item" href="/desk">{{ _('Switch To Desk') }}</a>
 	</div>
 </li>
 {% if not hide_login %}
