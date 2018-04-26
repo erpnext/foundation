@@ -2,7 +2,7 @@
 <h4 class="text-muted">{{ sub_title }}</h4>
 {% endif %}
 {% if not result -%}
-    <div class="text-muted no-results" style="min-height: 300px;">
+    <div class="text-muted no-results">
 				<i class="mega-octicon octicon-telescope"></i>
     		{{ no_result_message or _("Nothing to show") }}
     </div>
@@ -14,7 +14,7 @@
         {%- endif %} -->
 		{% if result_heading_template %}{% include result_heading_template %}{% endif %}
 
-    	<div class="row result">
+		<div class="result row">
     		{% for item in result %}
     			{{ item }}
     		{% endfor %}

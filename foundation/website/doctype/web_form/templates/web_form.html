@@ -14,9 +14,9 @@
 
 {% block header_actions %}
 	{% if not read_only and has_header %}
-	<div style="padding-bottom: 15px;">
+	<div>
 	    {% if login_required -%}
-		<a href="{{ cancel_url or pathname }}" class="btn btn-default btn-sm">
+		<a href="{{ cancel_url or pathname }}" class="btn btn-outline-secondary btn-sm">
 	    	{{ _("Cancel") }}</a>
 		{%- endif %}
 		{% if not is_list %}
@@ -373,7 +373,6 @@ window.web_form_settings = {
 {% endif %}
 </script>
 {% endblock %}
-
 {% block style %}
 <style>
 {% if style is defined %}{{ style }}{% endif %}
