@@ -1,6 +1,5 @@
 {% extends "templates/web.html" %}
 
-{% from "foundation/templates/includes/macros.html" import media %}
 {% block page_content %}
 <h1 class="media-heading">{{ title }}</h1>
 {% if membership_type %}
@@ -10,7 +9,7 @@
 	<div class="media">
 		<div class="media-left">
 			<a href="#">
-				<img class="media-object"
+				<img class="media-img media-object"
 					src="{{ image }}">
 			</a>
 		</div>
@@ -49,6 +48,6 @@
 	{{ details }}
 </section>
 <section>
-<p><a class='btn-primary btn' href="mailto:{{ email }}">Contact {{ title }}</a></p>
+<p><a class='mt-4 btn-primary btn' href="mailto:{{ email }}">Contact {{ title }}</a></p>
 </section>
 {% endblock %}

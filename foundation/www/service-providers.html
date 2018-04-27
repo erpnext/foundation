@@ -1,65 +1,68 @@
 {% extends "templates/web.html" %}
-
 {% from "templates/includes/macros.html" import media %}
-
 {% macro gold_member(m) %}
-<div class="media mb-4 {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
-	<a class="mr-3" href="{{ m.route }}">
-		<img class="media-img img-thumbnail" src="{{ m.image or '/assets/foundation/img/gold.png' }}">
-	</a>
-	<div class="media-body">
-		<h4 class="media-heading">{{ m.title }}</h4>
-		{{ m.introduction }}
+<div class="col-sm-6 mb-4">
+<div class="card h-100 {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+	<div class="card-body">
+		<a class="mr-3" href="{{ m.route }}">
+			<img class="media-img" src="{{ m.image or '/assets/foundation/img/gold.png' }}">
+		</a>
+		<h4 class="mt-4">{{ m.title }}</h4>
+		{{ m.introduction | truncate(140) }}
 	</div>
 </div>
+</div>
+
 {% endmacro %}
 
 {% macro silver_member(m) %}
-<div class="col-sm-4">
-	<div class="box clickable {{ 'text-muted' if m.placeholder else '' }}"
+<div class="col-sm-4 mb-4">
+	<div class="card h-100 clickable {{ 'text-muted' if m.placeholder else '' }}"
 		style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
-		<h4>{{ m.title }}</h4>
-		<p>{{ m.introduction | truncate(140) }}</p>
+		<div class="card-body">
+
+		<h4 class="card-title">{{ m.title }}</h4>
+		<p class="card-text">{{ m.introduction | truncate(140) }}</p>
 	</div>
+</div>
 </div>
 {% endmacro %}
 
 {% macro show_member(s) %}
-<div class='col-sm-4'>
-	<h3><a href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a></h3>
-	<p>
-	{{ s.introduction and s.introduction | truncate(140) }}
-	</p>
+<div class="col-sm-4 mb-4">
+	<a class="card-text" href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a>
 </div>
 {% endmacro %}
 
 {% block page_content %}
-<section class="px-3">
+<section class="mb-5">
 	<h3 class="mb-5">Gold Members</h3>
+	<div class="row">
 	{% for m in gold_members %}
 	{{ gold_member(m) }}
 	{% endfor %}
+	</div>
 	{% if has_gold_member %}
 	<p class="pt-3"><a href='/members'>
-		Become a Gold Member and get your company featured here</a></p>
+			Become a Gold Member and get your company featured here</a></p>
 	{% endif %}
 </section>
 
-<section class="my-5 px-3">
+<section class="my-5">
 	<h3 class="mb-5">Silver Members</h3>
 	<div class="row">
-		{% for m in silver_members %}
-		{{ silver_member(m) }}
-		{% endfor %}
-	</div>
+	{% for m in silver_members %}
+	{{ silver_member(m) }}
+	{% endfor %}
+</div>
 	{% if has_silver_member %}
 	<p class="pt-3"><a href='/members'>
 		Become a Silver Member and get your company featured here</a></p>
 	{% endif %}
 </section>
-<section class="my-5 px-3">
+<section class="my-5">
 	<h3 class="mb-5">Individual Members</h3>
-	<div class="row page-padding">
+	<div class="row">
 		{% for s in individual_members %}
 		{{ show_member(s) }}
 		{% endfor %}
@@ -70,8 +73,8 @@
 	{% endif %}
 </section>
 {% if not form_dict.country %}
-<section class="my-5 px-3">
-	<h3>Select by country</h3>
+<section class="my-5">
+	<h3 class="mb-5">Select by country</h3>
 	<div class='row'>
 		{% for c in countries %}
 		<div class='col-xs-2 col-sm-4 col-md-3'>
