@@ -129,3 +129,31 @@ img,
 	font-weight: normal;
 	margin-top: -1px;
 }
+
+/* comments */
+
+.comment-header {
+	border-bottom: 1px solid #ebeff2;
+	padding: 30px 0 15px;
+}
+
+.comment-row {
+	margin: 0 -15px;
+	padding: 15px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.comment-row h6 {
+	font-size: 0.75rem;
+}
+
+.hidden {
+	display:none;
+}
