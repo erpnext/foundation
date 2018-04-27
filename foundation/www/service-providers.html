@@ -1,6 +1,6 @@
-{% extends "foundation/templates/web.html" %}
+{% extends "templates/web.html" %}
 
-{% from "foundation/templates/includes/macros.html" import media %}
+{% from "templates/includes/macros.html" import media %}
 
 {% macro gold_member(m) %}
 <div class="media mb-4 {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">

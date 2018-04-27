@@ -36,7 +36,7 @@ web_include_css = "/assets/foundation/css/style.css"
 # application home page (will override Website Settings)
 home_page = "index"
 
-template_apps = ['foundation', 'erpnext', 'frappe']
+template_apps = ['foundation', 'frappe_theme', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
 	"brand_html": "<img class='mr-1 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
