@@ -1,7 +1,7 @@
 {% if doc.published %}
 
 <div class="mb-4 col-xs-12 col-sm-12">
-	<div class="card mx-3">
+	<div class="card">
 		<div class="card-body">
 			<a  href={{ route }}><h5 class="card-title">{{ doc.name | capitalize }}</h5></a>
 			<h6 class="card-subtitle mb-2 text-muted">Chapter Head : {{ frappe.db.get_value('User', chapter_head, 'full_name') }}</h6>
