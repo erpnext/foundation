@@ -23,7 +23,7 @@ Before you sell anything to anyone, you must be completely convinced that it is 
 You need not pay for self implementation, you can either use the 30-day trial at [erpnext.com](https://erpnext.com) or use the [Virtual Machine](https://erpnext.com/download). If you need support, you can first go through:
 
 1. [ERPNext user guide.](https://erpnext.org/docs/user/manual/en/)
-1. [Help product videos.](http://erpnext.org/docs/user/videos/learn)
+1. [Help product videos.](https://erpnext.org/docs/user/videos/learn)
 1. [Ask questions at the forum.](https://discuss.erpnext.com)
 
 If you need priority one-on-one help sessions, you can also buy a subscription service for it.
