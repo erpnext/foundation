@@ -40,19 +40,6 @@ def send_reminder(service_provider_details):
 	message = frappe.render_template("foundation/templates/emails/inactivity_reminder.md", service_provider_details)
 	frappe.sendmail(recipients=service_provider_details.email, subject="About account inactivity", message=message)
 
-def unpublish_service_provider():
-	for service_provider in frappe.get_all("Service Provider", fields=['email', 'name','title']):
-		if get_last_login_diff(service_provider.email) == 90:
-			frappe.db.set_value('Service Provider', service_provider.name, 'show_in_website', 0, update_modified=False)
-
-def publish_service_provider():
-	"""
-		If Service provider is unpublished and login then automatically enabled name in service provider listing
-	"""
-	for service_provider in frappe.get_all("Service Provider", fields=['email','name', 'title', 'show_in_website']):
-		if get_last_login_diff(service_provider.email) == 0 and service_provider.show_in_website == 0:
-			frappe.db.set_value('Service Provider', service_provider.name, 'show_in_website', 1, update_modified=False)
-
 def get_last_login_diff(user):
 	"""
 		Returns difference between todays date and last login date
