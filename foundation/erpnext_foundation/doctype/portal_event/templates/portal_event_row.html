@@ -1,11 +1,16 @@
-<div class='with-border clickable' style='max-width: 600px;'>
-<a href="/{{ doc.route }}">
-	<h3 style='margin-top: 0px'>{{ doc.event_title }}</h3>
-	<p>
-		<span class='label'>{{ doc.place }}</span>
-		<span class='label'>{{ frappe.format_date(date) }}</span>
-	</p>
-	<p>
-		{{ html2text(doc.details[:200]) }}{% if doc.details|len > 200 %}...{% endif %}</p>
-</a>
+<div class='mb-4 col-xs-12 col-sm-12'>
+	<div class="card">
+		<div class="card-body">
+			<a href="/{{ doc.route }}">
+				<h4 class="card-subtitle mb-2">{{ doc.event_title }}</h4>
+			</a>
+			<p class="card-text">
+				<span class='label'>{{ doc.place }}</span>
+				<span class='label'>{{ frappe.format_date(date) }}</span>
+			</p>
+			<p> 
+				{{ html2text(doc.details) | truncate(200) }}
+			</p>
+		</div>
+	</div>
 </div>

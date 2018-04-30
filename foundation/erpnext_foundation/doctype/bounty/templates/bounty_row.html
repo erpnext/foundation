@@ -1,11 +1,12 @@
 {% if doc.published %}
-<div style="margin-bottom: 30px; max-width: 600px" class="with-border clickable">
-	<a href={{ route }}>
-		<h3>{{ doc.feature_name }}</h3>
+<div class="col-xs-12 col-sm-12 mb-4">
+	<div class="card">
+		<div class="card-body">
+		<h4 class="card-title">{{ doc.feature_name }}</h4>
 		{% set bounty_progress = ((doc.bounty_collected/doc.goal)*100) %}
 		{% set comments = (json.loads(doc._comments or '[]'))|len %}
 		<div class="progress" style="height: 6px;">
-			<div class="progress-bar progress-bar-success" role="progressbar"
+			<div class="progress-bar bg-success" role="progressbar"
 				aria-valuenow="{{bounty_progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{bounty_progress}}%">
 				<span class="sr-only">{{ doc.bounty_collected }} of {{ doc.goal }}</span>
 			</div>
@@ -27,7 +28,9 @@
 				</span>
 			{% endif %}
 		</p>
-		<p>{{ html2text(doc.description[:200]) }}{% if doc.description|len > 200 %}...{% endif %}</p>
-	</a>
+		<p class="card-text">{{ html2text(doc.description[:200]) }}{% if doc.description|len > 200 %}...{% endif %}</p>
+		<a href={{ route }}>Details</a>
+	</div>
+	</div>
 </div>
 {% endif %}

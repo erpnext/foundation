@@ -36,11 +36,13 @@ app_license = "MIT"
 # application home page (will override Website Settings)
 home_page = "index"
 
-template_apps = ['foundation', 'erpnext', 'frappe']
+template_apps = ['foundation', 'frappe_theme', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
-	"brand_html": "<img class='navbar-icon' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
+	"brand_html": "<img class='mr-1 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
+			{"label": "About", "url": "/about", "right":1},
+			{"label": "Blog", "url": "/blog", "right":1},
 			{"label": "Foundation", "child_items":[
 				{"label": "Chapter", "url": "/chapters","right": 1},
 				{"label": "Foundation Fellow", "url": "/foundation-fellow","right": 1}

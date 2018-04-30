@@ -1,80 +1,83 @@
-{% extends "foundation/templates/web.html" %}
-
-{% from "foundation/templates/includes/macros.html" import media %}
-
+{% extends "templates/web.html" %}
+{% from "templates/includes/macros.html" import media %}
 {% macro gold_member(m) %}
-<div class="media {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
-	<div class="media-left">
-		<a href="{{ m.route }}">
-			<img class="thumb-small media-object" src="{{ m.image or '/assets/foundation/img/gold.png' }}">
+<div class="col-sm-6 mb-4">
+<div class="card h-100 {{ 'text-muted' if m.placeholder else '' }}" style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+	<div class="card-body">
+		<a class="mr-3" href="{{ m.route }}">
+			<img class="media-img" src="{{ m.image or '/assets/foundation/img/gold.png' }}">
 		</a>
-	</div>
-	<div class="media-body">
-		<h4 class="media-heading">{{ m.title }}</h4>
-		{{ m.introduction }}
+		<h4 class="mt-4">{{ m.title }}</h4>
+		{{ m.introduction | truncate(140) }}
 	</div>
 </div>
+</div>
+
 {% endmacro %}
 
 {% macro silver_member(m) %}
-<div class="box clickable {{ 'text-muted' if m.placeholder else '' }}"
-	 style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
-	<h4>{{ m.title }}</h4>
-	<p>{{ m.introduction | truncate(140) }}</p>
+<div class="col-sm-4 mb-4">
+	<div class="card h-100 clickable {{ 'text-muted' if m.placeholder else '' }}"
+		style="cursor: pointer;" onclick="location.href='{{ m.route }}'">
+		<div class="card-body">
+
+		<h4 class="card-title">{{ m.title }}</h4>
+		<p class="card-text">{{ m.introduction | truncate(140) }}</p>
+	</div>
+</div>
 </div>
 {% endmacro %}
 
 {% macro show_member(s) %}
-<div class='individual-member'>
-	<h3><a class='secondary-link bold' href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a></h3>
-	<p>
-	{{ s.introduction and s.introduction | truncate(140) }}
-	</p>
+<div class="col-sm-4 mb-4">
+	<a class="card-text" href="/{{ s.route }}">{{ s.title and s.title[:25] }}</a>
 </div>
 {% endmacro %}
 
 {% block page_content %}
-<section class="gold bottom-spacer-4">
-	<h2 class='media-heading'>Gold Members</h2>
+<section class="mb-5">
+	<h3 class="mb-5">Gold Members</h3>
+	<div class="row">
 	{% for m in gold_members %}
 	{{ gold_member(m) }}
 	{% endfor %}
+	</div>
 	{% if has_gold_member %}
-	<p class="top-spacer text-center"><a class='text-muted' href='/members'>
-		Become a Gold Member and get your company featured here</a></p>
+	<p class="pt-3"><a href='/members'>
+			Become a Gold Member and get your company featured here</a></p>
 	{% endif %}
 </section>
 
-<section class="silver bottom-spacer-4">
-	<h2 class='media-heading'>Silver Members</h2>
-	<div class="grid-of-three">
-		{% for m in silver_members %}
-		{{ silver_member(m) }}
-		{% endfor %}
-	</div>
+<section class="my-5">
+	<h3 class="mb-5">Silver Members</h3>
+	<div class="row">
+	{% for m in silver_members %}
+	{{ silver_member(m) }}
+	{% endfor %}
+</div>
 	{% if has_silver_member %}
-	<p class="top-spacer text-center"><a class='text-muted' href='/members'>
+	<p class="pt-3"><a href='/members'>
 		Become a Silver Member and get your company featured here</a></p>
 	{% endif %}
 </section>
-<section class="bottom-spacer-4">
-	<h2>Individual Members</h2>
-	<div class="grid-of-three">
+<section class="my-5">
+	<h3 class="mb-5">Individual Members</h3>
+	<div class="row">
 		{% for s in individual_members %}
 		{{ show_member(s) }}
 		{% endfor %}
 	</div>
 	{% if has_individual_member %}
-	<p class="top-spacer text-center"><a class='text-muted' href='/members'>
+	<p class="pt-3"><a href='/members'>
 		Become an Individual Member and get your company featured here</a></p>
 	{% endif %}
 </section>
 {% if not form_dict.country %}
-<section>
-	<h2>Select by country</h2>
-	<div class='columns flex-wrap'>
+<section class="my-5">
+	<h3 class="mb-5">Select by country</h3>
+	<div class='row'>
 		{% for c in countries %}
-		<div class='column countries'>
+		<div class='col-xs-2 col-sm-4 col-md-3'>
 			<p>
 			<a class="secondary-link" href="/service-providers?country={{ c[0] }}">{{ c[0] }} ({{ c[1] }})</a>
 			</p>
