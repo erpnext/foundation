@@ -3,7 +3,7 @@
 	<h3 style='margin-top: 0px'>{{ doc.event_title }}</h3>
 	<p>
 		<span class='label'>{{ doc.place }}</span>
-		<span class='label'>{{ frappe.format_date(date) }}</span>
+		<span class='label'>{{ frappe.format_date(event_date) }}</span>
 	</p>
 	<p>
 		{{ html2text(doc.details[:200]) }}{% if doc.details|len > 200 %}...{% endif %}</p>
