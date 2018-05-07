@@ -123,6 +123,13 @@
 	color: #2e3338;
 }
 
+a.disabled,
+a.disabled:hover {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+}
+
 /* ------ BOOTSTRAP GRID ------ */
 .row:before,
 .row:after {
@@ -336,6 +343,10 @@ time {
 	font-size: 1.2rem;
 	font-weight: bold;
 	margin-bottom: 8px;
+}
+
+li.current::after {
+	background: #7575ff !important;
 }
 
 /* Timeline Effects */
