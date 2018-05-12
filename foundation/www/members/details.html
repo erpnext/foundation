@@ -24,11 +24,14 @@
 	<p>Your Membership is due to expire soon. Click on the button below to renew</p>
 	<p><a href="/members/setup_payment" class='btn btn-primary'>Renew</a></p>
 	<p><a href="/memberships" class='text-muted'>View Membership History</a></p>
+	<p>all_memberships  {{ all_memberships }}</p>
 
 {% else %}
 	<p>Welcome back <b>{{ last_membership.membership_type }} Member!</b></p>
 	<p>Your membership is due to expire on {{ frappe.format_date(last_membership.to_date) }}.
 	<p><a href="/memberships" class='text-muted'>View Membership History</a></p>
+	<p>all_memberships  {{ all_memberships }}</p>
+
 {% endif %}
 
 {% endif %}
