@@ -2,34 +2,81 @@
 
 {% block title %}About ERPNext Foundation{% endblock %}
 
-{% from "templates/includes/macros.html" import media %}
+{% macro media(title, body, image) %}
+	<div class="media border mb-3 p-3">
+		<img class="mr-3" src="/files/{{ image }}">
+		<div class="media-body">
+			<h5 class="mt-0">{{ title }}</h5>
+			{{ body }}
+		</div>
+	</div>
+{% endmacro %}
 
 {% block content%}
-<div class="page">
-	<section>
-		<img class="rounded mw-100 my-5" src="/assets/foundation/img/community-colored.jpg">
-		<h1 class="font-weight-normal">ERPNext Foundation</h1>
-		<p class="font-weight-normal lead w-75">We are a Non Profit
-			Foundation representing a community of ERPNext
-			Users, Developers and Service Providers. Our
-			goal is to provide a platform for the ERPNext
-			Community to
-			come together, join hands and build assets to help build and enhance ERPNext around the world.</p>
-		<p class="font-weight-normal lead w-75"> ERPNext Foundation
-			aims to be a community driven organization and
-			run in a transparent manner. If you want to be
-			more involved in the ERPNext Community, read
-			the <a href="/faq" class="secondary-link" target="_blank">FAQ</a>.
-		</p>
-	</section>
-		<hr class="my-5">
-	<section class="mb-5">
-			<h1 class="font-weight-normal">{{ doc.team_members_heading }}</h1>
-			{% for member in doc.team_members  %}
-			{{ media(member.full_name, member.bio, member.image_link) }}
-			{% endfor %}
-			<p class="p"><a href="/contact">Want to talk to someone in the foundation? Get in touch</a></p>
-	</section>
-</div>
+<section class='section-padding text-center'>
+	<h2>ERPNext Foundation</h1>
+	<p class="lead">We are a registered not-for-profit
+		entity representing a community of ERPNext
+		users, developers and service providers.<p>
+	<img class="rounded mw-100 my-5" src="/assets/foundation/img/community-colored.jpg">
+
+	<h4>Our Vision</h4>
+
+	<p class='lead'>Our vision is to provide high quality free software to organizations, enterprises and public institutions around the world, and enable to use it by spreading the knowledge and best practices of running organizations in the 21st Century.</p>
+
+	<h4 class='mt-5'>Our Approach</h4>
+
+	<p class='lead'>To enable this vision we will:<br>1. Create platforms to bring people together to share their knowledge. <br> 2. Create software and documentation so people can be self-reliant. <br>3. Work with public institutions and help them use tools like ERPNext.</p>
+
+	<a href="/members" class="mt-4 btn btn-dark">Support us by becoming a Member</a>
+
+</section>
+
+<hr class="featurette-divider">
+
+<section class="section-padding">
+	<h2 class="text-center">People</h1>
+	<p class='lead text-center mb-5'>We are supported by a great team who have years of experience in ERPNext and a passion for Free and Open Source Software.</p>
+
+	{{ media(
+		"Basawaraj Savalagi, CEO",
+		"Basawaraj is a believer in free and open source software. Computer Science Engineer by training and has previously worked in Deloitte consulting on SAP and SELCO Solar, a social enterprise in multiple roles. He is passionate about radically changing the way SMEs work by driving adoption of open source software like ERPNext.",
+		"basawaraj.png"
+		)
+	}}
+
+	{{ media(
+		"Revant Nandgaonkar, Director",
+		"Revant is a free and open source software enthusiast. Management student and an entrepreneur. Founder of MN Technique, ERPNext Service Provider. He began his journey by implementing ERPNext for his family business and now helps businesses onboard on to this true free and open source ERP.",
+		"revant.jpg"
+		)
+	}}
+
+	{{ media(
+		"Rushabh Mehta, Director",
+		"Rushabh is the CEO of Frappé Technologies Private Limited and one of the original creators of Frappé Framework and ERPNext. He built ERPNext for his family's business and then later published it as an open source project. Rushabh is an Industrial Engineer by training but a software developer by profession. In his free time, he likes to read and spend time relaxing at home.",
+		"rushabh.jpg"
+		)
+	}}
+
+	{{ media(
+		"Nabin Hait, Director",
+		"Nabin is the Chief Operating Officer of Frappé Technologies Private Limited and the lead developer at ERPNext. Nabin is responsible for managing the ERPNext project and managing the team at Frappé. Nabin is a great cook and likes cooking and watching movies in his free time.",
+		"nabin.jpg"
+		)
+	}}
+
+	{{ media(
+		"Prakash Hodage, Director",
+		"Prakash is the accountant and administrative officer of Frappé Technologies Private Limited. He is the person responsible for getting the foundation registered. Prakash has extensive experience in managing accounting and administration and is an expert ERPNext user, also handling user support from time to time. In his free time, Prakash loves to read and help people around him.",
+		"prakash.jpg"
+		)
+	}}
+
+
+	<p class="mt-4 text-center">
+		<a class="text-muted" href="/contact">Want to talk to someone in the foundation? Get in touch</a>
+	</p>
+</section>
 	{% endblock %}
 

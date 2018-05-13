@@ -1,121 +1,129 @@
 {% extends "templates/base.html" %}
 {% block title %}ERPNext Foundation - Open Source ERP Software{% endblock %}
 {% block content %}
-<section class='section-padding'>
-	<h1 class="mt-4 w-75">World's leading fully open source ERP software that helps you stay in control of your business</h1>
-	<a class="mt-4 btn btn-primary btn-lg" href="/get-started.html">Get Started</a>
+<section class='section-padding text-center'>
+	<h2>World's Leading 100% Open Source ERP</h2>
+	<p class='lead lead-max m-auto text-muted'>
+		ERPNext is used by more than three thousand enterprises in over two hundred countries. It is built on an extensible platform and is supported by a large and active community.
+	</p>
+	<a class="mt-4 btn btn-dark btn" href="/get-started.html">Get Started</a>
 </section>
-<hr class="featurette-divider">
-<section class='section-padding'>
-	<h1>We have got it all covered</h1>
-	<p class=' w-50 lead font-weight-normal'>ERPNext has all the features to put you in complete control of your business.</p>
-	<img class="mt-4 screenshot" src='/assets/foundation/img/screenshot-main.png' alt="ERPNext desk view">
-</section>
-<hr class="featurette-divider">
-<section class="section-padding">
-	<h1>Industries</h1>
-	<div class="mt-5 row text-center">
-		<div class="col-sm-4 col-md-3 col-lg-3">
-			<div class="card border-light box-shadow mb-4">
-				<div class="card-body">
-					<a class="" href="/docs/user/manual/en/manufacturing">
-						<img class="card-img-top" src="/assets/foundation/img/manufacturing.png" alt="ERP software for manufacturing">
-					</a>
-					<h5 class="card-title mt-3">Manufacturing</h5>
-				</div>
-			</div>
+
+{% macro card(title, body, btnlink, badges) %}
+<div class="col-sm">
+	<a href="{{ btnlink }}" class="card mb-4">
+	  <div class="card-body">
+		  <h6 class="indicator blue">{{ title }}</h6>
+	    <p class="card-text">{{ body }}</p>
+		<div>
+			{% for badge in badges %}
+			<span class='badge badge-secondary'>{{ badge }}</span>
+			{% endfor %}
 		</div>
-		<div class="col-sm-4 col-md-3 col-lg-3">
-			<div class="card border-light box-shadow mb-4">
-				<div class="card-body">
-					<a class="" href="/docs/user/manual/en/projects">
-						<img class="card-img-top" src="/assets/foundation/img/services.png" alt="ERP software for Services">
-					</a>
-					<h5 class="card-title mt-3">Services</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-md-3 col-lg-3">
-			<div class="card border-light box-shadow mb-4">
-				<div class="card-body">
-					<a class="" href="/docs/user/manual/en/accounts/point-of-sale-pos-invoice">
-						<img class="card-img-top" src="/assets/foundation/img/retail.png" alt="ERP software for retail"></a>
-					<h5 class="card-title mt-3">Retail</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-md-3 col-lg-3">
-			<div class="card border-light box-shadow mb-4">
-				<div class="card-body">
-					<a class=""  href="/docs/user/manual/en/stock">
-						<img class="card-img-top" src="/assets/foundation/img/distribution.png" alt="ERP software for Distribution"></a>
-					<h5 class="card-title mt-3">Distribution</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-md-3 col-lg-3">
-			<div class="card border-light box-shadow mb-4">
-				<div class="card-body">
-					<a class="" href="/docs/user/manual/en/education">
-						<img class="card-img-top" src="/assets/foundation/img/education.png" alt="ERP software for Education">
-					</a>
-					<h5 class="card-title mt-3">Education</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-md-3 col-lg-3">
-			<div class="card border-light box-shadow mb-4">
-				<div class="card-body">
-					<a class="" href="/docs/user/manual/en/agriculture">
-						<img class="card-img-top" src="/assets/foundation/img/agriculture.png" alt="ERP software for Agriculture"></a>
-					<h5 class="card-title mt-3">Agriculture</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-md-3 col-lg-3">
-			<div class="card border-light box-shadow mb-4">
-				<div class="card-body">
-					<a class="" href="/docs/user/manual/en/healthcare">
-						<img class="card-img-top" src="/assets/foundation/img/healthcare.png" alt="ERP software for Healthcare"></a>
-					<h5 class="card-title mt-3">Healthcare</h5>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4 col-md-3 col-lg-3">
-			<div class="card border-light box-shadow  mb-4">
-				<div class="card-body">
-					<a class="" href="/docs/user/manual/en/non_profit">
-						<img class="card-img-top" src="/assets/foundation/img/non-profits.png" alt="ERP software for Non-Profits"></a>
-					<h5 class="card-title mt-3">Non Profit</h5>
-				</div>
-			</div>
-		</div>
+	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
+	  </div>
+	</a>
+</div>
+{% endmacro %}
+<section class="section-padding px-3">
+	<div class="row mt-5">
+		{{ card(
+			"Accounting",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/accounts",
+			["All"]
+		) }}
+
+		{{ card(
+			"CRM",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/crm",
+			["All"]
+		) }}
+
+		{{ card(
+			"Inventory",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/stock",
+			["All"]
+		) }}
+	</div>
+
+	<div class="row">
+		{{ card(
+			"Sales",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/selling",
+			["All"]
+		) }}
+
+		{{ card(
+			"Purchasing",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/buying",
+			["All"]
+		) }}
+
+		{{ card(
+			"Projects",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/accounts",
+			["All"]
+		) }}
+	</div>
+
+	<div class="row">
+		{{ card(
+			"Manufacturing",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/selling",
+			["Manufacturing"]
+		) }}
+
+		{{ card(
+			"Education",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/buying",
+			["Education"]
+		) }}
+
+		{{ card(
+			"Healthcare",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/accounts",
+			["Healthcare"]
+		) }}
+	</div>
+
+	<div class="row">
+		{{ card(
+			"E-Commerce",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/selling",
+			["All"]
+		) }}
+
+		{{ card(
+			"Website",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/buying",
+			["All"]
+		) }}
+
+		{{ card(
+			"Support",
+			"With supporting text below as a natural lead-in to additional content.",
+			"/docs/user/manual/en/accounts",
+			["All"]
+		) }}
 	</div>
 </section>
+
+
 <hr class="featurette-divider">
-<section class="section-padding">
-	<h1>Empowering businesses around the world</h1>
-	<p class="w-50 lead font-weight-normal">Trusted by more than 3000 companies</p>
-	<div class="mt-5 card-deck">
-		<div class="card border-light box-shadow">
-			<div class="card-body">
-				<p class="">ERPNext was the most wonderful, minimalist and affordable ERP Environment that my little team (7 employees) vote to buy and use like a Cloud Based Unitary Software.</p>
-				<p class="bold text-muted">Hernan</br>Venezuela</p>
-			</div>
-		</div>
-		<div class="card border-light box-shadow">
-			<div class="card-body">
-				<p class="">First of all, I would like to thank you very much for the great work you’ve done with this ERP, it is the perfect solution for start-ups, like mine! Keep up the good work!</p>
-				<p class="bold text-muted">Dan Radulescu</br>Romania</p>
-			</div>
-		</div>
-		<div class="card border-light box-shadow">
-			<div class="card-body">
-				<p class="">The UI and UX are one of the most fluid and highly useable interfaces I have ever seen in an ERP. You make accounting fun! Keep up the amazing work.</p>
-				<p class="bold text-muted">Gladwyn Lewis</br>ERP Consultant, UAE</p>
-			</div>
-		</div>
-	</div>
+<section class="section-padding text-center">
+	<h2>Independent Reviews</h2>
+	<p class="lead text-muted text-center">Loved by users all over the world</p>
 	<div class="mt-5 row text-center">
 		<div class="col-xs-12 col-sm-6 col-md-3">
 			<a class="secondary-link" target="_blank" href="https://www.capterra.com/p/164441/ERPNext/">
@@ -144,13 +152,10 @@
 	</div>
 </section>
 <hr class="featurette-divider">
-<section class="section-padding">
-	<h1>ERPNext Foundation</h1>
-	<p class="w-50 lead font-weight-normal">ERPNext Foundation is a
-		community of ERPNext users, developers and service providers.
-		The goal of the ERPNext Foundation is to provide a platform for
-		the ERPNext Community to come together, join hands and build
-		assets to help build and enhance ERPNext around the world.</p>
-	<a href="/members/details" class="mt-4 btn btn-secondary btn-lg">Become a Member</a>
+<section class="section-padding text-center">
+	<h2>ERPNext Foundation</h2>
+	<p class="lead lead-max m-auto text-muted">ERPNext Foundation is a
+		registered not-for-profit organization that brings enables community to build and enhance ERPNext.</p>
+	<a href="/members" class="mt-4 btn btn-dark">Become a Member</a>
 </section>
 {% endblock %}

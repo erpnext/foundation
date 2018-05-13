@@ -2,30 +2,57 @@
 
 {% block title %}ERPNext Foundation - Memberships{% endblock %}
 
-{% from "foundation/templates/includes/macros.html" import media %}
+{% macro card(title, body, badges, color) %}
+<div class="col-sm">
+	<a href="/members/details" class="card mb-4">
+	  <div class="card-body">
+		  <h6 class="indicator {{ color }}">{{ title }}</h6>
+	    <p class="card-text">{{ body }}</p>
+		<div>
+			{% for badge in badges %}
+			<span class='badge badge-secondary'>{{ badge }}</span>
+			{% endfor %}
+		</div>
+	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
+	  </div>
+	</a>
+</div>
+{% endmacro %}
 
 {% block page_content %}
-<section>
+<section class="section-padding text-center">
 	<h1>Memberships</h1>
-	<p>Be a Part of the ERPNext Foundation. The ERPNext Foundation aims to be driven by its members. By becoming a members, you get
-		a preferred listing on the ERPNext Job Board and access to incoming requests for implementation
-		and customization jobs<br>
+	<p class='lead'>Support ERPNext by becoming a Foundation Member</p>
+	<p>The ERPNext Foundation aims to be driven by its members. By becoming a members, you get a preferred listing on the ERPNext Job Board and access to incoming requests for implementation and customization jobs, and show your support for ERPNext
 	</p>
 </section>
-<section>
+<section class='section-padding text-center'>
 	<h3>Membership Types</h3>
-	{{ media("Gold Member",
-		"By becoming a Gold Member, you show your leadership  and a premium positioning for your brand. As a Gold Member, you have priority on all the ERPNext Listings. <br>Membership Rate: <b>$5000</b> | ₹ 3,00,000",
-		"gold.png") }}
-	{{ media("Silver Member",
-		"Silver members also get priority listing on the Service Provider board after the Gold Members. Becoming a silver member will give you increased visibility in the ERPNext Community. <br>Membership Rate: <b>$1500</b> | ₹ 1,00,000",
-		"silver.png") }}
-	{{ media("Individual Member",
-		"Individual membership is ideal for users and freelancers who want to show their solidarity to the project and community. Individual members get listed above those with a free listing. <br>Membership Rate: <b>$200</b> | ₹ 10,000",
-		"medal.png") }}
-</section>
-<section>
-	<p><a href="/members/details" class="btn btn-primary">Become A Member</a></p>
-	<p><a href="/service-providers">See List of All Members</a></p>
+	<div class='row mt-4'>
+	{{ card(
+		"Gold Member",
+		"By becoming a Gold Member, you show your leadership  and a premium positioning for your brand. As a Gold Member, you have priority on all the ERPNext Listings.",
+		["$5000", "₹3,00,000"],
+		"blue")
+	}}
+	{{ card(
+		"Silver Member",
+		"Silver membersget priority listing on the Service Provider board after the Gold Members. Becoming a silver member will give you increased visibility in the ERPNext Community.",
+		["$1500", "₹1,00,000"],
+		"gray")
+	}}
+	{{ card(
+		"Individual Member",
+		"Individual membership is ideal for users and freelancers who want to show their solidarity to the project and community. Individual members get listed above those with a free listing.",
+		["$200", "₹10,000"],
+		"light-gray")
+	}}
+	</div>
+	<p class='mt-5'>
+		<a href="/members/details" class="btn btn-dark">Become A Member</a>
+	</p>
+	<p>
+		<a href="/service-providers" class='text-muted'>See List of All Members</a>
+	</p>
 </section>
 {% endblock %}

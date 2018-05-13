@@ -1,58 +1,71 @@
 {% extends "templates/base.html" %}
 {% block title %} Get Started - ERPNext Foundation{% endblock %}
 {% block content %}
-<section class="my-5 text-center">
-	<img class="w-25 m-auto mb-4" src="/assets/foundation/img/bench-logo.png">
-	<h1>Install ERPNext with Bench</h1>
-	<p class="lead font-weight-normal text-center">Bench is our in-house tool to install and manage ERPNext.</p>
-	<a target="_blank"  href="https://github.com/frappe/bench#manual-install">Read the instructions on our wiki</a>
+<section class="section-padding text-center">
+	<h2>Getting Started with ERPNext</h2>
+	<p class="lead">ERPNext is Python based web application which runs on MariaDB. There are many ways to get started.<p>
 </section>
-<hr class="featurette-divider">
-<section class="my-5 text-center">
-	<img class="w-50 m-auto mb-4" src="/assets/foundation/img/cloud.png">
-	<h1>Get ERPNext on cloud</h1>
-	<p class="lead text-center font-weight-normal">Start right away with a free trial account </br>and get priority support.</p>
-	<a class="btn btn-primary btn-lg text-center" href="https://erpnext.com/pricing?source=org">Free 30 Day Trial</a></p>
-</section>
-<hr class="featurette-divider">
-<section class="my-5 text-center">
-	<h2>Virtual Machine Images</h2>
-	<p class='lead font-eight-normal mb-4'>Download a pre-installed Virtual Box Images</p>
-	<div class="row">
-		<div class="col-sm-4">
-			<a class="primary-links grid-boxes saturate" href="http://build.erpnext.com/ERPNext-Production.ova">
-				<img class="grid-images" src="/assets/foundation/img/vm-production.png" alt="Download ERPNext Production Image">
-			</a>
-			<h2>Download Production Image</h2>
-			<p class="text-muted">Stable build for Production use<br>(approx 1.5GB) | <a href="http://build.erpnext.com/ERPNext-Production.ova.md5">MD5</a></p>
-		</div>
-		<div class="col-sm-4">
-			<a class="primary-links grid-boxes saturate" href="http://build.erpnext.com/ERPNext-Dev.ova">
-				<img class="grid-images" src="/assets/foundation/img/vm-development.png" alt="Download ERPNext Development Image">
-			</a>
-			<h6 class="mt-4">Download Development Image</h6>
-			<p class="text-muted">Bleeding edge build for development only<br>(approx 1.5GB) | <a href="http://build.erpnext.com/ERPNext-Dev.ova.md5">MD5</a>
-			</p>
-		</div>
-		<div class="col-sm-4">
-			<a class="primary-links grid-boxes saturate" href="http://build.erpnext.com/ERPNext-Vagrant.box">
-				<img class="grid-images" src="/assets/foundation/img/vm-dev-vagrant.png" alt="Download ERPNext Vagrant Box">
-			</a>
-			<h6 class="mt-4">Download Vagrant Box</h6>
-			<p class="text-muted">Bleeding edge Vagrant box for development only<br>(approx 1.5GB) | <a href="http://build.erpnext.com/ERPNext-Vagrant.box.md5">MD5</a>
-			</p>
-		</div>
-	</div>
-</section>
+
 <hr class="featurette-divider">
 <section class="section-padding text-center">
-	<div class="container">
-		<p class="text-center"><a class=""> 
-				<img class="feature-img bottom-spacer" src="/assets/foundation/img/service-providers.png">
-		</a></p>
-		<h1 class="header-1">Contact Service Providers</h1>
-		<p class="text-medium intro-copy text-light">For additional customisations, implementation and training requirements.</p>
-		<a class="primary-link text-medium text-center" href="/service-providers">See the list of all Service Providers</a>
+	<h4>Take a Free Trial on ERPNext.com</h4>
+	<p class="lead mb-4">The fastest way to experience ERPNext is to start with a 30-day free trial on ERPNext.com</p>
+	<a class="btn btn-dark" href="https://erpnext.com/pricing?source=org">Start a Free Trial</a></p>
+</section>
+
+<hr class="featurette-divider">
+<section class="section-padding text-center">
+	<h4>Self Install on Linux using the Bench</h4>
+	<p class="lead mb-4">Bench is a command-line tool to install and manage ERPNext.</p>
+	<a target="_blank" class='btn btn-dark' href="https://github.com/frappe/bench">Read the instructions on GitHub</a>
+</section>
+
+{% macro card(title, body, btnlink, color) %}
+<div class="col-sm">
+  <div class="card">
+  <div class="card-body">
+	<h6 class="indicator {{ color }}">{{ title }}</h6>
+    <p class="card-text">{{ body }}</p>
+    <a href="{{ btnlink }}" class="btn btn-dark btn-sm">Download</a>
+  </div>
+  </div>
+</div>
+{% endmacro %}
+
+<hr class="featurette-divider">
+<section class="section-padding">
+	<h4 class='text-center'>Virtual Machine Images</h4>
+	<p class='lead text-center'>Download a pre-installed Virtual Box Images</p>
+	<div class="row mt-5">
+		{{ card(
+			"Production Image",
+			"Stable build for Production use (Master Branch)<br>(approx 1.5GB) | <a href='http://build.erpnext.com/ERPNext-Production.ova.md5'>MD5</a>.",
+			"http://build.erpnext.com/ERPNext-Production.ova",
+			"green"
+		) }}
+
+		{{ card(
+			"Development Image",
+			"Bleeding edge build for development only<br>(approx 1.5GB) | <a href='http://build.erpnext.com/ERPNext-Dev.ova.md5'>MD5</a>",
+			"http://build.erpnext.com/ERPNext-Dev.ova",
+			"orange"
+		) }}
+
+		{{ card(
+			"Vagrant Box",
+			"Bleeding edge Vagrant box for development only<br>(approx 1.5GB) | <a href='http://build.erpnext.com/ERPNext-Vagrant.box.md5'>MD5</a>",
+			"http://build.erpnext.com/ERPNext-Vagrant.box",
+			"orange"
+		) }}
+	</div>
+</section>
+
+
+<hr class="featurette-divider">
+<section class="section-padding text-center">
+	<h3>Connect with Service Providers</h3>
+		<p class="lead mb-4">Find a partner who can help you setup and evaluate ERPNext.</p>
+		<a class="btn btn-sm btn-dark" href="/service-providers">See Service Providers</a>
 	</div>
 </section>
 {% endblock %}
