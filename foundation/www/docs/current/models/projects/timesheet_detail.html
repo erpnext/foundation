@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/projects/doctype/timesheet_detail"
@@ -87,6 +87,18 @@
         
         <tr >
             <td>4</td>
+            <td ><code>expected_hours</code></td>
+            <td >
+                Float</td>
+            <td >
+                Expected Hrs
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
             <td ><code>hours</code></td>
             <td >
                 Float</td>
@@ -98,7 +110,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>6</td>
             <td ><code>to_time</code></td>
             <td >
                 Datetime</td>
@@ -109,8 +121,20 @@
             <td></td>
         </tr>
         
+        <tr >
+            <td>7</td>
+            <td ><code>completed</code></td>
+            <td >
+                Check</td>
+            <td >
+                Completed
+                
+            </td>
+            <td></td>
+        </tr>
+        
         <tr class="info">
-            <td>6</td>
+            <td>8</td>
             <td ><code>section_break_7</code></td>
             <td >
                 Section Break</td>
@@ -122,7 +146,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>9</td>
             <td ><code>completed_qty</code></td>
             <td >
                 Float</td>
@@ -134,7 +158,7 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>10</td>
             <td ><code>workstation</code></td>
             <td >
                 Link</td>
@@ -155,7 +179,7 @@
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>11</td>
             <td ><code>column_break_12</code></td>
             <td class="info">
                 Column Break</td>
@@ -167,7 +191,7 @@
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>12</td>
             <td ><code>operation</code></td>
             <td >
                 Link</td>
@@ -188,7 +212,7 @@
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>13</td>
             <td ><code>operation_id</code></td>
             <td >
                 Data</td>
@@ -200,7 +224,7 @@
         </tr>
         
         <tr class="info">
-            <td>12</td>
+            <td>14</td>
             <td ><code>project_details</code></td>
             <td >
                 Section Break</td>
@@ -212,7 +236,7 @@
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>15</td>
             <td ><code>project</code></td>
             <td >
                 Link</td>
@@ -233,7 +257,7 @@
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>16</td>
             <td ><code>column_break_2</code></td>
             <td class="info">
                 Column Break</td>
@@ -245,7 +269,7 @@
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>17</td>
             <td ><code>task</code></td>
             <td >
                 Link</td>
@@ -266,7 +290,7 @@
         </tr>
         
         <tr class="info">
-            <td>16</td>
+            <td>18</td>
             <td ><code>section_break_6</code></td>
             <td >
                 Section Break</td>
@@ -278,7 +302,7 @@
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>19</td>
             <td ><code>billable</code></td>
             <td >
                 Check</td>
@@ -290,7 +314,7 @@
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>20</td>
             <td ><code>column_break_8</code></td>
             <td class="info">
                 Column Break</td>
@@ -302,7 +326,7 @@
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>21</td>
             <td ><code>billing_hours</code></td>
             <td >
                 Float</td>
@@ -314,7 +338,7 @@
         </tr>
         
         <tr class="info">
-            <td>20</td>
+            <td>22</td>
             <td ><code>section_break_11</code></td>
             <td >
                 Section Break</td>
@@ -326,7 +350,7 @@
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>23</td>
             <td ><code>billing_rate</code></td>
             <td >
                 Currency</td>
@@ -338,7 +362,7 @@
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>24</td>
             <td ><code>billing_amount</code></td>
             <td >
                 Currency</td>
@@ -350,7 +374,7 @@
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>25</td>
             <td ><code>column_break_14</code></td>
             <td class="info">
                 Column Break</td>
@@ -362,7 +386,7 @@
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>26</td>
             <td ><code>costing_rate</code></td>
             <td >
                 Currency</td>
@@ -374,7 +398,7 @@
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>27</td>
             <td ><code>costing_amount</code></td>
             <td >
                 Currency</td>
@@ -386,7 +410,7 @@
         </tr>
         
         <tr class="info">
-            <td>26</td>
+            <td>28</td>
             <td ><code>reference</code></td>
             <td >
                 Section Break</td>
@@ -398,7 +422,7 @@
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>29</td>
             <td ><code>sales_invoice</code></td>
             <td >
                 Link</td>

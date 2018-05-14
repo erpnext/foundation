@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/department"
@@ -54,6 +54,51 @@
         
         <tr >
             <td>2</td>
+            <td ><code>parent_department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Parent Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>is_group</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Group
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>4</td>
+            <td ><code>section_break_4</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
             <td ><code>leave_block_list</code></td>
             <td >
                 Link</td>
@@ -74,6 +119,110 @@
             </td>
         </tr>
         
+        <tr class="info">
+            <td>6</td>
+            <td ><code>leave_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Leave Approvers
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>leave_approver</code></td>
+            <td >
+                Table</td>
+            <td >
+                Leave Approver
+                <p class="text-muted small">
+                    The first Leave Approver in the list will be set as the default Leave Approver.</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department_approver">Department Approver</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>8</td>
+            <td ><code>expense_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Expense Approvers
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>expense_approver</code></td>
+            <td >
+                Table</td>
+            <td >
+                Expense Approver
+                <p class="text-muted small">
+                    The first Expense Approver in the list will be set as the default Expense Approver.</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department_approver">Department Approver</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>lft</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                lft
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>rgt</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                rgt
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>old_parent</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Old Parent
+                
+            </td>
+            <td></td>
+        </tr>
+        
     </tbody>
 </table>
 
@@ -90,7 +239,7 @@
         
 	<h3 style="font-weight: normal;">Class <b>Department</b></h3>
     
-    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    <p style="padding-left: 30px;"><i>Inherits from frappe.utils.nestedset.NestedSet</i></h4>
     
     <div class="docs-attr-desc"><p></p>
 </div>
@@ -98,6 +247,22 @@
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.department.department.on_doctype_update" href="#erpnext.hr.doctype.department.department.on_doctype_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.department.department.<b>on_doctype_update</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 
@@ -121,6 +286,15 @@
 
 
 <a href="/docs/current/models/education/course">Course</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/department">Department</a>
 
 </li>
 			

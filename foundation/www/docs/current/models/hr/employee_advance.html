@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/employee_advance"
@@ -179,6 +179,20 @@
         
         <tr >
             <td>11</td>
+            <td ><code>due_advance_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Due Advance Amount
+                
+            </td>
+            <td>
+                <pre>Company:company:default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
             <td ><code>claimed_amount</code></td>
             <td >
                 Currency</td>
@@ -192,7 +206,7 @@
         </tr>
         
         <tr class="info">
-            <td>12</td>
+            <td>13</td>
             <td ><code>section_break_7</code></td>
             <td >
                 Section Break</td>
@@ -204,7 +218,7 @@
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td ><code>status</code></td>
             <td >
                 Select</td>
@@ -222,7 +236,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
@@ -243,7 +257,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>16</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -264,7 +278,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>17</td>
             <td ><code>column_break_18</code></td>
             <td class="info">
                 Column Break</td>
@@ -276,7 +290,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>18</td>
             <td class="danger" title="Mandatory"><code>advance_account</code></td>
             <td >
                 Link</td>
@@ -297,7 +311,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td ><code>mode_of_payment</code></td>
             <td >
                 Link</td>
@@ -339,90 +353,6 @@ Cancelled</pre>
 </div>
     <div style="padding-left: 30px;">
         
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_cancel" href="#on_cancel" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_cancel</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="onload" href="#onload" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>onload</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_status" href="#set_status" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_status</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_total_advance_paid" href="#set_total_advance_paid" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_total_advance_paid</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_claimed_amount" href="#update_claimed_amount" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_claimed_amount</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate" href="#validate" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
     </div>
     <hr>
 
@@ -440,6 +370,24 @@ Cancelled</pre>
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.employee_advance.employee_advance.get_due_advance_amount</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.employee_advance.employee_advance.get_due_advance_amount" href="#erpnext.hr.doctype.employee_advance.employee_advance.get_due_advance_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.employee_advance.employee_advance.<b>get_due_advance_amount</b>
+        <i class="text-muted">(employee, posting_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 

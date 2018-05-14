@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/manufacturing/doctype/manufacturing_settings"
@@ -58,7 +58,7 @@
             <td >
                 Disable Capacity Planning and Time Tracking
                 <p class="text-muted small">
-                    Disables creation of time logs against Production Orders. Operations shall not be tracked against Production Order</p>
+                    Disables creation of time logs against Work Orders. Operations shall not be tracked against Work Order</p>
             </td>
             <td></td>
         </tr>
@@ -167,6 +167,19 @@ Material Transferred for Manufacture</pre>
         
         <tr >
             <td>11</td>
+            <td ><code>material_consumption</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Multiple Material Consumption
+                <p class="text-muted small">
+                    Allow multiple Material Consumption against a Work Order</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
             <td ><code>update_bom_costs_automatically</code></td>
             <td >
                 Check</td>
@@ -179,7 +192,7 @@ Material Transferred for Manufacture</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>13</td>
             <td ><code>column_break_11</code></td>
             <td class="info">
                 Column Break</td>
@@ -191,7 +204,7 @@ Material Transferred for Manufacture</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td ><code>default_wip_warehouse</code></td>
             <td >
                 Link</td>
@@ -212,7 +225,7 @@ Material Transferred for Manufacture</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td ><code>default_fg_warehouse</code></td>
             <td >
                 Link</td>

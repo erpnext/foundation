@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/expense_claim"
@@ -56,105 +56,6 @@
         
         <tr >
             <td>2</td>
-            <td ><code>total_claimed_amount</code></td>
-            <td >
-                Currency</td>
-            <td >
-                Total Claimed Amount
-                
-            </td>
-            <td>
-                <pre>Company:company:default_currency</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>3</td>
-            <td ><code>total_sanctioned_amount</code></td>
-            <td >
-                Currency</td>
-            <td >
-                Total Sanctioned Amount
-                
-            </td>
-            <td>
-                <pre>Company:company:default_currency</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>4</td>
-            <td ><code>is_paid</code></td>
-            <td >
-                Check</td>
-            <td >
-                Is Paid
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr class="info">
-            <td>5</td>
-            <td ><code>expense_details</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>6</td>
-            <td class="danger" title="Mandatory"><code>expenses</code></td>
-            <td >
-                Table</td>
-            <td >
-                Expenses
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/hr/expense_claim_detail">Expense Claim Detail</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr class="info">
-            <td>7</td>
-            <td ><code>sb1</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                
-                
-            </td>
-            <td>
-                <pre>Simple</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>8</td>
-            <td class="danger" title="Mandatory"><code>posting_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                Posting Date
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>9</td>
             <td class="danger" title="Mandatory"><code>employee</code></td>
             <td >
                 Link</td>
@@ -175,7 +76,7 @@
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>3</td>
             <td ><code>employee_name</code></td>
             <td >
                 Data</td>
@@ -189,7 +90,155 @@
         </tr>
         
         <tr >
+            <td>4</td>
+            <td ><code>expense_approver</code></td>
+            <td >
+                Link</td>
+            <td >
+                Expense Approver
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_5</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>approval_status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Approval Status
+                
+            </td>
+            <td>
+                <pre>Draft
+Approved
+Rejected</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>total_claimed_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Total Claimed Amount
+                
+            </td>
+            <td>
+                <pre>Company:company:default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>total_sanctioned_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Total Sanctioned Amount
+                
+            </td>
+            <td>
+                <pre>Company:company:default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>is_paid</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Paid
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>expense_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
             <td>11</td>
+            <td class="danger" title="Mandatory"><code>expenses</code></td>
+            <td >
+                Table</td>
+            <td >
+                Expenses
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/expense_claim_detail">Expense Claim Detail</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>sb1</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td>
+                <pre>Simple</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td class="danger" title="Mandatory"><code>posting_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Posting Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
             <td ><code>vehicle_log</code></td>
             <td >
                 Link</td>
@@ -210,7 +259,7 @@
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>15</td>
             <td ><code>project</code></td>
             <td >
                 Link</td>
@@ -231,7 +280,7 @@
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>16</td>
             <td ><code>task</code></td>
             <td >
                 Link</td>
@@ -252,7 +301,7 @@
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>17</td>
             <td ><code>cb1</code></td>
             <td class="info">
                 Column Break</td>
@@ -264,7 +313,7 @@
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>18</td>
             <td ><code>total_amount_reimbursed</code></td>
             <td >
                 Currency</td>
@@ -278,7 +327,7 @@
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>19</td>
             <td ><code>remark</code></td>
             <td >
                 Small Text</td>
@@ -290,7 +339,7 @@
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>20</td>
             <td ><code>title</code></td>
             <td >
                 Data</td>
@@ -302,7 +351,7 @@
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>21</td>
             <td ><code>email_id</code></td>
             <td >
                 Data</td>
@@ -314,7 +363,7 @@
         </tr>
         
         <tr class="info">
-            <td>19</td>
+            <td>22</td>
             <td ><code>accounting_details</code></td>
             <td >
                 Section Break</td>
@@ -326,7 +375,7 @@
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>23</td>
             <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
@@ -347,7 +396,7 @@
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>24</td>
             <td ><code>mode_of_payment</code></td>
             <td >
                 Link</td>
@@ -368,7 +417,7 @@
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>25</td>
             <td ><code>column_break_24</code></td>
             <td class="info">
                 Column Break</td>
@@ -380,7 +429,7 @@
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>26</td>
             <td ><code>payable_account</code></td>
             <td >
                 Link</td>
@@ -401,7 +450,7 @@
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>27</td>
             <td ><code>cost_center</code></td>
             <td >
                 Link</td>
@@ -422,7 +471,7 @@
         </tr>
         
         <tr class="info">
-            <td>25</td>
+            <td>28</td>
             <td ><code>more_details</code></td>
             <td >
                 Section Break</td>
@@ -434,7 +483,7 @@
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>29</td>
             <td ><code>status</code></td>
             <td >
                 Select</td>
@@ -453,7 +502,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>30</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -474,7 +523,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>28</td>
+            <td>31</td>
             <td ><code>advance_payments</code></td>
             <td >
                 Section Break</td>
@@ -486,7 +535,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>32</td>
             <td ><code>advances</code></td>
             <td >
                 Table</td>
@@ -507,7 +556,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>33</td>
             <td ><code>total_advance_amount</code></td>
             <td >
                 Currency</td>
@@ -557,244 +606,6 @@ Cancelled</pre>
 </div>
     <div style="padding-left: 30px;">
         
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="calculate_total_amount" href="#calculate_total_amount" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>calculate_total_amount</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_gl_entries" href="#get_gl_entries" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_gl_entries</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="make_gl_entries" href="#make_gl_entries" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>make_gl_entries</b>
-        <i class="text-muted">(self, cancel=False)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_cancel" href="#on_cancel" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_cancel</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_submit" href="#on_submit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_submit</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="onload" href="#onload" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>onload</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_cost_center" href="#set_cost_center" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_cost_center</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_expense_account" href="#set_expense_account" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_expense_account</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_payable_account" href="#set_payable_account" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_payable_account</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_status" href="#set_status" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_status</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_claimed_amount_in_employee_advance" href="#update_claimed_amount_in_employee_advance" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_claimed_amount_in_employee_advance</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_task" href="#update_task" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_task</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_task_and_project" href="#update_task_and_project" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_task_and_project</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate" href="#validate" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_account_details" href="#validate_account_details" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_account_details</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_advances" href="#validate_advances" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_advances</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_sanctioned_amount" href="#validate_sanctioned_amount" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_sanctioned_amount</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
     </div>
     <hr>
 
@@ -826,6 +637,24 @@ Cancelled</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.hr.doctype.expense_claim.expense_claim.<b>get_advances</b>
         <i class="text-muted">(employee, advance_id=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.expense_claim.expense_claim.get_expense_claim</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.expense_claim.expense_claim.get_expense_claim" href="#erpnext.hr.doctype.expense_claim.expense_claim.get_expense_claim" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.expense_claim.expense_claim.<b>get_expense_claim</b>
+        <i class="text-muted">(employee_name, company, employee_advance_name, posting_date, paid_amount, claimed_amount)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
