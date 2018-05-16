@@ -18,21 +18,43 @@
 {% elif frappe.utils.getdate(last_membership.to_date) < frappe.utils.getdate(frappe.utils.nowdate()) %}
 	<p>Your Membership has expired, Click the button below to start a new membership</p>
 	<p><a href="/members/setup_payment" class='btn btn-primary'>Renew</a></p>
-	<p><a href="/memberships" class='text-muted'>View Membership History</a></p>
 
 {% elif frappe.utils.getdate(frappe.utils.add_days(last_membership.to_date, -30)) < frappe.utils.getdate(frappe.utils.nowdate())%}
 	<p>Your Membership is due to expire soon. Click on the button below to renew</p>
 	<p><a href="/members/setup_payment" class='btn btn-primary'>Renew</a></p>
-	<p><a href="/memberships" class='text-muted'>View Membership History</a></p>
-	<p>all_memberships  {{ all_memberships }}</p>
 
 {% else %}
 	<p>Welcome back <b>{{ last_membership.membership_type }} Member!</b></p>
 	<p>Your membership is due to expire on {{ frappe.format_date(last_membership.to_date) }}.
-	<p><a href="/memberships" class='text-muted'>View Membership History</a></p>
-	<p>all_memberships  {{ all_memberships }}</p>
 
 {% endif %}
+
+	<br>
+	<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr class="active">
+          <th style="width: 200px">Membership Number</th>
+          <th style="width: 150px">Membership Type</th>
+          <th style="width: 150px">From</th>
+          <th style="width: 150px">To</th>
+          <th style="width: 100px">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+				{% for membership in all_memberships %}
+
+          <tr>
+            <td>{{ membership.name }}</td>
+            <td>{{ membership.membership_type }}</td>
+            <td>{{ frappe.format_date(membership.from_date) }}</td>
+            <td>{{ frappe.format_date(membership.to_date) }}</td>
+            <td>{{ frappe.utils.fmt_money(membership.amount,currency=frappe.db.get_value("Currency",membership.currency,"symbol")) }}</td>
+          </tr>
+					{% endfor %}
+      </tbody>
+    </table>
+</div>
 
 {% endif %}
 
