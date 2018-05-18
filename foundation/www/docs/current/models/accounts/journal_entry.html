@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/journal_entry"
@@ -100,7 +100,8 @@ Depreciation Entry</pre>
                 
             </td>
             <td>
-                <pre>JV-</pre>
+                <pre>JV-
+JV-RET-</pre>
             </td>
         </tr>
         
@@ -397,6 +398,18 @@ Depreciation Entry</pre>
         
         <tr >
             <td>26</td>
+            <td ><code>paid_loan</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Paid Loan
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
             <td ><code>column_break98</code></td>
             <td class="info">
                 Column Break</td>
@@ -408,7 +421,7 @@ Depreciation Entry</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>28</td>
             <td ><code>bill_no</code></td>
             <td >
                 Data</td>
@@ -420,7 +433,7 @@ Depreciation Entry</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>29</td>
             <td ><code>bill_date</code></td>
             <td >
                 Date</td>
@@ -432,7 +445,7 @@ Depreciation Entry</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>30</td>
             <td ><code>due_date</code></td>
             <td >
                 Date</td>
@@ -444,7 +457,7 @@ Depreciation Entry</pre>
         </tr>
         
         <tr class="info">
-            <td>30</td>
+            <td>31</td>
             <td ><code>write_off</code></td>
             <td >
                 Section Break</td>
@@ -456,7 +469,7 @@ Depreciation Entry</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>32</td>
             <td ><code>write_off_based_on</code></td>
             <td >
                 Select</td>
@@ -471,7 +484,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>33</td>
             <td ><code>get_outstanding_invoices</code></td>
             <td >
                 Button</td>
@@ -485,7 +498,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>34</td>
             <td ><code>column_break_30</code></td>
             <td class="info">
                 Column Break</td>
@@ -497,7 +510,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>35</td>
             <td ><code>write_off_amount</code></td>
             <td >
                 Currency</td>
@@ -511,7 +524,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr class="info">
-            <td>35</td>
+            <td>36</td>
             <td ><code>printing_settings</code></td>
             <td >
                 Section Break</td>
@@ -523,7 +536,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>37</td>
             <td ><code>pay_to_recd_from</code></td>
             <td >
                 Data</td>
@@ -535,7 +548,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>38</td>
             <td ><code>column_break_35</code></td>
             <td class="info">
                 Column Break</td>
@@ -547,7 +560,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>39</td>
             <td ><code>letter_head</code></td>
             <td >
                 Link</td>
@@ -568,7 +581,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>40</td>
             <td ><code>select_print_heading</code></td>
             <td >
                 Link</td>
@@ -589,7 +602,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr class="info">
-            <td>40</td>
+            <td>41</td>
             <td ><code>addtional_info</code></td>
             <td >
                 Section Break</td>
@@ -603,7 +616,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>42</td>
             <td ><code>column_break3</code></td>
             <td class="info">
                 Column Break</td>
@@ -615,7 +628,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>43</td>
             <td ><code>is_opening</code></td>
             <td >
                 Select</td>
@@ -630,7 +643,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>43</td>
+            <td>44</td>
             <td ><code>stock_entry</code></td>
             <td >
                 Link</td>
@@ -651,7 +664,7 @@ Yes</pre>
         </tr>
         
         <tr class="info">
-            <td>44</td>
+            <td>45</td>
             <td ><code>subscription_section</code></td>
             <td >
                 Section Break</td>
@@ -663,12 +676,12 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>45</td>
-            <td ><code>subscription</code></td>
+            <td>46</td>
+            <td ><code>auto_repeat</code></td>
             <td >
                 Link</td>
             <td >
-                Subscription
+                Auto Repeat
                 
             </td>
             <td>
@@ -676,7 +689,7 @@ Yes</pre>
                 
 
 
-<a href="/docs/current/models/accounts/subscription">Subscription</a>
+<a href="/docs/current/models/desk/auto_repeat">Auto Repeat</a>
 
 
                 
@@ -684,7 +697,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>47</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -725,510 +738,6 @@ Yes</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="__init__" href="#__init__" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>__init__</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="check_credit_limit" href="#check_credit_limit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>check_credit_limit</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="create_remarks" href="#create_remarks" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>create_remarks</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_balance" href="#get_balance" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_balance</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_feed" href="#get_feed" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_feed</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_outstanding_invoices" href="#get_outstanding_invoices" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_outstanding_invoices</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_title" href="#get_title" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_title</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_values" href="#get_values" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_values</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="make_gl_entries" href="#make_gl_entries" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>make_gl_entries</b>
-        <i class="text-muted">(self, cancel=0, adv_adj=0)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_cancel" href="#on_cancel" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_cancel</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_submit" href="#on_submit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_submit</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_account_and_party_balance" href="#set_account_and_party_balance" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_account_and_party_balance</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_against_account" href="#set_against_account" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_against_account</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_amounts_in_company_currency" href="#set_amounts_in_company_currency" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_amounts_in_company_currency</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_exchange_rate" href="#set_exchange_rate" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_exchange_rate</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_print_format_fields" href="#set_print_format_fields" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_print_format_fields</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_total_amount" href="#set_total_amount" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_total_amount</b>
-        <i class="text-muted">(self, amt, currency)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_total_debit_credit" href="#set_total_debit_credit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_total_debit_credit</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="unlink_advance_entry_reference" href="#unlink_advance_entry_reference" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>unlink_advance_entry_reference</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="unlink_asset_reference" href="#unlink_asset_reference" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>unlink_asset_reference</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_advance_paid" href="#update_advance_paid" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_advance_paid</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_employee_loan" href="#update_employee_loan" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_employee_loan</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_expense_claim" href="#update_expense_claim" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_expense_claim</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate" href="#validate" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_against_jv" href="#validate_against_jv" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_against_jv</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_cheque_info" href="#validate_cheque_info" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_cheque_info</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_credit_debit_note" href="#validate_credit_debit_note" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_credit_debit_note</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_empty_accounts_table" href="#validate_empty_accounts_table" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_empty_accounts_table</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_entries_for_advance" href="#validate_entries_for_advance" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_entries_for_advance</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_expense_claim" href="#validate_expense_claim" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_expense_claim</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_invoices" href="#validate_invoices" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_invoices</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Validate totals and docstatus for invoices</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_multi_currency" href="#validate_multi_currency" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_multi_currency</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_orders" href="#validate_orders" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_orders</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Validate totals, closed and docstatus for orders</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_party" href="#validate_party" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_party</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_reference_doc" href="#validate_reference_doc" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_reference_doc</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Validates reference document</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_total_debit_and_credit" href="#validate_total_debit_and_credit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_total_debit_and_credit</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
         
     </div>
     <hr>

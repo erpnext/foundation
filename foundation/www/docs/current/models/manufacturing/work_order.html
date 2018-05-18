@@ -1,0 +1,1071 @@
+<!-- title: Work Order -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Work Order</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.31</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/manufacturing/doctype/work_order"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabWork Order</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="info">
+            <td>1</td>
+            <td ><code>item</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td>
+                <pre>fa fa-gift</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Series
+                
+            </td>
+            <td>
+                <pre>WO-</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Status
+                
+            </td>
+            <td>
+                <pre>
+Draft
+Submitted
+Not Started
+In Process
+Completed
+Stopped
+Cancelled</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>production_item</code></td>
+            <td >
+                Link</td>
+            <td >
+                Item To Manufacture
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/item">Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td class="danger" title="Mandatory"><code>bom_no</code></td>
+            <td >
+                Link</td>
+            <td >
+                BOM No
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/bom">BOM</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>use_multi_level_bom</code></td>
+            <td >
+                Check</td>
+            <td >
+                Use Multi-Level BOM
+                <p class="text-muted small">
+                    Plan material for sub-assemblies</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>allow_alternative_item</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Alternative Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>column_break1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td class="danger" title="Mandatory"><code>qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Qty To Manufacture
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>material_transferred_for_manufacturing</code></td>
+            <td >
+                Float</td>
+            <td >
+                Material Transferred for Manufacturing
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>produced_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Manufactured Qty
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>sales_order</code></td>
+            <td >
+                Link</td>
+            <td >
+                Sales Order
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/selling/sales_order">Sales Order</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>project</code></td>
+            <td >
+                Link</td>
+            <td >
+                Project
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/projects/project">Project</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>skip_transfer</code></td>
+            <td >
+                Check</td>
+            <td >
+                Skip Material Transfer
+                <p class="text-muted small">
+                    Check if material transfer entry is not required</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>15</td>
+            <td ><code>warehouses</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Warehouses
+                
+            </td>
+            <td>
+                <pre>fa fa-building</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>wip_warehouse</code></td>
+            <td >
+                Link</td>
+            <td >
+                Work-in-Progress Warehouse
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>fg_warehouse</code></td>
+            <td >
+                Link</td>
+            <td >
+                Target Warehouse
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>column_break_12</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>scrap_warehouse</code></td>
+            <td >
+                Link</td>
+            <td >
+                Scrap Warehouse
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
+            <td ><code>required_items_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Required Items
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>required_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                Required Items
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/work_order_item">Work Order Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>22</td>
+            <td ><code>time</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Time
+                
+            </td>
+            <td>
+                <pre>fa fa-time</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td class="danger" title="Mandatory"><code>planned_start_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Planned Start Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>actual_start_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Actual Start Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>column_break_13</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>planned_end_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Planned End Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>actual_end_date</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Actual End Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>28</td>
+            <td ><code>expected_delivery_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Expected Delivery Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>29</td>
+            <td ><code>operations_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Operations
+                
+            </td>
+            <td>
+                <pre>fa fa-wrench</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>30</td>
+            <td ><code>operations</code></td>
+            <td >
+                Table</td>
+            <td >
+                Operations
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/work_order_operation">Work Order Operation</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>31</td>
+            <td ><code>section_break_22</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Operation Cost
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>32</td>
+            <td ><code>planned_operating_cost</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Planned Operating Cost
+                
+            </td>
+            <td>
+                <pre>Company:company:default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>actual_operating_cost</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Actual Operating Cost
+                
+            </td>
+            <td>
+                <pre>Company:company:default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>34</td>
+            <td ><code>additional_operating_cost</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Additional Operating Cost
+                
+            </td>
+            <td>
+                <pre>Company:company:default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>35</td>
+            <td ><code>column_break_24</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>36</td>
+            <td ><code>total_operating_cost</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Total Operating Cost
+                
+            </td>
+            <td>
+                <pre>Company:company:default_currency</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>37</td>
+            <td ><code>more_info</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                More Information
+                
+            </td>
+            <td>
+                <pre>fa fa-file-text</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>38</td>
+            <td ><code>description</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Item Description
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>39</td>
+            <td ><code>stock_uom</code></td>
+            <td >
+                Link</td>
+            <td >
+                Stock UOM
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/uom">UOM</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>40</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>41</td>
+            <td ><code>column_break2</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>42</td>
+            <td ><code>material_request</code></td>
+            <td >
+                Link</td>
+            <td >
+                Material Request
+                <p class="text-muted small">
+                    Manufacture against Material Request</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/material_request">Material Request</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>43</td>
+            <td ><code>material_request_item</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Material Request Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>44</td>
+            <td ><code>sales_order_item</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Sales Order Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>45</td>
+            <td ><code>production_plan</code></td>
+            <td >
+                Link</td>
+            <td >
+                Production Plan
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/production_plan">Production Plan</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>46</td>
+            <td ><code>production_plan_item</code></td>
+            <td >
+                Data</td>
+            <td >
+                Production Plan Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>47</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/work_order">Work Order</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.manufacturing.doctype.work_order.work_order</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ItemHasVariantError</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.exceptions.ValidationError</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>OperationTooLongError</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.exceptions.ValidationError</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>OverProductionError</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.exceptions.ValidationError</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>StockOverProductionError</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.exceptions.ValidationError</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>WorkOrder</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.add_timesheet_detail</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.add_timesheet_detail" href="#erpnext.manufacturing.doctype.work_order.work_order.add_timesheet_detail" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>add_timesheet_detail</b>
+        <i class="text-muted">(timesheet, args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.check_if_scrap_warehouse_mandatory</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.check_if_scrap_warehouse_mandatory" href="#erpnext.manufacturing.doctype.work_order.work_order.check_if_scrap_warehouse_mandatory" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>check_if_scrap_warehouse_mandatory</b>
+        <i class="text-muted">(bom_no)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.get_default_warehouse</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.get_default_warehouse" href="#erpnext.manufacturing.doctype.work_order.work_order.get_default_warehouse" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>get_default_warehouse</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.get_item_details</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.get_item_details" href="#erpnext.manufacturing.doctype.work_order.work_order.get_item_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>get_item_details</b>
+        <i class="text-muted">(item, project=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.make_new_timesheet</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.make_new_timesheet" href="#erpnext.manufacturing.doctype.work_order.work_order.make_new_timesheet" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>make_new_timesheet</b>
+        <i class="text-muted">(source_name, target_doc=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.make_stock_entry</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.make_stock_entry" href="#erpnext.manufacturing.doctype.work_order.work_order.make_stock_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>make_stock_entry</b>
+        <i class="text-muted">(work_order_id, purpose, qty=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.make_timesheet</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.make_timesheet" href="#erpnext.manufacturing.doctype.work_order.work_order.make_timesheet" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>make_timesheet</b>
+        <i class="text-muted">(work_order, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.query_sales_order</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.query_sales_order" href="#erpnext.manufacturing.doctype.work_order.work_order.query_sales_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>query_sales_order</b>
+        <i class="text-muted">(production_item)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.set_work_order_ops</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.set_work_order_ops" href="#erpnext.manufacturing.doctype.work_order.work_order.set_work_order_ops" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>set_work_order_ops</b>
+        <i class="text-muted">(name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.work_order.work_order.stop_unstop</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.work_order.work_order.stop_unstop" href="#erpnext.manufacturing.doctype.work_order.work_order.stop_unstop" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.work_order.work_order.<b>stop_unstop</b>
+        <i class="text-muted">(work_order, status)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Called from client side on Stop/Unstop event</p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/stock_entry">Stock Entry</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/projects/timesheet">Timesheet</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/work_order">Work Order</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

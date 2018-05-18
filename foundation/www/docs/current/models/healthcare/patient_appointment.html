@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/patient_appointment"
@@ -63,6 +63,27 @@
         
         <tr >
             <td>2</td>
+            <td class="danger" title="Mandatory"><code>department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/medical_department">Medical Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
             <td class="danger" title="Mandatory"><code>physician</code></td>
             <td >
                 Link</td>
@@ -83,7 +104,7 @@
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>4</td>
             <td class="danger" title="Mandatory"><code>appointment_date</code></td>
             <td >
                 Date</td>
@@ -95,7 +116,32 @@
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>5</td>
+            <td ><code>appointment_time</code></td>
+            <td >
+                Time</td>
+            <td >
+                Time
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>duration</code></td>
+            <td >
+                Int</td>
+            <td >
+                Duration
+                <p class="text-muted small">
+                    In Minutes</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
             <td ><code>check_availability</code></td>
             <td >
                 Button</td>
@@ -107,7 +153,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>8</td>
             <td ><code>column_break_1</code></td>
             <td class="info">
                 Column Break</td>
@@ -119,7 +165,28 @@
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>9</td>
+            <td ><code>service_unit</code></td>
+            <td >
+                Link</td>
+            <td >
+                Service Unit
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/patient_service_unit">Patient Service Unit</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
             <td ><code>patient_name</code></td>
             <td >
                 Data</td>
@@ -133,7 +200,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>11</td>
             <td ><code>patient_sex</code></td>
             <td >
                 Data</td>
@@ -147,7 +214,7 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>12</td>
             <td ><code>patient_age</code></td>
             <td >
                 Data</td>
@@ -159,7 +226,7 @@
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>13</td>
             <td ><code>status</code></td>
             <td >
                 Select</td>
@@ -178,7 +245,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>14</td>
             <td ><code>appointment_type</code></td>
             <td >
                 Link</td>
@@ -199,7 +266,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>11</td>
+            <td>15</td>
             <td ><code>section_break_1</code></td>
             <td >
                 Section Break</td>
@@ -211,32 +278,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>12</td>
-            <td ><code>appointment_time</code></td>
-            <td >
-                Time</td>
-            <td >
-                Time
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>13</td>
-            <td ><code>duration</code></td>
-            <td >
-                Int</td>
-            <td >
-                Duration
-                <p class="text-muted small">
-                    In Minutes</p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>14</td>
+            <td>16</td>
             <td ><code>appointment_datetime</code></td>
             <td >
                 Datetime</td>
@@ -248,7 +290,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>17</td>
             <td ><code>column_break_2</code></td>
             <td class="info">
                 Column Break</td>
@@ -260,28 +302,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>16</td>
-            <td ><code>department</code></td>
-            <td >
-                Link</td>
-            <td >
-                Department
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/healthcare/medical_department">Medical Department</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>17</td>
+            <td>18</td>
             <td ><code>sales_invoice</code></td>
             <td >
                 Link</td>
@@ -302,7 +323,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td ><code>company</code></td>
             <td >
                 Link</td>
@@ -323,7 +344,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>19</td>
+            <td>20</td>
             <td ><code>section_break_3</code></td>
             <td >
                 Section Break</td>
@@ -335,7 +356,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>21</td>
             <td ><code>notes</code></td>
             <td >
                 Small Text</td>
@@ -347,7 +368,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>22</td>
             <td ><code>referring_physician</code></td>
             <td >
                 Link</td>
@@ -368,7 +389,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>23</td>
             <td ><code>reminded</code></td>
             <td >
                 Check</td>
@@ -400,48 +421,6 @@ Cancelled</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="after_insert" href="#after_insert" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>after_insert</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_update" href="#on_update" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_update</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="save" href="#save" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>save</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
         
     </div>
     <hr>
@@ -517,30 +496,12 @@ Cancelled</pre>
 	
         
     
-    <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.healthcare.doctype.patient_appointment.patient_appointment.create_invoice</code>
-    </p>
-	<p class="docs-attr-name">
-        <a name="erpnext.healthcare.doctype.patient_appointment.patient_appointment.create_invoice" href="#erpnext.healthcare.doctype.patient_appointment.patient_appointment.create_invoice" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.healthcare.doctype.patient_appointment.patient_appointment.<b>create_invoice</b>
-        <i class="text-muted">(company, physician, patient, appointment_id, appointment_date)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
     
 	<p class="docs-attr-name">
         <a name="erpnext.healthcare.doctype.patient_appointment.patient_appointment.create_invoice_items" href="#erpnext.healthcare.doctype.patient_appointment.patient_appointment.create_invoice_items" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.healthcare.doctype.patient_appointment.patient_appointment.<b>create_invoice_items</b>
-        <i class="text-muted">(appointment_id, physician, company, invoice)</i>
+        <i class="text-muted">(physician, company, invoice)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -611,6 +572,24 @@ Cancelled</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.healthcare.doctype.patient_appointment.patient_appointment.<b>get_fee_validity</b>
         <i class="text-muted">(physician, patient, date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.patient_appointment.patient_appointment.invoice_appointment</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.patient_appointment.patient_appointment.invoice_appointment" href="#erpnext.healthcare.doctype.patient_appointment.patient_appointment.invoice_appointment" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.patient_appointment.patient_appointment.<b>invoice_appointment</b>
+        <i class="text-muted">(appointment_doc)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

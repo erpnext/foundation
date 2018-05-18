@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/subscription"
@@ -40,74 +40,70 @@
     </thead>
     <tbody>
         
-        <tr class="info">
+        <tr >
             <td>1</td>
-            <td ><code>section_break_1</code></td>
+            <td class="danger" title="Mandatory"><code>subscriber</code></td>
             <td >
-                Section Break</td>
+                Link</td>
             <td >
+                Subscriber
                 
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/subscriber">Subscriber</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>cancel_at_period_end</code></td>
+            <td >
+                Check</td>
+            <td >
+                Cancel At End Of Period
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>2</td>
-            <td ><code>naming_series</code></td>
-            <td >
-                Select</td>
-            <td >
-                Series
-                
-            </td>
-            <td>
-                <pre>SUB-</pre>
-            </td>
-        </tr>
-        
-        <tr >
             <td>3</td>
-            <td class="danger" title="Mandatory"><code>reference_doctype</code></td>
+            <td ><code>start</code></td>
             <td >
-                Link</td>
+                Date</td>
             <td >
-                Reference Doctype
+                Subscription Start Date
                 
             </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/core/doctype">DocType</a>
-
-
-                
-            </td>
+            <td></td>
         </tr>
         
         <tr >
             <td>4</td>
-            <td class="danger" title="Mandatory"><code>reference_document</code></td>
+            <td ><code>cancelation_date</code></td>
             <td >
-                Dynamic Link</td>
+                Date</td>
             <td >
-                Reference Document
+                Cancelation Date
                 
             </td>
-            <td>
-                <pre>reference_doctype</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
             <td>5</td>
-            <td ><code>column_break_5</code></td>
-            <td class="info">
-                Column Break</td>
+            <td ><code>current_invoice_start</code></td>
             <td >
-                
+                Date</td>
+            <td >
+                Current Invoice Start Date
                 
             </td>
             <td></td>
@@ -115,11 +111,11 @@
         
         <tr >
             <td>6</td>
-            <td class="danger" title="Mandatory"><code>start_date</code></td>
+            <td ><code>current_invoice_end</code></td>
             <td >
                 Date</td>
             <td >
-                Start Date
+                Current Invoice End Date
                 
             </td>
             <td></td>
@@ -127,11 +123,11 @@
         
         <tr >
             <td>7</td>
-            <td ><code>end_date</code></td>
+            <td ><code>trial_period_start</code></td>
             <td >
                 Date</td>
             <td >
-                End Date
+                Trial Period Start Date
                 
             </td>
             <td></td>
@@ -139,11 +135,11 @@
         
         <tr >
             <td>8</td>
-            <td ><code>submit_on_creation</code></td>
+            <td ><code>trial_period_end</code></td>
             <td >
-                Check</td>
+                Date</td>
             <td >
-                Submit on Creation
+                Trial Period End Date
                 
             </td>
             <td></td>
@@ -151,206 +147,18 @@
         
         <tr >
             <td>9</td>
-            <td ><code>disabled</code></td>
+            <td ><code>cb_1</code></td>
+            <td class="info">
+                Column Break</td>
             <td >
-                Check</td>
-            <td >
-                Disabled
+                
                 
             </td>
             <td></td>
         </tr>
         
-        <tr class="info">
+        <tr >
             <td>10</td>
-            <td ><code>section_break_10</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>11</td>
-            <td class="danger" title="Mandatory"><code>frequency</code></td>
-            <td >
-                Select</td>
-            <td >
-                Frequency
-                
-            </td>
-            <td>
-                <pre>
-Daily
-Weekly
-Monthly
-Quarterly
-Half-yearly
-Yearly</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>12</td>
-            <td ><code>column_break_13</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>13</td>
-            <td ><code>repeat_on_day</code></td>
-            <td >
-                Int</td>
-            <td >
-                Repeat on Day
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>14</td>
-            <td ><code>next_schedule_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                Next Schedule Date
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr class="info">
-            <td>15</td>
-            <td ><code>notification</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                Notification
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>16</td>
-            <td ><code>notify_by_email</code></td>
-            <td >
-                Check</td>
-            <td >
-                Notify by Email
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>17</td>
-            <td ><code>subject</code></td>
-            <td >
-                Data</td>
-            <td >
-                Subject
-                <p class="text-muted small">
-                    To add dynamic subject, use jinja tags like
-
-<div><pre><code>New {{ doc.doctype }} #{{ doc.name }}</code></pre></div></p>
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>18</td>
-            <td ><code>column_break_17</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>19</td>
-            <td ><code>recipients</code></td>
-            <td >
-                Small Text</td>
-            <td >
-                Recipients
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>20</td>
-            <td ><code>print_format</code></td>
-            <td >
-                Link</td>
-            <td >
-                Print Format
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/printing/print_format">Print Format</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr class="info">
-            <td>21</td>
-            <td ><code>section_break_20</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                Message
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>22</td>
-            <td ><code>message</code></td>
-            <td >
-                Text</td>
-            <td >
-                Message
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr class="info">
-            <td>23</td>
-            <td ><code>section_break_16</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>24</td>
             <td ><code>status</code></td>
             <td >
                 Select</td>
@@ -360,21 +168,58 @@ Yearly</pre>
             </td>
             <td>
                 <pre>
-Draft
-Stopped
-Submitted
+Trialling
+Active
+Past Due Date
 Cancelled
-Completed</pre>
+Unpaid</pre>
             </td>
         </tr>
         
         <tr >
-            <td>25</td>
-            <td ><code>amended_from</code></td>
+            <td>11</td>
+            <td ><code>days_until_due</code></td>
             <td >
-                Link</td>
+                Int</td>
             <td >
-                Amended From
+                Days Until Due
+                <p class="text-muted small">
+                    Number of days that the subscriber has to pay invoices generated by this subscription</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>quantity</code></td>
+            <td >
+                Int</td>
+            <td >
+                Quantity
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>13</td>
+            <td ><code>sb_4</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Plans
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td class="danger" title="Mandatory"><code>plans</code></td>
+            <td >
+                Table</td>
+            <td >
+                Plans
                 
             </td>
             <td>
@@ -382,7 +227,137 @@ Completed</pre>
                 
 
 
-<a href="/docs/current/models/accounts/subscription">Subscription</a>
+<a href="/docs/current/models/accounts/subscription_plan_detail">Subscription Plan Detail</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>15</td>
+            <td ><code>sb_1</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Taxes
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>tax_template</code></td>
+            <td >
+                Link</td>
+            <td >
+                Sales Taxes and Charges Template
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/sales_taxes_and_charges_template">Sales Taxes and Charges Template</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>17</td>
+            <td ><code>sb_2</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Discounts
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>apply_additional_discount</code></td>
+            <td >
+                Select</td>
+            <td >
+                Apply Additional Discount On
+                
+            </td>
+            <td>
+                <pre>
+Grand Total
+Net total</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>cb_2</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>additional_discount_percentage</code></td>
+            <td >
+                Percent</td>
+            <td >
+                Additional DIscount Percentage
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>additional_discount_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Additional DIscount Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>22</td>
+            <td ><code>sb_3</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Invoices
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>invoices</code></td>
+            <td >
+                Table</td>
+            <td >
+                Invoices
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/subscription_invoice">Subscription Invoice</a>
 
 
                 
@@ -411,188 +386,6 @@ Completed</pre>
 </div>
     <div style="padding-left: 30px;">
         
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="before_cancel" href="#before_cancel" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>before_cancel</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="before_submit" href="#before_submit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>before_submit</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_submit" href="#on_submit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_submit</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_update_after_submit" href="#on_update_after_submit" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_update_after_submit</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="set_next_schedule_date" href="#set_next_schedule_date" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>set_next_schedule_date</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="unlink_subscription_id" href="#unlink_subscription_id" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>unlink_subscription_id</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_status" href="#update_status" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_status</b>
-        <i class="text-muted">(self, status=None)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_subscription_id" href="#update_subscription_id" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_subscription_id</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate" href="#validate" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_dates" href="#validate_dates" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_dates</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_email_id" href="#validate_email_id" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_email_id</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_next_schedule_date" href="#validate_next_schedule_date" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_next_schedule_date</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_reference_doctype" href="#validate_reference_doctype" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_reference_doctype</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
     </div>
     <hr>
 
@@ -601,14 +394,18 @@ Completed</pre>
 	
         
     
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.assign_task_to_owner" href="#erpnext.accounts.doctype.subscription.subscription.assign_task_to_owner" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>assign_task_to_owner</b>
-        <i class="text-muted">(name, msg, users)</i>
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.subscription.subscription.cancel_subscription</code>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.subscription.subscription.cancel_subscription" href="#erpnext.accounts.doctype.subscription.subscription.cancel_subscription" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.subscription.subscription.<b>cancel_subscription</b>
+        <i class="text-muted">(name)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Cancels a `Subscription`. This will stop the `Subscription` from further invoicing the
+`Subscriber` but all already outstanding invoices will not be affected.
+</code></pre>
 </div>
 	<br>
 
@@ -619,12 +416,13 @@ Completed</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.create_documents" href="#erpnext.accounts.doctype.subscription.subscription.create_documents" class="text-muted small">
+        <a name="erpnext.accounts.doctype.subscription.subscription.get_all_subscriptions" href="#erpnext.accounts.doctype.subscription.subscription.get_all_subscriptions" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>create_documents</b>
-        <i class="text-muted">(data, schedule_date)</i>
+		erpnext.accounts.doctype.subscription.subscription.<b>get_all_subscriptions</b>
+        <i class="text-muted">()</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><pre><code>Returns all `Subscription` documents
+</code></pre>
 </div>
 	<br>
 
@@ -635,74 +433,10 @@ Completed</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.disable_subscription" href="#erpnext.accounts.doctype.subscription.subscription.disable_subscription" class="text-muted small">
+        <a name="erpnext.accounts.doctype.subscription.subscription.get_prorata_factor" href="#erpnext.accounts.doctype.subscription.subscription.get_prorata_factor" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>disable_subscription</b>
-        <i class="text-muted">(data)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.get_next_date" href="#erpnext.accounts.doctype.subscription.subscription.get_next_date" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>get_next_date</b>
-        <i class="text-muted">(dt, mcount, day=None)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.get_next_schedule_date" href="#erpnext.accounts.doctype.subscription.subscription.get_next_schedule_date" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>get_next_schedule_date</b>
-        <i class="text-muted">(start_date, frequency, repeat_on_day)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.get_subscription_entries" href="#erpnext.accounts.doctype.subscription.subscription.get_subscription_entries" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>get_subscription_entries</b>
-        <i class="text-muted">(date)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.make_new_document" href="#erpnext.accounts.doctype.subscription.subscription.make_new_document" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>make_new_document</b>
-        <i class="text-muted">(args, schedule_date)</i>
+		erpnext.accounts.doctype.subscription.subscription.<b>get_prorata_factor</b>
+        <i class="text-muted">(period_end, period_start)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -714,15 +448,16 @@ Completed</pre>
         
     
     <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.accounts.doctype.subscription.subscription.make_subscription</code>
+        <br><code>/api/method/erpnext.accounts.doctype.subscription.subscription.get_subscription_updates</code>
     </p>
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.make_subscription" href="#erpnext.accounts.doctype.subscription.subscription.make_subscription" class="text-muted small">
+        <a name="erpnext.accounts.doctype.subscription.subscription.get_subscription_updates" href="#erpnext.accounts.doctype.subscription.subscription.get_subscription_updates" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>make_subscription</b>
-        <i class="text-muted">(doctype, docname)</i>
+		erpnext.accounts.doctype.subscription.subscription.<b>get_subscription_updates</b>
+        <i class="text-muted">(name)</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><pre><code>Use this to get the latest state of the given `Subscription`
+</code></pre>
 </div>
 	<br>
 
@@ -733,28 +468,13 @@ Completed</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.make_subscription_entry" href="#erpnext.accounts.doctype.subscription.subscription.make_subscription_entry" class="text-muted small">
+        <a name="erpnext.accounts.doctype.subscription.subscription.process" href="#erpnext.accounts.doctype.subscription.subscription.process" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>make_subscription_entry</b>
-        <i class="text-muted">(date=None)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.notify_error_to_user" href="#erpnext.accounts.doctype.subscription.subscription.notify_error_to_user" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>notify_error_to_user</b>
+		erpnext.accounts.doctype.subscription.subscription.<b>process</b>
         <i class="text-muted">(data)</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><pre><code>Checks a `Subscription` and updates it status as necessary
+</code></pre>
 </div>
 	<br>
 
@@ -765,44 +485,13 @@ Completed</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.notify_errors" href="#erpnext.accounts.doctype.subscription.subscription.notify_errors" class="text-muted small">
+        <a name="erpnext.accounts.doctype.subscription.subscription.process_all" href="#erpnext.accounts.doctype.subscription.subscription.process_all" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>notify_errors</b>
-        <i class="text-muted">(doc, doctype, party, owner, name)</i>
+		erpnext.accounts.doctype.subscription.subscription.<b>process_all</b>
+        <i class="text-muted">()</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.send_notification" href="#erpnext.accounts.doctype.subscription.subscription.send_notification" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>send_notification</b>
-        <i class="text-muted">(new_rv, subscription_doc, print_format=Standard)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Notify concerned persons about recurring document generation</p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.set_subscription_period" href="#erpnext.accounts.doctype.subscription.subscription.set_subscription_period" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>set_subscription_period</b>
-        <i class="text-muted">(args, mcount, new_document)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><pre><code>Task to updates the status of all `Subscription` apart from those that are cancelled
+</code></pre>
 </div>
 	<br>
 
@@ -812,47 +501,17 @@ Completed</pre>
         
     
     <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.accounts.doctype.subscription.subscription.stop_resume_subscription</code>
+        <br><code>/api/method/erpnext.accounts.doctype.subscription.subscription.restart_subscription</code>
     </p>
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.stop_resume_subscription" href="#erpnext.accounts.doctype.subscription.subscription.stop_resume_subscription" class="text-muted small">
+        <a name="erpnext.accounts.doctype.subscription.subscription.restart_subscription" href="#erpnext.accounts.doctype.subscription.subscription.restart_subscription" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>stop_resume_subscription</b>
-        <i class="text-muted">(subscription, status)</i>
+		erpnext.accounts.doctype.subscription.subscription.<b>restart_subscription</b>
+        <i class="text-muted">(name)</i>
     </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.subscription_doctype_query" href="#erpnext.accounts.doctype.subscription.subscription.subscription_doctype_query" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>subscription_doctype_query</b>
-        <i class="text-muted">(doctype, txt, searchfield, start, page_len, filters)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.subscription.subscription.update_doc" href="#erpnext.accounts.doctype.subscription.subscription.update_doc" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.subscription.subscription.<b>update_doc</b>
-        <i class="text-muted">(new_document, reference_doc, args, schedule_date)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+	<div class="docs-attr-desc"><pre><code>Restarts a cancelled `Subscription`. The `Subscription` will 'forget' the history of
+all invoices it has generated
+</code></pre>
 </div>
 	<br>
 
@@ -860,110 +519,6 @@ Completed</pre>
 
 
     
-    
-        <h4>Linked In:</h4>
-        <ul>
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/stock/delivery_note">Delivery Note</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/accounts/journal_entry">Journal Entry</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/accounts/payment_entry">Payment Entry</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/accounts/purchase_invoice">Purchase Invoice</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/buying/purchase_order">Purchase Order</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/stock/purchase_receipt">Purchase Receipt</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/selling/quotation">Quotation</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/accounts/sales_invoice">Sales Invoice</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/selling/sales_order">Sales Order</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/accounts/subscription">Subscription</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
-<a href="/docs/current/models/buying/supplier_quotation">Supplier Quotation</a>
-
-</li>
-			
-        
-        </ul>
     
 
 

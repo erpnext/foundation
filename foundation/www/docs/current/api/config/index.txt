@@ -16,6 +16,7 @@ erpnext.config.accounts
 erpnext.config.crm
 erpnext.config.assets
 erpnext.config.manufacturing
+erpnext.config.erpnext_integrations
 erpnext.config
 erpnext.config.hub_node
 erpnext.config.buying

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/projects/doctype/project"
@@ -554,6 +554,18 @@ High</pre>
         
         <tr >
             <td>37</td>
+            <td ><code>total_consumed_material_cost</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Total Consumed Material Cost  (via Stock Entry)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>38</td>
             <td ><code>cost_center</code></td>
             <td >
                 Link</td>
@@ -574,7 +586,7 @@ High</pre>
         </tr>
         
         <tr class="info">
-            <td>38</td>
+            <td>39</td>
             <td ><code>margin</code></td>
             <td >
                 Section Break</td>
@@ -586,7 +598,7 @@ High</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>40</td>
             <td ><code>gross_margin</code></td>
             <td >
                 Currency</td>
@@ -600,7 +612,7 @@ High</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>41</td>
             <td ><code>column_break_37</code></td>
             <td class="info">
                 Column Break</td>
@@ -612,12 +624,157 @@ High</pre>
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>42</td>
             <td ><code>per_gross_margin</code></td>
             <td >
                 Percent</td>
             <td >
                 Gross Margin %
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>43</td>
+            <td ><code>monitor_progress</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Monitor Progress
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>44</td>
+            <td ><code>collect_progress</code></td>
+            <td >
+                Check</td>
+            <td >
+                Collect Progress
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>45</td>
+            <td ><code>frequency</code></td>
+            <td >
+                Select</td>
+            <td >
+                Frequency To Collect Progress
+                
+            </td>
+            <td>
+                <pre>Hourly
+Twice Daily
+Daily
+Weekly</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>46</td>
+            <td ><code>column_break_45</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>47</td>
+            <td ><code>from</code></td>
+            <td >
+                Time</td>
+            <td >
+                From
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>48</td>
+            <td ><code>to</code></td>
+            <td >
+                Time</td>
+            <td >
+                To
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>49</td>
+            <td ><code>first_email</code></td>
+            <td >
+                Time</td>
+            <td >
+                First Email
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>50</td>
+            <td ><code>second_email</code></td>
+            <td >
+                Time</td>
+            <td >
+                Second Email
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>51</td>
+            <td ><code>daily_time_to_send</code></td>
+            <td >
+                Time</td>
+            <td >
+                Time to send
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>52</td>
+            <td ><code>day_to_send</code></td>
+            <td >
+                Select</td>
+            <td >
+                Day to Send
+                
+            </td>
+            <td>
+                <pre>Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>53</td>
+            <td ><code>weekly_time_to_send</code></td>
+            <td >
+                Time</td>
+            <td >
+                Time to send
                 
             </td>
             <td></td>
@@ -645,302 +802,60 @@ High</pre>
 </div>
     <div style="padding-left: 30px;">
         
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="__setup__" href="#__setup__" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>__setup__</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="after_insert" href="#after_insert" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>after_insert</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_feed" href="#get_feed" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_feed</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="get_tasks" href="#get_tasks" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>get_tasks</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="load_tasks" href="#load_tasks" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>load_tasks</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Load <code>tasks</code> from the database</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="map_custom_fields" href="#map_custom_fields" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>map_custom_fields</b>
-        <i class="text-muted">(self, source, target)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="on_update" href="#on_update" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>on_update</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="onload" href="#onload" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>onload</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p>Load project tasks for quick view</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="send_welcome_email" href="#send_welcome_email" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>send_welcome_email</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="sync_tasks" href="#sync_tasks" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>sync_tasks</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p>sync tasks and remove table</p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_billed_amount" href="#update_billed_amount" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_billed_amount</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_costing" href="#update_costing" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_costing</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_dependencies_on_duplicated_project" href="#update_dependencies_on_duplicated_project" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_dependencies_on_duplicated_project</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_percent_complete" href="#update_percent_complete" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_percent_complete</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_project" href="#update_project" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_project</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_purchase_costing" href="#update_purchase_costing" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_purchase_costing</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="update_sales_amount" href="#update_sales_amount" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>update_sales_amount</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate" href="#validate" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_dates" href="#validate_dates" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_dates</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_project_name" href="#validate_project_name" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_project_name</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="validate_weights" href="#validate_weights" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		<b>validate_weights</b>
-        <i class="text-muted">(self)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-        
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.projects.doctype.project.project.create_kanban_board_if_not_exists</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.projects.doctype.project.project.create_kanban_board_if_not_exists" href="#erpnext.projects.doctype.project.project.create_kanban_board_if_not_exists" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.projects.doctype.project.project.<b>create_kanban_board_if_not_exists</b>
+        <i class="text-muted">(project)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.projects.doctype.project.project.create_project_update" href="#erpnext.projects.doctype.project.project.create_project_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.projects.doctype.project.project.<b>create_project_update</b>
+        <i class="text-muted">(project)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.projects.doctype.project.project.daily_reminder</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.projects.doctype.project.project.daily_reminder" href="#erpnext.projects.doctype.project.project.daily_reminder" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.projects.doctype.project.project.<b>daily_reminder</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 
@@ -1019,6 +934,78 @@ High</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.projects.doctype.project.project.<b>get_users_for_project</b>
         <i class="text-muted">(doctype, txt, searchfield, start, page_len, filters)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.projects.doctype.project.project.hourly_reminder</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.projects.doctype.project.project.hourly_reminder" href="#erpnext.projects.doctype.project.project.hourly_reminder" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.projects.doctype.project.project.<b>hourly_reminder</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.projects.doctype.project.project.times_check</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.projects.doctype.project.project.times_check" href="#erpnext.projects.doctype.project.project.times_check" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.projects.doctype.project.project.<b>times_check</b>
+        <i class="text-muted">(from1, to, first_email, second_email, daily_time_to_send, weekly_time_to_send)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.projects.doctype.project.project.twice_daily_reminder</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.projects.doctype.project.project.twice_daily_reminder" href="#erpnext.projects.doctype.project.project.twice_daily_reminder" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.projects.doctype.project.project.<b>twice_daily_reminder</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.projects.doctype.project.project.weekly</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.projects.doctype.project.project.weekly" href="#erpnext.projects.doctype.project.project.weekly" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.projects.doctype.project.project.<b>weekly</b>
+        <i class="text-muted">()</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -1144,7 +1131,7 @@ High</pre>
             <li>
 
 
-<a href="/docs/current/models/manufacturing/production_order">Production Order</a>
+<a href="/docs/current/models/manufacturing/production_plan">Production Plan</a>
 
 </li>
 			
@@ -1153,7 +1140,7 @@ High</pre>
             <li>
 
 
-<a href="/docs/current/models/manufacturing/production_plan">Production Plan</a>
+<a href="/docs/current/models/projects/project_update">Project Update</a>
 
 </li>
 			
@@ -1253,6 +1240,15 @@ High</pre>
 
 
 <a href="/docs/current/models/projects/timesheet_detail">Timesheet Detail</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/work_order">Work Order</a>
 
 </li>
 			

@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/hub_node/__init__.py"
@@ -105,13 +105,31 @@
         
     
     <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hub_node.get_item_favourites</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hub_node.get_item_favourites" href="#erpnext.hub_node.get_item_favourites" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hub_node.<b>get_item_favourites</b>
+        <i class="text-muted">(start=0, limit=20, fields=['*'], order_by=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.hub_node.get_list</code>
     </p>
 	<p class="docs-attr-name">
         <a name="erpnext.hub_node.get_list" href="#erpnext.hub_node.get_list" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.hub_node.<b>get_list</b>
-        <i class="text-muted">(doctype, start=0, limit=20, fields=[u'*'], filters={}, order_by=None)</i>
+        <i class="text-muted">(doctype, start=0, limit=20, fields=['*'], filters={}, order_by=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -255,13 +273,49 @@
         
     
     <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hub_node.send_review</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hub_node.send_review" href="#erpnext.hub_node.send_review" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hub_node.<b>send_review</b>
+        <i class="text-muted">(hub_item_code, review)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.hub_node.update_category</code>
     </p>
 	<p class="docs-attr-name">
         <a name="erpnext.hub_node.update_category" href="#erpnext.hub_node.update_category" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.hub_node.<b>update_category</b>
-        <i class="text-muted">(item_name, category)</i>
+        <i class="text-muted">(hub_item_code, category)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hub_node.update_wishlist_item</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hub_node.update_wishlist_item" href="#erpnext.hub_node.update_wishlist_item" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hub_node.<b>update_wishlist_item</b>
+        <i class="text-muted">(item_name, remove=0)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

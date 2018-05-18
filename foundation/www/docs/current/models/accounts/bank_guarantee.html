@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.2</a>
+	Version 10.1.31</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/bank_guarantee"
@@ -42,7 +42,58 @@
         
         <tr >
             <td>1</td>
-            <td class="danger" title="Mandatory"><code>customer</code></td>
+            <td class="danger" title="Mandatory"><code>bg_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Bank Guarantee Type
+                
+            </td>
+            <td>
+                <pre>
+Receiving
+Providing</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>reference_doctype</code></td>
+            <td >
+                Link</td>
+            <td >
+                Reference Document Type
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>reference_docname</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Reference Document Name
+                
+            </td>
+            <td>
+                <pre>reference_doctype</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>customer</code></td>
             <td >
                 Link</td>
             <td >
@@ -62,7 +113,28 @@
         </tr>
         
         <tr >
-            <td>2</td>
+            <td>5</td>
+            <td ><code>supplier</code></td>
+            <td >
+                Link</td>
+            <td >
+                Supplier
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/buying/supplier">Supplier</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
             <td ><code>project</code></td>
             <td >
                 Link</td>
@@ -83,8 +155,20 @@
         </tr>
         
         <tr >
-            <td>3</td>
-            <td class="danger" title="Mandatory"><code>account</code></td>
+            <td>7</td>
+            <td ><code>column_break_6</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>account</code></td>
             <td >
                 Link</td>
             <td >
@@ -104,7 +188,7 @@
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>9</td>
             <td class="danger" title="Mandatory"><code>amount</code></td>
             <td >
                 Currency</td>
@@ -116,19 +200,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
-            <td ><code>column_break_6</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>6</td>
+            <td>10</td>
             <td class="danger" title="Mandatory"><code>start_date</code></td>
             <td >
                 Date</td>
@@ -140,8 +212,8 @@
         </tr>
         
         <tr >
-            <td>7</td>
-            <td class="danger" title="Mandatory"><code>validity</code></td>
+            <td>11</td>
+            <td ><code>validity</code></td>
             <td >
                 Int</td>
             <td >
@@ -152,8 +224,8 @@
         </tr>
         
         <tr >
-            <td>8</td>
-            <td class="danger" title="Mandatory"><code>end_date</code></td>
+            <td>12</td>
+            <td ><code>end_date</code></td>
             <td >
                 Date</td>
             <td >
@@ -163,9 +235,45 @@
             <td></td>
         </tr>
         
+        <tr class="info">
+            <td>13</td>
+            <td ><code>section_break_14</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
         <tr >
-            <td>9</td>
-            <td class="danger" title="Mandatory"><code>bank_guarantee_number</code></td>
+            <td>14</td>
+            <td ><code>more_information</code></td>
+            <td >
+                Text Editor</td>
+            <td >
+                Clauses and Conditions
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>15</td>
+            <td ><code>margin_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Other Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>bank_guarantee_number</code></td>
             <td >
                 Data</td>
             <td >
@@ -175,32 +283,80 @@
             <td></td>
         </tr>
         
-        <tr class="info">
-            <td>10</td>
-            <td ><code>section_break_10</code></td>
+        <tr >
+            <td>17</td>
+            <td ><code>name_of_beneficiary</code></td>
             <td >
-                Section Break</td>
+                Data</td>
             <td >
-                More Information
+                Name of Beneficiary
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>11</td>
-            <td ><code>more_information</code></td>
+            <td>18</td>
+            <td ><code>name_of_bank</code></td>
             <td >
-                Text Editor</td>
+                Data</td>
             <td >
-                Notes
+                Name of Bank
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>19</td>
+            <td ><code>column_break_19</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>margin_money</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Margin Money
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>charges</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Charges Incurred
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>fixed_deposit_number</code></td>
+            <td >
+                Data</td>
+            <td >
+                Fixed Deposit Number
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -244,6 +400,24 @@
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.bank_guarantee.bank_guarantee.get_vouchar_detials</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.bank_guarantee.bank_guarantee.get_vouchar_detials" href="#erpnext.accounts.doctype.bank_guarantee.bank_guarantee.get_vouchar_detials" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.bank_guarantee.bank_guarantee.<b>get_vouchar_detials</b>
+        <i class="text-muted">(column_list, doctype, docname)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 
