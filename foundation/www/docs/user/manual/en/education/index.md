@@ -33,7 +33,7 @@ The very first implementation of ERPNext was driven by a school teacher herself.
         <iframe src='https://www.youtube.com/embed/t8ZDDq4qtIk?end=52' frameborder='0' allowfullscreen>
         </iframe>
     </div>
-<div>
+</div>
 
 ### User Manual
 
