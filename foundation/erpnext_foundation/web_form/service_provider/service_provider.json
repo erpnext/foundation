@@ -17,7 +17,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2018-01-10 12:04:04.245162", 
+ "modified": "2018-05-24 21:48:13.434138", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "service-provider", 
@@ -103,6 +103,16 @@
    "reqd": 1
   }, 
   {
+   "fieldname": "address", 
+   "fieldtype": "Small Text", 
+   "hidden": 0, 
+   "label": "Address", 
+   "max_length": 0, 
+   "max_value": 0, 
+   "read_only": 0, 
+   "reqd": 0
+  }, 
+  {
    "fieldname": "discuss_ids", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -123,10 +133,10 @@
    "reqd": 0
   }, 
   {
-   "fieldname": "website", 
+   "fieldname": "website_url", 
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Website URL", 
+   "label": "Website", 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
