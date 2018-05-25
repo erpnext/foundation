@@ -13,6 +13,11 @@ def get_last_membership():
 
 	return last_membership and last_membership[0]
 
+def get_all_memberships_of_one_member():
+	'''Returns last membership if exists'''
+	all_memberships = frappe.get_all("Membership", fields=["name", "from_date", "to_date", "membership_type", "amount","currency"], filters={"member":"asbasawaraj@gmail.com","paid": "1"},order_by="to_date desc")
+	return all_memberships
+
 def is_member():
 	'''Returns true if the user is still a member'''
 	last_membership = get_last_membership()
