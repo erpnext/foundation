@@ -30,7 +30,7 @@ def migrate():
 						values (%s, %s, %s, %s, %s, %s)""",
 							(auth.doctype, auth.name, auth.fieldname, auth.password, auth.salt, auth.encrypted))
 
-			print u.name
+			print (u.name)
 
 	frappe.db.sql('delete from `tabService Provider`')
 	partners = source.sql('select * from `tabFrappe Partner`', as_dict=True)
@@ -53,7 +53,7 @@ def migrate():
 			route=p.route,
 			show_in_website=p.show_in_website
 		)).insert(ignore_if_duplicate=True, ignore_mandatory=True)
-		print d.name
+		print (d.name)
 
 	jobs = source.sql('select * from `tabFrappe Job`', as_dict=True)
 	frappe.db.sql('delete from `tabPortal Job`')
@@ -78,7 +78,7 @@ def migrate():
 			route=j.route,
 			show_in_website=j.show_in_website
 		)).insert(ignore_if_duplicate=True, ignore_mandatory=True)
-		print d.name
+		print (d.name)
 
 	apps = source.sql('select * from `tabFrappe App`', as_dict=True)
 	frappe.db.sql('delete from `tabFrappe App`')
@@ -96,4 +96,4 @@ def migrate():
 			owner=a.owner,
 			creation=a.creation,
 		)).insert(ignore_if_duplicate=True, ignore_mandatory=True)
-		print d.name
+		print (d.name)
