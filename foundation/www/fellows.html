@@ -71,13 +71,14 @@
 %}
 
 <section class='section-padding'>
-	<h2 class='text-center'>Foundation Fellows</h2>
+	<h1 class='text-center'>Foundation Fellows</h1>
 	<p class='lead text-center'>
 		ERPNext Foundation Fellows have shown outstanding leadership in contributing features and/or helping out new members on the forum. Lets take a moment to recognize their efforts.
 	</p>
-	<div class='card-deck mt-5'>
+	<div class='row mt-5'>
 	{% for item in fellows %}
-		<div class='card'>
+		<div class='col-sm-4 mb-4'>
+		<div class='card h-100'>
 			<img class="card-img-top greyscale"
 				src="{{ item.image }}" alt="{{ item.title }}">
 			<div class="card-body">
@@ -97,25 +98,36 @@
 				</div>
 			</div>
 			<div class="card-footer">
-				<a href='{{ item.website }}' class='text-muted'>{{ item.website }}</a>
+				<a href='{{ item.website }}' class='text-muted small'>{{ item.website }}</a>
 			</div>
 		</div>
-	{% if loop.index is divisibleby 3 %}
-	</div><div class='card-deck mt-5'>
-	{% endif %}
+		</div>
 	{% endfor %}
 	</div>
+
+	<div class='card my-5'>
+		<div class='card-body'>
+			<div class="media ">
+			  <img class="mr-3 greyscale rounded-circle"
+			  	src="https://erpnext.org/files/charles_henri.jpeg"
+			  	alt="Charles-Henri Decultot" style='max-width: 100px'>
+			  <div class="media-body">
+			    <h5 class="mt-0">Charles-Henri Decultot,
+					<a href="https://dokos.io/" target="_blank">Dokos.io</a></h5>
+			"		The success of an open-source project depends on the quality of its core team but also on the quality of its community.
+		As community members, it is our duty to contribute back to this great project in any way we can.
+		That's the reason why, at Dokos, we always try to enhance the core model before making any custom developments.
+		Everybody's contributions leads to making ERPNext better every day: it's a win-win situation
+"
+			  </div>
+			</div>
+		</div>
+	</div>
+
 	<p class='mt-4 text-center'>
 	<a class='mt-4 btn-dark btn-sm btn' href="/contact">
 		Contact Us To Nominate A Fellow</a>
 	</p>
 <section>
-<style>
-	@media (min-width: 768px) {
-		.card {
-			max-width: 245px;
-		}
-	}
-</style>
 {% endblock %}
 
