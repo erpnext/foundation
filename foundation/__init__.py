@@ -8,10 +8,21 @@ import frappe
 
 def get_last_membership():
 	'''Returns last membership if exists'''
-	last_membership = frappe.get_all('Membership', 'name,to_date,membership_type',
-		dict(member=frappe.session.user, paid=1), order_by='to_date desc', limit=1)
+	member_id = frappe.db.get_value("Member", {'email': frappe.session.user}, "name")
+	if member_id:
+		last_membership = frappe.get_all('Membership', 'name,to_date,membership_type',
+			dict(member=member_id, paid=1), order_by='to_date desc', limit=1)
 
 	return last_membership and last_membership[0]
+
+def get_all_memberships_of_one_member():
+	'''Returns all memberships'''
+	member_id = frappe.db.get_value("Member", {'email': frappe.session.user}, "name")
+	if member_id:
+		all_memberships = frappe.get_all('Membership', 'name,from_date,to_date,membership_type,amount,currency',
+			dict(member=member_id, paid=1), order_by='to_date desc')
+
+	return all_memberships
 
 def is_member():
 	'''Returns true if the user is still a member'''
