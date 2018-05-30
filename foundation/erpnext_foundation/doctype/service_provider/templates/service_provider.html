@@ -3,7 +3,7 @@
 {% block page_content %}
 <h1 class="media-heading">{{ title }}</h1>
 {% if membership_type %}
-<p><span class=label>{{ membership_type }} Member<span></p>
+<p><span class='badge badge-light'>{{ membership_type }} Member<span></p>
 {% endif %}
 <section>
 	<div class="media">
@@ -15,39 +15,40 @@
 		</div>
 		<div class="media-body">
 			{{ introduction }}
-			<table class='table table-bordered small'>
-				<tr>
-					<td style='width: 38.2%'>Country</td>
-					<td>{{ country }}</td>
-				</tr>
-				<tr>
-					<td>Address</td>
-					<td>{{ (address or '').replace('\n', '<br>') }}</td>
-				</tr>
-				</tr>
-					<td>Phone</td>
-					<td>{{ phone }}</td>
-				</tr>
-				</tr>
-					<td>Email</td>
-					<td><a href="mailto:{{ email }}" target="_blank">
-						{{ email }}</a></td>
-				</tr>
-				{% if website_url %}
-				</tr>
-					<td>Website</td>
-					<td><a href="{{ website_url }}" target="_blank">{{ website_url }}</a></td>
-				</tr>
-				{% endif %}
-			</table>
-
 		</div>
 	</div>
+</section>
+<section>
+	<table class='table table-bordered small'>
+		<tr>
+			<td style='width: 38.2%'>Country</td>
+			<td>{{ country }}</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td>{{ (address or '').replace('\n', '<br>') }}</td>
+		</tr>
+		</tr>
+			<td>Phone</td>
+			<td>{{ phone }}</td>
+		</tr>
+		</tr>
+			<td>Email</td>
+			<td><a href="mailto:{{ email }}" target="_blank">
+				{{ email }}</a></td>
+		</tr>
+		{% if website_url %}
+		</tr>
+			<td>Website</td>
+			<td><a href="{{ website_url }}" target="_blank">{{ website_url }}</a></td>
+		</tr>
+		{% endif %}
+	</table>
 </section>
 <section>
 	{{ details }}
 </section>
 <section>
-<p><a class='mt-4 btn-primary btn' href="mailto:{{ email }}">Contact {{ title }}</a></p>
+<p><a class='mt-4 btn-dark btn' href="mailto:{{ email }}">Contact {{ title }}</a></p>
 </section>
 {% endblock %}

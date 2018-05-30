@@ -41,15 +41,25 @@ website_context = {
 	# "navbar_search": 1,
 	"brand_html": "<img class='mr-2 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo.svg' alt='Oensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
-			{"label": "About", "url": "/about", "right":1},
-			{"label": "Blog", "url": "/blog", "right":1},
-			{"label": "Foundation", "child_items":[
-				{"label": "Chapter", "url": "/chapters","right": 1},
-				{"label": "Foundation Fellow", "url": "/foundation-fellow","right": 1}
+			{"label": "ERPNext", "child_items":[
+				{"label": "Get ERPNext", "url": "/get-started"},
+				{"label": "User Manual", "url": "/docs/user"},
+				{"label": "Free Trial", "url": "https://erpnext.com"},
+			], "right":1},
+			{"label": "Community", "child_items":[
+				{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "target='_blank'"},
+				{"label": "Chapters", "url": "/chapter-list"},
+				{"label": "Fellows", "url": "/fellows"}
 			], "right":1},
 			{"label": "Services", "child_items":[
-				{"label": "Service Providers", "url": "/service-providers","right": 1},
-				{"label": "Freelancer Jobs", "url": "/erpnext-jobs", "right": 1},
+				{"label": "Service Providers", "url": "/service-providers"},
+				{"label": "Freelancer Jobs", "url": "/erpnext-jobs"},
+				{"label": "Become a Service Provider", "url": "/faq"}
+			], "right":1},
+			{"label": "Foundation", "child_items":[
+				{"label": "About", "url": "/about"},
+				{"label": "Blog", "url": "/blog"},
+				{"label": "Memberships", "url": "/members"},
 			], "right":1},
 	],
 	"hide_login": 0,

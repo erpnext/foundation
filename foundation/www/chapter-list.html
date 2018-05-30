@@ -1,0 +1,94 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+{% set chapters = [
+	{
+		'city': 'Mumbai, India',
+		'meetup-link': 'https://www.meetup.com/ERPNext-Community-Meetup/',
+		'image': '/assets/img/meetups/mumbai.png',
+		'members': 720
+	},
+	{
+		'city': 'Bengaluru, India',
+		'meetup-link': 'https://www.meetup.com/ERPNext-Bangalore-Community/',
+		'image': '/assets/img/meetups/bengaluru.png',
+		'members': 590
+	},
+	{
+		'city': 'Bay Area, United States',
+		'meetup-link': 'https://www.meetup.com/ERPNext-Community-Bay-Area/',
+		'image': '/assets/img/meetups/bay-area.png',
+		'members': 15
+	},
+	{
+		'city': 'Pune, India',
+		'meetup-link': 'https://www.meetup.com/Pune-ERPNext-Meetup/',
+		'image': '/assets/img/meetups/pune.png',
+		'members': 540
+	},
+	{
+		'city': 'New England, United States',
+		'meetup-link': 'https://www.meetup.com/ERPNext-New-England/events/246491433/',
+		'image': '/assets/img/meetups/new-england.png',
+		'members': 10
+	},
+	{
+		'city': 'Dubai, UAE',
+		'meetup-link': 'https://www.meetup.com/UAE-ERPNext-Meetup/',
+		'image': '/assets/img/meetups/dubai.png',
+		'members': 53
+	},
+	{
+		'city': 'Frankfurt, Germany',
+		'meetup-link': 'https://www.meetup.com/ERPNext-Europe/',
+		'image': '/assets/img/meetups/frankfurt.png',
+		'members': 24
+	},
+	{
+		'city': 'Jakarta, Indonesia',
+		'meetup-link': 'https://www.meetup.com/ERPNext-Jakarta-Community-Meetup/',
+		'image': '/assets/img/meetups/jakarta.png',
+		'members': 55
+	},
+	{
+		'city': 'Paris, France',
+		'meetup-link': 'https://www.meetup.com/ERPNext-France/',
+		'image': '/assets/img/meetups/paris.png',
+		'members': 20
+	},
+] %}
+
+<section class='section-padding'>
+	<h2 class='text-center'>Chapters</h2>
+	<p class='lead text-center'>
+		Become a part of your local ERPNext Community by joining a chapter near you.
+		If you can't find one, start your own!
+	</p>
+</section>
+<section>
+	<div class='card-deck'>
+	{% for item in chapters %}
+
+	<a href='{{ item['meetup-link' ]}}' target='_blank' class='card mb-4'>
+		<img class="card-img-top greyscale" src="{{ item.image }}" alt="{{ item.city }}">
+		<div class="card-body">
+			<h5>{{ item.city }}</h5>
+			<div class='text-muted'>{{ item.members }} members</div>
+		</div>
+	</a>
+	{% if loop.index is divisibleby 3 %}
+	</div><div class='card-deck'>
+	{% endif %}
+	{% endfor %}
+	</div>
+	<div class='mt-4 text-center'>
+		<div class='text-muted'>
+			To start your own chapter, start a group on Meetup.com and get in touch with us.
+		</div>
+		<div>
+		<a class='mt-2 btn-dark btn-sm btn' href="/contact">Contact Us To Start a New Chapter</a>
+		</div>
+	</div>
+<section>
+{% endblock %}

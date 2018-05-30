@@ -4,17 +4,15 @@
 
 {% macro card(title, body, badges, color) %}
 <div class="col-sm">
-	<a href="/members/details" class="card mb-4">
+	<a href="/members/details" class="card h-100 mb-4">
 	  <div class="card-body">
-		  <h6 class="indicator {{ color }}">{{ title }}</h6>
+		  <h5>{{ title }}</h5>
 	    <p class="card-text">{{ body }}</p>
-		<div>
-			{% for badge in badges %}
-			<span class='badge badge-secondary'>{{ badge }}</span>
-			{% endfor %}
-		</div>
 	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
 	  </div>
+		<div class='card-footer'>
+			{{ ', '.join(badges) }}
+		</div>
 	</a>
 </div>
 {% endmacro %}
@@ -26,33 +24,35 @@
 	<p>The ERPNext Foundation aims to be driven by its members. By becoming a members, you get a preferred listing on the ERPNext Job Board and access to incoming requests for implementation and customization jobs, and show your support for ERPNext
 	</p>
 </section>
-<section class='section-padding text-center'>
-	<h3>Membership Types</h3>
+<section class='section-padding'>
+	<h3 class='text-center'>Membership Types</h3>
 	<div class='row mt-4'>
 	{{ card(
 		"Gold Member",
-		"By becoming a Gold Member, you show your leadership  and a premium positioning for your brand. As a Gold Member, you have priority on all the ERPNext Listings.",
+		"By becoming a Gold Member, you show your leadership and a premium positioning for your brand. As a Gold Member, you have a priority listing on the service provider's page.",
 		["$5000", "₹3,00,000"],
 		"blue")
 	}}
 	{{ card(
 		"Silver Member",
-		"Silver membersget priority listing on the Service Provider board after the Gold Members. Becoming a silver member will give you increased visibility in the ERPNext Community.",
+		"Silver members get priority listing on the Service Provider board after the Gold Members. Silver members get listed after the Gold Members on the service provider's page.",
 		["$1500", "₹1,00,000"],
 		"gray")
 	}}
 	{{ card(
 		"Individual Member",
-		"Individual membership is ideal for users and freelancers who want to show their solidarity to the project and community. Individual members get listed above those with a free listing.",
+		"Individual membership is ideal for users and freelancers who want to show their support to the project. Individual members are also listed on the service provider's page.",
 		["$200", "₹10,000"],
 		"light-gray")
 	}}
 	</div>
-	<p class='mt-5'>
-		<a href="/members/details" class="btn btn-dark">Become A Member</a>
-	</p>
-	<p>
-		<a href="/service-providers" class='text-muted'>See List of All Members</a>
-	</p>
+	<div class='text-center'>
+		<p class='mt-5'>
+			<a href="/members/details" class="btn btn-dark">Become A Member</a>
+		</p>
+		<p>
+			<a href="/service-providers" class='text-muted'>See List of All Members</a>
+		</p>
+	</div>
 </section>
 {% endblock %}

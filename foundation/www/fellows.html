@@ -1,0 +1,121 @@
+{% extends "templates/web.html" %}
+
+{% block title %}ERPNext Foundation Fellows{% endblock %}
+{% block page_content %}
+
+{% set fellows = [
+		{
+			'name': 'Annop Kurungadam',
+			'image': 'https://erpnext.org/files/anoop.jpeg',
+			'website': 'https://earthianslive.com',
+			'discuss': 'akurungadam',
+			'github': 'akurungadam'
+		},
+		{
+			'name': 'Charles-Henri Decultot',
+			'image': 'https://erpnext.org/files/charles_henri.jpeg',
+			'website': 'https://dokos.io',
+			'discuss': 'chdecultot',
+			'github': 'chdecultot'
+		},
+		{
+			'name': 'Ben Cornwell Mott',
+			'image': 'https://erpnext.org/files/bcornwellmott.jpeg',
+			'website': 'https://www.velometro.com',
+			'discuss': 'bcornwellmott',
+			'github': 'Ben_Cornwell_Mott'
+		},
+		{
+			'name': 'Pawan Mehta',
+			'image': 'https://erpnext.org/files/pawan_mehta.png',
+			'website': 'https://openetech.com',
+			'discuss': 'Pawan',
+			'github': 'PawanMeh'
+		},
+		{
+			'name': 'Max Morais',
+			'image': 'https://erpnext.org/files/maxmorais.jpeg',
+			'website': 'http://maxmorais.github.io/',
+			'discuss': 'max_morais_dmm',
+			'github': 'maxmorais'
+		},
+		{
+			'name': 'Ranjith Kurungadam',
+			'image': 'https://erpnext.org/files/rkurungadam.png',
+			'website': 'https://earthianslive.com',
+			'discuss': 'Ranjith',
+			'github': 'rkurungadam'
+		},
+		{
+			'name': 'Jamsheer',
+			'image': 'https://erpnext.org/files/jamsheer.jpeg',
+			'website': 'https://earthianslive.com',
+			'discuss': 'jamsheer',
+			'github': 'pjamsheer'
+		},
+		{
+			'name': 'Dominik Ottenbreit',
+			'image': 'https://erpnext.org/files/dominik.jpeg',
+			'website': 'https://www.eso-electronic.com/',
+			'discuss': 'dominik',
+			'github': 'dottenbr'
+		},
+		{
+			'name': 'Revant Nandgaonkar',
+			'image': 'https://erpnext.org/files/revant.jpg',
+			'website': 'https://mntechnique.com/',
+			'discuss': 'revant_one',
+			'github': 'revant'
+		}
+	]
+%}
+
+<section class='section-padding'>
+	<h2 class='text-center'>Foundation Fellows</h2>
+	<p class='lead text-center'>
+		ERPNext Foundation Fellows have shown outstanding leadership in contributing features and/or helping out new members on the forum. Lets take a moment to recognize their efforts.
+	</p>
+	<div class='card-deck mt-5'>
+	{% for item in fellows %}
+		<div class='card'>
+			<img class="card-img-top greyscale"
+				src="{{ item.image }}" alt="{{ item.title }}">
+			<div class="card-body">
+				<h5>
+					{{ item.name }}
+				</h5>
+				<div>
+					<a class='btn-sm btn-secondary mr-2'
+						href='https://github.com/{{ item.github }}'
+						target='_blank'>
+						<i class='octicon octicon-mark-github'></i></a>
+					<a class='btn-sm btn-secondary'
+						href='https://discuss.erpnext.com/u/{{ item.discuss }}'
+						target='_blank'>
+						<i class='fa fa-comments'></i>
+					</a>
+				</div>
+			</div>
+			<div class="card-footer">
+				<a href='{{ item.website }}' class='text-muted'>{{ item.website }}</a>
+			</div>
+		</div>
+	{% if loop.index is divisibleby 3 %}
+	</div><div class='card-deck mt-5'>
+	{% endif %}
+	{% endfor %}
+	</div>
+	<p class='mt-4 text-center'>
+	<a class='mt-4 btn-dark btn-sm btn' href="/contact">
+		Contact Us To Nominate A Fellow</a>
+	</p>
+<section>
+<style>
+	@media (min-width: 768px) {
+		.card {
+			max-width: 245px;
+		}
+	}
+</style>
+{% endblock %}
+

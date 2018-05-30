@@ -1,14 +1,16 @@
-# Community FAQ
+<section class='section-padding text-center'>
+	<h1>Become an ERPNext Service Provider</h1>
+	<p class='lead'>
+		Are you interested in helping others use ERPNext? Here are some points to think about and tips about getting started.
+	</p>
+</section>
 
-> If you are an independent software vendor or service provider wanting to offer ERPNext services to your customer base, this is for you.
 
 ### 1. What is ERPNext?
 
 ERPNext is an Open Source ERP application that helps Small to Medium Sized business manage their organizations efficiently. It covers financial accounting, inventory management, manufacturing, human resource management and much more. It is a web based application, easy and user friendly.
 
-The ERPNext Project is now backed by the ERPNext Foundation (https://erpnext.org) a not-for-profit that works towards building and maintaining ERPNext.
-
----
+The ERPNext Project is now backed by the ERPNext Foundation, a not-for-profit that works towards building and maintaining ERPNext.
 
 ### 2. I want to sell ERPNext Service to my customers. How can I do that?
 
@@ -16,19 +18,15 @@ Before you sell anything to anyone, you must be completely convinced that it is 
 
 > Disclosure: We use ERPNext extensively in our own organization too!
 
----
-
 ### 3. Will I get support during self-implementation?
 
 You need not pay for self implementation, you can either use the 30-day trial at [erpnext.com](https://erpnext.com) or use the [Virtual Machine](https://erpnext.com/download). If you need support, you can first go through:
 
-1. [ERPNext user guide.](http://erpnext.org/docs/user/manual/en/)
-1. [Help product videos.](http://frappe.io/docs/user/videos/learn)
+1. [ERPNext user guide.](/docs/user/manual/en/)
+1. [Help product videos.](https://www.youtube.com/c/erpnext)
 1. [Ask questions at the forum.](https://discuss.erpnext.com)
 
 If you need priority one-on-one help sessions, you can also buy a subscription service for it.
-
----
 
 ### 4. What skills do I require to implement ERPNext?
 
@@ -40,17 +38,13 @@ If you also want to offer customization services on ERPNext, you should have som
 1. Python
 1. Java Script
 
----
-
 ### 5. Do I need to pay anything to start selling ERPNext
 
 No. This is an open source application and it does not require you to pay us anything. You can charge the customer as you prefer for implementation, training, customization and support.
 
 If your customer wants production support on their servers, you can do it yourself.
 
-Do not forget to list yourself as a service provider on the [community portal](/service-providers)
-
----
+If you want to list yourself a [service provider](/service-providers) then you must become a [member of the foundation](/members).
 
 ### 6. As a service provider how do I make money?
 
@@ -60,12 +54,11 @@ With ERPNext compared to other ERPs, the cost of license is zero, so there is mo
 1. Integration: Integrating with other applications using the API
 1. Print Formats and Reports: Customized Print Layouts and Reports
 1. Website and Webshop setup: Customizing and setting up the website and webshop via ERPNext
-1. Customization: Creating of domain specific apps, connectors for the customer
 1. Support: Priority phone, in-person support as needed
 1. Maintenance: Support for patches and upgrades
-1. Hosting: Providing hosting services (sponsor's message: though you can always host with https://erpnext.com)
-
----
+1. Hosting: Providing hosting services
+1. Customization: Creating of domain specific apps, connectors for the customer. Though customization looks tempting, it is not always the best idea. Read further.
+1. [Become a Reseller for ERPNext.com](https://erpnext.com/reseller): By hosting your customer at ERPNext.com, you get hassle free hosting, support and bug-fix guarantee all while earning a useful commission.
 
 ### 7. What is the general sales / implementation process for ERPNext
 
@@ -77,8 +70,6 @@ With ERPNext compared to other ERPs, the cost of license is zero, so there is mo
 6. Finally before going live, accounting and inventory opening data should be setup and with the help of the champion.
 7. If the customer requires the website to be from ERPNext, you will need to help the customer to create content and setup their master data.
 
----
-
 ### 8. I would like to be listed at the ERPNext Community Portal, How is that possible?
 
 For listing yourself on the community portal, you must become a member of the ERPNext foundation. You can list yourself as a Service Provider, and provide details about services you offer on ERPNext.
@@ -87,15 +78,11 @@ By becoming a member, you will not only support the ongoing development and enha
 
 [Learn more about memberships](/memberships)
 
----
+### 9. How do I contribute back to ERPNext
 
-### 9. I want to sell services but pass on development support to you. Does that work?
+ERPNext is built as a community product with the help of hundreds on end users and developers. If you face a problem with ERPNext or have a suggetion for a feature, you should plan on having the feature contributed back to ERPNext. Unlike other "open core" projects, ERPNext does not encourage 3rd party apps, which ultimately lead to a bad user experience and usually leave the end-user hostage to a service provider and in many cases saddled with a bad solution.
 
-No, we (ERPNext Foundation / Frappe Technologies) do not do any paid development. All our energy is used in supporting and enhancing the ERPNext product. If you want to develop a feature or customization, you can engage a freelancer or drop in a request on the [discussion forum](https://discuss.erpnext.com). If you are planning do this on any scale, it is best to [get one of your developers trained on ERPNext](https://www.youtube.com/watch?v=eCAMPcl7NKc&list=PL3lFfCEoMxvzHtsZHFJ4T3n5yMM3nGJ1W).
-
-[It is very easy to build new apps / extensions to ERPNext.](http://frappe.io/docs/user/tutorial/)
-
----
+If you want to propose an enhancement, you must first send a proposal. Once it is okayed by any maintainer, you can start development according to the contribution guidelines and send a pull request to the core product. [Read the contribution guidelines for more details](https://github.com/frappe/erpnext/wiki/Contribution-Guidelines)
 
 
 ### 10. I want to sell ERPNext in my brand name, will you do that?
@@ -105,7 +92,6 @@ ERPNext is our brand and identity. All work we do will be under the brand name o
 [Check why you should not rebrand ERPNext.](https://frappe.io/blog/general/why-you-should-not-rebrand-erpnext)
 
 ---
-
 
 [Still have questions? Ask them at the forum](https://discuss.erpnext.com).
 

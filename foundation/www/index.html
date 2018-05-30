@@ -12,16 +12,11 @@
 {% macro card(title, body, btnlink, badges) %}
 <div class="col-sm">
 	<a href="{{ btnlink }}" class="card mb-4">
-	  <div class="card-body">
-		  <h6 class="indicator blue">{{ title }}</h6>
-	    <p class="card-text">{{ body }}</p>
-		<div>
-			{% for badge in badges %}
-			<span class='badge badge-secondary'>{{ badge }}</span>
-			{% endfor %}
+		<div class="card-body">
+			<h6>{{ title }}</h6>
+			<p class="card-text text-muted">{{ body }}</p>
+			<!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
 		</div>
-	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
-	  </div>
 	</a>
 </div>
 {% endmacro %}
@@ -122,8 +117,12 @@
 
 <hr class="featurette-divider">
 <section class="section-padding text-center">
-	<h2>Independent Reviews</h2>
-	<p class="lead text-muted text-center">Loved by users all over the world</p>
+	<p class='mt-5'>
+		<div class='blockquote'>"ERPNext and Frappe are monumental projects. We are happy contributors."
+			<footer class='blockquote-footer'>Kailash Nadh, CTO, Zerodha</footer>
+		</div>
+
+	</p>
 	<div class="mt-5 row text-center">
 		<div class="col-xs-12 col-sm-6 col-md-3">
 			<a class="secondary-link" target="_blank" href="https://www.capterra.com/p/164441/ERPNext/">

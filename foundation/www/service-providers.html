@@ -1,66 +1,82 @@
 {% extends "templates/web.html" %}
 
-{% macro member(m, color, show_image=True) %}
-<a href="{{ m.route }}" class="list-group-item no-decoration">
-	<div class='media'>
-		{% if show_image and m.image %}
-		<img class="mr-3" src="{{ m.image }}" style="max-width: 30px;">
-		{% endif %}
-		<div class='media-body'>
-			<h6 class="mt-0 indicator {{ color }}">{{ m.title }}</h6>
-			<div class='text-muted'>
-			{{ m.introduction | truncate(140) }}
+{% macro show_section(members, with_img = True) %}
+	<div class='row'>
+	{% for item in members %}
+		<div class='col-sm-4 mb-4'>
+		<div class='card h-100'>
+			{% if with_img %}
+			<img class="card-img-top greyscale"
+				src="{{ item.image or "/assets/foundation/img/people/tux.png" }}"
+				alt="{{ item.title }}">
+			{% endif %}
+			<div class="card-body">
+				<h5>
+					{{ item.title }}
+				</h5>
+				<div>{{ item.country }}</div>
+			</div>
+			<div class="card-footer">
+				<a href='{{ item.website }}' class='text-muted'>{{ item.website }}</a>
 			</div>
 		</div>
+		</div>
+	{% if loop.index is divisibleby 3 %}
+	</div><div class='row'>
+	{% endif %}
+	{% endfor %}
 	</div>
-</a>
 {% endmacro %}
 
 {% block page_content %}
+
+<section class='text-center section-padding'>
+<h1>ERPNext Service Providers</h1>
+<p class='lead text-muted'>
+	ERPNext Members are both Service Providers and End Users. Check out their website if you are looking for help in your region.
+</p>
+</section>
+<section class="section-padding">
+	<h3 class="mb-5 text-center">Gold Members</h4>
+	{{ show_section(gold_members) }}
+</section>
+
+<section class="section-padding">
+	<h4 class="mb-5 text-center">Silver Members</h4>
+	{{ show_section(silver_members) }}
+</section>
+
+<section class="section-padding">
+	<h4 class="mb-5 text-center">Individual Members</h4>
+	{{ show_section(individual_members, with_img = False) }}
+</section>
+
+<section class='mb-4'>
+	<div class='card mb-5'>
+		<div class='card-body'>
+			<div class="media ">
+			  <img class="mr-3 greyscale rounded-circle" src="/assets/foundation/img/people/ardan.png"
+			  	alt="Ardan Peddell" style='max-width: 100px'>
+			  <div class="media-body">
+			    <h5 class="mt-0">Ardan Peddell,
+					<a href="http://www.corebpm.com/" target="_blank">CoreBPM</a></h5>
+			"CoreBPM been using and eventually contributing to ERPNext for over three years now, and as a company that has relied on Linux and Open Source components for our business. We spent at least a year evaluating various other open source ERP projects and the path always lead back to ERPNext because of it’s flexibility, functionality and adaptability. Without a doubt it was the easiest ERP project to develop and customise."
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class='text-center'>
+		<p class='lead text-muted'>If you want to get listed on this page, join the Foundation and become a member</p>
+		<a href="/members" class="btn btn-dark">Become a Member</a>
+	</div>
+</section>
 <style>
 	.media-body {
 		line-height: 1.5;
 	}
+	.page-breadcrumbs {
+		margin-bottom: -2rem;
+	}
 </style>
-<section class="my-5">
-	<h4 class="mb-4">Gold Members</h4>
-	<div class="list-group">
-	{% for m in gold_members %}
-	{{ member(m, 'blue') }}
-	{% endfor %}
-	</div>
-</section>
 
-<section class="my-5">
-	<h4 class="mb-4">Silver Members</h4>
-	<div class="list-group">
-	{% for m in silver_members %}
-	{{ member(m, 'gray') }}
-	{% endfor %}
-	</div>
-</section>
-
-<section class="my-5">
-	<h4 class="mb-4">Individual Members</h4>
-	<div class="list-group">
-	{% for s in individual_members %}
-	{{ member(s, 'light-gray', False) }}
-	{% endfor %}
-	</div>
-</section>
-
-{% if not form_dict.country %}
-<section class="my-5">
-	<h4 class="mb-4">Select by country</h4>
-	<div class='row'>
-		{% for c in countries %}
-		<div class='col-xs-2 col-sm-4 col-md-3'>
-			<p>
-			<a class="secondary-link" href="/service-providers?country={{ c[0] }}">{{ c[0] }} ({{ c[1] }})</a>
-			</p>
-		</div>
-		{% endfor %}
-	</div>
-</section>
-{% endif %}
 {% endblock %}
