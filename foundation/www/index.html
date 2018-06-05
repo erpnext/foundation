@@ -6,12 +6,13 @@
 	<p class='lead'>
 		ERPNext is the modern, easy-to-use, 100% open source, business system used by more than three thousand enterprises worldwide.
 	</p>
-	<a class="mt-4 btn btn-dark btn" href="/get-started.html">Get Started</a>
+	<p><a class="mt-4 btn btn-dark btn" href="/get-started">Get Started with ERPNext</a></p>
+	<p><a class="text-muted" href="/stories">Read user stories</a></p>
 </section>
 
 {% macro card(title, body, btnlink, badges) %}
-<div class="col-sm">
-	<a href="{{ btnlink }}" class="card mb-4">
+<div class="col-sm mb-4">
+	<a href="{{ btnlink }}" class="card h-100">
 		<div class="card-body">
 			<h6>{{ title }}</h6>
 			<p class="card-text text-muted">{{ body }}</p>
@@ -61,7 +62,7 @@
 
 		{{ card(
 			"Projects",
-			"Manage teams with multiple tasks, integrated with time tracking and budgeting.",
+			"Manage teams with multiple tasks, track time and costs.",
 			"/docs/user/manual/en/projects",
 			["All"]
 		) }}
@@ -84,7 +85,7 @@
 
 		{{ card(
 			"Healthcare",
-			"Patient care with appointment scheduling, consultation and lab reports.",
+			"Patient care with appointments, consultation and lab reports.",
 			"/docs/user/manual/en/healthcare",
 			["Healthcare"]
 		) }}
@@ -117,12 +118,6 @@
 
 <hr class="featurette-divider">
 <section class="section-padding text-center">
-	<p class='mt-5'>
-		<div class='blockquote'>"ERPNext and Frappe are monumental projects. We are happy contributors."
-			<footer class='blockquote-footer'>Kailash Nadh, CTO, Zerodha</footer>
-		</div>
-
-	</p>
 	<div class="mt-5 row text-center">
 		<div class="col-xs-12 col-sm-6 col-md-3">
 			<a class="secondary-link" target="_blank" href="https://www.capterra.com/p/164441/ERPNext/">

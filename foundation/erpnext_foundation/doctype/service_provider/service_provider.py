@@ -16,9 +16,9 @@ class ServiceProvider(WebsiteGenerator):
 			self.route = 'service-providers/' + self.scrub(self.name)
 
 	def get_context(self, context):
-		context.parents = [dict(label='All Service Providers in {0}'.format(self.country),
-			route='service-providers?country={0}'.format(self.country),
-			title='All Service Providers in {0}'.format(self.country))]
+		context.parents = [dict(label='All Service Providers',
+			route='service-providers',
+			title='All Service Providers')]
 		if self.member:
 			context.membership_type = frappe.get_value('Member', self.member, 'membership_type')
 		if context.website and not context.website.startswith('http'):
