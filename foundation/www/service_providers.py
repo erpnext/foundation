@@ -19,7 +19,7 @@ def get_context(context):
 	if gold_members:
 		filters['member'] = ('in', gold_members)
 		context.gold_members = frappe.get_all('Service Provider',
-			'title, introduction, `image`, route, website, country', filters)
+			'title, introduction, `image`, route, website_url, country', filters)
 
 	if context.gold_members:
 		context.has_gold_member = 1
@@ -37,7 +37,7 @@ def get_context(context):
 	if silver_members:
 		filters['member'] = ('in', silver_members)
 		context.silver_members = frappe.get_all('Service Provider',
-			'title, introduction, `image`, route, website, country', filters)
+			'title, introduction, `image`, route, website_url, country', filters)
 
 	if context.silver_members:
 		context.has_silver_member = 1
@@ -56,7 +56,7 @@ def get_context(context):
 	if individual_members:
 		filters['member'] = ('in', individual_members)
 		context.individual_members = frappe.get_all('Service Provider',
-			'title, introduction, `image`, route, website, country', filters)
+			'title, introduction, `image`, route, website_url, country', filters)
 
 	if context.individual_members:
 		context.has_individual_member = 1

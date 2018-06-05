@@ -17,7 +17,7 @@
 				<div>{{ item.country }}</div>
 			</div>
 			<div class="card-footer">
-				<a href='{{ item.website }}' class='text-muted'>{{ item.website }}</a>
+				<a href='{{ item.website_url or "#" }}' class='text-muted'>{{ item.website_url  or "No Website" }}</a>
 			</div>
 		</div>
 		</div>
