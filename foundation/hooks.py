@@ -42,14 +42,18 @@ website_context = {
 	"brand_html": "<img class='mr-2 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo-white.svg' alt='Oensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
 			{"label": "ERPNext", "child_items":[
+				{"label": "Case Studies", "url": "/stories"},
 				{"label": "Get ERPNext", "url": "/get-started"},
 				{"label": "User Manual", "url": "/docs/user"},
 				{"label": "Free Trial", "url": "https://erpnext.com"},
+				{"label": "Open Source", "url": "/open-source"},
 			], "right":1},
 			{"label": "Community", "child_items":[
 				{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "target='_blank'"},
+				{"label": "Conference 2018", "url": "/conf/2018"},
 				{"label": "Chapters", "url": "/chapter-list"},
-				{"label": "Fellows", "url": "/fellows"}
+				{"label": "Fellows", "url": "/fellows"},
+				{"label": "Contribute", "url": "/contribute"}
 			], "right":1},
 			{"label": "Services", "child_items":[
 				{"label": "Service Providers", "url": "/service-providers"},

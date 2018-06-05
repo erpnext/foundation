@@ -2,6 +2,8 @@
 
 {% block title %}ERPNext Foundation - Memberships{% endblock %}
 
+{% from "templates/includes/media.html" import media %}
+
 {% macro card(title, body, badges, color) %}
 <div class="col-sm">
 	<a href="/members/details" class="card h-100 mb-4">
@@ -18,34 +20,39 @@
 {% endmacro %}
 
 {% block page_content %}
-<section class="section-padding text-center">
-	<h1>Memberships</h1>
-	<p class='lead'>Support ERPNext by becoming a Foundation Member</p>
-	<p>The ERPNext Foundation aims to be driven by its members. By becoming a members, you get a preferred listing on the ERPNext Job Board and access to incoming requests for implementation and customization jobs, and show your support for ERPNext
-	</p>
+<section class="top-section">
+	<h1>Foundation Memberships</h1>
+	<p class='lead'>Support ERPNext by becoming a foundation member and get a premium listing on erpnext.org.</p>
 </section>
 <section class='section-padding'>
 	<h3 class='text-center'>Membership Types</h3>
 	<div class='row mt-4'>
 	{{ card(
 		"Gold Member",
-		"By becoming a Gold Member, you show your leadership and a premium positioning for your brand. As a Gold Member, you have a priority listing on the service provider's page.",
+		"By becoming a Gold Member, you show your leadership and a premium positioning for your brand.",
 		["$5000", "₹3,00,000"],
 		"blue")
 	}}
 	{{ card(
 		"Silver Member",
-		"Silver members get priority listing on the Service Provider board after the Gold Members. Silver members get listed after the Gold Members on the service provider's page.",
+		"Silver members get priority listing on the Service Provider list after the Gold Members.",
 		["$1500", "₹1,00,000"],
 		"gray")
 	}}
 	{{ card(
 		"Individual Member",
-		"Individual membership is ideal for users and freelancers who want to show their support to the project. Individual members are also listed on the service provider's page.",
+		"Individual membership is ideal for users and freelancers who want to show their support.",
 		["$200", "₹10,000"],
 		"light-gray")
 	}}
 	</div>
+	{{ media(
+		"Deepak Pai",
+		"Becoming a member was the easiest and quickest way of giving back to the community and the foundation. The fee helps fund documentation, development and advocacy. The money helps protect and promotes ERPNext core values of staying 100% free and open source and providing a modern, secure & stable system for all sort of business. Did not have to think twice about it.",
+		"/assets/foundation/img/people/deepak-pai.jpg",
+		"Grynn GmbH",
+		"https://www.grynn.io"
+	)}}
 	<div class='text-center'>
 		<p class='mt-5'>
 			<a href="/members/details" class="btn btn-dark">Become A Member</a>

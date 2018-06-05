@@ -1,0 +1,127 @@
+{% extends "templates/web.html" %}
+
+{% block title %}ERPNext User Stories{% endblock %}
+
+{% from "templates/includes/media.html" import media %}
+
+{% block page_content %}
+<section class='section-padding'>
+	<div class='text-center'>
+		<h1>Trailblazing Companies Use ERPNext</h1>
+		<p class='lead text-muted'>For every industry or size or domain, ERPNext has been driving growth and systems for innovative companies worldwide.</p>
+	</div>
+</section>
+
+{% set stories = [
+		{
+			'name': 'Zerodha',
+			'image': '/assets/foundation/img/stories/zerodha-logo.png',
+			'link': '/stories/zerodha',
+			'country': 'India',
+			'employees': '1000+',
+			'industry': 'Financial Services'
+		},
+		{
+			'name': 'Elastic Run',
+			'image': '/assets/foundation/img/stories/elasticrun-logo.png',
+			'link': '/stories/elasticrun',
+			'country': 'India',
+			'employees': '250',
+			'industry': 'Logistics'
+		},
+		{
+			'name': 'ESO Electronic',
+			'image': '/assets/foundation/img/stories/eso-logo.png',
+			'link': '/stories/eso-electronic',
+			'country': 'Germany',
+			'employees': '100+',
+			'industry': 'Manufacturing, Electronics'
+		},
+		{
+			'name': 'Union Global',
+			'image': '/assets/foundation/img/stories/union-logo.jpg',
+			'link': '/stories/union',
+			'country': 'Philippines',
+			'employees': '200+',
+			'industry': 'Home Appliances'
+		},
+		{
+			'name': 'Rohit Industries Group',
+			'image': '/assets/foundation/img/stories/rigpl-logo.png',
+			'link': '/stories/rigpl',
+			'country': 'India',
+			'employees': '100+',
+			'industry': 'Manufacturing'
+		},
+		{
+			'name': 'Office One',
+			'image': '/assets/foundation/img/stories/officeone-logo.png',
+			'link': '/stories/officeone',
+			'country': 'UAE',
+			'employees': '50',
+			'industry': 'Retail, Office Supplies'
+		},
+		{
+			'name': 'SAPCON Instruments',
+			'image': '/assets/foundation/img/stories/sapcon-logo.png',
+			'link': '/stories/sapcon',
+			'country': 'India',
+			'employees': '100+',
+			'industry': 'Manufacturing, Instruments'
+		},
+		{
+			'name': 'NEST UAE',
+			'image': '/assets/foundation/img/stories/nest-logo.png',
+			'link': '/stories/nest',
+			'country': 'UAE',
+			'employees': '50',
+			'industry': 'Distribution, Oil and Gas'
+		},
+		{
+			'name': 'V3 Technologies',
+			'image': '/assets/foundation/img/stories/v3tech-logo.png',
+			'link': '/stories/v3tech',
+			'country': 'India',
+			'employees': '35',
+			'industry': 'Manufacturing, Precision Parts'
+		},
+		{
+			'name': 'MahaOnline',
+			'image': '/assets/foundation/img/stories/mol-logo.png',
+			'link': '/stories/mahaonline',
+			'country': 'India',
+			'employees': '200',
+			'industry': 'IT Services, Government'
+		},
+	]
+%}
+
+<section>
+	<div class='row mt-5'>
+	{% for item in stories %}
+		<div class='col-sm-4 mb-4'>
+		<div class='card h-100'>
+			<a href='{{ item.link }}'>
+			<img class="card-img-top greyscale"
+				src="{{ item.image }}" alt="{{ item.name }}">
+			</a>
+			<div class="card-footer">
+				<span class='text-muted small'>{{ item.industry}}, {{ item.country }}</span>
+			</div>
+		</div>
+		</div>
+	{% endfor %}
+	</div>
+
+	<div class='my-4 text-center'>
+		<p>
+			<a class='mt-4 btn-dark btn' href="/get-started">
+				Get Started with ERPNext Now</a>
+		</p>
+		<p>
+			<a href='/contact' class='text-muted'>Share Your ERPNext Story</a>
+		</p>
+	</div>
+<section>
+{% endblock %}
+

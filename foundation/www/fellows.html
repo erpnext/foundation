@@ -1,5 +1,7 @@
 {% extends "templates/web.html" %}
 
+{% from "templates/includes/media.html" import media %}
+
 {% block title %}ERPNext Foundation Fellows{% endblock %}
 {% block page_content %}
 
@@ -70,17 +72,28 @@
 	]
 %}
 
-<section class='section-padding'>
-	<h1 class='text-center'>Foundation Fellows</h1>
-	<p class='lead text-center'>
+<section class='top-section'>
+	<h1>Foundation Fellows</h1>
+	<p class='lead'>
 		ERPNext Foundation Fellows have shown outstanding leadership in contributing features and/or helping out new members on the forum. Lets take a moment to recognize their efforts.
 	</p>
-	<div class='row mt-5'>
+</section>
+	{{ media(
+		"Charles-Henri Decultot",
+		"The success of an open-source project depends on the quality of its core team but also on the quality of its community. As community members, it is our duty to contribute back to this great project in any way we can. That's the reason why, at Dokos, we always try to enhance the core model before making any custom developments. Everybody's contributions leads to making ERPNext better every day: it's a win-win situation",
+		"https://erpnext.org/files/charles_henri.jpeg",
+		"Dokos.io",
+		"https://dokos.io"
+	)}}
+<section>
+	<div class='row'>
 	{% for item in fellows %}
 		<div class='col-sm-4 mb-4'>
 		<div class='card h-100'>
+			<a href='{{ item.website }}' target='_blank'>
 			<img class="card-img-top greyscale"
-				src="{{ item.image }}" alt="{{ item.title }}">
+				src="{{ item.image }}" alt="{{ item.name }}">
+			</a>
 			<div class="card-body">
 				<h5>
 					{{ item.name }}
@@ -105,29 +118,11 @@
 	{% endfor %}
 	</div>
 
-	<div class='card my-5'>
-		<div class='card-body'>
-			<div class="media ">
-			  <img class="mr-3 greyscale rounded-circle"
-			  	src="https://erpnext.org/files/charles_henri.jpeg"
-			  	alt="Charles-Henri Decultot" style='max-width: 100px'>
-			  <div class="media-body">
-			    <h5 class="mt-0">Charles-Henri Decultot,
-					<a href="https://dokos.io/" target="_blank">Dokos.io</a></h5>
-			"		The success of an open-source project depends on the quality of its core team but also on the quality of its community.
-		As community members, it is our duty to contribute back to this great project in any way we can.
-		That's the reason why, at Dokos, we always try to enhance the core model before making any custom developments.
-		Everybody's contributions leads to making ERPNext better every day: it's a win-win situation
-"
-			  </div>
-			</div>
-		</div>
+	<div class='my-4 text-center'>
+		<p><a class='mt-4 btn-dark btn-sm btn' href="/contact">
+			Contact Us To Nominate A Fellow</a></p>
+		<p><a class='text-muted' href='/contribute'>Learn how you can contribute</a></p>
 	</div>
-
-	<p class='mt-4 text-center'>
-	<a class='mt-4 btn-dark btn-sm btn' href="/contact">
-		Contact Us To Nominate A Fellow</a>
-	</p>
 <section>
 {% endblock %}
 

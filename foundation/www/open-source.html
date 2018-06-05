@@ -1,10 +1,19 @@
+{% from "templates/includes/media.html" import media %}
+
 <section class='section-padding text-center'>
 	<h1>100% Open Source</h1>
 	<p class='lead text-muted'>Unlike other open source business platforms, ERPNext is categorically Open Source, because unlike them, we don't think sustainability and open source live at odds.</p>
 </section>
 <section>
+	{{ media(
+			"Revant Nandgaonkar",
+			''' I chose ERPNext over Odoo because ERPNext is Free Software with <a href="https://www.gnu.org/philosophy/free-sw.en.html" target="_blank">four essential freedoms</a>. ERPNext also has easy upgrades and migration. It is easy to deploy, backup and restore. And to top it off it, ERPNext is easy to develop with Frappe Framework. ''',
+			"https://erpnext.org/files/revant.jpg"
+		)
+	}}
+
 	<p>Most open source platforms in the ERP / CRM / E-Commerce space are <b>open core</b>. These communities makes money from <i>closed extensions</i> and services to monetize their efforts. We believe this is not only wrong, but not sustainable. Here are the reasons</p>
-	<h4>Why Open Core Fails:</h4>
+	<h4>Open Core is not really Open Source</h4>
 	<ul>
 		<li>Closed extensions are not high quality because they have not been vetted by the core developers and maintainers.</li>
 		<li>Closed extensions are not easy to upgrade.</li>
@@ -12,7 +21,7 @@
 		<li>New users feel cheated when they discover that the product is not usable as it is</li>
 		<li>Competing extensions end up doing the same thing, differently.</li>
 	</ul>
-	<h4>We Know Open Source is Hard</h4>
+	<h4>Making Open Source Work for You</h4>
 	<p>
 		We know it is hard to make money from open source directly, but we have very high standards. The core maintainers of ERPNext are fully committed to open source and we expect the community to also beleive in this core value.</p>
 	<p>If you are a service provider, there are many creative ways you can make money from ERPNext without diluting the open source imperative.</p>

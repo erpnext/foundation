@@ -1,30 +1,51 @@
 {% extends "templates/web.html" %}
 
-{% block title %}Conference Home{% endblock %}
+{% block title %}ERPNext Conferences{% endblock %}
 
-{% from "frappe_theme/templates/includes/macros.html" import media %}
+{% from "templates/includes/media.html" import media %}
 
 {% block page_content %}
-<section>
-	<h1>ERPNext Conferences</h1>
-	<p class='lead'>Meet the community at the ERPNext Conferences.</p>
+<section class='section-padding'>
+	<div class='text-center'>
+		<h1>ERPNext Conferences</h1>
+		<p class='lead text-muted'>Meeting people face-to-face at events always beats discussing remotely on the forum.</p>
+	</div>
+	{{ media(
+		"Paulo Almedia",
+		"I want to congratulate the Foundation and all participants for a wonderful conference. Great event, great presentations and great developer sessions.",
+		"https://discuss.erpnext.com/user_avatar/discuss.erpnext.com/almeidapaulopt/90/8907_1.png"
+	) }}
 </section>
-<section style='max-width: 500px'>
-	<h3>ERPNext Conference 2017</h3>
-	<p>
-		Join us for the annual conference in Mumbai from October 12-14, 2017.
-		There will be a code sprints, developer sessions and talks.
-		<br><br><a href="/conf/2017" class="btn btn-primary">Learn More</a>
+<hr>
+<section class='section-padding '>
+	<div class='text-center'>
+		<h1>ERPNext Conference 2018</h1>
+		<p class='lead text-muted'>
+			October 27th - 28th, Mumbai
+		</p>
+	</div>
+	<p class='text-center mt-3'>
+		<a href='/conf/2018' class='btn btn-dark btn-sm'>Learn More</a>
 	</p>
 </section>
-<section>
-	<br><br><br>
-	<h3>Past Conferences</h3>
-	<ul>
-		<li><a href="https://erpnext.com/conf/2017-eu">ERPNext Europe Conference 2017, Frankfurt</a></li>
-		<li><a href="https://erpnext.com/conf/2016">ERPNext Conference 2016, Mumbai</a></li>
-		<li><a href="https://erpnext.com/conf/2015">ERPNext Conference 2015, Mumbai</a></li>
-		<li><a href="https://erpnext.com/conf/2014">ERPNext Conference 2014, Mumbai</a></li>
-	</ul>
+<hr>
+<section class='section-padding'>
+	<div class='card w-400'>
+		<div class='card-body'>
+			<h5 class='card-title'>Past Conferences</h5>
+			<ul>
+				<li><a href="https://erpnext.org/conf/2017">
+					ERPNext Conference 2017, Mumbai</a></li>
+				<li><a href="https://erpnext.com/conf/2017-eu">
+					ERPNext Europe Conference 2017, Frankfurt</a></li>
+				<li><a href="https://erpnext.com/conf/2016">
+					ERPNext Conference 2016, Mumbai</a></li>
+				<li><a href="https://erpnext.com/conf/2015">
+					ERPNext Conference 2015, Mumbai</a></li>
+				<li><a href="https://erpnext.com/conf/2014">
+					ERPNext Conference 2014, Mumbai</a></li>
+			</ul>
+		</div>
+	</div>
 </section>
 {% endblock %}
