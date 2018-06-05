@@ -1,13 +1,13 @@
 {% extends "templates/web.html" %}
 
-{% macro show_section(members, with_img = True) %}
+{% macro show_section(members, with_img = True, color=False) %}
 	<div class='row'>
 	{% for item in members %}
 		<div class='col-sm-4 mb-4'>
 		<a href='{{ ("{}{}".format("" if item.website_url.startswith("http") else "//", item.website_url)) if item.website_url else "#" }}' target='_blank' class='card h-100'>
 			{% if with_img %}
 			<div class='square-img'>
-				<img class="greyscale"
+				<img class="{% if not color %}greyscale{% endif %}"
 					src="{{ item.image or "/assets/foundation/img/people/tux.png" }}"
 					alt="{{ item.title }}">
 			</div>
@@ -39,7 +39,7 @@
 </section>
 <section class="section-padding">
 	<h3 class="mb-5 text-center">Gold Members</h4>
-	{{ show_section(gold_members) }}
+	{{ show_section(gold_members, color=True) }}
 </section>
 
 <section class="section-padding">
