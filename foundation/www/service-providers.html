@@ -4,7 +4,7 @@
 	<div class='row'>
 	{% for item in members %}
 		<div class='col-sm-4 mb-4'>
-		<a href='{{ item.website_url|abs_url or "#" }}' class='card h-100'>
+		<a href='{{ ("{}{}".format("" if item.website_url.startswith("http") else "//", item.website_url)) if item.website_url else "#" }}' class='card h-100'>
 			{% if with_img %}
 			<div class='square-img'>
 				<img class="greyscale"
