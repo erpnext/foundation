@@ -42,7 +42,7 @@ website_context = {
 	"brand_html": "<img class='mr-2 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo-white.svg' alt='Oensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
 			{"label": "ERPNext", "child_items":[
-				{"label": "Case Studies", "url": "/stories"},
+				{"label": "User Stories", "url": "/stories"},
 				{"label": "Get ERPNext", "url": "/get-started"},
 				{"label": "User Manual", "url": "/docs/user"},
 				{"label": "Free Trial", "url": "https://erpnext.com"},
