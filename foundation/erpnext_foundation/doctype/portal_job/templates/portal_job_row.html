@@ -1,13 +1,10 @@
-<div style='margin-bottom: 30px; max-width: 600px;'
-	class='with-border clickable'>
-	<a href="/{{ doc.route }}">
-		<h3 style='margin-top: 0px;'>{{ doc.title }}</h3>
-		<p>
-			<span class='label'>{{ frappe.format_date(doc.creation) }}</span>
-			<span class='label'>{{ doc.country }}</span>
-			<span class='label'>{{ doc.job_type }}</span>
-			<span class='label'>{{ doc.status }}</span>
-		</p>
-		<p>{{ html2text(doc.description)[:200] }}{% if doc.description|len > 200 %}...{% endif %}</p>
-	</a>
+<div class="mb-4 col-xs-12 col-sm-12">
+	<div class="card">
+		<div class="card-body">
+			<a  href="/{{ doc.route }}"><h5 class="card-title">{{ doc.title }}</h5></a>
+			<h6 class="card-subtitle mb-2 text-muted">{{ doc.country }}, {{ frappe.format_date(doc.creation) }} | {{ doc.job_type }}, {{ doc.status }}</h6>
+			<p class="card-text">{{ html2text(doc.description)[:200] }}{% if doc.description|len > 200 %}...{% endif %}</p>
+			<!-- <a href="/{{ doc.route }}" class="card-link">Details</a> -->
+		</div>
+	</div>
 </div>

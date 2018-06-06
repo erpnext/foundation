@@ -27,4 +27,3 @@ def get_list_context(context):
     context.no_cache = True
     context.no_breadcrumbs = True
     context.order_by = 'creation desc'
-    context.introduction = '<p>Following are the Foundation Fellows</p>'

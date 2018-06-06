@@ -1,18 +1,13 @@
 {% extends "templates/web.html" %}
 
-{% from "foundation/templates/includes/macros.html" import media %}
-
 {% block page_content %}
-<h1 class="media-heading">{{ title }}</h1>
+<h1 class="mb-4">{{ title }}</h1>
 <section>
     <div class="media">
-        <div class="media-left" style='min-width: 80px;'>
-            <a href="#">
-                <img class="media-object"
-                    src="{{ image }}"
-                    style="max-width: 80px; ">
-            </a>
-        </div>
+        <a href="#">
+            <img class="mr-3 media-img"
+            src="{{ image }}">
+        </a>
         <div class="media-body">
             {{ introduction }}
             <table class='table table-bordered small'
@@ -53,11 +48,11 @@
         </div>
     </div>
 </section>
-<section>
+<section class="mt-4">
     {{ details }}
 </section>
 <section>
-<p><a class='btn-primary btn' href="mailto:{{ email }}">Contact {{ title }}</a></p>
+<p><a class='mt-4 btn-primary btn' href="mailto:{{ email }}">Contact {{ title }}</a></p>
 </section>
 
 {% endblock %}

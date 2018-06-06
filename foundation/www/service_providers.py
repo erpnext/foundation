@@ -18,8 +18,8 @@ def get_context(context):
 	gold_members = [d.name for d in frappe.get_all('Member', dict(membership_type='Gold'))]
 	if gold_members:
 		filters['member'] = ('in', gold_members)
-		context.gold_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route',
-			filters)
+		context.gold_members = frappe.get_all('Service Provider',
+			'title, introduction, `image`, route, website_url, country', filters)
 
 	if context.gold_members:
 		context.has_gold_member = 1
@@ -36,8 +36,8 @@ def get_context(context):
 	silver_members = [d.name for d in frappe.get_all('Member', dict(membership_type='Silver'))]
 	if silver_members:
 		filters['member'] = ('in', silver_members)
-		context.silver_members = frappe.get_all('Service Provider', 'title, introduction, `image`, route',
-			filters, debug=1)
+		context.silver_members = frappe.get_all('Service Provider',
+			'title, introduction, `image`, route, website_url, country', filters)
 
 	if context.silver_members:
 		context.has_silver_member = 1
@@ -56,7 +56,7 @@ def get_context(context):
 	if individual_members:
 		filters['member'] = ('in', individual_members)
 		context.individual_members = frappe.get_all('Service Provider',
-			'title, introduction, `image`, route', filters)
+			'title, introduction, `image`, route, website_url, country', filters)
 
 	if context.individual_members:
 		context.has_individual_member = 1
@@ -66,22 +66,3 @@ def get_context(context):
 			introduction='Become an invidual member to list here',
 			route='/members'
 		))
-
-	if context.form_dict.country:
-		context.title = 'ERPNext Service Providers in {0}'.format(context.form_dict.country)
-
-		context.service_providers = [d for d in frappe.get_all('Service Provider', 'name, title, introduction, `image`, route',
-			dict(country=frappe.form_dict.country, show_in_website=1), order_by='name') if d.name not in individual_members]
-
-	else:
-		# countries
-		context.countries = frappe.db.sql('''select
-				distinct country, count(*)
-			from
-				`tabService Provider`
-			where
-				show_in_website = 1
-			group by
-				country
-			order by
-				country''')

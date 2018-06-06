@@ -1,123 +1,155 @@
-{% extends "foundation/templates/base.html" %}
+{% extends "templates/web.html" %}
 {% block title %}ERPNext Foundation - Open Source ERP Software{% endblock %}
-{% block content %}
-<section class='section-padding hero border-top-light text-center'>
-	<div class="container">
-		<img class="hero-illustration bottom-spacer" src='/assets/foundation/img/hero-illustration-erpnext.png' alt="ERP software for everybody">
-		<h1 class="header-1">ERP for Everybody</h1>
-		<p class='intro-copy text-medium text-light'>World's leading fully open source ERP software that helps you stay in control of your business</p>
-		<a class="button button-primary" href="/get-started.html">Get Started</a>
-	</div>
+{% block page_content %}
+<section class='top-section'>
+	<h1>Enterprise System for the Digital Age</h1>
+	<p class='lead'>
+		ERPNext is the modern, easy-to-use, 100% open source, business system used by more than three thousand enterprises worldwide.
+	</p>
+	<p><a class="mt-4 btn btn-dark btn" href="/get-started">Get Started with ERPNext</a></p>
+	<p><a class="text-muted" href="/stories">Read user stories</a></p>
 </section>
-<section class='section-padding blue-bg border-top-light text-center'>
-	<div class="container">
-		<h1 class="header-1">We have got it all covered</h1>
-		<p class='intro-copy text-medium text-light'>ERPNext has all the features to put you in complete control of your business.</p>
-		<img class="screenshot" src='/assets/foundation/img/screenshot-main.png' alt="ERPNext desk view">
-	</div>
-</section>
-<section class="section-padding gray-bg border-top-light text-left">
-	<div class="container">
-		<h1 class="header-1 bottom-spacer text-center">Industries</h1>
-			<ul class="list-unstyled grid-of-four">
-			<li class="list-items grid-items">
-				<a class="primary-links grid-boxes" href="/docs/user/manual/en/manufacturing">
-					<img class="grid-images" src="/assets/foundation/img/manufacturing.png" alt="ERP software for manufacturing"><span>Manufacturing</span>
-				</a>
-			</li>
-			<li class="list-items">
-				<a class="primary-links grid-boxes" href="/docs/user/manual/en/projects">
-					<img class="grid-images" src="/assets/foundation/img/services.png" alt="ERP software for Services"><span>Services</span>
-				</a>
-			</li>
-			<li class="list-items">
-				<a class="primary-links grid-boxes" href="/docs/user/manual/en/accounts/point-of-sale-pos-invoice">
-					<img class="grid-images" src="/assets/foundation/img/retail.png" alt="ERP software for retail"><span>Retail</span></a>
-			</li>
-			<li class="list-items">
-				<a class="primary-links grid-boxes"  href="/docs/user/manual/en/stock">
-					<img class="grid-images" src="/assets/foundation/img/distribution.png" alt="ERP software for Distribution"><span>Distribution</span></a>
-			</li>
-			<li class="list-items">
-				<a class="primary-links grid-boxes" href="/docs/user/manual/en/education">
-					<img class="grid-images" src="/assets/foundation/img/education.png" alt="ERP software for Education"><span>Education</span></a>
-			</li>
-			<li class="list-items">
-				<a class="primary-links grid-boxes" href="/docs/user/manual/en/agriculture">
-					<img class="grid-images" src="/assets/foundation/img/agriculture.png" alt="ERP software for Agriculture"><span>Agriculture</span></a>
-			</li>
-			<li class="list-items">
-				<a class="primary-links grid-boxes" href="/docs/user/manual/en/healthcare">
-					<img class="grid-images" src="/assets/foundation/img/healthcare.png" alt="ERP software for Healthcare"><span>Healthcare</span></a>
-			</li>
-			<li class="list-items">
-				<a class="primary-links grid-boxes" href="/docs/user/manual/en/non_profit">
-				<img class="grid-images" src="/assets/foundation/img/non-profits.png" alt="ERP software for Non-Profits"><span>Non Profit</span></a>
-			</li>
-		</ul>
-	</div>
-</section>
-<section class="section-padding border-top-light">
-	<div class="container">
-	<h1 class="header-1 text-center">Empowering businesses around the world</h1>
-	<p class="intro-copy text-medium text-center text-light">Trusted by more than 3000 companies</p>
-		<div class="bottom-spacer grid-of-three">
-			<div class="box">
-				<p class="">ERPNext was the most wonderful, minimalist and affordable ERP Environment that my little team (7 employees) vote to buy and use like a Cloud Based Unitary Software.</p>
-				<p class="bold text-muted">Hernan</br>Venezuela</p>
-			</div>
-			<div class="box">
-				<p class="">First of all, I would like to thank you very much for the great work you’ve done with this ERP, it is the perfect solution for start-ups, like mine! Keep up the good work!</p>
-				<p class="bold text-muted">Dan Radulescu</br>Romania</p>
-			</div>
-			<div class="box">
-				<p class="">The UI and UX are one of the most fluid and highly useable interfaces I have ever seen in an ERP. You make accounting fun! Keep up the amazing work.</p>
-				<p class="bold text-muted">Gladwyn Lewis</br>ERP Consultant, UAE</p>
-			</div>
+
+{% macro card(title, body, btnlink, badges) %}
+<div class="col-sm mb-4">
+	<a href="{{ btnlink }}" class="card h-100">
+		<div class="card-body">
+			<h6>{{ title }}</h6>
+			<p class="card-text text-muted">{{ body }}</p>
+			<!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
 		</div>
-		<div class="grid-of-four grid-center">
-			<div class="reviews text-center">
-				<a class="secondary-link" target="_blank" href="https://www.capterra.com/p/164441/ERPNext/">
-					<img alt="captera-erpnext review" src="/assets/foundation/img/captera-bw.png" class="review-img">
-					<img alt-"above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
-				</a>
-			</div>
-			<div class="reviews text-center">
+	</a>
+</div>
+{% endmacro %}
+<section class="section-padding px-3">
+	<div class="row mt-5">
+		{{ card(
+			"Financial Accounting",
+			"The heart of your business, everything flows through here.",
+			"/docs/user/manual/en/accounts",
+			["All"]
+		) }}
+
+		{{ card(
+			"CRM",
+			"Everything about your customers, stay in touch and keep them updated.",
+			"/docs/user/manual/en/crm",
+			["All"]
+		) }}
+
+		{{ card(
+			"Inventory",
+			"What goes in, what comes out and where you can find it.",
+			"/docs/user/manual/en/stock",
+			["All"]
+		) }}
+	</div>
+
+	<div class="row">
+		{{ card(
+			"Sales",
+			"Closing a deal and ensuring that it is successfully fulfilled.",
+			"/docs/user/manual/en/selling",
+			["All"]
+		) }}
+
+		{{ card(
+			"Purchasing",
+			"Keep track of purchases and stay on top of costs and budgets.",
+			"/docs/user/manual/en/buying",
+			["All"]
+		) }}
+
+		{{ card(
+			"Projects",
+			"Manage teams with multiple tasks, track time and costs.",
+			"/docs/user/manual/en/projects",
+			["All"]
+		) }}
+	</div>
+
+	<div class="row">
+		{{ card(
+			"Manufacturing",
+			"From Bill of Material to Work Orders and movement of stock.",
+			"/docs/user/manual/en/manufacturing",
+			["Manufacturing"]
+		) }}
+
+		{{ card(
+			"Education",
+			"Manage students, classes, attendance, timetables, grades and fees.",
+			"/docs/user/manual/en/education",
+			["Education"]
+		) }}
+
+		{{ card(
+			"Healthcare",
+			"Patient care with appointments, consultation and lab reports.",
+			"/docs/user/manual/en/healthcare",
+			["Healthcare"]
+		) }}
+	</div>
+
+	<div class="row">
+		{{ card(
+			"E-Commerce",
+			"Website listings, shopping cart, billing, payments and much more.",
+			"/docs/user/manual/en/selling",
+			["All"]
+		) }}
+
+		{{ card(
+			"Website",
+			"Fully featured content management with blogs, web pages and forms.",
+			"/docs/user/manual/en/buying",
+			["All"]
+		) }}
+
+		{{ card(
+			"Support",
+			"Email integrated ticketing system with threaded replies and assignments.",
+			"/docs/user/manual/en/support",
+			["All"]
+		) }}
+	</div>
+</section>
+
+
+<hr >
+<section class="section-padding text-center">
+	<div class="mt-5 row text-center">
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<a class="secondary-link" target="_blank" href="https://www.capterra.com/p/164441/ERPNext/">
+				<img alt="captera-erpnext review" src="/assets/foundation/img/captera-bw.png" class="review-img">
+				<img alt-"above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
+			</a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
 			<a class="secondary-link" target="_blank" href="https://www.softwareadvice.com/erp/erpnext-profile/">
 				<img alt="software advice erpnext review" src="/assets/foundation/img/software-advice-bw.png" class="review-img">
 				<img alt="above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
 			</a>
-			</div>
-			<div class="reviews text-center">
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
 			<a class="secondary-link" target="_blank" href="https://www.g2crowd.com/products/erpnext/reviews">
 				<img alt="g2-crowd review" src="/assets/foundation/img/g2-crowd-bw.png" class="review-img">
 				<img alt="above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
 			</a>
-			</div>
-			<div class="reviews text-center">
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
 			<a class="secondary-link" target="_blank" href="https://www.getapp.com/operations-management-software/a/iwebnotes/">
 				<img alt="get app review" src="/assets/foundation/img/getapp-bw.png" class="review-img">
 				<img alt="above 4.5 stars" src="/assets/foundation/img/stars.png" class="stars">
 			</a>
-			</div>
 		</div>
 	</div>
 </section>
-<section class="section-padding border-top-light gray-bg">
-	<div class="container">
-		<div class="text-center">
-			<p class="intro-copy text-medium">ERPNext is both powerful and easy to use</br>What are you waiting for?</p>
-			<a class="button button-primary" href="/get-started.html">Get Started Now</a>
-		</div>
-	</div>
-</section>
-<section class="section-padding community-bg border-top-light text-white">
-	<div class="container">
-		<div class="text-center">
-			<h1 class="header-1">ERPNext Foundation</h1>
-			<p class="intro-copy text-medium">ERPNext Foundation is a community of ERPNext users, developers and service providers. The goal of the ERPNext Foundation is to provide a platform for the ERPNext Community to come together, join hands and build assets to help build and enhance ERPNext around the world.</p>
-			<a href="/members" class="button button-secondary">Become a Member</a>
-		</div>
-	</div>
+<hr >
+<section class="section-padding text-center">
+	<h2>ERPNext Foundation</h2>
+	<p class="lead lead-max m-auto text-muted">ERPNext Foundation is a
+		registered not-for-profit organization that enables community to build and enhance ERPNext.</p>
+	<a href="/get-started" class="mt-4 btn btn-dark">Get Started with ERPNext</a>
 </section>
 {% endblock %}

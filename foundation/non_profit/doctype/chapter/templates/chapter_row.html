@@ -1,0 +1,27 @@
+{% if doc.published %}
+
+<div class="mb-4 col-xs-12 col-sm-12">
+	<div class="card">
+		<div class="card-body">
+			<a  class="dark-link" href={{ route }}><h5 class="card-title">{{ doc.name | capitalize }}</h5></a>
+			<h6 class="card-subtitle mb-2">Chapter Head : {{ frappe.db.get_value('User', chapter_head, 'full_name') }}</h6>
+			<p class="card-text">
+				{% if members %}
+				{% set index = [] %}
+				{% for user in members %}
+				{% if user.enabled == 1 %}
+				{% set __ = index.append(1) %}
+				{% endif %}
+				{% endfor %}
+				Members: {{ index|length }}
+				{% else %}
+				Members: 0
+				{% endif %}
+			</p>
+			<p class="card-text">{{ html2text(doc.introduction) | truncate (200) }}</p>
+			<!-- <a href="/{{ doc.route }}" class="card-link">Details</a> -->
+		</div>
+	</div>
+</div>
+
+{% endif %}

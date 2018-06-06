@@ -69,12 +69,12 @@ def get_list_context(context):
 	context.no_breadcrumbs = True
 	context.order_by = 'creation desc'
 	context.introduction = '''
-	<div style="margin-bottom: 20px;">
+	<div class="mb-4" >
 		<a href="new-bounty" class="btn btn-primary">
 			Start a new bounty</a>
 	</div>'''
 	context.list_footer = '''
-		<p><a class='text-muted small'
+		<p><a class='text-muted'
 			href="/bounties-faq">Bounty FAQ</a></p>
 	'''
 	context.fmt_money = fmt_money
