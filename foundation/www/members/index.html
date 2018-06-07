@@ -5,11 +5,11 @@
 {% from "templates/includes/media.html" import media %}
 
 {% macro card(title, body, badges, color) %}
-<div class="col-sm">
-	<a href="/members/details" class="card h-100 mb-4">
+<div class="col-sm mb-4">
+	<a href="/members/details" class="card h-100">
 	  <div class="card-body">
 		  <h5>{{ title }}</h5>
-	    <p class="card-text">{{ body }}</p>
+	    <div class="card-text">{{ body }}</div>
 	    <!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
 	  </div>
 		<div class='card-footer'>
@@ -25,7 +25,6 @@
 	<p class='lead'>Support ERPNext by becoming a foundation member and get a premium listing on erpnext.org.</p>
 </section>
 <section class='section-padding'>
-	<h3 class='text-center'>Membership Types</h3>
 	<div class='row mt-4'>
 	{{ card(
 		"Gold Member",

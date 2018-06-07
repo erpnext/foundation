@@ -49,23 +49,34 @@
 
 ]%}
 
-<section class='section-padding text-center'>
+<section class='top-section'>
 	<h1>ERPNext Foundation</h1>
 	<p class="lead">We are a registered not-for-profit
 		entity representing a community of ERPNext
 		users, developers and service providers.<p>
 	<img class="rounded mw-100 my-5 greyscale"
 		 src="/assets/foundation/img/community-colored.jpg">
+</section>
+<section class='section-padding'>
+	<div class='text-center'>
+		<h4>Our Vision</h4>
+		<p>Our vision is to provide high quality free software to organizations, enterprises and public institutions around the world, and enable to use it by spreading the knowledge and best practices of running organizations in the 21st Century.</p>
+	</div>
 
-	<h4>Our Vision</h4>
+	<div class='card w-400 mt-5'>
+		<div class='card-body'>
+			<h5 class='card-title text-center'>Our Approach</h5>
 
-	<p class='lead'>Our vision is to provide high quality free software to organizations, enterprises and public institutions around the world, and enable to use it by spreading the knowledge and best practices of running organizations in the 21st Century.</p>
-
-	<h4 class='mt-5'>Our Approach</h4>
-
-	<p class='lead'>To enable this vision we will:<br>1. Create platforms to bring people together to share their knowledge. <br> 2. Create software and documentation so people can be self-reliant. <br>3. Work with public institutions and help them use tools like ERPNext.</p>
-
-	<a href="/members" class="mt-4 btn btn-dark">Support us by becoming a Member</a>
+			<p>To enable this vision we will:
+				<br>1. Create platforms to bring people together.
+				<br>2. Create software and documentation.
+				<br>3. Work with public institutions.
+			</p>
+		</div>
+	</div>
+	<div class='text-center'>
+		<a href="/members" class="mt-4 btn btn-dark">Support us by becoming a Member</a>
+	</div>
 
 </section>
 
@@ -90,11 +101,11 @@
 				<div class='card-body'>
 					<h5>{{ item.name }}</h5>
 					<div class='small'>{{ item.bio }}</div>
-					<p class='mt-2'>
+					<div class='mt-2'>
 						<a href='https://discuss.erpnext.com/u/{{ item.discuss }}'
 							class='btn btn-secondary btn-sm'>
 							<i class='fa fa-comments'></i> Forum</a>
-					</p>
+					</div>
 				</div>
 			</div>
 		</div>
