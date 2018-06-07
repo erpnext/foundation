@@ -8,13 +8,13 @@ Office One, one of the fastest growing Stationary and Office Supplies Companies 
 
 To manage such an extensive inventory and sell them on a daily basis, you definitely require an ERP which you have implemented masterfully. And that is what we will have a look at today!
 
-### About Office One
+#### About Office One
 
 Office One LLC was founded in 2007 and has since grown significantly with offices in Dubai and Abu Dhabi. They now make deliveries across the Middle East. This was all under the leadership of Konrad Schwitter, the decision maker at Office One. Konrad is a Swiss national now living in the UAE for over ten years.
 
 Retail is an important aspect of Office One’s business since debuting their first retail store in Dubai in 2012. Over the years Portfolio Management became the second focus area of the company. They decided to import Quality Products and Brand from Germany and Switzerland.
 
-### Discovering ERPNext
+#### Discovering ERPNext
 
 Konrad has been an ERPNext cloud customer for the past seven years. That easily makes him one of our oldest and loyal customers. Prior to ERPNext, they used a client/server based trading software. However, the problems with this solution were apparent.
 
@@ -24,7 +24,7 @@ Realizing the apparent issue that was created, Konrad started looking around for
 
 After testing out the system extensively, the Office One team decided to move on to the cloud subscription and stayed with us ever since.
 
-### Thoughts on ERPNext
+#### Thoughts on ERPNext
 
 The Office One team uses ERPNext to the fullest including the POS for retail purposes. Any module that is not manufacturing or project is used by the team. In Konrad's words,
 

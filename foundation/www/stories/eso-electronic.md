@@ -5,25 +5,25 @@
 </section>
 
 
-### How did you discover ERPNext?
+#### How did you discover ERPNext?
 
 Web search for "Open Source ERP", then tested out the trials of all systems available and immediately saw that ERPNext is the most promising platform.
 
-### Why did you choose to implement an ERP system?
+#### Why did you choose to implement an ERP system?
 
 This was out of necessity some time in the late 90ies. Back then we had reached 30 employees. At that time we chose Navision, after a while we reached a stage where we could not upgrade or extend Navision and it was hurting our business, so we started looking for alternatives.
 
-### How did you manage the implmenetation process?
+#### How did you manage the implmenetation process?
 
 We are developing largely in-house. Something that worked well for us is having our developers trained in the business processes so they can act as business analysists.
 
-### What modules did you end up using? And how?
+#### What modules did you end up using? And how?
 
 We use everything from Accounting, Manufacturing, Sales, Purchase, Stock, Projects. Basically everything other than HR and Payroll. We are also active collaborators with the core team in developing new features for the manufacturing module. We have an inhouse team of developers and analysts that helped us upgrade and manage ERPNext. With our developers, we have managed to build deep integrations to our manufacturing setup and machines and also printing.
 
 Over time we are very happy with the support we received from the Frappe team that really helped us push our implementation along.
 
-### What are the best things about ERPNext?
+#### What are the best things about ERPNext?
 
 Frappe Framework and it's easy customizability and DocType driven development.
 What were the key outcomes / benefits for your organization from implementing ERPNext

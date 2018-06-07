@@ -6,7 +6,7 @@
 
 To learn about ERPNext at RIGPL, we talk to Aditya Duggal, its Director and one a long time ERPNext Supporter.
 
-### What was your ERPNext journey like?
+#### What was your ERPNext journey like?
 
 When I joined my company, I saw that all the work was being done on paper. If somebody ordered something, it was written on a piece of paper and that paper would be passed from one hand to the other, till the product was delivered. It would take at least 2-3 days to find out a list of all pending orders.
 
@@ -14,7 +14,7 @@ Being an organised person, I decided to put the business in order by getting a v
 
 While I was searching for a perfect ERP which could be customised to our business, I made other changes. The first thing I started was to establish a culture of making systems for managing order data. It was a change for me and for the people who worked in our company and there were lot of fights.
 
-### Discovering ERPNext
+#### Discovering ERPNext
 
 While making changes in my organisation, I was also looking for applications to run my business. Some apps were good for inventory management but not good for accounting, some where offline. At that point I was managing invoices in Quickbooks and accounting in Tally. I did not like Tally, because it was difficult to import in Tally.
 
@@ -22,7 +22,7 @@ I also tried my luck with open-source projects like Openbravo, but their impleme
 
 Just when I was about to give-up, I came across ERPNext. I immediately liked ERPNext and the entry-level pricing that allowed me to try it. Once I saw the benefits of ERPNext and its ability to customise, hI replaced Tally and Quickbooks with ERPNext.
 
-### Best Features of ERPNext
+#### Best Features of ERPNext
 
 - ERPNext has low entry cost.
 - Is web-based, so no need of installing computer software at client location.
