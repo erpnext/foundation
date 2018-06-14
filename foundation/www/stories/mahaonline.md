@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at MahaOnline</h1>
 	<p class='lead'>MahaOnline is a joint venture of Government of Maharashtra and India's leading IT services firm, Tata Consultancy Services (TCS).</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/mol.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/mol.jpg'>
 </section>
 
 ---
@@ -45,7 +45,7 @@ With the above process areas firmly in place within ERPNext in a short span of 4
 In conclusion, it can be seen with the above case study that government organizations can greatly benefit from the implementation of Open Source ERPNext both in terms of gaining operational efficiencies with vanilla ERPNext implementation & license cost freedom offered by Open Source technologies.
 
 
-<section class='text-center mt-5'>
+<section class='text-center section-padding'>
 	<p><a href='https://mahaonline.gov.in' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to MahaOnline.gov.in</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

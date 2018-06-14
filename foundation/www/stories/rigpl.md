@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at Rohit Cutting Tools</h1>
 	<p class='lead'>Rohit Industries Group Pvt Ltd is a leader in the field of HSS and solid carbide cutting tools since 1963.</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/rigpl.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/rigpl.jpg'>
 </section>
 
 To learn about ERPNext at RIGPL, we talk to Aditya Duggal, its Director and one a long time ERPNext Supporter.
@@ -35,7 +35,7 @@ The best part about the software is that, it is easily customisable. I have done
 
 I have seen many software vendors who are good at coding but not so good at understanding the needs of the customers with regards to manufacturing. With ERPNext, I has found a fusion of both.
 
-<section class='text-center mt-5'>
+<section class='text-center section-padding'>
 	<p><a href='https://rigpl.com' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to RIGPL.com</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

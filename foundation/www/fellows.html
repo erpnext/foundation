@@ -73,11 +73,11 @@
 %}
 
 <section class='top-section'>
+	<div class='container'>
 	<h1>Foundation Fellows</h1>
 	<p class='lead'>
 		ERPNext Foundation Fellows have shown outstanding leadership in contributing features and/or helping out new members on the forum. Lets take a moment to recognize their efforts.
 	</p>
-</section>
 	{{ media(
 		"Charles-Henri Decultot",
 		"The success of an open-source project depends on the quality of its core team but also on the quality of its community. As community members, it is our duty to contribute back to this great project in any way we can. That's the reason why, at Dokos, we always try to enhance the core model before making any custom developments. Everybody's contributions leads to making ERPNext better every day: it's a win-win situation",
@@ -85,7 +85,11 @@
 		"Dokos.io",
 		"https://dokos.io"
 	)}}
-<section>
+	</div>
+</section>
+<section class='section-padding section-bg'>
+	<div class='container'>
+	<h2 class='text-center'>Meet the Fellows</h2>
 	<div class='row'>
 	{% for item in fellows %}
 		<div class='col-sm-4 mb-4'>
@@ -117,11 +121,15 @@
 		</div>
 	{% endfor %}
 	</div>
-
-	<div class='my-4 text-center'>
-		<p><a class='mt-4 btn-dark btn-sm btn' href="/contact">
+	</div>
+</section>
+<section class='section-padding'>
+	<div class='container'>
+	<div class='text-center'>
+		<p><a class='btn-dark btn' href="/contact">
 			Contact Us To Nominate A Fellow</a></p>
 		<p><a class='text-muted' href='/contribute'>Learn how you can contribute</a></p>
+	</div>
 	</div>
 <section>
 {% endblock %}

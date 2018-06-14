@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at Zerodha</h1>
 	<p class='lead'>Zerodha is India's first, and now the largest, discount stock broker. It is known for it's in-house trading platforms and disruptive use of technology in the industry.</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/zerodha.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/zerodha.jpg'>
 </section>
 
 #### How did you discover ERPNext?
@@ -35,7 +35,7 @@ This has saved us a lot of time which would have been spent if we would have bui
 
 We have also used frappe extensively to build several micro services internally. Frappe has streamlined the business development process for us and made the UI and UX consistent across our internal applications.
 
-<section class='text-center mt-5'>
+<section class='text-center section-padding'>
 	<p><a href='https://zerodha.com' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to Zerodha.com</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

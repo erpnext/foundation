@@ -2,12 +2,15 @@
 {% block title %}ERPNext Foundation - Open Source ERP Software{% endblock %}
 {% block page_content %}
 <section class='top-section'>
+	<div class='container'>
+	<img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'>
 	<h1>Enterprise System for the Digital Age</h1>
 	<p class='lead'>
-		ERPNext is the modern, easy-to-use, 100% open source, business system used by more than three thousand enterprises worldwide.
+		ERPNext is the modern, easy-to-use, 100% open source, business management system used by thousands of enterprises worldwide.
 	</p>
 	<p><a class="mt-4 btn btn-dark btn" href="/get-started">Get Started with ERPNext</a></p>
 	<p><a class="text-muted" href="/stories">Read user stories</a></p>
+	</div>
 </section>
 
 {% macro card(title, body, btnlink, badges) %}
@@ -21,104 +24,110 @@
 	</a>
 </div>
 {% endmacro %}
-<section class="section-padding px-3">
-	<div class="row mt-5">
-		{{ card(
-			"Financial Accounting",
-			"The heart of your business, everything flows through here.",
-			"/docs/user/manual/en/accounts",
-			["All"]
-		) }}
+<section class="section-padding section-bg">
+	<div class='container'>
+		<div class='text-center'>
+			<h2>Everything Included</h2>
+			<p class='lead'>ERPNext includes all modules and integrations out of the box so you can get started immediately</p>
+		</div>
+		<div class="row mt-5">
+			{{ card(
+				"Financial Accounting",
+				"The heart of your business, everything flows through here.",
+				"/docs/user/manual/en/accounts",
+				["All"]
+			) }}
 
-		{{ card(
-			"CRM",
-			"Everything about your customers, stay in touch and keep them updated.",
-			"/docs/user/manual/en/CRM",
-			["All"]
-		) }}
+			{{ card(
+				"CRM",
+				"Everything about your customers, stay in touch and keep them updated.",
+				"/docs/user/manual/en/CRM",
+				["All"]
+			) }}
 
-		{{ card(
-			"Inventory",
-			"What goes in, what comes out and where you can find it.",
-			"/docs/user/manual/en/stock",
-			["All"]
-		) }}
-	</div>
+			{{ card(
+				"Inventory",
+				"What goes in, what comes out and where you can find it.",
+				"/docs/user/manual/en/stock",
+				["All"]
+			) }}
+		</div>
 
-	<div class="row">
-		{{ card(
-			"Sales",
-			"Closing a deal and ensuring that it is successfully fulfilled.",
-			"/docs/user/manual/en/selling",
-			["All"]
-		) }}
+		<div class="row">
+			{{ card(
+				"Sales",
+				"Closing a deal and ensuring that it is successfully fulfilled.",
+				"/docs/user/manual/en/selling",
+				["All"]
+			) }}
 
-		{{ card(
-			"Purchasing",
-			"Keep track of purchases and stay on top of costs and budgets.",
-			"/docs/user/manual/en/buying",
-			["All"]
-		) }}
+			{{ card(
+				"Purchasing",
+				"Keep track of purchases and stay on top of costs and budgets.",
+				"/docs/user/manual/en/buying",
+				["All"]
+			) }}
 
-		{{ card(
-			"Projects",
-			"Manage teams with multiple tasks, track time and costs.",
-			"/docs/user/manual/en/projects",
-			["All"]
-		) }}
-	</div>
+			{{ card(
+				"Projects",
+				"Manage teams with multiple tasks, track time and costs.",
+				"/docs/user/manual/en/projects",
+				["All"]
+			) }}
+		</div>
 
-	<div class="row">
-		{{ card(
-			"Manufacturing",
-			"From Bill of Material to Work Orders and movement of stock.",
-			"/docs/user/manual/en/manufacturing",
-			["Manufacturing"]
-		) }}
+		<div class="row">
+			{{ card(
+				"Manufacturing",
+				"From Bill of Material to Work Orders and movement of stock.",
+				"/docs/user/manual/en/manufacturing",
+				["Manufacturing"]
+			) }}
 
-		{{ card(
-			"Education",
-			"Manage students, classes, attendance, timetables, grades and fees.",
-			"/docs/user/manual/en/education",
-			["Education"]
-		) }}
+			{{ card(
+				"Education",
+				"Manage students, classes, attendance, timetables, grades and fees.",
+				"/docs/user/manual/en/education",
+				["Education"]
+			) }}
 
-		{{ card(
-			"Healthcare",
-			"Patient care with appointments, consultation and lab reports.",
-			"/docs/user/manual/en/healthcare",
-			["Healthcare"]
-		) }}
-	</div>
+			{{ card(
+				"Healthcare",
+				"Patient care with appointments, consultation and lab reports.",
+				"/docs/user/manual/en/healthcare",
+				["Healthcare"]
+			) }}
+		</div>
 
-	<div class="row">
-		{{ card(
-			"E-Commerce",
-			"Website listings, shopping cart, billing, payments and much more.",
-			"/docs/user/manual/en/website/shopping-cart",
-			["All"]
-		) }}
+		<div class="row">
+			{{ card(
+				"E-Commerce",
+				"Website listings, shopping cart, billing, payments and much more.",
+				"/docs/user/manual/en/website/shopping-cart",
+				["All"]
+			) }}
 
-		{{ card(
-			"Website",
-			"Fully featured content management with blogs, web pages and forms.",
-			"/docs/user/manual/en/website",
-			["All"]
-		) }}
+			{{ card(
+				"Website",
+				"Fully featured content management with blogs, web pages and forms.",
+				"/docs/user/manual/en/website",
+				["All"]
+			) }}
 
-		{{ card(
-			"Support",
-			"Email integrated ticketing system with threaded replies and assignments.",
-			"/docs/user/manual/en/support",
-			["All"]
-		) }}
+			{{ card(
+				"Support",
+				"Email integrated ticketing system with threaded replies and assignments.",
+				"/docs/user/manual/en/support",
+				["All"]
+			) }}
+		</div>
 	</div>
 </section>
 
-
-<hr >
 <section class="section-padding text-center">
-	<div class="mt-5 row text-center">
+	<div class='container'>
+	<h2>Independent Reviews</h2>
+	<div class="row text-center">
 		<div class="col-xs-12 col-sm-6 col-md-3">
 			<a class="secondary-link" target="_blank" href="https://www.capterra.com/p/164441/ERPNext/">
 				<img alt="captera-erpnext review" src="/assets/foundation/img/captera-bw.png" class="review-img">
@@ -144,12 +153,14 @@
 			</a>
 		</div>
 	</div>
+	</div>
 </section>
-<hr >
-<section class="section-padding text-center">
+<section class="section-padding text-center section-bg">
+	<div class='container'>
 	<h2>ERPNext Foundation</h2>
 	<p class="lead lead-max m-auto text-muted">ERPNext Foundation is a
 		registered not-for-profit organization that enables community to build and enhance ERPNext.</p>
-	<a href="/get-started" class="mt-4 btn btn-dark">Get Started with ERPNext</a>
+	<a href="/get-started" class="my-4 btn btn-dark">Get Started with ERPNext</a>
+	</div>
 </section>
 {% endblock %}

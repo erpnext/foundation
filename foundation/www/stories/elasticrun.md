@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at Elastic Run</h1>
 	<p class='lead'>ElasticRun is technology driven, variable capacity transportation network.</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/elasticrun.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/elasticrun.jpg'>
 </section>
 
 #### Tell us about your company, its products, its history
@@ -37,7 +37,7 @@ Also, we are in the process of exploring Frappe framework as a rapid application
 
 A single package to contain all our formal business process needs as well as to systemize adhoc and tactical needs/requirements as well with same ease.
 
-<section class='text-center mt-5'>
+<section class='section-padding text-center'>
 	<p><a href='https://elastic.run' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to Elastic.run</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

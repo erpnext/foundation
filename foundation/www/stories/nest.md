@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h3>ERPNext at National Engineering Services and Trading (UAE)</h3>
 	<p class='lead text-muted'>NEST sells industrial parts and services for oil and gas, and power industries. The company is almost 40 years old..</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/nest.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/nest.jpg'>
 </section>
 
 #### How did you discover ERPNext?
@@ -28,7 +28,7 @@ Easy to use, and support by a good community.
 We had and ERP before ERPnext so we are used to the main features of an ERP implementation. But with ERPnext we are in control of our system.
 
 
-<section class='text-center mt-5'>
+<section class='text-center section-padding'>
 	<p><a href='https://nest.ae' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to Nest.ae</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

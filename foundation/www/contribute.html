@@ -1,122 +1,142 @@
-<section class='section-padding text-center'>
+<section class='top-section'>
+<div class='container'>
 	<h1>Be a Part of Something Bigger</h1>
 	<p class='lead'>
 		Get involved and help the mission of providing world class software for everyone.
 	</p>
+</div>
 </section>
-<section>
-	<div class='card mb-4'>
-		<div class='card-body'>
-			<h5 class='card-title'>Help New Users</h5>
-			<p>Our support process relies on enthusiastic contributors like you to help others get the most out of. Join the ERPNext forum and start helping out.</p>
+
+{% macro card(title, content, icon, buttons) %}
+<div class='card mb-5'>
+	<div class='card-body mb-2'>
+		<div class='media'>
+			<img src='{{ icon }}' class='img-box mr-3'>
+			<div class='media-body'>
+			<h5 class='card-title'>{{ title }}</h5>
+			<p>{{ content }}</p>
 			<div>
-				<a href='https://discuss.erpnext.com' target='_blank' class='btn btn-secondary btn-sm'>
-					ERPNext Forum
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class='card mb-4'>
-		<div class='card-body'>
-			<h5 class='card-title'>Spread The Word</h5>
-			<p>Help us spread the word about how ERPNext is helping your organization become better. Write / create a small video about your experiences using ERPNext and share it with the community.</p>
-
-			<ul>
-			<li>Write Reviews on Popular Review sites like:
-				<a href='https://www.capterra.com/p/164441/ERPNext/'>Capterra</a>,
-				<a href='https://www.g2crowd.com/products/erpnext/reviews'>G2 Crowd</a>,
-				<a href='https://reviews.financesonline.com/p/erpnext/'>FinancesOnline</a>
-			</li>
-
-			<li>Follow ERPNext on Social Media like <a href='https://twitter.com/erpnext' target='_blank'>Twitter</a>,
-				<a href='https://www.facebook.com/ERPNext' target='_blank'>Facebook</a>,
-				<a href='https://youtube.com/c/erpnext'>YouTube</a> and share our posts with your friends and followers.
-			</li>
-			<li>Star the <a href='https://github.com/frappe'>Frappe repositories on GitHub.</a></li>
-		</div>
-	</div>
-
-	<div class='card mb-4'>
-		<div class='card-body'>
-			<h5 class='card-title'>Report Bugs and Issues</h5>
-			<p>Quality Assurance testing is one of the easiest ways to get started with ERPNext and is a great way to get familiar with our code and tools. When you are using ERPnext, be sure to report any bugs or issues on GitHub.</p>
-			<div>
-				<a href='https://github.com/frappe/erpnext/issues' target='_blank' class='btn btn-secondary btn-sm'>
-					ERPNext Issue Tracker on GitHub
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class='card mb-4'>
-		<div class='card-body'>
-			<h5 class='card-title'>Software Development</h5>
-			<p>Developers can help ERPNext by adding new features, making the technology better and making development easier for others. ERPNext is built on the <a href='https://frappe.io/docs' target='_blank'>Frappe Framework</a> and uses Python and Javascript. Go through the issues list and find something that interests you. If you need help, we are around to help you on the forum.
-.</p>
-			<div>
-				<a href='https://frappe.io/docs/user/en' target='_blank' class='btn btn-secondary btn-sm'>
-					Get Started with Frappe Framework
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class='card mb-4'>
-		<div class='card-body'>
-			<h5 class='card-title'>Localization</h5>
-			<p>
-				Get involved by translating Frappe and ERPNext and other projects in your language. Also help us tell the world about how ERPNext is helping create better software for everyone by translating content on our website. You can also contribute for setting up the default chart of accounts for every country.</p>
-			<div>
-				<a href='https://translate.erpnext.com' target='_blank'
+				{% for btn in buttons %}
+				<a href='{{ btn.link }}' target='_blank'
 					class='btn btn-secondary btn-sm'>
-					Translation Portal
+					{{ btn.label }}
 				</a>
-				<a href='https://charts.erpnext.com' target='_blank'
-					class='btn btn-secondary btn-sm ml-2'>
-					Chart of Accounts Portal
-				</a>
+				{% endfor %}
+			</div>
 			</div>
 		</div>
 	</div>
+</div>
+{% endmacro %}
 
-	<div class='card mb-4'>
-		<div class='card-body'>
-			<h5 class='card-title'>Documentation</h5>
-			<p>ERPNext and Frappe are massive projects, and we are always looking at ways to make our documentation better and more complete. Help make our documentation better by writing new content, correcting existing material or translating content into new languages.</p>
-			<div>
-				<a href='https://frappe.io/docs/user' target='_blank'
-					class='btn btn-secondary btn-sm'>
-					Frappe Documentation
-				</a>
-				<a href='/docs/user' target='_blank'
-					class='btn btn-secondary btn-sm ml-2'>
-					ERPNext Documentation
-				</a>
-			</div>
-		</div>
-	</div>
+<section class='section-padding section-bg'>
+<div class='container'>
+	{{ card(
+		'Help New Users',
+		'Our support process relies on enthusiastic contributors like you to help others get the most out of. Join the ERPNext forum and start helping out.',
+		'/assets/foundation/img/icons/help.svg',
+		[
+			{ 'label': 'ERPNext Forum', 'link': 'https://discuss.erpnext.com' }
+		]
+	) }}
 
-	<div class='card mb-4'>
-		<div class='card-body'>
-			<h5 class='card-title'>Web Development</h5>
-			<p>Our web sites are open for designers web developers to hack on. Find a web site project to get started on. The two main sites are erpnext.org and frappe.io</p>
-			<div>
-				<a href='https://github.com/erpnext/foundation' target='_blank'
-					class='btn btn-secondary btn-sm'>
-					ERPNext.org Website (this one!)
-				</a>
-				<a href='https://github.com/frappe/frappe_io' target='_blank'
-					class='btn btn-secondary btn-sm'>
-					Frappe.io Website
-				</a>
-			</div>
-		</div>
-	</div>
+	{{ card(
+		'Spread The Word',
+		"""
+		<p>Help us spread the word about how ERPNext is helping your organization become better. Write / create a small video about your experiences using ERPNext and share it with the community.</p>
+
+		<ul>
+		<li>Write Reviews on Popular Review sites like:
+			<a href='https://www.capterra.com/p/164441/ERPNext/'>Capterra</a>,
+			<a href='https://www.g2crowd.com/products/erpnext/reviews'>G2 Crowd</a>,
+			<a href='https://reviews.financesonline.com/p/erpnext/'>FinancesOnline</a>
+		</li>
+
+		<li>Follow ERPNext on Social Media like <a href='https://twitter.com/erpnext' target='_blank'>Twitter</a>,
+			<a href='https://www.facebook.com/ERPNext' target='_blank'>Facebook</a>,
+			<a href='https://youtube.com/c/erpnext'>YouTube</a> and share our posts with your friends and followers.
+		</li>
+		<li>Star the <a href='https://github.com/frappe'>Frappe repositories on GitHub.</a></li>
+		""",
+		'/assets/foundation/img/icons/broadcast.svg',
+		[
+		]
+	) }}
+
+	{{ card(
+		'Report Bugs and Issues',
+		'Quality Assurance testing is one of the easiest ways to get started with ERPNext and is a great way to get familiar with our code and tools. When you are using ERPnext, be sure to report any bugs or issues on GitHub.',
+		'/assets/foundation/img/icons/issue.svg',
+		[
+			{ 'label': 'ERPNext Issue Tracker on GitHub',
+			'link': 'https://github.com/frappe/erpnext/issues' }
+		]
+	) }}
+
+	{{ card(
+		'Software Development',
+		"""
+		Developers can help ERPNext by adding new features, making the technology better and making development easier for others. ERPNext is built on the <a href='https://frappe.io/docs' target='_blank'>Frappe Framework</a> and uses Python and Javascript. Go through the issues list and find something that interests you. If you need help, we are around to help you on the forum.
+		""",
+		'/assets/foundation/img/icons/code.svg',
+		[
+			{ 'label': 'Get Started with Frappe Framework',
+			'link': 'https://frappe.io/docs/user/en' }
+		]
+	) }}
+
+	{{ card(
+		'Localization',
+		"""
+Get involved by translating Frappe and ERPNext and other projects in your language. Also help us tell the world about how ERPNext is helping create better software for everyone by translating content on our website. You can also contribute for setting up the default chart of accounts for every country.
+		""",
+		'/assets/foundation/img/icons/translate.svg',
+		[
+			{ 'label': 'Translation Portal',
+			'link': 'https://translate.erpnext.com' },
+			{ 'label': 'Chart of Accounts Portal',
+			'link': 'https://charts.erpnext.com' }
+
+		]
+	) }}
+
+	{{ card(
+		'Documentation',
+		"""
+ERPNext and Frappe are massive projects, and we are always looking at ways to make our documentation better and more complete. Help make our documentation better by writing new content, correcting existing material or translating content into new languages.
+		""",
+		'/assets/foundation/img/icons/documentation.svg',
+		[
+			{ 'label': 'Frappe Documentation',
+			'link': 'https://frappe.io/docs/user' },
+			{ 'label': 'ERPNext Documentation',
+			'link': '/docs/user' }
+
+		]
+	) }}
+
+	{{ card(
+		'Web Development',
+		"""
+Our web sites are open for designers web developers to hack on. Find a web site project to get started on. The two main sites are erpnext.org and frappe.io.
+		""",
+		'/assets/foundation/img/icons/html.svg',
+		[
+			{ 'label': 'ERPNext.org Website (this one!)',
+			'link': 'https://github.com/erpnext/foundation' },
+			{ 'label': 'Frappe.io Website',
+			'link': 'https://github.com/frappe/frappe_io' }
+
+		]
+	) }}
+
 </section>
-<section class='text-center'>
-	<div class='text-muted'>Have questions? head to the forum</div>
-	<a href='https://discuss.erpnext.com/' target='_blank' class='mt-2 btn btn-dark btn-sm'>
+
+<section class='section-padding text-center'>
+<div class='container'>
+	<p class='text-muted'>Have questions? head to the forum</p>
+	<a href='https://discuss.erpnext.com/' target='_blank' class='mt-2 btn btn-dark'>
 		ERPNext Forum</a>
+</div>
 </section>
 

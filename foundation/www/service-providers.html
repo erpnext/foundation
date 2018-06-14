@@ -31,28 +31,37 @@
 
 {% block page_content %}
 
-<section class='text-center section-padding'>
-<h1>ERPNext Service Providers</h1>
-<p class='lead'>
-	ERPNext Members are both Service Providers and End Users. Check out their website if you are looking for help in your region.
-</p>
+<section class='top-section'>
+	<div class='container'>
+		<h1>ERPNext Foundation Members</h1>
+		<p class='lead'>
+			ERPNext Members are both Service Providers and End Users. Check out their website if you are looking for help in your region.
+		</p>
+	</div>
 </section>
-<section class="section-padding">
-	<h3 class="mb-5 text-center">Gold Members</h4>
-	{{ show_section(gold_members, color=True) }}
-</section>
-
-<section class="section-padding">
-	<h4 class="mb-5 text-center">Silver Members</h4>
-	{{ show_section(silver_members) }}
-</section>
-
-<section class="section-padding">
-	<h4 class="mb-5 text-center">Individual Members</h4>
-	{{ show_section(individual_members, with_img = False) }}
+<section class="section-padding section-bg">
+	<div class='container'>
+		<h3 class="mb-5 text-center">Gold Members</h4>
+		{{ show_section(gold_members, color=True) }}
+	</div>
 </section>
 
-<section class='mb-4'>
+<section class="section-padding">
+	<div class='container'>
+		<h4 class="mb-5 text-center">Silver Members</h4>
+		{{ show_section(silver_members) }}
+	</div>
+</section>
+
+<section class="section-padding section-bg">
+	<div class='container'>
+		<h4 class="mb-5 text-center">Individual Members</h4>
+		{{ show_section(individual_members, with_img = False) }}
+	</div>
+</section>
+
+<section class='section-padding'>
+	<div class='container'>
 	<div class='card mb-5'>
 		<div class='card-body'>
 			<div class="media ">
@@ -67,9 +76,9 @@
 		</div>
 	</div>
 	<div class='text-center'>
-		<p class='lead text-muted'>If you want to get listed on this page, join the Foundation and become a member</p>
-		<a href="/members" class="btn btn-dark">Become a Member</a>
 		<p class='mt-4'><a href='/faq'>Learn more about becoming an ERPNext Service Provider</a></p>
+		<a href="/members" class="btn btn-dark">Become a Member</a>
+	</div>
 	</div>
 </section>
 <style>

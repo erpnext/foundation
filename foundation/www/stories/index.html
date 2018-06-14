@@ -5,8 +5,8 @@
 {% from "templates/includes/media.html" import media %}
 
 {% block page_content %}
-<section class='section-padding'>
-	<div class='text-center'>
+<section class='top-section'>
+	<div class='container'>
 		<h1>Trailblazing Companies Use ERPNext</h1>
 		<p class='lead'>For every industry or size or domain, ERPNext has been driving growth and systems for innovative companies worldwide.</p>
 	</div>
@@ -96,8 +96,9 @@
 	]
 %}
 
-<section>
-	<div class='row mt-5'>
+<section class='section-padding section-bg'>
+<div class='container'>
+	<div class='row'>
 	{% for item in stories %}
 		<div class='col-sm-4 mb-4'>
 		<div class='card h-100'>
@@ -112,16 +113,19 @@
 		</div>
 	{% endfor %}
 	</div>
+</div>
+</section>
 
-	<div class='my-4 text-center'>
-		<p>
-			<a class='mt-4 btn-dark btn' href="/get-started">
-				Get Started with ERPNext Now</a>
-		</p>
-		<p>
-			<a href='/contact' class='text-muted'>Share Your ERPNext Story</a>
-		</p>
-	</div>
-<section>
+<section class='section-padding'>
+<div class='container text-center'>
+	<p>
+		<a class='mt-4 btn-dark btn' href="/get-started">
+			Get Started with ERPNext Now</a>
+	</p>
+	<p>
+		<a href='/contact' class='text-muted'>Share Your ERPNext Story</a>
+	</p>
+</div>
+</section>
 {% endblock %}
 

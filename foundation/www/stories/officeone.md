@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at Office One</h1>
 	<p class='lead'>Office One is one of the fastest growing Stationary and Office Supplies Companies in UAE.</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/officeone.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/officeone.jpg'>
 </section>
 
 Office One, one of the fastest growing Stationary and Office Supplies Companies in UAE fulfils all your office requirements. They sell almost anything you would want to have in your office. Just name it, and you should find that product on their massive catalogue.
@@ -39,7 +39,7 @@ With version 10 in 2018, ERPNext supported the newly implemented VAT system in K
 Konrad’s favourite part of all of this? No more hassles with the hosting infrastructure!
 
 
-<section class='text-center mt-5'>
+<section class='text-center section-padding'>
 	<p><a href='https://www.officeoneuae.com/' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to OfficeOneUAE.com</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

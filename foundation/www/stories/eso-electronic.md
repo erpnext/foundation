@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at ESO Electronic</h1>
 	<p class='lead'>ESO Electronic Service Ottenbreit GmbH is in the electronics manufacturing services business since 1990.</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/eso-electronic.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/eso-electronic.jpg'>
 </section>
 
 
@@ -32,7 +32,7 @@ Moving from an ERP system to an all-encompassing system that hosts most of our s
 I am also a active member of the community and a speaker at ERPNext Conferences.
 
 
-<section class='text-center mt-5'>
+<section class='section-padding text-center'>
 	<p><a href='https://eso-electronic.com' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to eso-electronic.com</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

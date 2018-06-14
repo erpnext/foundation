@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at V3 Technologies</h1>
 	<p class='lead text-muted'>V3 Technologies, is a bespoke manufacturing unit specializing in precision manufacturing, having state of art CNC machines.</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/v3tech.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/v3tech.jpg'>
 </section>
 
 #### Tell us about your company, its products, its history
@@ -33,7 +33,7 @@ Ease of use and functionality
 
 We can now focus on profitable growth.
 
-<section class='text-center mt-5'>
+<section class='text-center section-padding'>
 	<p><a href='http://v3techindia.com' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to V3TechIndia.com</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

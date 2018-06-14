@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at SAPCON Instruments</h1>
 	<p class='lead'>Started in 1983, SAPCON manufactures of a wide variety of level instruments for process industries.</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/sapcon.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/sapcon.jpg'>
 </section>
 
 ## How did you discover ERPNext?
@@ -26,7 +26,7 @@ Stock, Manufacturing, Selling, CRM, Buying, Accounts, in that order.
 
 It is open-source, flexible enough, and has a beautiful-easy to use UI.
 
-<section class='text-center mt-5'>
+<section class='text-center section-padding'>
 	<p><a href='https://sapconinstruments.com' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to SAPCONInstruments.com</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>

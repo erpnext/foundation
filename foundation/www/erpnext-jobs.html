@@ -3,11 +3,17 @@
 {% block title %}ERPNext Job Board{% endblock %}
 
 {% block page_content %}
-<section class='section-padding '>
-	<h1 class='text-center'>ERPNext Job Board</h1>
-	<p class='lead text-center mb-5'>
-		Looking for customization or implementation partners? Connect with the community by posting a Job.
-	</p>
+<section class='top-section'>
+	<div class='container'>
+		<h1>ERPNext Job Board</h1>
+		<p class='lead'>
+			Looking for customization or implementation partners? Connect with the community by posting a Job.
+		</p>
+	</div>
+</section>
+<section class='section-padding section-bg'>
+	<div class='container'>
+		<h2 class='text-center'>Open Jobs</h2>
 	{% for item in frappe.get_all("Portal Job", "title, creation, country, description, route",
 		{"show_in_website": 1}, order_by = "creation desc", limit=50) %}
 		<a href="{{ item.route }}" class='card mb-4'>
@@ -23,5 +29,11 @@
 			</div>
 		</a>
 	{% endfor %}
+	</div>
+</section>
+<section class='section-padding'>
+	<div class='container text-center'>
+		<a class='btn btn-dark' href="/my-jobs">Post A New Job</a>
+	</div>
 </section>
 {% endblock %}

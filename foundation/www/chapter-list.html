@@ -59,14 +59,17 @@
 	},
 ] %}
 
-<section class='section-padding'>
-	<h1 class='text-center'>Chapters</h1>
-	<p class='lead text-center'>
-		Become a part of your local ERPNext Community by joining a chapter near you.
-		If you can't find one, start your own!
-	</p>
+<section class='top-section'>
+	<div class='container'>
+		<h1>Chapters</h1>
+		<p class='lead'>
+			Become a part of your local ERPNext Community by joining a chapter near you.
+			If you can't find one, start your own!
+		</p>
+	</div>
 </section>
-<section>
+<section class='section-padding section-bg'>
+	<div class='container'>
 	<div class='card-deck'>
 	{% for item in chapters %}
 
@@ -82,12 +85,15 @@
 	{% endif %}
 	{% endfor %}
 	</div>
-	<div class='mt-4 text-center'>
+	</div>
+</section>
+<section class='section-padding'>
+	<div class='container text-center'>
 		<div class='text-muted'>
-			To start your own chapter, start a group on Meetup.com and get in touch with us.
+			To start your own chapter, start a group on <a href='https://meetup.com' target='_blank'>Meetup.com</a> and get in touch with us.
 		</div>
 		<div>
-		<a class='mt-2 btn-dark btn-sm btn' href="/contact">Contact Us To Start a New Chapter</a>
+		<a class='mt-2 btn-dark btn' href="/contact">Contact Us To Start a New Chapter</a>
 		</div>
 	</div>
 <section>

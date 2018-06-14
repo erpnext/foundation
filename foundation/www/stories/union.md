@@ -1,7 +1,7 @@
 <section class='top-section'>
 	<h1>ERPNext at Union Global</h1>
 	<p class='lead'>Union is one of the leading brands for home appliances here in the Philippines for more than 50 years having started in 1960.</p>
-	<img class='greyscale' src='/assets/foundation/img/stories/union.jpg'>
+	<img class='greyscale mt-5' src='/assets/foundation/img/stories/union.jpg'>
 </section>
 
 Union is one of the leading brands for home appliances here in the Philippines for more than 50 years having started in 1960. Beginning with the humble electric fan, we have grown our product line over the years to include several other major appliance products Filipinos look for.  And while we are proud of our long history, we are continually looking towards the future to find more ways to help Filipinos run their homes better. We strive to deliver innovative products that aren’t just reliable and long-lasting, but are able to provide something more than your usual household appliance.
@@ -31,7 +31,7 @@ Inter-department communication: Using ERPNext and other communication tools help
 
 ERPNext has contributed greatly to a culture of transparency so we can focus on delivering value and solving business problems. Instead of spending scarce time and resources on questions like "what happened?" and "where do we find the details?" - which ERPNext helps greatly in, we can focus on "how do we solve this?" and delight our customers.
 
-<section class='text-center mt-5'>
+<section class='text-center section-padding'>
 	<p><a href='https://union.ph' class='btn btn-secondary btn-sm'
 		target='_blank'>Go to Union.ph</a></p>
 	<p><a class='text-muted' href='/stories'>Read More ERPNext Stories</a></p>
