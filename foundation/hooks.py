@@ -67,7 +67,7 @@ website_context = {
 			], "right":1},
 	],
 	"hide_login": 0,
-	"favicon": "/assets/foundation/img/favicon.ico"
+	"favicon": "/assets/foundation/img/erpnext-logo-black.png"
 }
 # website user home page (by Role)
 # role_home_page = {
