@@ -1,4 +1,4 @@
-{% extends "templates/web.html" %}
+{% extends "templates/base.html" %}
 
 {% macro show_section(members, with_img = True, color=False) %}
 	<div class='row'>
@@ -29,7 +29,7 @@
 	</div>
 {% endmacro %}
 
-{% block page_content %}
+{% block content %}
 
 <section class='top-section'>
 	<div class='container'>
