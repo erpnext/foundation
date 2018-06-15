@@ -70,26 +70,27 @@
 			If you can't find one, start your own!
 		</p>
 		<div class='card-deck mt-5'>
-	{% for item in chapters %}
+		{% for item in chapters %}
 
-	<a href='{{ item['meetup-link' ]}}' target='_blank' class='card mb-4'>
-		<img class="card-img-top greyscale" src="{{ item.image }}" alt="{{ item.city }}">
-		<div class="card-body">
-			<h5>{{ item.city }}</h5>
-			<div class='text-muted'>{{ item.members }} members</div>
+		<a href='{{ item['meetup-link' ]}}' target='_blank' class='card mb-4'>
+			<img class="card-img-top greyscale" src="{{ item.image }}" alt="{{ item.city }}">
+			<div class="card-body">
+				<h5>{{ item.city }}</h5>
+				<div class='text-muted'>{{ item.members }} members</div>
+			</div>
+		</a>
+		{% if loop.index is divisibleby 3 %}
 		</div>
-	</a>
-	{% if loop.index is divisibleby 3 %}
-	</div><div class='card-deck'>
-	{% endif %}
-	{% endfor %}
+		<div class='card-deck'>
+		{% endif %}
+		{% endfor %}
+		</div>
+		<div class='text-muted mt-4'>
+			To start your own chapter, start a group on <a href='https://meetup.com' target='_blank'>Meetup.com</a> and get in touch with us.
+		</div>
+		<div>
+		<a class='mt-4 btn-dark btn' href="/contact">Contact Us To Start a New Chapter</a>
+		</div>
 	</div>
-	<div class='text-muted mt-4'>
-		To start your own chapter, start a group on <a href='https://meetup.com' target='_blank'>Meetup.com</a> and get in touch with us.
-	</div>
-	<div>
-	<a class='mt-4 btn-dark btn' href="/contact">Contact Us To Start a New Chapter</a>
-	</div>
-	</div>
-<section>
+</section>
 {% endblock %}
