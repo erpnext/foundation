@@ -1,0 +1,52 @@
+{% extends "templates/base.html" %}
+
+{% from "templates/includes/media.html" import media %}
+
+{% block title %}ERPNext Foundation Fellows{% endblock %}
+{% block content %}
+
+<section class='top-section'>
+	<div class='container'>
+	<h1>Certified Consultants</h1>
+	<p class='lead'>
+		ERPNext Foundation certified consultants go through a rigorous certification process and are qualified to provide professional services around ERPNext.
+	</p>
+	</div>
+</section>
+<section class='section-padding section-bg'>
+	<div class='container'>
+	<h2 class='text-center'>Meet the Certified Consultants</h2>
+	<div class='row'>
+	{% for consultant in all_consultants %}
+		<div class='col-sm-4 mb-4'>
+		<div class='card h-100'>
+			<a href='{{ consultant.website_url }}' target='_blank'>
+			<img class="card-img-top greyscale"
+				src="{{ consultant.image }}" alt="{{ consultant.name_of_consultant }}">
+			</a>
+			<div class="card-body">
+				<h5>
+					{{ consultant.name_of_consultant }}
+				</h5>
+				<div>
+					<a class='btn-sm btn-secondary mr-2'
+						href='https://github.com/{{ consultant.github_id }}'
+						target='_blank'>
+						<i class='octicon octicon-mark-github'></i></a>
+					<a class='btn-sm btn-secondary'
+						href='https://discuss.erpnext.com/u/{{ consultant.discuss_id }}'
+						target='_blank'>
+						<i class='fa fa-comments'></i>
+					</a>
+				</div>
+			</div>
+			<div class="card-footer">
+				<a href='{{ consultant.website_url }}' class='text-muted small'>{{ consultant.website_url }}</a>
+			</div>
+		</div>
+		</div>
+	{% endfor %}
+	</div>
+	</div>
+</section>
+{% endblock %}
