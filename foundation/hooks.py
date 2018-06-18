@@ -56,6 +56,7 @@ website_context = {
 				{"label": "Contribute", "url": "/contribute"}
 			], "right":1},
 			{"label": "Services", "child_items":[
+				{"label": "Certification", "url": "/certification"},
 				{"label": "Service Providers", "url": "/service-providers"},
 				{"label": "Freelancer Jobs", "url": "/erpnext-jobs"},
 				{"label": "Become a Service Provider", "url": "/faq"}
