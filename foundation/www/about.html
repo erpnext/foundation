@@ -44,7 +44,7 @@
 	{
 		'name': 'You',
 		'designation': 'Apply for a position',
-		'bio': 'If you have a vision for working for an open source community and taking the foundation to new places, we would love to get in touch with you. <a href="/contact">Get in Touch</a>',
+		'bio': 'If you have a vision for working for an open source community and taking the foundation to new places, we would love to get in touch with you. <a href="/contact" style="font-weight: bold">Get in Touch</a>',
 		'discuss': '',
 		'image': '/assets/foundation/img/people/tux.png'
 	}
@@ -93,25 +93,13 @@
 
 	<div class='card-deck'>
 	{% for item in team %}
-		<div class='card card-flip mb-4'>
-			<div class='card'>
-				<img class="card-img-top greyscale"
-					src="{{ item.image }}" alt="{{ item.name }}">
-				<div class="card-body">
-					<h5>{{ item.name }}</h5>
-					<div>{{ item.designation }}</div>
-				</div>
-			</div>
-			<div class='card'>
-				<div class='card-body'>
-					<h5>{{ item.name }}</h5>
-					<div class='small'>{{ item.bio }}</div>
-					<div class='mt-2'>
-						<a href='https://discuss.erpnext.com/u/{{ item.discuss }}'
-							class='btn btn-secondary btn-sm'>
-							<i class='fa fa-comments'></i> Forum</a>
-					</div>
-				</div>
+		<div class='card mb-4'>
+			<img class="card-img-top greyscale"
+				src="{{ item.image }}" alt="{{ item.name }}">
+			<div class="card-body">
+				<h5>{{ item.name }}</h5>
+				<div>{{ item.designation }}</div>
+				<div class='small'>{{ item.bio }}</div>
 			</div>
 		</div>
 	{% if loop.index is divisibleby 3 %}
