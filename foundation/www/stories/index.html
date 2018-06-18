@@ -1,16 +1,18 @@
-{% extends "templates/web.html" %}
+{% extends "templates/base.html" %}
 
 {% block title %}ERPNext User Stories{% endblock %}
 
 {% from "templates/includes/media.html" import media %}
 
-{% block page_content %}
-<section class='top-section'>
+{% block content %}
+<section class='section-padding splash'
+	style='background-image: url(/assets/foundation/img/stories/zerodha.jpg)'>
+</section>
+
+<section class='top-section after-splash'>
 	<div class='container'>
 		<h1>Trailblazing Companies Use ERPNext</h1>
 		<p class='lead'>For every industry or size or domain, ERPNext has been driving growth and systems for innovative companies worldwide.</p>
-	</div>
-</section>
 
 {% set stories = [
 		{
@@ -96,9 +98,8 @@
 	]
 %}
 
-<section class='section-padding section-bg'>
-<div class='container'>
-	<div class='row'>
+
+	<div class='row mt-5'>
 	{% for item in stories %}
 		<div class='col-sm-4 mb-4'>
 		<div class='card h-100'>

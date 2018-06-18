@@ -1,6 +1,6 @@
-{% extends "templates/web.html" %}
+{% extends "templates/base.html" %}
 
-{% block page_content %}
+{% block content %}
 
 {% set chapters = [
 	{
@@ -58,43 +58,39 @@
 		'members': 20
 	},
 ] %}
+<section class='section-padding splash'
+	style='background-image: url(/assets/foundation/img/meetups/meetup.jpg)'>
+</section>
 
-<section class='top-section'>
+<section class='top-section after-splash'>
 	<div class='container'>
 		<h1>Chapters</h1>
 		<p class='lead'>
 			Become a part of your local ERPNext Community by joining a chapter near you.
 			If you can't find one, start your own!
 		</p>
-	</div>
-</section>
-<section class='section-padding section-bg'>
-	<div class='container'>
-	<div class='card-deck'>
-	{% for item in chapters %}
+		<div class='card-deck mt-5'>
+		{% for item in chapters %}
 
-	<a href='{{ item['meetup-link' ]}}' target='_blank' class='card mb-4'>
-		<img class="card-img-top greyscale" src="{{ item.image }}" alt="{{ item.city }}">
-		<div class="card-body">
-			<h5>{{ item.city }}</h5>
-			<div class='text-muted'>{{ item.members }} members</div>
+		<a href='{{ item['meetup-link' ]}}' target='_blank' class='card mb-4'>
+			<img class="card-img-top greyscale" src="{{ item.image }}" alt="{{ item.city }}">
+			<div class="card-body">
+				<h5>{{ item.city }}</h5>
+				<div class='text-muted'>{{ item.members }} members</div>
+			</div>
+		</a>
+		{% if loop.index is divisibleby 3 %}
 		</div>
-	</a>
-	{% if loop.index is divisibleby 3 %}
-	</div><div class='card-deck'>
-	{% endif %}
-	{% endfor %}
-	</div>
-	</div>
-</section>
-<section class='section-padding'>
-	<div class='container text-center'>
-		<div class='text-muted'>
+		<div class='card-deck'>
+		{% endif %}
+		{% endfor %}
+		</div>
+		<div class='text-muted mt-4'>
 			To start your own chapter, start a group on <a href='https://meetup.com' target='_blank'>Meetup.com</a> and get in touch with us.
 		</div>
 		<div>
-		<a class='mt-2 btn-dark btn' href="/contact">Contact Us To Start a New Chapter</a>
+		<a class='mt-4 btn-dark btn' href="/contact">Contact Us To Start a New Chapter</a>
 		</div>
 	</div>
-<section>
+</section>
 {% endblock %}
