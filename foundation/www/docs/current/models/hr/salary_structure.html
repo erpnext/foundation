@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/salary_structure"
@@ -146,40 +146,6 @@ No</pre>
         
         <tr class="info">
             <td>7</td>
-            <td ><code>employee_break</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>8</td>
-            <td class="danger" title="Mandatory"><code>employees</code></td>
-            <td >
-                Table</td>
-            <td >
-                Employees
-                <p class="text-muted small">
-                    Select employees for current Salary Structure</p>
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/hr/salary_structure_employee">Salary Structure Employee</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr class="info">
-            <td>9</td>
             <td ><code>time_sheet_earning_detail</code></td>
             <td >
                 Section Break</td>
@@ -191,7 +157,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>8</td>
             <td ><code>salary_slip_based_on_timesheet</code></td>
             <td >
                 Check</td>
@@ -203,7 +169,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>9</td>
             <td ><code>column_break_17</code></td>
             <td class="info">
                 Column Break</td>
@@ -215,7 +181,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>10</td>
             <td ><code>salary_component</code></td>
             <td >
                 Link</td>
@@ -237,7 +203,7 @@ No</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>11</td>
             <td ><code>hour_rate</code></td>
             <td >
                 Currency</td>
@@ -248,6 +214,30 @@ No</pre>
             <td>
                 <pre>Company:company:default_currency</pre>
             </td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>leave_encashment_amount_per_day</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Leave Encashment Amount Per Day
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>max_benefits</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Max Benefits (Amount)
+                
+            </td>
+            <td></td>
         </tr>
         
         <tr class="info">
@@ -463,6 +453,27 @@ No</pre>
             </td>
         </tr>
         
+        <tr >
+            <td>28</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/salary_structure">Salary Structure</a>
+
+
+                
+            </td>
+        </tr>
+        
     </tbody>
 </table>
 
@@ -500,7 +511,7 @@ No</pre>
         <a name="erpnext.hr.doctype.salary_structure.salary_structure.get_employees" href="#erpnext.hr.doctype.salary_structure.salary_structure.get_employees" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.hr.doctype.salary_structure.salary_structure.<b>get_employees</b>
-        <i class="text-muted">()</i>
+        <i class="text-muted">(salary_structure)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -536,7 +547,34 @@ No</pre>
             <li>
 
 
+<a href="/docs/current/models/hr/employee_grade">Employee Grade</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/salary_slip">Salary Slip</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/salary_structure">Salary Structure</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/salary_structure_assignment">Salary Structure Assignment</a>
 
 </li>
 			

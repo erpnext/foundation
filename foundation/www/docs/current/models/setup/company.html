@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/setup/doctype/company"
@@ -90,6 +90,39 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         
         <tr >
             <td>5</td>
+            <td ><code>is_group</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Group
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>default_finance_book</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Finance Book
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/finance_book">Finance Book</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
             <td ><code>cb0</code></td>
             <td class="info">
                 Column Break</td>
@@ -101,7 +134,7 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>8</td>
             <td ><code>domain</code></td>
             <td >
                 Link</td>
@@ -121,8 +154,29 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
             </td>
         </tr>
         
+        <tr >
+            <td>9</td>
+            <td ><code>parent_company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Parent Comapny
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
         <tr class="info">
-            <td>7</td>
+            <td>10</td>
             <td ><code>sales_settings</code></td>
             <td >
                 Section Break</td>
@@ -134,7 +188,7 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>11</td>
             <td ><code>sales_monthly_history</code></td>
             <td >
                 Small Text</td>
@@ -146,7 +200,19 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>12</td>
+            <td ><code>transactions_annual_history</code></td>
+            <td >
+                Code</td>
+            <td class="text-muted" title="Hidden">
+                Transactions Annual History
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
             <td ><code>monthly_sales_target</code></td>
             <td >
                 Currency</td>
@@ -160,7 +226,7 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>14</td>
             <td ><code>column_break_goals</code></td>
             <td class="info">
                 Column Break</td>
@@ -172,7 +238,7 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>15</td>
             <td ><code>total_monthly_sales</code></td>
             <td >
                 Currency</td>
@@ -186,7 +252,7 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr class="info">
-            <td>12</td>
+            <td>16</td>
             <td ><code>charts_section</code></td>
             <td >
                 Section Break</td>
@@ -198,70 +264,7 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>13</td>
-            <td ><code>default_letter_head</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Letter Head
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/printing/letter_head">Letter Head</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>14</td>
-            <td ><code>default_holiday_list</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Holiday List
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/hr/holiday_list">Holiday List</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>15</td>
-            <td ><code>default_terms</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Terms
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/setup/terms_and_conditions">Terms and Conditions</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>16</td>
+            <td>17</td>
             <td class="danger" title="Mandatory"><code>default_currency</code></td>
             <td >
                 Link</td>
@@ -282,7 +285,70 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>18</td>
+            <td ><code>default_letter_head</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Letter Head
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/printing/letter_head">Letter Head</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>default_holiday_list</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Holiday List
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/holiday_list">Holiday List</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>default_terms</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Terms
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/terms_and_conditions">Terms and Conditions</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
             <td ><code>column_break_10</code></td>
             <td class="info">
                 Column Break</td>
@@ -294,7 +360,7 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>22</td>
             <td class="danger" title="Mandatory"><code>country</code></td>
             <td >
                 Link</td>
@@ -315,7 +381,7 @@ Legal Entity / Subsidiary with a separate Chart of Accounts belonging to the Org
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>23</td>
             <td ><code>create_chart_of_accounts_based_on</code></td>
             <td >
                 Select</td>
@@ -331,7 +397,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>24</td>
             <td ><code>chart_of_accounts</code></td>
             <td >
                 Select</td>
@@ -343,7 +409,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>25</td>
             <td ><code>existing_company</code></td>
             <td >
                 Link</td>
@@ -364,7 +430,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>26</td>
             <td ><code>tax_id</code></td>
             <td >
                 Data</td>
@@ -375,8 +441,20 @@ Existing Company</pre>
             <td></td>
         </tr>
         
+        <tr >
+            <td>27</td>
+            <td ><code>date_of_establishment</code></td>
+            <td >
+                Date</td>
+            <td >
+                Date of Establishment
+                
+            </td>
+            <td></td>
+        </tr>
+        
         <tr class="info">
-            <td>23</td>
+            <td>28</td>
             <td ><code>default_settings</code></td>
             <td >
                 Section Break</td>
@@ -388,7 +466,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>29</td>
             <td ><code>default_bank_account</code></td>
             <td >
                 Link</td>
@@ -409,7 +487,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>30</td>
             <td ><code>default_cash_account</code></td>
             <td >
                 Link</td>
@@ -430,7 +508,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>31</td>
             <td ><code>default_receivable_account</code></td>
             <td >
                 Link</td>
@@ -451,7 +529,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>32</td>
             <td ><code>round_off_account</code></td>
             <td >
                 Link</td>
@@ -472,7 +550,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>33</td>
             <td ><code>write_off_account</code></td>
             <td >
                 Link</td>
@@ -493,7 +571,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>34</td>
             <td ><code>exchange_gain_loss_account</code></td>
             <td >
                 Link</td>
@@ -514,7 +592,28 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>35</td>
+            <td ><code>unrealized_exchange_gain_loss_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Unrealized Exchange Gain/Loss Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>36</td>
             <td ><code>column_break0</code></td>
             <td class="info">
                 Column Break</td>
@@ -526,7 +625,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>37</td>
             <td ><code>default_payable_account</code></td>
             <td >
                 Link</td>
@@ -547,7 +646,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>38</td>
             <td ><code>default_employee_advance_account</code></td>
             <td >
                 Link</td>
@@ -568,7 +667,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>39</td>
             <td ><code>default_expense_account</code></td>
             <td >
                 Link</td>
@@ -589,7 +688,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>40</td>
             <td ><code>default_income_account</code></td>
             <td >
                 Link</td>
@@ -610,7 +709,28 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>41</td>
+            <td ><code>default_deferred_revenue_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Deferred Revenue Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>42</td>
             <td ><code>default_payroll_payable_account</code></td>
             <td >
                 Link</td>
@@ -631,7 +751,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>43</td>
             <td ><code>round_off_cost_center</code></td>
             <td >
                 Link</td>
@@ -652,7 +772,7 @@ Existing Company</pre>
         </tr>
         
         <tr class="info">
-            <td>37</td>
+            <td>44</td>
             <td ><code>section_break_22</code></td>
             <td >
                 Section Break</td>
@@ -664,7 +784,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>45</td>
             <td ><code>cost_center</code></td>
             <td >
                 Link</td>
@@ -685,7 +805,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>46</td>
             <td ><code>column_break_26</code></td>
             <td class="info">
                 Column Break</td>
@@ -697,7 +817,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>47</td>
             <td ><code>credit_limit</code></td>
             <td >
                 Currency</td>
@@ -711,7 +831,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>48</td>
             <td ><code>payment_terms</code></td>
             <td >
                 Link</td>
@@ -732,7 +852,7 @@ Existing Company</pre>
         </tr>
         
         <tr class="info">
-            <td>42</td>
+            <td>49</td>
             <td ><code>auto_accounting_for_stock_settings</code></td>
             <td >
                 Section Break</td>
@@ -744,7 +864,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>43</td>
+            <td>50</td>
             <td ><code>enable_perpetual_inventory</code></td>
             <td >
                 Check</td>
@@ -756,7 +876,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>51</td>
             <td ><code>default_inventory_account</code></td>
             <td >
                 Link</td>
@@ -777,7 +897,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>45</td>
+            <td>52</td>
             <td ><code>stock_adjustment_account</code></td>
             <td >
                 Link</td>
@@ -798,7 +918,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>53</td>
             <td ><code>column_break_32</code></td>
             <td class="info">
                 Column Break</td>
@@ -810,7 +930,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>54</td>
             <td ><code>stock_received_but_not_billed</code></td>
             <td >
                 Link</td>
@@ -831,7 +951,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>48</td>
+            <td>55</td>
             <td ><code>expenses_included_in_valuation</code></td>
             <td >
                 Link</td>
@@ -852,7 +972,7 @@ Existing Company</pre>
         </tr>
         
         <tr class="info">
-            <td>49</td>
+            <td>56</td>
             <td ><code>fixed_asset_depreciation_settings</code></td>
             <td >
                 Section Break</td>
@@ -864,7 +984,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>50</td>
+            <td>57</td>
             <td ><code>accumulated_depreciation_account</code></td>
             <td >
                 Link</td>
@@ -885,7 +1005,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>51</td>
+            <td>58</td>
             <td ><code>depreciation_expense_account</code></td>
             <td >
                 Link</td>
@@ -906,7 +1026,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>52</td>
+            <td>59</td>
             <td ><code>series_for_depreciation_entry</code></td>
             <td >
                 Data</td>
@@ -918,7 +1038,28 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>53</td>
+            <td>60</td>
+            <td ><code>expenses_included_in_asset_valuation</code></td>
+            <td >
+                Link</td>
+            <td >
+                Expenses Included In Asset Valuation
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>61</td>
             <td ><code>column_break_40</code></td>
             <td class="info">
                 Column Break</td>
@@ -930,7 +1071,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>54</td>
+            <td>62</td>
             <td ><code>disposal_account</code></td>
             <td >
                 Link</td>
@@ -951,7 +1092,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>55</td>
+            <td>63</td>
             <td ><code>depreciation_cost_center</code></td>
             <td >
                 Link</td>
@@ -971,8 +1112,50 @@ Existing Company</pre>
             </td>
         </tr>
         
+        <tr >
+            <td>64</td>
+            <td ><code>capital_work_in_progress_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Capital Work In Progress Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>65</td>
+            <td ><code>asset_received_but_not_billed</code></td>
+            <td >
+                Link</td>
+            <td >
+                Asset Received But Not Billed
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
         <tr class="info">
-            <td>56</td>
+            <td>66</td>
             <td ><code>company_info</code></td>
             <td >
                 Section Break</td>
@@ -985,7 +1168,19 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>57</td>
+            <td>67</td>
+            <td ><code>date_of_incorporation</code></td>
+            <td >
+                Date</td>
+            <td >
+                Date of Incorporation
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>68</td>
             <td ><code>address_html</code></td>
             <td >
                 HTML</td>
@@ -997,7 +1192,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>58</td>
+            <td>69</td>
             <td ><code>column_break1</code></td>
             <td class="info">
                 Column Break</td>
@@ -1009,7 +1204,19 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>59</td>
+            <td>70</td>
+            <td ><code>date_of_commencement</code></td>
+            <td >
+                Date</td>
+            <td >
+                Date of Commencement
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>71</td>
             <td ><code>phone_no</code></td>
             <td >
                 Data</td>
@@ -1023,7 +1230,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>60</td>
+            <td>72</td>
             <td ><code>fax</code></td>
             <td >
                 Data</td>
@@ -1037,7 +1244,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>61</td>
+            <td>73</td>
             <td ><code>email</code></td>
             <td >
                 Data</td>
@@ -1051,7 +1258,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>62</td>
+            <td>74</td>
             <td ><code>website</code></td>
             <td >
                 Data</td>
@@ -1063,7 +1270,7 @@ Existing Company</pre>
         </tr>
         
         <tr class="info">
-            <td>63</td>
+            <td>75</td>
             <td ><code>registration_info</code></td>
             <td >
                 Section Break</td>
@@ -1075,7 +1282,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>64</td>
+            <td>76</td>
             <td ><code>registration_details</code></td>
             <td >
                 Code</td>
@@ -1088,7 +1295,7 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>65</td>
+            <td>77</td>
             <td ><code>delete_company_transactions</code></td>
             <td >
                 Button</td>
@@ -1100,12 +1307,48 @@ Existing Company</pre>
         </tr>
         
         <tr >
-            <td>66</td>
+            <td>78</td>
             <td ><code>company_logo</code></td>
             <td >
                 Attach Image</td>
             <td >
                 Company Logo
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>79</td>
+            <td ><code>lft</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                Lft
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>80</td>
+            <td ><code>rgt</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                Rgt
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>81</td>
+            <td ><code>old_parent</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                old_parent
                 
             </td>
             <td></td>
@@ -1127,7 +1370,7 @@ Existing Company</pre>
         
 	<h3 style="font-weight: normal;">Class <b>Company</b></h3>
     
-    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    <p style="padding-left: 30px;"><i>Inherits from frappe.utils.nestedset.NestedSet</i></h4>
     
     <div class="docs-attr-desc"><p></p>
 </div>
@@ -1135,6 +1378,24 @@ Existing Company</pre>
         
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.setup.doctype.company.company.add_node</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.setup.doctype.company.company.add_node" href="#erpnext.setup.doctype.company.company.add_node" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.setup.doctype.company.company.<b>add_node</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 
@@ -1177,12 +1438,62 @@ Existing Company</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="erpnext.setup.doctype.company.company.get_all_transactions_annual_history" href="#erpnext.setup.doctype.company.company.get_all_transactions_annual_history" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.setup.doctype.company.company.<b>get_all_transactions_annual_history</b>
+        <i class="text-muted">(company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.setup.doctype.company.company.get_children</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.setup.doctype.company.company.get_children" href="#erpnext.setup.doctype.company.company.get_children" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.setup.doctype.company.company.<b>get_children</b>
+        <i class="text-muted">(doctype, parent=None, company=None, is_root=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="erpnext.setup.doctype.company.company.get_name_with_abbr" href="#erpnext.setup.doctype.company.company.get_name_with_abbr" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.setup.doctype.company.company.<b>get_name_with_abbr</b>
         <i class="text-muted">(name, company)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.setup.doctype.company.company.get_timeline_data" href="#erpnext.setup.doctype.company.company.get_timeline_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.setup.doctype.company.company.<b>get_timeline_data</b>
+        <i class="text-muted">(doctype, name)</i>
+    </p>
+	<div class="docs-attr-desc"><p>returns timeline data based on linked records in dashboard</p>
 </div>
 	<br>
 
@@ -1254,6 +1565,22 @@ Existing Company</pre>
 
 	
 
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.setup.doctype.company.company.update_transactions_annual_history" href="#erpnext.setup.doctype.company.company.update_transactions_annual_history" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.setup.doctype.company.company.<b>update_transactions_annual_history</b>
+        <i class="text-muted">(company, commit=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
 
     
     
@@ -1265,6 +1592,33 @@ Existing Company</pre>
 
 
 <a href="/docs/current/models/accounts/account">Account</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/accounting_period">Accounting Period</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/additional_salary">Additional Salary</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/allowed_to_transact_with">Allowed To Transact With</a>
 
 </li>
 			
@@ -1327,6 +1681,15 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/assets/asset_value_adjustment">Asset Value Adjustment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/attendance">Attendance</a>
 
 </li>
@@ -1336,7 +1699,34 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/hr/attendance_request">Attendance Request</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/setup/authorization_rule">Authorization Rule</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/bank_account">Bank Account</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/blanket_order">Blanket Order</a>
 
 </li>
 			
@@ -1372,6 +1762,15 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/healthcare/clinical_procedure">Clinical Procedure</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/setup/company">Company</a>
 
 </li>
@@ -1399,7 +1798,7 @@ Existing Company</pre>
             <li>
 
 
-<a href="/docs/current/models/hr/daily_work_summary_settings_company">Daily Work Summary Settings Company</a>
+<a href="/docs/current/models/selling/customer">Customer</a>
 
 </li>
 			
@@ -1418,6 +1817,15 @@ Existing Company</pre>
 
 
 <a href="/docs/current/models/stock/delivery_trip">Delivery Trip</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/department">Department</a>
 
 </li>
 			
@@ -1454,6 +1862,87 @@ Existing Company</pre>
 
 
 <a href="/docs/current/models/hr/employee_attendance_tool">Employee Attendance Tool</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_onboarding">Employee Onboarding</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_onboarding_template">Employee Onboarding Template</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_promotion">Employee Promotion</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_separation">Employee Separation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_separation_template">Employee Separation Template</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_tax_exemption_declaration">Employee Tax Exemption Declaration</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_tax_exemption_proof_submission">Employee Tax Exemption Proof Submission</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_transfer">Employee Transfer</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/exchange_rate_revaluation">Exchange Rate Revaluation</a>
 
 </li>
 			
@@ -1552,6 +2041,15 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/healthcare/healthcare_service_unit">Healthcare Service Unit</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/portal/homepage">Homepage</a>
 
 </li>
@@ -1588,7 +2086,25 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/stock/item_default">Item Default</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/job_offer">Job Offer</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/job_opening">Job Opening</a>
 
 </li>
 			
@@ -1652,6 +2168,15 @@ Existing Company</pre>
 
 
 <a href="/docs/current/models/hr/leave_control_panel">Leave Control Panel</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_period">Leave Period</a>
 
 </li>
 			
@@ -1750,15 +2275,6 @@ Existing Company</pre>
             <li>
 
 
-<a href="/docs/current/models/healthcare/patient_service_unit">Patient Service Unit</a>
-
-</li>
-			
-        
-			
-            <li>
-
-
 <a href="/docs/current/models/accounts/payment_entry">Payment Entry</a>
 
 </li>
@@ -1786,7 +2302,25 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/hr/payroll_period">Payroll Period</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/accounts/period_closing_voucher">Period Closing Voucher</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/selling/pos_closing_voucher">POS Closing Voucher</a>
 
 </li>
 			
@@ -1894,6 +2428,15 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/hr/retention_bonus">Retention Bonus</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/accounts/salary_component_account">Salary Component Account</a>
 
 </li>
@@ -1913,6 +2456,15 @@ Existing Company</pre>
 
 
 <a href="/docs/current/models/hr/salary_structure">Salary Structure</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/salary_structure_assignment">Salary Structure Assignment</a>
 
 </li>
 			
@@ -1984,6 +2536,24 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/hr/shift_assignment">Shift Assignment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/shift_request">Shift Request</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/accounts/shipping_rule">Shipping Rule</a>
 
 </li>
@@ -1993,7 +2563,25 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/erpnext_integrations/shopify_settings">Shopify Settings</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/shopping_cart/shopping_cart_settings">Shopping Cart Settings</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/staffing_plan">Staffing Plan</a>
 
 </li>
 			
@@ -2029,6 +2617,15 @@ Existing Company</pre>
             <li>
 
 
+<a href="/docs/current/models/buying/supplier">Supplier</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/buying/supplier_quotation">Supplier Quotation</a>
 
 </li>
@@ -2048,6 +2645,15 @@ Existing Company</pre>
 
 
 <a href="/docs/current/models/accounts/tax_rule">Tax Rule</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/tax_withholding_account">Tax Withholding Account</a>
 
 </li>
 			

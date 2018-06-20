@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/leave_type"
@@ -54,11 +54,11 @@
         
         <tr >
             <td>2</td>
-            <td ><code>max_days_allowed</code></td>
+            <td ><code>max_leaves_allowed</code></td>
             <td >
-                Data</td>
+                Int</td>
             <td >
-                Max Days Leave Allowed
+                Max Leaves Allowed
                 
             </td>
             <td></td>
@@ -66,6 +66,42 @@
         
         <tr >
             <td>3</td>
+            <td ><code>applicable_after</code></td>
+            <td >
+                Int</td>
+            <td >
+                Applicable After (Working Days)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>max_continuous_days_allowed</code></td>
+            <td >
+                Int</td>
+            <td >
+                Maximum Continuous Days Applicable
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
             <td ><code>is_carry_forward</code></td>
             <td >
                 Check</td>
@@ -77,19 +113,7 @@
         </tr>
         
         <tr >
-            <td>4</td>
-            <td ><code>is_encash</code></td>
-            <td >
-                Check</td>
-            <td class="text-muted" title="Hidden">
-                Is Encash
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>5</td>
+            <td>7</td>
             <td ><code>is_lwp</code></td>
             <td >
                 Check</td>
@@ -101,7 +125,19 @@
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>8</td>
+            <td ><code>is_optional_leave</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Optional Leave
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
             <td ><code>allow_negative</code></td>
             <td >
                 Check</td>
@@ -113,7 +149,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>10</td>
             <td ><code>include_holiday</code></td>
             <td >
                 Check</td>
@@ -122,6 +158,130 @@
                 
             </td>
             <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>is_compensatory</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Compensatory
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>encashment</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Encashment
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>allow_encashment</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Encashment
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>encashment_threshold_days</code></td>
+            <td >
+                Int</td>
+            <td >
+                Encashment Threshold Days
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>earning_component</code></td>
+            <td >
+                Link</td>
+            <td >
+                Earning Component
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/salary_component">Salary Component</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>16</td>
+            <td ><code>earned_leave</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Earned Leave
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>is_earned_leave</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Earned Leave
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>earned_leave_frequency</code></td>
+            <td >
+                Select</td>
+            <td >
+                Earned Leave Frequency
+                
+            </td>
+            <td>
+                <pre>Monthly
+Quarterly
+Yearly</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>rounding</code></td>
+            <td >
+                Select</td>
+            <td >
+                Rounding
+                
+            </td>
+            <td>
+                <pre>0.5
+1.0</pre>
+            </td>
         </tr>
         
     </tbody>
@@ -170,6 +330,15 @@
             <li>
 
 
+<a href="/docs/current/models/hr/compensatory_leave_request">Compensatory Leave Request</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/leave_allocation">Leave Allocation</a>
 
 </li>
@@ -189,6 +358,24 @@
 
 
 <a href="/docs/current/models/hr/leave_control_panel">Leave Control Panel</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_encashment">Leave Encashment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_policy_detail">Leave Policy Detail</a>
 
 </li>
 			

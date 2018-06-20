@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/purchase_invoice"
@@ -97,9 +97,7 @@ PINV-RET-</pre>
                 Supplier Name
                 
             </td>
-            <td>
-                <pre>supplier.supplier_name</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -111,9 +109,7 @@ PINV-RET-</pre>
                 Tax Id
                 
             </td>
-            <td>
-                <pre>supplier.tax_id</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -142,6 +138,18 @@ PINV-RET-</pre>
         
         <tr >
             <td>8</td>
+            <td ><code>is_return</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Return (Debit Note)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
             <td ><code>column_break1</code></td>
             <td class="info">
                 Column Break</td>
@@ -153,7 +161,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>10</td>
             <td ><code>company</code></td>
             <td >
                 Link</td>
@@ -174,7 +182,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>11</td>
             <td class="danger" title="Mandatory"><code>posting_date</code></td>
             <td >
                 Date</td>
@@ -186,7 +194,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>12</td>
             <td ><code>posting_time</code></td>
             <td >
                 Time</td>
@@ -198,7 +206,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>13</td>
             <td ><code>set_posting_time</code></td>
             <td >
                 Check</td>
@@ -210,7 +218,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -231,7 +239,68 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>14</td>
+            <td>15</td>
+            <td ><code>sb_14</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Hold Invoice
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>on_hold</code></td>
+            <td >
+                Check</td>
+            <td >
+                Hold Invoice
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>release_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Release Date
+                <p class="text-muted small">
+                    Once set, this invoice will be on hold till the set date</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>cb_17</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>hold_comment</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Reason For Putting On Hold
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
             <td ><code>supplier_invoice_details</code></td>
             <td >
                 Section Break</td>
@@ -243,7 +312,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>21</td>
             <td ><code>bill_no</code></td>
             <td >
                 Data</td>
@@ -255,7 +324,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>22</td>
             <td ><code>column_break_15</code></td>
             <td class="info">
                 Column Break</td>
@@ -267,7 +336,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>23</td>
             <td ><code>bill_date</code></td>
             <td >
                 Date</td>
@@ -279,7 +348,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>18</td>
+            <td>24</td>
             <td ><code>returns</code></td>
             <td >
                 Section Break</td>
@@ -291,19 +360,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>19</td>
-            <td ><code>is_return</code></td>
-            <td >
-                Check</td>
-            <td >
-                Is Return
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>20</td>
+            <td>25</td>
             <td ><code>return_against</code></td>
             <td >
                 Link</td>
@@ -324,7 +381,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>21</td>
+            <td>26</td>
             <td ><code>section_addresses</code></td>
             <td >
                 Section Break</td>
@@ -336,7 +393,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>27</td>
             <td ><code>supplier_address</code></td>
             <td >
                 Link</td>
@@ -357,7 +414,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>28</td>
             <td ><code>address_display</code></td>
             <td >
                 Small Text</td>
@@ -369,7 +426,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>29</td>
             <td ><code>contact_person</code></td>
             <td >
                 Link</td>
@@ -390,7 +447,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>30</td>
             <td ><code>contact_display</code></td>
             <td >
                 Small Text</td>
@@ -402,7 +459,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>31</td>
             <td ><code>contact_mobile</code></td>
             <td >
                 Small Text</td>
@@ -414,7 +471,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>32</td>
             <td ><code>contact_email</code></td>
             <td >
                 Small Text</td>
@@ -426,7 +483,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>33</td>
             <td ><code>col_break_address</code></td>
             <td class="info">
                 Column Break</td>
@@ -438,7 +495,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>34</td>
             <td ><code>shipping_address</code></td>
             <td >
                 Link</td>
@@ -459,7 +516,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>35</td>
             <td ><code>shipping_address_display</code></td>
             <td >
                 Small Text</td>
@@ -471,7 +528,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>31</td>
+            <td>36</td>
             <td ><code>currency_and_price_list</code></td>
             <td >
                 Section Break</td>
@@ -485,7 +542,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>37</td>
             <td ><code>currency</code></td>
             <td >
                 Link</td>
@@ -506,7 +563,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>38</td>
             <td ><code>conversion_rate</code></td>
             <td >
                 Float</td>
@@ -518,7 +575,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>39</td>
             <td ><code>column_break2</code></td>
             <td class="info">
                 Column Break</td>
@@ -530,7 +587,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>40</td>
             <td ><code>buying_price_list</code></td>
             <td >
                 Link</td>
@@ -551,7 +608,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>41</td>
             <td ><code>price_list_currency</code></td>
             <td >
                 Link</td>
@@ -572,7 +629,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>42</td>
             <td ><code>plc_conversion_rate</code></td>
             <td >
                 Float</td>
@@ -584,7 +641,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>43</td>
             <td ><code>ignore_pricing_rule</code></td>
             <td >
                 Check</td>
@@ -596,7 +653,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>39</td>
+            <td>44</td>
             <td ><code>items_section</code></td>
             <td >
                 Section Break</td>
@@ -610,7 +667,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>45</td>
             <td ><code>update_stock</code></td>
             <td >
                 Check</td>
@@ -622,7 +679,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>46</td>
             <td class="danger" title="Mandatory"><code>items</code></td>
             <td >
                 Table</td>
@@ -643,7 +700,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>42</td>
+            <td>47</td>
             <td ><code>section_break_26</code></td>
             <td >
                 Section Break</td>
@@ -655,7 +712,19 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>43</td>
+            <td>48</td>
+            <td ><code>total_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Total Quantity
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>49</td>
             <td ><code>base_total</code></td>
             <td >
                 Currency</td>
@@ -669,7 +738,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>50</td>
             <td ><code>base_net_total</code></td>
             <td >
                 Currency</td>
@@ -683,7 +752,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>45</td>
+            <td>51</td>
             <td ><code>column_break_28</code></td>
             <td class="info">
                 Column Break</td>
@@ -695,7 +764,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>52</td>
             <td ><code>total</code></td>
             <td >
                 Currency</td>
@@ -709,7 +778,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>53</td>
             <td ><code>net_total</code></td>
             <td >
                 Currency</td>
@@ -723,7 +792,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>48</td>
+            <td>54</td>
             <td ><code>total_net_weight</code></td>
             <td >
                 Float</td>
@@ -735,7 +804,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>49</td>
+            <td>55</td>
             <td ><code>taxes_section</code></td>
             <td >
                 Section Break</td>
@@ -749,7 +818,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>50</td>
+            <td>56</td>
             <td ><code>taxes_and_charges</code></td>
             <td >
                 Link</td>
@@ -770,7 +839,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>51</td>
+            <td>57</td>
             <td ><code>column_break_49</code></td>
             <td class="info">
                 Column Break</td>
@@ -782,7 +851,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>52</td>
+            <td>58</td>
             <td ><code>shipping_rule</code></td>
             <td >
                 Link</td>
@@ -803,7 +872,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>53</td>
+            <td>59</td>
             <td ><code>section_break_51</code></td>
             <td >
                 Section Break</td>
@@ -815,7 +884,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>54</td>
+            <td>60</td>
             <td ><code>taxes</code></td>
             <td >
                 Table</td>
@@ -836,7 +905,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>55</td>
+            <td>61</td>
             <td ><code>sec_tax_breakup</code></td>
             <td >
                 Section Break</td>
@@ -848,7 +917,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>56</td>
+            <td>62</td>
             <td ><code>other_charges_calculation</code></td>
             <td >
                 Text</td>
@@ -860,7 +929,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>57</td>
+            <td>63</td>
             <td ><code>totals</code></td>
             <td >
                 Section Break</td>
@@ -874,7 +943,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>58</td>
+            <td>64</td>
             <td ><code>base_taxes_and_charges_added</code></td>
             <td >
                 Currency</td>
@@ -888,7 +957,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>59</td>
+            <td>65</td>
             <td ><code>base_taxes_and_charges_deducted</code></td>
             <td >
                 Currency</td>
@@ -902,7 +971,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>60</td>
+            <td>66</td>
             <td ><code>base_total_taxes_and_charges</code></td>
             <td >
                 Currency</td>
@@ -916,7 +985,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>61</td>
+            <td>67</td>
             <td ><code>column_break_40</code></td>
             <td class="info">
                 Column Break</td>
@@ -928,7 +997,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>62</td>
+            <td>68</td>
             <td ><code>taxes_and_charges_added</code></td>
             <td >
                 Currency</td>
@@ -942,7 +1011,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>63</td>
+            <td>69</td>
             <td ><code>taxes_and_charges_deducted</code></td>
             <td >
                 Currency</td>
@@ -956,7 +1025,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>64</td>
+            <td>70</td>
             <td ><code>total_taxes_and_charges</code></td>
             <td >
                 Currency</td>
@@ -970,7 +1039,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>65</td>
+            <td>71</td>
             <td ><code>section_break_44</code></td>
             <td >
                 Section Break</td>
@@ -982,7 +1051,7 @@ PINV-RET-</pre>
         </tr>
         
         <tr >
-            <td>66</td>
+            <td>72</td>
             <td ><code>apply_discount_on</code></td>
             <td >
                 Select</td>
@@ -998,7 +1067,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>67</td>
+            <td>73</td>
             <td ><code>base_discount_amount</code></td>
             <td >
                 Currency</td>
@@ -1012,7 +1081,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>68</td>
+            <td>74</td>
             <td ><code>column_break_46</code></td>
             <td class="info">
                 Column Break</td>
@@ -1024,7 +1093,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>69</td>
+            <td>75</td>
             <td ><code>additional_discount_percentage</code></td>
             <td >
                 Float</td>
@@ -1036,7 +1105,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>70</td>
+            <td>76</td>
             <td ><code>discount_amount</code></td>
             <td >
                 Currency</td>
@@ -1050,7 +1119,7 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>71</td>
+            <td>77</td>
             <td ><code>section_break_49</code></td>
             <td >
                 Section Break</td>
@@ -1062,7 +1131,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>72</td>
+            <td>78</td>
             <td ><code>base_grand_total</code></td>
             <td >
                 Currency</td>
@@ -1076,7 +1145,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>73</td>
+            <td>79</td>
             <td ><code>base_rounding_adjustment</code></td>
             <td >
                 Currency</td>
@@ -1090,7 +1159,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>74</td>
+            <td>80</td>
             <td ><code>base_rounded_total</code></td>
             <td >
                 Currency</td>
@@ -1104,7 +1173,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>75</td>
+            <td>81</td>
             <td ><code>base_in_words</code></td>
             <td >
                 Data</td>
@@ -1116,7 +1185,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>76</td>
+            <td>82</td>
             <td ><code>column_break8</code></td>
             <td class="info">
                 Column Break</td>
@@ -1128,7 +1197,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>77</td>
+            <td>83</td>
             <td ><code>grand_total</code></td>
             <td >
                 Currency</td>
@@ -1142,7 +1211,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>78</td>
+            <td>84</td>
             <td ><code>rounding_adjustment</code></td>
             <td >
                 Currency</td>
@@ -1156,7 +1225,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>79</td>
+            <td>85</td>
             <td ><code>rounded_total</code></td>
             <td >
                 Currency</td>
@@ -1170,7 +1239,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>80</td>
+            <td>86</td>
             <td ><code>in_words</code></td>
             <td >
                 Data</td>
@@ -1182,7 +1251,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>81</td>
+            <td>87</td>
             <td ><code>total_advance</code></td>
             <td >
                 Currency</td>
@@ -1196,7 +1265,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>82</td>
+            <td>88</td>
             <td ><code>outstanding_amount</code></td>
             <td >
                 Currency</td>
@@ -1210,7 +1279,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>83</td>
+            <td>89</td>
             <td ><code>disable_rounded_total</code></td>
             <td >
                 Check</td>
@@ -1222,7 +1291,7 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>84</td>
+            <td>90</td>
             <td ><code>payments_section</code></td>
             <td >
                 Section Break</td>
@@ -1234,7 +1303,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>85</td>
+            <td>91</td>
             <td ><code>mode_of_payment</code></td>
             <td >
                 Link</td>
@@ -1255,7 +1324,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>86</td>
+            <td>92</td>
             <td ><code>cash_bank_account</code></td>
             <td >
                 Link</td>
@@ -1276,7 +1345,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>87</td>
+            <td>93</td>
             <td ><code>col_br_payments</code></td>
             <td class="info">
                 Column Break</td>
@@ -1288,7 +1357,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>88</td>
+            <td>94</td>
             <td ><code>paid_amount</code></td>
             <td >
                 Currency</td>
@@ -1302,7 +1371,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>89</td>
+            <td>95</td>
             <td ><code>base_paid_amount</code></td>
             <td >
                 Currency</td>
@@ -1316,7 +1385,7 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>90</td>
+            <td>96</td>
             <td ><code>write_off</code></td>
             <td >
                 Section Break</td>
@@ -1328,7 +1397,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>91</td>
+            <td>97</td>
             <td ><code>write_off_amount</code></td>
             <td >
                 Currency</td>
@@ -1342,7 +1411,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>92</td>
+            <td>98</td>
             <td ><code>base_write_off_amount</code></td>
             <td >
                 Currency</td>
@@ -1356,7 +1425,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>93</td>
+            <td>99</td>
             <td ><code>column_break_61</code></td>
             <td class="info">
                 Column Break</td>
@@ -1368,7 +1437,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>94</td>
+            <td>100</td>
             <td ><code>write_off_account</code></td>
             <td >
                 Link</td>
@@ -1389,7 +1458,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>95</td>
+            <td>101</td>
             <td ><code>write_off_cost_center</code></td>
             <td >
                 Link</td>
@@ -1410,7 +1479,7 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>96</td>
+            <td>102</td>
             <td ><code>advances_section</code></td>
             <td >
                 Section Break</td>
@@ -1424,7 +1493,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>97</td>
+            <td>103</td>
             <td ><code>get_advances</code></td>
             <td >
                 Button</td>
@@ -1436,7 +1505,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>98</td>
+            <td>104</td>
             <td ><code>advances</code></td>
             <td >
                 Table</td>
@@ -1457,7 +1526,7 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>99</td>
+            <td>105</td>
             <td ><code>payment_schedule_section</code></td>
             <td >
                 Section Break</td>
@@ -1469,7 +1538,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>100</td>
+            <td>106</td>
             <td ><code>payment_terms_template</code></td>
             <td >
                 Link</td>
@@ -1490,7 +1559,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>101</td>
+            <td>107</td>
             <td ><code>payment_schedule</code></td>
             <td >
                 Table</td>
@@ -1511,7 +1580,7 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>102</td>
+            <td>108</td>
             <td ><code>terms_section_break</code></td>
             <td >
                 Section Break</td>
@@ -1525,7 +1594,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>103</td>
+            <td>109</td>
             <td ><code>tc_name</code></td>
             <td >
                 Link</td>
@@ -1546,7 +1615,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>104</td>
+            <td>110</td>
             <td ><code>terms</code></td>
             <td >
                 Text Editor</td>
@@ -1558,7 +1627,7 @@ Net Total</pre>
         </tr>
         
         <tr class="info">
-            <td>105</td>
+            <td>111</td>
             <td ><code>raw_materials_supplied</code></td>
             <td >
                 Section Break</td>
@@ -1570,7 +1639,7 @@ Net Total</pre>
         </tr>
         
         <tr >
-            <td>106</td>
+            <td>112</td>
             <td ><code>is_subcontracted</code></td>
             <td >
                 Select</td>
@@ -1585,7 +1654,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>107</td>
+            <td>113</td>
             <td ><code>supplier_warehouse</code></td>
             <td >
                 Link</td>
@@ -1606,7 +1675,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>108</td>
+            <td>114</td>
             <td ><code>supplied_items</code></td>
             <td >
                 Table</td>
@@ -1627,7 +1696,7 @@ Yes</pre>
         </tr>
         
         <tr class="info">
-            <td>109</td>
+            <td>115</td>
             <td ><code>printing_settings</code></td>
             <td >
                 Section Break</td>
@@ -1639,7 +1708,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>110</td>
+            <td>116</td>
             <td ><code>letter_head</code></td>
             <td >
                 Link</td>
@@ -1660,7 +1729,31 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>111</td>
+            <td>117</td>
+            <td ><code>group_same_items</code></td>
+            <td >
+                Check</td>
+            <td >
+                Group same items
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>118</td>
+            <td ><code>column_break_112</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>119</td>
             <td ><code>select_print_heading</code></td>
             <td >
                 Link</td>
@@ -1681,7 +1774,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>112</td>
+            <td>120</td>
             <td ><code>language</code></td>
             <td >
                 Data</td>
@@ -1693,7 +1786,7 @@ Yes</pre>
         </tr>
         
         <tr class="info">
-            <td>113</td>
+            <td>121</td>
             <td ><code>more_info</code></td>
             <td >
                 Section Break</td>
@@ -1707,7 +1800,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>114</td>
+            <td>122</td>
             <td class="danger" title="Mandatory"><code>credit_to</code></td>
             <td >
                 Link</td>
@@ -1728,7 +1821,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>115</td>
+            <td>123</td>
             <td ><code>party_account_currency</code></td>
             <td >
                 Link</td>
@@ -1749,7 +1842,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>116</td>
+            <td>124</td>
             <td ><code>is_opening</code></td>
             <td >
                 Select</td>
@@ -1764,7 +1857,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>117</td>
+            <td>125</td>
             <td ><code>against_expense_account</code></td>
             <td >
                 Small Text</td>
@@ -1776,7 +1869,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>118</td>
+            <td>126</td>
             <td ><code>column_break_63</code></td>
             <td class="info">
                 Column Break</td>
@@ -1788,7 +1881,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>119</td>
+            <td>127</td>
             <td ><code>status</code></td>
             <td >
                 Select</td>
@@ -1810,7 +1903,28 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>120</td>
+            <td>128</td>
+            <td ><code>inter_company_invoice_reference</code></td>
+            <td >
+                Link</td>
+            <td >
+                Inter Company Invoice Reference
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/sales_invoice">Sales Invoice</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>129</td>
             <td ><code>remarks</code></td>
             <td >
                 Small Text</td>
@@ -1822,7 +1936,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>121</td>
+            <td>130</td>
             <td ><code>rejected_warehouse</code></td>
             <td >
                 Link</td>
@@ -1844,7 +1958,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>122</td>
+            <td>131</td>
             <td ><code>subscription_section</code></td>
             <td >
                 Section Break</td>
@@ -1856,7 +1970,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>123</td>
+            <td>132</td>
             <td ><code>from_date</code></td>
             <td >
                 Date</td>
@@ -1869,7 +1983,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>124</td>
+            <td>133</td>
             <td ><code>to_date</code></td>
             <td >
                 Date</td>
@@ -1882,7 +1996,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>125</td>
+            <td>134</td>
             <td ><code>column_break_114</code></td>
             <td class="info">
                 Column Break</td>
@@ -1894,7 +2008,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>126</td>
+            <td>135</td>
             <td ><code>auto_repeat</code></td>
             <td >
                 Link</td>
@@ -1945,13 +2059,31 @@ Cancelled</pre>
         
     
     <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.accounts.doctype.purchase_invoice.purchase_invoice.get_fixed_asset_account</code>
+        <br><code>/api/method/erpnext.accounts.doctype.purchase_invoice.purchase_invoice.block_invoice</code>
     </p>
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.purchase_invoice.purchase_invoice.get_fixed_asset_account" href="#erpnext.accounts.doctype.purchase_invoice.purchase_invoice.get_fixed_asset_account" class="text-muted small">
+        <a name="erpnext.accounts.doctype.purchase_invoice.purchase_invoice.block_invoice" href="#erpnext.accounts.doctype.purchase_invoice.purchase_invoice.block_invoice" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.purchase_invoice.purchase_invoice.<b>get_fixed_asset_account</b>
-        <i class="text-muted">(asset, account=None)</i>
+		erpnext.accounts.doctype.purchase_invoice.purchase_invoice.<b>block_invoice</b>
+        <i class="text-muted">(name, hold_comment)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.purchase_invoice.purchase_invoice.change_release_date</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.purchase_invoice.purchase_invoice.change_release_date" href="#erpnext.accounts.doctype.purchase_invoice.purchase_invoice.change_release_date" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.purchase_invoice.purchase_invoice.<b>change_release_date</b>
+        <i class="text-muted">(name, release_date=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -1981,6 +2113,24 @@ Cancelled</pre>
         
     
     <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.purchase_invoice.purchase_invoice.make_inter_company_sales_invoice</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.purchase_invoice.purchase_invoice.make_inter_company_sales_invoice" href="#erpnext.accounts.doctype.purchase_invoice.purchase_invoice.make_inter_company_sales_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.purchase_invoice.purchase_invoice.<b>make_inter_company_sales_invoice</b>
+        <i class="text-muted">(source_name, target_doc=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.accounts.doctype.purchase_invoice.purchase_invoice.make_stock_entry</code>
     </p>
 	<p class="docs-attr-name">
@@ -1988,6 +2138,24 @@ Cancelled</pre>
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.doctype.purchase_invoice.purchase_invoice.<b>make_stock_entry</b>
         <i class="text-muted">(source_name, target_doc=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.purchase_invoice.purchase_invoice.unblock_invoice</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.purchase_invoice.purchase_invoice.unblock_invoice" href="#erpnext.accounts.doctype.purchase_invoice.purchase_invoice.unblock_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.purchase_invoice.purchase_invoice.<b>unblock_invoice</b>
+        <i class="text-muted">(name)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -2015,6 +2183,15 @@ Cancelled</pre>
 
 
 <a href="/docs/current/models/accounts/purchase_invoice">Purchase Invoice</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/sales_invoice">Sales Invoice</a>
 
 </li>
 			

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/journal_entry"
@@ -77,6 +77,7 @@
             </td>
             <td>
                 <pre>Journal Entry
+Inter Company Journal Entry
 Bank Entry
 Cash Entry
 Credit Card Entry
@@ -86,7 +87,8 @@ Contra Entry
 Excise Entry
 Write Off Entry
 Opening Entry
-Depreciation Entry</pre>
+Depreciation Entry
+Exchange Rate Revaluation</pre>
             </td>
         </tr>
         
@@ -150,8 +152,29 @@ JV-RET-</pre>
             </td>
         </tr>
         
-        <tr class="info">
+        <tr >
             <td>8</td>
+            <td ><code>finance_book</code></td>
+            <td >
+                Link</td>
+            <td >
+                Finance Book
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/finance_book">Finance Book</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>9</td>
             <td ><code>2_add_edit_gl_entries</code></td>
             <td >
                 Section Break</td>
@@ -165,7 +188,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>10</td>
             <td class="danger" title="Mandatory"><code>accounts</code></td>
             <td >
                 Table</td>
@@ -186,7 +209,7 @@ JV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>10</td>
+            <td>11</td>
             <td ><code>section_break99</code></td>
             <td >
                 Section Break</td>
@@ -198,7 +221,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>12</td>
             <td ><code>cheque_no</code></td>
             <td >
                 Data</td>
@@ -210,7 +233,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>13</td>
             <td ><code>cheque_date</code></td>
             <td >
                 Date</td>
@@ -222,7 +245,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td ><code>user_remark</code></td>
             <td >
                 Small Text</td>
@@ -234,7 +257,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td ><code>column_break99</code></td>
             <td class="info">
                 Column Break</td>
@@ -246,7 +269,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>16</td>
             <td ><code>total_debit</code></td>
             <td >
                 Currency</td>
@@ -260,7 +283,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>17</td>
             <td ><code>total_credit</code></td>
             <td >
                 Currency</td>
@@ -274,7 +297,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>18</td>
             <td ><code>difference</code></td>
             <td >
                 Currency</td>
@@ -288,7 +311,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td ><code>get_balance</code></td>
             <td >
                 Button</td>
@@ -300,7 +323,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>20</td>
             <td ><code>multi_currency</code></td>
             <td >
                 Check</td>
@@ -312,7 +335,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>21</td>
             <td ><code>total_amount_currency</code></td>
             <td >
                 Link</td>
@@ -333,7 +356,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>22</td>
             <td ><code>total_amount</code></td>
             <td >
                 Currency</td>
@@ -347,7 +370,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>23</td>
             <td ><code>total_amount_in_words</code></td>
             <td >
                 Data</td>
@@ -359,7 +382,7 @@ JV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>23</td>
+            <td>24</td>
             <td ><code>reference</code></td>
             <td >
                 Section Break</td>
@@ -373,7 +396,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>25</td>
             <td ><code>clearance_date</code></td>
             <td >
                 Date</td>
@@ -385,7 +408,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>26</td>
             <td ><code>remark</code></td>
             <td >
                 Small Text</td>
@@ -397,7 +420,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>27</td>
             <td ><code>paid_loan</code></td>
             <td >
                 Data</td>
@@ -409,7 +432,28 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>28</td>
+            <td ><code>inter_company_journal_entry_reference</code></td>
+            <td >
+                Link</td>
+            <td >
+                Inter Company Journal Entry Reference
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/journal_entry">Journal Entry</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>29</td>
             <td ><code>column_break98</code></td>
             <td class="info">
                 Column Break</td>
@@ -421,7 +465,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>30</td>
             <td ><code>bill_no</code></td>
             <td >
                 Data</td>
@@ -433,7 +477,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>31</td>
             <td ><code>bill_date</code></td>
             <td >
                 Date</td>
@@ -445,7 +489,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>32</td>
             <td ><code>due_date</code></td>
             <td >
                 Date</td>
@@ -457,7 +501,7 @@ JV-RET-</pre>
         </tr>
         
         <tr class="info">
-            <td>31</td>
+            <td>33</td>
             <td ><code>write_off</code></td>
             <td >
                 Section Break</td>
@@ -469,7 +513,7 @@ JV-RET-</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>34</td>
             <td ><code>write_off_based_on</code></td>
             <td >
                 Select</td>
@@ -484,7 +528,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>35</td>
             <td ><code>get_outstanding_invoices</code></td>
             <td >
                 Button</td>
@@ -498,7 +542,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>36</td>
             <td ><code>column_break_30</code></td>
             <td class="info">
                 Column Break</td>
@@ -510,7 +554,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>37</td>
             <td ><code>write_off_amount</code></td>
             <td >
                 Currency</td>
@@ -524,7 +568,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr class="info">
-            <td>36</td>
+            <td>38</td>
             <td ><code>printing_settings</code></td>
             <td >
                 Section Break</td>
@@ -536,7 +580,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>39</td>
             <td ><code>pay_to_recd_from</code></td>
             <td >
                 Data</td>
@@ -548,7 +592,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>40</td>
             <td ><code>column_break_35</code></td>
             <td class="info">
                 Column Break</td>
@@ -560,7 +604,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>41</td>
             <td ><code>letter_head</code></td>
             <td >
                 Link</td>
@@ -581,7 +625,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>42</td>
             <td ><code>select_print_heading</code></td>
             <td >
                 Link</td>
@@ -602,7 +646,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr class="info">
-            <td>41</td>
+            <td>43</td>
             <td ><code>addtional_info</code></td>
             <td >
                 Section Break</td>
@@ -616,7 +660,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>44</td>
             <td ><code>column_break3</code></td>
             <td class="info">
                 Column Break</td>
@@ -628,7 +672,7 @@ Accounts Payable</pre>
         </tr>
         
         <tr >
-            <td>43</td>
+            <td>45</td>
             <td ><code>is_opening</code></td>
             <td >
                 Select</td>
@@ -643,7 +687,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>46</td>
             <td ><code>stock_entry</code></td>
             <td >
                 Link</td>
@@ -664,7 +708,7 @@ Yes</pre>
         </tr>
         
         <tr class="info">
-            <td>45</td>
+            <td>47</td>
             <td ><code>subscription_section</code></td>
             <td >
                 Section Break</td>
@@ -676,7 +720,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>48</td>
             <td ><code>auto_repeat</code></td>
             <td >
                 Link</td>
@@ -697,7 +741,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>49</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -938,6 +982,24 @@ Yes</pre>
 
 	
 
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.journal_entry.journal_entry.make_inter_company_journal_entry</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.journal_entry.journal_entry.make_inter_company_journal_entry" href="#erpnext.accounts.doctype.journal_entry.journal_entry.make_inter_company_journal_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.journal_entry.journal_entry.<b>make_inter_company_journal_entry</b>
+        <i class="text-muted">(name, voucher_type, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
 
     
     
@@ -949,6 +1011,15 @@ Yes</pre>
 
 
 <a href="/docs/current/models/assets/asset">Asset</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/asset_value_adjustment">Asset Value Adjustment</a>
 
 </li>
 			

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/buying/doctype/buying_settings"
@@ -55,11 +55,11 @@ Naming Series</pre>
         
         <tr >
             <td>2</td>
-            <td ><code>supplier_type</code></td>
+            <td ><code>supplier_group</code></td>
             <td >
                 Link</td>
             <td >
-                Default Supplier Type
+                Default Supplier Group
                 
             </td>
             <td>
@@ -67,7 +67,7 @@ Naming Series</pre>
                 
 
 
-<a href="/docs/current/models/setup/supplier_type">Supplier Type</a>
+<a href="/docs/current/models/setup/supplier_group">Supplier Group</a>
 
 
                 
@@ -172,6 +172,33 @@ Yes</pre>
                     If enabled, last purchase details of items will not be fetched from previous purchase order or purchase receipt</p>
             </td>
             <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>subcontract</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Subcontract
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>backflush_raw_materials_of_subcontract_based_on</code></td>
+            <td >
+                Select</td>
+            <td >
+                Backflush Raw Materials of Subcontract Based On
+                
+            </td>
+            <td>
+                <pre>BOM
+Material Transferred for Subcontract</pre>
+            </td>
         </tr>
         
     </tbody>

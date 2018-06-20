@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/hr/utils.py"
@@ -17,6 +17,237 @@
 
 	
         
+	<h3 style="font-weight: normal;">Class <b>EmployeeBoardingController</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><pre><code>    Create the project and the task for the boarding process
+    Assign to the concerned person and roles as per the onboarding/separation template
+</code></pre>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.allocate_earned_leaves" href="#erpnext.hr.utils.allocate_earned_leaves" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>allocate_earned_leaves</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p>Allocate earned leaves to Employees</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.check_frequency_hit" href="#erpnext.hr.utils.check_frequency_hit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>check_frequency_hit</b>
+        <i class="text-muted">(from_date, to_date, frequency)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Return True if current date matches frequency</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_doc_condition" href="#erpnext.hr.utils.get_doc_condition" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_doc_condition</b>
+        <i class="text-muted">(doctype)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.utils.get_employee_field_property</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_employee_field_property" href="#erpnext.hr.utils.get_employee_field_property" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_employee_field_property</b>
+        <i class="text-muted">(employee, fieldname)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.utils.get_employee_fields_label</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_employee_fields_label" href="#erpnext.hr.utils.get_employee_fields_label" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_employee_fields_label</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_employee_leave_policy" href="#erpnext.hr.utils.get_employee_leave_policy" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_employee_leave_policy</b>
+        <i class="text-muted">(employee)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_holidays_for_employee" href="#erpnext.hr.utils.get_holidays_for_employee" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_holidays_for_employee</b>
+        <i class="text-muted">(employee, start_date, end_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_leave_period" href="#erpnext.hr.utils.get_leave_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_leave_period</b>
+        <i class="text-muted">(from_date, to_date, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.utils.get_onboarding_details</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_onboarding_details" href="#erpnext.hr.utils.get_onboarding_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_onboarding_details</b>
+        <i class="text-muted">(parent, parenttype)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_payroll_period" href="#erpnext.hr.utils.get_payroll_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_payroll_period</b>
+        <i class="text-muted">(from_date, to_date, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_previous_claimed_amount" href="#erpnext.hr.utils.get_previous_claimed_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_previous_claimed_amount</b>
+        <i class="text-muted">(employee, payroll_period, non_pro_rata=False, component=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_sal_slip_total_benefit_given" href="#erpnext.hr.utils.get_sal_slip_total_benefit_given" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_sal_slip_total_benefit_given</b>
+        <i class="text-muted">(employee, payroll_period, component=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.get_salary_assignment" href="#erpnext.hr.utils.get_salary_assignment" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>get_salary_assignment</b>
+        <i class="text-muted">(employee, date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
     
     
 	<p class="docs-attr-name">
@@ -24,6 +255,86 @@
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.hr.utils.<b>set_employee_name</b>
         <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.throw_overlap_error" href="#erpnext.hr.utils.throw_overlap_error" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>throw_overlap_error</b>
+        <i class="text-muted">(doc, exists_for, overlap_doc, from_date, to_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.update_employee" href="#erpnext.hr.utils.update_employee" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>update_employee</b>
+        <i class="text-muted">(employee, details, date=None, cancel=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.validate_dates" href="#erpnext.hr.utils.validate_dates" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>validate_dates</b>
+        <i class="text-muted">(doc, from_date, to_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.validate_overlap" href="#erpnext.hr.utils.validate_overlap" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>validate_overlap</b>
+        <i class="text-muted">(doc, from_date, to_date, company=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.utils.validate_tax_declaration" href="#erpnext.hr.utils.validate_tax_declaration" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.utils.<b>validate_tax_declaration</b>
+        <i class="text-muted">(declarations)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

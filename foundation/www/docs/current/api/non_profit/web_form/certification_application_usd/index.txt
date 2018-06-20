@@ -1,0 +1,2 @@
+erpnext.non_profit.web_form.certification_application_usd.certification_application_usd
+erpnext.non_profit.web_form.certification_application_usd

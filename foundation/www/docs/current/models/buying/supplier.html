@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/buying/doctype/supplier"
@@ -115,6 +115,39 @@ Supplier of Goods or Services.
         
         <tr >
             <td>6</td>
+            <td ><code>is_internal_supplier</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Internal Supplier
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>represents_company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Represents Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
             <td ><code>image</code></td>
             <td >
                 Attach Image</td>
@@ -126,7 +159,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>9</td>
             <td ><code>column_break0</code></td>
             <td class="info">
                 Column Break</td>
@@ -138,12 +171,12 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>8</td>
-            <td class="danger" title="Mandatory"><code>supplier_type</code></td>
+            <td>10</td>
+            <td class="danger" title="Mandatory"><code>supplier_group</code></td>
             <td >
                 Link</td>
             <td >
-                Supplier Type
+                Supplier Group
                 
             </td>
             <td>
@@ -151,7 +184,7 @@ Supplier of Goods or Services.
                 
 
 
-<a href="/docs/current/models/setup/supplier_type">Supplier Type</a>
+<a href="/docs/current/models/setup/supplier_group">Supplier Group</a>
 
 
                 
@@ -159,7 +192,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>11</td>
             <td ><code>language</code></td>
             <td >
                 Link</td>
@@ -180,7 +213,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>12</td>
             <td ><code>disabled</code></td>
             <td >
                 Check</td>
@@ -192,7 +225,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>13</td>
             <td ><code>warn_rfqs</code></td>
             <td >
                 Check</td>
@@ -204,7 +237,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>14</td>
             <td ><code>warn_pos</code></td>
             <td >
                 Check</td>
@@ -216,7 +249,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>15</td>
             <td ><code>prevent_rfqs</code></td>
             <td >
                 Check</td>
@@ -228,7 +261,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>16</td>
             <td ><code>prevent_pos</code></td>
             <td >
                 Check</td>
@@ -240,7 +273,40 @@ Supplier of Goods or Services.
         </tr>
         
         <tr class="info">
-            <td>15</td>
+            <td>17</td>
+            <td ><code>allowed_to_transact_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Allowed To Transact With
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>companies</code></td>
+            <td >
+                Table</td>
+            <td >
+                Allowed To Transact With
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/allowed_to_transact_with">Allowed To Transact With</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>19</td>
             <td ><code>section_break_7</code></td>
             <td >
                 Section Break</td>
@@ -252,7 +318,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>20</td>
             <td ><code>default_currency</code></td>
             <td >
                 Link</td>
@@ -273,7 +339,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>21</td>
             <td ><code>column_break_10</code></td>
             <td class="info">
                 Column Break</td>
@@ -285,7 +351,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>22</td>
             <td ><code>default_price_list</code></td>
             <td >
                 Link</td>
@@ -306,7 +372,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr class="info">
-            <td>19</td>
+            <td>23</td>
             <td ><code>section_credit_limit</code></td>
             <td >
                 Section Break</td>
@@ -318,7 +384,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>24</td>
             <td ><code>payment_terms</code></td>
             <td >
                 Link</td>
@@ -338,8 +404,62 @@ Supplier of Goods or Services.
             </td>
         </tr>
         
+        <tr >
+            <td>25</td>
+            <td ><code>cb_21</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>on_hold</code></td>
+            <td >
+                Check</td>
+            <td >
+                Block Supplier
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>hold_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Hold Type
+                
+            </td>
+            <td>
+                <pre>
+All
+Invoices
+Payments</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>28</td>
+            <td ><code>release_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Release Date
+                <p class="text-muted small">
+                    Leave blank if the Supplier is blocked indefinitely</p>
+            </td>
+            <td></td>
+        </tr>
+        
         <tr class="info">
-            <td>21</td>
+            <td>29</td>
             <td ><code>address_contacts</code></td>
             <td >
                 Section Break</td>
@@ -353,7 +473,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>30</td>
             <td ><code>address_html</code></td>
             <td >
                 HTML</td>
@@ -365,7 +485,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>31</td>
             <td ><code>column_break1</code></td>
             <td class="info">
                 Column Break</td>
@@ -377,7 +497,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>32</td>
             <td ><code>contact_html</code></td>
             <td >
                 HTML</td>
@@ -389,7 +509,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr class="info">
-            <td>25</td>
+            <td>33</td>
             <td ><code>default_payable_accounts</code></td>
             <td >
                 Section Break</td>
@@ -401,7 +521,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>34</td>
             <td ><code>accounts</code></td>
             <td >
                 Table</td>
@@ -423,7 +543,40 @@ Supplier of Goods or Services.
         </tr>
         
         <tr class="info">
-            <td>27</td>
+            <td>35</td>
+            <td ><code>default_tax_withholding_config</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Default Tax Withholding Config
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>36</td>
+            <td ><code>tax_withholding_config</code></td>
+            <td >
+                Table</td>
+            <td >
+                Tax Withholding Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/buying/party_tax_withholding_config">Party Tax Withholding Config</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>37</td>
             <td ><code>column_break2</code></td>
             <td >
                 Section Break</td>
@@ -435,7 +588,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>38</td>
             <td ><code>website</code></td>
             <td >
                 Data</td>
@@ -447,7 +600,7 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>39</td>
             <td ><code>supplier_details</code></td>
             <td >
                 Text</td>
@@ -460,7 +613,19 @@ Supplier of Goods or Services.
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>40</td>
+            <td ><code>column_break_30</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>41</td>
             <td ><code>is_frozen</code></td>
             <td >
                 Check</td>
@@ -535,7 +700,16 @@ Supplier of Goods or Services.
             <li>
 
 
-<a href="/docs/current/models/stock/item">Item</a>
+<a href="/docs/current/models/manufacturing/blanket_order">Blanket Order</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/item_default">Item Default</a>
 
 </li>
 			

@@ -1,0 +1,2 @@
+erpnext.www.payment_setup_certification
+erpnext.www

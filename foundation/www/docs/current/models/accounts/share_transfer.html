@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/share_transfer"
@@ -123,13 +123,53 @@ Transfer</pre>
                 From Folio No
                 
             </td>
-            <td>
-                <pre>from_shareholder.folio_no</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
             <td>7</td>
+            <td ><code>equity_or_liability_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Equity/Liability Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>asset_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Asset Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
             <td ><code>column_break_3</code></td>
             <td class="info">
                 Column Break</td>
@@ -141,7 +181,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>10</td>
             <td ><code>to_shareholder</code></td>
             <td >
                 Link</td>
@@ -162,7 +202,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>11</td>
             <td ><code>to_folio_no</code></td>
             <td >
                 Data</td>
@@ -170,13 +210,11 @@ Transfer</pre>
                 To Folio No
                 
             </td>
-            <td>
-                <pre>to_shareholder.folio_no</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr class="info">
-            <td>10</td>
+            <td>12</td>
             <td ><code>section_break_4</code></td>
             <td >
                 Section Break</td>
@@ -188,7 +226,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>13</td>
             <td class="danger" title="Mandatory"><code>share_type</code></td>
             <td >
                 Link</td>
@@ -209,7 +247,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>14</td>
             <td class="danger" title="Mandatory"><code>from_no</code></td>
             <td >
                 Int</td>
@@ -222,7 +260,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>15</td>
             <td class="danger" title="Mandatory"><code>rate</code></td>
             <td >
                 Currency</td>
@@ -234,7 +272,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>16</td>
             <td ><code>column_break_8</code></td>
             <td class="info">
                 Column Break</td>
@@ -246,7 +284,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>17</td>
             <td class="danger" title="Mandatory"><code>no_of_shares</code></td>
             <td >
                 Int</td>
@@ -258,7 +296,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>18</td>
             <td class="danger" title="Mandatory"><code>to_no</code></td>
             <td >
                 Int</td>
@@ -271,7 +309,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>19</td>
             <td ><code>amount</code></td>
             <td >
                 Currency</td>
@@ -283,7 +321,7 @@ Transfer</pre>
         </tr>
         
         <tr class="info">
-            <td>18</td>
+            <td>20</td>
             <td ><code>section_break_11</code></td>
             <td >
                 Section Break</td>
@@ -295,7 +333,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>21</td>
             <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
@@ -316,7 +354,7 @@ Transfer</pre>
         </tr>
         
         <tr class="info">
-            <td>20</td>
+            <td>22</td>
             <td ><code>section_break_6</code></td>
             <td >
                 Section Break</td>
@@ -328,7 +366,7 @@ Transfer</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>23</td>
             <td ><code>remarks</code></td>
             <td >
                 Long Text</td>
@@ -337,6 +375,27 @@ Transfer</pre>
                 
             </td>
             <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/share_transfer">Share Transfer</a>
+
+
+                
+            </td>
         </tr>
         
     </tbody>
@@ -381,8 +440,40 @@ Transfer</pre>
 
 	
 
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.doctype.share_transfer.share_transfer.make_jv_entry</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.share_transfer.share_transfer.make_jv_entry" href="#erpnext.accounts.doctype.share_transfer.share_transfer.make_jv_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.share_transfer.share_transfer.<b>make_jv_entry</b>
+        <i class="text-muted">(company, account, amount, payment_account, credit_applicant_type, credit_applicant, debit_applicant_type, debit_applicant)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
 
     
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/share_transfer">Share Transfer</a>
+
+</li>
+			
+        
+        </ul>
     
 
 
