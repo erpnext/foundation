@@ -19,6 +19,22 @@ Also it will create Payment Gateway Account entry. Payment Gateway Account is co
 
 After configuring Payment Gateway Account your system is able to accept online payments.
 
+### Setup subscriptions plans
+
+If you need to bill a recurring amount instead of a one-time charge, you can use Stripe's subscription system.
+
+Once you have created your billing plans in Stripe, add one or several new "Payment Plan" in Frappe.
+
+<img class="screenshot" alt="Payment Plan" src="{{docs_base_url}}/assets/img/setup/integrations/payment_plan.png">
+
+
+Afterwards, when you create your payment request, click the check field "Is a subscription" and add the system will fetch the corresponding susbscription plans from within the corresponding subscription.
+
+<img class="screenshot" alt="Payment Request" src="{{docs_base_url}}/assets/img/setup/integrations/subscription_payment_request.png">
+
+ERPNext will automatically create a new subscription for this customer in Stripe.
+
+
 ####Supporting transaction currencies
 	"AED", "ALL", "ANG", "ARS", "AUD", "AWG", "BBD", "BDT", "BIF", "BMD", "BND",
 	"BOB", "BRL", "BSD", "BWP", "BZD", "CAD", "CHF", "CLP", "CNY", "COP", "CRC", "CVE", "CZK", "DJF",
