@@ -4,6 +4,40 @@
 
 {% from "templates/includes/media.html" import media %}
 
+{% set platinum_sponsors = [{'country': 'India',
+  'image': '/assets/foundation/img/conf/sponsors/mnt-logo.png',
+  'title': 'MN Technique',
+  'website_url': 'https://www.mntechnique.com'}] %}
+
+{% macro show_section(sponsors, with_img = False, color=False) %}
+	<div class='row'>
+	{% for sponsor in sponsors %}
+		<div class='col-sm-4 mb-4'>
+		<a href='{{ ("{}{}".format("" if sponsor.website_url.startswith("http") else "//", sponsor.website_url)) if sponsor.website_url else "#" }}' target='_blank' class='card h-100'>
+			{% if with_img %}
+			<div class='square-img'>
+				<img class="{% if not color %}greyscale{% endif %}"
+					src="{{ sponsor.image or "/assets/foundation/img/people/tux.png" }}"
+					alt="{{ sponsor.title }}">
+			</div>
+			{% endif %}
+			<div class="card-body">
+				<h5>
+					{{ sponsor.title }}
+				</h5>
+			</div>
+			<div class="card-footer">
+				<span class='text-muted small'>{{ sponsor.country }}</span>
+			</div>
+		</a>
+		</div>
+	{% if loop.index is divisibleby 3 %}
+	</div><div class='row'>
+	{% endif %}
+	{% endfor %}
+	</div>
+{% endmacro %}
+
 {% block page_content %}
 <section class='section-padding splash'
 	style='background-image: url(/assets/foundation/img/conf/conf-1.png)'>
@@ -21,7 +55,29 @@
 		<a href='mailto:foundation@erpnext.com' class='btn btn-dark btn-sm mt-4'>Send Your Proposal</a>
 	</div>
 </section>
-<section class='section-padding'>
+<section class='section-padding text-center'>
+	<div class='container'>
+		<h3 class='mt-5'>Sponsored By</h3>
+    <p>A big thanks to our awesome sponsors who make this event happen!</p>
+		{% if platinum_sponsors %}
+		<h4>Platinum Sponsors<h4>
+		{{ show_section(platinum_sponsors, color=True, with_img=True) }}
+		{% endif %}
+		{% if gold_sponsors %}
+		<h4>Gold Sponsors<h4>
+		{{ show_section(gold_sponsors, with_img=True) }}
+		{% endif %}
+		{% if silver_sponsors %}
+		<h4>Silver Sponsors<h4>
+		{{ show_section(silver_sponsors) }}
+		{% endif %}
+		<br>
+		<p class='lead'>Become a patron for the conference and get associated with a global community
+			of tens of thousands of users and developers. Sponsors also get complimentary passes for the conference!</p></p>
+		<a href='/contact' class='btn btn-dark btn-sm mt-4'>Become A Sponsor</a>
+	</div>
+</section>
+<section class='section-padding section-bg'>
 	<div class='container'>
 		<div class='text-center'>
 			<h3>Dates and Venue</h3>
