@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/salary_component"
@@ -81,6 +81,90 @@ Deduction</pre>
         
         <tr >
             <td>4</td>
+            <td ><code>is_additional_component</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Additional Component
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>is_tax_applicable</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Tax Applicable
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>is_payable</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Payable
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>depends_on_lwp</code></td>
+            <td >
+                Check</td>
+            <td >
+                Depends on Leave Without Pay
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>do_not_include_in_total</code></td>
+            <td >
+                Check</td>
+            <td >
+                Do not include in total
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>disabled</code></td>
+            <td >
+                Check</td>
+            <td >
+                Disabled
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
             <td ><code>description</code></td>
             <td >
                 Small Text</td>
@@ -91,9 +175,106 @@ Deduction</pre>
             <td></td>
         </tr>
         
+        <tr >
+            <td>12</td>
+            <td ><code>statistical_component</code></td>
+            <td >
+                Check</td>
+            <td >
+                Statistical Component
+                <p class="text-muted small">
+                    If selected, the value specified or calculated in this component will not contribute to the earnings or deductions. However, it's value can be referenced by other components that can be added or deducted. </p>
+            </td>
+            <td></td>
+        </tr>
+        
         <tr class="info">
-            <td>5</td>
-            <td ><code>section_break_5</code></td>
+            <td>13</td>
+            <td ><code>flexible_benefits</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Flexible Benefits
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>is_flexible_benefit</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Flexible Benefit
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>max_benefit_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Max Benefit Amount (Yearly)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>column_break_9</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>pay_against_benefit_claim</code></td>
+            <td >
+                Check</td>
+            <td >
+                Pay Against Benefit Claim
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>only_tax_impact</code></td>
+            <td >
+                Check</td>
+            <td >
+                Only Tax Impact (Cannot Claim But Part of Taxable Income)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>create_separate_payment_entry_against_benefit_claim</code></td>
+            <td >
+                Check</td>
+            <td >
+                Create Separate Payment Entry Against Benefit Claim
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
+            <td ><code>section_break_11</code></td>
             <td >
                 Section Break</td>
             <td >
@@ -104,7 +285,31 @@ Deduction</pre>
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>21</td>
+            <td ><code>variable_based_on_taxable_salary</code></td>
+            <td >
+                Check</td>
+            <td >
+                Variable Based On Taxable Salary
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>22</td>
+            <td ><code>section_break_5</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Accounts
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
             <td ><code>accounts</code></td>
             <td >
                 Table</td>
@@ -122,6 +327,90 @@ Deduction</pre>
 
                 
             </td>
+        </tr>
+        
+        <tr class="info">
+            <td>24</td>
+            <td ><code>condition_and_formula</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Condition and Formula
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>condition</code></td>
+            <td >
+                Code</td>
+            <td >
+                Condition
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>amount_based_on_formula</code></td>
+            <td >
+                Check</td>
+            <td >
+                Amount based on formula
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>formula</code></td>
+            <td >
+                Code</td>
+            <td >
+                Formula
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>28</td>
+            <td ><code>amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>29</td>
+            <td ><code>column_break_28</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>30</td>
+            <td ><code>help</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Help
+                
+            </td>
+            <td></td>
         </tr>
         
     </tbody>
@@ -156,6 +445,42 @@ Deduction</pre>
     
         <h4>Linked In:</h4>
         <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/additional_salary">Additional Salary</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_benefit_application_detail">Employee Benefit Application Detail</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_benefit_claim">Employee Benefit Claim</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_type">Leave Type</a>
+
+</li>
+			
         
 			
             <li>

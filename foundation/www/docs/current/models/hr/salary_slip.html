@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/salary_slip"
@@ -82,22 +82,27 @@
                 Employee Name
                 
             </td>
-            <td>
-                <pre>employee.employee_name</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
             <td>4</td>
             <td ><code>department</code></td>
             <td >
-                Read Only</td>
+                Link</td>
             <td >
                 Department
                 
             </td>
             <td>
-                <pre>employee.department</pre>
+                
+                
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+
+                
             </td>
         </tr>
         
@@ -110,9 +115,7 @@
                 Designation
                 
             </td>
-            <td>
-                <pre>employee.designation</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -124,9 +127,7 @@
                 Branch
                 
             </td>
-            <td>
-                <pre>employee.branch</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -498,6 +499,42 @@ Daily</pre>
         
         <tr class="info">
             <td>32</td>
+            <td ><code>section_break_32</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>deduct_tax_for_unclaimed_employee_benefits</code></td>
+            <td >
+                Check</td>
+            <td >
+                Deduct Tax For Unclaimed Employee Benefits
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>34</td>
+            <td ><code>deduct_tax_for_unsubmitted_tax_exemption_proof</code></td>
+            <td >
+                Check</td>
+            <td >
+                Deduct Tax For Unsubmitted Tax Exemption Proof
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>35</td>
             <td ><code>earning_deduction</code></td>
             <td >
                 Section Break</td>
@@ -509,7 +546,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>36</td>
             <td ><code>earning</code></td>
             <td class="info">
                 Column Break</td>
@@ -521,7 +558,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>37</td>
             <td ><code>earnings</code></td>
             <td >
                 Table</td>
@@ -542,7 +579,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>38</td>
             <td ><code>deduction</code></td>
             <td class="info">
                 Column Break</td>
@@ -554,7 +591,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>39</td>
             <td ><code>deductions</code></td>
             <td >
                 Table</td>
@@ -575,7 +612,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>37</td>
+            <td>40</td>
             <td ><code>totals</code></td>
             <td >
                 Section Break</td>
@@ -587,7 +624,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>41</td>
             <td ><code>gross_pay</code></td>
             <td >
                 Currency</td>
@@ -601,7 +638,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>42</td>
             <td ><code>column_break_25</code></td>
             <td class="info">
                 Column Break</td>
@@ -613,7 +650,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>43</td>
             <td ><code>total_deduction</code></td>
             <td >
                 Currency</td>
@@ -627,7 +664,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>41</td>
+            <td>44</td>
             <td ><code>loan_repayment</code></td>
             <td >
                 Section Break</td>
@@ -639,12 +676,12 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>45</td>
             <td ><code>loans</code></td>
             <td >
                 Table</td>
             <td >
-                Loan
+                Employee Loan
                 
             </td>
             <td>
@@ -660,7 +697,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>43</td>
+            <td>46</td>
             <td ><code>section_break_43</code></td>
             <td >
                 Section Break</td>
@@ -672,7 +709,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>47</td>
             <td ><code>total_principal_amount</code></td>
             <td >
                 Currency</td>
@@ -686,7 +723,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>45</td>
+            <td>48</td>
             <td ><code>total_interest_amount</code></td>
             <td >
                 Currency</td>
@@ -700,7 +737,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>49</td>
             <td ><code>column_break_45</code></td>
             <td class="info">
                 Column Break</td>
@@ -712,7 +749,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>50</td>
             <td ><code>total_loan_repayment</code></td>
             <td >
                 Currency</td>
@@ -726,7 +763,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>48</td>
+            <td>51</td>
             <td ><code>net_pay_info</code></td>
             <td >
                 Section Break</td>
@@ -738,7 +775,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>49</td>
+            <td>52</td>
             <td ><code>net_pay</code></td>
             <td >
                 Currency</td>
@@ -753,7 +790,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>50</td>
+            <td>53</td>
             <td ><code>column_break_53</code></td>
             <td class="info">
                 Column Break</td>
@@ -765,7 +802,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>51</td>
+            <td>54</td>
             <td ><code>rounded_total</code></td>
             <td >
                 Currency</td>
@@ -779,7 +816,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>52</td>
+            <td>55</td>
             <td ><code>section_break_55</code></td>
             <td >
                 Section Break</td>
@@ -791,7 +828,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>53</td>
+            <td>56</td>
             <td ><code>total_in_words</code></td>
             <td >
                 Data</td>
@@ -851,6 +888,15 @@ Daily</pre>
     
         <h4>Linked In:</h4>
         <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_benefit_claim">Employee Benefit Claim</a>
+
+</li>
+			
         
 			
             <li>

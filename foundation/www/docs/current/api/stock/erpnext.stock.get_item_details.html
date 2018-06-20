@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/stock/get_item_details.py"
@@ -117,7 +117,6 @@
     company: "",
     order_type: "",
     is_pos: "",
-    ignore_pricing_rule: "",
     project: "",
     qty: "",
     stock_qty: "",
@@ -214,6 +213,24 @@
         
     
     <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.get_item_details.get_blanket_order_details</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.get_item_details.get_blanket_order_details" href="#erpnext.stock.get_item_details.get_blanket_order_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.get_item_details.<b>get_blanket_order_details</b>
+        <i class="text-muted">(args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.stock.get_item_details.get_conversion_factor</code>
     </p>
 	<p class="docs-attr-name">
@@ -254,6 +271,22 @@
         <a name="erpnext.stock.get_item_details.get_default_cost_center" href="#erpnext.stock.get_item_details.get_default_cost_center" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.stock.get_item_details.<b>get_default_cost_center</b>
+        <i class="text-muted">(args, item)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.get_item_details.get_default_deferred_revenue_account" href="#erpnext.stock.get_item_details.get_default_deferred_revenue_account" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.get_item_details.<b>get_default_deferred_revenue_account</b>
         <i class="text-muted">(args, item)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
@@ -588,7 +621,7 @@
         <a name="erpnext.stock.get_item_details.get_valuation_rate" href="#erpnext.stock.get_item_details.get_valuation_rate" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.stock.get_item_details.<b>get_valuation_rate</b>
-        <i class="text-muted">(item_code, warehouse=None)</i>
+        <i class="text-muted">(item_code, company, warehouse=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -621,6 +654,22 @@
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.stock.get_item_details.<b>process_args</b>
         <i class="text-muted">(args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.get_item_details.update_party_blanket_order" href="#erpnext.stock.get_item_details.update_party_blanket_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.get_item_details.<b>update_party_blanket_order</b>
+        <i class="text-muted">(args, out)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

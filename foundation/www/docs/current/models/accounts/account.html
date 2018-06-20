@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/account"
@@ -179,6 +179,18 @@ Profit and Loss</pre>
         
         <tr >
             <td>10</td>
+            <td ><code>inter_company_account</code></td>
+            <td >
+                Check</td>
+            <td >
+                Inter Company Account
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
             <td ><code>column_break1</code></td>
             <td class="info">
                 Column Break</td>
@@ -190,7 +202,7 @@ Profit and Loss</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>12</td>
             <td class="danger" title="Mandatory"><code>parent_account</code></td>
             <td >
                 Link</td>
@@ -211,7 +223,7 @@ Profit and Loss</pre>
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>13</td>
             <td ><code>account_type</code></td>
             <td >
                 Select</td>
@@ -223,13 +235,16 @@ Profit and Loss</pre>
             <td>
                 <pre>
 Accumulated Depreciation
+Asset Received But Not Billed
 Bank
 Cash
 Chargeable
+Capital Work in Progress
 Cost of Goods Sold
 Depreciation
 Equity
 Expense Account
+Expenses Included In Asset Valuation
 Expenses Included In Valuation
 Fixed Asset
 Income Account
@@ -245,7 +260,7 @@ Temporary</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td ><code>tax_rate</code></td>
             <td >
                 Float</td>
@@ -258,7 +273,7 @@ Temporary</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td ><code>freeze_account</code></td>
             <td >
                 Select</td>
@@ -274,7 +289,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>16</td>
             <td ><code>balance_must_be</code></td>
             <td >
                 Select</td>
@@ -290,7 +305,7 @@ Credit</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>17</td>
             <td ><code>lft</code></td>
             <td >
                 Int</td>
@@ -302,7 +317,7 @@ Credit</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>18</td>
             <td ><code>rgt</code></td>
             <td >
                 Int</td>
@@ -314,7 +329,7 @@ Credit</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td ><code>old_parent</code></td>
             <td >
                 Data</td>
@@ -387,22 +402,6 @@ Credit</pre>
     
     
 	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.account.account.get_account_autoname" href="#erpnext.accounts.doctype.account.account.get_account_autoname" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.account.account.<b>get_account_autoname</b>
-        <i class="text-muted">(account_number, account_name, company)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
         <a name="erpnext.accounts.doctype.account.account.get_account_currency" href="#erpnext.accounts.doctype.account.account.get_account_currency" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.doctype.account.account.<b>get_account_currency</b>
@@ -462,40 +461,6 @@ Credit</pre>
 
 	
 
-	
-        
-    
-    <p><span class="label label-info">Public API</span>
-        <br><code>/api/method/erpnext.accounts.doctype.account.account.update_account_number</code>
-    </p>
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.account.account.update_account_number" href="#erpnext.accounts.doctype.account.account.update_account_number" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.account.account.<b>update_account_number</b>
-        <i class="text-muted">(name, account_number)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
-	
-        
-    
-    
-	<p class="docs-attr-name">
-        <a name="erpnext.accounts.doctype.account.account.validate_account_number" href="#erpnext.accounts.doctype.account.account.validate_account_number" class="text-muted small">
-            <i class="fa fa-link small" style="color: #ccc;"></i></a>
-		erpnext.accounts.doctype.account.account.<b>validate_account_number</b>
-        <i class="text-muted">(name, account_number, company)</i>
-    </p>
-	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
-</div>
-	<br>
-
-	
-
 
     
     
@@ -524,6 +489,15 @@ Credit</pre>
             <li>
 
 
+<a href="/docs/current/models/accounts/bank_account">Bank Account</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/accounts/bank_guarantee">Bank Guarantee</a>
 
 </li>
@@ -534,6 +508,33 @@ Credit</pre>
 
 
 <a href="/docs/current/models/accounts/bank_reconciliation">Bank Reconciliation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/bank_statement_settings">Bank Statement Settings</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_entry">Bank Statement Transaction Entry</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_payment_item">Bank Statement Transaction Payment Item</a>
 
 </li>
 			
@@ -579,6 +580,15 @@ Credit</pre>
 
 
 <a href="/docs/current/models/hr/employee_advance">Employee Advance</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/exchange_rate_revaluation_account">Exchange Rate Revaluation Account</a>
 
 </li>
 			
@@ -677,6 +687,15 @@ Credit</pre>
             <li>
 
 
+<a href="/docs/current/models/stock/item_default">Item Default</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/setup/item_group">Item Group</a>
 
 </li>
@@ -705,6 +724,15 @@ Credit</pre>
 
 
 <a href="/docs/current/models/hr/loan">Loan</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/material_request_item">Material Request Item</a>
 
 </li>
 			
@@ -821,6 +849,15 @@ Credit</pre>
             <li>
 
 
+<a href="/docs/current/models/buying/purchase_order_item">Purchase Order Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/accounts/purchase_taxes_and_charges">Purchase Taxes and Charges</a>
 
 </li>
@@ -893,7 +930,34 @@ Credit</pre>
             <li>
 
 
+<a href="/docs/current/models/accounts/share_transfer">Share Transfer</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/accounts/shipping_rule">Shipping Rule</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/erpnext_integrations/shopify_settings">Shopify Settings</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/erpnext_integrations/shopify_tax_account">Shopify Tax Account</a>
 
 </li>
 			
@@ -912,6 +976,15 @@ Credit</pre>
 
 
 <a href="/docs/current/models/stock/stock_reconciliation">Stock Reconciliation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/tax_withholding_account">Tax Withholding Account</a>
 
 </li>
 			

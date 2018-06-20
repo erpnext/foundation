@@ -1,0 +1,531 @@
+<!-- title: Contract -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Contract</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.38</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/crm/doctype/contract"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabContract</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>party_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Party Type
+                
+            </td>
+            <td>
+                <pre>Customer
+Supplier
+Employee</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>is_signed</code></td>
+            <td >
+                Check</td>
+            <td >
+                Signed
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>cb_party</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>party_name</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Party Name
+                
+            </td>
+            <td>
+                <pre>party_type</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>party_user</code></td>
+            <td >
+                Link</td>
+            <td >
+                Party User
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td class="text-muted" title="Hidden">
+                Status
+                
+            </td>
+            <td>
+                <pre>Unsigned
+Active
+Inactive</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>fulfilment_status</code></td>
+            <td >
+                Select</td>
+            <td class="text-muted" title="Hidden">
+                Fulfilment Status
+                
+            </td>
+            <td>
+                <pre>N/A
+Unfulfilled
+Partially Fulfilled
+Fulfilled
+Lapsed</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>8</td>
+            <td ><code>sb_terms</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Contract Period
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>start_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Start Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>cb_date</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>end_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                End Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>sb_signee</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Signee Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>signee</code></td>
+            <td >
+                Data</td>
+            <td >
+                Signee
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>signed_on</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Signed On
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>cb_user</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>ip_address</code></td>
+            <td >
+                Data</td>
+            <td >
+                IP Address
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>17</td>
+            <td ><code>sb_contract</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Contract Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>contract_template</code></td>
+            <td >
+                Link</td>
+            <td >
+                Contract Template
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/crm/contract_template">Contract Template</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td class="danger" title="Mandatory"><code>contract_terms</code></td>
+            <td >
+                Text Editor</td>
+            <td >
+                Contract Terms
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
+            <td ><code>sb_fulfilment</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Fulfilment Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>requires_fulfilment</code></td>
+            <td >
+                Check</td>
+            <td >
+                Requires Fulfilment
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>fulfilment_deadline</code></td>
+            <td >
+                Date</td>
+            <td >
+                Fulfilment Deadline
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>fulfilment_terms</code></td>
+            <td >
+                Table</td>
+            <td >
+                Fulfilment Terms
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/crm/contract_fulfilment_checklist">Contract Fulfilment Checklist</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>24</td>
+            <td ><code>sb_references</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                References
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>document_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Document Type
+                
+            </td>
+            <td>
+                <pre>
+Quotation
+Project
+Sales Order
+Purchase Order
+Sales Invoice
+Purchase Invoice</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>cb_links</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>document_name</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Document Name
+                
+            </td>
+            <td>
+                <pre>document_type</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>28</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/crm/contract">Contract</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.crm.doctype.contract.contract</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Contract</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.crm.doctype.contract.contract.get_status" href="#erpnext.crm.doctype.contract.contract.get_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.crm.doctype.contract.contract.<b>get_status</b>
+        <i class="text-muted">(start_date, end_date)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Get a Contract's status based on the start, current and end dates
+
+Args:
+    start_date (str): The start date of the contract
+    end_date (str): The end date of the contract
+
+Returns:
+    str: 'Active' if within range, otherwise 'Inactive'
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.crm.doctype.contract.contract.update_status_for_contracts" href="#erpnext.crm.doctype.contract.contract.update_status_for_contracts" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.crm.doctype.contract.contract.<b>update_status_for_contracts</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Run the daily hook to update the statuses for all signed
+and submitted Contracts
+</code></pre>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/crm/contract">Contract</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

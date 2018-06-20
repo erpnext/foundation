@@ -1,0 +1,352 @@
+<!-- title: Blanket Order -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Blanket Order</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.38</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/manufacturing/doctype/blanket_order"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabBlanket Order</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Series
+                
+            </td>
+            <td>
+                <pre>BO.#####</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>blanket_order_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Order Type
+                
+            </td>
+            <td>
+                <pre>
+Selling
+Purchasing</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>customer</code></td>
+            <td >
+                Link</td>
+            <td >
+                Customer
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/selling/customer">Customer</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>customer_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Customer Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>supplier</code></td>
+            <td >
+                Link</td>
+            <td >
+                Supplier
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/buying/supplier">Supplier</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>supplier_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Supplier Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>column_break_8</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>from_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                From Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td class="danger" title="Mandatory"><code>to_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                To Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>11</td>
+            <td ><code>section_break_12</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td class="danger" title="Mandatory"><code>items</code></td>
+            <td >
+                Table</td>
+            <td >
+                Item
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/blanket_order_item">Blanket Order Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/manufacturing/blanket_order">Blanket Order</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.manufacturing.doctype.blanket_order.blanket_order</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>BlanketOrder</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.blanket_order.blanket_order.make_purchase_order</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.blanket_order.blanket_order.make_purchase_order" href="#erpnext.manufacturing.doctype.blanket_order.blanket_order.make_purchase_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.blanket_order.blanket_order.<b>make_purchase_order</b>
+        <i class="text-muted">(source_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.manufacturing.doctype.blanket_order.blanket_order.make_sales_order</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.manufacturing.doctype.blanket_order.blanket_order.make_sales_order" href="#erpnext.manufacturing.doctype.blanket_order.blanket_order.make_sales_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.manufacturing.doctype.blanket_order.blanket_order.<b>make_sales_order</b>
+        <i class="text-muted">(source_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/blanket_order">Blanket Order</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/buying/purchase_order_item">Purchase Order Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/selling/sales_order_item">Sales Order Item</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/expense_claim"
@@ -84,18 +84,16 @@
                 Employee Name
                 
             </td>
-            <td>
-                <pre>employee.employee_name</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
             <td>4</td>
-            <td ><code>expense_approver</code></td>
+            <td ><code>department</code></td>
             <td >
                 Link</td>
             <td >
-                Expense Approver
+                Department
                 
             </td>
             <td>
@@ -103,7 +101,7 @@
                 
 
 
-<a href="/docs/current/models/core/user">User</a>
+<a href="/docs/current/models/hr/department">Department</a>
 
 
                 
@@ -124,6 +122,27 @@
         
         <tr >
             <td>6</td>
+            <td ><code>expense_approver</code></td>
+            <td >
+                Link</td>
+            <td >
+                Expense Approver
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
             <td ><code>approval_status</code></td>
             <td >
                 Select</td>
@@ -139,7 +158,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>8</td>
             <td ><code>total_claimed_amount</code></td>
             <td >
                 Currency</td>
@@ -153,7 +172,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>9</td>
             <td ><code>total_sanctioned_amount</code></td>
             <td >
                 Currency</td>
@@ -167,7 +186,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>10</td>
             <td ><code>is_paid</code></td>
             <td >
                 Check</td>
@@ -179,7 +198,7 @@ Rejected</pre>
         </tr>
         
         <tr class="info">
-            <td>10</td>
+            <td>11</td>
             <td ><code>expense_details</code></td>
             <td >
                 Section Break</td>
@@ -191,7 +210,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>12</td>
             <td class="danger" title="Mandatory"><code>expenses</code></td>
             <td >
                 Table</td>
@@ -212,7 +231,7 @@ Rejected</pre>
         </tr>
         
         <tr class="info">
-            <td>12</td>
+            <td>13</td>
             <td ><code>sb1</code></td>
             <td >
                 Section Break</td>
@@ -226,7 +245,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td class="danger" title="Mandatory"><code>posting_date</code></td>
             <td >
                 Date</td>
@@ -238,7 +257,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td ><code>vehicle_log</code></td>
             <td >
                 Link</td>
@@ -259,7 +278,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>16</td>
             <td ><code>project</code></td>
             <td >
                 Link</td>
@@ -280,7 +299,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>17</td>
             <td ><code>task</code></td>
             <td >
                 Link</td>
@@ -301,7 +320,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>18</td>
             <td ><code>cb1</code></td>
             <td class="info">
                 Column Break</td>
@@ -313,7 +332,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td ><code>total_amount_reimbursed</code></td>
             <td >
                 Currency</td>
@@ -327,7 +346,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>20</td>
             <td ><code>remark</code></td>
             <td >
                 Small Text</td>
@@ -339,7 +358,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>21</td>
             <td ><code>title</code></td>
             <td >
                 Data</td>
@@ -351,7 +370,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>22</td>
             <td ><code>email_id</code></td>
             <td >
                 Data</td>
@@ -363,7 +382,7 @@ Rejected</pre>
         </tr>
         
         <tr class="info">
-            <td>22</td>
+            <td>23</td>
             <td ><code>accounting_details</code></td>
             <td >
                 Section Break</td>
@@ -375,7 +394,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>24</td>
             <td class="danger" title="Mandatory"><code>company</code></td>
             <td >
                 Link</td>
@@ -396,7 +415,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>25</td>
             <td ><code>mode_of_payment</code></td>
             <td >
                 Link</td>
@@ -417,7 +436,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>26</td>
             <td ><code>column_break_24</code></td>
             <td class="info">
                 Column Break</td>
@@ -429,7 +448,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>27</td>
             <td ><code>payable_account</code></td>
             <td >
                 Link</td>
@@ -450,7 +469,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>28</td>
             <td ><code>cost_center</code></td>
             <td >
                 Link</td>
@@ -471,7 +490,7 @@ Rejected</pre>
         </tr>
         
         <tr class="info">
-            <td>28</td>
+            <td>29</td>
             <td ><code>more_details</code></td>
             <td >
                 Section Break</td>
@@ -483,7 +502,7 @@ Rejected</pre>
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>30</td>
             <td ><code>status</code></td>
             <td >
                 Select</td>
@@ -502,7 +521,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>31</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -523,7 +542,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>31</td>
+            <td>32</td>
             <td ><code>advance_payments</code></td>
             <td >
                 Section Break</td>
@@ -535,7 +554,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>33</td>
             <td ><code>advances</code></td>
             <td >
                 Table</td>
@@ -556,7 +575,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>34</td>
             <td ><code>total_advance_amount</code></td>
             <td >
                 Currency</td>

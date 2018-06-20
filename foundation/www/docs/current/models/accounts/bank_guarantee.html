@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/bank_guarantee"
@@ -168,11 +168,113 @@ Providing</pre>
         
         <tr >
             <td>8</td>
-            <td ><code>account</code></td>
+            <td class="danger" title="Mandatory"><code>amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td class="danger" title="Mandatory"><code>start_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Start Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>validity</code></td>
+            <td >
+                Int</td>
+            <td >
+                Validity in Days
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>end_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                End Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>bank_account_info</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Bank Account Info
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>bank</code></td>
+            <td >
+                Link</td>
+            <td >
+                Bank
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/bank">Bank</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>bank_account</code></td>
             <td >
                 Link</td>
             <td >
                 Bank Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/bank_account">Bank Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Account
                 
             </td>
             <td>
@@ -188,55 +290,67 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>9</td>
-            <td class="danger" title="Mandatory"><code>amount</code></td>
+            <td>16</td>
+            <td ><code>bank_account_no</code></td>
             <td >
-                Currency</td>
+                Data</td>
             <td >
-                Amount
+                Bank Account No
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>10</td>
-            <td class="danger" title="Mandatory"><code>start_date</code></td>
+            <td>17</td>
+            <td ><code>column_break_17</code></td>
+            <td class="info">
+                Column Break</td>
             <td >
-                Date</td>
-            <td >
-                Start Date
+                
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>11</td>
-            <td ><code>validity</code></td>
+            <td>18</td>
+            <td ><code>iban</code></td>
             <td >
-                Int</td>
+                Data</td>
             <td >
-                Validity in Days
+                IBAN
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>12</td>
-            <td ><code>end_date</code></td>
+            <td>19</td>
+            <td ><code>branch_code</code></td>
             <td >
-                Date</td>
+                Data</td>
             <td >
-                End Date
+                Branch Code
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>swift_number</code></td>
+            <td >
+                Data</td>
+            <td >
+                SWIFT number
                 
             </td>
             <td></td>
         </tr>
         
         <tr class="info">
-            <td>13</td>
+            <td>21</td>
             <td ><code>section_break_14</code></td>
             <td >
                 Section Break</td>
@@ -248,7 +362,7 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>22</td>
             <td ><code>more_information</code></td>
             <td >
                 Text Editor</td>
@@ -260,7 +374,7 @@ Providing</pre>
         </tr>
         
         <tr class="info">
-            <td>15</td>
+            <td>23</td>
             <td ><code>margin_details</code></td>
             <td >
                 Section Break</td>
@@ -272,7 +386,7 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>24</td>
             <td ><code>bank_guarantee_number</code></td>
             <td >
                 Data</td>
@@ -284,7 +398,7 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>17</td>
+            <td>25</td>
             <td ><code>name_of_beneficiary</code></td>
             <td >
                 Data</td>
@@ -296,19 +410,7 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>18</td>
-            <td ><code>name_of_bank</code></td>
-            <td >
-                Data</td>
-            <td >
-                Name of Bank
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>19</td>
+            <td>26</td>
             <td ><code>column_break_19</code></td>
             <td class="info">
                 Column Break</td>
@@ -320,7 +422,7 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>27</td>
             <td ><code>margin_money</code></td>
             <td >
                 Currency</td>
@@ -332,7 +434,7 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>28</td>
             <td ><code>charges</code></td>
             <td >
                 Currency</td>
@@ -344,7 +446,7 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>29</td>
             <td ><code>fixed_deposit_number</code></td>
             <td >
                 Data</td>
@@ -356,7 +458,7 @@ Providing</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>30</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>

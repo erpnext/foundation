@@ -1,0 +1,274 @@
+<!-- title: Healthcare Service Unit -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Healthcare Service Unit</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.38</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/healthcare_service_unit"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabHealthcare Service Unit</code></p>
+
+
+Healthcare Service Unit
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>healthcare_service_unit_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Service Unit
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>parent_healthcare_service_unit</code></td>
+            <td >
+                Link</td>
+            <td >
+                Parent Service Unit
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/healthcare_service_unit">Healthcare Service Unit</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>is_group</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Group
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>allow_appointments</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Appointments
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>overlap_appointments</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Overlap
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>warehouse</code></td>
+            <td >
+                Link</td>
+            <td >
+                Warehouse
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>lft</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                lft
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>rgt</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                rgt
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>old_parent</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Old Parent
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/healthcare_service_unit">Healthcare Service Unit</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.healthcare.doctype.healthcare_service_unit.healthcare_service_unit</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>HealthcareServiceUnit</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.utils.nestedset.NestedSet</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/clinical_procedure">Clinical Procedure</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/healthcare_service_unit">Healthcare Service Unit</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/patient_appointment">Patient Appointment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/physician_service_unit_schedule">Physician Service Unit Schedule</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

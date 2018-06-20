@@ -1,0 +1,686 @@
+<!-- title: Shopify Settings -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Shopify Settings</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.38</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/erpnext_integrations/doctype/shopify_settings"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+<span class="label label-info">Single</span>
+
+
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>status_html</code></td>
+            <td >
+                HTML</td>
+            <td >
+                status html
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>enable_shopify</code></td>
+            <td >
+                Check</td>
+            <td >
+                Enable Shopify
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>app_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                App Type
+                
+            </td>
+            <td>
+                <pre>Public
+Private</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>last_sync_datetime</code></td>
+            <td >
+                Datetime</td>
+            <td >
+                Last Sync Datetime
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>6</td>
+            <td ><code>section_break_2</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td class="danger" title="Mandatory"><code>shopify_url</code></td>
+            <td >
+                Data</td>
+            <td >
+                Shop URL
+                <p class="text-muted small">
+                    eg: frappe.myshopify.com</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>api_key</code></td>
+            <td >
+                Data</td>
+            <td >
+                API Key
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>password</code></td>
+            <td >
+                Password</td>
+            <td >
+                Password
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>shared_secret</code></td>
+            <td >
+                Data</td>
+            <td >
+                Shared secret
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>access_token</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Access Token
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>13</td>
+            <td ><code>section_break_38</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Webhooks Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>webhooks</code></td>
+            <td >
+                Table</td>
+            <td >
+                Webhooks
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/erpnext_integrations/shopify_webhook_detail">Shopify Webhook Detail</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>15</td>
+            <td ><code>section_break_15</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Customer Settings
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>default_customer</code></td>
+            <td >
+                Link</td>
+            <td >
+                Default Customer
+                <p class="text-muted small">
+                    If Shopify not contains a customer in Order, then while syncing Orders, the system will consider default customer for order</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/selling/customer">Customer</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>column_break_19</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>customer_group</code></td>
+            <td >
+                Link</td>
+            <td >
+                Customer Group
+                <p class="text-muted small">
+                    Customer Group will set to selected group while syncing customers from Shopify</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/customer_group">Customer Group</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>19</td>
+            <td ><code>company_dependent_settings</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                For Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>cash_bank_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Cash/Bank Account
+                <p class="text-muted small">
+                    Cash Account will used for Sales Invoice creation</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>column_break_20</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>cost_center</code></td>
+            <td >
+                Link</td>
+            <td >
+                Cost Center
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/cost_center">Cost Center</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>24</td>
+            <td ><code>erp_settings</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>price_list</code></td>
+            <td >
+                Link</td>
+            <td >
+                Price List
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/price_list">Price List</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>update_price_in_erpnext_price_list</code></td>
+            <td >
+                Check</td>
+            <td >
+                Update Price from Shopify To ERPNext Price List
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>column_break_26</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>28</td>
+            <td ><code>warehouse</code></td>
+            <td >
+                Link</td>
+            <td >
+                Warehouse
+                <p class="text-muted small">
+                    Default Warehouse to to create Sales Order and Delivery Note</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>29</td>
+            <td ><code>section_break_25</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>30</td>
+            <td ><code>sales_order_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Sales Order Series
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>31</td>
+            <td ><code>column_break_27</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>32</td>
+            <td ><code>sync_delivery_note</code></td>
+            <td >
+                Check</td>
+            <td >
+                Import Delivery Notes from Shopify on Shipment
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>delivery_note_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Delivery Note Series
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>34</td>
+            <td ><code>sync_sales_invoice</code></td>
+            <td >
+                Check</td>
+            <td >
+                Import Sales Invoice from Shopify if Payment is marked
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>35</td>
+            <td ><code>sales_invoice_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Sales Invoice Series
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>36</td>
+            <td ><code>section_break_22</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>37</td>
+            <td ><code>html_16</code></td>
+            <td >
+                HTML</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>38</td>
+            <td ><code>taxes</code></td>
+            <td >
+                Table</td>
+            <td >
+                Shopify Tax Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/erpnext_integrations/shopify_tax_account">Shopify Tax Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ShopifySettings</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.get_header" href="#erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.get_header" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.<b>get_header</b>
+        <i class="text-muted">(settings)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.get_series</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.get_series" href="#erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.get_series" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.<b>get_series</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.get_shopify_url" href="#erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.get_shopify_url" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.<b>get_shopify_url</b>
+        <i class="text-muted">(path, settings)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.setup_custom_fields" href="#erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.setup_custom_fields" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.erpnext_integrations.doctype.shopify_settings.shopify_settings.<b>setup_custom_fields</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.38</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/stock/doctype/item"
@@ -299,6 +299,18 @@ A Product or a Service that is bought, sold or kept in stock.
         
         <tr >
             <td>19</td>
+            <td ><code>asset_naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Asset Naming Series
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
             <td ><code>tolerance</code></td>
             <td >
                 Float</td>
@@ -310,7 +322,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>21</td>
             <td ><code>image</code></td>
             <td >
                 Attach Image</td>
@@ -324,7 +336,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr class="info">
-            <td>21</td>
+            <td>22</td>
             <td ><code>section_break_11</code></td>
             <td >
                 Section Break</td>
@@ -336,7 +348,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>23</td>
             <td ><code>brand</code></td>
             <td >
                 Link</td>
@@ -357,7 +369,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>24</td>
             <td ><code>description</code></td>
             <td >
                 Text Editor</td>
@@ -369,7 +381,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr class="info">
-            <td>24</td>
+            <td>25</td>
             <td ><code>sb_barcodes</code></td>
             <td >
                 Section Break</td>
@@ -381,7 +393,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>26</td>
             <td ><code>barcodes</code></td>
             <td >
                 Table</td>
@@ -402,7 +414,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr class="info">
-            <td>26</td>
+            <td>27</td>
             <td ><code>inventory</code></td>
             <td >
                 Section Break</td>
@@ -412,27 +424,6 @@ A Product or a Service that is bought, sold or kept in stock.
             </td>
             <td>
                 <pre>fa fa-truck</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>27</td>
-            <td ><code>default_warehouse</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Warehouse
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/stock/warehouse">Warehouse</a>
-
-
-                
             </td>
         </tr>
         
@@ -479,18 +470,6 @@ Manufacture</pre>
         
         <tr >
             <td>31</td>
-            <td ><code>column_break1</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>32</td>
             <td ><code>valuation_method</code></td>
             <td >
                 Select</td>
@@ -503,6 +482,18 @@ Manufacture</pre>
 FIFO
 Moving Average</pre>
             </td>
+        </tr>
+        
+        <tr >
+            <td>32</td>
+            <td ><code>column_break1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -658,6 +649,19 @@ Moving Average</pre>
         
         <tr >
             <td>43</td>
+            <td ><code>batch_number_series</code></td>
+            <td >
+                Data</td>
+            <td >
+                Batch Number Series
+                <p class="text-muted small">
+                    Example: ABCD.#####. If series is set and Batch No is not mentioned in transactions, then automatic batch number will be created based on this series. If you always want to explicitly mention Batch No for this item, leave this blank. Note: this setting will take priority over the Naming Series Prefix in Stock Settings.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>44</td>
             <td ><code>has_expiry_date</code></td>
             <td >
                 Check</td>
@@ -669,7 +673,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>45</td>
             <td ><code>retain_sample</code></td>
             <td >
                 Check</td>
@@ -681,7 +685,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>45</td>
+            <td>46</td>
             <td ><code>sample_quantity</code></td>
             <td >
                 Int</td>
@@ -694,7 +698,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>47</td>
             <td ><code>column_break_37</code></td>
             <td class="info">
                 Column Break</td>
@@ -706,7 +710,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>48</td>
             <td ><code>has_serial_no</code></td>
             <td >
                 Check</td>
@@ -718,7 +722,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>48</td>
+            <td>49</td>
             <td ><code>serial_no_series</code></td>
             <td >
                 Data</td>
@@ -732,7 +736,7 @@ If series is set and Serial No is not mentioned in transactions, then automatic 
         </tr>
         
         <tr class="info">
-            <td>49</td>
+            <td>50</td>
             <td ><code>variants_section</code></td>
             <td >
                 Section Break</td>
@@ -744,7 +748,7 @@ If series is set and Serial No is not mentioned in transactions, then automatic 
         </tr>
         
         <tr >
-            <td>50</td>
+            <td>51</td>
             <td ><code>has_variants</code></td>
             <td >
                 Check</td>
@@ -757,7 +761,7 @@ If series is set and Serial No is not mentioned in transactions, then automatic 
         </tr>
         
         <tr >
-            <td>51</td>
+            <td>52</td>
             <td ><code>variant_based_on</code></td>
             <td >
                 Select</td>
@@ -772,7 +776,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>52</td>
+            <td>53</td>
             <td ><code>attributes</code></td>
             <td >
                 Table</td>
@@ -793,7 +797,40 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>53</td>
+            <td>54</td>
+            <td ><code>defaults</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Defaults
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>55</td>
+            <td ><code>item_defaults</code></td>
+            <td >
+                Table</td>
+            <td >
+                Item Defaults
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/item_default">Item Default</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>56</td>
             <td ><code>purchase_details</code></td>
             <td >
                 Section Break</td>
@@ -807,7 +844,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>54</td>
+            <td>57</td>
             <td ><code>is_purchase_item</code></td>
             <td >
                 Check</td>
@@ -819,7 +856,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>55</td>
+            <td>58</td>
             <td ><code>purchase_uom</code></td>
             <td >
                 Link</td>
@@ -840,7 +877,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>56</td>
+            <td>59</td>
             <td ><code>min_order_qty</code></td>
             <td >
                 Float</td>
@@ -852,7 +889,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>57</td>
+            <td>60</td>
             <td ><code>safety_stock</code></td>
             <td >
                 Float</td>
@@ -864,7 +901,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>58</td>
+            <td>61</td>
             <td ><code>purchase_details_cb</code></td>
             <td class="info">
                 Column Break</td>
@@ -876,7 +913,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>59</td>
+            <td>62</td>
             <td ><code>lead_time_days</code></td>
             <td >
                 Int</td>
@@ -889,49 +926,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>60</td>
-            <td ><code>buying_cost_center</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Buying Cost Center
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/cost_center">Cost Center</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>61</td>
-            <td ><code>expense_account</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Expense Account
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/account">Account</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>62</td>
+            <td>63</td>
             <td ><code>last_purchase_rate</code></td>
             <td >
                 Float</td>
@@ -943,7 +938,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>63</td>
+            <td>64</td>
             <td ><code>supplier_details</code></td>
             <td >
                 Section Break</td>
@@ -952,27 +947,6 @@ Manufacturer</pre>
                 
             </td>
             <td></td>
-        </tr>
-        
-        <tr >
-            <td>64</td>
-            <td ><code>default_supplier</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Supplier
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/buying/supplier">Supplier</a>
-
-
-                
-            </td>
         </tr>
         
         <tr >
@@ -1156,11 +1130,71 @@ Manufacturer</pre>
         
         <tr >
             <td>76</td>
-            <td ><code>income_account</code></td>
+            <td ><code>is_sales_item</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Sales Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>77</td>
+            <td ><code>column_break3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>78</td>
+            <td ><code>max_discount</code></td>
+            <td >
+                Float</td>
+            <td >
+                Max Discount (%)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>79</td>
+            <td ><code>deferred_revenue</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Deferred Revenue
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>80</td>
+            <td ><code>enable_deferred_revenue</code></td>
+            <td >
+                Check</td>
+            <td >
+                Enable Deferred Revenue
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>81</td>
+            <td ><code>deferred_revenue_account</code></td>
             <td >
                 Link</td>
             <td >
-                Default Income Account
+                Deferred Revenue Account
                 
             </td>
             <td>
@@ -1176,20 +1210,8 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>77</td>
-            <td ><code>is_sales_item</code></td>
-            <td >
-                Check</td>
-            <td >
-                Is Sales Item
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>78</td>
-            <td ><code>column_break3</code></td>
+            <td>82</td>
+            <td ><code>column_break_85</code></td>
             <td class="info">
                 Column Break</td>
             <td >
@@ -1200,40 +1222,19 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>79</td>
-            <td ><code>selling_cost_center</code></td>
+            <td>83</td>
+            <td ><code>no_of_months</code></td>
             <td >
-                Link</td>
+                Int</td>
             <td >
-                Default Selling Cost Center
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/cost_center">Cost Center</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>80</td>
-            <td ><code>max_discount</code></td>
-            <td >
-                Float</td>
-            <td >
-                Max Discount (%)
+                No of Months
                 
             </td>
             <td></td>
         </tr>
         
         <tr class="info">
-            <td>81</td>
+            <td>84</td>
             <td ><code>customer_details</code></td>
             <td >
                 Section Break</td>
@@ -1245,7 +1246,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>82</td>
+            <td>85</td>
             <td ><code>customer_items</code></td>
             <td >
                 Table</td>
@@ -1266,7 +1267,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>83</td>
+            <td>86</td>
             <td ><code>item_tax_section_break</code></td>
             <td >
                 Section Break</td>
@@ -1280,7 +1281,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>84</td>
+            <td>87</td>
             <td ><code>taxes</code></td>
             <td >
                 Table</td>
@@ -1302,7 +1303,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>85</td>
+            <td>88</td>
             <td ><code>inspection_criteria</code></td>
             <td >
                 Section Break</td>
@@ -1316,7 +1317,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>86</td>
+            <td>89</td>
             <td ><code>inspection_required_before_purchase</code></td>
             <td >
                 Check</td>
@@ -1328,7 +1329,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>87</td>
+            <td>90</td>
             <td ><code>inspection_required_before_delivery</code></td>
             <td >
                 Check</td>
@@ -1340,7 +1341,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>88</td>
+            <td>91</td>
             <td ><code>quality_inspection_template</code></td>
             <td >
                 Link</td>
@@ -1361,7 +1362,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>89</td>
+            <td>92</td>
             <td ><code>manufacturing</code></td>
             <td >
                 Section Break</td>
@@ -1375,7 +1376,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>90</td>
+            <td>93</td>
             <td ><code>default_bom</code></td>
             <td >
                 Link</td>
@@ -1396,7 +1397,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>91</td>
+            <td>94</td>
             <td ><code>is_sub_contracted_item</code></td>
             <td >
                 Check</td>
@@ -1409,7 +1410,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>92</td>
+            <td>95</td>
             <td ><code>column_break_74</code></td>
             <td class="info">
                 Column Break</td>
@@ -1421,7 +1422,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>93</td>
+            <td>96</td>
             <td ><code>customer_code</code></td>
             <td >
                 Data</td>
@@ -1433,7 +1434,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>94</td>
+            <td>97</td>
             <td ><code>website_section</code></td>
             <td >
                 Section Break</td>
@@ -1447,7 +1448,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>95</td>
+            <td>98</td>
             <td ><code>show_in_website</code></td>
             <td >
                 Check</td>
@@ -1459,7 +1460,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>96</td>
+            <td>99</td>
             <td ><code>show_variant_in_website</code></td>
             <td >
                 Check</td>
@@ -1471,7 +1472,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>97</td>
+            <td>100</td>
             <td ><code>route</code></td>
             <td >
                 Small Text</td>
@@ -1483,7 +1484,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>98</td>
+            <td>101</td>
             <td ><code>weightage</code></td>
             <td >
                 Int</td>
@@ -1496,7 +1497,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>99</td>
+            <td>102</td>
             <td ><code>slideshow</code></td>
             <td >
                 Link</td>
@@ -1518,7 +1519,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>100</td>
+            <td>103</td>
             <td ><code>website_image</code></td>
             <td >
                 Attach</td>
@@ -1531,7 +1532,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>101</td>
+            <td>104</td>
             <td ><code>thumbnail</code></td>
             <td >
                 Data</td>
@@ -1543,7 +1544,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>102</td>
+            <td>105</td>
             <td ><code>cb72</code></td>
             <td class="info">
                 Column Break</td>
@@ -1555,7 +1556,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>103</td>
+            <td>106</td>
             <td ><code>website_warehouse</code></td>
             <td >
                 Link</td>
@@ -1577,7 +1578,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>104</td>
+            <td>107</td>
             <td ><code>website_item_groups</code></td>
             <td >
                 Table</td>
@@ -1599,7 +1600,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>105</td>
+            <td>108</td>
             <td ><code>sb72</code></td>
             <td >
                 Section Break</td>
@@ -1611,7 +1612,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>106</td>
+            <td>109</td>
             <td ><code>copy_from_item_group</code></td>
             <td >
                 Button</td>
@@ -1623,7 +1624,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>107</td>
+            <td>110</td>
             <td ><code>website_specifications</code></td>
             <td >
                 Table</td>
@@ -1644,7 +1645,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>108</td>
+            <td>111</td>
             <td ><code>web_long_description</code></td>
             <td >
                 Text Editor</td>
@@ -1656,7 +1657,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>109</td>
+            <td>112</td>
             <td ><code>total_projected_qty</code></td>
             <td >
                 Float</td>
@@ -1668,7 +1669,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>110</td>
+            <td>113</td>
             <td ><code>hub_publishing_sb</code></td>
             <td >
                 Section Break</td>
@@ -1680,7 +1681,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>111</td>
+            <td>114</td>
             <td ><code>publish_in_hub</code></td>
             <td >
                 Check</td>
@@ -1693,7 +1694,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>112</td>
+            <td>115</td>
             <td ><code>hub_category_to_publish</code></td>
             <td >
                 Data</td>
@@ -1705,7 +1706,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>113</td>
+            <td>116</td>
             <td ><code>hub_warehouse</code></td>
             <td >
                 Link</td>
@@ -1727,7 +1728,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>114</td>
+            <td>117</td>
             <td ><code>synced_with_hub</code></td>
             <td >
                 Check</td>
@@ -1832,6 +1833,22 @@ Manufacturer</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.item.item.get_item_defaults" href="#erpnext.stock.doctype.item.item.get_item_defaults" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.item.item.<b>get_item_defaults</b>
+        <i class="text-muted">(item, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="erpnext.stock.doctype.item.item.get_last_purchase_details" href="#erpnext.stock.doctype.item.item.get_last_purchase_details" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.stock.doctype.item.item.<b>get_last_purchase_details</b>
@@ -1854,6 +1871,24 @@ Manufacturer</pre>
         <i class="text-muted">(doctype, name)</i>
     </p>
 	<div class="docs-attr-desc"><p>returns timeline data based on stock ledger entry</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.doctype.item.item.get_uom_conv_factor</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.item.item.get_uom_conv_factor" href="#erpnext.stock.doctype.item.item.get_uom_conv_factor" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.item.item.<b>get_uom_conv_factor</b>
+        <i class="text-muted">(uom, stock_uom)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -1960,6 +1995,15 @@ Manufacturer</pre>
             <li>
 
 
+<a href="/docs/current/models/manufacturing/blanket_order_item">Blanket Order Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/manufacturing/bom">BOM</a>
 
 </li>
@@ -1997,6 +2041,24 @@ Manufacturer</pre>
 
 
 <a href="/docs/current/models/manufacturing/bom_website_item">BOM Website Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/clinical_procedure_item">Clinical Procedure Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/clinical_procedure_template">Clinical Procedure Template</a>
 
 </li>
 			

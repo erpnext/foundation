@@ -1,27 +1,27 @@
 [
  {
-  "route": "/search_docs", 
-  "title": "Search Docs ...", 
+  "route": "/search_docs",
+  "title": "Search Docs ...",
   "type": "input"
- }, 
+ },
  {
-  "route": "/docs", 
+  "route": "/docs",
   "title": "Docs Home"
- }, 
+ },
  {
-  "route": "/docs/user", 
+  "route": "/docs/user",
   "title": "User Guide"
- }, 
+ },
  {
-  "route": "/docs/current/api", 
+  "route": "/docs/current/api",
   "title": "Server API"
- }, 
+ },
  {
-  "route": "/docs/current/models", 
+  "route": "/docs/current/models",
   "title": "Models (Reference)"
- }, 
+ },
  {
-  "route": "https://github.com/frappe/erpnext/tree/develop/erpnext/docs", 
+  "route": "https://github.com/frappe/erpnext/tree/develop/erpnext/docs",
   "title": "Improve Docs"
  }
 ]

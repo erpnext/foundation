@@ -1,0 +1,2 @@
+erpnext.hr.notification.retention_bonus
+erpnext.hr.notification.retention_bonus.retention_bonus

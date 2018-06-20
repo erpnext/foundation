@@ -1,0 +1,122 @@
+<!-- title: Bank Statement Transaction Settings Item -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Bank Statement Transaction Settings Item</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.38</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/bank_statement_transaction_settings_item"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+<span class="label label-info">Child Table</span>
+
+
+    <p><b>Table Name:</b> <code>tabBank Statement Transaction Settings Item</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>mapping_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Mapping Type
+                
+            </td>
+            <td>
+                <pre>Transaction</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>bank_data</code></td>
+            <td >
+                Data</td>
+            <td >
+                Bank Data
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>mapped_data_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Mapped Data Type
+                
+            </td>
+            <td>
+                <pre>Account
+Customer
+Supplier
+Account</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>mapped_data</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Mapped Data
+                
+            </td>
+            <td>
+                <pre>mapped_data_type</pre>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    
+    
+    <h4>Child Table Of</h4>
+    <ul>
+    
+        <li>
+
+
+<a href="/docs/current/models/accounts/bank_statement_settings">Bank Statement Settings</a>
+
+</li>
+    
+    </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

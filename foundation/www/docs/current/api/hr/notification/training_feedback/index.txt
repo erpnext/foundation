@@ -1,0 +1,2 @@
+erpnext.hr.notification.training_feedback
+erpnext.hr.notification.training_feedback.training_feedback
