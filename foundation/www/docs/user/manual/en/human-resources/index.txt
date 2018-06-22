@@ -3,6 +3,7 @@ leave
 employee-advance
 expense-claim
 attendance
+attendance-request
 salary-and-payroll
 payroll-entry
 appraisal
