@@ -3,6 +3,7 @@ leave
 employee-advance
 expense-claim
 attendance
+shift-management
 salary-and-payroll
 payroll-entry
 appraisal
