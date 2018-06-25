@@ -1,0 +1,348 @@
+<!-- title: Staffing Plan -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Staffing Plan</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.37</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/staffing_plan"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabStaffing Plan</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>from_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                From Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td class="danger" title="Mandatory"><code>to_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                To Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>6</td>
+            <td ><code>staffing_plan_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Staffing Plan Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td class="danger" title="Mandatory"><code>staffing_details</code></td>
+            <td >
+                Table</td>
+            <td >
+                Staffing Plan Detail
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/staffing_plan_detail">Staffing Plan Detail</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>8</td>
+            <td ><code>section_break_8</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>total_estimated_budget</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Total Estimated Budget
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/staffing_plan">Staffing Plan</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.hr.doctype.staffing_plan.staffing_plan</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>StaffingPlan</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_overlap" href="#validate_overlap" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_overlap</b>
+        <i class="text-muted">(self, staffing_plan_detail)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_with_parent_plan" href="#validate_with_parent_plan" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_with_parent_plan</b>
+        <i class="text-muted">(self, staffing_plan_detail)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_with_subsidiary_plans" href="#validate_with_subsidiary_plans" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_with_subsidiary_plans</b>
+        <i class="text-muted">(self, staffing_plan_detail)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.staffing_plan.staffing_plan.get_active_staffing_plan_details</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.staffing_plan.staffing_plan.get_active_staffing_plan_details" href="#erpnext.hr.doctype.staffing_plan.staffing_plan.get_active_staffing_plan_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.staffing_plan.staffing_plan.<b>get_active_staffing_plan_details</b>
+        <i class="text-muted">(company, designation, department=None, date=2018-06-25)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.staffing_plan.staffing_plan.get_designation_counts</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.staffing_plan.staffing_plan.get_designation_counts" href="#erpnext.hr.doctype.staffing_plan.staffing_plan.get_designation_counts" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.staffing_plan.staffing_plan.<b>get_designation_counts</b>
+        <i class="text-muted">(designation, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/job_opening">Job Opening</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/staffing_plan">Staffing Plan</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

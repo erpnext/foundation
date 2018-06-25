@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/assets/doctype/depreciation_schedule"
@@ -42,6 +42,27 @@
         
         <tr >
             <td>1</td>
+            <td ><code>finance_book</code></td>
+            <td >
+                Link</td>
+            <td >
+                Finance Book
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/finance_book">Finance Book</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
             <td class="danger" title="Mandatory"><code>schedule_date</code></td>
             <td >
                 Date</td>
@@ -53,7 +74,7 @@
         </tr>
         
         <tr >
-            <td>2</td>
+            <td>3</td>
             <td class="danger" title="Mandatory"><code>depreciation_amount</code></td>
             <td >
                 Currency</td>
@@ -67,7 +88,7 @@
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>4</td>
             <td ><code>column_break_3</code></td>
             <td class="info">
                 Column Break</td>
@@ -79,7 +100,7 @@
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>5</td>
             <td ><code>accumulated_depreciation_amount</code></td>
             <td >
                 Currency</td>
@@ -93,7 +114,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>6</td>
             <td ><code>journal_entry</code></td>
             <td >
                 Link</td>
@@ -114,7 +135,7 @@
         </tr>
         
         <tr >
-            <td>6</td>
+            <td>7</td>
             <td ><code>make_depreciation_entry</code></td>
             <td >
                 Button</td>
@@ -123,6 +144,36 @@
                 
             </td>
             <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>finance_book_id</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Finance Book Id
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>depreciation_method</code></td>
+            <td >
+                Select</td>
+            <td class="text-muted" title="Hidden">
+                Depreciation Method
+                
+            </td>
+            <td>
+                <pre>
+Straight Line
+Double Declining Balance
+Written Down Value
+Manual</pre>
+            </td>
         </tr>
         
     </tbody>

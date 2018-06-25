@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/department"
@@ -75,6 +75,27 @@
         
         <tr >
             <td>3</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
             <td ><code>is_group</code></td>
             <td >
                 Check</td>
@@ -86,7 +107,7 @@
         </tr>
         
         <tr class="info">
-            <td>4</td>
+            <td>5</td>
             <td ><code>section_break_4</code></td>
             <td >
                 Section Break</td>
@@ -98,7 +119,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>6</td>
             <td ><code>leave_block_list</code></td>
             <td >
                 Link</td>
@@ -120,7 +141,7 @@
         </tr>
         
         <tr class="info">
-            <td>6</td>
+            <td>7</td>
             <td ><code>leave_section</code></td>
             <td >
                 Section Break</td>
@@ -132,8 +153,8 @@
         </tr>
         
         <tr >
-            <td>7</td>
-            <td ><code>leave_approver</code></td>
+            <td>8</td>
+            <td ><code>leave_approvers</code></td>
             <td >
                 Table</td>
             <td >
@@ -154,7 +175,7 @@
         </tr>
         
         <tr class="info">
-            <td>8</td>
+            <td>9</td>
             <td ><code>expense_section</code></td>
             <td >
                 Section Break</td>
@@ -166,8 +187,8 @@
         </tr>
         
         <tr >
-            <td>9</td>
-            <td ><code>expense_approver</code></td>
+            <td>10</td>
+            <td ><code>expense_approvers</code></td>
             <td >
                 Table</td>
             <td >
@@ -188,7 +209,7 @@
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>11</td>
             <td ><code>lft</code></td>
             <td >
                 Int</td>
@@ -200,7 +221,7 @@
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>12</td>
             <td ><code>rgt</code></td>
             <td >
                 Int</td>
@@ -212,7 +233,7 @@
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>13</td>
             <td ><code>old_parent</code></td>
             <td >
                 Data</td>
@@ -245,8 +266,130 @@
 </div>
     <div style="padding-left: 30px;">
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="autoname" href="#autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>autoname</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="before_rename" href="#before_rename" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>before_rename</b>
+        <i class="text-muted">(self, old, new, merge=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_trash" href="#on_trash" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_trash</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update" href="#on_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.department.department.add_node</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.department.department.add_node" href="#erpnext.hr.doctype.department.department.add_node" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.department.department.<b>add_node</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.department.department.get_abbreviated_name" href="#erpnext.hr.doctype.department.department.get_abbreviated_name" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.department.department.<b>get_abbreviated_name</b>
+        <i class="text-muted">(name, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.hr.doctype.department.department.get_children</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.department.department.get_children" href="#erpnext.hr.doctype.department.department.get_children" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.department.department.<b>get_children</b>
+        <i class="text-muted">(doctype, parent=None, company=None, is_root=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 
@@ -276,7 +419,61 @@
             <li>
 
 
+<a href="/docs/current/models/projects/activity_cost">Activity Cost</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/additional_salary">Additional Salary</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/appraisal">Appraisal</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/assets/asset">Asset</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/attendance">Attendance</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/attendance_request">Attendance Request</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/compensatory_leave_request">Compensatory Leave Request</a>
 
 </li>
 			
@@ -312,6 +509,15 @@
             <li>
 
 
+<a href="/docs/current/models/hr/employee_advance">Employee Advance</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/employee_attendance_tool">Employee Attendance Tool</a>
 
 </li>
@@ -321,7 +527,115 @@
             <li>
 
 
+<a href="/docs/current/models/hr/employee_benefit_application">Employee Benefit Application</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_benefit_claim">Employee Benefit Claim</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_incentive">Employee Incentive</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/employee_internal_work_history">Employee Internal Work History</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_onboarding">Employee Onboarding</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_onboarding_template">Employee Onboarding Template</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_promotion">Employee Promotion</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_separation">Employee Separation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_separation_template">Employee Separation Template</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_tax_exemption_declaration">Employee Tax Exemption Declaration</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_tax_exemption_proof_submission">Employee Tax Exemption Proof Submission</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_transfer">Employee Transfer</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/expense_claim">Expense Claim</a>
 
 </li>
 			
@@ -348,7 +662,61 @@
             <li>
 
 
+<a href="/docs/current/models/hr/job_opening">Job Opening</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_allocation">Leave Allocation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_application">Leave Application</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/leave_control_panel">Leave Control Panel</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_encashment">Leave Encashment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_period">Leave Period</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/payroll_employee_detail">Payroll Employee Detail</a>
 
 </li>
 			
@@ -375,7 +743,124 @@
             <li>
 
 
+<a href="/docs/current/models/projects/project">Project</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/retention_bonus">Retention Bonus</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/salary_slip">Salary Slip</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/salary_structure_assignment">Salary Structure Assignment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/setup/sales_person">Sales Person</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/shift_assignment">Shift Assignment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/shift_request">Shift Request</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/selling/sms_center">SMS Center</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/staffing_plan">Staffing Plan</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/projects/task">Task</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/projects/timesheet">Timesheet</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/training_event_employee">Training Event Employee</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/training_feedback">Training Feedback</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/training_result_employee">Training Result Employee</a>
 
 </li>
 			

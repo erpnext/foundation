@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/salary_slip"
@@ -82,22 +82,27 @@
                 Employee Name
                 
             </td>
-            <td>
-                <pre>employee.employee_name</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
             <td>4</td>
             <td ><code>department</code></td>
             <td >
-                Read Only</td>
+                Link</td>
             <td >
                 Department
                 
             </td>
             <td>
-                <pre>employee.department</pre>
+                
+                
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+
+                
             </td>
         </tr>
         
@@ -110,9 +115,7 @@
                 Designation
                 
             </td>
-            <td>
-                <pre>employee.designation</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -124,9 +127,7 @@
                 Branch
                 
             </td>
-            <td>
-                <pre>employee.branch</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -498,6 +499,42 @@ Daily</pre>
         
         <tr class="info">
             <td>32</td>
+            <td ><code>section_break_32</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>deduct_tax_for_unclaimed_employee_benefits</code></td>
+            <td >
+                Check</td>
+            <td >
+                Deduct Tax For Unclaimed Employee Benefits
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>34</td>
+            <td ><code>deduct_tax_for_unsubmitted_tax_exemption_proof</code></td>
+            <td >
+                Check</td>
+            <td >
+                Deduct Tax For Unsubmitted Tax Exemption Proof
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>35</td>
             <td ><code>earning_deduction</code></td>
             <td >
                 Section Break</td>
@@ -509,7 +546,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>36</td>
             <td ><code>earning</code></td>
             <td class="info">
                 Column Break</td>
@@ -521,7 +558,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>37</td>
             <td ><code>earnings</code></td>
             <td >
                 Table</td>
@@ -542,7 +579,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>38</td>
             <td ><code>deduction</code></td>
             <td class="info">
                 Column Break</td>
@@ -554,7 +591,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>36</td>
+            <td>39</td>
             <td ><code>deductions</code></td>
             <td >
                 Table</td>
@@ -575,7 +612,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>37</td>
+            <td>40</td>
             <td ><code>totals</code></td>
             <td >
                 Section Break</td>
@@ -587,7 +624,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>38</td>
+            <td>41</td>
             <td ><code>gross_pay</code></td>
             <td >
                 Currency</td>
@@ -601,7 +638,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>42</td>
             <td ><code>column_break_25</code></td>
             <td class="info">
                 Column Break</td>
@@ -613,7 +650,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>40</td>
+            <td>43</td>
             <td ><code>total_deduction</code></td>
             <td >
                 Currency</td>
@@ -627,7 +664,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>41</td>
+            <td>44</td>
             <td ><code>loan_repayment</code></td>
             <td >
                 Section Break</td>
@@ -639,12 +676,12 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>45</td>
             <td ><code>loans</code></td>
             <td >
                 Table</td>
             <td >
-                Loan
+                Employee Loan
                 
             </td>
             <td>
@@ -660,7 +697,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>43</td>
+            <td>46</td>
             <td ><code>section_break_43</code></td>
             <td >
                 Section Break</td>
@@ -672,7 +709,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>47</td>
             <td ><code>total_principal_amount</code></td>
             <td >
                 Currency</td>
@@ -686,7 +723,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>45</td>
+            <td>48</td>
             <td ><code>total_interest_amount</code></td>
             <td >
                 Currency</td>
@@ -700,7 +737,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>49</td>
             <td ><code>column_break_45</code></td>
             <td class="info">
                 Column Break</td>
@@ -712,7 +749,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>50</td>
             <td ><code>total_loan_repayment</code></td>
             <td >
                 Currency</td>
@@ -726,7 +763,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>48</td>
+            <td>51</td>
             <td ><code>net_pay_info</code></td>
             <td >
                 Section Break</td>
@@ -738,7 +775,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>49</td>
+            <td>52</td>
             <td ><code>net_pay</code></td>
             <td >
                 Currency</td>
@@ -753,7 +790,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>50</td>
+            <td>53</td>
             <td ><code>column_break_53</code></td>
             <td class="info">
                 Column Break</td>
@@ -765,7 +802,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>51</td>
+            <td>54</td>
             <td ><code>rounded_total</code></td>
             <td >
                 Currency</td>
@@ -779,7 +816,7 @@ Daily</pre>
         </tr>
         
         <tr class="info">
-            <td>52</td>
+            <td>55</td>
             <td ><code>section_break_55</code></td>
             <td >
                 Section Break</td>
@@ -791,7 +828,7 @@ Daily</pre>
         </tr>
         
         <tr >
-            <td>53</td>
+            <td>56</td>
             <td ><code>total_in_words</code></td>
             <td >
                 Data</td>
@@ -825,6 +862,608 @@ Daily</pre>
 </div>
     <div style="padding-left: 30px;">
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_earning_for_hourly_wages" href="#add_earning_for_hourly_wages" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_earning_for_hourly_wages</b>
+        <i class="text-muted">(self, doc, salary_component, amount)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_employee_flexi_benefits" href="#add_employee_flexi_benefits" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_employee_flexi_benefits</b>
+        <i class="text-muted">(self, struct_row)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="autoname" href="#autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>autoname</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_component_amounts" href="#calculate_component_amounts" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_component_amounts</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_lwp" href="#calculate_lwp" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_lwp</b>
+        <i class="text-muted">(self, holidays, working_days)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_net_pay" href="#calculate_net_pay" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_net_pay</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_tax" href="#calculate_tax" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_tax</b>
+        <i class="text-muted">(self, payroll_period, tax_component, annual_taxable_earning, period_factor, tax_paid=0, benefit_amount_to_tax=0)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_tax_by_tax_slab" href="#calculate_tax_by_tax_slab" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_tax_by_tax_slab</b>
+        <i class="text-muted">(self, payroll_period, annual_earning)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_tax_for_payroll_period" href="#calculate_tax_for_payroll_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_tax_for_payroll_period</b>
+        <i class="text-muted">(self, tax_component, payroll_period)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_unclaimed_taxable_benefit" href="#calculate_unclaimed_taxable_benefit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_unclaimed_taxable_benefit</b>
+        <i class="text-muted">(self, payroll_period)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_unclaimed_taxable_earning" href="#calculate_unclaimed_taxable_earning" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_unclaimed_taxable_earning</b>
+        <i class="text-muted">(self, payroll_period, tax_component, benefit_amount_to_tax)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_variable_based_on_taxable_salary" href="#calculate_variable_based_on_taxable_salary" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_variable_based_on_taxable_salary</b>
+        <i class="text-muted">(self, tax_component)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_variable_tax" href="#calculate_variable_tax" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_variable_tax</b>
+        <i class="text-muted">(self, tax_component, payroll_period, benefit_amount_to_tax=0)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_existing" href="#check_existing" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_existing</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_sal_struct" href="#check_sal_struct" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_sal_struct</b>
+        <i class="text-muted">(self, joining_date, relieving_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="email_salary_slip" href="#email_salary_slip" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>email_salary_slip</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="eval_condition_and_formula" href="#eval_condition_and_formula" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>eval_condition_and_formula</b>
+        <i class="text-muted">(self, d, data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_amount_from_exisiting_component" href="#get_amount_from_exisiting_component" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_amount_from_exisiting_component</b>
+        <i class="text-muted">(self, salary_component)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_data_for_eval" href="#get_data_for_eval" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_data_for_eval</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns data for evaluating formula</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_date_details" href="#get_date_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_date_details</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_emp_and_leave_details" href="#get_emp_and_leave_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_emp_and_leave_details</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>First time, load all the components from salary structure</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_holidays_for_employee" href="#get_holidays_for_employee" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_holidays_for_employee</b>
+        <i class="text-muted">(self, start_date, end_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_leave_details" href="#get_leave_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_leave_details</b>
+        <i class="text-muted">(self, joining_date=None, relieving_date=None, lwp=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_loan_details" href="#get_loan_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_loan_details</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_payment_days" href="#get_payment_days" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_payment_days</b>
+        <i class="text-muted">(self, joining_date, relieving_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_period_factor" href="#get_period_factor" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_period_factor</b>
+        <i class="text-muted">(self, period_start, period_end, start_date=None, end_date=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_salary_slip_row" href="#get_salary_slip_row" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_salary_slip_row</b>
+        <i class="text-muted">(self, salary_component)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_status" href="#get_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_tax_detail_till_date" href="#get_tax_detail_till_date" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_tax_detail_till_date</b>
+        <i class="text-muted">(self, payroll_period, tax_component)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_taxable_earnings" href="#get_taxable_earnings" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_taxable_earnings</b>
+        <i class="text-muted">(self, include_flexi=0, only_flexi=0)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_cancel" href="#on_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_submit" href="#on_submit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_submit</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="process_salary_structure" href="#process_salary_structure" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>process_salary_structure</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Calculate salary after salary structure details have been updated</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="pull_emp_details" href="#pull_emp_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>pull_emp_details</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="pull_sal_struct" href="#pull_sal_struct" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>pull_sal_struct</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_loan_repayment" href="#set_loan_repayment" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_loan_repayment</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_status" href="#set_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_status</b>
+        <i class="text-muted">(self, status=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get and update status</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_time_sheet" href="#set_time_sheet" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_time_sheet</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="sum_components" href="#sum_components" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>sum_components</b>
+        <i class="text-muted">(self, component_type, total_field)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_component_row" href="#update_component_row" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_component_row</b>
+        <i class="text-muted">(self, struct_row, amount, key)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_status" href="#update_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_status</b>
+        <i class="text-muted">(self, salary_slip=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_dates" href="#validate_dates" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_dates</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
 
@@ -851,6 +1490,15 @@ Daily</pre>
     
         <h4>Linked In:</h4>
         <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_benefit_claim">Employee Benefit Claim</a>
+
+</li>
+			
         
 			
             <li>

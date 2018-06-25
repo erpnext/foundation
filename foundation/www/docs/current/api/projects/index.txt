@@ -1,2 +1,2 @@
-erpnext.projects.utils
 erpnext.projects
+erpnext.projects.utils

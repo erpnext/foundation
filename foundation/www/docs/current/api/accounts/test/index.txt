@@ -1,2 +1,2 @@
-erpnext.accounts.test
 erpnext.accounts.test.test_utils
+erpnext.accounts.test

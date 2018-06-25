@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/projects/doctype/timesheet"
@@ -208,11 +208,11 @@ Cancelled</pre>
         
         <tr >
             <td>11</td>
-            <td ><code>user</code></td>
+            <td ><code>department</code></td>
             <td >
                 Link</td>
             <td >
-                User
+                Department
                 
             </td>
             <td>
@@ -220,7 +220,7 @@ Cancelled</pre>
                 
 
 
-<a href="/docs/current/models/core/user">User</a>
+<a href="/docs/current/models/hr/department">Department</a>
 
 
                 
@@ -241,6 +241,27 @@ Cancelled</pre>
         
         <tr >
             <td>13</td>
+            <td ><code>user</code></td>
+            <td >
+                Link</td>
+            <td >
+                User
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/user">User</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
             <td ><code>start_date</code></td>
             <td >
                 Date</td>
@@ -252,7 +273,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td ><code>end_date</code></td>
             <td >
                 Date</td>
@@ -264,7 +285,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>15</td>
+            <td>16</td>
             <td ><code>work_detail</code></td>
             <td >
                 Section Break</td>
@@ -276,7 +297,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>16</td>
+            <td>17</td>
             <td ><code>work_order</code></td>
             <td >
                 Link</td>
@@ -297,7 +318,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>17</td>
+            <td>18</td>
             <td ><code>section_break_5</code></td>
             <td >
                 Section Break</td>
@@ -309,7 +330,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td class="danger" title="Mandatory"><code>time_logs</code></td>
             <td >
                 Table</td>
@@ -330,7 +351,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>19</td>
+            <td>20</td>
             <td ><code>working_hours</code></td>
             <td >
                 Section Break</td>
@@ -342,7 +363,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>21</td>
             <td ><code>total_hours</code></td>
             <td >
                 Float</td>
@@ -354,7 +375,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>21</td>
+            <td>22</td>
             <td ><code>billing_details</code></td>
             <td >
                 Section Break</td>
@@ -366,7 +387,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>23</td>
             <td ><code>total_billable_hours</code></td>
             <td >
                 Float</td>
@@ -378,7 +399,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>24</td>
             <td ><code>total_billed_hours</code></td>
             <td >
                 Float</td>
@@ -390,7 +411,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>24</td>
+            <td>25</td>
             <td ><code>total_costing_amount</code></td>
             <td >
                 Float</td>
@@ -402,7 +423,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>26</td>
             <td ><code>column_break_10</code></td>
             <td class="info">
                 Column Break</td>
@@ -414,7 +435,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>26</td>
+            <td>27</td>
             <td ><code>total_billable_amount</code></td>
             <td >
                 Float</td>
@@ -426,7 +447,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>27</td>
+            <td>28</td>
             <td ><code>total_billed_amount</code></td>
             <td >
                 Float</td>
@@ -438,7 +459,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>28</td>
+            <td>29</td>
             <td ><code>per_billed</code></td>
             <td >
                 Percent</td>
@@ -450,7 +471,7 @@ Cancelled</pre>
         </tr>
         
         <tr class="info">
-            <td>29</td>
+            <td>30</td>
             <td ><code>section_break_18</code></td>
             <td >
                 Section Break</td>
@@ -462,7 +483,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>31</td>
             <td ><code>note</code></td>
             <td >
                 Text Editor</td>
@@ -474,7 +495,7 @@ Cancelled</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>32</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -545,6 +566,412 @@ Cancelled</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="before_cancel" href="#before_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>before_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_percentage_billed" href="#calculate_percentage_billed" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_percentage_billed</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="calculate_total_amounts" href="#calculate_total_amounts" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>calculate_total_amounts</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_workstation_timings" href="#check_workstation_timings" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_workstation_timings</b>
+        <i class="text-muted">(self, args)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Checks if <strong>Time Log</strong> is between operating hours of the <strong>Workstation</strong>.</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_workstation_working_day" href="#check_workstation_working_day" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_workstation_working_day</b>
+        <i class="text-muted">(self, data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_actual_timesheet_summary" href="#get_actual_timesheet_summary" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_actual_timesheet_summary</b>
+        <i class="text-muted">(self, operation_id)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns 'Actual Operating Time'. </p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_last_working_slot" href="#get_last_working_slot" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_last_working_slot</b>
+        <i class="text-muted">(self, time_sheet, workstation)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_overlap_for" href="#get_overlap_for" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_overlap_for</b>
+        <i class="text-muted">(self, fieldname, args, value)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_to_time" href="#get_to_time" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_to_time</b>
+        <i class="text-muted">(self, data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="move_to_next_day" href="#move_to_next_day" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>move_to_next_day</b>
+        <i class="text-muted">(self, data)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Move start and end time one day forward</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="move_to_next_non_overlapping_slot" href="#move_to_next_non_overlapping_slot" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>move_to_next_non_overlapping_slot</b>
+        <i class="text-muted">(self, data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_cancel" href="#on_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_submit" href="#on_submit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_submit</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="onload" href="#onload" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>onload</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="schedule_for_work_order" href="#schedule_for_work_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>schedule_for_work_order</b>
+        <i class="text-muted">(self, index)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_dates" href="#set_dates" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_dates</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_employee_name" href="#set_employee_name" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_employee_name</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_status" href="#set_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_billing_hours" href="#update_billing_hours" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_billing_hours</b>
+        <i class="text-muted">(self, args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_cost" href="#update_cost" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_cost</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_task_and_project" href="#update_task_and_project" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_task_and_project</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_time_rates" href="#update_time_rates" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_time_rates</b>
+        <i class="text-muted">(self, ts_detail)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_work_order" href="#update_work_order" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_work_order</b>
+        <i class="text-muted">(self, time_sheet)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_dates" href="#validate_dates" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_dates</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_mandatory_fields" href="#validate_mandatory_fields" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_mandatory_fields</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_overlap" href="#validate_overlap" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_overlap</b>
+        <i class="text-muted">(self, data)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_overlap_for" href="#validate_overlap_for" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_overlap_for</b>
+        <i class="text-muted">(self, fieldname, args, value, ignore_validation=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_time_logs" href="#validate_time_logs" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_time_logs</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
         
     </div>
     <hr>

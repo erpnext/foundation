@@ -1,0 +1,420 @@
+<!-- title: Employee Benefit Claim -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Employee Benefit Claim</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.37</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/employee_benefit_claim"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabEmployee Benefit Claim</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>employee</code></td>
+            <td >
+                Link</td>
+            <td >
+                Employee
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee">Employee</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>employee_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Employee Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>claim_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Claim Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td class="danger" title="Mandatory"><code>earning_component</code></td>
+            <td >
+                Link</td>
+            <td >
+                Earning Component
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/salary_component">Salary Component</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>max_amount_eligible</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Max Amount Eligible
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>is_pro_rata_applicable</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                Is Pro-Rata Applicable
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td class="danger" title="Mandatory"><code>claimed_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Claimed Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>salary_slip</code></td>
+            <td >
+                Link</td>
+            <td >
+                Salary Slip
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/salary_slip">Salary Slip</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee_benefit_claim">Employee Benefit Claim</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>section_break_9</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>attachments</code></td>
+            <td >
+                Attach</td>
+            <td >
+                Attachments
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.hr.doctype.employee_benefit_claim.employee_benefit_claim</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>EmployeeBenefitClaim</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_benefit_pro_rata_ratio_amount" href="#get_benefit_pro_rata_ratio_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_benefit_pro_rata_ratio_amount</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_previous_claimed_amount" href="#get_previous_claimed_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_previous_claimed_amount</b>
+        <i class="text-muted">(self, payroll_period, non_pro_rata=False, component=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_pro_rata_amount_in_application" href="#get_pro_rata_amount_in_application" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_pro_rata_amount_in_application</b>
+        <i class="text-muted">(self, payroll_period)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_benefit_claim_amount" href="#validate_benefit_claim_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_benefit_claim_amount</b>
+        <i class="text-muted">(self, max_benefits, payroll_period)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_max_benefit_for_component" href="#validate_max_benefit_for_component" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_max_benefit_for_component</b>
+        <i class="text-muted">(self, payroll_period)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_max_benefit_for_sal_struct" href="#validate_max_benefit_for_sal_struct" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_max_benefit_for_sal_struct</b>
+        <i class="text-muted">(self, max_benefits)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_non_pro_rata_benefit_claim" href="#validate_non_pro_rata_benefit_claim" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_non_pro_rata_benefit_claim</b>
+        <i class="text-muted">(self, max_benefits, payroll_period)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.employee_benefit_claim.employee_benefit_claim.get_benefit_claim_amount" href="#erpnext.hr.doctype.employee_benefit_claim.employee_benefit_claim.get_benefit_claim_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.employee_benefit_claim.employee_benefit_claim.<b>get_benefit_claim_amount</b>
+        <i class="text-muted">(employee, start_date, end_date, struct_row)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_benefit_claim">Employee Benefit Claim</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

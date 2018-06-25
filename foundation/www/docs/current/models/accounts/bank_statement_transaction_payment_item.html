@@ -1,0 +1,274 @@
+<!-- title: Bank Statement Transaction Payment Item -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Bank Statement Transaction Payment Item</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.37</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/bank_statement_transaction_payment_item"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+<span class="label label-info">Child Table</span>
+
+
+    <p><b>Table Name:</b> <code>tabBank Statement Transaction Payment Item</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>transaction_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Transaction Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>description</code></td>
+            <td >
+                Data</td>
+            <td >
+                Description
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>party_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Party Type
+                
+            </td>
+            <td>
+                <pre>Customer
+Supplier
+Account</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>party</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Party
+                
+            </td>
+            <td>
+                <pre>party_type</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>7</td>
+            <td ><code>section_break_6</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>reference_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Reference Type
+                
+            </td>
+            <td>
+                <pre>Payment Entry
+Journal Entry</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>mode_of_payment</code></td>
+            <td >
+                Link</td>
+            <td >
+                Mode of Payment
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/mode_of_payment">Mode of Payment</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>outstanding_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                outstanding_amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>column_break_10</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>reference_name</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Reference Name
+                
+            </td>
+            <td>
+                <pre>reference_type</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>payment_reference</code></td>
+            <td >
+                Data</td>
+            <td >
+                Payment Reference
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>invoices</code></td>
+            <td >
+                Text</td>
+            <td >
+                Invoices
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    
+    
+    <h4>Child Table Of</h4>
+    <ul>
+    
+        <li>
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_entry">Bank Statement Transaction Entry</a>
+
+</li>
+    
+    </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

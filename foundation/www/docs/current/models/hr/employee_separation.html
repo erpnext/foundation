@@ -1,0 +1,411 @@
+<!-- title: Employee Separation -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Employee Separation</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.37</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/employee_separation"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabEmployee Separation</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>employee</code></td>
+            <td >
+                Link</td>
+            <td >
+                Employee
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee">Employee</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>employee_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Employee Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>resignation_letter_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Resignation Letter Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>boarding_status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Status
+                
+            </td>
+            <td>
+                <pre>
+Pending
+In Process
+Completed</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>project</code></td>
+            <td >
+                Link</td>
+            <td >
+                Project
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/projects/project">Project</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>column_break_7</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>employee_separation_template</code></td>
+            <td >
+                Link</td>
+            <td >
+                Employee Separation Template
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee_separation_template">Employee Separation Template</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>designation</code></td>
+            <td >
+                Link</td>
+            <td >
+                Designation
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/designation">Designation</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>employee_grade</code></td>
+            <td >
+                Link</td>
+            <td >
+                Employee Grade
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee_grade">Employee Grade</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>table_for_activity</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>activities</code></td>
+            <td >
+                Table</td>
+            <td >
+                Activities
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee_boarding_activity">Employee Boarding Activity</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>14</td>
+            <td ><code>section_break_14</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>exit_interview</code></td>
+            <td >
+                Text Editor</td>
+            <td >
+                Exit Interview Summary
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee_separation">Employee Separation</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.hr.doctype.employee_separation.employee_separation</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>EmployeeSeparation</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from erpnext.hr.utils.EmployeeBoardingController</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_cancel" href="#on_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_submit" href="#on_submit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_submit</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_separation">Employee Separation</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

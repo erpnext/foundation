@@ -1,2 +1,2 @@
-erpnext.agriculture
 erpnext.agriculture.setup
+erpnext.agriculture

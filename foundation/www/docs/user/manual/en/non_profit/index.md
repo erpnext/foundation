@@ -22,7 +22,7 @@ Check the following video to educate yourself on each feature in the non-profit 
         <iframe src='https://www.youtube.com/embed/p3l0Kq-TU5Y' frameborder='0' allowfullscreen>
         </iframe>
     </div>
-<div>
+</div>
 
 ### User Manual
 

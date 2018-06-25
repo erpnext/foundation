@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/agriculture/doctype/crop_cycle"
@@ -174,9 +174,7 @@
                 End Date
                 
             </td>
-            <td>
-                <pre>project.expected_end_date</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr class="info">
@@ -193,11 +191,11 @@
         
         <tr >
             <td>11</td>
-            <td ><code>iso_8016_standard</code></td>
+            <td ><code>iso_8601_standard</code></td>
             <td >
                 Check</td>
             <td >
-                ISO 8016 standard
+                ISO 8601 standard
                 
             </td>
             <td></td>
@@ -252,9 +250,7 @@ Less than a year</pre>
                 <p class="text-muted small">
                     The minimum length between each plant in the field for optimum growth</p>
             </td>
-            <td>
-                <pre>crop.crop_spacing</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -300,9 +296,7 @@ Less than a year</pre>
                 <p class="text-muted small">
                     The minimum distance between rows of plants for optimum growth</p>
             </td>
-            <td>
-                <pre>crop.row_spacing</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -457,8 +451,210 @@ Less than a year</pre>
 </div>
     <div style="padding-left: 30px;">
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="after_insert" href="#after_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>after_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="append_to_child" href="#append_to_child" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>append_to_child</b>
+        <i class="text-muted">(self, obj_to_append)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_crop_cycle_project" href="#create_crop_cycle_project" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_crop_cycle_project</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_project" href="#create_project" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_project</b>
+        <i class="text-muted">(self, period, crop_tasks)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_task" href="#create_task" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_task</b>
+        <i class="text-muted">(self, crop_tasks, project_name, start_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_tasks_for_diseases" href="#create_tasks_for_diseases" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_tasks_for_diseases</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="import_disease_tasks" href="#import_disease_tasks" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>import_disease_tasks</b>
+        <i class="text-muted">(self, disease, start_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update" href="#on_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="reload_linked_analysis" href="#reload_linked_analysis" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>reload_linked_analysis</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_missing_values" href="#set_missing_values" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_missing_values</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.agriculture.doctype.crop_cycle.crop_cycle.get_coordinates" href="#erpnext.agriculture.doctype.crop_cycle.crop_cycle.get_coordinates" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.agriculture.doctype.crop_cycle.crop_cycle.<b>get_coordinates</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.agriculture.doctype.crop_cycle.crop_cycle.get_geometry_type" href="#erpnext.agriculture.doctype.crop_cycle.crop_cycle.get_geometry_type" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.agriculture.doctype.crop_cycle.crop_cycle.<b>get_geometry_type</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.agriculture.doctype.crop_cycle.crop_cycle.is_in_land_unit" href="#erpnext.agriculture.doctype.crop_cycle.crop_cycle.is_in_land_unit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.agriculture.doctype.crop_cycle.crop_cycle.<b>is_in_land_unit</b>
+        <i class="text-muted">(point, vs)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 

@@ -1,2 +1,2 @@
-erpnext.stock.dashboard
 erpnext.stock.dashboard.item_dashboard
+erpnext.stock.dashboard

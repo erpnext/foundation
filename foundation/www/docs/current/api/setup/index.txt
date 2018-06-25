@@ -1,4 +1,4 @@
-erpnext.setup.install
 erpnext.setup.utils
 erpnext.setup
+erpnext.setup.install
 erpnext.setup.default_success_action

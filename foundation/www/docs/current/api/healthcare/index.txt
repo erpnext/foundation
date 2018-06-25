@@ -1,2 +1,2 @@
-erpnext.healthcare
 erpnext.healthcare.setup
+erpnext.healthcare

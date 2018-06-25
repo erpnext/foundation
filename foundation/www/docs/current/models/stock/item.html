@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/stock/doctype/item"
@@ -230,42 +230,6 @@ A Product or a Service that is bought, sold or kept in stock.
         
         <tr >
             <td>14</td>
-            <td ><code>opening_stock</code></td>
-            <td >
-                Float</td>
-            <td >
-                Opening Stock
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>15</td>
-            <td ><code>valuation_rate</code></td>
-            <td >
-                Currency</td>
-            <td >
-                Valuation Rate
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>16</td>
-            <td ><code>standard_rate</code></td>
-            <td >
-                Currency</td>
-            <td >
-                Standard Selling Rate
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>17</td>
             <td ><code>is_fixed_asset</code></td>
             <td >
                 Check</td>
@@ -277,7 +241,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>15</td>
             <td ><code>asset_category</code></td>
             <td >
                 Link</td>
@@ -298,7 +262,19 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>16</td>
+            <td ><code>asset_naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Asset Naming Series
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
             <td ><code>tolerance</code></td>
             <td >
                 Float</td>
@@ -310,7 +286,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>18</td>
             <td ><code>image</code></td>
             <td >
                 Attach Image</td>
@@ -324,7 +300,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr class="info">
-            <td>21</td>
+            <td>19</td>
             <td ><code>section_break_11</code></td>
             <td >
                 Section Break</td>
@@ -336,7 +312,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>20</td>
             <td ><code>brand</code></td>
             <td >
                 Link</td>
@@ -357,7 +333,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>21</td>
             <td ><code>description</code></td>
             <td >
                 Text Editor</td>
@@ -369,7 +345,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr class="info">
-            <td>24</td>
+            <td>22</td>
             <td ><code>sb_barcodes</code></td>
             <td >
                 Section Break</td>
@@ -381,7 +357,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>25</td>
+            <td>23</td>
             <td ><code>barcodes</code></td>
             <td >
                 Table</td>
@@ -402,7 +378,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr class="info">
-            <td>26</td>
+            <td>24</td>
             <td ><code>inventory</code></td>
             <td >
                 Section Break</td>
@@ -416,28 +392,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>27</td>
-            <td ><code>default_warehouse</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Warehouse
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/stock/warehouse">Warehouse</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>28</td>
+            <td>25</td>
             <td ><code>shelf_life_in_days</code></td>
             <td >
                 Int</td>
@@ -449,7 +404,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>29</td>
+            <td>26</td>
             <td ><code>end_of_life</code></td>
             <td >
                 Date</td>
@@ -461,7 +416,7 @@ A Product or a Service that is bought, sold or kept in stock.
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>27</td>
             <td ><code>default_material_request_type</code></td>
             <td >
                 Select</td>
@@ -478,19 +433,7 @@ Manufacture</pre>
         </tr>
         
         <tr >
-            <td>31</td>
-            <td ><code>column_break1</code></td>
-            <td class="info">
-                Column Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>32</td>
+            <td>28</td>
             <td ><code>valuation_method</code></td>
             <td >
                 Select</td>
@@ -506,7 +449,19 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>33</td>
+            <td>29</td>
+            <td ><code>column_break1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>30</td>
             <td ><code>warranty_period</code></td>
             <td >
                 Data</td>
@@ -518,7 +473,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>34</td>
+            <td>31</td>
             <td ><code>weight_per_unit</code></td>
             <td >
                 Float</td>
@@ -530,7 +485,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>35</td>
+            <td>32</td>
             <td ><code>weight_uom</code></td>
             <td >
                 Link</td>
@@ -551,7 +506,7 @@ Moving Average</pre>
         </tr>
         
         <tr class="info">
-            <td>36</td>
+            <td>33</td>
             <td ><code>reorder_section</code></td>
             <td >
                 Section Break</td>
@@ -565,7 +520,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>37</td>
+            <td>34</td>
             <td ><code>reorder_levels</code></td>
             <td >
                 Table</td>
@@ -587,7 +542,7 @@ Moving Average</pre>
         </tr>
         
         <tr class="info">
-            <td>38</td>
+            <td>35</td>
             <td ><code>unit_of_measure_conversion</code></td>
             <td >
                 Section Break</td>
@@ -599,7 +554,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>36</td>
             <td ><code>uoms</code></td>
             <td >
                 Table</td>
@@ -621,7 +576,7 @@ Moving Average</pre>
         </tr>
         
         <tr class="info">
-            <td>40</td>
+            <td>37</td>
             <td ><code>serial_nos_and_batches</code></td>
             <td >
                 Section Break</td>
@@ -633,7 +588,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>41</td>
+            <td>38</td>
             <td ><code>has_batch_no</code></td>
             <td >
                 Check</td>
@@ -645,7 +600,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>42</td>
+            <td>39</td>
             <td ><code>create_new_batch</code></td>
             <td >
                 Check</td>
@@ -657,7 +612,20 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>43</td>
+            <td>40</td>
+            <td ><code>batch_number_series</code></td>
+            <td >
+                Data</td>
+            <td >
+                Batch Number Series
+                <p class="text-muted small">
+                    Example: ABCD.#####. If series is set and Batch No is not mentioned in transactions, then automatic batch number will be created based on this series. If you always want to explicitly mention Batch No for this item, leave this blank. Note: this setting will take priority over the Naming Series Prefix in Stock Settings.</p>
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>41</td>
             <td ><code>has_expiry_date</code></td>
             <td >
                 Check</td>
@@ -669,7 +637,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>44</td>
+            <td>42</td>
             <td ><code>retain_sample</code></td>
             <td >
                 Check</td>
@@ -681,7 +649,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>45</td>
+            <td>43</td>
             <td ><code>sample_quantity</code></td>
             <td >
                 Int</td>
@@ -694,7 +662,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>46</td>
+            <td>44</td>
             <td ><code>column_break_37</code></td>
             <td class="info">
                 Column Break</td>
@@ -706,7 +674,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>47</td>
+            <td>45</td>
             <td ><code>has_serial_no</code></td>
             <td >
                 Check</td>
@@ -718,7 +686,7 @@ Moving Average</pre>
         </tr>
         
         <tr >
-            <td>48</td>
+            <td>46</td>
             <td ><code>serial_no_series</code></td>
             <td >
                 Data</td>
@@ -732,7 +700,7 @@ If series is set and Serial No is not mentioned in transactions, then automatic 
         </tr>
         
         <tr class="info">
-            <td>49</td>
+            <td>47</td>
             <td ><code>variants_section</code></td>
             <td >
                 Section Break</td>
@@ -744,7 +712,7 @@ If series is set and Serial No is not mentioned in transactions, then automatic 
         </tr>
         
         <tr >
-            <td>50</td>
+            <td>48</td>
             <td ><code>has_variants</code></td>
             <td >
                 Check</td>
@@ -757,7 +725,7 @@ If series is set and Serial No is not mentioned in transactions, then automatic 
         </tr>
         
         <tr >
-            <td>51</td>
+            <td>49</td>
             <td ><code>variant_based_on</code></td>
             <td >
                 Select</td>
@@ -772,7 +740,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>52</td>
+            <td>50</td>
             <td ><code>attributes</code></td>
             <td >
                 Table</td>
@@ -786,6 +754,39 @@ Manufacturer</pre>
 
 
 <a href="/docs/current/models/stock/item_variant_attribute">Item Variant Attribute</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>51</td>
+            <td ><code>defaults</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Defaults
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>52</td>
+            <td ><code>item_defaults</code></td>
+            <td >
+                Table</td>
+            <td >
+                Item Defaults
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/item_default">Item Default</a>
 
 
                 
@@ -890,48 +891,6 @@ Manufacturer</pre>
         
         <tr >
             <td>60</td>
-            <td ><code>buying_cost_center</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Buying Cost Center
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/cost_center">Cost Center</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>61</td>
-            <td ><code>expense_account</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Expense Account
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/account">Account</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>62</td>
             <td ><code>last_purchase_rate</code></td>
             <td >
                 Float</td>
@@ -943,7 +902,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>63</td>
+            <td>61</td>
             <td ><code>supplier_details</code></td>
             <td >
                 Section Break</td>
@@ -955,28 +914,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>64</td>
-            <td ><code>default_supplier</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Supplier
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/buying/supplier">Supplier</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
-            <td>65</td>
+            <td>62</td>
             <td ><code>delivered_by_supplier</code></td>
             <td >
                 Check</td>
@@ -988,7 +926,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>66</td>
+            <td>63</td>
             <td ><code>manufacturer</code></td>
             <td >
                 Link</td>
@@ -1009,7 +947,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>67</td>
+            <td>64</td>
             <td ><code>manufacturer_part_no</code></td>
             <td >
                 Data</td>
@@ -1021,7 +959,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>68</td>
+            <td>65</td>
             <td ><code>column_break2</code></td>
             <td class="info">
                 Column Break</td>
@@ -1033,7 +971,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>69</td>
+            <td>66</td>
             <td ><code>supplier_items</code></td>
             <td >
                 Table</td>
@@ -1054,7 +992,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>70</td>
+            <td>67</td>
             <td ><code>foreign_trade_details</code></td>
             <td >
                 Section Break</td>
@@ -1066,7 +1004,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>71</td>
+            <td>68</td>
             <td ><code>country_of_origin</code></td>
             <td >
                 Link</td>
@@ -1087,7 +1025,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>72</td>
+            <td>69</td>
             <td ><code>column_break_59</code></td>
             <td class="info">
                 Column Break</td>
@@ -1099,7 +1037,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>73</td>
+            <td>70</td>
             <td ><code>customs_tariff_number</code></td>
             <td >
                 Link</td>
@@ -1120,7 +1058,7 @@ Manufacturer</pre>
         </tr>
         
         <tr class="info">
-            <td>74</td>
+            <td>71</td>
             <td ><code>sales_details</code></td>
             <td >
                 Section Break</td>
@@ -1134,7 +1072,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>75</td>
+            <td>72</td>
             <td ><code>sales_uom</code></td>
             <td >
                 Link</td>
@@ -1155,12 +1093,72 @@ Manufacturer</pre>
         </tr>
         
         <tr >
+            <td>73</td>
+            <td ><code>is_sales_item</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Sales Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>74</td>
+            <td ><code>column_break3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>75</td>
+            <td ><code>max_discount</code></td>
+            <td >
+                Float</td>
+            <td >
+                Max Discount (%)
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
             <td>76</td>
-            <td ><code>income_account</code></td>
+            <td ><code>deferred_revenue</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Deferred Revenue
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>77</td>
+            <td ><code>enable_deferred_revenue</code></td>
+            <td >
+                Check</td>
+            <td >
+                Enable Deferred Revenue
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>78</td>
+            <td ><code>deferred_revenue_account</code></td>
             <td >
                 Link</td>
             <td >
-                Default Income Account
+                Deferred Revenue Account
                 
             </td>
             <td>
@@ -1176,20 +1174,8 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>77</td>
-            <td ><code>is_sales_item</code></td>
-            <td >
-                Check</td>
-            <td >
-                Is Sales Item
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>78</td>
-            <td ><code>column_break3</code></td>
+            <td>79</td>
+            <td ><code>column_break_85</code></td>
             <td class="info">
                 Column Break</td>
             <td >
@@ -1200,33 +1186,12 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>79</td>
-            <td ><code>selling_cost_center</code></td>
-            <td >
-                Link</td>
-            <td >
-                Default Selling Cost Center
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/cost_center">Cost Center</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
             <td>80</td>
-            <td ><code>max_discount</code></td>
+            <td ><code>no_of_months</code></td>
             <td >
-                Float</td>
+                Int</td>
             <td >
-                Max Discount (%)
+                No of Months
                 
             </td>
             <td></td>
@@ -1694,6 +1659,42 @@ Manufacturer</pre>
         
         <tr >
             <td>112</td>
+            <td ><code>opening_stock</code></td>
+            <td >
+                Float</td>
+            <td >
+                Opening Stock
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>113</td>
+            <td ><code>valuation_rate</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Valuation Rate
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>114</td>
+            <td ><code>standard_rate</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Standard Selling Rate
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>115</td>
             <td ><code>hub_category_to_publish</code></td>
             <td >
                 Data</td>
@@ -1705,7 +1706,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>113</td>
+            <td>116</td>
             <td ><code>hub_warehouse</code></td>
             <td >
                 Link</td>
@@ -1727,7 +1728,7 @@ Manufacturer</pre>
         </tr>
         
         <tr >
-            <td>114</td>
+            <td>117</td>
             <td ><code>synced_with_hub</code></td>
             <td >
                 Check</td>
@@ -1774,6 +1775,650 @@ Manufacturer</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_default_uom_in_conversion_factor_table" href="#add_default_uom_in_conversion_factor_table" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_default_uom_in_conversion_factor_table</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="add_price" href="#add_price" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>add_price</b>
+        <i class="text-muted">(self, price_list=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Add a new price</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="after_insert" href="#after_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>after_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>set opening stock and item price</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="after_rename" href="#after_rename" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>after_rename</b>
+        <i class="text-muted">(self, old_name, new_name, merge)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="autoname" href="#autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>autoname</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="before_insert" href="#before_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>before_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="before_rename" href="#before_rename" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>before_rename</b>
+        <i class="text-muted">(self, old_name, new_name, merge=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_for_active_boms" href="#check_for_active_boms" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_for_active_boms</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_item_tax" href="#check_item_tax" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_item_tax</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Check whether Tax Rate is not entered twice for same Tax Type</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="copy_specification_from_item_group" href="#copy_specification_from_item_group" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>copy_specification_from_item_group</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="fill_customer_code" href="#fill_customer_code" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>fill_customer_code</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Append all the customer codes and insert into "customer_code" field of item table </p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_context" href="#get_context" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_context</b>
+        <i class="text-muted">(self, context)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="make_route" href="#make_route" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>make_route</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="make_thumbnail" href="#make_thumbnail" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>make_thumbnail</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Make a thumbnail of <code>website_image</code></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_trash" href="#on_trash" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_trash</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update" href="#on_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="onload" href="#onload" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>onload</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="recalculate_bin_qty" href="#recalculate_bin_qty" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>recalculate_bin_qty</b>
+        <i class="text-muted">(self, new_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_asset_naming_series" href="#set_asset_naming_series" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_asset_naming_series</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_attribute_context" href="#set_attribute_context" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_attribute_context</b>
+        <i class="text-muted">(self, context)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_disabled_attributes" href="#set_disabled_attributes" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_disabled_attributes</b>
+        <i class="text-muted">(self, context)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Disable selection options of attribute combinations that do not result in a variant</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_last_purchase_rate" href="#set_last_purchase_rate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_last_purchase_rate</b>
+        <i class="text-muted">(self, new_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_opening_stock" href="#set_opening_stock" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_opening_stock</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>set opening stock</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_variant_context" href="#set_variant_context" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_variant_context</b>
+        <i class="text-muted">(self, context)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="stock_ledger_created" href="#stock_ledger_created" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>stock_ledger_created</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_bom_item_desc" href="#update_bom_item_desc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_bom_item_desc</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_item_price" href="#update_item_price" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_item_price</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_template_item" href="#update_template_item" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_template_item</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Set Show in Website for Template Item if True for its Variant</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_template_tables" href="#update_template_tables" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_template_tables</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_variants" href="#update_variants" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_variants</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_attributes" href="#validate_attributes" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_attributes</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_barcode" href="#validate_barcode" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_barcode</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_conversion_factor" href="#validate_conversion_factor" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_conversion_factor</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_description" href="#validate_description" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_description</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Clean HTML description if set</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_fixed_asset" href="#validate_fixed_asset" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_fixed_asset</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_has_variants" href="#validate_has_variants" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_has_variants</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_item_type" href="#validate_item_type" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_item_type</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_name_with_item_group" href="#validate_name_with_item_group" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_name_with_item_group</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_retain_sample" href="#validate_retain_sample" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_retain_sample</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_stock_exists_for_template_item" href="#validate_stock_exists_for_template_item" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_stock_exists_for_template_item</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_uom" href="#validate_uom" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_uom</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_uom_conversion_factor" href="#validate_uom_conversion_factor" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_uom_conversion_factor</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_variant_attributes" href="#validate_variant_attributes" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_variant_attributes</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_warehouse_for_reorder" href="#validate_warehouse_for_reorder" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_warehouse_for_reorder</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Validate Reorder level table for duplicate and conditional mandatory</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_website_image" href="#validate_website_image" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_website_image</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Validate if the website image is a public file</p>
+</div>
+	<br>
+
         
     </div>
     <hr>
@@ -1832,6 +2477,22 @@ Manufacturer</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.item.item.get_item_defaults" href="#erpnext.stock.doctype.item.item.get_item_defaults" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.item.item.<b>get_item_defaults</b>
+        <i class="text-muted">(item, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="erpnext.stock.doctype.item.item.get_last_purchase_details" href="#erpnext.stock.doctype.item.item.get_last_purchase_details" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.stock.doctype.item.item.<b>get_last_purchase_details</b>
@@ -1854,6 +2515,24 @@ Manufacturer</pre>
         <i class="text-muted">(doctype, name)</i>
     </p>
 	<div class="docs-attr-desc"><p>returns timeline data based on stock ledger entry</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.stock.doctype.item.item.get_uom_conv_factor</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.stock.doctype.item.item.get_uom_conv_factor" href="#erpnext.stock.doctype.item.item.get_uom_conv_factor" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.stock.doctype.item.item.<b>get_uom_conv_factor</b>
+        <i class="text-muted">(uom, stock_uom)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -1997,6 +2676,24 @@ Manufacturer</pre>
 
 
 <a href="/docs/current/models/manufacturing/bom_website_item">BOM Website Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/clinical_procedure_item">Clinical Procedure Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/clinical_procedure_template">Clinical Procedure Template</a>
 
 </li>
 			

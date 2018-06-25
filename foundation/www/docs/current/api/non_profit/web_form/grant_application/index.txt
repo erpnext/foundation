@@ -1,2 +1,2 @@
-erpnext.non_profit.web_form.grant_application.grant_application
 erpnext.non_profit.web_form.grant_application
+erpnext.non_profit.web_form.grant_application.grant_application

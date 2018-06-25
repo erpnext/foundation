@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/assets/doctype/asset_category"
@@ -54,23 +54,6 @@
         
         <tr >
             <td>2</td>
-            <td class="danger" title="Mandatory"><code>depreciation_method</code></td>
-            <td >
-                Select</td>
-            <td >
-                Depreciation Method
-                
-            </td>
-            <td>
-                <pre>
-Straight Line
-Double Declining Balance
-Manual</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>3</td>
             <td ><code>column_break_3</code></td>
             <td class="info">
                 Column Break</td>
@@ -81,32 +64,41 @@ Manual</pre>
             <td></td>
         </tr>
         
-        <tr >
-            <td>4</td>
-            <td class="danger" title="Mandatory"><code>total_number_of_depreciations</code></td>
+        <tr class="info">
+            <td>3</td>
+            <td ><code>finance_book_detail</code></td>
             <td >
-                Int</td>
+                Section Break</td>
             <td >
-                Total Number of Depreciations
+                Finance Book Detail
                 
             </td>
             <td></td>
         </tr>
         
         <tr >
-            <td>5</td>
-            <td class="danger" title="Mandatory"><code>frequency_of_depreciation</code></td>
+            <td>4</td>
+            <td ><code>finance_books</code></td>
             <td >
-                Int</td>
+                Table</td>
             <td >
-                Frequency of Depreciation (Months)
+                Finance Books
                 
             </td>
-            <td></td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/assets/asset_finance_book">Asset Finance Book</a>
+
+
+                
+            </td>
         </tr>
         
         <tr class="info">
-            <td>6</td>
+            <td>5</td>
             <td ><code>section_break_2</code></td>
             <td >
                 Section Break</td>
@@ -118,7 +110,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>6</td>
             <td class="danger" title="Mandatory"><code>accounts</code></td>
             <td >
                 Table</td>
@@ -160,8 +152,40 @@ Manual</pre>
 </div>
     <div style="padding-left: 30px;">
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.assets.doctype.asset_category.asset_category.get_asset_category_account</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.assets.doctype.asset_category.asset_category.get_asset_category_account" href="#erpnext.assets.doctype.asset_category.asset_category.get_asset_category_account" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.assets.doctype.asset_category.asset_category.<b>get_asset_category_account</b>
+        <i class="text-muted">(asset, fieldname, account=None, asset_category=None, company=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 

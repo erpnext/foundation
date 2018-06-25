@@ -1,0 +1,197 @@
+<!-- title: Bank Statement Transaction Invoice Item -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Bank Statement Transaction Invoice Item</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.37</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/bank_statement_transaction_invoice_item"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+<span class="label label-info">Child Table</span>
+
+
+    <p><b>Table Name:</b> <code>tabBank Statement Transaction Invoice Item</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td ><code>transaction_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Transaction Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>payment_description</code></td>
+            <td >
+                Data</td>
+            <td >
+                Payment Description
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>party_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Party Type
+                
+            </td>
+            <td>
+                <pre>Customer
+Supplier
+Account</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>party</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Party
+                
+            </td>
+            <td>
+                <pre>party_type</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td class="danger" title="Mandatory"><code>invoice_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Invoice Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td class="danger" title="Mandatory"><code>invoice_type</code></td>
+            <td >
+                Select</td>
+            <td >
+                Invoice Type
+                
+            </td>
+            <td>
+                <pre>Purchase Invoice
+Sales Invoice
+Journal Entry</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>invoice</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                invoice
+                
+            </td>
+            <td>
+                <pre>invoice_type</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>outstanding_amount</code></td>
+            <td >
+                Data</td>
+            <td >
+                Outstanding Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>allocated_amount</code></td>
+            <td >
+                Data</td>
+            <td >
+                Allocated Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    
+    
+    <h4>Child Table Of</h4>
+    <ul>
+    
+        <li>
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_entry">Bank Statement Transaction Entry</a>
+
+</li>
+    
+    </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

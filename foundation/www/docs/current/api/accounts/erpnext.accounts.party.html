@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/party.py"
@@ -136,7 +136,7 @@ date after considering all the `Payment Term`s requirements.
     </p>
 	<div class="docs-attr-desc"><p>Returns the account for the given <code>party</code>.
         Will first search in party (Customer / Supplier) record, if not found,
-        will search in group (Customer Group / Supplier Type),
+        will search in group (Customer Group / Supplier Group),
         finally will return default.</p>
 </div>
 	<br>
@@ -241,6 +241,22 @@ It returns an empty string if there is no matching record.
 	
         
     
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.party.get_patry_tax_withholding_details" href="#erpnext.accounts.party.get_patry_tax_withholding_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.party.<b>get_patry_tax_withholding_details</b>
+        <i class="text-muted">(ref_doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.accounts.party.get_pyt_term_template</code>
     </p>
@@ -261,12 +277,44 @@ It returns an empty string if there is no matching record.
     
     
 	<p class="docs-attr-name">
+        <a name="erpnext.accounts.party.get_tax_mapper" href="#erpnext.accounts.party.get_tax_mapper" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.party.<b>get_tax_mapper</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="erpnext.accounts.party.get_timeline_data" href="#erpnext.accounts.party.get_timeline_data" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>get_timeline_data</b>
         <i class="text-muted">(doctype, name)</i>
     </p>
 	<div class="docs-attr-desc"><p>returns timeline data for the past one year</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.party.prepare_tax_withholding_details" href="#erpnext.accounts.party.prepare_tax_withholding_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.party.<b>prepare_tax_withholding_details</b>
+        <i class="text-muted">(tax_mapper, tax_withholding_details)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
 	<br>
 
@@ -355,6 +403,22 @@ It returns an empty string if there is no matching record.
 	
         
     
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.party.set_tax_withholding_details" href="#erpnext.accounts.party.set_tax_withholding_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.party.<b>set_tax_withholding_details</b>
+        <i class="text-muted">(tax_mapper, ref_doc, tax_withholding_category=None, use_default=0)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.accounts.party.set_taxes</code>
     </p>
@@ -362,7 +426,7 @@ It returns an empty string if there is no matching record.
         <a name="erpnext.accounts.party.set_taxes" href="#erpnext.accounts.party.set_taxes" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.party.<b>set_taxes</b>
-        <i class="text-muted">(party, party_type, posting_date, company, customer_group=None, supplier_type=None, billing_address=None, shipping_address=None, use_for_shopping_cart=None)</i>
+        <i class="text-muted">(party, party_type, posting_date, company, customer_group=None, supplier_group=None, billing_address=None, shipping_address=None, use_for_shopping_cart=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
