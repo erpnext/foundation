@@ -2,4 +2,3 @@ quotation
 sales-order
 setup
 articles
-blanket-order

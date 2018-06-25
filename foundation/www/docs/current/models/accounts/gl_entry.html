@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/gl_entry"
@@ -302,6 +302,18 @@
         
         <tr >
             <td>17</td>
+            <td ><code>voucher_detail_no</code></td>
+            <td >
+                Data</td>
+            <td >
+                Voucher Detail No
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
             <td ><code>project</code></td>
             <td >
                 Link</td>
@@ -322,7 +334,7 @@
         </tr>
         
         <tr >
-            <td>18</td>
+            <td>19</td>
             <td ><code>remarks</code></td>
             <td >
                 Text</td>
@@ -334,7 +346,7 @@
         </tr>
         
         <tr >
-            <td>19</td>
+            <td>20</td>
             <td ><code>is_opening</code></td>
             <td >
                 Select</td>
@@ -349,7 +361,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>21</td>
             <td ><code>is_advance</code></td>
             <td >
                 Select</td>
@@ -364,7 +376,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>21</td>
+            <td>22</td>
             <td ><code>fiscal_year</code></td>
             <td >
                 Link</td>
@@ -385,7 +397,7 @@ Yes</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>23</td>
             <td ><code>company</code></td>
             <td >
                 Link</td>
@@ -399,6 +411,27 @@ Yes</pre>
 
 
 <a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>finance_book</code></td>
+            <td >
+                Link</td>
+            <td >
+                Finance Book
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/finance_book">Finance Book</a>
 
 
                 
@@ -426,6 +459,146 @@ Yes</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_mandatory" href="#check_mandatory" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_mandatory</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_pl_account" href="#check_pl_account" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_pl_account</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update_with_args" href="#on_update_with_args" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update_with_args</b>
+        <i class="text-muted">(self, adv_adj, update_outstanding=Yes, from_repost=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="pl_must_have_cost_center" href="#pl_must_have_cost_center" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>pl_must_have_cost_center</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_account_details" href="#validate_account_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_account_details</b>
+        <i class="text-muted">(self, adv_adj)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Account must be ledger, active and not freezed</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_and_set_fiscal_year" href="#validate_and_set_fiscal_year" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_and_set_fiscal_year</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_cost_center" href="#validate_cost_center" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_cost_center</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_currency" href="#validate_currency" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_currency</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_party" href="#validate_party" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_party</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
         
     </div>
     <hr>

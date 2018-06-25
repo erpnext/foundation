@@ -1,7 +1,5 @@
 <!-- add-breadcrumbs -->
-# Health Insurance
-
-Health Insurance is an important information attached to Employee.
+# Employee Health Insurance
 
 To create Health Insurance Provider:
 

@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/budget"
@@ -154,40 +154,6 @@ Project</pre>
         
         <tr >
             <td>7</td>
-            <td class="danger" title="Mandatory"><code>action_if_annual_budget_exceeded</code></td>
-            <td >
-                Select</td>
-            <td >
-                Action if Annual Budget Exceeded
-                
-            </td>
-            <td>
-                <pre>
-Stop
-Warn
-Ignore</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>8</td>
-            <td class="danger" title="Mandatory"><code>action_if_accumulated_monthly_budget_exceeded</code></td>
-            <td >
-                Select</td>
-            <td >
-                Action if Accumulated Monthly Budget Exceeded
-                
-            </td>
-            <td>
-                <pre>
-Stop
-Warn
-Ignore</pre>
-            </td>
-        </tr>
-        
-        <tr >
-            <td>9</td>
             <td ><code>monthly_distribution</code></td>
             <td >
                 Link</td>
@@ -208,7 +174,7 @@ Ignore</pre>
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>8</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -229,8 +195,124 @@ Ignore</pre>
         </tr>
         
         <tr class="info">
-            <td>11</td>
+            <td>9</td>
             <td ><code>section_break_6</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Control Section
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>applicable_on_material_request</code></td>
+            <td >
+                Check</td>
+            <td >
+                Applicable on Material Request
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>action_if_annual_budget_exceeded_on_mr</code></td>
+            <td >
+                Select</td>
+            <td >
+                Action if Annual Budget Exceeded on MR
+                
+            </td>
+            <td>
+                <pre>
+Stop
+Warn
+Ignore</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>action_if_accumulated_monthly_budget_exceeded_on_mr</code></td>
+            <td >
+                Select</td>
+            <td >
+                Action if Accumulated Monthly Budget Exceeded on MR
+                
+            </td>
+            <td>
+                <pre>
+Stop
+Warn
+Ignore</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>column_break_13</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>applicable_on_purchase_order</code></td>
+            <td >
+                Check</td>
+            <td >
+                Applicable on Purchase Order
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>action_if_annual_budget_exceeded_on_po</code></td>
+            <td >
+                Select</td>
+            <td >
+                Action if Annual Budget Exceeded on PO
+                
+            </td>
+            <td>
+                <pre>
+Stop
+Warn
+Ignore</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>action_if_accumulated_monthly_budget_exceeded_on_po</code></td>
+            <td >
+                Select</td>
+            <td >
+                Action if Accumulated Monthly Budget Exceeded on PO
+                
+            </td>
+            <td>
+                <pre>
+Stop
+Warn
+Ignore</pre>
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>17</td>
+            <td ><code>section_break_16</code></td>
             <td >
                 Section Break</td>
             <td >
@@ -241,8 +323,54 @@ Ignore</pre>
         </tr>
         
         <tr >
-            <td>12</td>
-            <td class="danger" title="Mandatory"><code>accounts</code></td>
+            <td>18</td>
+            <td ><code>applicable_on_booking_actual_expenses</code></td>
+            <td >
+                Check</td>
+            <td >
+                Applicable on booking actual expenses
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>action_if_annual_budget_exceeded</code></td>
+            <td >
+                Select</td>
+            <td >
+                Action if Annual Budget Exceeded on Actual
+                
+            </td>
+            <td>
+                <pre>
+Stop
+Warn
+Ignore</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>action_if_accumulated_monthly_budget_exceeded</code></td>
+            <td >
+                Select</td>
+            <td >
+                Action if Accumulated Monthly Budget Exceeded on Actual
+                
+            </td>
+            <td>
+                <pre>
+Stop
+Warn
+Ignore</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>accounts</code></td>
             <td >
                 Table</td>
             <td >
@@ -282,6 +410,90 @@ Ignore</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="autoname" href="#autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>autoname</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_null_value" href="#set_null_value" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_null_value</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_accounts" href="#validate_accounts" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_accounts</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_applicable_for" href="#validate_applicable_for" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_applicable_for</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_duplicate" href="#validate_duplicate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_duplicate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
         
     </div>
     <hr>
@@ -326,7 +538,7 @@ Ignore</pre>
         <a name="erpnext.accounts.doctype.budget.budget.compare_expense_with_budget" href="#erpnext.accounts.doctype.budget.budget.compare_expense_with_budget" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.doctype.budget.budget.<b>compare_expense_with_budget</b>
-        <i class="text-muted">(args, budget_amount, action_for, action, budget_against)</i>
+        <i class="text-muted">(args, budget_amount, action_for, action, budget_against, amount=0)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -355,9 +567,121 @@ Ignore</pre>
     
     
 	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.budget.budget.get_actions" href="#erpnext.accounts.doctype.budget.budget.get_actions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.budget.budget.<b>get_actions</b>
+        <i class="text-muted">(args, budget)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="erpnext.accounts.doctype.budget.budget.get_actual_expense" href="#erpnext.accounts.doctype.budget.budget.get_actual_expense" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.doctype.budget.budget.<b>get_actual_expense</b>
+        <i class="text-muted">(args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.budget.budget.get_amount" href="#erpnext.accounts.doctype.budget.budget.get_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.budget.budget.<b>get_amount</b>
+        <i class="text-muted">(args, budget)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.budget.budget.get_expense_cost_center" href="#erpnext.accounts.doctype.budget.budget.get_expense_cost_center" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.budget.budget.<b>get_expense_cost_center</b>
+        <i class="text-muted">(doctype, value)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.budget.budget.get_item_details" href="#erpnext.accounts.doctype.budget.budget.get_item_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.budget.budget.<b>get_item_details</b>
+        <i class="text-muted">(args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.budget.budget.get_ordered_amount" href="#erpnext.accounts.doctype.budget.budget.get_ordered_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.budget.budget.<b>get_ordered_amount</b>
+        <i class="text-muted">(args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.budget.budget.get_project_condiion" href="#erpnext.accounts.doctype.budget.budget.get_project_condiion" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.budget.budget.<b>get_project_condiion</b>
+        <i class="text-muted">(args)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.budget.budget.get_requested_amount" href="#erpnext.accounts.doctype.budget.budget.get_requested_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.budget.budget.<b>get_requested_amount</b>
         <i class="text-muted">(args)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
@@ -390,7 +714,7 @@ Ignore</pre>
         <a name="erpnext.accounts.doctype.budget.budget.validate_expense_against_budget" href="#erpnext.accounts.doctype.budget.budget.validate_expense_against_budget" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.accounts.doctype.budget.budget.<b>validate_expense_against_budget</b>
-        <i class="text-muted">(args)</i>
+        <i class="text-muted">(args, company=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>

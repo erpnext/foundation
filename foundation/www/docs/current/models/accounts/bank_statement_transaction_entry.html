@@ -1,0 +1,786 @@
+<!-- title: Bank Statement Transaction Entry -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Bank Statement Transaction Entry</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.37</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/bank_statement_transaction_entry"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabBank Statement Transaction Entry</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>bank_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Bank Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>from_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                From Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>to_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                To Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>bank_settings</code></td>
+            <td >
+                Link</td>
+            <td >
+                Bank Statement Settings
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/bank_statement_settings">Bank Statement Settings</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>bank</code></td>
+            <td >
+                Link</td>
+            <td >
+                Bank
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/bank">Bank</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td class="danger" title="Mandatory"><code>receivable_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Receivable Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>payable_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Payable Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>bank_statement</code></td>
+            <td >
+                Attach</td>
+            <td >
+                Bank Statement
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>section_break_6</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Bank Transaction Entries
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>new_transaction_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                New Transactions
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_payment_item">Bank Statement Transaction Payment Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>section_break_9</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>match_invoices</code></td>
+            <td >
+                Button</td>
+            <td >
+                Match Transaction to Invoices
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>column_break_14</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>create_payments</code></td>
+            <td >
+                Button</td>
+            <td >
+                Create New Payment/Journal Entry
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>column_break_16</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>submit_payments</code></td>
+            <td >
+                Button</td>
+            <td >
+                Submit/Reconcile Payments
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>18</td>
+            <td ><code>section_break_18</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Matching Invoices
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>payment_invoice_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                Payment Invoice Items
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_invoice_item">Bank Statement Transaction Invoice Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>20</td>
+            <td ><code>reconciled_transactions</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Reconciled Transactions
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>reconciled_transaction_items</code></td>
+            <td >
+                Table</td>
+            <td >
+                Reconciled Transactions
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_payment_item">Bank Statement Transaction Payment Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>amended_from</code></td>
+            <td >
+                Link</td>
+            <td >
+                Amended From
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_entry">Bank Statement Transaction Entry</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>BankStatementTransactionEntry</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="autoname" href="#autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>autoname</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_journal_entry" href="#create_journal_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_journal_entry</b>
+        <i class="text-muted">(self, pe)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_payment_entries" href="#create_payment_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_payment_entries</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_payment_entry" href="#create_payment_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_payment_entry</b>
+        <i class="text-muted">(self, pe)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_settings" href="#create_settings" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_settings</b>
+        <i class="text-muted">(self, bank)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_matching_payments" href="#get_matching_payments" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_matching_payments</b>
+        <i class="text-muted">(self, party, amount, pay_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_statement_headers" href="#get_statement_headers" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_statement_headers</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="map_transactions_on_journal_entry" href="#map_transactions_on_journal_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>map_transactions_on_journal_entry</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="map_unknown_transactions" href="#map_unknown_transactions" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>map_unknown_transactions</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="match_invoice_to_payment" href="#match_invoice_to_payment" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>match_invoice_to_payment</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="move_reconciled_entries" href="#move_reconciled_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>move_reconciled_entries</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update" href="#on_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="populate_matching_invoices" href="#populate_matching_invoices" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>populate_matching_invoices</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="populate_matching_vouchers" href="#populate_matching_vouchers" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>populate_matching_vouchers</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="populate_payment_entries" href="#populate_payment_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>populate_payment_entries</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="submit_payment_entries" href="#submit_payment_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>submit_payment_entries</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_payment_entry" href="#update_payment_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_payment_entry</b>
+        <i class="text-muted">(self, payment)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_header_index" href="#erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_header_index" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.<b>get_header_index</b>
+        <i class="text-muted">(headers, row)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_matching_journal_entries" href="#erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_matching_journal_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.<b>get_matching_journal_entries</b>
+        <i class="text-muted">(from_date, to_date, account, against, amount)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_payments_matching_invoice" href="#erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_payments_matching_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.<b>get_payments_matching_invoice</b>
+        <i class="text-muted">(invoice, amount, pay_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_rows_from_xls_file" href="#erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_rows_from_xls_file" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.<b>get_rows_from_xls_file</b>
+        <i class="text-muted">(filename)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_transaction_entries" href="#erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_transaction_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.<b>get_transaction_entries</b>
+        <i class="text-muted">(filename, headers)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_transaction_info" href="#erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.get_transaction_info" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.<b>get_transaction_info</b>
+        <i class="text-muted">(headers, header_index, row)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.is_headers_present" href="#erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.is_headers_present" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.doctype.bank_statement_transaction_entry.bank_statement_transaction_entry.<b>is_headers_present</b>
+        <i class="text-muted">(headers, row)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/bank_statement_transaction_entry">Bank Statement Transaction Entry</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

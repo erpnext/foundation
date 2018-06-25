@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/utils.py"
@@ -240,6 +240,22 @@
 	
         
     
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.utils.get_doc_name_autoname" href="#erpnext.accounts.utils.get_doc_name_autoname" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.utils.<b>get_doc_name_autoname</b>
+        <i class="text-muted">(field_value, doc_title, name, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p>append title with prefix as number and suffix as company's abbreviation separated by '-' </p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.accounts.utils.get_fiscal_year</code>
     </p>
@@ -266,6 +282,23 @@
         <i class="text-muted">(transaction_date=None, fiscal_year=None, label=Date, verbose=1, company=None, as_dict=False)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.utils.get_held_invoices" href="#erpnext.accounts.utils.get_held_invoices" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.utils.<b>get_held_invoices</b>
+        <i class="text-muted">(party_type, party)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>Returns a list of names Purchase Invoices for the given party that are on hold
+</code></pre>
 </div>
 	<br>
 
@@ -387,6 +420,33 @@
 	
         
     
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.accounts.utils.update_number_field</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.utils.update_number_field" href="#erpnext.accounts.utils.update_number_field" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.utils.<b>update_number_field</b>
+        <i class="text-muted">(doctype_name, name, field_name, field_value, company)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    doctype_name = Name of the DocType
+    name = Docname being referred
+    field_name = Name of the field thats holding the 'number' attribute
+    field_value = Numeric value entered in field_name
+
+    Stores the number entered in the dialog to the DocType's field.
+
+    Renames the document by adding the number as a prefix to the current name and updates
+    all transaction where it was present.
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     
 	<p class="docs-attr-name">
         <a name="erpnext.accounts.utils.update_reference_in_journal_entry" href="#erpnext.accounts.utils.update_reference_in_journal_entry" class="text-muted small">
@@ -428,6 +488,22 @@
         <i class="text-muted">(args)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.accounts.utils.validate_field_number" href="#erpnext.accounts.utils.validate_field_number" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.accounts.utils.<b>validate_field_number</b>
+        <i class="text-muted">(doctype_name, name, field_value, company, field_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Validate if the number entered isn't already assigned to some other document. </p>
 </div>
 	<br>
 

@@ -1,0 +1,564 @@
+<!-- title: Clinical Procedure Template -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Clinical Procedure Template</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.37</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/healthcare/doctype/clinical_procedure_template"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabClinical Procedure Template</code></p>
+
+
+Procedure Template
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>template</code></td>
+            <td >
+                Data</td>
+            <td >
+                Template Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>item_code</code></td>
+            <td >
+                Read Only</td>
+            <td >
+                Item Code
+                
+            </td>
+            <td>
+                <pre>Item</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>item_group</code></td>
+            <td >
+                Link</td>
+            <td >
+                Item Group
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/item_group">Item Group</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>medical_department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Medical Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/medical_department">Medical Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>column_break_5</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>is_billable</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Billable
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>rate</code></td>
+            <td >
+                Float</td>
+            <td >
+                Rate
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>description</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Description
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>9</td>
+            <td ><code>section_break_9</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>consume_stock</code></td>
+            <td >
+                Check</td>
+            <td >
+                Allow Stock Consumption
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>11</td>
+            <td ><code>consumables</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Consumables
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>items</code></td>
+            <td >
+                Table</td>
+            <td >
+                Items
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/clinical_procedure_item">Clinical Procedure Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>13</td>
+            <td ><code>sample_collection</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Sample Collection
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>sample</code></td>
+            <td >
+                Link</td>
+            <td >
+                Sample
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/healthcare/lab_test_sample">Lab Test Sample</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>sample_uom</code></td>
+            <td >
+                Data</td>
+            <td >
+                UOM
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>sample_qty</code></td>
+            <td >
+                Float</td>
+            <td >
+                Quantity
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>column_break_21</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>sample_details</code></td>
+            <td >
+                Small Text</td>
+            <td >
+                Collection Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>change_in_item</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                Change In Item
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>disabled</code></td>
+            <td >
+                Check</td>
+            <td class="text-muted" title="Hidden">
+                Disabled
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>item</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Item
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/item">Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ClinicalProcedureTemplate</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="after_insert" href="#after_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>after_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_item_details" href="#get_item_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_item_details</b>
+        <i class="text-muted">(self, args=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_trash" href="#on_trash" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_trash</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update" href="#on_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.change_item_code_from_template</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.change_item_code_from_template" href="#erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.change_item_code_from_template" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.<b>change_item_code_from_template</b>
+        <i class="text-muted">(item_code, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.create_item_from_template" href="#erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.create_item_from_template" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.<b>create_item_from_template</b>
+        <i class="text-muted">(doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.disable_enable_template</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.disable_enable_template" href="#erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.disable_enable_template" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.<b>disable_enable_template</b>
+        <i class="text-muted">(status, name, item_code)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.make_item_price" href="#erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.make_item_price" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.<b>make_item_price</b>
+        <i class="text-muted">(item, price_list_name, item_price)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.updating_item" href="#erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.updating_item" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.<b>updating_item</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.updating_rate" href="#erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.updating_rate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.healthcare.doctype.clinical_procedure_template.clinical_procedure_template.<b>updating_rate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/clinical_procedure">Clinical Procedure</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/patient_appointment">Patient Appointment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/healthcare/procedure_prescription">Procedure Prescription</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

@@ -6,4 +6,3 @@ setup
 articles
 purchase-taxes
 supplier-scorecard
-blanket-order

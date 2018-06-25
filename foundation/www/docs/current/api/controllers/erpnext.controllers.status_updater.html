@@ -3,7 +3,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/blob/develop/erpnext/controllers/status_updater.py"
@@ -28,6 +28,181 @@
 </code></pre>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="_update_children" href="#_update_children" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>_update_children</b>
+        <i class="text-muted">(self, args, update_modified)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Update quantities or amount in child table</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="_update_modified" href="#_update_modified" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>_update_modified</b>
+        <i class="text-muted">(self, args, update_modified)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="_update_percent_field" href="#_update_percent_field" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>_update_percent_field</b>
+        <i class="text-muted">(self, args, update_modified=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Update percent field in parent transaction</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="_update_percent_field_in_targets" href="#_update_percent_field_in_targets" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>_update_percent_field_in_targets</b>
+        <i class="text-muted">(self, args, update_modified=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Update percent field in parent transaction</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="check_overflow_with_tolerance" href="#check_overflow_with_tolerance" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>check_overflow_with_tolerance</b>
+        <i class="text-muted">(self, item, args)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>        Checks if there is overflow condering a relaxation tolerance
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="limits_crossed_error" href="#limits_crossed_error" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>limits_crossed_error</b>
+        <i class="text-muted">(self, args, item)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Raise exception for limits crossed</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_status" href="#set_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_status</b>
+        <i class="text-muted">(self, update=False, status=None, update_modified=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_billing_status" href="#update_billing_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_billing_status</b>
+        <i class="text-muted">(self, zero_amount_refdoc, ref_dt, ref_fieldname)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_billing_status_for_zero_amount_refdoc" href="#update_billing_status_for_zero_amount_refdoc" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_billing_status_for_zero_amount_refdoc</b>
+        <i class="text-muted">(self, ref_dt)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_prevdoc_status" href="#update_prevdoc_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_prevdoc_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_qty" href="#update_qty" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_qty</b>
+        <i class="text-muted">(self, update_modified=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Updates qty or amount at row level</p>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><strong><code>update_modified</code></strong> -  If true, updates <code>modified</code> and <code>modified_by</code> for target parent doc</li>
+</ul>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_qty" href="#validate_qty" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_qty</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Validates qty at row level</p>
+</div>
+	<br>
+
         
     </div>
     <hr>

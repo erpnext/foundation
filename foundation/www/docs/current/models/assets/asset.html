@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/assets/doctype/asset"
@@ -42,6 +42,21 @@
         
         <tr >
             <td>1</td>
+            <td ><code>naming_series</code></td>
+            <td >
+                Select</td>
+            <td >
+                Naming Series
+                
+            </td>
+            <td>
+                <pre>AST
+AT</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
             <td class="danger" title="Mandatory"><code>asset_name</code></td>
             <td >
                 Data</td>
@@ -53,7 +68,7 @@
         </tr>
         
         <tr >
-            <td>2</td>
+            <td>3</td>
             <td class="danger" title="Mandatory"><code>item_code</code></td>
             <td >
                 Link</td>
@@ -74,7 +89,7 @@
         </tr>
         
         <tr >
-            <td>3</td>
+            <td>4</td>
             <td ><code>item_name</code></td>
             <td >
                 Read Only</td>
@@ -82,13 +97,11 @@
                 Item Name
                 
             </td>
-            <td>
-                <pre>item_code.item_name</pre>
-            </td>
+            <td></td>
         </tr>
         
         <tr >
-            <td>4</td>
+            <td>5</td>
             <td ><code>asset_category</code></td>
             <td >
                 Link</td>
@@ -105,27 +118,6 @@
 
 
                 
-            </td>
-        </tr>
-        
-        <tr >
-            <td>5</td>
-            <td ><code>status</code></td>
-            <td >
-                Select</td>
-            <td >
-                Status
-                
-            </td>
-            <td>
-                <pre>Draft
-Submitted
-Partially Depreciated
-Fully Depreciated
-Sold
-Scrapped
-In Maintenance
-Out of Order</pre>
             </td>
         </tr>
         
@@ -256,11 +248,11 @@ Customer</pre>
         
         <tr >
             <td>13</td>
-            <td class="danger" title="Mandatory"><code>warehouse</code></td>
+            <td class="danger" title="Mandatory"><code>location</code></td>
             <td >
                 Link</td>
             <td >
-                Warehouse
+                Location
                 
             </td>
             <td>
@@ -268,7 +260,7 @@ Customer</pre>
                 
 
 
-<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+<a href="/docs/current/models/assets/location">Location</a>
 
 
                 
@@ -277,6 +269,27 @@ Customer</pre>
         
         <tr >
             <td>14</td>
+            <td ><code>custodian</code></td>
+            <td >
+                Link</td>
+            <td >
+                Custodian
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/employee">Employee</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
             <td ><code>department</code></td>
             <td >
                 Link</td>
@@ -297,7 +310,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>16</td>
             <td class="danger" title="Mandatory"><code>purchase_date</code></td>
             <td >
                 Date</td>
@@ -309,52 +322,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>16</td>
-            <td ><code>purchase_invoice</code></td>
-            <td >
-                Link</td>
-            <td >
-                Purchase Invoice
-                
-            </td>
-            <td>
-                
-                
-
-
-<a href="/docs/current/models/accounts/purchase_invoice">Purchase Invoice</a>
-
-
-                
-            </td>
-        </tr>
-        
-        <tr >
             <td>17</td>
-            <td ><code>available_for_use_date</code></td>
-            <td >
-                Date</td>
-            <td >
-                Available-for-use Date
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>18</td>
-            <td ><code>is_existing_asset</code></td>
-            <td >
-                Check</td>
-            <td >
-                Is Existing Asset
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>19</td>
             <td ><code>disposal_date</code></td>
             <td >
                 Date</td>
@@ -366,7 +334,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>20</td>
+            <td>18</td>
             <td ><code>journal_entry_for_scrap</code></td>
             <td >
                 Link</td>
@@ -387,7 +355,7 @@ Customer</pre>
         </tr>
         
         <tr class="info">
-            <td>21</td>
+            <td>19</td>
             <td ><code>section_break_5</code></td>
             <td >
                 Section Break</td>
@@ -399,7 +367,7 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>22</td>
+            <td>20</td>
             <td class="danger" title="Mandatory"><code>gross_purchase_amount</code></td>
             <td >
                 Currency</td>
@@ -413,7 +381,19 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>23</td>
+            <td>21</td>
+            <td ><code>available_for_use_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Available-for-use Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
             <td ><code>column_break_18</code></td>
             <td class="info">
                 Column Break</td>
@@ -425,17 +405,27 @@ Customer</pre>
         </tr>
         
         <tr >
-            <td>24</td>
-            <td ><code>expected_value_after_useful_life</code></td>
+            <td>23</td>
+            <td ><code>calculate_depreciation</code></td>
             <td >
-                Currency</td>
+                Check</td>
             <td >
-                Expected Value After Useful Life
+                Calculate Depreciation
                 
             </td>
-            <td>
-                <pre>Company:company:default_currency</pre>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>is_existing_asset</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Existing Asset
+                
             </td>
+            <td></td>
         </tr>
         
         <tr >
@@ -452,32 +442,20 @@ Customer</pre>
             </td>
         </tr>
         
-        <tr class="info">
-            <td>26</td>
-            <td ><code>section_break_20</code></td>
-            <td >
-                Section Break</td>
-            <td >
-                
-                
-            </td>
-            <td></td>
-        </tr>
-        
         <tr >
-            <td>27</td>
-            <td ><code>calculate_depreciation</code></td>
+            <td>26</td>
+            <td ><code>number_of_depreciations_booked</code></td>
             <td >
-                Check</td>
+                Int</td>
             <td >
-                Calculate Depreciation
+                Number of Depreciations Booked
                 
             </td>
             <td></td>
         </tr>
         
         <tr class="info">
-            <td>28</td>
+            <td>27</td>
             <td ><code>section_break_23</code></td>
             <td >
                 Section Break</td>
@@ -489,7 +467,40 @@ Customer</pre>
         </tr>
         
         <tr >
+            <td>28</td>
+            <td ><code>finance_books</code></td>
+            <td >
+                Table</td>
+            <td >
+                Finance Books
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/assets/asset_finance_book">Asset Finance Book</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
             <td>29</td>
+            <td ><code>section_break_33</code></td>
+            <td >
+                Section Break</td>
+            <td class="text-muted" title="Hidden">
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>30</td>
             <td ><code>depreciation_method</code></td>
             <td >
                 Select</td>
@@ -506,7 +517,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>30</td>
+            <td>31</td>
             <td ><code>value_after_depreciation</code></td>
             <td >
                 Currency</td>
@@ -520,7 +531,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>31</td>
+            <td>32</td>
             <td ><code>total_number_of_depreciations</code></td>
             <td >
                 Int</td>
@@ -532,24 +543,12 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>32</td>
+            <td>33</td>
             <td ><code>column_break_24</code></td>
             <td class="info">
                 Column Break</td>
             <td >
                 
-                
-            </td>
-            <td></td>
-        </tr>
-        
-        <tr >
-            <td>33</td>
-            <td ><code>number_of_depreciations_booked</code></td>
-            <td >
-                Int</td>
-            <td >
-                Number of Depreciations Booked
                 
             </td>
             <td></td>
@@ -614,6 +613,102 @@ Manual</pre>
         
         <tr class="info">
             <td>38</td>
+            <td ><code>insurance_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Insurance details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>39</td>
+            <td ><code>policy_number</code></td>
+            <td >
+                Data</td>
+            <td >
+                Policy number
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>40</td>
+            <td ><code>insurer</code></td>
+            <td >
+                Data</td>
+            <td >
+                Insurer
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>41</td>
+            <td ><code>insured_value</code></td>
+            <td >
+                Data</td>
+            <td >
+                Insured value
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>42</td>
+            <td ><code>column_break_48</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>43</td>
+            <td ><code>insurance_start_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Insurance Start Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>44</td>
+            <td ><code>insurance_end_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                Insurance End Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>45</td>
+            <td ><code>comprehensive_insurance</code></td>
+            <td >
+                Data</td>
+            <td >
+                Comprehensive Insurance
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>46</td>
             <td ><code>section_break_31</code></td>
             <td >
                 Section Break</td>
@@ -625,7 +720,7 @@ Manual</pre>
         </tr>
         
         <tr >
-            <td>39</td>
+            <td>47</td>
             <td ><code>maintenance_required</code></td>
             <td >
                 Check</td>
@@ -637,8 +732,121 @@ Manual</pre>
             <td></td>
         </tr>
         
+        <tr class="info">
+            <td>48</td>
+            <td ><code>other_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Other Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
         <tr >
-            <td>40</td>
+            <td>49</td>
+            <td ><code>status</code></td>
+            <td >
+                Select</td>
+            <td >
+                Status
+                
+            </td>
+            <td>
+                <pre>Draft
+Submitted
+Partially Depreciated
+Fully Depreciated
+Sold
+Scrapped
+In Maintenance
+Out of Order
+Issue
+Receipt</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>50</td>
+            <td ><code>booked_fixed_asset</code></td>
+            <td >
+                Check</td>
+            <td >
+                Booked Fixed Asset
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>51</td>
+            <td ><code>column_break_51</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>52</td>
+            <td ><code>purchase_receipt</code></td>
+            <td >
+                Link</td>
+            <td >
+                Purchase Receipt
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/purchase_receipt">Purchase Receipt</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>53</td>
+            <td ><code>purchase_receipt_amount</code></td>
+            <td >
+                Currency</td>
+            <td class="text-muted" title="Hidden">
+                Purchase Receipt Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>54</td>
+            <td ><code>purchase_invoice</code></td>
+            <td >
+                Link</td>
+            <td >
+                Purchase Invoice
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/purchase_invoice">Purchase Invoice</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>55</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -674,14 +882,312 @@ Manual</pre>
         
 	<h3 style="font-weight: normal;">Class <b>Asset</b></h3>
     
-    <p style="padding-left: 30px;"><i>Inherits from frappe.model.document.Document</i></h4>
+    <p style="padding-left: 30px;"><i>Inherits from erpnext.controllers.accounts_controller.AccountsController</i></h4>
     
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
         
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="delete_depreciation_entries" href="#delete_depreciation_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>delete_depreciation_entries</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_depreciation_amount" href="#get_depreciation_amount" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_depreciation_amount</b>
+        <i class="text-muted">(self, depreciable_value, total_number_of_depreciations, row)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_depreciation_amount_prorata_temporis" href="#get_depreciation_amount_prorata_temporis" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_depreciation_amount_prorata_temporis</b>
+        <i class="text-muted">(self, depreciable_value, row, start_date=None, end_date=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_status" href="#get_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Returns status based on whether it is draft, submitted, scrapped or depreciated</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_value_after_depreciation" href="#get_value_after_depreciation" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_value_after_depreciation</b>
+        <i class="text-muted">(self, idx)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="make_depreciation_schedule" href="#make_depreciation_schedule" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>make_depreciation_schedule</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="make_gl_entries" href="#make_gl_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>make_gl_entries</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_cancel" href="#on_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_cancel</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_submit" href="#on_submit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_submit</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_accumulated_depreciation" href="#set_accumulated_depreciation" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_accumulated_depreciation</b>
+        <i class="text-muted">(self, ignore_booked_entry=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_missing_values" href="#set_missing_values" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_missing_values</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_status" href="#set_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_status</b>
+        <i class="text-muted">(self, status=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p>Get and update status</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_stock_movement" href="#update_stock_movement" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_stock_movement</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_asset_finance_books" href="#validate_asset_finance_books" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_asset_finance_books</b>
+        <i class="text-muted">(self, row)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_asset_values" href="#validate_asset_values" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_asset_values</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_cancellation" href="#validate_cancellation" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_cancellation</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_expected_value_after_useful_life" href="#validate_expected_value_after_useful_life" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_expected_value_after_useful_life</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_in_use_date" href="#validate_in_use_date" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_in_use_date</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_item" href="#validate_item" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_item</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
     </div>
     <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.assets.doctype.asset.asset.create_asset_adjustment</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.assets.doctype.asset.asset.create_asset_adjustment" href="#erpnext.assets.doctype.asset.asset.create_asset_adjustment" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.assets.doctype.asset.asset.<b>create_asset_adjustment</b>
+        <i class="text-muted">(asset, asset_category, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
 
 	
 
@@ -706,6 +1212,38 @@ Manual</pre>
 	
         
     
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.assets.doctype.asset.asset.get_asset_account" href="#erpnext.assets.doctype.asset.asset.get_asset_account" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.assets.doctype.asset.asset.<b>get_asset_account</b>
+        <i class="text-muted">(account_name, asset=None, asset_category=None, company=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.assets.doctype.asset.asset.get_asset_naming_series" href="#erpnext.assets.doctype.asset.asset.get_asset_naming_series" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.assets.doctype.asset.asset.<b>get_asset_naming_series</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
     <p><span class="label label-info">Public API</span>
         <br><code>/api/method/erpnext.assets.doctype.asset.asset.get_item_details</code>
     </p>
@@ -713,7 +1251,23 @@ Manual</pre>
         <a name="erpnext.assets.doctype.asset.asset.get_item_details" href="#erpnext.assets.doctype.asset.asset.get_item_details" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.assets.doctype.asset.asset.<b>get_item_details</b>
-        <i class="text-muted">(item_code)</i>
+        <i class="text-muted">(item_code, asset_category=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="erpnext.assets.doctype.asset.asset.make_post_gl_entry" href="#erpnext.assets.doctype.asset.asset.make_post_gl_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.assets.doctype.asset.asset.<b>make_post_gl_entry</b>
+        <i class="text-muted">()</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -749,7 +1303,7 @@ Manual</pre>
         <a name="erpnext.assets.doctype.asset.asset.make_sales_invoice" href="#erpnext.assets.doctype.asset.asset.make_sales_invoice" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.assets.doctype.asset.asset.<b>make_sales_invoice</b>
-        <i class="text-muted">(asset, item_code, company)</i>
+        <i class="text-muted">(asset, item_code, company, serial_no=None)</i>
     </p>
 	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
 </div>
@@ -810,6 +1364,15 @@ Manual</pre>
             <li>
 
 
+<a href="/docs/current/models/assets/asset_adjustment">Asset Adjustment</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/assets/asset_maintenance">Asset Maintenance</a>
 
 </li>
@@ -846,7 +1409,25 @@ Manual</pre>
             <li>
 
 
+<a href="/docs/current/models/stock/purchase_receipt_item">Purchase Receipt Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/accounts/sales_invoice_item">Sales Invoice Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/serial_no">Serial No</a>
 
 </li>
 			

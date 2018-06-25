@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/hr/doctype/leave_allocation"
@@ -89,6 +89,27 @@
         
         <tr >
             <td>4</td>
+            <td ><code>department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
             <td ><code>column_break1</code></td>
             <td class="info">
                 Column Break</td>
@@ -100,7 +121,7 @@
         </tr>
         
         <tr >
-            <td>5</td>
+            <td>6</td>
             <td ><code>description</code></td>
             <td >
                 Small Text</td>
@@ -112,7 +133,7 @@
         </tr>
         
         <tr class="info">
-            <td>6</td>
+            <td>7</td>
             <td ><code>section_break_6</code></td>
             <td >
                 Section Break</td>
@@ -124,7 +145,7 @@
         </tr>
         
         <tr >
-            <td>7</td>
+            <td>8</td>
             <td class="danger" title="Mandatory"><code>leave_type</code></td>
             <td >
                 Link</td>
@@ -145,7 +166,7 @@
         </tr>
         
         <tr >
-            <td>8</td>
+            <td>9</td>
             <td class="danger" title="Mandatory"><code>from_date</code></td>
             <td >
                 Date</td>
@@ -157,7 +178,7 @@
         </tr>
         
         <tr >
-            <td>9</td>
+            <td>10</td>
             <td class="danger" title="Mandatory"><code>to_date</code></td>
             <td >
                 Date</td>
@@ -169,7 +190,7 @@
         </tr>
         
         <tr >
-            <td>10</td>
+            <td>11</td>
             <td ><code>column_break_10</code></td>
             <td class="info">
                 Column Break</td>
@@ -181,7 +202,7 @@
         </tr>
         
         <tr >
-            <td>11</td>
+            <td>12</td>
             <td ><code>new_leaves_allocated</code></td>
             <td >
                 Float</td>
@@ -193,7 +214,7 @@
         </tr>
         
         <tr >
-            <td>12</td>
+            <td>13</td>
             <td ><code>carry_forward</code></td>
             <td >
                 Check</td>
@@ -205,7 +226,7 @@
         </tr>
         
         <tr >
-            <td>13</td>
+            <td>14</td>
             <td ><code>carry_forwarded_leaves</code></td>
             <td >
                 Float</td>
@@ -217,7 +238,7 @@
         </tr>
         
         <tr >
-            <td>14</td>
+            <td>15</td>
             <td class="danger" title="Mandatory"><code>total_leaves_allocated</code></td>
             <td >
                 Float</td>
@@ -229,7 +250,61 @@
         </tr>
         
         <tr >
-            <td>15</td>
+            <td>16</td>
+            <td ><code>total_leaves_encashed</code></td>
+            <td >
+                Float</td>
+            <td >
+                Total Leaves Encashed
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>compensatory_request</code></td>
+            <td >
+                Link</td>
+            <td >
+                Compensatory Leave Request
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/compensatory_leave_request">Compensatory Leave Request</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>leave_period</code></td>
+            <td >
+                Link</td>
+            <td >
+                Leave Period
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/leave_period">Leave Period</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
             <td ><code>amended_from</code></td>
             <td >
                 Link</td>
@@ -285,6 +360,160 @@
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update_after_submit" href="#on_update_after_submit" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update_after_submit</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_total_leaves_allocated" href="#set_total_leaves_allocated" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_total_leaves_allocated</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_against_leave_applications" href="#validate_against_leave_applications" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_against_leave_applications</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_allocation_overlap" href="#validate_allocation_overlap" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_allocation_overlap</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_back_dated_allocation" href="#validate_back_dated_allocation" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_back_dated_allocation</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_leave_allocation_days" href="#validate_leave_allocation_days" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_leave_allocation_days</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_lwp" href="#validate_lwp" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_lwp</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_new_leaves_allocated_value" href="#validate_new_leaves_allocated_value" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_new_leaves_allocated_value</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p>validate that leave allocation is in multiples of 0.5</p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_period" href="#validate_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_period</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_total_leaves_allocated" href="#validate_total_leaves_allocated" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_total_leaves_allocated</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
         
     </div>
     <hr>
@@ -374,6 +603,22 @@
     
     
 	<p class="docs-attr-name">
+        <a name="erpnext.hr.doctype.leave_allocation.leave_allocation.get_leave_allocation_for_period" href="#erpnext.hr.doctype.leave_allocation.leave_allocation.get_leave_allocation_for_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.hr.doctype.leave_allocation.leave_allocation.<b>get_leave_allocation_for_period</b>
+        <i class="text-muted">(employee, leave_type, from_date, to_date)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
         <a name="erpnext.hr.doctype.leave_allocation.leave_allocation.validate_carry_forward" href="#erpnext.hr.doctype.leave_allocation.leave_allocation.validate_carry_forward" class="text-muted small">
             <i class="fa fa-link small" style="color: #ccc;"></i></a>
 		erpnext.hr.doctype.leave_allocation.leave_allocation.<b>validate_carry_forward</b>
@@ -395,7 +640,25 @@
             <li>
 
 
+<a href="/docs/current/models/hr/compensatory_leave_request">Compensatory Leave Request</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
 <a href="/docs/current/models/hr/leave_allocation">Leave Allocation</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_encashment">Leave Encashment</a>
 
 </li>
 			

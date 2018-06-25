@@ -2,7 +2,7 @@
 <!-- add-breadcrumbs -->
 # ERPNext for Education
 
-The Education domain in ERPNext is designed to meet requirements of any organization which imparts knowledge and believe in doing it in an organized fashion. It has already been used at the schools, colleges and even at the private firms. 
+The Education domain in ERPNext is designed to meet requirements of any organization which imparts knowledge and believe in doing it in an organized fashion. It has already been used at the schools, colleges and even at the private firms.
 
 It helps you effectively manage administrative side and allows you to focus on what is most important for your institute, **to educate!**
 

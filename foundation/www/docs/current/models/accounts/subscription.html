@@ -9,7 +9,7 @@
 <div class="dev-header">
 
 <a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
-	Version 10.1.31</a>
+	Version 10.1.37</a>
 
 
 	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/accounts/doctype/subscription"
@@ -385,6 +385,461 @@ Net total</pre>
     <div class="docs-attr-desc"><p></p>
 </div>
     <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="after_insert" href="#after_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>after_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="before_insert" href="#before_insert" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>before_insert</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="cancel_subscription" href="#cancel_subscription" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>cancel_subscription</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    This sets the subscription as cancelled. It will stop invoices from being generated
+    but it will not affect already created invoices.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="cancel_subscription_at_period_end" href="#cancel_subscription_at_period_end" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>cancel_subscription_at_period_end</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Called when `Subscription.cancel_at_period_end` is truthy
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="create_invoice" href="#create_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>create_invoice</b>
+        <i class="text-muted">(self, prorate)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Creates a `Sales Invoice`, submits it and returns it
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="current_invoice_is_past_due" href="#current_invoice_is_past_due" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>current_invoice_is_past_due</b>
+        <i class="text-muted">(self, current_invoice=None)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns `True` if the current generated invoice is overdue
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="generate_invoice" href="#generate_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>generate_invoice</b>
+        <i class="text-muted">(self, prorate=0)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Creates a `Sales Invoice` for the `Subscription`, updates `self.invoices` and
+    saves the `Subscription`.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_billing_cycle" href="#get_billing_cycle" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_billing_cycle</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns a dict containing billing cycle information deduced from the
+    `Subscription Plan` in the `Subscription`.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_billing_cycle_and_interval" href="#get_billing_cycle_and_interval" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_billing_cycle_and_interval</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns a dict representing the billing interval and cycle for this `Subscription`.
+
+    You shouldn't need to call this directly. Use `get_billing_cycle` instead.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_billing_cycle_data" href="#get_billing_cycle_data" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_billing_cycle_data</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns dict contain the billing cycle data.
+
+    You shouldn't need to call this directly. Use `get_billing_cycle` instead.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_current_invoice" href="#get_current_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_current_invoice</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns the most recent generated invoice.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_items_from_plans" href="#get_items_from_plans" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_items_from_plans</b>
+        <i class="text-muted">(self, plans, prorate=0)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns the `Item`s linked to `Subscription Plan`
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="get_precision" href="#get_precision" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>get_precision</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="has_outstanding_invoice" href="#has_outstanding_invoice" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>has_outstanding_invoice</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns `True` if the most recent invoice for the `Subscription` is not paid
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="is_new_subscription" href="#is_new_subscription" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>is_new_subscription</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns `True` if `Subscription` has never generated an invoice
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="is_past_grace_period" href="#is_past_grace_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>is_past_grace_period</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns `True` if the grace period for the `Subscription` has passed
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="is_trialling" href="#is_trialling" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>is_trialling</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Returns `True` if the `Subscription` is trial period.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="process" href="#process" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>process</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    To be called by task periodically. It checks the subscription and takes appropriate action
+    as need be. It calls either of these methods depending the `Subscription` status:
+    1. `process_for_active`
+    2. `process_for_past_due`
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="process_for_active" href="#process_for_active" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>process_for_active</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Called by `process` if the status of the `Subscription` is 'Active'.
+
+    The possible outcomes of this method are:
+    1. Generate a new invoice
+    2. Change the `Subscription` status to 'Past Due Date'
+    3. Change the `Subscription` status to 'Cancelled'
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="process_for_past_due_date" href="#process_for_past_due_date" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>process_for_past_due_date</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Called by `process` if the status of the `Subscription` is 'Past Due Date'.
+
+    The possible outcomes of this method are:
+    1. Change the `Subscription` status to 'Active'
+    2. Change the `Subscription` status to 'Cancelled'
+    3. Change the `Subscription` status to 'Unpaid'
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="restart_subscription" href="#restart_subscription" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>restart_subscription</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    This sets the subscription as active. The subscription will be made to be like a new
+    subscription and the `Subscription` will lose all the history of generated invoices
+    it has.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_current_invoice_end" href="#set_current_invoice_end" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_current_invoice_end</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    This sets the date of the end of the current billing period.
+
+    If the subscription is in trial period, it will be set as the end of the
+    trial period.
+
+    If is not in a trial period, it will be `x` days from the beginning of the
+    current billing period where `x` is the billing interval from the
+    `Subscription Plan` in the `Subscription`.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_current_invoice_start" href="#set_current_invoice_start" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_current_invoice_start</b>
+        <i class="text-muted">(self, date=None)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    This sets the date of the beginning of the current billing period.
+    If the `date` parameter is not given , it will be automatically set as today's
+    date.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_status_grace_period" href="#set_status_grace_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_status_grace_period</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Sets the `Subscription` `status` based on the preference set in `Subscription Settings`.
+
+    Used when the `Subscription` needs to decide what to do after the current generated
+    invoice is past it's due date and grace period.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="set_subscription_status" href="#set_subscription_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>set_subscription_status</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Sets the status of the `Subscription`
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="update_subscription_period" href="#update_subscription_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>update_subscription_period</b>
+        <i class="text-muted">(self, date=None)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Subscription period is the period to be billed. This method updates the
+    beginning of the billing period and end of the billing period.
+
+    The beginning of the billing period is represented in the doctype as
+    `current_invoice_start` and the end of the billing period is represented
+    as `current_invoice_end`.
+</code></pre>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate" href="#validate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="validate_trial_period" href="#validate_trial_period" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>validate_trial_period</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    Runs sanity checks on trial period dates for the `Subscription`
+</code></pre>
+</div>
+	<br>
+
         
     </div>
     <hr>

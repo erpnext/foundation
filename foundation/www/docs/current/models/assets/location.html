@@ -1,0 +1,281 @@
+<!-- title: Location -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Location</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.37</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/frappe/erpnext/tree/develop/erpnext/assets/doctype/location"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabLocation</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>location_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Location Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>is_group</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Group
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>parent_location</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Parent Location
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/assets/location">Location</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>lft</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                lft
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>rgt</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                rgt
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>old_parent</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Old Parent
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>erpnext.assets.doctype.location.location</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Location</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from frappe.utils.nestedset.NestedSet</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_trash" href="#on_trash" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_trash</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="on_update" href="#on_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		<b>on_update</b>
+        <i class="text-muted">(self)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.assets.doctype.location.location.add_node</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.assets.doctype.location.location.add_node" href="#erpnext.assets.doctype.location.location.add_node" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.assets.doctype.location.location.<b>add_node</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/erpnext.assets.doctype.location.location.get_children</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="erpnext.assets.doctype.location.location.get_children" href="#erpnext.assets.doctype.location.location.get_children" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		erpnext.assets.doctype.location.location.<b>get_children</b>
+        <i class="text-muted">(doctype, parent=None, location=None, is_root=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/asset">Asset</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/asset_movement">Asset Movement</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/location">Location</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/purchase_invoice_item">Purchase Invoice Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/purchase_receipt_item">Purchase Receipt Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/serial_no">Serial No</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->
