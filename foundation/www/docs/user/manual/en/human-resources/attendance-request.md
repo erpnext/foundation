@@ -17,7 +17,7 @@ Just go to,
   
 You can see in the below image, Attendance records are linked with Attendance Request which was submitted.
   
- <img class="screenshot"  alt="Attendance Request Linked" src="{{docs_base_url}}/assets/img/human-resources/attendance-request-linked.png">
+ <img class="screenshot"  alt="Attendance Request Linked" src="{{docs_base_url}}/assets/img/human-resources/attendance-request-link.png">
  
 So, if you cancel the Attendance request, the linked Attendance documents created will be cancelled as well.
 
