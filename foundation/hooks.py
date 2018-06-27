@@ -93,6 +93,8 @@ portal_menu_items = [
 	{'label': 'Apps', 'route': '/submit-app'},
 ]
 
+look_for_sidebar_json = True
+
 # Installation
 # ------------
 
