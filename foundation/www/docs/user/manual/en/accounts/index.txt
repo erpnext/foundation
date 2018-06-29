@@ -11,6 +11,7 @@ payments
 journal-entry
 inter-company-journal-entry
 payment-entry
+deferred-revenue
 subscription
 multi-currency-accounting
 advance-payment-entry
