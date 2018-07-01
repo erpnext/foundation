@@ -24,7 +24,7 @@ Staffing Plan helps you to plan human resource recruitments for your Company. ER
 
 You can make a record of the open vacancies in your company using Job Opening. The number of Job Openings you can create for a Designation is restricted according to the Vacancies planned by the Staffing Plan defined for the company or it's parent group company in the hierarchy.
 
-To create a new Job Opening go to
+To create a new [Job Opening](/docs/user/manual/en/human-resources/job-opening.html) go to
 
 > Human Resource > Recruitment > Job Opening > New
 
