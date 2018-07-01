@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
 # Job Offer
 
-Job Offer is given to candidate after Interview & selection which states the offered salary package, 
+Job Offer is given to selected candidates after Interview & selection which states the offered salary package,
 designation, grade, department working, no of days entitled for leave.
 
-In ERPNext you can make a record of the Job Offers that you can given to candidates. To create a new Job Offer go to 
+In ERPNext you can make a record of the Job Offers that you can give to candidates. To create a new Job Offer go to
 
-> Human Resource > Job Offer > New
+> Human Resource > Recruitment > Job Offer > New
 
 <img class="screenshot" alt="Job Offer" src="{{docs_base_url}}/assets/img/human-resources/job-offer.png">
 

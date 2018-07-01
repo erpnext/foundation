@@ -1,4 +1,6 @@
-<!-- add-breadcrumbs -->
+# Recruitment
+It is important for enterprises to plan their manpower recruitment for future periods. ERPNext helps you create recruitment plans and create and publish job openings accordingly, making it easy to manage your hiring process.
+
 # Staffing Plan
 Staffing Plan helps you to plan human resource recruitments for your Company. ERPNext allows you to do this at a group company level helping you efficiently plan and budget new hirings for a period. Job Openings can only be created as per the number of vacancies and budget as per the active Staffing Plan.
 
@@ -16,4 +18,16 @@ Staffing Plan helps you to plan human resource recruitments for your Company. ER
 <img class="screenshot" alt="Staffing Plan Detail"
 	src="{{docs_base_url}}/assets/img/human-resources/staffing-plan-detail.png">
 
-**Total Estimated Budget** Once you enter the recruitment plan for all the designations, Staffing Plan will draw up the total estimated budget.
+**Total Estimated Budget** Once you enter the recruitment plan for all the designations, Staffing Plan will draw up the total estimated budget as per the plan.
+
+# Job Opening
+
+You can make a record of the open vacancies in your company using Job Opening. The number of Job Openings you can create for a Designation is restricted according to the Vacancies planned by the Staffing Plan defined for the company or it's parent group company in the hierarchy.
+
+To create a new Job Opening go to
+
+> Human Resource > Recruitment > Job Opening > New
+
+<img class="screenshot" alt="Job Opening" src="{{docs_base_url}}/assets/img/human-resources/job-opening.png">
+
+{next}
