@@ -2,11 +2,7 @@
 #Setting Up Income Tax Deduction
 Calculating Tax deductions for employees every month is a time consuming activity for most businesses, especially for large enterprises. If setup properly, ERPNext simplifies most of the tax related calculations by automatically calculating tax deductions while generating Salary Slips. Here's how you can configure ERPNext to ease you payroll processing -
 
-#Payroll Period
-
-
 #Income Tax Exemption
-
 In many countries, especially in India, regulations allow exempting a part (or all) of some type of spendings by individuals from being added to their annual taxable income. Examples of such spendings could be contributions to charitable institutions, amount spent for education of children, specific investments etc. To
 avail the exemption from their taxable income, individuals are required to submit proof of such spendings.
 
@@ -40,17 +36,27 @@ For the fiscal year 2018-19, in India, House Rent Allowance (HRA) exemption from
 
  As part of the Employee Tax Exemption Declaration, employees shall also fill out the HRA Exemption. ERPNext will calculate the exemption eligible for HRA and exempt it while calculating the taxable earnings.
 
- > Note: HRA component shall be configured in Company for HRA exemption to work
+ > Note: Basic and HRA salary component shall be configured in Company for HRA exemption to work
 
-###Options in Payroll Entry
+###Options in Payroll Entry and Salary Slip
 ERPNext simplifies payroll processing by automatically processing payroll in bulk via [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry.html).
 
 * Deduct Tax For Unclaimed Employee Benefits: Flexible benefits (Salary Components which are **Is Flexible Benefit**) are not included in the taxable income of the employee. However, the amount received for these components will be included in the taxable earnings of the employee if she fails to submit [Employee Benefit Claim](/docs/user/manual/en/human-resources/employee-benefit-claim.html) while calculating tax in the last payroll of the Payroll Period.
 
 If you wish to collect tax for benefits before the last payroll, check this option and ERPNext will recalculate the tax and add the tax for all untaxed benefits while generating the Salary Slip.
 
-* Deduct Tax For Unsubmitted Tax Exemption Proof: This option allows you to deduct taxes for the earnings which were exempted in previous payrolls as declared in **Employee Tax Exemption Declaration** but the Employee has not submitted sufficient proof **Employee Tax Exemption Proof Submission**. It is to be noted that if this option is checked ERPNext does not consider the Employee Tax Exemption Declaration by employees and will only take into account **Employee Tax Exemption Proof Submission** instead, while calculating exemption from employees' annual earnings.
+* Deduct Tax For Unsubmitted Tax Exemption Proof: This option allows you to deduct taxes for the earnings which were exempted in previous payrolls as declared in [Employee Tax Exemption Declaration](/docs/user/manual/en/human-resources/employee-tax-exemption-declaration.html) but the Employee has not submitted sufficient proof via  [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission.html). It is to be noted that if this option is checked ERPNext does not consider the Employee Tax Exemption Declaration by employees and will only take into account **Employee Tax Exemption Proof Submission** instead, while calculating exemption from employees' annual earnings.
 
 >Note: If required, you can still process payroll for employees individually, by manually creating a new Salary Slip and both these options are made available in the Salary Slip
+
+#Payroll Period
+[Payroll Period](/docs/user/manual/en/human-resources/payroll-period.html) helps you define Tax slabs applicable for the period, making it easier to manage changing laws. You can add multiple tax slabs for the payroll period depending on the tax regulations. Note that you can use fields in Employee document in the **Condition** field to apply tax slabs based on attributes of employees.
+
+#Salary Component
+To enable automatic tax deduction based on Tax slabs configured in Payroll Period, you have to configure a Salary Component of type **Deduction** with **Variable Based On Taxable Salary** option enabled. If you enable this, the component will be considered as the standard Tax deduction component and tax will be calculated based on the Tax slabs configured in Payroll Period on all the total taxable salary.
+
+**Important Note:** If you configure condition and formula for this Deduction component, the condition and formula will be considered for calculating the Salary Component and the Tax Slabs configured in Payroll Period will be ignored. However, you can still use **Deduct Tax For Unsubmitted Tax Exemption Proof** option in Payroll Entry / Salary Slip to deduct taxes based on the Tax Slabs configured in Payroll Period, exempting [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission.html) which will give precedence to the Tax Slab based tax deduction.
+
+This is particularly helpful if you need to deduct a fixed amount as deduction in each payroll rather than ERPNext automatically calculating the deductions based on projected annual salary of the employee after exemption as declared by the employee via [Employee Tax Exemption Declaration](/docs/user/manual/en/human-resources/employee-tax-exemption-declaration.html). At the end of the fiscal year, you can still use **Deduct Tax For Unsubmitted Tax Exemption Proof** to deduct the remaining tax liability of the employee for the whole period.
 
 {next}
