@@ -1,8 +1,7 @@
 <!-- add-breadcrumbs -->
 # Human Resource Setup
 
-The HR module has a setup process where you create the masters for all the
-major activities.
+The HR module has a setup process where you create the masters for all the major activities.
 
 ### Organization Setup
 
@@ -19,7 +18,10 @@ To setup your Employee master you must first create:
 To setup Leaves, create:
 
   * Leave Type (like Sick Leave, Travel Leave etc)
-  * Holiday List (list of annual holidays for the year - these days will not be considered in Leave Applications).
+  * Holiday List (list of annual holidays for the year - these days will not be considered in Leave Applications)
+	* Leave Policy to effectively track and manage Employee leaves across the company
+
+Check [Leaves - Overview](/docs/user/manual/en/human-resources/leave.html) for a detailed description about how you can configure and manage Leaves
 
 ### Payroll (Salary) Setup
 
@@ -32,7 +34,6 @@ deductions. These are
   * Earning Type
   * Deduction Type
 
-These are just labels, we will see how to use them when we discuss the payroll
-section.
+These are just labels, we will see how to use them when we discuss the payroll section.
 
 {next}

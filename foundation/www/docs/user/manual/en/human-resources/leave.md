@@ -28,16 +28,18 @@ requirement.
 
 **Include holidays within leaves as leaves:** Check this option if you wish to count holidays within leaves as a ‘leave’. Such holidays will be deducted from the total number of leaves.
 
-**Is Compensatory:** Compensatory leaves are leaves granted for working overtime or on holidays, normally compensated as an encashable leave. You can check this option to mark the Leave Type as compensatory. An Employee can request for compensatory leaves (Compensatory Leave Request) and on approval of such requests, Leave Allocations are created allowing her to apply for leaves of this type later on.
+**Is Compensatory:** Compensatory leaves are leaves granted for working overtime or on holidays, normally compensated as an encashable leave. You can check this option to mark the Leave Type as compensatory. An Employee can request for compensatory leaves using [Compensatory Leave Request](/docs/user/manual/en/human-resources/compensatory-leave-request.html) and on approval of such requests, Leave Allocation for this leave type is updated allowing her to apply for leaves of this type later on.
 
 **Is Optional:** Check this Optional Leaves are holidays which Employees can choose to avail from a list of holidays published by the company. The Holiday List for optional leaves can have any number of holidays but you can restrict the number of such leaves granted to an Employee in a Leave Period by setting the Max Days Leave Allowed field.
 
 **Encashment:** It is possible that Employees can receive cash from their Employer for unused leaves granted to them in a Leave Period. Not all Leave Types need to be encashable, so you should set "Allow Encashment" for Leave Types which are encashable. Leave encashment is allowed only in the last month of the Leave Period.
 
 <img class="screenshot" alt="Leave Encashment"
-	src="{{docs_base_url}}/assets/img/human-resources/leave-encashment.png">
+	src="{{docs_base_url}}/assets/img/human-resources/leave-type-encashment.png">
 
 You can set the **Encashment Threshold Days** field so that the Employees wont be able to encash that many days. These days should be carry forwarded to the next Leave Period so that it can be either encashed or availed. You may also want to set the **Earning Component** for use in Salary Slip while paying out the encashed amount to Employees as part of their Salary.
+
+>Note: On submitting a [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment.html) for an Employee, ERPNext automatically creates an [Additional Salary](/docs/user/manual/en/human-resources/additional-salary.html) which will get added to the Salary Slip of the Employee when processing the next payroll
 
 **Earned Leave:** Earned Leaves are leaves earned by an employee after working with the company for a certain amount of time. Checking "Is Earned Leave" will allot leaves pro rata by automatically updating Leave Allocation for leaves of this type at intervals set by **Earned Leave Frequency**. For example, if an employee earns 2 leaves of type Paid Leaves monthly, ERPNext automatically increments the Leave Allocation for Paid Leave at the end of every month by 2. The leave allotment process (background job) will only allot leaves considering the max leaves for the leave type, and will round to **Rounding** for fractions.
 
@@ -81,7 +83,7 @@ Most companies manage leaves based on a Leave Period. ERPNext allows you to crea
 > Human Resources > Leaves and Holiday > Leave Period > New Leave Period
 
 	<img class="screenshot" alt="Leave Period"
-		src="{{docs_base_url}}/assets/img/human-resources/leave-period.png">
+		src="{{docs_base_url}}/assets/img/human-resources/leave-period-1.png">
 
 #Granting Leaves to Employees
 Leave Management in ERPNext is based on Leave Allocations created for each employee. This means, Employees can only avail as many leaves (of each Leave Type) allocated to them. There are multiple ways by which you can create Leave Allocations for Employees.
@@ -95,7 +97,7 @@ Leave Allocation enables you to allot a specific number of leaves to a particula
 Leave Period helps you manage leaves for a period and also doubles up as a tool to help you grant leaves for a category of employees. The **Grant** button will generate Leave Allocations based on the Leave Policy applicable to each Employee. You can allocate leaves based on Employee Grade, Department or Designation. Also, note that **Carry Forward Leaves** check will enable you to carry forward any unused leaves (for Leave Types with Is Carry Forward turned on) from previous allocations to new ones.
 
 <img class="screenshot" alt="Grant Leaves from Leave Period"
-	src="{{docs_base_url}}/assets/img/human-resources/leave-period-grant.png">
+	src="{{docs_base_url}}/assets/img/human-resources/leave-period-2.png">
 
 ###Manual Allocation of leaves
 > Human Resources > Leaves and Holiday > Leave Allocation > New Leave Allocation
@@ -140,3 +142,5 @@ Leave Block List is a list of dates in a year, on which employees can not apply 
 
 <img class="screenshot" alt="Leave Allocation Tool"
 	src="{{docs_base_url}}/assets/img/human-resources/leave-block-list.png">
+
+{next}

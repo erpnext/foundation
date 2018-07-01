@@ -2,13 +2,13 @@
 # Leave Application
 
 If your company has a formal system where Employees have to apply for leaves
-to be able to qualify as paid leaveas, you can create Leave Application to
+to be able to qualify as paid leaves, you can create Leave Application to
 track approval and usage of leaves. You have to mention the Employee, Leave
 Type and the period for which the leave is taken.
 
 > Human Resources > Leaves and Holiday > Leave Application > New Leave Application
 
-<img class="screenshot" alt="Leave Application" src="{{docs_base_url}}/assets/img/human-resources/leave-application.png">
+<img class="screenshot" alt="Leave Application" src="{{docs_base_url}}/assets/img/human-resources/new-leave-application.png">
 
 ###Setting Leave Approver
 
