@@ -9,4 +9,9 @@ To edit print settings, go to:
 
 <img class="screenshot" alt="Print Settings" src="{{docs_base_url}}/assets/img/setup/print/print-settings.png">
 
+
+#### Network Printer
+
+You can enable print server by fill the print server IP and port then chose default printer
+
 {next}
