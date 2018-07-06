@@ -1,20 +1,21 @@
-<!-- add-breadcrumbs -->
 # Sales Order
 
-The Sales Order confirms your sales and triggers purchase (**Material
-Request**) shipment (**Delivery Note**), billing (**Sales Invoice**) and
-manufacturing (**Production Plan**)
-
-A Sales Order is usually a binding Contract with your Customer.
-
-Once your customer confirms the Quotation you can convert your Quotation into
+The Sales Order confirms the receipt of an order from your customer. It is usually a binding Contract with your Customer. Once your customer confirms the Quotation you can convert your Quotation into
 a Sales Order.
+
+There are various transactions which can be trigerred from Sales Order like;
+
+* Delivery Note
+* Sales Invoice
+* Material Request
+* Production Order
+* Project
 
 ### Sales Order Flow-Chart
 
 <img class="screenshot" alt="Sales Order flow" src="{{docs_base_url}}/assets/img/selling/sales-order-f.jpg">
 
-To create a new Sales Order go to:
+To create a new Sales Order, go to:
 
 > Selling > Sales Order > New Sales Order
 
@@ -29,27 +30,22 @@ Or you can create a new Sales Order and pull details from an Quotation.
 <img class="screenshot" alt="Make Sales Order from Quotation" src="{{docs_base_url}}/assets/img/selling/make-so.gif">
 
 Most of the information in your Sales Order is the same as the Quotation.
+
 There are a few amongst other things that a Sales Order will ask you to
 update.
 
-  * Enter delivery date agaist each item. If there are multiple items and if you enter delivery date in the first row, the date will be copied to other rows as well where it is blank.
+  * Enter Delivery Date agaist each item. If there are multiple items and if you enter delivery date in the first row, the date will be copied to other rows as well where it is blank.
   * Customer Purchase Order number: If your customer has sent you a Purchase Order, you can update its number for future reference (in billing).
 
 ### Packing List
 
-The “Packing List” table will be automatically updated when you “Save” the
-Sales Order. If any Items in your table are Product Bundle (packets), then the
-“Packing List” will contain the exploded (detailed) list of your Items.
+The “Packing List” table will be automatically updated when you “Save” the Sales Order. If any Items in your table are Product Bundle (packets), then the “Packing List” will contain the exploded (detailed) list of your Items.
 
 ### Reservation and Warehouses
 
-If your Sales Order contains Items for which inventory is tracked (Is Stock
-Item is “Yes”) then, ERPNext will ask you for “Reservation Warehouse”. If you
-have set a default Warehouse for the Item, it will automatically set this
-Warehouse here.
+If your Sales Order contains Items for which inventory is tracked (Is Stock Item is “Yes”) then, ERPNext will ask you for “Reservation Warehouse”. If you have set a default Warehouse for the Item, it will automatically set this Warehouse here.
 
-This “reserved” quantity will help you project what is the quantity you need
-to purchase based on all your commitments.
+This “reserved” quantity will help you project what is the quantity you need to purchase based on all your commitments.
 
 ### Taxes
 
@@ -67,24 +63,6 @@ To understand taxes in detail visit [Taxes](/docs/user/manual/en/setting-up/sett
 
 **Sales Persons:** ERPNext allows you to tag multiple Sales Persons who may have worked on this deal. You can also split the amount in targets of different Sales Persons and track how much incentives they earned on this deal.
 
-### Recurring Sales Orders
-
-If you have a recurring contract with a Customer where you are required to generate a Sales Order on a monthly, quarterly, half-yearly or annual basis, you can check the “Convert To Recurring Order” box. 
-
-Here you can fill in the details like; of how frequently you want to generate an Order in the 'Recurring Type' field, specify the day of of the month on which the Order needs to be generated in the 'Repeat On Day Of Month' field and the date on which the recurring orders should stop in the 'End Date' field.
-
-**Recurring Type:** Here you can update how frequently you want to generate an Order.
-
-**Repeat On Day Of Month:** You can specify the day of of the month on which the Order needs to be generated.
-
-**End Date:** The date on which the recurring orders should stop can be specified here.
-
-On updating the Sales Order, a Recurring ID will be generated which will be same for all recurring orders generated from this particular Sales Order.
-
-ERPNext will automatically create new Order and mail a notification to the Email Addresses you set in the 'Notification Email Address'field.
-
-<img class="screenshot" alt="Reccuring Sales Order" src="{{docs_base_url}}/assets/img/selling/recurring-sales-order.png">
-
 ### Next Steps
 
 Once you “Submit” your Sales Order, you can now trigger different aspects of
@@ -97,9 +75,7 @@ your organization:
 
 ### Submission
 
-Sales Order is a “Submittable” transaction. See Document Stages. You will be
-able to execute dependent steps (like making a Delivery Note) only after
-“Submitting” this Sales Order.
+Sales Order is a “Submittable” transaction. See Document Stages. You will be able to execute dependent steps (like making a Delivery Note) only after “Submitting” this Sales Order.
 
 ### Sales Order with Order type Maintenance
 
@@ -112,9 +88,7 @@ __Step 2:__ Mention taxes and other information.
 
 __Step 3:__ Save and Submit the form
 
-__Step 4:__ Once the form is submitted, the Action button will provide three
-choices.i) Maintenance Visit ii) Maintenance Schedule iii) Invoice.
-
+__Step 4:__ Once the form is submitted, the Action button will provide three choices.i) Maintenance Visit ii) Maintenance Schedule iii) Invoice.
 
 
 > **Note 1:**   

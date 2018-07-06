@@ -1,4 +1,3 @@
-<!-- add-breadcrumbs -->
 # Point of Sale Invoice
 
 For retail operations, the delivery of goods, accrual of sale and payment all happens in one event, that is usually called the “Point of Sale” (POS).
