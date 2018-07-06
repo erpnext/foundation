@@ -23,7 +23,7 @@ On creation of Sales Invoice for the Deferred Revenue Item, instead of posting i
 
 ### Journal Entry
 
-Based on the From Date and To Date set for the Item in the Sales Invoice Item table, Journal Entries at the end of each month. It debits the value from Deferred Revenue account and credits Income Account selected for an Item in the Sales Invoice. Following is the example of Income for the deferred Revenue Item is booked via multiple Journal Entries.
+Based on the From Date and To Date set in the Sales Invoice Item table, Journal Entries are created automatically at the end of each month. It debits the value from Deferred Revenue account and credits Income Account selected for an Item in the Sales Invoice. Following is the example of Income for the deferred Revenue Item is booked via multiple Journal Entries.
 
 <img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/deferred-jv.png">
 
