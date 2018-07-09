@@ -44,8 +44,8 @@ To check all Item Price together, go to:
 You will find option to create new Item Price record (+) in this report as well.
 
 <div>
-    <div class"embed-container">
-        <iframe src='https://www.youtube.com/embed/FcOsV-e8ymE?start=193' frameborder='0' allowfullscreen>
+    <div class="embed-container">
+        <iframe src='https://www.youtube.com/embed/FcOsV-e8ymE?start=193' frameborder='0' frameborder='0' allow="autoplay; encrypted-media" allowfullscreen>
         </iframe>
     </div>
 </div>
