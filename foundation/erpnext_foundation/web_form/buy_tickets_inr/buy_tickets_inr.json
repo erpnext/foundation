@@ -19,7 +19,7 @@
  "is_standard": 1,
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2018-07-09 12:24:07.368873",
+ "modified": "2018-07-10 14:47:24.832326",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "buy-tickets-inr",
@@ -44,6 +44,7 @@
    "reqd": 1
   },
   {
+   "description": "Rs 4000 per person. Includes lunch and dinner on both days",
    "fieldname": "full_conference_tickets",
    "fieldtype": "Int",
    "hidden": 0,

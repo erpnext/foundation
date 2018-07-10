@@ -10,6 +10,9 @@ class ConferenceParticipant(Document):
 	def validate(self):
 		self.conference = '2018'
 
+	def validate_payment(self):
+		self.amount = self.full_conference_tickets * (4000 if self.currency=='INR' else 60)
+
 	def on_payment_authorized(self, status_changed_to=None):
 		self.paid = 1
 		self.save(ignore_permissions=True)

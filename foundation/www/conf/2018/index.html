@@ -4,10 +4,23 @@
 
 {% from "templates/includes/media.html" import media %}
 
-{% set platinum_sponsors = [{'country': 'India',
-  'image': '/assets/foundation/img/conf/sponsors/mnt-logo.png',
-  'title': 'MN Technique',
-  'website_url': 'https://www.mntechnique.com'}] %}
+{% set platinum_sponsors = [
+	{
+		'image': '/assets/foundation/img/conf/sponsors/mnt-logo.png',
+		'title': 'MN Technique',
+		'website_url': 'https://www.mntechnique.com'
+	},
+	{
+		'image': '/assets/foundation/img/people/tux.png',
+		'title': 'Your Company',
+		'website_url': 'https://erpnext.org'
+	},
+	{
+		'image': '/assets/foundation/img/people/tux.png',
+		'title': 'Your Company',
+		'website_url': 'https://erpnext.org'
+	},
+] %}
 
 {% macro show_section(sponsors, with_img = False, color=False) %}
 	<div class='row'>
@@ -26,9 +39,6 @@
 					{{ sponsor.title }}
 				</h5>
 			</div>
-			<div class="card-footer">
-				<span class='text-muted small'>{{ sponsor.country }}</span>
-			</div>
 		</a>
 		</div>
 	{% if loop.index is divisibleby 3 %}
@@ -45,22 +55,23 @@
 <section class='top-section after-splash'>
 	<div class='container'>
 		<h1>ERPNext Conference 2018</h1>
-		<p class='lead'>The biggest gathering of ERPNext enthusiasts from all over the World.</p>
+		<p class='lead'>October 26 & 27, Mumbai</p>
+		<p><a href='/buy-tickets-inr' class='btn btn-dark mt-4'>Buy Tickets Now (INR)</a> <a href='/buy-tickets-inr' class='btn btn-dark mt-4'>Buy Tickets Now (USD)</a></p>
 	</div>
 </section>
 <section class='section-padding section-bg text-center'>
 	<div class='container'>
-		<h3 class='mt-5'>Propose a Talk</h3>
+		<h3>Propose a Talk</h3>
 		<p class='lead'>Talk about your experience in the using or developing for ERPNext. These talks are live streamed and watched by thousands online.</p>
-		<a href='mailto:foundation@erpnext.com' class='btn btn-dark btn-sm mt-4'>Send Your Proposal</a>
+		<a href='https://discuss.erpnext.com/t/conference-2018-propose-a-talk/38312' class='btn btn-dark btn-sm mt-4' target='_blank'>Propose A Talk</a>
 	</div>
 </section>
 <section class='section-padding text-center'>
 	<div class='container'>
-		<h3 class='mt-5'>Sponsored By</h3>
-    <p>A big thanks to our awesome sponsors who make this event happen!</p>
+		<h3>Sponsored By</h3>
+		<p class='lead'>A big thanks to our awesome sponsors who make this event happen!</p>
 		{% if platinum_sponsors %}
-		<h4>Platinum Sponsors<h4>
+		<h4 class='mt-5'>Platinum Sponsors<h4>
 		{{ show_section(platinum_sponsors, color=True, with_img=True) }}
 		{% endif %}
 		{% if gold_sponsors %}
@@ -94,7 +105,7 @@
 			</div>
 		</div>
 		<div class='text-center mt-5'>
-			Registrations to Open Soon. For any queries, <a href='mailto:foundation@erpnext.org'>please email us</a>.
+			For any queries, <a href='mailto:foundation@erpnext.org'>please email us</a> or call us at +91-80-339-23819.
 		</div>
 	</div>
 </section>
