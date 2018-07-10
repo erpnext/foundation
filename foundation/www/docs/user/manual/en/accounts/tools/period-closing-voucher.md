@@ -28,6 +28,6 @@ This voucher will transfer Profit or Loss (availed from P&L statment) to Closing
 
 The Period Closing Voucher will make accounting entries (GL Entry) making all your Income and Expense Accounts zero and transferring Profit/Loss balance to the Closing Account.
 
-<div class=well>If accounting entries are made in a closing fiscal year, even after Period Closing Voucher was created for that Fiscal Year, you should create another Period Closing Voucher. Later voucher will only transfer the pending P&L balance into Closing Account Head.</div>
+**Note:** If accounting entries are made in a closing fiscal year, even after Period Closing Voucher was created for that Fiscal Year, you should create another Period Closing Voucher. Later voucher will only transfer the pending P&L balance into Closing Account Head.</div>
 
 {next}
