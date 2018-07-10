@@ -7,6 +7,9 @@ import frappe
 from frappe.model.document import Document
 
 class ConferenceParticipant(Document):
+	def validate(self):
+		self.conference = '2018'
+
 	def on_payment_authorized(self, status_changed_to=None):
 		self.paid = 1
 		self.save(ignore_permissions=True)

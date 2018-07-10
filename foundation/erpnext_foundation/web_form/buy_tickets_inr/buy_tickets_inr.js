@@ -1,17 +1,17 @@
 frappe.ready(function() {
 	// bind events here
-	var calculate = function() {
-		var amount = parseInt($('input[name="full_conference_tickets"]').val() || 0) * 3000
-			+ parseInt($('input[name="user_conference_tickets"]').val() || 0) * 600;
-		$('input[name="amount"]').val(amount);
+	frappe._calculate = function() {
+		frappe.web_form.field_group.set_value('amount',
+			parseInt(frappe.web_form.field_group.get_value('full_conference_tickets') || 0) * 4000
+		)
 	};
 
-	$('input[name="full_conference_tickets"]').on('keyup', function() {
-		calculate();
-	});
-	$('input[name="user_conference_tickets"]').on('keyup', function() {
-		calculate();
-	});
+	setTimeout(() => {
+		$('input[data-fieldname="full_conference_tickets"]').on('keyup', function() {
+			frappe._calculate();
+		});
+		frappe._calculate();
+	}, 1000);
 
 	$('.btn-form-submit').hide();
 })
