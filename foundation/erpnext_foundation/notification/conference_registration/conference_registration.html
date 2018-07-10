@@ -10,11 +10,12 @@
 	<tr>
 		<th style='width: 50%'>Ticket Type</th>
 		<th style='width: 25%'>Qty</th>
-		<th style='width: 25%'>Amount</th>
+		<th style='width: 25%'>Rate</th>
 	</tr>
 	<tr>
 		<td>Conference Tickets + Lunch + Dinner</td>
 		<td>{{ doc.full_conference_tickets or 0 }}</td>
+		<td>{% if doc.currency=="INR" %}4000{% else %}60{% endif %}</td>
 	</tr>
 </table>
 
