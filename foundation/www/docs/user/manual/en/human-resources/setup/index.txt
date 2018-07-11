@@ -5,5 +5,5 @@ department
 designation
 employee-grade
 daily-work-summary-group
-employee-health-insurance
+health-insurance
 staffing-plan
