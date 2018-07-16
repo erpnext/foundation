@@ -123,6 +123,6 @@ Leave Block List is a list of dates in a year, on which employees can not apply 
 ##Leave Application
 > Human Resources > Leaves and Holiday > Leave Application > New Leave Application
 
-[Leave Application](/docs/user/manual/en/human-resources/leaves_and_holiday/leave-application.html) section enables an employee to apply for leaves. Employee can select the type of leave and the Leave Approver who will authorize the Leave Application. User with "Leave Approver" role are considered as Leave approver. Leave Approvers can also be restricted/pre-defined in the Employee record. Based on selected dates and applicable Holiday List, total leave days is calculated automatically.
+[Leave Application](/docs/user/manual/en/human-resources/leaves_and_holiday/leave-application.html) section enables an employee to apply for leaves. Employee can select the type of leave and the Leave Approver who will authorize the Leave Application. Leave Approvers for each department can be configured in the [Department](/docs/user/manual/en/human-resources/setup/department.html) master. Based on selected dates and applicable Holiday List, total leave days is calculated automatically.
 
 {next}
