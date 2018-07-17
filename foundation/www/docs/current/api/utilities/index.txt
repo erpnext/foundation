@@ -1,7 +1,0 @@
-erpnext.utilities.activation
-erpnext.utilities.user_progress
-erpnext.utilities.bot
-erpnext.utilities.user_progress_utils
-erpnext.utilities
-erpnext.utilities.product
-erpnext.utilities.transaction_base

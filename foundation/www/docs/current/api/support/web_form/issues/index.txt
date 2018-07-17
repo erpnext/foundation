@@ -1,2 +1,0 @@
-erpnext.support.web_form.issues
-erpnext.support.web_form.issues.issues

@@ -13,14 +13,6 @@
   "title": "User Guide"
  },
  {
-  "route": "/docs/current/api",
-  "title": "Server API"
- },
- {
-  "route": "/docs/current/models",
-  "title": "Models (Reference)"
- },
- {
   "route": "https://github.com/erpnext/foundation/tree/master/foundation/www/docs",
   "title": "Improve Docs"
  }

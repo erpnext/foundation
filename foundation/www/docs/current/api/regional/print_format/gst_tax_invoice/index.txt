@@ -1,1 +1,0 @@
-erpnext.regional.print_format.gst_tax_invoice

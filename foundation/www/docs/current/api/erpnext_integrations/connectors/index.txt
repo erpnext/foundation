@@ -1,4 +1,0 @@
-erpnext.erpnext_integrations.connectors.shopify_connection
-erpnext.erpnext_integrations.connectors.github_connection
-erpnext.erpnext_integrations.connectors.woocommerce_connection
-erpnext.erpnext_integrations.connectors
