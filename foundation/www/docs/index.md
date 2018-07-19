@@ -7,7 +7,7 @@ business. ERPNext covers a wide range of features including Accounting, CRM,
 Inventory management, Selling, Purchasing, Manufacturing, Projects, HR &
 Payroll, Website, E-Commerce and much more.
 
-ERPNext is based on the Frappé Framework is highly customizable and extendable.
+ERPNext is based on the Frappe Framework is highly customizable and extendable.
 You can create Custom Form, Fields, Scripts and can also create your own Apps
 to extend ERPNext functionality.
 
@@ -17,7 +17,7 @@ blogs.
 
 ### Installing ERPNext
 
-To install ERPNext on a server, you will need to install [Frappé Bench](https://github.com/frappe/bench).
+To install ERPNext on a server, you will need to install [Frappe Bench](https://github.com/frappe/bench).
 
 You can also start a free 30 day trial at [https://erpnext.com](https://erpnext.com)
 

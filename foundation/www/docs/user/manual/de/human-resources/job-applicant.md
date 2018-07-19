@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Bewerber
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Sie können eine Liste von Bewerbern auf [offene Stellen](/docs/user/manual/de/human-resources/job-opening.html) verwalten.
 

@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Datenfeld basierend auf dem Wert in einem anderen Datenfeld aktualisieren
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Das unten abgebildete Skript trägt automatisch einen Wert in das Feld Datum ein, das auf einem Wert in einem anderen Skript basiert.
 

@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# ERPNext for Distributors
+# Stock
 
 Distributors have large part of their net worth is invested in the stock in hand. With ERPNext, you can always keep a birds eye view on your stock availability, replineshment, procurement and sales.
 

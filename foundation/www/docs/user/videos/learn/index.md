@@ -3,7 +3,7 @@
 <!-- no-breadcrumbs -->
 <!-- title: Learn ERPNext -->
 <div style="max-width: 700px; margin: auto;">
-    <div class="row hero" style="padding-top: 50px; border-bottom: 0px;">
+    <div class="row hero">
         <div class="col-sm-12 hero-content">
             <h1>ERPNext Video Tutorials</h1>
             <p>Step-by-step guides to setting up and using ERPNext</p>

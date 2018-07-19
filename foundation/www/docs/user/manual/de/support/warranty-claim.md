@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Garantieantrag
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Wenn Sie **Artikel** verkaufen, die eine Garantie besitzen, oder wenn Sie einen erweiterten Servicevertrag wie den Jährlichen Wartungsvertrag (AMC) verkauft haben, kann Sie Ihr **Kunde** wegen eines entsprechenden Falles oder eines Ausfalles anrufen und Ihnen die Seriennummer dieses Artikels mitteilen.
 

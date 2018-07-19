@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# ERPNext for Healthcare
+# Healthcare
 
 Life is priceless, and you as a medical practioner needs a best tools to honour it. ERPNext Healthcare domain is a humble initiative to help you serve your patients better.
 

@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Urlaubstyp
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Geben Sie den Urlaubstyp an, der Mitarbeitern zugeordnet werden kann.
 

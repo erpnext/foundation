@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Aufgaben
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Ein Projekt wird in Aufgaben unterteilt. In ERPNext können Sie auch Abhängigkeiten zwischen Aufgaben erstellen.
 

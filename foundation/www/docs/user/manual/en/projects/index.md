@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# ERPNext for Services
+# Projects
 
 For a services business, which doesn't have a tangible product to showcase their value, needs to get many things right to stay afloat and grow in the industry. ERPNext helps services company effectively manage business aspects like Projects Management, Customer Support, Sales and Purchase Management to list a few.
 

@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Werkzeug zum Datenimport
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Das Werkzeug zum Datenimport ist ein großartiger Weg um große Mengen an Daten, speziell Stammdaten, in das System hochzuladen oder zu bearbeiten.
 

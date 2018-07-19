@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Benutzerdetails
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Geben Sie Details zum Benutzerprofil, wie Name, Benutzer-ID und das bevorzugte Passwort ein.
 

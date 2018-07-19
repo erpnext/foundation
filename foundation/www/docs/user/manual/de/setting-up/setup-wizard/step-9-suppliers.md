@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Schritt 9: Lieferanten
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Geben Sie ein paar Namen Ihrer Lieferanten ein.
 

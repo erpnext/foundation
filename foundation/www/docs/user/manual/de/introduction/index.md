@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Einführung
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 ### Was ist ein ERP-System und warum soll ich mich damit beschäftigen?
 

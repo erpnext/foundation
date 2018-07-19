@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Einkommensart
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Sie können zu den Bestandteilen der Gehaltsabrechnung Datensätze erstellen und sie als Einkommensart beschreiben.
 

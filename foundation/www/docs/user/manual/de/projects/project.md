@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Projekt
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Das Projektmanagement in ERPNext ist aufgabengesteuert. Sie können ein Projekt erstellen und ihm mehrere unterschiedliche Aufgaben zuweisen.
 
