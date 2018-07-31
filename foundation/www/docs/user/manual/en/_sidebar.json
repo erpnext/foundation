@@ -1,0 +1,71 @@
+[
+ {
+  "route": "/docs",
+  "title": "Home"
+ },
+ {
+  "route": "/docs/user/manual/en/introduction",
+  "title": "Introduction"
+ },
+ {
+  "route": "/docs/user/manual/en/setting-up",
+  "title": "Setting Up"
+ },
+ {
+  "route": "/docs/user/manual/en/accounts",
+  "title": "Accounts"
+ },
+ {
+  "route": "/docs/user/manual/en/stock",
+  "title": "Stock"
+ },
+ {
+  "route": "/docs/user/manual/en/crm",
+  "title": "CRM"
+ },
+ {
+  "route": "/docs/user/manual/en/selling",
+  "title": "Selling"
+ },
+ {
+  "route": "/docs/user/manual/en/buying",
+  "title": "Buying"
+ },
+ {
+  "route": "/docs/user/manual/en/manufacturing",
+  "title": "Manufacturing"
+ },
+ {
+  "route": "/docs/user/manual/en/projects",
+  "title": "Projects"
+ },
+ {
+  "route": "/docs/user/manual/en/human-resources",
+  "title": "Human Resources"
+ },
+ {
+  "route": "/docs/user/manual/en/support",
+  "title": "Support"
+ },
+ {
+  "route": "/docs/user/manual/en/education",
+  "title": "Education"
+ },
+ {
+  "route": "/docs/user/manual/en/healthcare",
+  "title": "Healthcare"
+ },
+ {
+  "route": "/docs/user/manual/en/non_profit",
+  "title": "Non Profit"
+ },
+ {
+  "route": "/docs/user/manual/en/customize-erpnext",
+  "title": "Customize"
+ },
+ {
+  "route": "/search_docs",
+  "title": "Search",
+  "type": "input"
+ }
+]

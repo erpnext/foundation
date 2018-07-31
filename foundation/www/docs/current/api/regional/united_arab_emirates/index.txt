@@ -1,3 +1,0 @@
-erpnext.regional.united_arab_emirates.utils
-erpnext.regional.united_arab_emirates
-erpnext.regional.united_arab_emirates.setup

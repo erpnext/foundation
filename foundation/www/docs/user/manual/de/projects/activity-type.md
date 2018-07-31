@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Aktivitätsart
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Unter dem Punkt "Aktivitätsart" wird eine Liste verschiedener Typen von Aktivitäten erstellt zu denen Zeitprotokolle erstellt werden können.
 

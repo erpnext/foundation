@@ -1,24 +1,24 @@
 [
  {
-  "route": "/search_docs",
-  "title": "Search Docs ...",
-  "type": "input"
- },
- {
   "route": "/docs",
-  "title": "Docs Home"
+  "title": "Home"
  },
  {
-  "route": "/docs/user",
-  "title": "User Guide"
+  "route": "/docs/user/manual/en",
+  "title": "Manual (English)"
  },
  {
-  "route": "/docs/current/api",
-  "title": "Server API"
+  "route": "/docs/user/manual/de",
+  "title": "Handbuch (Deutsch)"
  },
  {
-  "route": "/docs/current/models",
-  "title": "Models (Reference)"
+  "route": "/docs/user/videos/learn",
+  "title": "Videos"
+ },
+ {
+  "route": "/search_docs",
+  "title": "Search",
+  "type": "input"
  },
  {
   "route": "https://github.com/erpnext/foundation/tree/master/foundation/www/docs",

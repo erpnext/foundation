@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # E-Mail-Konto
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Sie können in ERPNext viele verschiedene E-Mail-Konten für eingehende und ausgehende E-Mails verwalten. Es muss mindestens ein Standard-Konto für ausgehende E-Mails und eines für eingehende E-Mails geben. Wenn Sie sich in der ERPNext-Cloud befinden, dann werden die Einstellungen für ausgehende E-Mails von uns getroffen.
 

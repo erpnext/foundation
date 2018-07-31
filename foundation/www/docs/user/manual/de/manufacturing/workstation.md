@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Arbeitsplatz
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 ### Arbeitsplatz
 

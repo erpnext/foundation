@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Konteneinstellungen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 <img class="screenshot" alt="Konteneinstellungen" src="{{docs_base_url}}/assets/img/accounts/account-settings.png">
 

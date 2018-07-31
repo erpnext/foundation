@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Einrichtung
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Dieser Abschnitt enthält Informationen darüber, wie Kundengruppen, Vertriebspartner, Vertriebsmitarbeiter und Allgemeine Geschäftsbedingungen angelegt werden.
 

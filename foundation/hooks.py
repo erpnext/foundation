@@ -39,6 +39,7 @@ home_page = "index"
 template_apps = ['foundation', 'frappe_theme', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
+	"repo": "erpnext/foundation",
 	"brand_html": "<img class='mr-2 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo-black.svg' alt='Opensource ERP Software'/>ERPNext.org",
 	"top_bar_items": [
 			{"label": "ERPNext", "child_items":[

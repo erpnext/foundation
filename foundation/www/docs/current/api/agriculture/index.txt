@@ -1,2 +1,0 @@
-erpnext.agriculture.setup
-erpnext.agriculture

@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Teilen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Zusätzlich zu Benutzer- und Rollenberechtigungen können Sie ein Dokument auch mit einem anderen Benutzer "teilen", wenn Sie die Berechtigungen zum teilen haben.
 

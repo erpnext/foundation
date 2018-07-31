@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Lieferantenangebot
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Ein Lieferantenangebot ist eine formale Aussage, ein Versprechen eines potenziellen Lieferanten die Waren oder Dienstleistungen zu liefern, die von einem Käufer zu einem spezifizierten Preis und innerhalb eines bestimmten Zeitraumes benötigt werden. Ein Angebot kann weiterhin Verkaufs- und Zahlungsbedingungen und Garantien enthalten. Die Annahme eines Angebotes durch einen Käufer begründet einen bindenden Vertrag zwischen beiden Parteien.
 

@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Kundenportal
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Das Kundenportal wurde so entworfen, dass Kunden einen einfachen Zugriff auf für sie relevanten Informationen haben.
 

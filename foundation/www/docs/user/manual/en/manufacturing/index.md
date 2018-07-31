@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# ERPNext for Manufacturers
+# Manufacturing
 
 ERPNext comes batteries included for all requirements of a manufacturing business like Bill of Materials tracking, Production Order planning and execution, procurement and lot more.
 

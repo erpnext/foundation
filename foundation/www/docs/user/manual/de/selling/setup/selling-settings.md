@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Vertriebseinstellungen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 In den Vertriebseinstellungen können Sie Eigenheiten angeben, die bei Ihren Vertriebstransaktionen mit berücksichtigt werden. Im Folgenden sprechen wir jeden einzelnen Punkt an.
 

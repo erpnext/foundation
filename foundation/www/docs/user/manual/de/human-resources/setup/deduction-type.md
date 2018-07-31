@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Abzugsart
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Sie können zu Steuern oder anderen Abzügen vom Gehalt Datensätze erstellen und diese als Abzug beschreiben.
 

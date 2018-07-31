@@ -1,2 +1,0 @@
-erpnext.healthcare.web_form.prescription.prescription
-erpnext.healthcare.web_form.prescription

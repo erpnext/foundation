@@ -1,2 +1,0 @@
-erpnext.hr.web_form.job_application
-erpnext.hr.web_form.job_application.job_application

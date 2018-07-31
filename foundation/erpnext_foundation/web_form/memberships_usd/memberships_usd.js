@@ -1,12 +1,13 @@
 frappe.ready(function() {
 	setTimeout(() => {
 		// bind events here
+		form = frappe.web_form.field_group.fields_dict;
+
 		$(".page-header-actions-block .btn-primary, .page-header-actions-block .btn-default").addClass('hidden');
 		$(".text-right .btn-primary").addClass('hidden');
 
 		var set_amount = function() {
-			var membership_type = $('[data-fieldname="membership_type"]').val();
-			var currency = $('[data-fieldname="currency"]').val();
+			var membership_type = $('select[data-fieldname="membership_type"]').val();
 
 			amount = {
 				'Gold': 5000,
@@ -14,8 +15,9 @@ frappe.ready(function() {
 				'Individual': 200
 			}
 
-			$('[data-fieldname="amount"]').val(amount[membership_type]);
+			form.amount.set_input(amount[membership_type]);
 		}
+
 		var get_date = (add_year = 0) => {
 			const today = new Date();
 			const year = today.getFullYear() + add_year;
@@ -24,19 +26,20 @@ frappe.ready(function() {
 			return year + '-' + month + '-' + day;
 		}
 
-
 		if(frappe.utils.get_url_arg('name')) {
-			$('[data-fieldname="membership_type"]').prop('disabled', true);
-			$('[data-fieldname="currency"]').prop('disabled', true);
+			$('select[data-fieldname="membership_type"]').prop('disabled', true);
+			$('input[data-fieldname="currency"]').prop('disabled', true);
 			$('.page-content .btn-form-submit').addClass('hidden');
 		} else {
 			const from_date = get_date();
 			const to_date = get_date(1);
-			$('[data-fieldname="from_date"]').val(from_date).trigger('change');
-			$('[data-fieldname="to_date"]').val(to_date).trigger('change');
-			$('[data-fieldname="membership_type"]').on('change', function() { set_amount(); });
-			$('[data-fieldname="currency"]').val('USD');
+
+			form.from_date.set_input(from_date);
+			form.to_date.set_input(to_date);
+			$('select[data-fieldname="membership_type"]').on('change', function() { set_amount(); });
+			form.currency.set_input('USD');
 			set_amount();
 		}
+		
 	}, 1000);
 })

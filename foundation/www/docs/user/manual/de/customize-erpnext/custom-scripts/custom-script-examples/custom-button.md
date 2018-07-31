@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Eine benutzerdefinierte Schaltfläche hinzufügen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 	frappe.ui.form.on("Event", "refresh", function(frm) {
 		frm.add_custom_button(__("Do Something"), function() {

@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Webformular
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Fügen Sie Formulare, die Daten in Ihren Tabellen hinzufügen und ändern können, zu Ihrer Webseite hinzu. Erlauben Sie Nutzern mehrere verschiedene Webformulare zu erstellen und zu ändern.
 

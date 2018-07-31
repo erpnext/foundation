@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Autorisierungsregeln
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Mit Hilfe des Werkzeugs "Autorisierungsregeln" können Sie Regeln für Genehmigungen bestimmen, die an Bedingungen geknüpft sind.
 

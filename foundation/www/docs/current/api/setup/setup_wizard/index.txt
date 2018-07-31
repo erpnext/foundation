@@ -1,4 +1,0 @@
-erpnext.setup.setup_wizard
-erpnext.setup.setup_wizard.utils
-erpnext.setup.setup_wizard.test_setup_wizard
-erpnext.setup.setup_wizard.setup_wizard

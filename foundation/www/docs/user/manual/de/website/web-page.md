@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Webseite
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Über das Modul "Webseite" können feste Inhalte wie "Startseite", "Über uns", "Kontakt" und "Geschäftsbedingungen" erstellt werden.
 

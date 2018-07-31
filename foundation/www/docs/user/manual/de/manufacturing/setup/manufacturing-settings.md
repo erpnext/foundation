@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Fertigungseinstellungen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Die Fertigungseinstellungen finden Sie unter
 

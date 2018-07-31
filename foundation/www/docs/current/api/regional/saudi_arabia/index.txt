@@ -1,2 +1,0 @@
-erpnext.regional.saudi_arabia.setup
-erpnext.regional.saudi_arabia
