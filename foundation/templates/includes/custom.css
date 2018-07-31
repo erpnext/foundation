@@ -1,0 +1,9 @@
+body[data-path="contact"] .page-content-wrapper {
+	max-width: 840px !important;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+body[data-path="contact"] .breadcrumb {
+	padding-left: 0px;
+}
