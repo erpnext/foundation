@@ -1,3 +1,3 @@
-data-import-tool
+data-import
 bulk-rename
 download-backup
