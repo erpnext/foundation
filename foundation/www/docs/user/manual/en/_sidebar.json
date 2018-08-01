@@ -67,9 +67,5 @@
   "route": "/search_docs",
   "title": "Search",
   "type": "input"
- },
- {
-  "route": "https://github.com/frappe/frappe/tree/develop/frappe/docs",
-  "title": "Improve Docs"
  }
 ]

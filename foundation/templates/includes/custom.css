@@ -1,0 +1,11 @@
+body[data-path="contact"] .page-content-wrapper,
+body[data-path*="erpnext-jobs"] .page-content-wrapper {
+	max-width: 840px !important;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+body[data-path="contact"] .breadcrumb,
+body[data-path*="erpnext-jobs"] .breadcrumb {
+	padding-left: 0px;
+}
