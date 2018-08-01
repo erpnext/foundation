@@ -13,6 +13,7 @@ inter-company-journal-entry
 payment-entry
 deferred-revenue
 subscription
+auto-repeat
 multi-currency-accounting
 advance-payment-entry
 payment-request

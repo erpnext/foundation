@@ -1,25 +1,35 @@
-<!-- add-breadcrumbs -->
 # Subscription
 
-If you have a contract with the Customer where your organization gives bill to the Customer on a monthly, quarterly, half-yearly or annual basis, you can use subscription feature to make auto invoicing.
+If you offer a service which requires renewal in the certain time period (yearly, monthly, quarterly etc.), you can use Subscription feature to track them. Subscription master captures all the details required for the auto-creation of Sales Invoice on subscription expiry.
 
-<img class="screenshot" alt="Subscription" src="{{docs_base_url}}/assets/img/accounts/subscription.png">
+Let's consider a use-case of ERPNext subscription itself. Our hosting plans are available on yearly basis. Each customer's account has subscription expiry date, after which customer must renew their subscription with us.
 
-#### Scenario
+To manage client's subscription expiry and auto-generation of Sales Invoice for the renewal, we use Subscription feature.
 
-Subscription for your hosted ERPNext account requires yearly renewal. We use Sales Invoice for generating proforma invoices. To automate proforma invoicing for renewal, we set original Sales Invoice on the subscription form. Recurring proforma invoice is created automatically just before customer's account is about to expire, and requires renewal. This recurring Proforma Invoice is also emailed automatically to the customer.
+### Subcription Validity
 
-To set the subscription for the sales invoice
-Goto Subscription > select base doctype "Sales Invoice" > select base docname "Invoice No" > Save
+**Start Date:** Day from when the subscription will be valid.
 
-<img class="screenshot" alt="Subscription" src="{{docs_base_url}}/assets/img/accounts/subscription.gif">
+**Days Until Due:** Enter no. of days for which subscription will be valid.
 
-**From Date and To Date**: This defines contract period with the customer.
+Based on the subscription start and end date, actual dates for invoices will be calculated.
 
-**Repeat on Day**: If frequency is set as Monthly, then it will be day of the month on which recurring invoice will be generated.
+### Subscription Plan
 
-**Notify By Email**: If you want to notify the user about auto recurring invoice.
+The subscription plan is linked to an Item, for which Sales Invoice is created.
 
-**Print Format**: Select a print format to define document view which should be emailed to customer.
+<img class="screenshot" alt="Subscription" src="{{docs_base_url}}/assets/img/accounts/item-subscriber.png">
 
-**Disabled**: It will stop to make auto recurring documents against the subscription
+### Taxes
+
+Select Taxes and Charges which will be applicable in the Sales Invoice created agains this Subscription.
+
+### Discounts
+
+Mention discounts if any which will be applied on this particular subscription.
+
+### Difference Between Recurring and Subscription
+
+Before Subscription feature was added in ERPNext, the current Auto-Repeat feature was available as subscription only.
+
+The Auto-Repeat feature which is applicable for multiple transactions like Sales Order, Purchase Order, Invoices, Journal Entry etc. Whereas based on Subscription, only Sales Invoices are auto-created.
