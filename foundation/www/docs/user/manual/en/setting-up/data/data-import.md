@@ -83,10 +83,7 @@ child records of that parent.
 
 ### 6. Upload Limitations
 
-ERPNext restricts the amount of data you can upload in one file. Though the
-number may vary based on the type of data. It is usually safe to upload around
-1000 rows of a table at one go. If the system will not accept, then you will
-see an error.
+You can only upload upto 5000 records in one go. (may be less in some cases).
 
 Why is this? Uploading a lot of data can cause your system to crash, specially
 if there are other users doing things in parallel. Hence ERPNext restricts the
