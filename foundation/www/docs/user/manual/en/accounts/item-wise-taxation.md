@@ -15,7 +15,7 @@ Here is the example of Item on which 5% GST is applied only.
 
 <img class="screenshot" alt="Opening Account" src="{{docs_base_url}}/assets/img/accounts/item-wise-tax.png">
 
-For the item which is exempted from GST totally, mention 0% as tax rate in the Item master.
+For the item which is exempted from GST totally, mention 0% as tax rate in the Item master. Note that the Tax accounts set in Item Tax table (with changed tax rates) in Item master are part of the _default_ Sales / Purhcase Tax Template.
 
 <img class="screenshot" alt="Opening Account" src="{{docs_base_url}}/assets/img/accounts/exempted-item.png">
 
