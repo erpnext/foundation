@@ -39,3 +39,5 @@ You can change this setting incase you want the user permissions to be assigned 
 Finally once you have created your air-tight permission model, and you want to check how it applies to various users, you can see it via the **Permitted Documents for User** report. Using this report, you can select the **User** and document type and check how user permissions get applied.
 
 <img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/permitted-documents.png" class="screenshot" alt="Permitted Documents for User report">
+
+{next}
