@@ -36,3 +36,5 @@ In some businesses, users collect the rates from their supplier against the cust
 Pipeline” this is what you need to track if you want to be able to predict how
 much business you are going to get in the future. Its always a good idea to be
 able to track what is coming in order to adjust your resources.
+
+{next}
