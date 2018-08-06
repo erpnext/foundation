@@ -1,19 +1,14 @@
-<!-- add-breadcrumbs -->
-# Data Import Tool
+<!--add breadcrumbs-->
 
-The Data Import Tool is a great way to upload (or edit) bulk data, specially master data, into the system.
+# Data Import
 
-To Open the data import tool, you either go to Setup or go to the Transaction you want to Import. If Data Import is allowed, you will see an Import Button:
+Data Import (formerly known as the Data Import Tool) is a great way to upload (or edit) bulk data, specially master data, into the system.
 
-<img alt="Start Import" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-1.png">
+To begin importing the Data, go to either setup, or to the Transaction you want to import, or simply type so in Global Search!
 
-The tool has two sections, one to download a template and the second to upload
-the data.
+<img alt="Start Import" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-1-new.png">
 
-(Note: Only those DocTypes are allowed for Import whose Document Type is
-"Master" or Allow Import property is set.)
-
-### 1\. Downloading The Template
+## 1\. Downloading The Template
 
 Data in ERPNext is stored in tables, much like a spreadsheet with columns and
 rows of data. Each entity in ERPNext can have multiple child tables associated
@@ -23,15 +18,15 @@ Item can have multiple prices, An Invoice has multiple Items and so on.
 
   * Select Doctype for which template should be downloaded.
   * Check fields to be included in the template.
-  * Click on "Download Blank Template".
-  * For bulk editing, you can click on "Download With Data".
+  * Select the file format of the template file.
+  * For a blank template, make sure that the "Download with Data" field is unchecked.
+  * For bulk editing, you can check "Download With Data".
   
-<img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-tool-template.gif">
+<img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-steps.gif">
 
 ### 2\. Fill in the Template
 
-After downloading the template, open it in a spreadsheet application and fill
-in the data below the column headings.
+After downloading the template, open it in a spreadsheet application (like Excel, Numbers or Libre Office) and fill in the data below the column headings.
 
 <img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/import-file.png">
 
@@ -40,19 +35,19 @@ file. To export the document in Excel tick the checkbox for Download in Excel Fi
 
 <img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/import-csv.png">
 
-### Download in Excel
+### Download in Excel/CSV
 
-<img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-excel.png">
+<img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-steps.gif">
 
-### 3\. Upload the File ethier in .xlsx or .csv 
+### 3\. Upload the File either in .xlsx or .csv 
 
 Finally attach the  file in the section. Click on the "Upload". Once the upload is successfull click Import"
 button.
 
-<img alt="Upload" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-3.png">
+<img alt="Upload" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-3-new.png">
 
 
-<img alt="Upload" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-4.png">
+<img alt="Upload" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-4-new.png">
 
 #### Notes:
 
@@ -81,21 +76,38 @@ row. See the example:
 
 ERPNext also allows you to overwrite all / certain columns. If you want to
 update certain columns, you can download the template with data. Remember to
-check on the “Overwrite” box before uploading.
+check on the “Update Records” box before uploading.
 
 > Note: For child records, if you select Overwrite, it will delete all the
 child records of that parent.
 
 ### 6. Upload Limitations
 
-ERPNext restricts the amount of data you can upload in one file. Though the
-number may vary based on the type of data. It is usually safe to upload around
-1000 rows of a table at one go. If the system will not accept, then you will
-see an error.
+You can only upload upto 5000 records in one go. (may be less in some cases).
 
 Why is this? Uploading a lot of data can cause your system to crash, specially
 if there are other users doing things in parallel. Hence ERPNext restricts the
 number of “writes” you can process in one request.
+
+***
+
+### Import Options
+
+#### 1. Update records
+
+This option let's you edit/overwrite the current data on import.
+
+#### 2. Skip rows with errors
+
+If this is checked, rows with valid data will be imported and invalid rows will be dumped into a new file for you to import later.
+
+#### 3. Submit after importing
+
+If this is checked, in case there are submittable transactions which are imoported ()
+
+#### 4. Ignore encoding errors
+
+In case there are any unicode errors, a new file with the invalid rows will be created to be imported later.
 
 ***
 
@@ -120,7 +132,8 @@ Notepad, and save as “UTF-8”. (Sorry blame Microsoft for this!)
 ####Help Video on Importing Data in ERPNext from Spreadsheet file
 
 
-
-<iframe width="660" height="371" src="https://www.youtube.com/embed/Ta2Xx3QoK3E" frameborder="0" allowfullscreen></iframe>
+<div class="embed-container">
+    <iframe src="https://www.youtube.com/embed/Ta2Xx3QoK3E" frameborder="0" allowfullscreen></iframe>
+</div>
 
 {next}
