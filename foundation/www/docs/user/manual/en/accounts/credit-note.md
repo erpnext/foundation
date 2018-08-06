@@ -19,3 +19,5 @@ Customer Sagar Malhotra has purchased Nokia Lumia worth Rs 42,400 and at the tim
 Credit note with payment entry in ERPNext for above example is as below
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/credit_note_example1.gif">
+
+{next}
