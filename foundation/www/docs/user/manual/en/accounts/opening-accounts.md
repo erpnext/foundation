@@ -1,9 +1,7 @@
 <!-- add-breadcrumbs -->
 # Updating Opening Balance in Accounts
 
-If you are a new company you can start using ERPNext accounting module by going to chart of accounts. However, if you are migrating from a legacy accounting system like Tally or a Fox Pro based software
-
-We recommend that you start using accounting in a new financial year, but you could start midway too. To setup your accounts, you will need the following for the “day” you start using accounting in ERPNext:
+If you are a new company you can start using ERPNext accounting module by going to chart of accounts. However, if you are migrating from a legacy accounting system like Tally or a Fox Pro based software we recommend that you start using accounting in a new financial year, but you could start midway too. To setup your accounts, you will need the following for the “day” you start using accounting in ERPNext:
 
 * Opening capital accounts - like your shareholder’s (or owner’) capital, loans, bank balances on that day.
 
