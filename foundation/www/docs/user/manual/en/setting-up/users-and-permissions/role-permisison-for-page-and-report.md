@@ -24,3 +24,5 @@ To access, goto Setup > Permissions > Role Permission for Page and Report
 Using "Reset to Default" button, user can remove the custom permissions applied on a page or report. Then default permissions will be applicable on that page or report.
 
 <img alt="Reset the default roles" class="screenshot" src="{{docs_base_url}}/assets/img/users-and-permissions/reset-roles-permisison-for-page-report.png">
+
+{next}
