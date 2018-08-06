@@ -125,7 +125,7 @@ Explanation of account types:
 - **Bank:** The account group under which bank account will be created.
 - **Cash:** The account group under which cash account will be created.
 - **Cost of Goods Sold:** The account to book the accumulated total of all costs used to manufacture / purchase a product or service, sold by a company.
-- **Depreciation:** The expense account to book the depreciation of teh fixed assets.
+- **Depreciation:** The expense account to book the depreciation of the fixed assets.
 - **Expenses Included In Valuation:** The account to book the expenses (apart from direct material costs) included in landed cost of an item/product, used in Perpetual Inventory, .
 - **Fixed Asset:** The account to maintain the costs of fixed assets.
 - **Payable:** The account which represents the amount owed by a company to its creditors.
