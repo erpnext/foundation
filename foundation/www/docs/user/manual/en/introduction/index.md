@@ -9,6 +9,7 @@ organization, you can skip this page.*
 Today, small & medium sized businesses (SMEs) are not so different from large/enterprises. The SMEs face similar complexities as a large businesses do, but have limited resources to deal with such complexity. 
 
 Small businesses (like their bigger counterparts) have to:
+
 - do accounts to keep track of sales/ purchases
 - pay taxes to the goverment
 - pay their employees
