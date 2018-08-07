@@ -1,24 +1,31 @@
 <!-- add-breadcrumbs -->
 # Introduction
 
-## What is an ERP and why should I care?
+## What is an ERP system and why should anyone care to use it?
 
-(If you are already convinced you need an all-in-one system for your
-organization, you can skip this page.)
+*If you are already convinced you need an all-in-one system for your
+organization, you can skip this page.*
 
-If you are running a small business that has a few employees, you understand
-that it's hard to manage the dynamic nature of doing businesses. Small businesses
-are not so different from large ones. They contain most of the complexities of
-a large business along with many other constraints. Small businesses have to
-communicate with customers, do accounts, pay taxes, do payroll, manage timelines,
-deliver quality goods and services, answer questions, and keep everyone happy, 
-just like in large businesses.
+Today, small & medium sized businesses are not so different from large/enterprises. Typically, they too face similar complexities as a large business but have limited resources to deal with such complexity. 
 
-Large businesses have the advantage of using advanced data systems to manage
-their process efficiently. Small businesses, on the other hand, typically
-struggle to keep things organized. They often use a mix of apps like
-spreadsheets, accounting software, web CRM etc to manage. The problem is, not
-everyone is on the same page. An ERP changes that.
+Small businesses (like their bigger counterparts) have to 
+- do accounts to keep track of sales/ purchases
+- pay taxes to the goverment
+- pay their employees
+- manage deliveries within promised timelines
+- deliver quality goods and services
+- communicate with customers, answer queries
+And generally try to keep everyone happy.
+
+So far, large enterprises have been able to invest 100s of millions of dollars in very sophisticated systems such as SAP to bring their multi country, multi company, multi currency global businesses online into a single platform to achieve some of the basic process such as accounting, taxation, payroll, reporting, supply chain to name a few.  
+
+Small businesses, on the other hand, typically have been left out of this 1st wave of digital revolution (1995-2015) because they dont have the $ power to license, hire and customize such software to suite their needs. Systems like SAP have been NO-GO for most SMEs with a *minimum* CAPEX or OPEX layout of $100k (100 Thousand Dollars) 
+
+So small businesses haave continue to struggle to keep things organized. They often use a mix of apps like
+spreadsheets, accounting software, web based CRM etc to manage. As a consequence, they have to access different systems to understand customers, sales, cash flow or profitability. The information exists in Silos and is hard to combine to get insights. 
+
+ERPNext addresses those fundamental problems of affordability (Open source, Freely available), all transactional modules included, highly customizable and efficient in computing requirements. 
+
 
 ## What is ERPNext?
 
