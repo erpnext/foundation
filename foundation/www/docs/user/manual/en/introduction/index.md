@@ -10,11 +10,11 @@ Today, small & medium sized businesses (SMEs) are not so different from large/en
 
 Small businesses (like their bigger counterparts) have to:
 - do accounts to keep track of sales/ purchases
-* pay taxes to the goverment
-* pay their employees
-* manage deliveries within promised timelines
-* deliver quality goods and services
-* communicate with customers, answer queries
+- pay taxes to the goverment
+- pay their employees
+- manage deliveries within promised timelines
+- deliver quality goods and services
+- communicate with customers, answer queries
 And generally try to keep everyone happy.
 
 Large enterprises have been able to invest 100s of millions of dollars in very sophisticated systems such as SAP. Systems like SAP are able to handle requirements from such large enterprises to bring their **multi country**, **multi company**, **multi currency**, global businesses into a single platform. This has helped them achieve consolidation of data / records related to basic process such as accounting, taxation, payroll, reporting and supply chain to name a few.  
