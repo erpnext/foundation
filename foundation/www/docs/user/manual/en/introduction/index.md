@@ -21,11 +21,14 @@ So far, large enterprises have been able to invest 100s of millions of dollars i
 
 Small businesses, on the other hand, typically have been left out of this 1st wave of digital revolution (1995-2015) because they dont have the $ power to license, hire and customize such software to suite their needs. Systems like SAP have been NO-GO for most SMEs with a *minimum* CAPEX or OPEX layout of $100k (100 Thousand Dollars) 
 
-So small businesses haave continue to struggle to keep things organized. They often use a mix of apps like
-spreadsheets, accounting software, web based CRM etc to manage. As a consequence, they have to access different systems to understand customers, sales, cash flow or profitability. The information exists in Silos and is hard to combine to get insights. 
+So even today, small businesses continue to struggle to keep things organized. They often use a mix of applications and tools such as spreadsheets, accounting softwares, web based CRMs to manage their day to day record keeping. As a consequence, they have to access different systems to understand customers, sales, cash flow or profitability. The information exists in silos and the data is hard to combine to get useful insights or alerts. As a consequence, small businesses typically are **reactive** instead of being **proactive**. With such a constrained way of working, there is limited scope for **leveraged growth**. Which means, as your business grows, your cost grow in the same proportion. And you have hardly improve your margin. 
 
-ERPNext addresses those fundamental problems of affordability (Open source, Freely available), all transactional modules included, highly customizable and efficient in computing requirements. 
-
+ERPNext addresses some of the above fundamental problems of:
+* affordability : It is a Free & Open Source Software, freely available to download, install
+* completeness : All necessary modules are covered [Full List](https://erpnext.org/ "ERPNex.Org Homepage")
+* customizability : Easy to add fields, or to add more features
+* efficiency : Computing requirements are relatively low (cheaper to host and manage) 
+* wholesomeness : One system, One database, allowing multiple simultaneous users to use at the same time
 
 ## What is ERPNext?
 
