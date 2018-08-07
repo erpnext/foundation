@@ -48,13 +48,14 @@ website_context = {
 				{"label": "User Manual", "url": "/docs/user"},
 				{"label": "Free Trial", "url": "https://erpnext.com"},
 				{"label": "Open Source", "url": "/open-source"},
+				{"label": "Contribute", "url": "/contribute"}
 			], "right":1},
 			{"label": "Community", "child_items":[
 				{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "target='_blank'"},
 				{"label": "Conference 2018", "url": "/conf/2018"},
 				{"label": "Chapters", "url": "/chapter-list"},
 				{"label": "Fellows", "url": "/fellows"},
-				{"label": "Contribute", "url": "/contribute"}
+				{"label": "Write for ERPNext", "url": "/write-for-us"}
 			], "right":1},
 			{"label": "Services", "child_items":[
 				{"label": "Service Providers", "url": "/service-providers"},

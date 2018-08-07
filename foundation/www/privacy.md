@@ -1,4 +1,5 @@
 #Privacy Policy
+
 Version: 1.0 Date: 1st February, 2017
 
 ERPNext Open Source Software Foundation (EOSSF) is committed to protecting the privacy of its users. This Privacy Policy applies to each of its websites and describes the information EOSSF collects about users of the foundation and how that information may be used.

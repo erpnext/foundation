@@ -34,4 +34,8 @@ Once you create the web form, you can view it on the url and test it out!
 
 Your data will be stored in the table you have selected
 
+### Customizing
+
+For customizing web forms, see the [Frappe Documentation of Web Forms](https://frappe.io/docs/user/en/guides/portal-development/web-forms)
+
 {next}
