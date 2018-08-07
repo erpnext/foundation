@@ -54,7 +54,7 @@ And a lot lot lot more.
 
 ERPNext could be used by SMEs as well as large enterprises. There is no known limitation or performance issues. So far it has scaled well. We know of serveral retail chains in Africa and a highly regarded equities trading company in India (with 1000+ employees) that uses ERPNext. 
 
-Check out [User Stories](https://erpnext.org/stories)
+Check out a variety of [User Stories](https://erpnext.org/stories) to know more.
 
 
 
