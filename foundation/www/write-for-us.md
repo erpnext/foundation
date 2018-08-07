@@ -8,13 +8,13 @@
 
 We are looking to build a great knowledge base for ERPNext and we would like your help! If you like to help people, can write, and want to earn some cash, then we’ve got a job for you. Here’s how it works:
 
-1. Write an article (or make a video) – pick a topic of your choice or from [our list](https://github.com/erpnext/foundation/wiki/Contribute-Articles-to-ERPNext.org)
+1. Write an article (or make a video) – pick a topic of your choice or from [our list](https://github.com/erpnext/foundation/wiki/Contribute-Articles-or-Videos-to-ERPNext.org)
 1. Get published – we’ll work with you to get your guide edited and approved
 1. Get rewarded - get paid **$75 per article** *or* get a back-link to your website (you can also choose to donate an article).
 
 It’s that easy. You get the satisfaction of contributing to the community, an authorship credit, and some cold hard cash. Please make sure your sample has a similar level of technical content and explanations as that found in our documentation overall. At this time we are accepting articles only in English.
 
-[List of Articles and Style Guide](https://github.com/erpnext/foundation/wiki/Contribute-Articles-to-ERPNext.org)
+[List of Articles and Style Guide](https://github.com/erpnext/foundation/wiki/Contribute-Articles-or-Videos-to-ERPNext.org)
 
 
 #### Make Short Videos!
