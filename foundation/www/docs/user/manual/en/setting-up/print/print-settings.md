@@ -26,7 +26,8 @@ For Debian OS Family:
 
 `sudo apt-get install libcups2-dev`
 
-For rRedhatOS Family:
+For Redhat OS Family:
+
 `sudo yum install cups-libs`
 
 
