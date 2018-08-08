@@ -18,3 +18,5 @@ Note: For debit note set the negative quantity while adding the item
 Debit note with payment entry in ERPNext
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/debit_note_example1.gif">
+
+{next}
