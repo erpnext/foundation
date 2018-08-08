@@ -33,3 +33,5 @@ Based on the From Date and To Date set in the Sales Invoice Item table, Journal 
   <iframe src="https://www.youtube.com/embed/j6mx-EHU4aY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </div>
+
+{next}
