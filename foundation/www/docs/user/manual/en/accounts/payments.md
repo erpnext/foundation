@@ -29,7 +29,7 @@ For more details about payment entry [check here.](/docs/user/manual/en/accounts
 
 ## Journal Entry
 
-To make paymant using journal entry, check below steps
+To make payment using journal entry, check below steps
 
 ####Step 1: Activate Payment via Journal Entry
 
