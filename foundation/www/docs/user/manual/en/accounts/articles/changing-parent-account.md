@@ -34,3 +34,5 @@ Refresh system from Help menu to experience the change.
 <img alt="Project Default Cost Center" class="screenshot" src="{{docs_base_url}}/assets/img/articles/change-parent-account-1.gif">
 
 <!-- markdown -->
+
+{next}
