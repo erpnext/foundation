@@ -32,3 +32,5 @@ Check [here](/docs/user/manual/en/stock/accounting-of-inventory-stock/perpetual-
 Tax or Charge categorized as for **Total and Valuation** will be added in the valuation of item, as well as in the totals of purchase transactions.
 
 Let's assume that transportion is arranged by our supplier, but we need to pay transportation charges to them. In that case, for transportation charges, category selected should be Total and Valuation. With this, INR 100 transportation charge will be added to the actual purchase amount 800. Also, INR 100 will reflect in the total, as it will be payable for us towards supplier.
+
+{next}
