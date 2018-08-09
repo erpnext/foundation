@@ -103,3 +103,5 @@ before changing the Subscription status to 'Canceled' or 'Unpaid'.
 
 **Prorate** would cause ERPNext to generate a prorated invoice when an active subscription is canceled by default. 
 If you would prefer a full invoice, uncheck the setting.
+
+{next}
