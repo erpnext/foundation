@@ -29,3 +29,5 @@ You need to create Round-off Account in the Chart of Accounts and update in the 
     <img class="screenshot" alt="Fees Section" src="{{docs_base_url}}/assets/img/accounts/company-round-off-account.png">
 
 Once Round-Off account this updated in the Company master, then try to submit Purchase Invoice once again.
+
+{next}
