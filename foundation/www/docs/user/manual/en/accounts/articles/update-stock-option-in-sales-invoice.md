@@ -8,3 +8,5 @@ If you have items delivery and invoicing happening at the same time, you can cre
 On checking Update Stock, Sales Invoice Item will show relevant fields like Warehouse, Serial No., Batch No., Item valuation etc.
 
 On submission of Sales Invoice, with general ledger posting, stock ledger posting will happen as well.
+
+{next}
