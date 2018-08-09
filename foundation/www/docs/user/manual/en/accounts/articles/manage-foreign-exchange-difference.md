@@ -22,3 +22,5 @@ One receipt of payment, exchange rate changed. As per the new exchange rate, pay
 In case you incur loss due to change foriegn exchnage rate, then different amount about be updated in the debit of Foreign Exchange Gain/Loss account. Also you can add another row to update another expenses like bank charges, remittance charges etc.
 
 <!-- markdown -->
+
+{next}
