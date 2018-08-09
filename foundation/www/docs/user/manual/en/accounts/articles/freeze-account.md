@@ -12,3 +12,5 @@ To freeze an Account, go to Chart of Accounts, and edit an Account.
 If User has Role define in the  Account Setting assigned, then he/she will be able to set an Account as Frozen.
 
 <img class="screenshot" alt="Download Backup" src="{{docs_base_url}}/assets/img/articles/freeze-account-2.png">
+
+{next}
