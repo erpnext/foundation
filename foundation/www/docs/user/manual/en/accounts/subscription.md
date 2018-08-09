@@ -23,3 +23,5 @@ Goto Subscription > select base doctype "Sales Invoice" > select base docname "I
 **Print Format**: Select a print format to define document view which should be emailed to customer.
 
 **Disabled**: It will stop to make auto recurring documents against the subscription
+
+{next}
