@@ -14,4 +14,21 @@ To edit print settings, go to:
 
 You can enable print server by fill the print server IP and port then chose default printer
 
+Befor enabling this feature you have to install pycups in the env using the command
+
+`./env/bin/pip install pycups`
+
+executed from the `frappe-bench` directory.
+
+And install cups package
+
+For Debian OS Family:
+
+`sudo apt-get install libcups2-dev`
+
+For Redhat OS Family:
+
+`sudo yum install cups-libs`
+
+
 {next}
