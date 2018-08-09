@@ -14,3 +14,5 @@ On clicking 'Make Difference Entry' button, new Row will be added under Journal 
 On selecting account under new row, debit and credit an entry will be tallying, and you should be able to submit Journal Entri correctly.
 
 <!-- markdown -->
+
+{next}
