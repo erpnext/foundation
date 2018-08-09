@@ -22,3 +22,4 @@ Here Tax Rule 1 has Billing Country as India and Tax Rule 2 has Billing Country 
 Now supposed we try to create a Sales Order for a customer whose default Billing Country is India, system shall select Tax Rule 1.
 In case the customers Billing Country was United Kingdom, the system would have selected Tax Rule 2.
 
+{next}
