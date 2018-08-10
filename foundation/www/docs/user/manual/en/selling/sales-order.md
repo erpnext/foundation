@@ -36,6 +36,7 @@ update.
 
   * Enter Delivery Date agaist each item. If there are multiple items and if you enter delivery date in the first row, the date will be copied to other rows as well where it is blank.
   * Customer Purchase Order number: If your customer has sent you a Purchase Order, you can update its number for future reference (in billing).
+  * To allow for per-Customer, per-Item Pricing Rules ("Customer A" pays $1.00 for "Item 1" but "Customer B" pays $1.25 for "Item 1"), there's a check box in Selling Settings to enable saving the specific item price per customer when you change a price in the Sales Order.
 
 ### Packing List
 
