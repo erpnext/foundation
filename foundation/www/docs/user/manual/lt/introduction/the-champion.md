@@ -1,9 +1,9 @@
 <!-- add-breadcrumbs -->
-# Čempionas
+# Lyderis
 
-<img alt="Champion" class="screenshot" src="{{docs_base_url}}/assets/img/setup/implementation-image.png">
+<img alt="Lyderis" class="screenshot" src="{{docs_base_url}}/assets/img/setup/implementation-image.png">
 
-Per pastaruosius keletą metų mes matėme daugybę sukurtų ERP ir mes
+Per pastaruosius keletą metų mes matėme daugybę sukurtų ERP sistemų ir mes
 suvokėm, kad sėkmingas įgyvendinimas priklauso nuo nematerialių dalykų ir požiūrio.
 
 **ERP nėra būtinas.**

@@ -1,432 +1,420 @@
 <!-- add-breadcrumbs -->
-# Concepts And Terms
+# Sąvokos ir sąlygos
 
-Before you start implementation, lets get familiar with the terminology that
-is used and some basic concepts in ERPNext.
-
-* * *
-
-### Basic Concepts
-
-#### Company
-
-This represents the Company records for which ERPNext is setup. With this same
-setup, you can create multiple Company records, each representing a different
-legal entity. The accounting for each Company will be different, but they will
-share the Customer, Supplier and Item records.
-
-> Setup > Company
-
-#### Customer
-
-Represents a customer. A Customer can be an individual or an organization.
-You can create multiple Contacts and Addresses for each Customer.
-
-> Selling > Customer
-
-#### Supplier
-
-Represents a supplier of goods or services. Your telephone company is a
-Supplier, so is your raw materials Supplier. Again, a Supplier can be an
-individual or an organization and has multiple Contacts and Addresses.
-
-> Buying > Supplier
-
-#### Item
-
-A Product, sub-product or Service that is either bought, sold or manufactured
-and is uniquely identified.
-
-> Stock > Item
-
-#### Account
-
-An Account is a heading under which financial and business transactions are
-carried on. For example, “Travel Expense” is an account, “Customer Zoe”,
-“Supplier Mae” are accounts. ERPNext creates accounts for Customers and
-Suppliers automatically.
-
-> Accounts > Chart of Accounts
-
-#### Address
-
-An address represents location details of a Customer or Supplier. These can be
-of different locations such as Head Office, Factory, Warehouse, Shop etc.
-
-> Selling > Address
-
-#### Contact
-
-An individual Contact belongs to a Customer or Supplier or is just an
-independent. A Contact has a name and contact details like email and phone
-number.
-
-> Selling > Contact
-
-#### Communication
-
-A list of all Communication with a Contact or Lead. All emails sent from the
-system are added to the Communication table.
-
-> Support > Communication
-
-#### Price List
-
-A Price List is a place where different rate plans can be stored. It’s a name
-you give to a set of Item Prices stored under a particular List.
-
-> Selling > Price List
-
-
-> Buying > Price List
+Prieš pradėdami diegti, galite susipažinti su naudojama terminologija ir kai kuriomis pagrindinėmis ERPNext sąvokomis.
 
 * * *
 
-### Accounting
+### Pagrindinės sąvokos
 
-#### Fiscal Year
+#### Bendrovė
 
-Represents a Financial Year or Accounting Year. You can operate multiple
-Fiscal Years at the same time. Each Fiscal Year has a start date and an end
-date and transactions can only be recorded in this period. When you “close” a
-fiscal year, it's balances are transferred as “opening” balances for the next
-fiscal year.
+Tai nusako organizaciją, kuriai yra naudojama ERPNext sistema. Įdiegus ERPNext, sistem, ją galima naudoti kelioms įmonės valdyti, kurių kiekviena yra atskiras
+juridinis asmuo. Kiekvienos Bendrovės apskaita bus atskira, bet jos gali
+dalinkis įrašais apie klientus, tiekėjus ir prekes.
 
-> Setup > Company > Fiscal Year
+> Nustatymai > Bendrovė
 
-#### Cost Center
+#### Klientas
 
-A Cost Center is like an Account, but the only difference is that its
-structure represents your business more closely than Accounts.
-For example, in your Chart of Accounts, you can separate your expenses by its type
-(i.e., travel, marketing, etc.). In your Chart of Cost Centers, you can separate
-them by product line or business group (e.g., online sales, retail sales, etc.).
+Klientas gali būti asmuo ar organizacija. Galite sukurti kelis kontaktus ir adresus kiekvienam klientui.
 
-> Accounts > Chart of Cost Centers
+> Pardavimas > Klientas
 
-#### Journal Entry
+#### Tiekėjas
 
-A document that contains General Ledger (GL) entries and the sum of Debits and
-Credits of those entries is the same. In ERPNext you can update Payments,
-Returns, etc., using Journal Entries.
+Prekių ar paslaugų tiekėjas. Jūsų telefono kompanija yra
+Tiekėjas jums yra žaliavų tiekėjas. Vėlgi, tiekėjas gali būti
+fizinis ar juridinis asmuo su keleta kontaktų ir adresų.
 
-> Accounts > Journal Entry
+> Pirkimas > Tiekėjas
 
-#### Sales Invoice
+#### Produktas
 
-A bill sent to Customers for delivery of Items (goods or services).
+Produktas, dalinis gaminys ar paslauga, kuri yra arba nupirkta, parduodama ar pagaminta ir yra unikaliai identifikuojama.
 
-> Accounts > Sales Invoice
+> Ištekliai > Produktas
 
-#### Purchase Invoice
+#### Paskyra
 
-A bill sent by a Supplier for delivery of Items (goods or services).
+Paskyra yra finansinių ir verslo sandorių apjungimas. Pavyzdžiui, "Kelionės išlaidos" yra paskyra "Klientas Zoė", "Tiekėjas Mae" yra paskyros. ERPNext Klientams ir Tiekėjams paskyras sukuria automatiškai.
 
-> Accounts > Purchase Invoice
+> Paskyros > Paskyrų diagrama
 
-#### Currency
+#### Adresas
 
-ERPNext allows you to book transactions in multiple currencies. There is only
-one currency for your book of accounts though. While posting your Invoices with
-payments in different currencies, the amount is converted to the default
-currency by the specified conversion rate.
+Adresas nurodo kliento ar tiekėjo vietos informaciją. Tai gali būti skirtingų vietų, tokių kaip pagrindinė buveinė, gamykla, sandėlys, parduotuvė ir kt.
 
-> Setup > Currency
+> Pardavimas > Adresas
 
-* * *
+#### Kontaktas
 
-### Selling
+Atskiri Kontaktai priklauso arba Klientui arba Tiekėjui arba niekam nepriklausomas. Kontaktas turi vardą ir kontaktinę informaciją, pvz. el. pašto adresą ir telefono numerį.
 
-#### Customer Group
+> Pardavimas > Kontaktai
 
-A classification of Customers, usually based on market segment.
+#### Bendravimas
 
-> Selling > Setup > Customer Group
+Sąrašas viso bendravimo su Kontaktu arba Galimu klientu. Visi el. laiškai, išsiųsti iš sistemos pridedama prie komunikacijos sąrašo.
 
-#### Lead
+> Palaikymas > Bendravimas
 
-A person who could be a future source of business. A Lead may generate
-Opportunities. (from: “may lead to a sale”).
+#### Kainoraštis
 
-> CRM > Lead
+Kainoraštyje galima saugoti skirtingų tarifų planus. Tai vardas jūs pateikiate tam tikro sąrašo saugomų elementų kainų rinkinį.
 
-#### Opportunity
+> Pardavimai> Kainoraštis
 
-A potential sale. (from: “opportunity for a business”).
 
-> CRM > Opportunity
-
-#### Quotation
-
-Customer's request to price an item or service.
-
-> Selling > Quotation
-
-#### Sales Order
-
-A note confirming the terms of delivery and price of an Item (product or
-service) by the Customer. Deliveries, Work Orders and Invoices are made
-on basis of Sales Orders.
-
-> Selling > Sales Order
-
-#### Territory
-
-A geographical area classification for sales management. You can set targets
-for Territories and each sale is linked to a Territory.
-
-> Selling > Setup > Territory
-
-#### Sales Partner
-
-A third party distributer / dealer / affiliate / commission agent who sells
-the company’s products usually for a commission.
-
-> Selling > Setup > Sales Partner
-
-#### Sales Person
-
-Someone who pitches to the Customer and closes deals. You can set targets for
-Sales Persons and tag them in transactions.
-
-> Selling > Setup > Sales Person
+> Pirkimas> Kainoraštis
 
 * * *
 
-### Buying
+### Apskaita
 
-#### Purchase Order
+#### Fiskaliniai metai
 
-A contract given to a Supplier to deliver the specified Items at the specified
-cost, quantity, dates and other terms.
+Atstovauja finansiniams metams arba apskaitos metams. Galite dirbti kelis kartus
+Fiskaliniai metai tuo pačiu metu. Kiekvienas fiskalinių metų pradžios data ir pabaiga
+data ir sandoriai gali būti užregistruoti tik šiuo laikotarpiu. Kai jūs "uždarykite" a
+fiskaliniai metai, tai likučiai pervedami kaip "atidarymo" likučiai kitam
+fiskaliniai metai.
 
-> Buying > Purchase Order
+> Sąranka> kompanija> fiskaliniai metai
 
-#### Material Request
+#### Mokesčių centras
 
-A request made by a system User, or automatically generated by ERPNext based
-on reorder level or projected quantity in Production Plan for purchasing a set
-of Items.
+Mokesčių centras yra kaip sąskaita, tačiau vienintelis skirtumas yra tas, kad jis
+struktūra atstovauja jūsų verslui labiau nei sąskaitos.
+Pavyzdžiui, savo sąskaitų lentelėje galite atskirti savo išlaidas pagal jo rūšį
+(t. y. kelionės, rinkodara ir kt.). Savo kortelių kainų centruose galite atskirti
+pagal produktų grupes ar verslo grupes (pvz., pardavimai internetu, mažmeninė prekyba ir kt.).
 
-> Buying > Material Request
+> Sąskaitos> sąnaudų centrų schema
+
+#### žurnalo įrašas
+
+Dokumentas, kuriame yra General Ledger (GL) įrašai ir Debeto ir
+Šių įrašų kreditai yra tokie patys. ERPNext galite atnaujinti mokėjimus,
+Grąžina ir tt, naudojant žurnalo įrašus.
+
+> Sąskaitos> žurnalo įrašas
+
+#### Pardavimo sąskaita faktūra
+
+Sąskaitą, siunčiamą Klientams pristatant daiktus (prekes ar paslaugas).
+
+> Sąskaitos> pardavimo sąskaitą faktūrą
+
+#### Pirkimo sąskaita faktūra
+
+Tiekėjo siunčiama sąskaita už daiktų (prekių ar paslaugų) pristatymą.
+
+> Paskyros> pirkimo sąskaita faktūra
+
+#### Valiuta
+
+ERPNext leidžia jums užsisakyti sandorius keliais valiutomis. Yra tik vienas
+nors jūsų sąskaitų knygelė yra viena valiuta. Skelbdami savo sąskaitas faktūras
+mokėjimai skirtingomis valiutomis, suma konvertuojama į numatytąsias
+valiuta pagal nurodytą perskaičiavimo kursą.
+
+> Sąranka> valiuta
+
+* * *
+
+### Pardavimas
+
+#### Klientų grupė
+
+Klientų klasifikacija, paprastai pagrįsta rinkos segmentu.
+
+> Pardavimas> sąranka> klientų grupė
+
+#### Vadovauti
+
+Asmuo, kuris galėtų būti būsimas verslo šaltinis. Švinas gali generuoti
+Galimybės. (nuo: "gali sukelti pardavimą").
+
+> CRM> "Lead"
+
+#### Galimybė
+
+Galimas pardavimas. (nuo: "galimybė verslui").
+
+> CRM> galimybė
+
+#### Citata
+
+Kliento prašymas sumokėti prekę ar paslaugą.
+
+> Pardavimas> Citata
+
+#### Pardavimo užsakymas
+
+Pastaba, patvirtinanti prekių pristatymo sąlygas ir kainą (prekė arba prekė)
+paslauga). Pristatymai, darbo užsakymai ir sąskaitos faktūros
+remiantis pardavimo orderiais.
+
+> Pardavimai> Pardavimų užsakymas
+
+#### Teritorija
+
+Geografinės vietovės klasifikacija pardavimų valdymui. Galite nustatyti tikslus
+Teritorijoms ir kiekvienas pardavimas yra susijęs su teritorija.
+
+> Pardavimas> sąranka> teritorija
+
+#### Pardavimų partneris
+
+Trečiosios šalies platintojas / prekybininkas / filialas / komisijos atstovas, kuris parduoda
+kompanijos produktai paprastai yra komisiniai.
+
+> Pardavimas> sąranka> pardavimo partneris
+
+#### Pardavėjas
+
+Kažkas, kuris stengiasi Klientui ir uždaro sandorius. Galite nustatyti tikslus
+Parduodami asmenys ir pažymėkite juos sandoriuose.
+
+> Pardavimas> sąranka> pardavimo atstovas
+
+* * *
+
+### Pirkimas
+
+#### Pirkimo užsąkymas
+
+Tiekėjui sudaryta sutartis nurodyti nurodytus elementus pristatyti nurodytomis sąlygomis
+kaina, kiekis, datos ir kitos sąlygos.
+
+> Pirkimas> Pirkimo užsakymas
+
+#### Medžiagos užklausa
+
+Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas pagal ERPNext
+dėl perrinkimo lygio arba numatomo kiekio gamybiniame plane, norint įsigyti rinkinį
+elementų.
+
+> Pirkimas> Medžiagos užklausa
 
 * * *
 
 ### Stock (Inventory)
 
-#### Warehouse
+#### Sandėlis
 
-A logical Warehouse against which stock entries are made.
+Loginis sandėlis, kurio atsargos įrašomos.
 
-> Stock > Warehouse
+> Ištekliai> Sandėlis
 
-#### Stock Entry
+#### Sandėlyje įrašas
 
-Material transfer from a Warehouse, to a Warehouse or from one Warehouse to
-another.
+Medžiaga perduodama iš sandėlio, į sandėlį arba iš vieno sandėlio į
+kitas.
 
-> Stock > Stock Entry
+> Stock> Stock Entry
 
-#### Delivery Note
+#### Pristatymo pastaba
 
-A list of Items with quantities for shipment. A Delivery Note will reduce the
-stock of Items for the Warehouse from where you ship. A Delivery Note is
-usually made against a Sales Order.
+Elementų sąrašas su siuntos kiekiu. Pristatymo pastaba sumažins
+daiktų sandėlis sandėlyje, iš kurios siunčiate. Pristatymo pastaba yra
+dažniausiai pateikiamas prieš pardavimo užsakymą.
 
-> Stock > Delivery Note
+> Stock> Pristatymo pastaba
 
-#### Purchase Receipt
+#### Pirkimo kvitas
 
-A note stating that a particular set of Items were received from the Supplier,
-most likely against a Purchase Order.
+Pastaba, patvirtinanti, kad tiekėjas gavo tam tikrą elementų rinkinį,
+greičiausiai prieš pirkimo užsakymą.
 
-> Stock > Purchase Receipt
+> Stock> pirkimo kvitas
 
-#### Serial Number
+#### Serijos numeris
 
-A unique number given to a particular unit of an Item.
+Unikalus numeris tam tikram vienetui.
 
-> Stock > Serial Number
+> Stock> Serijos numeris
 
-#### Batch
+#### Partija
 
-A number given to a group of units of a particular Item that may be purchased
-or manufactured in a group.
+Numeris, suteiktas konkretaus Prekės vienetų grupei, kurią galima įsigyti
+arba gaminami grupėje.
 
-> Stock > Batch
+> Stock> partija
 
-#### Stock Ledger Entry
+#### Sandėlio vadovo įrašas
 
-A unified table for all material movement from one warehouse to another. This
-is the table that is updated when a Stock Entry, Delivery Note, Purchase
-Receipt, and Sales Invoice (POS) is made.
+Vieningą stalą visam materialiam judėjimui iš vieno sandėlio į kitą. Tai
+yra lentelė, kuri yra atnaujinama, kai pateikiamas atsargų įrašas, pristatymo pastaba, pirkimas
+Kvitas ir pardavimo sąskaita (POS).
 
-#### Stock Reconciliation
+#### Stock Matching
 
-Update Stock of multiple Items from a spreadsheet (CSV) file.
+Atnaujinkite keletą elementų iš skaičiuoklės (CSV) failo.
 
-> Stock > Stock Reconciliation
+> Stock> Stock reconciliation
 
-#### Quality Inspection
+#### Kokybės tikrinimas
 
-A note prepared to record certain parameters of an Item at the time of Receipt
-from Supplier, or Delivery to Customer.
+Pastaba, paruošta įrašyti tam tikrus Parametro parametrus gavimo metu
+iš tiekėjo ar pristatymo klientui.
 
-> Stock > Quality Inspection
+> Stock> Kokybės tikrinimas
 
-#### Item Group
+#### Prekių grupė
 
-A classification of Item.
+Pozicijos klasifikacija.
 
-> Stock > Setup > Item Group
-
-* * *
-
-### Human Resource Management
-
-#### Employee
-
-Record of a person who has been in present or past, in the employment of the
-company.
-
-> Human Resources > Employee
-
-#### Leave Application
-
-A record of an approved or rejected request for leave.
-
-> Human Resource > Leave Application
-
-#### Leave Type
-
-A type of leave (e.g., Sick Leave, Maternity Leave, etc.).
-
-> Human Resource > Leave and Attendance > Leave Type
-
-#### Payroll Entry
-
-A tool that helps in creation of multiple Salary Slips for Employees.
-
-> Human Resource > Payroll Entry
-
-#### Salary Slip
-
-A record of the monthly salary given to an Employee.
-
-> Human Resource > Salary Slip
-
-#### Salary Structure
-
-A template identifying all the components of an Employees' salary (earnings),
-tax and other social security deductions.
-
-> Human Resource > Salary and Payroll > Salary Structure
-
-#### Appraisal
-
-A record of the performance of an Employee over a specified period based on
-certain parameters.
-
-> Human Resources > Appraisal
-
-#### Appraisal Template
-
-A template recording the different parameters of an Employees' performance and
-their weightage for a particular role.
-
-> Human Resources > Employee Setup > Appraisal Template
-
-#### Attendance
-
-A record indicating presence or absence of an Employee on a particular day.
-
-> Human Resources > Attendance
+> Stock> Setup> Item Group
 
 * * *
 
-### Manufacturing
+### Žmogiškųjų išteklių valdymas
 
-#### Bill of Materials (BOM)
+#### Darbuotojas
 
-A list of Operations and Items with their quantities, that are required to
-produce another Item. A Bill of Materials (BOM) is used to plan purchases and
-do product costing.
+Įrašo apie asmenį, esantį dabartiniame ar praeityje, įdarbinant
+bendrovė.
 
-> Manufacturing > BOM
+> Žmogiškieji ištekliai> Darbuotojai
+
+#### Palikti paraišką
+
+Patvirtinto arba atmesto prašymo atvykti įrašas.
+
+> Žmogiškieji ištekliai> Palikite paraišką
+
+#### Palikite tipą
+
+Atostogų rūšis (pvz., Ligos palikimas, gimdymo atostogos ir kt.).
+
+> Žmogiškieji ištekliai> Atostogos ir dalyvavimas> Atostogų tipas
+
+#### Darbo užmokesčio įrašas
+
+Įrankis, kuris padeda kurti darbuotojams kelis atlyginimus.
+
+> Žmogiškieji ištekliai> Darbo užmokesčio įrašas
+
+#### Algos lapelis
+
+Darbuotojui skirtos mėnesinės algos įrašas.
+
+> Žmogiškieji ištekliai> Atlyginimai
+
+#### Darbo užmokesčio struktūra
+
+Šablonas, identifikuojantis visus darbuotojo algos (uždarbio) komponentus,
+mokesčių ir kitų socialinio draudimo atskaitymų.
+
+> Žmogiškieji ištekliai> Darbo užmokestis ir darbo užmokestis> Darbo užmokesčio struktūra
+
+#### Įvertinimas
+
+Darbuotojo veiklos rezultatai per nustatytą laikotarpį, remiantis
+tam tikri parametrai.
+
+> Žmogiškieji ištekliai> Vertinimas
+
+#### Vertinimo šablonas
+
+Šablonas, kuriame įrašomi skirtingi Darbuotojų našumo ir parametrų parametrai
+jų svarba tam tikram vaidmeniui.
+
+> Žmogiškieji ištekliai> Darbuotojų sąranka> Vertinimo šablonas
+
+#### Lankomumas
+
+Įrašas, nurodantis darbuotojo buvimą ar nebuvimą konkrečioje dieną.
+
+> Žmogiškieji ištekliai> Lankomumas
+
+* * *
+
+### Gamyba
+
+#### Medžiagų sąvadas (BOM)
+
+Operacijų ir elementų sąrašas su jų kiekiais, kurių reikia
+pateikite kitą punktą. Medžiagų sąvadas (BOM) naudojamas planuojant pirkimus ir
+atlikite produkto sąnaudas.
+
+> Gamyba> BOM
 
 #### Workstation
 
-A place where a BOM operation takes place. It is useful to calculate the
-direct cost of the product.
+Vieta, kur vyksta BOM operacija. Naudinga apskaičiuoti
+tiesioginės produkto kainos.
 
-> Manufacturing > Workstation
+> Gamyba> darbo stotis
 
-#### Work Order
+#### Darbų užsakymas
 
-A document signaling production (manufacture) of a particular Item with
-specified quantities.
+Dokumentas, signalizuojantis konkretaus gaminio gamybą (gamybą) su
+nurodyti kiekiai.
 
-> Manufacturing > Work Order
+> Gamyba> Darbo tvarka
 
-#### Production Planning Tool
+#### Gamybos planavimo įrankis
 
-A tool for automatic creation of Work Orders and Purchase Requests based
-on Open Sales Orders in a given period.
+Automatizuoto darbo užsakymų ir pirkimų prašymų kūrimo įrankis
+apie atidarytus pardavimo užsakymus per tam tikrą laikotarpį.
 
-> Manufacturing > Production Planning Tool
+> Gamyba> Gamybos planavimo įrankis
 
 * * *
 
-### Website
+### Interneto svetainė
 
-#### Blog Post
+#### Dienoraščio įrašas
 
-A short article that appears in the “Blog” section of the website generated
-from the ERPNext website module. Blog is a short form of “Web Log”.
+Pateikiamas trumpas straipsnis, sukurtas svetainės "Dienoraščio" skyriuje
+iš ERPNext svetainės modulio. Dienoraštis yra trumpa "žiniatinklio žurnalo" forma.
 
-> Website > Blog Post
+> Svetainė> Dienoraščio įrašas
 
-#### Web Page
+#### Tinklo puslapis
 
-A web page with a unique URL (web address) on the website generated from
+Tinklalapis su unikaliu URL (žiniatinklio adresu) iš svetainės, sukurtos iš
 ERPNext.
 
-> Website > Web Page
+> Svetainė> Tinklalapis
 
 * * *
 
-### Setup / Customization
+### Sąranka / pritaikymas
 
-#### Custom Field
+#### Pasirinktinis laukas
 
-A user defined field on a form / table.
+Vartotojo apibrėžtas laukas formoje / lentelėje.
 
-> Setup > Customize ERPNext > Custom Field
+> Sąranka> Pritaikyti ERPNext> Pasirinktinis laukas
 
 #### Global Defaults
 
-This is the section where you set default values for various parameters of the
-system.
+Tai skyrius, kuriame jūs nustatote numatytuosius įvairių parametrų parametrus
+sistema.
 
-> Setup > Data > Global Defaults
+> Sąranka> duomenys> globalūs numatymai
 
-#### Print Heading
+#### Spausdinti antraštę
 
-A title that can be set on a transaction just for printing. For example, you
-want to print a Quotation with a title “Proposal” or “Pro forma Invoice”.
+Pavadinimas, kurį galima nustatyti tik spausdinimui. Pavyzdžiui, jūs
+norite išspausdinti pasiūlymą su antrašte "Pasiūlymas" arba "Pro forma sąskaita faktūra".
 
-> Setup > Branding and Printing > Print Headings
+> Sąranka> Brendis ir spausdinimas> Spausdinimo antraštės
 
-#### Terms and Conditions
+#### Sąlygos ir sąlygos
 
-Text of your terms of contract.
+Jūsų sutarties sąlygų tekstas.
 
-> Selling > Setup > Terms and Conditions
+> Pardavimai> Sąranka> Sąlygos
 
-#### Unit of Measure (UOM)
+#### Priemonės vienetas (UOM)
 
-How quantity is measured for an Item. E.g., Kg, No., Pair, Packet, etc.
+Kaip kiekį išmatuojamas elementui. Pvz., "Kg", "Ne", "Pora", "Paketas" ir tt
 
-> Stock > Setup > UOM
+> Stock> Setup> UOM
 
 {next}
