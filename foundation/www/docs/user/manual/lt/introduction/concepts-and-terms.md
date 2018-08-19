@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Sąvokos ir sąlygos
+# Sąvokos ir spibrėžimai
 
 Prieš pradėdami diegti, galite susipažinti su naudojama terminologija ir kai kuriomis pagrindinėmis ERPNext sąvokomis.
 
@@ -63,10 +63,10 @@ Sąrašas viso bendravimo su Kontaktu arba Galimu klientu. Visi el. laiškai, i�
 
 Kainoraštyje galima saugoti skirtingų tarifų planus. Tai vardas jūs pateikiate tam tikro sąrašo saugomų elementų kainų rinkinį.
 
-> Pardavimai> Kainoraštis
+> Pardavimas > Kainoraštis
 
 
-> Pirkimas> Kainoraštis
+> Pirkimas > Kainoraštis
 
 * * *
 
@@ -75,22 +75,17 @@ Kainoraštyje galima saugoti skirtingų tarifų planus. Tai vardas jūs pateikia
 #### Fiskaliniai metai
 
 Atstovauja finansiniams metams arba apskaitos metams. Galite dirbti kelis kartus
-Fiskaliniai metai tuo pačiu metu. Kiekvienas fiskalinių metų pradžios data ir pabaiga
-data ir sandoriai gali būti užregistruoti tik šiuo laikotarpiu. Kai jūs "uždarykite" a
-fiskaliniai metai, tai likučiai pervedami kaip "atidarymo" likučiai kitam
-fiskaliniai metai.
+Fiskaliniai metai tuo pačiu metu. Kiekvienas fiskalinių metų pradžios data ir pabaiga data ir sandoriai gali būti užregistruoti tik šiuo laikotarpiu. Kai jūs "uždarykite" a fiskaliniai metai, tai likučiai pervedami kaip "atidarymo" likučiai kitam fiskaliniai metai.
 
-> Sąranka> kompanija> fiskaliniai metai
+> Nustatymai > Bendrovė > Fiskaliniai metai
 
 #### Mokesčių centras
 
-Mokesčių centras yra kaip sąskaita, tačiau vienintelis skirtumas yra tas, kad jis
-struktūra atstovauja jūsų verslui labiau nei sąskaitos.
+Mokesčių centras yra kaip sąskaita, tačiau vienintelis skirtumas yra tas, kad jisstruktūra atstovauja jūsų verslui labiau nei sąskaitos.
 Pavyzdžiui, savo sąskaitų lentelėje galite atskirti savo išlaidas pagal jo rūšį
-(t. y. kelionės, rinkodara ir kt.). Savo kortelių kainų centruose galite atskirti
-pagal produktų grupes ar verslo grupes (pvz., pardavimai internetu, mažmeninė prekyba ir kt.).
+(t. y. kelionės, rinkodara ir kt.). Savo kortelių kainų centruose galite atskirti pagal produktų grupes ar verslo grupes (pvz., pardavimai internetu, mažmeninė prekyba ir kt.).
 
-> Sąskaitos> sąnaudų centrų schema
+> Sąskaitos > sąnaudų centrų schema
 
 #### žurnalo įrašas
 
@@ -98,19 +93,19 @@ Dokumentas, kuriame yra General Ledger (GL) įrašai ir Debeto ir
 Šių įrašų kreditai yra tokie patys. ERPNext galite atnaujinti mokėjimus,
 Grąžina ir tt, naudojant žurnalo įrašus.
 
-> Sąskaitos> žurnalo įrašas
+> Sąskaitos > Žurnalo įrašas
 
 #### Pardavimo sąskaita faktūra
 
 Sąskaitą, siunčiamą Klientams pristatant daiktus (prekes ar paslaugas).
 
-> Sąskaitos> pardavimo sąskaitą faktūrą
+> Sąskaitos > Pardavimo sąskaitą faktūrą
 
 #### Pirkimo sąskaita faktūra
 
 Tiekėjo siunčiama sąskaita už daiktų (prekių ar paslaugų) pristatymą.
 
-> Paskyros> pirkimo sąskaita faktūra
+> Sąskaitos > Pirkimo sąskaita faktūra
 
 #### Valiuta
 
@@ -119,7 +114,7 @@ nors jūsų sąskaitų knygelė yra viena valiuta. Skelbdami savo sąskaitas fak
 mokėjimai skirtingomis valiutomis, suma konvertuojama į numatytąsias
 valiuta pagal nurodytą perskaičiavimo kursą.
 
-> Sąranka> valiuta
+> Nustatymai> Valiuta
 
 * * *
 
@@ -127,9 +122,9 @@ valiuta pagal nurodytą perskaičiavimo kursą.
 
 #### Klientų grupė
 
-Klientų klasifikacija, paprastai pagrįsta rinkos segmentu.
+Klientų grupavimas, dažniausiai pagal rinkos segmentą.
 
-> Pardavimas> sąranka> klientų grupė
+> Pardavimas > sąranka > klientų grupė
 
 #### Vadovauti
 
@@ -148,7 +143,7 @@ Galimas pardavimas. (nuo: "galimybė verslui").
 
 Kliento prašymas sumokėti prekę ar paslaugą.
 
-> Pardavimas> Citata
+> Pardavimas > Citata
 
 #### Pardavimo užsakymas
 
@@ -156,28 +151,28 @@ Pastaba, patvirtinanti prekių pristatymo sąlygas ir kainą (prekė arba prekė
 paslauga). Pristatymai, darbo užsakymai ir sąskaitos faktūros
 remiantis pardavimo orderiais.
 
-> Pardavimai> Pardavimų užsakymas
+> Pardavimas > Pardavimų užsakymas
 
 #### Teritorija
 
 Geografinės vietovės klasifikacija pardavimų valdymui. Galite nustatyti tikslus
 Teritorijoms ir kiekvienas pardavimas yra susijęs su teritorija.
 
-> Pardavimas> sąranka> teritorija
+> Pardavimas > Nustatymai > teritorija
 
 #### Pardavimų partneris
 
 Trečiosios šalies platintojas / prekybininkas / filialas / komisijos atstovas, kuris parduoda
 kompanijos produktai paprastai yra komisiniai.
 
-> Pardavimas> sąranka> pardavimo partneris
+> Pardavimas > Nustatymai > pardavimo partneris
 
 #### Pardavėjas
 
 Kažkas, kuris stengiasi Klientui ir uždaro sandorius. Galite nustatyti tikslus
 Parduodami asmenys ir pažymėkite juos sandoriuose.
 
-> Pardavimas> sąranka> pardavimo atstovas
+> Pardavimas > Nustatymai > pardavimo atstovas
 
 * * *
 
@@ -185,35 +180,32 @@ Parduodami asmenys ir pažymėkite juos sandoriuose.
 
 #### Pirkimo užsąkymas
 
-Tiekėjui sudaryta sutartis nurodyti nurodytus elementus pristatyti nurodytomis sąlygomis
-kaina, kiekis, datos ir kitos sąlygos.
+Tiekėjui sudaryta sutartis nurodyti nurodytus elementus pristatyti nurodytomis sąlygomis kaina, kiekis, datos ir kitos sąlygos.
 
-> Pirkimas> Pirkimo užsakymas
+> Pirkimas > Pirkimo užsakymas
 
 #### Medžiagos užklausa
 
-Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas pagal ERPNext
-dėl perrinkimo lygio arba numatomo kiekio gamybiniame plane, norint įsigyti rinkinį
-elementų.
+Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas pagal ERPNext dėl perrinkimo lygio arba numatomo kiekio gamybiniame plane, norint įsigyti rinkinį elementų.
 
-> Pirkimas> Medžiagos užklausa
+> Pirkimas > Medžiagos užklausa
 
 * * *
 
-### Stock (Inventory)
+### Ištekliai (Inventory)
 
 #### Sandėlis
 
 Loginis sandėlis, kurio atsargos įrašomos.
 
-> Ištekliai> Sandėlis
+> Ištekliai > Sandėlis
 
 #### Sandėlyje įrašas
 
 Medžiaga perduodama iš sandėlio, į sandėlį arba iš vieno sandėlio į
 kitas.
 
-> Stock> Stock Entry
+> Ištekliai > Ištekliai Entry
 
 #### Pristatymo pastaba
 
@@ -221,27 +213,27 @@ Elementų sąrašas su siuntos kiekiu. Pristatymo pastaba sumažins
 daiktų sandėlis sandėlyje, iš kurios siunčiate. Pristatymo pastaba yra
 dažniausiai pateikiamas prieš pardavimo užsakymą.
 
-> Stock> Pristatymo pastaba
+> Ištekliai > Pristatymo pastaba
 
 #### Pirkimo kvitas
 
 Pastaba, patvirtinanti, kad tiekėjas gavo tam tikrą elementų rinkinį,
 greičiausiai prieš pirkimo užsakymą.
 
-> Stock> pirkimo kvitas
+> Ištekliai > pirkimo kvitas
 
 #### Serijos numeris
 
 Unikalus numeris tam tikram vienetui.
 
-> Stock> Serijos numeris
+> Ištekliai > Serijos numeris
 
 #### Partija
 
 Numeris, suteiktas konkretaus Prekės vienetų grupei, kurią galima įsigyti
 arba gaminami grupėje.
 
-> Stock> partija
+> Ištekliai > partija
 
 #### Sandėlio vadovo įrašas
 
@@ -249,24 +241,24 @@ Vieningą stalą visam materialiam judėjimui iš vieno sandėlio į kitą. Tai
 yra lentelė, kuri yra atnaujinama, kai pateikiamas atsargų įrašas, pristatymo pastaba, pirkimas
 Kvitas ir pardavimo sąskaita (POS).
 
-#### Stock Matching
+#### Ištekliai Matching
 
 Atnaujinkite keletą elementų iš skaičiuoklės (CSV) failo.
 
-> Stock> Stock reconciliation
+> Ištekliai > Ištekliai reconciliation
 
 #### Kokybės tikrinimas
 
 Pastaba, paruošta įrašyti tam tikrus Parametro parametrus gavimo metu
 iš tiekėjo ar pristatymo klientui.
 
-> Stock> Kokybės tikrinimas
+> Ištekliai > Kokybės tikrinimas
 
 #### Prekių grupė
 
 Pozicijos klasifikacija.
 
-> Stock> Setup> Item Group
+> Ištekliai > Nustatymai > Item Group
 
 * * *
 
@@ -322,7 +314,7 @@ tam tikri parametrai.
 Šablonas, kuriame įrašomi skirtingi Darbuotojų našumo ir parametrų parametrai
 jų svarba tam tikram vaidmeniui.
 
-> Žmogiškieji ištekliai> Darbuotojų sąranka> Vertinimo šablonas
+> Žmogiškieji ištekliai> Darbuotojų Nustatymai > Vertinimo šablonas
 
 #### Lankomumas
 
@@ -383,38 +375,38 @@ ERPNext.
 
 * * *
 
-### Sąranka / pritaikymas
+### Nustatymai / pritaikymas
 
 #### Pasirinktinis laukas
 
 Vartotojo apibrėžtas laukas formoje / lentelėje.
 
-> Sąranka> Pritaikyti ERPNext> Pasirinktinis laukas
+> Nustatymai> Pritaikyti ERPNext> Pasirinktinis laukas
 
 #### Global Defaults
 
 Tai skyrius, kuriame jūs nustatote numatytuosius įvairių parametrų parametrus
 sistema.
 
-> Sąranka> duomenys> globalūs numatymai
+> Nustatymai> duomenys> globalūs numatymai
 
 #### Spausdinti antraštę
 
 Pavadinimas, kurį galima nustatyti tik spausdinimui. Pavyzdžiui, jūs
 norite išspausdinti pasiūlymą su antrašte "Pasiūlymas" arba "Pro forma sąskaita faktūra".
 
-> Sąranka> Brendis ir spausdinimas> Spausdinimo antraštės
+> Nustatymai > Brendis ir spausdinimas> Spausdinimo antraštės
 
 #### Sąlygos ir sąlygos
 
 Jūsų sutarties sąlygų tekstas.
 
-> Pardavimai> Sąranka> Sąlygos
+> Pardavimai > Nustatymai > Sąlygos
 
-#### Priemonės vienetas (UOM)
+#### Matavimo vienetas (MV)
 
-Kaip kiekį išmatuojamas elementui. Pvz., "Kg", "Ne", "Pora", "Paketas" ir tt
+Kaip kiekį išmatuojamas elementui. Pvz., "Kg", "No", "Paketas", "Paketas" ir tt.
 
-> Stock> Setup> UOM
+> Ištekliai > Nustatymai > MV
 
 {next}
