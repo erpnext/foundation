@@ -10,7 +10,6 @@
   3. Galite bendradarbiauti su ERPNext bendruomenę, kuri gali padėti, jei reikia pagalbos. Esate nepriklausomas nuo paslaugos teikėjo.
   4. Galite pasinaudoti produktais, kuriuos aptarinėja, tobulina ir naudoja daugybė žmonių, kurie pranešė apie šimtus problemų ir pateikė pasiūlymų, kaip pagerinti šį produktą, ir tai yra nuolatinis procesas.
 
-
 ---
 
 ### ERPNext programinis kodas
@@ -18,7 +17,6 @@
 ERPnext programinis kodas yra saugomas yra GitHub ir gali būti pasiekiamas čia
 
 - [https://github.com/frappe/erpnext](https://github.com/frappe/erpnext)
-
 
 ---
 

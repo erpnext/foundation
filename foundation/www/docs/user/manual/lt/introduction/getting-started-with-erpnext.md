@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Darbo pradžia su ERPNext
 
-Yra daug būdų, kaip pradėti darbą su ERPNext.
+Yra daug būdų kaip pradėti darbą su ERPNext.
 
 ### 1\. Išbandykite demonstraciją
 
@@ -12,8 +12,7 @@ pasileisite demonstraciją:
 
 ### 2\. Gaukite nemokamą paskyrą ERPNext.com
 
-ERPNext.com yra tvarkoma (Frappe) organizacijos, kuri prižiūri ir viešina ERPNext.
-Galite sukurti savo paskyrą [užsiregistruojant svetainėje] (https://erpnext.com).
+ERPNext.com yra tvarkoma (Frappe) organizacijos, kuri prižiūri ir viešina ERPNext. Galite sukurti savo paskyrą [užsiregistruojant svetainėje] (https://erpnext.com).
 
 Jūs taip pat galite pirkti sistemos talpinimo paslaugą per erpnext.com. Tokiu būdu jūs remiate organizaciją, kuri vysto ir tobulina ERPNext. Taip pat galite gauti "vieno su vienu" funkcinę (naudojimo) paramą su
 prieglobos planus.

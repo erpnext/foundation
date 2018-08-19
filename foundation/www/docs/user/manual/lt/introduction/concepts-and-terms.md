@@ -1,25 +1,25 @@
 <!-- add-breadcrumbs -->
 # Sąvokos ir spibrėžimai
 
-Prieš pradėdami diegti, galite susipažinti su naudojama terminologija ir kai kuriomis pagrindinėmis ERPNext sąvokomis.
+Prieš pradėdami diegti ERPNext, galite susipažinti su naudojama terminologija ir kai kuriomis pagrindinėmis ERPNext sąvokomis.
 
 * * *
 
 ### Pagrindinės sąvokos
 
-#### Bendrovė
+#### Įmonė
 
-Tai nusako organizaciją, kuriai yra naudojama ERPNext sistema. Įdiegus ERPNext, sistem, ją galima naudoti kelioms įmonės valdyti, kurių kiekviena yra atskiras
-juridinis asmuo. Kiekvienos Bendrovės apskaita bus atskira, bet jos gali
+Organizacija, kuriai yra naudojama ERPNext sistema. Įdiegus ERPNext sistem1, ją galima naudoti ir kelioms įmonėms valdyti, kurių kiekviena yra atskiras
+juridinis asmuo. Kiekvienos Įmonės apskaita bus atskira, bet jos gali
 dalinkis įrašais apie klientus, tiekėjus ir prekes.
 
-> Nustatymai > Bendrovė
+> Nustatymai > Įmonė
 
 #### Klientas
 
 Klientas gali būti asmuo ar organizacija. Galite sukurti kelis kontaktus ir adresus kiekvienam klientui.
 
-> Pardavimas > Klientas
+> Pardavimai > Klientas
 
 #### Tiekėjas
 
@@ -27,7 +27,7 @@ Prekių ar paslaugų tiekėjas. Jūsų telefono kompanija yra
 Tiekėjas jums yra žaliavų tiekėjas. Vėlgi, tiekėjas gali būti
 fizinis ar juridinis asmuo su keleta kontaktų ir adresų.
 
-> Pirkimas > Tiekėjas
+> Pirkimai > Tiekėjas
 
 #### Produktas
 
@@ -45,13 +45,13 @@ Paskyra yra finansinių ir verslo sandorių apjungimas. Pavyzdžiui, "Kelionės 
 
 Adresas nurodo kliento ar tiekėjo vietos informaciją. Tai gali būti skirtingų vietų, tokių kaip pagrindinė buveinė, gamykla, sandėlys, parduotuvė ir kt.
 
-> Pardavimas > Adresas
+> Pardavimai > Adresas
 
 #### Kontaktas
 
 Atskiri Kontaktai priklauso arba Klientui arba Tiekėjui arba niekam nepriklausomas. Kontaktas turi vardą ir kontaktinę informaciją, pvz. el. pašto adresą ir telefono numerį.
 
-> Pardavimas > Kontaktai
+> Pardavimai > Kontaktai
 
 #### Bendravimas
 
@@ -63,10 +63,10 @@ Sąrašas viso bendravimo su Kontaktu arba Galimu klientu. Visi el. laiškai, i�
 
 Kainoraštyje galima saugoti skirtingų tarifų planus. Tai vardas jūs pateikiate tam tikro sąrašo saugomų elementų kainų rinkinį.
 
-> Pardavimas > Kainoraštis
+> Pardavimai > Kainoraštis
 
 
-> Pirkimas > Kainoraštis
+> Pirkimai > Kainoraštis
 
 * * *
 
@@ -74,10 +74,10 @@ Kainoraštyje galima saugoti skirtingų tarifų planus. Tai vardas jūs pateikia
 
 #### Fiskaliniai metai
 
-Atstovauja finansiniams metams arba apskaitos metams. Galite dirbti kelis kartus
+Finansiniai metai arba apskaitos metai. Galite dirbti kelis kartus
 Fiskaliniai metai tuo pačiu metu. Kiekvienas fiskalinių metų pradžios data ir pabaiga data ir sandoriai gali būti užregistruoti tik šiuo laikotarpiu. Kai jūs "uždarykite" a fiskaliniai metai, tai likučiai pervedami kaip "atidarymo" likučiai kitam fiskaliniai metai.
 
-> Nustatymai > Bendrovė > Fiskaliniai metai
+> Nustatymai > Įmonė > Fiskaliniai metai
 
 #### Mokesčių centras
 
@@ -114,7 +114,7 @@ nors jūsų sąskaitų knygelė yra viena valiuta. Skelbdami savo sąskaitas fak
 mokėjimai skirtingomis valiutomis, suma konvertuojama į numatytąsias
 valiuta pagal nurodytą perskaičiavimo kursą.
 
-> Nustatymai> Valiuta
+> Nustatymai > Valiuta
 
 * * *
 
@@ -124,7 +124,7 @@ valiuta pagal nurodytą perskaičiavimo kursą.
 
 Klientų grupavimas, dažniausiai pagal rinkos segmentą.
 
-> Pardavimas > sąranka > klientų grupė
+> Pardavimai > sąranka > klientų grupė
 
 #### Vadovauti
 
@@ -143,7 +143,7 @@ Galimas pardavimas. (nuo: "galimybė verslui").
 
 Kliento prašymas sumokėti prekę ar paslaugą.
 
-> Pardavimas > Citata
+> Pardavimai > Citata
 
 #### Pardavimo užsakymas
 
@@ -151,28 +151,28 @@ Pastaba, patvirtinanti prekių pristatymo sąlygas ir kainą (prekė arba prekė
 paslauga). Pristatymai, darbo užsakymai ir sąskaitos faktūros
 remiantis pardavimo orderiais.
 
-> Pardavimas > Pardavimų užsakymas
+> Pardavimai > Pardavimų užsakymas
 
 #### Teritorija
 
 Geografinės vietovės klasifikacija pardavimų valdymui. Galite nustatyti tikslus
 Teritorijoms ir kiekvienas pardavimas yra susijęs su teritorija.
 
-> Pardavimas > Nustatymai > teritorija
+> Pardavimai > Nustatymai > teritorija
 
 #### Pardavimų partneris
 
 Trečiosios šalies platintojas / prekybininkas / filialas / komisijos atstovas, kuris parduoda
 kompanijos produktai paprastai yra komisiniai.
 
-> Pardavimas > Nustatymai > pardavimo partneris
+> Pardavimai > Nustatymai > pardavimo partneris
 
 #### Pardavėjas
 
 Kažkas, kuris stengiasi Klientui ir uždaro sandorius. Galite nustatyti tikslus
 Parduodami asmenys ir pažymėkite juos sandoriuose.
 
-> Pardavimas > Nustatymai > pardavimo atstovas
+> Pardavimai > Nustatymai > pardavimo atstovas
 
 * * *
 
@@ -182,13 +182,13 @@ Parduodami asmenys ir pažymėkite juos sandoriuose.
 
 Tiekėjui sudaryta sutartis nurodyti nurodytus elementus pristatyti nurodytomis sąlygomis kaina, kiekis, datos ir kitos sąlygos.
 
-> Pirkimas > Pirkimo užsakymas
+> Pirkimai > Pirkimo užsakymas
 
 #### Medžiagos užklausa
 
 Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas pagal ERPNext dėl perrinkimo lygio arba numatomo kiekio gamybiniame plane, norint įsigyti rinkinį elementų.
 
-> Pirkimas > Medžiagos užklausa
+> Pirkimai > Medžiagos užklausa
 
 * * *
 
@@ -266,61 +266,61 @@ Pozicijos klasifikacija.
 
 #### Darbuotojas
 
-Įrašo apie asmenį, esantį dabartiniame ar praeityje, įdarbinant
-bendrovė.
+Įrašo apie asmenį, dabr arba praeityje, įdarbinantą
+įmonėje.
 
-> Žmogiškieji ištekliai> Darbuotojai
+> Žmogiškieji ištekliai > Darbuotojai
 
 #### Palikti paraišką
 
 Patvirtinto arba atmesto prašymo atvykti įrašas.
 
-> Žmogiškieji ištekliai> Palikite paraišką
+> Žmogiškieji ištekliai > Palikite paraišką
 
 #### Palikite tipą
 
 Atostogų rūšis (pvz., Ligos palikimas, gimdymo atostogos ir kt.).
 
-> Žmogiškieji ištekliai> Atostogos ir dalyvavimas> Atostogų tipas
+> Žmogiškieji ištekliai > Atostogos ir dalyvavimas> Atostogų tipas
 
 #### Darbo užmokesčio įrašas
 
 Įrankis, kuris padeda kurti darbuotojams kelis atlyginimus.
 
-> Žmogiškieji ištekliai> Darbo užmokesčio įrašas
+> Žmogiškieji ištekliai > Darbo užmokesčio įrašas
 
 #### Algos lapelis
 
 Darbuotojui skirtos mėnesinės algos įrašas.
 
-> Žmogiškieji ištekliai> Atlyginimai
+> Žmogiškieji ištekliai > Atlyginimai
 
 #### Darbo užmokesčio struktūra
 
 Šablonas, identifikuojantis visus darbuotojo algos (uždarbio) komponentus,
 mokesčių ir kitų socialinio draudimo atskaitymų.
 
-> Žmogiškieji ištekliai> Darbo užmokestis ir darbo užmokestis> Darbo užmokesčio struktūra
+> Žmogiškieji ištekliai > Darbo užmokestis ir darbo užmokestis> Darbo užmokesčio struktūra
 
 #### Įvertinimas
 
 Darbuotojo veiklos rezultatai per nustatytą laikotarpį, remiantis
 tam tikri parametrai.
 
-> Žmogiškieji ištekliai> Vertinimas
+> Žmogiškieji ištekliai > Vertinimas
 
 #### Vertinimo šablonas
 
 Šablonas, kuriame įrašomi skirtingi Darbuotojų našumo ir parametrų parametrai
 jų svarba tam tikram vaidmeniui.
 
-> Žmogiškieji ištekliai> Darbuotojų Nustatymai > Vertinimo šablonas
+> Žmogiškieji ištekliai > Darbuotojų Nustatymai > Vertinimo šablonas
 
 #### Lankomumas
 
 Įrašas, nurodantis darbuotojo buvimą ar nebuvimą konkrečioje dieną.
 
-> Žmogiškieji ištekliai> Lankomumas
+> Žmogiškieji ištekliai > Lankomumas
 
 * * *
 
@@ -332,28 +332,28 @@ Operacijų ir elementų sąrašas su jų kiekiais, kurių reikia
 pateikite kitą punktą. Medžiagų sąvadas (BOM) naudojamas planuojant pirkimus ir
 atlikite produkto sąnaudas.
 
-> Gamyba> BOM
+> Gamyba > BOM
 
 #### Workstation
 
 Vieta, kur vyksta BOM operacija. Naudinga apskaičiuoti
 tiesioginės produkto kainos.
 
-> Gamyba> darbo stotis
+> Gamyba > darbo stotis
 
 #### Darbų užsakymas
 
 Dokumentas, signalizuojantis konkretaus gaminio gamybą (gamybą) su
 nurodyti kiekiai.
 
-> Gamyba> Darbo tvarka
+> Gamyba > Darbo tvarka
 
 #### Gamybos planavimo įrankis
 
 Automatizuoto darbo užsakymų ir pirkimų prašymų kūrimo įrankis
 apie atidarytus pardavimo užsakymus per tam tikrą laikotarpį.
 
-> Gamyba> Gamybos planavimo įrankis
+> Gamyba > Gamybos planavimo įrankis
 
 * * *
 
@@ -364,14 +364,14 @@ apie atidarytus pardavimo užsakymus per tam tikrą laikotarpį.
 Pateikiamas trumpas straipsnis, sukurtas svetainės "Dienoraščio" skyriuje
 iš ERPNext svetainės modulio. Dienoraštis yra trumpa "žiniatinklio žurnalo" forma.
 
-> Svetainė> Dienoraščio įrašas
+> Svetainė > Dienoraščio įrašas
 
 #### Tinklo puslapis
 
 Tinklalapis su unikaliu URL (žiniatinklio adresu) iš svetainės, sukurtos iš
 ERPNext.
 
-> Svetainė> Tinklalapis
+> Svetainė > Tinklalapis
 
 * * *
 
@@ -381,21 +381,21 @@ ERPNext.
 
 Vartotojo apibrėžtas laukas formoje / lentelėje.
 
-> Nustatymai> Pritaikyti ERPNext> Pasirinktinis laukas
+> Nustatymai > Pritaikyti ERPNext > Pasirinktinis laukas
 
 #### Global Defaults
 
 Tai skyrius, kuriame jūs nustatote numatytuosius įvairių parametrų parametrus
 sistema.
 
-> Nustatymai> duomenys> globalūs numatymai
+> Nustatymai > duomenys> globalūs numatymai
 
 #### Spausdinti antraštę
 
 Pavadinimas, kurį galima nustatyti tik spausdinimui. Pavyzdžiui, jūs
 norite išspausdinti pasiūlymą su antrašte "Pasiūlymas" arba "Pro forma sąskaita faktūra".
 
-> Nustatymai > Brendis ir spausdinimas> Spausdinimo antraštės
+> Nustatymai > Brendis ir spausdinimas > Spausdinimo antraštės
 
 #### Sąlygos ir sąlygos
 

@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Standartinė organizacijos srautų diagrama ERPNext
 
-Ši diagrama demonstruoja, kaip infomacija keliauja ERPNext sistemoje vykdant jūsų įmonės esmines funkcijas. Ši schema neapima visų ERPNext funkcijų.
+Ši diagrama demonstruoja, kaip infomacija keliauja ERPNext sistemoje vykdant jūsų bendrovės esmines funkcijas. Ši schema neapima visų ERPNext funkcijų.
 
 ![](/docs/assets/old_images/erpnext/overview.png)
 
