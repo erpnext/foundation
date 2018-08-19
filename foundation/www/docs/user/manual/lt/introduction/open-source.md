@@ -1,31 +1,30 @@
 <!-- add-breadcrumbs -->
-# Open Source
+# Atviras kodas
 
-The source code is an Open Source software. It is open for anyone to
-understand, extend or improve. And it is free!
+Programinė įrangos kodas yra sukurtas atvirojo programinio kodo principu. Tai reiškia, kad ši programa yra atvira visiems išnagrinėti, papildyti ar patobulinti. Ir tai yra visiškai nemokama!
 
-Advantages of an Open Source software are:
+"Atviro kodo" programinės įrangos privalumai:
 
-  1. You can choose to change your service provider anytime.
-  2. You can host the application anywhere, including your own server to gain complete ownership and privacy of the data.
-  3. You can access a community to support you, incase you need help. You are not dependant on your service provider.
-  4. You can benefit from using a product that is critiqued and used by a wide range of people, who have reported hundreds of issues and suggestions to make this product better, and this will always continue.
+  1. Bet kada galite pakeisti paslaugų teikėją.
+  2. Galite leisti programinę įrangą bet kur, įskaitant savo serverį, kad galėtumėte įgyti visišką duomenų nuosavybę ir privatumą.
+  3. Galite bendradarbiauti su ERPNext bendruomenę, kuri gali padėti, jei reikia pagalbos. Esate nepriklausomas nuo paslaugos teikėjo.
+  4. Galite pasinaudoti produktais, kuriuos aptarinėja, tobulina ir naudoja daugybė žmonių, kurie pranešė apie šimtus problemų ir pateikė pasiūlymų, kaip pagerinti šį produktą, ir tai yra nuolatinis procesas.
 
 
 ---
 
-### ERPNext Source Code
+### ERPNext programinis kodas
 
-ERPnext source repository is hosted at GitHub and can be found here
+ERPnext programinis kodas yra saugomas yra GitHub ir gali būti pasiekiamas čia
 
 - [https://github.com/frappe/erpnext](https://github.com/frappe/erpnext)
 
 
 ---
 
-### Alternatives
+### Alternatyvos
 
-There are many Open Source ERPs you can consider. Popular ones are:
+Yra daug atvirojo kodo ERP, kuriuos galite įvertinti. Populiariausi yra:
 
   1. Odoo
   2. OpenBravo
