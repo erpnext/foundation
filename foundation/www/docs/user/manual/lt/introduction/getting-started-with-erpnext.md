@@ -1,38 +1,32 @@
 <!-- add-breadcrumbs -->
-# Getting Started with ERPNext
+# Darbo pradžia su ERPNext
 
-There are many ways to get started with ERPNext.
+Yra daug būdų, kaip pradėti darbą su ERPNext.
 
-### 1\. See the Demo
+### 1\. Išbandykite demonstraciją
 
-If you want to check out the user interface and **feel** the application, just
-see the demo at:
+Jei norite išbandyti vartotojo sąsają ir **pajausti** sistemą, tiesiog
+pasileisite demonstraciją:
 
-  * <https://demo.erpnext.com>
+  * <https://demo.erpnext.com>
 
-### 2\. Start a Free Account at ERPNext.com
+### 2\. Gaukite nemokamą paskyrą ERPNext.com
 
+ERPNext.com yra tvarkoma (Frappe) organizacijos, kuri prižiūri ir viešina ERPNext.
+Galite sukurti savo paskyrą [užsiregistruojant svetainėje] (https://erpnext.com).
 
-ERPNext.com is managed by the organization (Frappe) that publishes ERPNext.
-You can start with your own account by [signing up on the
-website](https://erpnext.com).
+Jūs taip pat galite pirkti sistemos talpinimo paslaugą per erpnext.com. Tokiu būdu jūs remiate organizaciją, kuri vysto ir tobulina ERPNext. Taip pat galite gauti "vieno su vienu" funkcinę (naudojimo) paramą su
+prieglobos planus.
 
-You can also decide to host your application at erpnext.com by buying the
-hosting plans. This way you support the organization that develops and
-improves ERPNext. You also get one-to-one functional (usage) support with the
-hosting plans.
+### 3\. Atsisiųskite virtualią mašiną
 
-### 3\. Download a Virtual Machine
+Norint išvengti problemų susijusių su programinės įrangos diegimu, ERPNext yra prieinamas kaip virtualios mašinos kopija (pilna operacinė sistema su įdiegta ERPNext sistema). Jūs šią kopiją galite naudoti **bet kurioje** platformoje, įskaitant ir "Microsoft Windows".
 
-To avoid the trouble of installing an instance, ERPNext is available as a
-Virtual Image (a full loaded operating system with ERPNext installed). You can
-use this on **any** platform including Microsoft Windows.
+[Spauskite čia norėdami pamatyti nurodymus, kaip naudotis Virtualiu
+mašinos kopija] (https://erpnext.com/download)
 
-[Click here to see instructions on how to use the Virtual
-Image](https://erpnext.com/download)
+### 4\. Įdiekite ERPNext savo Unix / Linux / Mac kompiuteryje
 
-### 4\. Install ERPNext on your Unix/Linux/Mac machine
-
-If you are familiar with installing applications on *nix platforms, read the instructions on how to install using [Frappe Bench](https://github.com/frappe/bench).
+Jei esate susipažinę su programų diegimu *nix platformose, skaitykite instrukcijas, kaip įdiegti naudodami [Frappe Bench] (https://github.com/frappe/bench).
 
 {next}

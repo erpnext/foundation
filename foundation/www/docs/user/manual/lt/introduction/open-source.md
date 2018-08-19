@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Atviras kodas
 
-Programinė įrangos kodas yra sukurtas atvirojo programinio kodo principu. Tai reiškia, kad ši programa yra atvira visiems išnagrinėti, papildyti ar patobulinti. Ir tai yra visiškai nemokama!
+Ši programinė įranga yra sukurta atvirojo programinio kodo principu. Tai reiškia, kad ši programa yra atvira visiems išnagrinėti, papildyti ar patobulinti. Ir tai yra visiškai nemokama!
 
 "Atviro kodo" programinės įrangos privalumai:
 
