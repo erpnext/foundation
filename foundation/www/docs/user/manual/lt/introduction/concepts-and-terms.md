@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Sąvokos ir spibrėžimai
+# Sąvokos ir apibrėžimai
 
 Prieš pradėdami diegti ERPNext, galite susipažinti su naudojama terminologija ir kai kuriomis pagrindinėmis ERPNext sąvokomis.
 
@@ -9,62 +9,57 @@ Prieš pradėdami diegti ERPNext, galite susipažinti su naudojama terminologija
 
 #### Įmonė
 
-Organizacija, kuriai yra naudojama ERPNext sistema. Įdiegus ERPNext sistem1, ją galima naudoti ir kelioms įmonėms valdyti, kurių kiekviena yra atskiras
-juridinis asmuo. Kiekvienos Įmonės apskaita bus atskira, bet jos gali
-dalinkis įrašais apie klientus, tiekėjus ir prekes.
+Organizacija, kuriai yra skirta 5diegta ERPNext sistema. Įdiegus ERPNext sistemą, ją galima naudoti ir kelioms įmonėms valdyti, kurių kiekviena yra atskiras juridinis asmuo. Kiekvienos Įmonės apskaita bus atskira, bet jos gali dalintis įrašais apie klientus, tiekėjus ir prekes.
 
 > Nustatymai > Įmonė
 
 #### Klientas
 
-Klientas gali būti asmuo ar organizacija. Galite sukurti kelis kontaktus ir adresus kiekvienam klientui.
+Klientas gali būti asmuo arba organizacija. Galite sukurti kelis kontaktus ir adresus kiekvienam klientui.
 
 > Pardavimai > Klientas
 
 #### Tiekėjas
 
-Prekių ar paslaugų tiekėjas. Jūsų telefono kompanija yra
-Tiekėjas jums yra žaliavų tiekėjas. Vėlgi, tiekėjas gali būti
-fizinis ar juridinis asmuo su keleta kontaktų ir adresų.
+Prekių ar paslaugų tiekėjas. Pvz. jūsų telefono kompanija yra jūsų Tiekėjas. Vėlgi, tiekėjas gali būti fizinis ar juridinis asmuo turintis keletą kontaktų ir adresų.
 
 > Pirkimai > Tiekėjas
 
 #### Produktas
 
-Produktas, dalinis gaminys ar paslauga, kuri yra arba nupirkta, parduodama ar pagaminta ir yra unikaliai identifikuojama.
+Produktas, dalinis gaminys ar paslauga, kuri yra arba perkama, parduodama ar gaminama ir yra unikaliai identifikuojama.
 
 > Ištekliai > Produktas
 
-#### Paskyra
+#### Sąskaita
 
-Paskyra yra finansinių ir verslo sandorių apjungimas. Pavyzdžiui, "Kelionės išlaidos" yra paskyra "Klientas Zoė", "Tiekėjas Mae" yra paskyros. ERPNext Klientams ir Tiekėjams paskyras sukuria automatiškai.
+Sąskaita yra finansinių ir verslo sandorių apjungimas. Pavyzdžiui, "Kelionės išlaidos" yra sąskaita "Klientas Zoė", "Tiekėjas Mae" yra sąskaitos. ERPNext Klientams ir Tiekėjams sąskaitas sukuria automatiškai.
 
-> Paskyros > Paskyrų diagrama
+> Sąskaitos > Sąskaitų lentelė
 
 #### Adresas
 
-Adresas nurodo kliento ar tiekėjo vietos informaciją. Tai gali būti skirtingų vietų, tokių kaip pagrindinė buveinė, gamykla, sandėlys, parduotuvė ir kt.
+Adresas nurodo kliento ar tiekėjo vietos informaciją. Tai gali būti skirtingos vietos, tokios kaip pagrindinė biuras, gamykla, sandėlys, parduotuvė ir kt.
 
 > Pardavimai > Adresas
 
 #### Kontaktas
 
-Atskiri Kontaktai priklauso arba Klientui arba Tiekėjui arba niekam nepriklausomas. Kontaktas turi vardą ir kontaktinę informaciją, pvz. el. pašto adresą ir telefono numerį.
+Kontaktai priklauso arba Klientui arba Tiekėjui arba niekam nepriklausomas. Kontaktas turi vardą ir kontaktinę informaciją, pvz. el. pašto adresą ir telefono numerį.
 
 > Pardavimai > Kontaktai
 
-#### Bendravimas
+#### Komunikacija
 
-Sąrašas viso bendravimo su Kontaktu arba Galimu klientu. Visi el. laiškai, išsiųsti iš sistemos pridedama prie komunikacijos sąrašo.
+Sąrašas viso bendravimo su Kontaktu arba Potencialiu klientu. Visi elektroniniai laiškai, išsiųsti iš sistemos, pridedami prie komunikacijos sąrašo.
 
-> Palaikymas > Bendravimas
+> Palaikymas > Komunikacija
 
 #### Kainoraštis
 
-Kainoraštyje galima saugoti skirtingų tarifų planus. Tai vardas jūs pateikiate tam tikro sąrašo saugomų elementų kainų rinkinį.
+Kainoraštyje galima saugoti skirtingų tarifų planus, kainas. Tai jūsų suteiktas pavadinimas tam tikrų produktų kainų sąrašui.
 
 > Pardavimai > Kainoraštis
-
 
 > Pirkimai > Kainoraštis
 
@@ -72,47 +67,39 @@ Kainoraštyje galima saugoti skirtingų tarifų planus. Tai vardas jūs pateikia
 
 ### Apskaita
 
-#### Fiskaliniai metai
+#### Finansiniai metai
 
-Finansiniai metai arba apskaitos metai. Galite dirbti kelis kartus
-Fiskaliniai metai tuo pačiu metu. Kiekvienas fiskalinių metų pradžios data ir pabaiga data ir sandoriai gali būti užregistruoti tik šiuo laikotarpiu. Kai jūs "uždarykite" a fiskaliniai metai, tai likučiai pervedami kaip "atidarymo" likučiai kitam fiskaliniai metai.
+Finansiniai metai arba apskaitos metai. J8s galite operuoti keliais Finansianiais metais tuo pa2iu metu. Kiekvieni finansiniai metai turi pradžios ir pabaigos datą, visi įmonės veiksmai gali būti užregistruoti tik šiuo laikotarpiu. Kai jūs "uždarote" finansinius metus, tai likučiai perkeliami kaip "atidarymo" likučiai kitiems finansiniams metams.
 
-> Nustatymai > Įmonė > Fiskaliniai metai
+> Nustatymai > Įmonė > Finansiniai metai
 
-#### Mokesčių centras
+#### Sąnaudų centras
 
-Mokesčių centras yra kaip sąskaita, tačiau vienintelis skirtumas yra tas, kad jisstruktūra atstovauja jūsų verslui labiau nei sąskaitos.
-Pavyzdžiui, savo sąskaitų lentelėje galite atskirti savo išlaidas pagal jo rūšį
-(t. y. kelionės, rinkodara ir kt.). Savo kortelių kainų centruose galite atskirti pagal produktų grupes ar verslo grupes (pvz., pardavimai internetu, mažmeninė prekyba ir kt.).
+Sąnaudų centras yra kaip Sąskaita, tačiau skirtumas yra tas, kad jis skirtas labiau būtent jūsų verslui nei Sąskaitos. Pavyzdžiui, savo Sąskaitų lentelėje galite atskirti savo išlaidas pagal jų rūšį (t.y. kelionės, rinkodara ir kt.). Savo Sąnaudų centrų lentelėje galite jas atskirti pagal produktų grupes ar verslo grupes (pvz., pardavimai internetu, mažmeninė prekyba ir kt.).
 
-> Sąskaitos > sąnaudų centrų schema
+> Sąskaitos > Sąnaudų centrų lentelė
 
-#### žurnalo įrašas
+#### Žurnalo įrašas
 
-Dokumentas, kuriame yra General Ledger (GL) įrašai ir Debeto ir
-Šių įrašų kreditai yra tokie patys. ERPNext galite atnaujinti mokėjimus,
-Grąžina ir tt, naudojant žurnalo įrašus.
+Dokumentas, kuriame yra Didžiosios knygos (DK) įrašai, suma Debetų ir Kreditų iš šių yrašų yra sutampa. Per ERPNext Žurnalo įrašus galite atnaujinti Mokėjimus, Grąžą ir t.t.
 
 > Sąskaitos > Žurnalo įrašas
 
-#### Pardavimo sąskaita faktūra
+#### Pardavimo sąskaita-faktūra
 
-Sąskaitą, siunčiamą Klientams pristatant daiktus (prekes ar paslaugas).
+Sąskaita-faktūra siunčiama Klientams tiekiant Produktus (prekes ar paslaugas).
 
-> Sąskaitos > Pardavimo sąskaitą faktūrą
+> Sąskaitos > Pardavimo sąskaitą-faktūrą
 
-#### Pirkimo sąskaita faktūra
+#### Pirkimo sąskaita-faktūra
 
-Tiekėjo siunčiama sąskaita už daiktų (prekių ar paslaugų) pristatymą.
+Tiekėjo siunčiama sąskaita-faktūra už Produktų (prekių ar paslaugų) pristatymą.
 
-> Sąskaitos > Pirkimo sąskaita faktūra
+> Sąskaitos > Pirkimo sąskaita-faktūra
 
 #### Valiuta
 
-ERPNext leidžia jums užsisakyti sandorius keliais valiutomis. Yra tik vienas
-nors jūsų sąskaitų knygelė yra viena valiuta. Skelbdami savo sąskaitas faktūras
-mokėjimai skirtingomis valiutomis, suma konvertuojama į numatytąsias
-valiuta pagal nurodytą perskaičiavimo kursą.
+ERPNext leidžia jums atlikti sandorius keliomis valiutomis nepaisant to, kad jūsų Sąskaitų lentelei yra prisikirta tik viena valiuta. Skelbdami mokėjimus pagal sąskaitas-faktūras skirtingomis valiutomis, suma konvertuojama į numatytąsias valiuta pagal nurodytą perskaičiavimo kursą.
 
 > Nustatymai > Valiuta
 
@@ -126,51 +113,46 @@ Klientų grupavimas, dažniausiai pagal rinkos segmentą.
 
 > Pardavimai > sąranka > klientų grupė
 
-#### Vadovauti
+#### Potencialus klientas
 
-Asmuo, kuris galėtų būti būsimas verslo šaltinis. Švinas gali generuoti
-Galimybės. (nuo: "gali sukelti pardavimą").
+Asmuo, kuris galėtų tapti klientu. Potencialus klientas gali tapti Pardavimo galimybe..
 
-> CRM> "Lead"
+> CRM > Potencialus klientas
 
-#### Galimybė
+#### Pardavimo galimybe
 
-Galimas pardavimas. (nuo: "galimybė verslui").
+Galimas pardavimas.
 
-> CRM> galimybė
+> CRM > Pardavimo galimybe
 
-#### Citata
+#### Pardavimo pasiūlymas
 
-Kliento prašymas sumokėti prekę ar paslaugą.
+Kliento prašymas apmokęstinti prekę ar paslaugą.
 
-> Pardavimai > Citata
+> Pardavimai > Pardavimo pasiūlymas
 
 #### Pardavimo užsakymas
 
-Pastaba, patvirtinanti prekių pristatymo sąlygas ir kainą (prekė arba prekė)
-paslauga). Pristatymai, darbo užsakymai ir sąskaitos faktūros
-remiantis pardavimo orderiais.
+Produktų (prekių arba paslaugų) pristatymo sąlygų ir kainos patvirtinimas. Pristatymai, darbo užsakymai ir sąskaitos-faktūros atliekami remiantis Pardavimo užsakymais.
 
 > Pardavimai > Pardavimų užsakymas
 
 #### Teritorija
 
-Geografinės vietovės klasifikacija pardavimų valdymui. Galite nustatyti tikslus
-Teritorijoms ir kiekvienas pardavimas yra susijęs su teritorija.
+Geografinės vietovės klasifikacija pardavimų valdymui. Galite nustatyti tikslus Teritorijoms ir kiekvienas pardavimas yra susijęs su Teritorija.
 
-> Pardavimai > Nustatymai > teritorija
+> Pardavimai > Nustatymai > Teritorija
 
-#### Pardavimų partneris
+#### Pardavimo partneris
 
-Trečiosios šalies platintojas / prekybininkas / filialas / komisijos atstovas, kuris parduoda
-kompanijos produktai paprastai yra komisiniai.
+Trečiosios šalies platintojas / prekybininkas / filialas / tarpininkas (komisionierius), kuris parduoda kompanijos produktus dažniausiai už komisinius.
 
-> Pardavimai > Nustatymai > pardavimo partneris
+> Pardavimai > Nustatymai > Pardavimo partneris
 
 #### Pardavėjas
 
-Kažkas, kuris stengiasi Klientui ir uždaro sandorius. Galite nustatyti tikslus
-Parduodami asmenys ir pažymėkite juos sandoriuose.
+Asmuo, kuris teikia pasiūlymus Klientui ir uždaro sandorius. Galite nustatyti tikslus
+Pardavėjui ir žymėti juos sandoriuose.
 
 > Pardavimai > Nustatymai > pardavimo atstovas
 
@@ -180,77 +162,74 @@ Parduodami asmenys ir pažymėkite juos sandoriuose.
 
 #### Pirkimo užsąkymas
 
-Tiekėjui sudaryta sutartis nurodyti nurodytus elementus pristatyti nurodytomis sąlygomis kaina, kiekis, datos ir kitos sąlygos.
+Tiekėjui sudaryta sutartis, kuri nurodo tiekti nurodytus Produktus nurodytomis sąlygomis (kaina, kiekis, datos ir t.t.)
 
 > Pirkimai > Pirkimo užsakymas
 
-#### Medžiagos užklausa
+#### Medžiagų užklausa
 
-Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas pagal ERPNext dėl perrinkimo lygio arba numatomo kiekio gamybiniame plane, norint įsigyti rinkinį elementų.
+Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas ERPNext pagal pakartotinių užsakymų lygį arba numatomo kiekio Gamybos plane tam, kad įsigyti reikiamų Produktų.
 
 > Pirkimai > Medžiagos užklausa
 
 * * *
 
-### Ištekliai (Inventory)
+### Ištekliai
 
 #### Sandėlis
 
-Loginis sandėlis, kurio atsargos įrašomos.
+Teorinio sandėlio likutis.
 
 > Ištekliai > Sandėlis
 
-#### Sandėlyje įrašas
+#### Išteklių įrašas
 
-Medžiaga perduodama iš sandėlio, į sandėlį arba iš vieno sandėlio į
-kitas.
+Medžiaga perduodama iš vieno Sandėlio į kitą.
 
-> Ištekliai > Ištekliai Entry
+> Ištekliai > Išteklių įrašas
 
-#### Pristatymo pastaba
+#### Tiekimo įrašas
 
-Elementų sąrašas su siuntos kiekiu. Pristatymo pastaba sumažins
-daiktų sandėlis sandėlyje, iš kurios siunčiate. Pristatymo pastaba yra
-dažniausiai pateikiamas prieš pardavimo užsakymą.
+Produktų sąrašas su siuntos kiekiu. Tiekimo įrašas sumažins Produkų skaičių sandėlyje, iš kurio atliekamas tiekimas. Tiekimo įrašas yra dažniausiai pateikiamas prieš Pardavimo užsakymą.
 
-> Ištekliai > Pristatymo pastaba
+> Ištekliai > Tiekimo įrašas
 
 #### Pirkimo kvitas
 
-Pastaba, patvirtinanti, kad tiekėjas gavo tam tikrą elementų rinkinį,
-greičiausiai prieš pirkimo užsakymą.
+Įrašas, patvirtinantis, kad tiekėjas gavo tam tikrą Produktų rinkinį, dažniausiai, pagal Pirkimo užsakymą.
 
-> Ištekliai > pirkimo kvitas
+> Ištekliai > Pirkimo kvitas
 
 #### Serijos numeris
 
-Unikalus numeris tam tikram vienetui.
+Unikalus numeris tam tikram Produktui.
 
 > Ištekliai > Serijos numeris
 
 #### Partija
 
-Numeris, suteiktas konkretaus Prekės vienetų grupei, kurią galima įsigyti
-arba gaminami grupėje.
+Numeris, suteiktas konkretaus Produkto vienetų partijai, kurią galima įsigyti arba gaminti grupėje.
 
-> Ištekliai > partija
+> Ištekliai > Partija
 
-#### Sandėlio vadovo įrašas
+#### Sandėlio apskaitos knygos įrašas
 
-Vieningą stalą visam materialiam judėjimui iš vieno sandėlio į kitą. Tai
-yra lentelė, kuri yra atnaujinama, kai pateikiamas atsargų įrašas, pristatymo pastaba, pirkimas
-Kvitas ir pardavimo sąskaita (POS).
+Bendra lentelė visam išteklių judėjimui iš vieno Sandėlio į kitą. Tai yra lentelė, kuri yra atnaujinama, kai pateikiamas Išteklių įrašas, Tiekimo įrašas, Pirkimo kvitas ir Pardavimo užsakymas.
 
-#### Ištekliai Matching
+#### Inventorizacija
 
-Atnaujinkite keletą elementų iš skaičiuoklės (CSV) failo.
+Atnaujinkite kelis įrašus lentelinės skaičiuoklės (CSV) byloje vienu metu.
 
-> Ištekliai > Ištekliai reconciliation
+> Ištekliai > Inventorizacija
+
+
+
+
+
 
 #### Kokybės tikrinimas
 
-Pastaba, paruošta įrašyti tam tikrus Parametro parametrus gavimo metu
-iš tiekėjo ar pristatymo klientui.
+Pastaba, paruošta įrašyti tam tikrus Parametro parametrus gavimo metu iš tiekėjo ar pristatymo klientui.
 
 > Ištekliai > Kokybės tikrinimas
 

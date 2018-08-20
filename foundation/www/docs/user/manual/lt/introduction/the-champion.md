@@ -8,7 +8,7 @@ suvokėm, kad sėkmingas įgyvendinimas priklauso nuo nematerialių dalykų ir p
 
 **ERP nėra būtinas.**
 
-Kaip ir mankšta.
+Kaip ir finzinė mankšta.
 
 Gali atrodyti, kad žmogaus kūnui nereikalinga mankšta šiandien ar net rytoj
 bet ilgainiui, jei norite išlaikyti savo kūną sveiką turėtumėt lipti ant bėgimo takelio.
