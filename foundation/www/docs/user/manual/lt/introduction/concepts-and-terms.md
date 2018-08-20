@@ -25,11 +25,11 @@ Prekių ar paslaugų tiekėjas. Pvz. jūsų telefono kompanija yra jūsų Tiekė
 
 > Pirkimai > Tiekėjas
 
-#### Produktas
+#### Daiktas
 
-Produktas, dalinis gaminys ar paslauga, kuri yra arba perkama, parduodama ar gaminama ir yra unikaliai identifikuojama.
+Daiktas, dalinis gaminys ar paslauga, kuri yra arba perkama, parduodama ar gaminama ir yra unikaliai identifikuojama.
 
-> Ištekliai > Produktas
+> Ištekliai > Daiktas
 
 #### Sąskaita
 
@@ -57,7 +57,7 @@ Sąrašas viso bendravimo su Kontaktu arba Potencialiu klientu. Visi elektronini
 
 #### Kainoraštis
 
-Kainoraštyje galima saugoti skirtingų tarifų planus, kainas. Tai jūsų suteiktas pavadinimas tam tikrų produktų kainų sąrašui.
+Kainoraštyje galima saugoti skirtingų tarifų planus, kainas. Tai jūsų suteiktas pavadinimas tam tikrų daiktų kainų sąrašui.
 
 > Pardavimai > Kainoraštis
 
@@ -75,7 +75,7 @@ Finansiniai metai arba apskaitos metai. J8s galite operuoti keliais Finansianiai
 
 #### Sąnaudų centras
 
-Sąnaudų centras yra kaip Sąskaita, tačiau skirtumas yra tas, kad jis skirtas labiau būtent jūsų verslui nei Sąskaitos. Pavyzdžiui, savo Sąskaitų lentelėje galite atskirti savo išlaidas pagal jų rūšį (t.y. kelionės, rinkodara ir kt.). Savo Sąnaudų centrų lentelėje galite jas atskirti pagal produktų grupes ar verslo grupes (pvz., pardavimai internetu, mažmeninė prekyba ir kt.).
+Sąnaudų centras yra kaip Sąskaita, tačiau skirtumas yra tas, kad jis skirtas labiau būtent jūsų verslui nei Sąskaitos. Pavyzdžiui, savo Sąskaitų lentelėje galite atskirti savo išlaidas pagal jų rūšį (t.y. kelionės, rinkodara ir kt.). Savo Sąnaudų centrų lentelėje galite jas atskirti pagal daiktų grupes ar verslo grupes (pvz., pardavimai internetu, mažmeninė prekyba ir kt.).
 
 > Sąskaitos > Sąnaudų centrų lentelė
 
@@ -87,13 +87,13 @@ Dokumentas, kuriame yra Didžiosios knygos (DK) įrašai, suma Debetų ir Kredit
 
 #### Pardavimo sąskaita-faktūra
 
-Sąskaita-faktūra siunčiama Klientams tiekiant Produktus (prekes ar paslaugas).
+Sąskaita-faktūra siunčiama Klientams tiekiant Daiktus (prekes ar paslaugas).
 
 > Sąskaitos > Pardavimo sąskaitą-faktūrą
 
 #### Pirkimo sąskaita-faktūra
 
-Tiekėjo siunčiama sąskaita-faktūra už Produktų (prekių ar paslaugų) pristatymą.
+Tiekėjo siunčiama sąskaita-faktūra už Daiktų (prekių ar paslaugų) pristatymą.
 
 > Sąskaitos > Pirkimo sąskaita-faktūra
 
@@ -133,7 +133,7 @@ Kliento prašymas apmokęstinti prekę ar paslaugą.
 
 #### Pardavimo užsakymas
 
-Produktų (prekių arba paslaugų) pristatymo sąlygų ir kainos patvirtinimas. Pristatymai, darbo užsakymai ir sąskaitos-faktūros atliekami remiantis Pardavimo užsakymais.
+Daiktų (prekių arba paslaugų) pristatymo sąlygų ir kainos patvirtinimas. Pristatymai, darbo užsakymai ir sąskaitos-faktūros atliekami remiantis Pardavimo užsakymais.
 
 > Pardavimai > Pardavimų užsakymas
 
@@ -145,7 +145,7 @@ Geografinės vietovės klasifikacija pardavimų valdymui. Galite nustatyti tiksl
 
 #### Pardavimo partneris
 
-Trečiosios šalies platintojas / prekybininkas / filialas / tarpininkas (komisionierius), kuris parduoda kompanijos produktus dažniausiai už komisinius.
+Trečiosios šalies platintojas / prekybininkas / filialas / tarpininkas (komisionierius), kuris parduoda kompanijos daiktus dažniausiai už komisinius.
 
 > Pardavimai > Nustatymai > Pardavimo partneris
 
@@ -162,13 +162,13 @@ Pardavėjui ir žymėti juos sandoriuose.
 
 #### Pirkimo užsąkymas
 
-Tiekėjui sudaryta sutartis, kuri nurodo tiekti nurodytus Produktus nurodytomis sąlygomis (kaina, kiekis, datos ir t.t.)
+Tiekėjui sudaryta sutartis, kuri nurodo tiekti nurodytus Daiktus nurodytomis sąlygomis (kaina, kiekis, datos ir t.t.)
 
 > Pirkimai > Pirkimo užsakymas
 
 #### Medžiagų užklausa
 
-Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas ERPNext pagal pakartotinių užsakymų lygį arba numatomo kiekio Gamybos plane tam, kad įsigyti reikiamų Produktų.
+Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas ERPNext pagal pakartotinių užsakymų lygį arba numatomo kiekio Gamybos plane tam, kad įsigyti reikiamų Daiktų.
 
 > Pirkimai > Medžiagos užklausa
 
@@ -190,25 +190,25 @@ Medžiaga perduodama iš vieno Sandėlio į kitą.
 
 #### Tiekimo įrašas
 
-Produktų sąrašas su siuntos kiekiu. Tiekimo įrašas sumažins Produkų skaičių sandėlyje, iš kurio atliekamas tiekimas. Tiekimo įrašas yra dažniausiai pateikiamas prieš Pardavimo užsakymą.
+Daiktų sąrašas su siuntos kiekiu. Tiekimo įrašas sumažins Produkų skaičių sandėlyje, iš kurio atliekamas tiekimas. Tiekimo įrašas yra dažniausiai pateikiamas prieš Pardavimo užsakymą.
 
 > Ištekliai > Tiekimo įrašas
 
 #### Pirkimo kvitas
 
-Įrašas, patvirtinantis, kad tiekėjas gavo tam tikrą Produktų rinkinį, dažniausiai, pagal Pirkimo užsakymą.
+Įrašas, patvirtinantis, kad tiekėjas gavo tam tikrą Daiktų rinkinį, dažniausiai, pagal Pirkimo užsakymą.
 
 > Ištekliai > Pirkimo kvitas
 
 #### Serijos numeris
 
-Unikalus numeris tam tikram Produktui.
+Unikalus numeris tam tikram Daiktui.
 
 > Ištekliai > Serijos numeris
 
 #### Partija
 
-Numeris, suteiktas konkretaus Produkto vienetų partijai, kurią galima įsigyti arba gaminti grupėje.
+Numeris, suteiktas konkretaus Daikto vienetų partijai, kurią galima įsigyti arba gaminti grupėje.
 
 > Ištekliai > Partija
 
@@ -222,22 +222,17 @@ Atnaujinkite kelis įrašus lentelinės skaičiuoklės (CSV) byloje vienu metu.
 
 > Ištekliai > Inventorizacija
 
+#### Kokybės kontrolė
 
+Įrašas skirtas išsaugoti tam tikrus Daikto parametrus Gavimo iš Tiekėjo metu arba Pristatymo Klientui metu.
 
+> Ištekliai > Kokybės kontrolė
 
+#### Daiktų grupė
 
+Daiktų klasifikavimas.
 
-#### Kokybės tikrinimas
-
-Pastaba, paruošta įrašyti tam tikrus Parametro parametrus gavimo metu iš tiekėjo ar pristatymo klientui.
-
-> Ištekliai > Kokybės tikrinimas
-
-#### Prekių grupė
-
-Pozicijos klasifikacija.
-
-> Ištekliai > Nustatymai > Item Group
+> Ištekliai > Nustatymai > Daiktų grupė
 
 * * *
 
@@ -245,46 +240,43 @@ Pozicijos klasifikacija.
 
 #### Darbuotojas
 
-Įrašo apie asmenį, dabr arba praeityje, įdarbinantą
-įmonėje.
+Įrašas apie šiuo metu arba anskčiau įmonėje įdarbinantą asmenį.
 
-> Žmogiškieji ištekliai > Darbuotojai
+> Žmogiškieji ištekliai > Darbuotojas
 
-#### Palikti paraišką
+#### Atostogų prašymas
 
-Patvirtinto arba atmesto prašymo atvykti įrašas.
+Patvirtintų arba atmestų atostogų prašymų sąrašas.
 
-> Žmogiškieji ištekliai > Palikite paraišką
+> Žmogiškieji ištekliai > Atostogų prašymas
 
-#### Palikite tipą
+#### Atostogų rūšis
 
-Atostogų rūšis (pvz., Ligos palikimas, gimdymo atostogos ir kt.).
+Atostogų rūšis (pvz., Dėl ligos, gimdymo atostogos ir kt.).
 
-> Žmogiškieji ištekliai > Atostogos ir dalyvavimas> Atostogų tipas
+> Žmogiškieji ištekliai > Atostogos ir lankomumas > Atostogų rūšis
 
-#### Darbo užmokesčio įrašas
+#### Atlyginimo įrašas
 
-Įrankis, kuris padeda kurti darbuotojams kelis atlyginimus.
+Įrankis, kuris padeda formuoti įvairius darbuotojų atlyginimo lapelius.
 
-> Žmogiškieji ištekliai > Darbo užmokesčio įrašas
+> Žmogiškieji ištekliai > Atlyginimo įrašas
 
-#### Algos lapelis
+#### Atlyginimo lapelis
 
 Darbuotojui skirtos mėnesinės algos įrašas.
 
-> Žmogiškieji ištekliai > Atlyginimai
+> Žmogiškieji ištekliai > Atlyginimo lapelis
 
 #### Darbo užmokesčio struktūra
 
-Šablonas, identifikuojantis visus darbuotojo algos (uždarbio) komponentus,
-mokesčių ir kitų socialinio draudimo atskaitymų.
+Šablonas, nustatantis visus darbuotojo atlyignimo komponentus, mokesčius ir kitus, kaip pvz.  papildomą sveikatos draudimą.
 
-> Žmogiškieji ištekliai > Darbo užmokestis ir darbo užmokestis> Darbo užmokesčio struktūra
+> Žmogiškieji ištekliai > Atlyginimas ir darbo užmokestis > Darbo užmokesčio struktūra
 
-#### Įvertinimas
+#### Vertinimas
 
-Darbuotojo veiklos rezultatai per nustatytą laikotarpį, remiantis
-tam tikri parametrai.
+Darbuotojo veiklos rezultatų vertinimas per nustatytą laikotarpį, remiantis tam tikrais parametrai.
 
 > Žmogiškieji ištekliai > Vertinimas
 
@@ -309,14 +301,14 @@ jų svarba tam tikram vaidmeniui.
 
 Operacijų ir elementų sąrašas su jų kiekiais, kurių reikia
 pateikite kitą punktą. Medžiagų sąvadas (BOM) naudojamas planuojant pirkimus ir
-atlikite produkto sąnaudas.
+atlikite daikto sąnaudas.
 
 > Gamyba > BOM
 
 #### Workstation
 
 Vieta, kur vyksta BOM operacija. Naudinga apskaičiuoti
-tiesioginės produkto kainos.
+tiesioginės daikto kainos.
 
 > Gamyba > darbo stotis
 

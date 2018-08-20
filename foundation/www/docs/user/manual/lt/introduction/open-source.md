@@ -8,7 +8,7 @@
   1. Bet kada galite pakeisti paslaugų teikėją.
   2. Galite leisti programinę įrangą bet kur, įskaitant savo serverį, kad galėtumėte įgyti visišką duomenų nuosavybę ir privatumą.
   3. Galite bendradarbiauti su ERPNext bendruomenę, kuri gali padėti, jei reikia pagalbos. Esate nepriklausomas nuo paslaugos teikėjo.
-  4. Galite pasinaudoti produktais, kuriuos aptarinėja, tobulina ir naudoja daugybė žmonių, kurie pranešė apie šimtus problemų ir pateikė pasiūlymų, kaip pagerinti šį produktą, ir tai yra nuolatinis procesas.
+  4. Galite pasinaudoti programine įranga, kurią aptarinėja, tobulina ir naudoja daugybė žmonių, kurie pranešė apie šimtus problemų ir pateikė pasiūlymų, kaip pagerinti šį produktą, ir tai yra nuolatinis procesas.
 
 ---
 

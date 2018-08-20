@@ -36,7 +36,7 @@ ERPNext yra pilna verslo valdymo sistema, kuri padeda MVĮ turėti visas verslo 
 
 Be kita ko, ERPNext padės jums:
   * Stebėkite visas sąskaitas faktūras ir mokėjimus.
-  * Žinoti kiekvieno produkto likutį sandėlyje.
+  * Žinoti kiekvieno daikto likutį sandėlyje.
   * Nustatykite ir sekite svarbiausius veiklos rezultatų rodiklius.
   * Nustatykite atviras kliento užklausas.
   * Valdyti darbo užmokesčio fondą.
