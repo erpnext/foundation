@@ -272,24 +272,23 @@ Darbuotojui skirtos mėnesinės algos įrašas.
 
 Šablonas, nustatantis visus darbuotojo atlyignimo komponentus, mokesčius ir kitus, kaip pvz.  papildomą sveikatos draudimą.
 
-> Žmogiškieji ištekliai > Atlyginimas ir darbo užmokestis > Darbo užmokesčio struktūra
+> Žmogiškieji ištekliai > Darbo užmokestis > Darbo užmokesčio struktūra
 
 #### Vertinimas
 
-Darbuotojo veiklos rezultatų vertinimas per nustatytą laikotarpį, remiantis tam tikrais parametrai.
+Darbuotojo veiklos rezultatų vertinimas per nustatytą laikotarpį, remiantis tam tikrais parametrais.
 
 > Žmogiškieji ištekliai > Vertinimas
 
 #### Vertinimo šablonas
 
-Šablonas, kuriame įrašomi skirtingi Darbuotojų našumo ir parametrų parametrai
-jų svarba tam tikram vaidmeniui.
+Šablonas, kuriame įrašomi skirtingi Darbuotojų našumo parametrai ir jų snoris tam tikram pareigai.
 
-> Žmogiškieji ištekliai > Darbuotojų Nustatymai > Vertinimo šablonas
+> Žmogiškieji ištekliai > Darbuotojo nustatymai > Vertinimo šablonas
 
 #### Lankomumas
 
-Įrašas, nurodantis darbuotojo buvimą ar nebuvimą konkrečioje dieną.
+Įrašas, nurodantis darbuotojo buvimą ar nebuvimą konkrečią dieną.
 
 > Žmogiškieji ištekliai > Lankomumas
 
@@ -297,87 +296,78 @@ jų svarba tam tikram vaidmeniui.
 
 ### Gamyba
 
-#### Medžiagų sąvadas (BOM)
+#### Gamybinių žaliavų sąrašas
 
-Operacijų ir elementų sąrašas su jų kiekiais, kurių reikia
-pateikite kitą punktą. Medžiagų sąvadas (BOM) naudojamas planuojant pirkimus ir
-atlikite daikto sąnaudas.
+Operacijų ir Daiktų sąrašas su jų kiekiais, kurių reikia kuriant kitą Daiktą. Gamybinių žaliavų sąrašas naudojamas planuojant pirkimus ir vertinti Daikto sąnaudas.
 
-> Gamyba > BOM
+> Gamyba > Gamybinių žaliavų sąrašas
 
-#### Workstation
+#### Darbo stotis
 
-Vieta, kur vyksta BOM operacija. Naudinga apskaičiuoti
-tiesioginės daikto kainos.
+Vieta, kur vykdomas Gamybinių žaliavų sąrašas. Padeda apskaičiuoti tiesioginęs Daikto sąnaudas.
 
 > Gamyba > darbo stotis
 
-#### Darbų užsakymas
+#### Darbų nurodymas
 
-Dokumentas, signalizuojantis konkretaus gaminio gamybą (gamybą) su
-nurodyti kiekiai.
+Dokumentas, signalizuojantis konkretaus gaminio gamybos paleidimą pagal nurodytą kiekį.
 
-> Gamyba > Darbo tvarka
+> Gamyba > Darbų nurodymas
 
 #### Gamybos planavimo įrankis
 
-Automatizuoto darbo užsakymų ir pirkimų prašymų kūrimo įrankis
-apie atidarytus pardavimo užsakymus per tam tikrą laikotarpį.
+Automatizuoto įrankis sukūriantis Darbų nurodymus ir Pirkimų prašymus pagal Aktyvius pardavimo užsakymus per tam tikrą laikotarpį.
 
 > Gamyba > Gamybos planavimo įrankis
 
 * * *
 
-### Interneto svetainė
+### Svetainė
 
-#### Dienoraščio įrašas
+#### Tinklaraščio įrašas
 
-Pateikiamas trumpas straipsnis, sukurtas svetainės "Dienoraščio" skyriuje
-iš ERPNext svetainės modulio. Dienoraštis yra trumpa "žiniatinklio žurnalo" forma.
+Pateikiamas trumpas straipsnis, sukurtas ERPNext svetainės "Tiklaraščio" modulio skyriuje. Dienoraštis yra trumpa "interneto žurnalo" forma.
 
-> Svetainė > Dienoraščio įrašas
+> Svetainė > Tinklaraščio įrašas
 
-#### Tinklo puslapis
+#### Tinklapis
 
-Tinklalapis su unikaliu URL (žiniatinklio adresu) iš svetainės, sukurtos iš
-ERPNext.
+Tinklalapis su unikaliu URL (interneto adresu), sukurtos ERPNext.
 
 > Svetainė > Tinklalapis
 
 * * *
 
-### Nustatymai / pritaikymas
+### Nustatymai / pakeitimai
 
 #### Pasirinktinis laukas
 
 Vartotojo apibrėžtas laukas formoje / lentelėje.
 
-> Nustatymai > Pritaikyti ERPNext > Pasirinktinis laukas
+> Nustatymai > Keisti ERPNext > Pasirinktinis laukas
 
-#### Global Defaults
+#### Globalios numatytos reikšmės
 
-Tai skyrius, kuriame jūs nustatote numatytuosius įvairių parametrų parametrus
-sistema.
+Skyrius, kuriame jūs nustatote numatytuosius įvairių parametrų reikšmes sistemoje.
 
-> Nustatymai > duomenys> globalūs numatymai
+> Nustatymai > Duomenys > Globalios numatytos reikšmės
 
-#### Spausdinti antraštę
+#### Spausdinama antraštė
 
-Pavadinimas, kurį galima nustatyti tik spausdinimui. Pavyzdžiui, jūs
-norite išspausdinti pasiūlymą su antrašte "Pasiūlymas" arba "Pro forma sąskaita faktūra".
+Antraštė, kurią galima nustatyti tik spausdinimui. Pavyzdžiui, jūs norite atspausdinti pasiūlymą su antrašte "Pasiūlymas" arba "Sąskaita-faktūra".
 
-> Nustatymai > Brendis ir spausdinimas > Spausdinimo antraštės
+> Nustatymai > Ženklai ir spausdinimas > Spausdinama antraštė
 
-#### Sąlygos ir sąlygos
+#### Sąlygos
 
 Jūsų sutarties sąlygų tekstas.
 
 > Pardavimai > Nustatymai > Sąlygos
 
-#### Matavimo vienetas (MV)
+#### Matavimo vienetas
 
-Kaip kiekį išmatuojamas elementui. Pvz., "Kg", "No", "Paketas", "Paketas" ir tt.
+Kokiais vienetais matuojamas Daiktas. Pvz., "Kg", "No", "Paketas" ir tt.
 
-> Ištekliai > Nustatymai > MV
+> Ištekliai > Nustatymai > Matavimo vienetas
 
 {next}
