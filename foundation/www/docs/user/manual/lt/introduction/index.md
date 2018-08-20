@@ -35,18 +35,18 @@ ERPNext sprendžia kai kurias iš šių pagrindinių problemų:
 ERPNext yra pilna verslo valdymo sistema, kuri padeda MVĮ turėti visas verslo valdymo sprendimus vienoje sistemoje. Be to, MVĮ gali ja naudotis prrimant laiku ir faktais pagrįstus, sprendimus taip didinant savo konkurencingumą. ERPNext gali tapti verslo stuburu, pridėti jūsų augančiai įmonei stiprybės, skaidrumo ir kontrolės.
 
 Be kita ko, ERPNext padės jums:
-  * Stebėkite visas sąskaitas faktūras ir mokėjimus.
-  * Žinoti kiekvieno daikto likutį sandėlyje.
-  * Nustatykite ir sekite svarbiausius veiklos rezultatų rodiklius.
-  * Nustatykite atviras kliento užklausas.
-  * Valdyti darbo užmokesčio fondą.
-  * Priskirti užduotis ir stebėti jas.
-  * Saugoti ir tvarkyti visų savo klientų, tiekėjų ir jų kontaktų duomenų bazę.
-  * Parengti kainas.
-  * Jūsų biudžetų ir išlaidų stebėjimas
-  * Nustatykite faktinę pardavimo kainą remiantis faktinėmis išlaidomis žaliavoms, įrangai ir darbo sąnaudomis.
-  * Gaukite priminimus pagal techninės priežiūros tvarkaraščius.
-  * Paleiskite savo svetainę.
+  * Stebėkite visas sąskaitas faktūras ir mokėjimus.
+  * Žinoti kiekvieno daikto likutį sandėlyje.
+  * Nustatykite ir sekite svarbiausius veiklos rezultatų rodiklius.
+  * Nustatykite atviras kliento užklausas.
+  * Valdyti darbo užmokesčio fondą.
+  * Priskirti užduotis ir stebėti jas.
+  * Saugoti ir tvarkyti visų savo klientų, tiekėjų ir jų kontaktų duomenų bazę.
+  * Parengti kainas.
+  * Jūsų biudžetų ir išlaidų stebėjimas
+  * Nustatykite faktinę pardavimo kainą remiantis faktinėmis išlaidomis žaliavoms, įrangai ir darbo sąnaudomis.
+  * Gaukite priminimus pagal techninės priežiūros tvarkaraščius.
+  * Paleiskite savo svetainę.
 
 Ir daug daug daugiau.
 
