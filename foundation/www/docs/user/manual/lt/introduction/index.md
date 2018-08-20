@@ -32,7 +32,7 @@ ERPNext sprendžia kai kurias iš šių pagrindinių problemų:
 
 ## Kas yra ERPNext?
 
-ERPNext yra pilna verslo valdymo sistema, kuri padeda MVĮ saugoti visas verslo valdymo sprendimus vienoje sistemoje. Be to, MVĮ gali ja naudotis prrimant laiku ir faktais pagrįstus, sprendimus taip didinant savo konkurencingumą. ERPNext gali tapti verslo stuburu, pridėti jūsų augančiai įmonei stiprybės, skaidrumo ir kontrolės.
+ERPNext yra pilna verslo valdymo sistema, kuri padeda MVĮ turėti visas verslo valdymo sprendimus vienoje sistemoje. Be to, MVĮ gali ja naudotis prrimant laiku ir faktais pagrįstus, sprendimus taip didinant savo konkurencingumą. ERPNext gali tapti verslo stuburu, pridėti jūsų augančiai įmonei stiprybės, skaidrumo ir kontrolės.
 
 Be kita ko, ERPNext padės jums:
   * Stebėkite visas sąskaitas faktūras ir mokėjimus.
