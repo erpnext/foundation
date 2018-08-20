@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Įvadas
 
-## Kas yra ERP sistema? Ir kodėl kas nors turėtų rūpėti jos taikymas?
+## Kas yra ERP sistema? Ir kodėl ji kam nors turėtų rūpėti?
 
 *Jei jau esate įsitikinęs, kad jums reikia vienos sistemos kurioje yra viskas ko reikia organizacijai, galite praleisti šį puslapį.*
 
@@ -54,7 +54,7 @@ Ir daug daug daugiau.
 
 ERPNext gali būti naudojamas tiek MVĮ, tiek didelėse įmonėse. Nėra žinomų apribojimų ar veikimo problemų. Mes žinome apie serverines mažmeninės prekybos tinklus Afrikoje ir aukštai vertinamą akcijų prekybos bendrovę Indijoje (turinti daugiau nei 1000 darbuotojų), kurios naudoja ERPNext.
 
-Norėdami sužinoti daugiau, peržiūrėkite įvairias "[User Stories]" (https://erpnext.org/stories).
+Norėdami sužinoti daugiau, peržiūrėkite įvairias [User Stories](https://erpnext.org/stories).
 
 <div>
   <div class='embed-container'>
