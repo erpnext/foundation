@@ -3,13 +3,13 @@
 
 ## Kas yra ERP sistema? Ir kodėl ji kam nors turėtų rūpėti?
 
-*Jei jau esate įsitikinęs, kad jums reikia vienos sistemos kurioje yra viskas ko reikia organizacijai, galite praleisti šį puslapį.*
+* Jei jau esate įsitikinęs, kad jums reikia vienos sistemos kurioje yra viskas ko reikia organizacijai, galite praleisti šį puslapį.*
 
-Šiandien mažosios ir vidutinės įmonės (MVĮ) nedaug skiriasi nuo didelių įmonių. MVĮ susiduria su panašiais sunkumais kaip didelės kompanijos, tačiau jos turi ribotus išteklius juos spręsti.
+Šiandien mažosios ir vidutinės įmonės (MVĮ) nedaug skiriasi nuo didelių įmonių. MVĮ susiduria su panašiais sunkumais kaip didelės įmonės, tačiau jos turi ribotus išteklius juos spręsti.
 
 Mažos įmonės (kaip ir didelės įmonės) turi:
 
-- tvarkyti sąskaitas, kad stebėti pardavimus / pirkimus
+- tvarkyti sąskaitas, tam kad stebėti pardavimus / pirkimus
 - reguliariai mokėti mokesčius
 - reguliariai mokėti atlyginimus savo darbuotojams
 - valdyti pristatymus pagal įsipareigotus laiko grafikus
