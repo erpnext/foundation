@@ -296,11 +296,11 @@ Darbuotojo veiklos rezultatų vertinimas per nustatytą laikotarpį, remiantis t
 
 ### Gamyba
 
-#### Gamybinių išteklių projektas
+#### Gamybos išteklių projektas
 
-Operacijų ir Daiktų sąrašas su jų kiekiais, kurių reikia kuriant kitą Daiktą. Gamybinių išteklių projektas naudojamas planuojant pirkimus ir vertinti gaminamo Daikto sąnaudas.
+Operacijų ir Daiktų sąrašas su jų kiekiais, kurių reikia kuriant kitą Daiktą. Gamybos išteklių projektas naudojamas planuojant pirkimus ir vertinti gaminamo Daikto sąnaudas.
 
-> Gamyba > Gamybinių išteklių projektas
+> Gamyba > Gamybos išteklių projektas
 
 #### Darbo stotis
 
