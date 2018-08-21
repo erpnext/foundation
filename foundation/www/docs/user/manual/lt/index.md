@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Vartotojo Dokumentacija (Lietuvių kalba)
+# Naudojimo instrukcijos (Lietuvių kalba)
 
 ### Turinys:
 
