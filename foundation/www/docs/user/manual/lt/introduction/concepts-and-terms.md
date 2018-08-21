@@ -170,7 +170,7 @@ Tiekėjui sudaryta sutartis, kuri nurodo tiekti nurodytus Daiktus nurodytomis s�
 
 Prašymas, kurį pateikia sistemos vartotojas arba automatiškai sugeneruotas ERPNext pagal pakartotinių užsakymų lygį arba numatomo kiekio Gamybos plane tam, kad įsigyti reikiamų Daiktų.
 
-> Pirkimai > Medžiagos užklausa
+> Pirkimai > Medžiagų užklausa
 
 * * *
 
@@ -296,11 +296,11 @@ Darbuotojo veiklos rezultatų vertinimas per nustatytą laikotarpį, remiantis t
 
 ### Gamyba
 
-#### Gamybinių žaliavų sąrašas
+#### Gamybinių išteklių projektas
 
-Operacijų ir Daiktų sąrašas su jų kiekiais, kurių reikia kuriant kitą Daiktą. Gamybinių žaliavų sąrašas naudojamas planuojant pirkimus ir vertinti Daikto sąnaudas.
+Operacijų ir Daiktų sąrašas su jų kiekiais, kurių reikia kuriant kitą Daiktą. Gamybinių išteklių projektas naudojamas planuojant pirkimus ir vertinti gaminamo Daikto sąnaudas.
 
-> Gamyba > Gamybinių žaliavų sąrašas
+> Gamyba > Gamybinių išteklių projektas
 
 #### Darbo stotis
 

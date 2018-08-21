@@ -19,7 +19,7 @@ prieglobos planus.
 
 ### 3\. Atsisiųskite virtualią mašiną
 
-Norint išvengti problemų susijusių su programinės įrangos diegimu, ERPNext yra prieinamas kaip virtualios mašinos kopija (pilna operacinė sistema su įdiegta ERPNext sistema). Jūs šią kopiją galite naudoti **bet kurioje** platformoje, įskaitant ir "Microsoft Windows".
+Jei norite išvengti problemų susijusių su programinės įrangos diegimu, ERPNext yra prieinamas kaip virtualios mašinos kopija (pilna operacinė sistema su įdiegta ERPNext sistema). Jūs šią kopiją galite naudoti **bet kurioje** platformoje, įskaitant ir "Microsoft Windows".
 
 [Spauskite čia norėdami pamatyti nurodymus, kaip naudotis Virtualiu
 mašinos kopija] (https://erpnext.com/download)

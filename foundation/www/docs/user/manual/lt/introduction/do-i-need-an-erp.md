@@ -7,7 +7,7 @@ tradicine apskaita ir kitomis ERP sistemomis.
 
 ### Privalumai lyginant su tradicine apskaitos programine įranga:
 
-  * Darykit daug daugiau nei vien tik apskaitas! Tvarkykite inventorių, atsiskaitymą, kainas, klientus, atlyginimą ir daug daugiau.
+  * Darykite daug daugiau nei vien tik apskaitą! Tvarkykite inventorių, atsiskaitymą, kainas, klientus, atlyginimą ir daug daugiau.
   * Saugokite visus savo duomenis saugioje vietoje. Nebegaiškite laiko ieškodami duomenų tarp gausybės exel lentelių skirtinguose kompiuteriuose. Tvarkykite viską tame pačiame puslapyje. Visi vartotojai vienu metu gauna tokius pat atnaujintus duomenis.
   * Nebedubliuokite darbų. Nebereikia įvedinėti tos pačios informacijos iš teksto redaktoriaus į apskaitos įrankį. Viskas integruota.
   * Sekite progresą. Gaukite visą kliento istoriją ar kurio nors sandorio informaciją vienoje vietoje.

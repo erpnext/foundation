@@ -3,8 +3,7 @@
 
 <img alt="Lyderis" class="screenshot" src="{{docs_base_url}}/assets/img/setup/implementation-image.png">
 
-Per pastaruosius keletą metų mes matėme daugybę sukurtų ERP sistemų ir mes
-suvokėm, kad sėkmingas įgyvendinimas priklauso nuo nematerialių dalykų ir požiūrio.
+Per pastaruosius keletą metų mes stebėjome daugybę ERP sistemų diegimų ir mes suvokėm, kad sėkmingas ERP integravimas į organizacijos procesus priklauso nuo nematerialių dalykų ir požiūrio.
 
 **ERP nėra būtinas.**
 
