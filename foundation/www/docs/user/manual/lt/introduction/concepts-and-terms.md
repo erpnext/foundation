@@ -9,7 +9,7 @@ Prieš pradėdami diegti ERPNext, galite susipažinti su naudojama terminologija
 
 #### Įmonė
 
-Organizacija, kuriai yra skirta 5diegta ERPNext sistema. Įdiegus ERPNext sistemą, ją galima naudoti ir kelioms įmonėms valdyti, kurių kiekviena yra atskiras juridinis asmuo. Kiekvienos Įmonės apskaita bus atskira, bet jos gali dalintis įrašais apie klientus, tiekėjus ir prekes.
+Įmonė, kuriai yra skirta įdiegta ERPNext sistema. Įdiegus ERPNext sistemą, ją galima naudoti ir kelioms įmonėms valdyti, kurių kiekviena yra atskiras juridinis asmuo. Kiekviena Įmonės turės atskirą apskaitą, bet įmonės gali dalintis įrašais apie klientus, tiekėjus ir prekes.
 
 > Nustatymai > Įmonė
 
@@ -21,33 +21,33 @@ Klientas gali būti asmuo arba organizacija. Galite sukurti kelis kontaktus ir a
 
 #### Tiekėjas
 
-Prekių ar paslaugų tiekėjas. Pvz. jūsų telefono kompanija yra jūsų Tiekėjas. Vėlgi, tiekėjas gali būti fizinis ar juridinis asmuo turintis keletą kontaktų ir adresų.
+Prekių ar paslaugų tiekėjas. Pvz. jūsų telefono kompanija yra jūsų Tiekėjas. Tiekėjas gali būti fizinis ar juridinis asmuo ir turėti keletą Kontaktų ir Adresų.
 
 > Pirkimai > Tiekėjas
 
 #### Daiktas
 
-Daiktas, dalinis gaminys ar paslauga, kuri yra arba perkama, parduodama ar gaminama ir yra unikaliai identifikuojama.
+Daiktas - dalinis gaminys ar paslauga, kuri yra arba perkama, parduodama ar gaminama ir yra unikaliai identifikuojama.
 
 > Ištekliai > Daiktas
 
 #### Sąskaita
 
-Sąskaita yra finansinių ir verslo sandorių apjungimas. Pavyzdžiui, "Kelionės išlaidos" yra sąskaita "Klientas Zoė", "Tiekėjas Mae" yra sąskaitos. ERPNext Klientams ir Tiekėjams sąskaitas sukuria automatiškai.
+Sąskaita yra finansinių ir verslo sandorių apjungimas. Pavyzdžiui, "Kelionės išlaidos" yra sąskaita "Klientas Jolanta", "Tiekėjas Gediminas" yra sąskaitos. ERPNext Klientams ir Tiekėjams sąskaitas sukuria automatiškai.
 
 > Sąskaitos > Sąskaitų lentelė
 
 #### Adresas
 
-Adresas nurodo kliento ar tiekėjo vietos informaciją. Tai gali būti skirtingos vietos, tokios kaip pagrindinė biuras, gamykla, sandėlys, parduotuvė ir kt.
+Adresas nurodo kliento ar tiekėjo vietos informaciją. Tai gali būti skirtingos vietos, tokios kaip pagrindinis biuras, gamykla, sandėlys, parduotuvė ir kt.
 
 > Pardavimai > Adresas
 
 #### Kontaktas
 
-Kontaktai priklauso arba Klientui arba Tiekėjui arba niekam nepriklausomas. Kontaktas turi vardą ir kontaktinę informaciją, pvz. el. pašto adresą ir telefono numerį.
+Kontaktas gali būti nepriklausomas arba priklausyti Klientui arba Tiekėjui. Kontaktas turi vardą ir kontaktinę informaciją, pvz. el. pašto adresą ir telefono numerį.
 
-> Pardavimai > Kontaktai
+> Pardavimai > Kontaktas
 
 #### Komunikacija
 
@@ -57,7 +57,7 @@ Sąrašas viso bendravimo su Kontaktu arba Potencialiu klientu. Visi elektronini
 
 #### Kainoraštis
 
-Kainoraštyje galima saugoti skirtingų tarifų planus, kainas. Tai jūsų suteiktas pavadinimas tam tikrų daiktų kainų sąrašui.
+Kainoraštyje galima saugoti skirtingų tarifų planus, kainas. Tai jūsų suteiktas pavadinimas tam tikrų Daiktų kainų sąrašui.
 
 > Pardavimai > Kainoraštis
 
@@ -111,11 +111,11 @@ ERPNext leidžia jums atlikti sandorius keliomis valiutomis nepaisant to, kad j�
 
 Klientų grupavimas, dažniausiai pagal rinkos segmentą.
 
-> Pardavimai > sąranka > klientų grupė
+> Pardavimai > Nustatymai > Klientų grupė
 
 #### Potencialus klientas
 
-Asmuo, kuris galėtų tapti klientu. Potencialus klientas gali tapti Pardavimo galimybe..
+Asmuo, kuris galėtų tapti klientu. Potencialus klientas gali tapti Pardavimo galimybe.
 
 > CRM > Potencialus klientas
 
@@ -125,27 +125,27 @@ Galimas pardavimas.
 
 > CRM > Pardavimo galimybe
 
-#### Pardavimo pasiūlymas
+#### Apmokęstinimo pasiūlymas
 
-Kliento prašymas apmokęstinti prekę ar paslaugą.
+Apmokęstinimo pasiūlymas pagal Kliento prašymą apmokęstinti prekę ar paslaugą.
 
-> Pardavimai > Pardavimo pasiūlymas
+> Pardavimai > Apmokęstinimo pasiūlymas
 
-#### Pardavimo užsakymas
+#### Pardavimo patvirtinimas
 
 Daiktų (prekių arba paslaugų) pristatymo sąlygų ir kainos patvirtinimas. Pristatymai, darbo užsakymai ir sąskaitos-faktūros atliekami remiantis Pardavimo užsakymais.
 
-> Pardavimai > Pardavimų užsakymas
+> Pardavimai > Pardavimo patvirtinimas
 
 #### Teritorija
 
-Geografinės vietovės klasifikacija pardavimų valdymui. Galite nustatyti tikslus Teritorijoms ir kiekvienas pardavimas yra susijęs su Teritorija.
+Geografinės vietovės skirstymas pardavimų valdymui. Galite nustatyti tikslias Teritorijas ir kiekvieną pardavimą susieti su šia Teritorija.
 
 > Pardavimai > Nustatymai > Teritorija
 
 #### Pardavimo partneris
 
-Trečiosios šalies platintojas / prekybininkas / filialas / tarpininkas (komisionierius), kuris parduoda kompanijos daiktus dažniausiai už komisinius.
+Trečiosios šalies platintojas / prekybininkas / filialas / tarpininkas (komisionierius), kuris parduoda kompanijos Daiktus, dažniausiai už komisinius.
 
 > Pardavimai > Nustatymai > Pardavimo partneris
 
@@ -154,7 +154,7 @@ Trečiosios šalies platintojas / prekybininkas / filialas / tarpininkas (komisi
 Asmuo, kuris teikia pasiūlymus Klientui ir uždaro sandorius. Galite nustatyti tikslus
 Pardavėjui ir žymėti juos sandoriuose.
 
-> Pardavimai > Nustatymai > pardavimo atstovas
+> Pardavimai > Nustatymai > Pardavėjas
 
 * * *
 
@@ -188,11 +188,11 @@ Medžiaga perduodama iš vieno Sandėlio į kitą.
 
 > Ištekliai > Išteklių įrašas
 
-#### Tiekimo įrašas
+#### Pristatymo pranešimas
 
-Daiktų sąrašas su siuntos kiekiu. Tiekimo įrašas sumažins Produkų skaičių sandėlyje, iš kurio atliekamas tiekimas. Tiekimo įrašas yra dažniausiai pateikiamas prieš Pardavimo užsakymą.
+Daiktų sąrašas su siuntos kiekiu. Pristatymo pranešimas sumažins Produkų skaičių sandėlyje, iš kurio atliekamas tiekimas. Pristatymo pranešimas yra dažniausiai pateikiamas prieš Pardavimo užsakymą.
 
-> Ištekliai > Tiekimo įrašas
+> Ištekliai > Pristatymo pranešimas
 
 #### Pirkimo kvitas
 
@@ -224,7 +224,7 @@ Atnaujinkite kelis įrašus lentelinės skaičiuoklės (CSV) byloje vienu metu.
 
 #### Kokybės kontrolė
 
-Įrašas skirtas išsaugoti tam tikrus Daikto parametrus Gavimo iš Tiekėjo metu arba Pristatymo Klientui metu.
+Įrašas skirtas išsaugoti Daikto parametrus Gavimo iš Tiekėjo metu arba Pristatymo Klientui metu.
 
 > Ištekliai > Kokybės kontrolė
 
@@ -296,27 +296,27 @@ Darbuotojo veiklos rezultatų vertinimas per nustatytą laikotarpį, remiantis t
 
 ### Gamyba
 
-#### Gamybos išteklių projektas
+#### Komplektavimo specifikacija
 
-Operacijų ir Daiktų sąrašas su jų kiekiais, kurių reikia kuriant kitą Daiktą. Gamybos išteklių projektas naudojamas planuojant pirkimus ir vertinti gaminamo Daikto sąnaudas.
+Operacijų ir Daiktų sąrašas su jų kiekiais, kurių reikia kuriant kitą Daiktą. Komplektavimo specifikacija naudojama planuojant pirkimus ir vertinti gaminamo Daikto sąnaudas.
 
-> Gamyba > Gamybos išteklių projektas
+> Gamyba > Komplektavimo specifikacija
 
 #### Darbo stotis
 
-Vieta, kur vykdomas Gamybinių žaliavų sąrašas. Padeda apskaičiuoti tiesioginęs Daikto sąnaudas.
+Vieta, kur vykdoma gamyba pagal Komplektavimo specifikacija. Padeda apskaičiuoti tiesioginęs Daikto sąnaudas.
 
-> Gamyba > darbo stotis
+> Gamyba > Darbo stotis
 
-#### Darbų nurodymas
+#### Darbo užsakymas
 
 Dokumentas, signalizuojantis konkretaus gaminio gamybos paleidimą pagal nurodytą kiekį.
 
-> Gamyba > Darbų nurodymas
+> Gamyba > Darbo užsakymas
 
 #### Gamybos planavimo įrankis
 
-Automatizuoto įrankis sukūriantis Darbų nurodymus ir Pirkimų prašymus pagal Aktyvius pardavimo užsakymus per tam tikrą laikotarpį.
+Automatizuoto įrankis sukūriantis Darbų užsakymą ir Pirkimų prašymus pagal Aktyvius pardavimo užsakymus per tam tikrą laikotarpį.
 
 > Gamyba > Gamybos planavimo įrankis
 

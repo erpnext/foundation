@@ -7,7 +7,6 @@
 
 <img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/overview.png">
 
-Pastaba: ne visi veiksmai yra privalomi. ERPNext leidžia laisvai praleisti
-žingsnius, jei norite supaprastinti procesą.
+Pastaba: ne visi veiksmai yra privalomi. ERPNext leidžia laisvai praleisti žingsnius, jei norite supaprastinti procesą.
 
 {next}

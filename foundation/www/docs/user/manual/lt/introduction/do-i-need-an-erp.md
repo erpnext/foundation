@@ -1,14 +1,12 @@
 <!-- add-breadcrumbs -->
 # Ar man reikia ERP?
 
-ERPNext yra modernus įrankis, kuris apima ne tik apskaitą, bet ir daugelį kitų
-verslo funkcijų vienoje platformoje. ERPNext turi daug privalumų lyginant su
-tradicine apskaita ir kitomis ERP sistemomis.
+ERPNext yra modernus įrankis, kuris apima ne tik apskaitą, bet ir daugelį kitų verslo funkcijų vienoje platformoje. ERPNext turi daug privalumų lyginant su tradicine apskaita ir kitomis ERP sistemomis.
 
 ### Privalumai lyginant su tradicine apskaitos programine įranga:
 
   * Darykite daug daugiau nei vien tik apskaitą! Tvarkykite inventorių, atsiskaitymą, kainas, klientus, atlyginimą ir daug daugiau.
-  * Saugokite visus savo duomenis saugioje vietoje. Nebegaiškite laiko ieškodami duomenų tarp gausybės exel lentelių skirtinguose kompiuteriuose. Tvarkykite viską tame pačiame puslapyje. Visi vartotojai vienu metu gauna tokius pat atnaujintus duomenis.
+  * Saugokite visus savo duomenis saugioje vietoje. Nebegaiškite laiko ieškodami duomenų tarp gausybės Excel lentelių skirtinguose kompiuteriuose. Tvarkykite viską vienoje vietoje. Visi vartotojai vienu metu gauna tokius pat atnaujintus duomenis.
   * Nebedubliuokite darbų. Nebereikia įvedinėti tos pačios informacijos iš teksto redaktoriaus į apskaitos įrankį. Viskas integruota.
   * Sekite progresą. Gaukite visą kliento istoriją ar kurio nors sandorio informaciją vienoje vietoje.
 
