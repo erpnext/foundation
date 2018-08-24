@@ -5,7 +5,7 @@ Items for which Serial No. and Batch No. is maintained, opening stock balance en
 
 **Question:** Why Opening Balance entry for the Serialized and Batch Item cannot be updated via Stock Reconciliation?
 
-In the ERPNext, stock level of a serialized items is derived based on the count of Serial Nos for that item. Hence, unless Serial Nos. are created for the serialized item, its stock level is not be updated. In the Stock Reconciliation Tool, you can only update opening quantity of an item, but not their Serial No. and Batch No.
+In the ERPNext, stock level of a serialized item is derived based on the count of Serial Nos for that item. Hence, unless Serial Nos. are created for the serialized item, its stock level will not be updated. In the Stock Reconciliation Tool, you can only update opening quantity of an item, but not the Serial No. and Batch No.
 
 ### Opening Balance for the Serialized Item
 
@@ -43,7 +43,7 @@ For a batch item, provide Batch ID in which opening balance will be updated. Kee
 
 [Click here to learn how Batchwise inventory is managed in ERPNext.](/docs/user/manual/en/stock/articles/managing-batch-wise-inventory.html)
 
-#### Step 7: Update Valuation Rate an Item
+#### Step 7: Update Item Valuation Rate 
 
 Update valuation rate, which will be per unit value of item. If different units of the same items having different valuation rate, they should be updated in a separate row, with different Valuation Rates.
 
