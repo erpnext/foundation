@@ -13,4 +13,3 @@ human-resources-reports
 human-resource-setup
 setup
 articles
-tools

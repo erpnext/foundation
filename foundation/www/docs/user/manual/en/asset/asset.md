@@ -1,8 +1,3 @@
-<!-- add-breadcrumbs -->
-# Managing Fixed Assets
-
-In ERPNext, you can maintain fixed asset records like Computers, Furnitures, Cars, etc. and manage depreciations, sale or disposal of those assets.
-
 ## Asset Category
 
 Based on the type of assets, create Asset Category. For example, all your desktops and laptops can be part of an Asset Category named "Computers". Here you can set default depreciation method, periodicity and depreciation related accounts, which will be applicable to all the assets under the category.
