@@ -6,7 +6,7 @@ The company that receives the prepayment records the amount as Deferred revenue 
 
 ### Deferred Revenue Usecase
 
-The internet and broadcasting services providers offers subscription plans on quanterly or yearly basis. They take complete payment in advance from the customer for couple of months, but book income on monthly basis in their books of accounts. Following is how they should configure Deferred Revenue accounting in ERPNext to automate the process.
+The internet and broadcasting services providers offers subscription plans on quaterly or yearly basis. They take complete payment in advance from the customer for couple of months, but book income on monthly basis in their books of accounts. Following is how they should configure Deferred Revenue accounting in ERPNext to automate the process.
 
 ### Item
 
