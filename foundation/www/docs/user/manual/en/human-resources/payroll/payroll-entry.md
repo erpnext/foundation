@@ -7,7 +7,7 @@ Payroll Entry enables bulk processing of payroll for employees company wide or e
 
 <img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-entry.png">
 
-> Note: Read [Payroll Setup](/docs/user/manual/en/human-resources/payroll/payroll-setup.html)to know how you can configure Payroll to take the full advantage of ERPNext Human Resources
+> Note: Read [Payroll Setup](/docs/user/manual/en/human-resources/payroll/payroll-setup.html) to know how you can configure Payroll to take the full advantage of ERPNext Human Resources.
 
 In Payroll Entry,
 
