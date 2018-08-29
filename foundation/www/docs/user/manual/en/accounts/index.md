@@ -1,4 +1,3 @@
-<!-- add-breadcrumbs -->
 # Accounts
 
 At the end of sales and purchase cycle comes billing and payments. You may have
@@ -8,7 +7,9 @@ have outsourced your accounting. In all the cases financial accounting forms the
 In ERPNext, your accounting operations consists of 3 main transactions:
 
   * Sales Invoice: The bills that you raise to your Customers for the products or services you provide.
+
   * Purchase Invoice: Bills that your Suppliers give you for their products or services.
+  
   * Journal Entries: For accounting entries, like payments, credit and other types.
 
 <div class="embed-container">

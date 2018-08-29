@@ -6,7 +6,7 @@ Let's consider a use-case of ERPNext subscription itself. Our hosting plans are 
 
 To manage client's subscription expiry and auto-generation of Sales Invoice for the renewal, we use Subscription feature.
 
-### Subcription Validity
+### Subscription Validity
 
 **Start Date:** Day from when the subscription will be valid.
 
@@ -22,14 +22,14 @@ The subscription plan is linked to an Item, for which Sales Invoice is created.
 
 ### Taxes
 
-Select Taxes and Charges which will be applicable in the Sales Invoice created agains this Subscription.
+Select Taxes and Charges which will be applicable in the Sales Invoice created against this Subscription.
 
 ### Discounts
 
 Mention discounts if any which will be applied on this particular subscription.
 
-### Difference Between Recurring and Subscription
+### Difference Between Subscription and Auto-Repeat
 
-Before Subscription feature was added in ERPNext, the current Auto-Repeat feature was available as subscription only.
+Before Subscription feature was added in ERPNext, the current Auto-Repeat feature was available as a Subscription only.
 
 The Auto-Repeat feature which is applicable for multiple transactions like Sales Order, Purchase Order, Invoices, Journal Entry etc. Whereas based on Subscription, only Sales Invoices are auto-created.

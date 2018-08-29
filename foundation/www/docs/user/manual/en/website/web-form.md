@@ -1,7 +1,11 @@
-<!-- add-breadcrumbs -->
 # Web Forms
 
-<p class="lead">Add forms to the website that will add / update data in your tables. Allow users to edit / manage multiple web forms</p>
+Portal Views are viewed by external users, but the community that interacts with the organization, but is not a part of the organization. These are customers, suppliers, job applicants, or students, guardians etc. 
+
+The standardized way these users can add or edit records is called "Web Forms".
+
+
+You can add Web Forms to your ERPNext website that will allow addition/updation of new records for the external users.
 
 You can add forms in your website for example, Contact Us, Inquiry, Complaint etc. Data from these can fill up records like Lead, Opportunity, Issue etc. The user can also be allowed manage multiple records (like Complaints etc.)
 

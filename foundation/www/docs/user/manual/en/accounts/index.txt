@@ -9,6 +9,7 @@ debit-note
 inter-company-invoices
 payments
 journal-entry
+mode-of-payment
 inter-company-journal-entry
 payment-entry
 deferred-revenue
