@@ -1,4 +1,3 @@
-
 # Disable Signup on ERPNext Website
 
 ERPNext has portal feature available which allows thirs parties like Customers and Supplier sign, place new order and track updates on the previous orders. 
