@@ -22,7 +22,7 @@ In a Tax Withholding Category, you must select.
     * The name of the Company.
     * The Account head where the tax amount will be credited to.
 
-> Note:- Lets say a rate of 5% will be applicable on invoice where Single threshhold is 20,000 and Cumulative threshhold is 30,000. If an invoice is created with a grand total of 20,000 then the single threshhold will be triggered and a 5% tax would be charged. But if the invoce amount totalled up to be 15,000 then no tax will be charged as it didn't cross the threshhold. If again an invoice is created with a total of 15,000 then although it didn't cross the Single threshhold, charges will be deducted since the sum of last invoice and this invoice adds up to be 30,000 which is equal to the specified Cumulative threshhold.
+> Note:- Lets say a rate of 5% will be applicable on invoice where Single threshold is 20,000 and Cumulative threshold is 30,000. If an invoice is created with a grand total of 20,000 then the single threshold will be triggered and a 5% tax would be charged. But if the invoce amount totalled up to be 15,000 then no tax will be charged as it didn't cross the threshold. If again an invoice is created with a total of 15,000 then although it didn't cross the Single threshold, charges will be deducted since the sum of last invoice and this invoice adds up to be 30,000 which is equal to the specified Cumulative threshold.
 
 * * *
 
@@ -78,7 +78,7 @@ If the **Supplier** has the tax withholding field set, then upon selecting that 
 
 <br>
 
-* Now, lets create another invoice same as the above. Although the invoice amount didn't cross the Single threshhold, we see that tax has been charged. This is because the previous and the current invoice adds up to be 30,000 which exceeds the Cumulative threshhold and hence tax based on the rate provided in the **Tax Withholding Category** are applied accordingly.
+* Now, lets create another invoice same as the above. Although the invoice amount didn't cross the Single threshold, we see that tax has been charged. This is because the previous and the current invoice adds up to be 30,000 which exceeds the Cumulative threshold and hence tax based on the rate provided in the **Tax Withholding Category** are applied accordingly.
 
 <img class="screenshot" alt="Tax Withholding Category" src="{{docs_base_url}}/assets/img/accounts/tax-withholding-category-8.png">
 
