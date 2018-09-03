@@ -2,7 +2,7 @@
 
 A company is a legal entity made up of an association of people for carrying on a commercial or industrial enterprise.
 
-In ERPNext, first Company is created on completion of account creation. For each Company, you can set a domain as manufacturing, retail, or services depending on the nature of your business activity. 
+In ERPNext, first Company is created on completion of account creation. For each Company, you can set a domain as manufacturing, retail, or services depending on the nature of your business activity.
 
 If you have more than one company, you can add them from:
 
@@ -10,22 +10,26 @@ If you have more than one company, you can add them from:
 
 ### Company Tree Structure
 
+> New in Version 11
+
 The company is a tree-structured master. It allows you to define a federated and group company structure.
 
-<img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/company-tree.png">
+<img class="screenshot" alt="Company Tree" src="{{docs_base_url}}/assets/img/accounts/company-tree.png">
+
+Once you build a company tree, ERPNext will validate that the accounts of the child companies will match the accounts in the parent company, so that you can consolidate all the accounts in a consolidated chart of accounts statement.
 
 ### Chart of Accounts
 
 On each Company, the master for Chart of Account is maintained separately. This allows you to maintain separate accounting for each company as per the legal requirements.
 
-<img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/company-coa.png">
+<img class="screenshot" alt="Company Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/company-coa.png">
 
 ERPNext has localized Chart of Accounts readily available for some countries. When creating new Company, you can choose to setup Chart of Account for it from one of the following options.
 
 * Standard Chart of Accounts
 * Based on Existing Company's Chart of Account
 
-<img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/company-coa-2.png">
+<img class="screenshot" alt="Company Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/company-coa-2.png">
 
 ### Default Values
 
