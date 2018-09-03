@@ -12,5 +12,5 @@ To enable this feature, you will first have to edit DNS settings of your domain 
 
 After you've setup the DNS records, you will have to raise a support ticket by sending an email to support@erpnext.com and we'll take it from there.
 
-**Note**: We do not support HTTPS on custom domains. HTTPS enables end to end encryption (from your browser to our server). Although not critical for the website but we strongly recommend against using the ERPNext app over an unencrypted protocol. To be safe always use the ERP at your erpext.com address.
+**Note**: We do not support HTTPS on custom domains. HTTPS enables end to end encryption (from your browser to our server). Although not critical for the website but we strongly recommend against using the ERPNext app over an unencrypted protocol. To be safe always use the ERP at your erpnext.com address.
 

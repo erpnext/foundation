@@ -1,6 +1,7 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
+<div class='container'>
 <h1>{{ title }}</h1>
 {% if frappe.user == owner %}
 <p><a class='btn btn-primary btn-sm' href="/my-jobs?name={{ name }}">Edit Job</a></p>
@@ -46,5 +47,5 @@
 <p><a href="/login">You must register and login to view contact details</a></p>
 {% endif %}
 <p><br><a href="/my-jobs?new=1" class='btn btn-dark btn-sm'>Post a New Job</a></p>
-
+</div>
 {% endblock %}

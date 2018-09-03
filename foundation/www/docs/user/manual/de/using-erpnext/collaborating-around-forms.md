@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Zusammenarbeit über Formulare
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 ### Zugeordnet zu
 

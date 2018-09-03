@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Zahlungen durchführen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Zahlungen zu Ausgangs- oder Eingangsrechnungen können über die Schaltfläche "Zahlungsbuchung erstellen" zu übertragenen Rechnungen erfasst werden.
 

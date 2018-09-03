@@ -79,3 +79,5 @@ To check Budget Variance report, go to:
 [Click here to learn how to do budgeting from Cost Center](/docs/user/manual/en/accounts/budgeting.html).
 
 <!-- markdown -->
+
+{next}

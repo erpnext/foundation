@@ -1,8 +1,7 @@
 # Accounts
 
-At the end of sales and purchase cycle comes billing and payments. You may have
-an accountant in your team, or you may be doing accounting yourself, or you may
-have outsourced your accounting. In all the cases financial accounting forms the core of any business management system like an ERP.
+Whether you have an accountant in your internal team OR you do it yourself OR you have chosen to outsourced it,
+the financial accounting process is almost always at the center any business management system (aka an ERP system).
 
 In ERPNext, your accounting operations consists of 3 main transactions:
 

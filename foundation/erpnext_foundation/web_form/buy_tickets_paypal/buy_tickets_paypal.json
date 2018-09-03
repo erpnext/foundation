@@ -17,9 +17,9 @@
  "idx": 0, 
  "introduction_text": "", 
  "is_standard": 1, 
- "login_required": 1, 
+ "login_required": 0, 
  "max_attachment_size": 0, 
- "modified": "2017-07-07 11:06:27.726016", 
+ "modified": "2018-07-12 16:21:40.271645", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "buy-tickets-paypal", 
@@ -28,8 +28,14 @@
  "payment_gateway": "PayPal", 
  "published": 1, 
  "route": "buy-tickets-paypal", 
- "show_sidebar": 1, 
- "sidebar_items": [], 
+ "show_sidebar": 0, 
+ "sidebar_items": [
+  {
+   "enabled": 1, 
+   "route": "/buy-tickets-paypal", 
+   "title": "My Tickets"
+  }
+ ], 
  "success_url": "/conf/2017", 
  "title": "Buy Tickets Paypal", 
  "web_form_fields": [
@@ -44,22 +50,24 @@
    "reqd": 1
   }, 
   {
+   "description": "$60 per person. Includes lunch and dinner on both days", 
    "fieldname": "full_conference_tickets", 
    "fieldtype": "Int", 
    "hidden": 0, 
-   "label": "Full Conference Tickets", 
+   "label": "No of Tickets", 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
    "reqd": 0
   }, 
   {
-   "fieldname": "user_conference_tickets", 
-   "fieldtype": "Int", 
+   "fieldname": "tshirt_size", 
+   "fieldtype": "Select", 
    "hidden": 0, 
-   "label": "User Conference Tickets", 
+   "label": "T-Shirt Size", 
    "max_length": 0, 
    "max_value": 0, 
+   "options": "S\nM\nL\nXL\nXXL\nXXXL", 
    "read_only": 0, 
    "reqd": 0
   }, 

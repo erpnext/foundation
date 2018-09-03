@@ -13,3 +13,5 @@ In your sales and purchase transactions, if the field of Currency Exchange Rate 
 * Check Sales / Purchase transaction once again
 
 After this setting, the Exchange Rate field in the transactions should become editable once again.
+
+{next}

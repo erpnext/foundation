@@ -20,3 +20,5 @@ Example journal entry (using Journal Voucher in ERPNext) for a withdrawal of $10
 2. Debit **Owner's Draws** $1000
 
 <!-- markdown -->
+
+{next}

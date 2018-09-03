@@ -6,7 +6,7 @@ The company that receives the prepayment records the amount as Deferred revenue 
 
 ### Deferred Revenue Usecase
 
-The internet and broadcasting services providers offers subscription plans on quanterly or yearly basis. They take complete payment in advance from the customer for couple of months, but book income on monthly basis in their books of accounts. Following is how they should configure Deferred Revenue accounting in ERPNext to automate the process.
+The internet and broadcasting services providers offers subscription plans on quaterly or yearly basis. They take complete payment in advance from the customer for couple of months, but book income on monthly basis in their books of accounts. Following is how they should configure Deferred Revenue accounting in ERPNext to automate the process.
 
 ### Item
 
@@ -23,7 +23,7 @@ On creation of Sales Invoice for the Deferred Revenue Item, instead of posting i
 
 ### Journal Entry
 
-Based on the From Date and To Date set for the Item in the Sales Invoice Item table, Journal Entries at the end of each month. It debits the value from Deferred Revenue account and credits Income Account selected for an Item in the Sales Invoice. Following is the example of Income for the deferred Revenue Item is booked via multiple Journal Entries.
+Based on the From Date and To Date set in the Sales Invoice Item table, Journal Entries are created automatically at the end of each month. It debits the value from Deferred Revenue account and credits Income Account selected for an Item in the Sales Invoice. Following is the example of Income for the deferred Revenue Item is booked via multiple Journal Entries.
 
 <img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/deferred-jv.png">
 
@@ -33,3 +33,5 @@ Based on the From Date and To Date set for the Item in the Sales Invoice Item ta
   <iframe src="https://www.youtube.com/embed/j6mx-EHU4aY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </div>
+
+{next}

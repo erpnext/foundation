@@ -13,6 +13,7 @@ or Open the document for which you want to make a print format. Click the Printe
   <iframe src="https://www.youtube.com/embed/cKZHcx1znMc?start=82&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </div>
+<br>
 
 ### Step 1: Make a new Format
 

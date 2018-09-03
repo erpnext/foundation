@@ -10,7 +10,7 @@ To edit print settings, go to:
 
 There is various other configuration available in the Print Settings. Let's learn about each below.
 
-####PDF or HTML
+#### PDF or HTML
 
 When you email any document (like order or invoice) from ERPNext, it is sent in the PDF or HTML format. The file is sent in the PDF by default. If you wish to send a document in the HTML format, just uncheck field "Send Print as PDF".
 
@@ -60,5 +60,24 @@ Canceled transactions are the ones which don't have any impact on the reports. I
 
 In the sales and purchase transactions, you can add apply multiple taxes on the item. Bydefault, in the print format, only taxes which has some amount calculated are visible in the Print Format. If you wish to also print the tax which was not applied to any item and has zero tax amount, just enable this setting.
 
+#### Network Printer
+
+You can enable print server by fill the print server IP and port then chose default printer
+
+Befor enabling this feature you have to install pycups in the env using the command
+
+`./env/bin/pip install pycups`
+
+executed from the `frappe-bench` directory.
+
+And install cups package
+
+For Debian OS Family:
+
+`sudo apt-get install libcups2-dev`
+
+For Redhat OS Family:
+
+`sudo yum install cups-libs`
 
 {next}

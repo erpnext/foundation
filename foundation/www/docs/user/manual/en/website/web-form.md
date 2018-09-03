@@ -57,4 +57,8 @@ In Portal Settings, you can set a role against each menu item so that only users
 
 When website user submits the form, the data will be stored in the document/doctype for which web form is creaeted.
 
+### Customizing
+
+For customizing web forms, see the [Frappe Documentation of Web Forms](https://frappe.io/docs/user/en/guides/portal-development/web-forms)
+
 {next}

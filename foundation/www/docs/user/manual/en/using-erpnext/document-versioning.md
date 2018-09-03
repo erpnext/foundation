@@ -20,3 +20,5 @@ Following is link of version in a Purchase Order form. Each time a document is e
 In the Version document, you will find log of all the fields and values changes in it.
 
 <img class="screenshot" alt="Version Details" src="{{docs_base_url}}/assets/img/collaboration-tools/version-details.png">
+
+{next}

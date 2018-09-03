@@ -37,3 +37,4 @@ If you have come to terms with party to follow standard exchange rate throughout
 
  If system find Exchange Rate master for any currency, it is given preference over currency exchange rate.
 
+{next}

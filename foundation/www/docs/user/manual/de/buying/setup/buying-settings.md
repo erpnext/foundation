@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Einstellungen zum Einkauf
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Hier können Sie Werte einstellen, die in den Transaktionen des Moduls Einkauf zugrunde gelegt werden.
 

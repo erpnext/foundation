@@ -1,2 +1,0 @@
-erpnext.utilities.web_form.addresses.addresses
-erpnext.utilities.web_form.addresses

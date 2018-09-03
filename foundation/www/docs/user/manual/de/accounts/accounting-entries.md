@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Buchungen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Das Konzept der Buchführung erklärt sich über unten angeführtes Beispiel: Wir nehmen die Firma "Tealaden" als Beispiel und sehen uns an, wie Buchungen für die Geschäftstätigkeiten erstellt werden.
 

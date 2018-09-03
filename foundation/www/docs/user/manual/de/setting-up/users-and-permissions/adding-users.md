@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Benutzer hinzufügen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Benutzer können vom System-Manager hinzugefügt werden. Wenn Sie ein System-Manager sind, können Sie Benutzer hinzufügen über
 

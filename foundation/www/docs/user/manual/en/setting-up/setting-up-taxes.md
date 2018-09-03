@@ -33,6 +33,7 @@ Item Tax table can be found as a section within the Item Master document.
 
   * **Exception to the rule**: Item tax settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account
   * **Item tax is overwrite-able**: You can overwrite or change the item tax rate by going to the Item master in the Item tax table.
+  * **Tax Accounts**: For Item Tax to work, you need to ensure that the Tax accounts set in Item Tax table (with changed tax rates) in Item master are part of the _default_ Sales / Purhcase Tax Template.
 
 ## Sales Taxes and Charges Template
 

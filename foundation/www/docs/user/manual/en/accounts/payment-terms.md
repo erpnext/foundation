@@ -73,3 +73,5 @@ You can add Payments Terms in the "Payment Terms Schedule" section of the Docume
 **Invoice Portion:** The percentage portion of the document represented in each row.
 
 **Payment Amount:** The amount due from the portion of the invoice represented by each row.
+
+{next}

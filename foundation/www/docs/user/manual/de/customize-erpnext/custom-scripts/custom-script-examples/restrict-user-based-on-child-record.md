@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Benutzer auf Grundlage eines Unterdatensatzes einschränken
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
     // restrict certain warehouse to Material Manager
     cur_frm.cscript.custom_validate = function(doc) {

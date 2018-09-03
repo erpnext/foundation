@@ -1,7 +1,0 @@
-erpnext.setup.setup_wizard.operations.sample_data
-erpnext.setup.setup_wizard.operations.company_setup
-erpnext.setup.setup_wizard.operations.default_website
-erpnext.setup.setup_wizard.operations.install_fixtures
-erpnext.setup.setup_wizard.operations.defaults_setup
-erpnext.setup.setup_wizard.operations.taxes_setup
-erpnext.setup.setup_wizard.operations

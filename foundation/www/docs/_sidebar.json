@@ -1,27 +1,27 @@
 [
  {
-  "route": "/search_docs", 
-  "title": "Search Docs ...", 
+  "route": "/docs",
+  "title": "Home"
+ },
+ {
+  "route": "/docs/user/manual/en",
+  "title": "Manual (English)"
+ },
+ {
+  "route": "/docs/user/manual/de",
+  "title": "Handbuch (Deutsch)"
+ },
+ {
+  "route": "/docs/user/videos/learn",
+  "title": "Videos"
+ },
+ {
+  "route": "/search_docs",
+  "title": "Search",
   "type": "input"
- }, 
+ },
  {
-  "route": "/docs", 
-  "title": "Docs Home"
- }, 
- {
-  "route": "/docs/user", 
-  "title": "User Guide"
- }, 
- {
-  "route": "/docs/current/api", 
-  "title": "Server API"
- }, 
- {
-  "route": "/docs/current/models", 
-  "title": "Models (Reference)"
- }, 
- {
-  "route": "https://github.com/frappe/erpnext/tree/develop/erpnext/docs", 
+  "route": "https://github.com/erpnext/foundation/tree/master/foundation/www/docs",
   "title": "Improve Docs"
  }
 ]

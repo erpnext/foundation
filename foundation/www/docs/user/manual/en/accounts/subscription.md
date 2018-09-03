@@ -33,3 +33,7 @@ Mention discounts if any which will be applied on this particular subscription.
 Before Subscription feature was added in ERPNext, the current Auto-Repeat feature was available as a Subscription only.
 
 The Auto-Repeat feature which is applicable for multiple transactions like Sales Order, Purchase Order, Invoices, Journal Entry etc. Whereas based on Subscription, only Sales Invoices are auto-created.
+
+**Disabled**: It will stop to make auto recurring documents against the subscription
+
+{next}

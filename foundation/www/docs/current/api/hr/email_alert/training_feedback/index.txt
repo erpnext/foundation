@@ -1,2 +1,0 @@
-erpnext.hr.email_alert.training_feedback
-erpnext.hr.email_alert.training_feedback.training_feedback

@@ -34,3 +34,5 @@ Steps :
 <img class="screenshot" alt="Exchange Rate Revaluation Submitting"  	src="{{docs_base_url}}/assets/img/accounts/exchange-rate-revaluation/exchange-rate-revaluation-submit.png">
 
 <img class="screenshot" alt="Journal Entry"  	src="{{docs_base_url}}/assets/img/accounts/exchange-rate-revaluation/journal-entry.png">
+
+{next}

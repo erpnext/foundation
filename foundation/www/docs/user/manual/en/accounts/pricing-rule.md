@@ -107,4 +107,6 @@ System apply the margin rate on the item price on selection of an item.
 
 For more details about pricing rule [Click Here](/docs/user/manual/en/selling/articles/adding-margin.html)
 
+
+{next}
 <!-- markdown -->

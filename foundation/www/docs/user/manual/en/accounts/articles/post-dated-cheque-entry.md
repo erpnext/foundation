@@ -31,3 +31,5 @@ When cheque is cleared, i.e. on actual date on the cheque, you can update its Cl
 
 In the Chart of Accounts, you might find value of this Payment Entry already reflecting against bank Account. You should check **Bank Reconciliation Statement**, a report in the account module to know difference of bank balance as per system, and actual balance in the bank's statement.
 <!-- markdown -->
+
+{next}

@@ -36,3 +36,5 @@ You can notice that there is a difference of 400 in the Payment Amount and the A
 <img alt="Deduction/Loss Account" class="screenshot" src="{{docs_base_url}}/assets/img/articles/withhold-2.gif">
 
  Following same steps, you can also manage difference availed due to Currency Exchange Gain/Loss.
+ 
+{next}

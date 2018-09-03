@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
-# Einstellungen zum Verkaufsort (Point of Sale)
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+# Einstellungen zur Verkaufsstelle (Point of Sale)
+
 
 POS stellt fortgeschrittene Funktionen wie "Bestandsmanagement", "CRM", "Finanzen" und "Lager", etc. bereit, die alle mit in die POS-Software eingebaut sind. Vor dem modernen POS wurden alle diese Funktionen einzeln ausgeführt und eine manuelle Umschlüsselung von Informationen war nötig, was zu Eingabefehlern führen konnte.
 

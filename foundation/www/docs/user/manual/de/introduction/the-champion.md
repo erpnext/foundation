@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Der Champion
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 <img alt="Champion" class="screenshot" src="{{docs_base_url}}/assets/img/setup/implementation-image.png">
 

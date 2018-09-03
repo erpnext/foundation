@@ -1,4 +1,0 @@
-erpnext.education.setup
-erpnext.education
-erpnext.education.utils
-erpnext.education.api

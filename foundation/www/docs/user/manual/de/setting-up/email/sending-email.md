@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # E-Mails über ein beliebiges Dokument versenden
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 In ERPNext können sie jedes beliebige Dokument per E-Mail versenden (als PDF-Anhang) indem Sie in einem beliebigen geöffneten Dokument auf `Menü > E-Mail` gehen.
 

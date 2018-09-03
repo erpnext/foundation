@@ -20,6 +20,7 @@ advance-payment-entry
 payment-request
 credit-limit
 bank-guarantee
+loyalty-program
 accounting-reports
 accounting-entries
 managing-fixed-assets

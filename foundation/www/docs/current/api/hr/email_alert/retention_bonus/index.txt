@@ -1,2 +1,0 @@
-erpnext.hr.email_alert.retention_bonus.retention_bonus
-erpnext.hr.email_alert.retention_bonus

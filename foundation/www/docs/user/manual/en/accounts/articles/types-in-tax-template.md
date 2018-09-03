@@ -16,3 +16,5 @@ Example: Education Cess is calculated based on the amount of GST tax.
 **On Previous Row Total:** For each Tax row, a cumulative tax is calculated in the Total column. For the first row, total tax is calculated as Net Total + Tax amount at first row. If you want to apply a tax on the Total Amount of another tax row, then use this option.
 
 If you select Type as Previous Row Amount or Previous Row Total, then you must also specify a Row No. whose Amount or Total should be considered for the calculation.
+
+{next}

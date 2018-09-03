@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Formular anpassen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Bevor wir uns an das Anpassungswerkzeug heran wagen, klicken Sie [hier](https://kb.frappe.io/kb/customization/form-architecture) um den Aufbau von Formularen in ERPNext zu verstehen. Das soll Ihnen dabei helfen das Anpassungswerkzeug effektiver zu nutzen.
 

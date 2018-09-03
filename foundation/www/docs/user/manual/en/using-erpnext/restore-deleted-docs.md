@@ -30,3 +30,5 @@ Once a document is restored, you will be able to use it for creating entries in 
 <img class="screenshot" alt="Restored Doc" src="{{docs_base_url}}/assets/img/collaboration-tools/restored-doc.png">
 
 > If canceled document is deleted, then it will not be restored.
+
+{next}

@@ -3,6 +3,7 @@ employment-type
 branch
 department
 designation
-earning-type
-deduction-type
-holiday-list
+employee-grade
+daily-work-summary-group
+health-insurance
+staffing-plan

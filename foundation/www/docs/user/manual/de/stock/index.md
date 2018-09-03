@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Lager
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Die meisten kleinen Unternehmen, die mit physischen Waren handeln, investieren einen großen Teil ihres Kapitals in Lagerbestände.
 

@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Anwesenheit hochladen
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Dieses Werkzeug hilft Ihnen dabei eine Menge von Anwesenheiten aus einer CSV-Datei hochzuladen.
 

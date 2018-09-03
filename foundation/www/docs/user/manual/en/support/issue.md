@@ -8,7 +8,7 @@ Ticket to email, see the Email Settings section).
 > Tip: A dedicated support Email Address is a good way to integrate incoming
 queries via email. For example, you can send support queries to ERPNext at
 support@erpnext.com and it will automatically create a Issue in the
-Frappé system.
+Frappe system.
 
 
 
@@ -44,7 +44,7 @@ does not reply in 7 days, then the Issue closes automatically.
 #### Allocation
 
 You can allocate the Issue by using the “Assign To” feature in the
-right sidebar. This will add a new To Do to the user and also send a message
+left sidebar. This will add a new To Do to the user and also send a message
 indicating that this Issue is allocated.
 
 {next}

@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Buchungsbericht
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Hier sehen Sie einige der wichtigsten Berichte aus dem Rechnungswesen:
 

@@ -1,2 +1,0 @@
-erpnext.healthcare.web_form.lab_test.lab_test
-erpnext.healthcare.web_form.lab_test

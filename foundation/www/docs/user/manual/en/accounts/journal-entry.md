@@ -108,7 +108,7 @@ in Govt. account.
     * Credit: Sales Account
 	* Credit: Excise Duty Account
 
-> Note: Applicable in India, might not be applicable for your Country. 
+> Note: Applicable in India, might not be applicable for your country. 
 Please check your country regulations.
 
 {next}

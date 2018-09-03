@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
 # Werkzeug zum Austausch der Lagermaßeinheit
-<span class="text-muted contributed-by">Beigetragen von CWT Connector & Wire Technology GmbH</span>
+
 
 Dieses Werkzeug hilft Ihnen dabei die Maßeinheit eines existierenden Artikels auszutauschen.
 

@@ -21,7 +21,7 @@
 				<h5>
 					{{ item.title }}
 				</h5>
-				<div>{{ html2text(item.description)|truncate(240) }}</div>
+				<div>{{ html2text(item.description or "No Description")|truncate(240) }}</div>
 				<div class="text-muted mt-3">
 					{{ frappe.format_date(item.creation) }}
 					<span class='pull-right'>{{ item.country }}</span>

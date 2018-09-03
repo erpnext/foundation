@@ -32,3 +32,5 @@ Save Global Default, and Reload your ERPNext account. Then, default Fiscal Year 
 Note: In transactions, you can manually select required Fiscal Year, from More Info section.
 
 <!-- markdown -->
+
+{next}

@@ -1,2 +1,0 @@
-erpnext.accounts.email_alert.notification_for_new_fiscal_year
-erpnext.accounts.email_alert.notification_for_new_fiscal_year.notification_for_new_fiscal_year

@@ -1,2 +1,0 @@
-erpnext.setup.setup_wizard.data.industry_type
-erpnext.setup.setup_wizard.data

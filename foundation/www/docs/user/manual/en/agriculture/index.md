@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# ERPNext for Agriculture
+# Agriculture
 
 Farmers know that even a small operation requires intensive recordkeeping. A well-run farm requires proper management of accounting, payroll, suppliers, customers and logistics to name a few areas. ERPNext already helps organize these activities.
 
