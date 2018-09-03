@@ -16,6 +16,11 @@
   "title": "Accounts"
  },
  {
+    "route": "/docs/user/manual/en/asset",
+    "title": "Asset"
+},
+   
+ {
   "route": "/docs/user/manual/en/stock",
   "title": "Stock"
  },
