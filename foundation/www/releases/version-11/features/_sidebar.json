@@ -1,0 +1,30 @@
+[
+ {
+  "route": "/releases/version-11",
+  "title": "Version 11 Home"
+ },
+ {
+  "route": "/releases/version-11/features/accounting",
+  "title": "Accounting"
+ },
+ {
+  "route": "/releases/version-11/features/human-resources",
+  "title": "Human Resources"
+ },
+ {
+  "route": "/releases/version-11/features/asset-management",
+  "title": "Asset Management"
+ },
+ {
+  "route": "/releases/version-11/features/other",
+  "title": "New Features"
+ },
+ {
+  "route": "/releases/version-11/features/marketplace",
+  "title": "Marketplace"
+ },
+ {
+  "route": "/releases/version-11/features/framework",
+  "title": "Framework"
+ }
+]

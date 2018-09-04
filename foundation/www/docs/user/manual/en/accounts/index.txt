@@ -28,5 +28,6 @@ recurring-orders-and-invoices
 pricing-rule
 tools
 setup
+share
 articles
 

@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Using Erpnext
+# Using ERPNext
 
 We live in an era when people are very comfortable communicating, discussing,
 asking, assigning work and getting feedback electronically. The Internet acts

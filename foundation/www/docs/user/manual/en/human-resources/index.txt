@@ -1,5 +1,5 @@
 employee-and-attendance
-leaves-and-holiday
+leave-management
 payroll
 travel-and-expense-claim
 appraisal

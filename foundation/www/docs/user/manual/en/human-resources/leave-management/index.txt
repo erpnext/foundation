@@ -1,0 +1,10 @@
+leave-type
+leave-period
+leave-policy
+leave-allocation
+leave-application
+compensatory-leave-request
+leave-encashment
+holiday-list
+leave-block-list
+leave

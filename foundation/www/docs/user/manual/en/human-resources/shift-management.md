@@ -19,7 +19,7 @@ Human Resources > Shift Management > Shift Type
 
 * Enter Shift Type, Start Time and End Time for quick entry.
 
-	<img class="screenshot" alt="Shift Type" src="{{docs_base_url}}/assets/img/human-resources/shift-type.png">
+<img class="screenshot" alt="Shift Type" src="{{docs_base_url}}/assets/img/human-resources/shift-type.png">
 
 ### Shift Request
 
@@ -41,5 +41,5 @@ Human Resources > Shift Management > Shift Request
 
 * You can also view Calendar view of Shift Assignments.
 
-	<img class="screenshot" alt="Shift Assignment Calendar" 
+	<img class="screenshot" alt="Shift Assignment Calendar"
 	src="{{docs_base_url}}/assets/img/human-resources/shift-assignment-calendar.png">
