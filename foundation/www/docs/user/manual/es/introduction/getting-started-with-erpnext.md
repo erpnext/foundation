@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Getting Started With Erpnext
+# Getting Started With ERPNext
 
 Hay muchas manera de comenzar a utilizar ERPNext.
 

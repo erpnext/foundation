@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Using Custom Domain On Erpnext
+# Using Custom Domain On ERPNext
 
 <!-- markdown -->
 
