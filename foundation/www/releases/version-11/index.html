@@ -4,13 +4,13 @@
 
 {% macro card(title, body, link) %}
 <div class="col-sm-4 mb-4">
-  <div class="card">
-  <div class="card-body">
-	<h5>{{ title }}</h5>
-    <div class="card-text mb-3">{{ body }}</div>
-    <a href="{{ link }}" class="text-muted">Details</a>
-  </div>
-  </div>
+  <a href='{{ link }}' class="card">
+	  <div class="card-body">
+		<h5>{{ title }}</h5>
+	    <div class="card-text mb-3">{{ body }}</div>
+	    <span class="text-muted">Details</span>
+	  </div>
+  </a>
 </div>
 {% endmacro %}
 
