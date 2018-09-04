@@ -9,3 +9,7 @@ body[data-path="contact"] .breadcrumb,
 body[data-path*="erpnext-jobs"] .breadcrumb {
 	padding-left: 0px;
 }
+
+.embed-responsive {
+	margin-bottom: 2rem;
+}
