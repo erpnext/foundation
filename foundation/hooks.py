@@ -48,7 +48,8 @@ website_context = {
 				{"label": "User Manual", "url": "/docs/user"},
 				{"label": "Free Trial", "url": "https://erpnext.com"},
 				{"label": "Open Source", "url": "/open-source"},
-				{"label": "Contribute", "url": "/contribute"}
+				{"label": "Contribute", "url": "/contribute"},
+				{"label": "Version 11", "url": "/releases/version-11"}
 			], "right":1},
 			{"label": "Community", "child_items":[
 				{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "target='_blank'"},
