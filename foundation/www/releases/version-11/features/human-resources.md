@@ -88,7 +88,9 @@ In Version 11, you can easily track the lifecycle of Employees right from the ti
 
 [Learn more about Employee Lifecycle](https://erpnext.org/docs/user/manual/en/human-resources/employee_lifecycle)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2zbMW1YKtWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2zbMW1YKtWo" allowfullscreen></iframe>
+</div>
 
 ### Employee Onboarding
 

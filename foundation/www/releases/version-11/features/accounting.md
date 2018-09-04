@@ -39,7 +39,9 @@ Inter-company transactions allow you to post validated back-to-back transactions
 
 Debit and Credit notes can now be made as stand alone documents. In Version 10 and earlier, these could be made only against an existing Sales or Purchase.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WIF0aJSY06o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WIF0aJSY06o" allowfullscreen></iframe>
+</div>
 
 ### Reverse Journal Entry
 

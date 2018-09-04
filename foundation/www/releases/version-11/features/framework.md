@@ -14,7 +14,9 @@ This is the design that actually kicked off a breaking change, and hence Version
 
 [Follow the discussion that led to change in User Permissions](https://discuss.erpnext.com/t/proposal-user-permissions-simplifcation/25641)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q37__ttrumA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q37__ttrumA" allowfullscreen></iframe>
+</div>
 
 ### Auto Repeat
 

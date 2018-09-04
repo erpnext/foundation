@@ -20,7 +20,10 @@ Keep a track of all Shareholders and Shareholder transactions right within ERPNe
 
 [Learn more about the Shareholder Module](https://discuss.erpnext.com/t/shareholder-module-money-with-wings-moneybag-money-mouth-face/33380)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Hil59akn1CM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Hil59akn1CM" allowfullscreen></iframe>
+</div>
 
 ### Production Plan and Job Card
 

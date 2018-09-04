@@ -10,7 +10,9 @@ Assets in ERPNext are not integrated with Serial Numbers so that you can directl
 
 With CWIP, you can track assets appear in your books but are not yet deployed. When assets are purchased, the can be held in a placeholder account (CWIP) and the depreciation cycle starts automatically on the day you designate it to come to use.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TH8u7BgyIag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TH8u7BgyIag" allowfullscreen></iframe>
+</div>
 
 ### Multiple depreciation schedule based on finance book
 
@@ -20,7 +22,9 @@ With multiple Finance Books, you can maintain different depreciation schedules f
 
 You can change the value of an asset incase of damage or theft or sale (or partial sale) with a one time entry called Asset Value Adjustment
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k4uQlxYCJ5s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k4uQlxYCJ5s" allowfullscreen></iframe>
+</div>
 
 ### Improved Asset Movement between location or employee
 
