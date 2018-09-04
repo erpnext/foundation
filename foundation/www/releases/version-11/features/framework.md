@@ -30,7 +30,7 @@ Workflows have been so far a much used but under developed features of Frappe/ER
 
 A small tweak that will greatly improve your productivity is Bulk Actions. You can now select and edit a bunch documents from the List View and also Submit and Cancel them. Once you use this feature, you will wonder how did you ever live without it.
 
-<img class="screenshot" alt="Bulk Actions" src="/assets/img/version-11/bulk-action.gif">
+<img class="screenshot" alt="Bulk Actions" src="/assets/foundation/img/version-11/bulk-action.gif">
 
 ### Dynamic Charts
 
@@ -40,4 +40,4 @@ You can now configure charts on the fly by selecting your axes, powered by the b
 
 The in-app chat has been completely revamped and now works real time in an overlay widget. Now start communicating in-app with your colleagues via Frappe Chat
 
-<img class="screenshot" alt="New Chat" src="/assets/img/version-11/chat.gif">
+<img class="screenshot" alt="New Chat" src="/assets/foundation/img/version-11/chat.gif">

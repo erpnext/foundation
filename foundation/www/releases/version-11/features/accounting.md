@@ -6,7 +6,7 @@ ERPNext in Version 11 accounting has a lot of enhancements that make it an Enter
 
 ERPNext already supports multi-company, in Version 11, the company is now a tree structure so you can create holding companies and consolidate financial reports within a group of companies. ERPNext also ensures that the chart of accounts of the child company is mapped to the parent Company
 
-<img class="screenshot" alt="Marketplace" src="/assets/img/version-11/company-tree.png">
+<img class="screenshot" alt="Marketplace" src="/assets/foundation/img/version-11/company-tree.png">
 
 ### Multiple Finance Books
 

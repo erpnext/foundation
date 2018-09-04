@@ -10,23 +10,23 @@ With the marketplace ERPNext goes beyond a tool to help manage a business, to a 
 
 The marketplace will be available as an in-app module within ERPNext
 
-<img class="screenshot" alt="Marketplace" src="/assets/img/version-11/marketplace-1.png">
+<img class="screenshot" alt="Marketplace" src="/assets/foundation/img/version-11/marketplace-1.png">
 
 ### Item View
 
 Ability to review, save and contact seller from the Item View
 
-<img class="screenshot" alt="Marketplace Item" src="/assets/img/version-11/marketplace-item.png">
+<img class="screenshot" alt="Marketplace Item" src="/assets/foundation/img/version-11/marketplace-item.png">
 
 ### Company View
 
 A homepage for every company, with an introduction and showing what items are there in the view.
 
-<img class="screenshot" alt="Marketplace Company" src="/assets/img/version-11/marketplace-company.png">
+<img class="screenshot" alt="Marketplace Company" src="/assets/foundation/img/version-11/marketplace-company.png">
 
 ### Communicate with Sellers and Buyers
 
 Communicate directly with Sellers and Buyers from within ERPNext
 
-<img class="screenshot" alt="Marketplace" src="/assets/img/version-11/marketplace-communication.png">
+<img class="screenshot" alt="Marketplace" src="/assets/foundation/img/version-11/marketplace-communication.png">
 
