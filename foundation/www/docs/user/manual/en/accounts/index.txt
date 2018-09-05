@@ -24,6 +24,7 @@ accounting-entries
 managing-fixed-assets
 budgeting
 item-wise-taxation
+tax-withholding-category
 recurring-orders-and-invoices
 pricing-rule
 tools
