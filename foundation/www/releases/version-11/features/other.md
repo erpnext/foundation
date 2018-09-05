@@ -4,7 +4,7 @@ ERPNext Version 11 brings tons of new features in almost every module. Here are 
 
 ### Loyalty Management
 
-You can manage multiple Loyalty Programs right within EPRNext. Set multiple tiers, define different rules for earning and redemption of points. Keep a track of points earned by each customer against each transaction.
+You can manage multiple Loyalty Programs right within EPRNext. Set multiple tiers, define different rules for earning and redemption of points. Keep track of points earned by each customer against each transaction.
 
 [Learn more about the Loyalty Program](https://erpnext.org/docs/user/manual/en/accounts/loyalty-program)
 
@@ -16,7 +16,7 @@ ERPNext Version 11 has a first class Subscription management. You can define dif
 
 ### Shareholder Management
 
-Keep a track of all Shareholders and Shareholder transactions right within ERPNext. Track Share Transfers between Shareholders and automatically calculate dividend based on the Shareholding pattern.
+Keep track of all Shareholders and Shareholder transactions right within ERPNext. Track Share Transfers between Shareholders and automatically calculate dividend based on the Shareholding pattern.
 
 [Learn more about the Shareholder Module](https://discuss.erpnext.com/t/shareholder-module-money-with-wings-moneybag-money-mouth-face/33380)
 
@@ -47,7 +47,7 @@ ERPNext Version 11 has a host of new integrations that work out-of-the-box inclu
 1. Braintree Payment Gateway Integration
 1. Woocommerce Order Sync
 1. Amazon MWS Order Sync
-1. Updated Shoify Order Sync
+1. Updated Shopify Order Sync
 
 ### Localizations
 
