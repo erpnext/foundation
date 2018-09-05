@@ -1,3 +1,4 @@
-managing-user-sign-up-via-website
+disable-signup
 website-security
 website-home-page
+website-banner

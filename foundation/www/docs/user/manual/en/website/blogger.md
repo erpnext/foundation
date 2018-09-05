@@ -1,4 +1,3 @@
-<!-- add-breadcrumbs -->
 # Blogger
 
 Blogger is a user who can post blogs. 

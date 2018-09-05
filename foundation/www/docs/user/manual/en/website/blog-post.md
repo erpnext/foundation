@@ -1,4 +1,3 @@
-<!-- add-breadcrumbs -->
 # Blog Post
 
 Blogs are a great way to share your thoughts about your business and keep your

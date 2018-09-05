@@ -1,4 +1,3 @@
-<!-- add-breadcrumbs -->
 # Shopping Cart
 
 On the Webpage, a shopping cart is an icon that allows you to store all the
