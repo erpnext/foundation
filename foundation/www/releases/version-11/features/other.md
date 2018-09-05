@@ -47,7 +47,7 @@ ERPNext Version 11 has a host of new integrations that work out-of-the-box inclu
 1. Braintree Payment Gateway Integration
 1. Woocommerce Order Sync
 1. Amazon MWS Order Sync
-1. Updated Shoify Order Sync
+1. Updated Shopify Order Sync
 
 ### Localizations
 
