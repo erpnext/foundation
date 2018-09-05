@@ -1,4 +1,3 @@
-<!-- add-breadcrumbs -->
 # Wesite Home Page
 
 It is very much possible in ERPNext to setup certain standard page as default website Home Page. Following are steps to setup default website home page.

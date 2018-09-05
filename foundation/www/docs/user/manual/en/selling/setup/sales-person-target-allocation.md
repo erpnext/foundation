@@ -25,8 +25,7 @@ In this table, you should select Item Group, Fiscal Year, Target Qty and Amount.
 
 If you wish to spread allocated target across months, then you should setup Monthly Distribution master, and select it in the Sales Person master. Considering our example, target for the month of December will be set as 5 qty (10% of total allocation).
 
-
-<img class="screenshot" alt="Target Distribution" src="/docs/assets/im/selling/sales-person-target-distribution.gif">
+<img class="screenshot" alt="Target Distribution" src="{{docs_base_url}}assets/img/selling/sales-person-target-distribution.gif">
 
 ####Report - Sales Person Target Variance Item Groupwise
 
@@ -79,7 +78,7 @@ To create new Monthly Distriibution, go to:
 
 `Accounts > Monthly Distributon`
 
-<img class="screenshot" alt="Target Distribution" src="{{docs_base_url}}/assets/img.selling/erpnext/target-distribution.png">
+<img class="screenshot" alt="Target Distribution" src="{{docs_base_url}}/assets/img/selling/target-distribution.png">
 
 You can link Monthly Distribution while allocating targets in Sales Person as well as in Territory master.
 
