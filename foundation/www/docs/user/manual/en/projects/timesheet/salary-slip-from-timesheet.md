@@ -17,9 +17,11 @@ In the Salary Structure of the Employee, check field "Salary Slip Based on Times
 
 Amount directly for other Salary Components (eg: House Rent Allowance, Phone Allowance) can be define directly. When creating Salary Slip, Amount for these Salary Component will be fetched as it is.
 
+<div>
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-salary-slip-2.png">
+</div>
 
-####Create Salary Slip from Timesheet
+#### Create Salary Slip from Timesheet
 
 To create Salary Slip against Timesheet, open Timesheet and click on "Salary Slip".
 
@@ -29,9 +31,9 @@ In the Salary Slip, Timesheet ID will be updated. You can select more Timesheet 
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-salary-slip-4.gif">
 
-Hour Rate will be fetched from the Salary Structure of an Employee. Based on Total Working Hours and Hour Rate, Amount will be calculated for the Salary Component is to be calculated based on actual hours worked.
+Hour Rate will be fetched from the Salary Structure of an Employee. Based on Total Working Hours and Hour Rate, Amount will be calculated for the Salary Component is to be calculated based on actual hours worked.<br>
 
-####Save and Submit Salary Slip
+#### Save and Submit Salary Slip
 
 On Submission of Salary Slip, Timesheet's status will be updated to "Payslip".
 
