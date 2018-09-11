@@ -20,7 +20,6 @@ You can request the developer credentials from Amazon MWS once you are a registe
 3. Setup Synch Configurations.
    Using the After Date, you can synch products and orders created after a particular date. In case you are importing a lot of historic data, it is suggested to start in the reverse chronological order of the After Date and import data in small chunks.
 <img class="screenshot" alt="Sync Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_3.png">
-
 After setting up all the configurations, click on Enable Amazon and save the settings. You are now ready to use the
 integration.
 
@@ -28,12 +27,13 @@ integration.
    To synch products, you can click on Synch Products. Once this is successful you should see your Amazon products
    as Items in ERPNext.
 <img class="screenshot" alt="Sync Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_4.png">
-
 <img class="screenshot" alt="Sync Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_5.png">
 
 5. Synch Sales Orders
    To synch products, you can click on Synch Orders. Once this is successful you should see your Amazon Orders
    as Sales Orders in ERPNext. You can also set up scheduler to synch orders automatically.
 <img class="screenshot" alt="Sync Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_6.png">
+
 ### Note:
+
 The connector won't handle Order cancellation. If you cancelled any order in Amazon then manually you have to cancel respective Sales Order and other documents in ERPNext.
