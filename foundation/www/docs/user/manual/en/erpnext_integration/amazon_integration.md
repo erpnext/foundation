@@ -33,6 +33,6 @@ integration.
    as Sales Orders in ERPNext. You can also set up scheduler to synch orders automatically.
 <img class="screenshot" alt="Sync Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_6.png">
 
- ### Note
+### Note
  
- The connector won't handle Order cancellation. If you cancelled any order in Amazon then manually you have to cancel respective Sales Order and other documents in ERPNext.
+The connector won't handle Order cancellation. If you cancelled any order in Amazon then manually you have to cancel respective Sales Order and other documents in ERPNext.
