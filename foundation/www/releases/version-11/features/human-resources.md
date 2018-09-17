@@ -48,7 +48,7 @@ Request for Attendance in case the Employee has worked from home or has been out
 
 ## Enhanced Payroll
 
-Along with Leave Management, Payroll has been greately enhanced with tons of new features.
+Along with Leave Management, Payroll has been greatly enhanced with tons of new features.
 
 [Learn how Payroll works in EPRNext](https://erpnext.org/docs/user/manual/en/human-resources/payroll)
 
@@ -74,7 +74,7 @@ Employees can apply for Tax Exemptions based on the categories defined by the go
 
 ### Auto Calculation of Tax Deduction
 
-You can define various rates of tax deducation based on thresholds that will be automatically calculated and deducted from the month's salary.
+You can define various rates of tax deduction based on thresholds that will be automatically calculated and deducted from the month's salary.
 
 ### Enhanced Salary Processing
 
@@ -84,7 +84,7 @@ Payroll run has been enhanced to process a large number of Employees in a go by 
 
 ## Employee Lifecycle
 
-In Version 11, you can easily track the lifecycle of Employees right from the time they join the company to the time they leave. There are numberous processes in onboarding, transfer and separation. ERPNext helps you manage these processes by integrating with the Projects module.
+In Version 11, you can easily track the lifecycle of Employees right from the time they join the company to the time they leave. There are numerous processes in onboarding, transfer and separation. ERPNext helps you manage these processes by integrating with the Projects module.
 
 [Learn more about Employee Lifecycle](https://erpnext.org/docs/user/manual/en/human-resources/employee_lifecycle)
 
