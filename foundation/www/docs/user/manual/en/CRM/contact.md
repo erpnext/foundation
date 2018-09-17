@@ -21,8 +21,7 @@ To create a new Contact go to,
 
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/contact.png">
 
-Or you can add a Contact or Address directly from the Customer record, click on “New
-Contact” or “New Address”.
+Or you can add a Contact or Address directly from the Customer record, click on “New Contact” or “New Address”.
 
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/contact-from-cust.png">
 
