@@ -8,7 +8,7 @@ Frappe Framework and ERPNext are now both compliant with Python 3, the latest an
 
 ### User Permissions
 
-User Permissions has been redesigned for simplicty and control. In Version 10, setting user permissions depended on 3 settings: User Permissions, Role Permissions, Document Type. This was extremely hard to configure and understand and based on user feedback, we have unlinked Role Permissions from this.
+User Permissions has been redesigned for simplicity and control. In Version 10, setting user permissions depended on 3 settings: User Permissions, Role Permissions, Document Type. This was extremely hard to configure and understand and based on user feedback, we have unlinked Role Permissions from this.
 
 This is the design that actually kicked off a breaking change, and hence Version 11!
 

@@ -12,7 +12,7 @@ You can manage multiple Loyalty Programs right within EPRNext. Set multiple tier
 
 ### Subscriptions
 
-ERPNext Version 11 has a first class Subscription management. You can define differrent Subscription Plans and Subscriptions. ERPNext will automatically create invoices based on the billing frequency and period.
+ERPNext Version 11 has a first class Subscription management. You can define different Subscription Plans and Subscriptions. ERPNext will automatically create invoices based on the billing frequency and period.
 
 ### Shareholder Management
 
