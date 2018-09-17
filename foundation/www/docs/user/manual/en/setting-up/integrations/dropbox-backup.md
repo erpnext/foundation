@@ -101,3 +101,11 @@ On successful login, you will find a confirmation message as following. Click on
 ####Step 12: Confirm Backups Work
 
 From the ERPnext Dropbox page, click `Take Backup Now` and then go to you Dropbox files view. You should see a new folder in Dropbox named `Apps` and inside of it your {New App} folder. Inside of it should be backup folders for both files and database.
+
+So for an app named `erpnext`, following are the folder locations:
+
+```
+Database files: /Apps/erpnext/database
+Public files: /Apps/erpnext/files
+Private files: /Apps/erpnext/private/files
+```
