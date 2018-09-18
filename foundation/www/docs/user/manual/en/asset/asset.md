@@ -52,7 +52,7 @@ If you are required to calculate the depreciation based on your Fiscal Year and 
 
 The system will automatically set the fiscal year end date as the next depreciation date and calculate the depreciation amount prorata temporis based on the Available-for-use Date (IFRS16)
 
-<img class="screenshot" alt="Asset" src="/docs/assets/img/asset/asset-prorated-depreciation.png">
+<img class="screenshot" alt="Asset" src="/docs/assets/img/asset/asset_prorated_depreciation.png">
 
 
 For better visibility, net value of the asset on different depreciation dates are shown in a line graph.
