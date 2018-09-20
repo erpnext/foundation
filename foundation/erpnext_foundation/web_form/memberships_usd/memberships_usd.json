@@ -19,7 +19,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2018-01-08 15:53:23.345945", 
+ "modified": "2018-09-20 10:40:21.617269", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "memberships-usd", 
@@ -29,12 +29,14 @@
  "payment_gateway": "PayPal", 
  "published": 1, 
  "route": "memberships-usd", 
+ "show_in_grid": 0, 
  "show_sidebar": 1, 
  "sidebar_items": [], 
  "success_url": "/memberships", 
  "title": "Memberships", 
  "web_form_fields": [
   {
+   "allow_read_on_all_link_options": 1, 
    "fieldname": "membership_type", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -43,9 +45,11 @@
    "max_value": 0, 
    "options": "Membership Type", 
    "read_only": 0, 
-   "reqd": 1
+   "reqd": 1, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "from_date", 
    "fieldtype": "Date", 
    "hidden": 0, 
@@ -53,9 +57,11 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 1, 
-   "reqd": 1
+   "reqd": 1, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "to_date", 
    "fieldtype": "Date", 
    "hidden": 0, 
@@ -63,9 +69,11 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 1, 
-   "reqd": 1
+   "reqd": 1, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "currency", 
    "fieldtype": "Select", 
    "hidden": 0, 
@@ -74,9 +82,11 @@
    "max_value": 0, 
    "options": "USD\nINR", 
    "read_only": 1, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "amount", 
    "fieldtype": "Float", 
    "hidden": 0, 
@@ -84,7 +94,8 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 1, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }
  ]
 }
