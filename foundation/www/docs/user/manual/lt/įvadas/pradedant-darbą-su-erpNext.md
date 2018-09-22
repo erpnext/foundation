@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Darbo pradžia su ERPNext
+# Pradedant darbą su ERPNext
 
 Yra daug būdų kaip pradėti darbą su ERPNext.
 
