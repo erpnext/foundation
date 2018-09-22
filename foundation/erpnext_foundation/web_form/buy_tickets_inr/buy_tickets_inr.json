@@ -17,9 +17,9 @@
  "idx": 0, 
  "introduction_text": "", 
  "is_standard": 1, 
- "login_required": 0, 
+ "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2018-07-12 16:18:34.047108", 
+ "modified": "2018-09-22 15:20:10.928574", 
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "buy-tickets-inr", 
@@ -28,12 +28,14 @@
  "payment_gateway": "Razorpay", 
  "published": 1, 
  "route": "buy-tickets-inr", 
+ "show_in_grid": 0, 
  "show_sidebar": 0, 
  "sidebar_items": [], 
  "success_url": "/conf/2017", 
  "title": "Buy Tickets INR", 
  "web_form_fields": [
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "participant_name", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -41,9 +43,11 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 1
+   "reqd": 1, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "description": "Rs 4000 per person. Includes lunch and dinner on both days", 
    "fieldname": "full_conference_tickets", 
    "fieldtype": "Int", 
@@ -52,9 +56,11 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "tshirt_size", 
    "fieldtype": "Select", 
    "hidden": 0, 
@@ -63,9 +69,11 @@
    "max_value": 0, 
    "options": "S\nM\nL\nXL\nXXL\nXXXL", 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "default": "INR", 
    "fieldname": "currency", 
    "fieldtype": "Select", 
@@ -75,9 +83,11 @@
    "max_value": 0, 
    "options": "INR", 
    "read_only": 1, 
-   "reqd": 1
+   "reqd": 1, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "amount", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -85,7 +95,8 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 1, 
-   "reqd": 1
+   "reqd": 1, 
+   "show_in_filter": 0
   }
  ]
 }
