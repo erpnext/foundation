@@ -31,7 +31,8 @@ If Entry Type is selected as Opening Entry, all the Balance Sheet Accounts will 
 
 #### Step 3: Posting Date
 
-Select Posting Date on which Accounts Opening Balance will be updated.
+Select Posting Date on which Accounts Opening Balance will be updated successfully.
+
 
 #### Step 4: Enter Debit/Credit Value
 
