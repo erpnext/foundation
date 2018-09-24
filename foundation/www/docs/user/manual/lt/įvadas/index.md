@@ -62,7 +62,7 @@ Norėdami sužinoti daugiau, peržiūrėkite įvairias [User Stories](https://er
   </div>
 </div>
 
-### Topics
+### Temos
 
 {index}
 
