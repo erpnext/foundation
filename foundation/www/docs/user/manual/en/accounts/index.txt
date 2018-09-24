@@ -9,6 +9,8 @@ debit-note
 inter-company-invoices
 payments
 journal-entry
+reverse-journal-entry
+finance-book
 mode-of-payment
 inter-company-journal-entry
 payment-entry
@@ -21,7 +23,6 @@ payment-request
 credit-limit
 bank-guarantee
 loyalty-program
-accounting-reports
 accounting-entries
 managing-fixed-assets
 budgeting
@@ -32,5 +33,6 @@ pricing-rule
 tools
 setup
 share
+accounting-reports
 articles
 

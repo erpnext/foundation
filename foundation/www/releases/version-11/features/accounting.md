@@ -16,9 +16,9 @@ With the new concept of **Finance Book**, you can now make journal entries that 
 
 Bank Statement Import allows you to define the standard format of your Bank's statement export and then allows you to import the your bank statement. The tool will also help you reconcile payments, make new payments and match them with invoices.
 
-### Tax Witholding
+### Tax Withholding
 
-ERPNext will now automatically calculate tax to be witheld from suppliers based on rules, so now operators don't have to manually look up rules and calculate tax to be witheld before making payments.
+ERPNext will now automatically calculate tax to be withheld from suppliers based on rules, so now operators don't have to manually look up rules and calculate tax to be withheld before making payments.
 
 ### Subscriptions and Deferred Revenue
 

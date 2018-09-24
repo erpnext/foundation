@@ -7,7 +7,7 @@ frappe.ready(function() {
 		$(".text-right .btn-primary").addClass('hidden');
 
 		var set_amount = function() {
-			var membership_type = $('select[data-fieldname="membership_type"]').val();
+			var membership_type = $('input[data-fieldname="membership_type"]').val();
 			amount = {
 				'Gold': 300000,
 				'Silver': 100000,
@@ -25,7 +25,7 @@ frappe.ready(function() {
 		}
 
 		if(frappe.utils.get_url_arg('name')) {
-			$('select[data-fieldname="membership_type"]').prop('disabled', true);
+			$('input[data-fieldname="membership_type"]').prop('disabled', true);
 			$('input[data-fieldname="currency"]').prop('disabled', true);
 			$('.page-content .btn-form-submit').addClass('hidden');
 		} else {
@@ -34,7 +34,10 @@ frappe.ready(function() {
 
 			form.from_date.set_input(from_date);
 			form.to_date.set_input(to_date);
-			$('select[data-fieldname="membership_type"]').on('change', function() { set_amount(); });
+			$('input[data-fieldname="membership_type"]').on('change', function() {
+				set_amount();
+			});
+
 			form.currency.set_input('INR');
 			set_amount();
 		}
