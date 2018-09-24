@@ -4,7 +4,7 @@
 
 
 ### Support Hours
-This report provide the information about the time slot along with the count of issues has been reported during the slot daywise.
+This report provides the information about the time slot along with the count of issues that has been reported during the slot daywise.
 
 > Support > Reports > Support Hours
 

@@ -5,7 +5,7 @@ If salary / wages for your employees are calculated based on number of hours wor
 
 ####Employee creates Timesheet
 
-To track actual hours employee has worked for, create Timesheet for each Employee. We suggest you to create Timesheet based on a payment period. For example, if you paying employee on a weekly bases, create one Timesheet for an Employee for one week. However, you can create multiple Timesheets, and create one Salary Slip for the multiple Timesheets.
+To track actual hours employee has worked for, create Timesheet for each Employee. We suggest you to create Timesheet based on a payment period. For example, if you are paying employee on a weekly basis, create one Timesheet for an Employee for one week. However, you can create multiple Timesheets, and create one Salary Slip for the multiple Timesheets.
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-salary-slip-1.png">
 
@@ -15,7 +15,7 @@ In the Salary Structure of the Employee, check field "Salary Slip Based on Times
 
 <div class=well> Total Timesheet Hours *  Hour Rate </div>
 
-Amount directly for other Salary Components (eg: House Rent Allowance, Phone Allowance) can be define directly. When creating Salary Slip, Amount for these Salary Component will be fetched as it is.
+Amount directly for other Salary Components (eg: House Rent Allowance, Phone Allowance) can be defined directly. When creating Salary Slip, Amount for these Salary Component will be fetched as it is.
 
 <div>
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-salary-slip-2.png">
@@ -31,7 +31,7 @@ In the Salary Slip, Timesheet ID will be updated. You can select more Timesheet 
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-salary-slip-4.gif">
 
-Hour Rate will be fetched from the Salary Structure of an Employee. Based on Total Working Hours and Hour Rate, Amount will be calculated for the Salary Component is to be calculated based on actual hours worked.<br>
+Hour Rate will be fetched from the Salary Structure of an Employee. Based on Total Working Hours and Hour Rate, Amount will be calculated for the Salary Component based on actual hours worked.<br>
 
 #### Save and Submit Salary Slip
 
@@ -44,7 +44,7 @@ On Submission of Salary Slip, Timesheet's status will be updated to "Payslip".
 Creating Salary Slip based on Timesheet will allow you to manage payment for the overtime.
 	<ol>
 		<li>Employee created Timesheet for the overtime.</li>
-		<li>In the Salary Structure of an Employee, set Overtime as a Salary Component to be calculated based on hourly bases.</li>
+		<li>In the Salary Structure of an Employee, set Overtime as a Salary Component to be calculated based on hourly basis.</li>
 		<li>When creating Salary Structure for an Employee, pull Timesheet when overtime details are tracked.</li>
 	</ol>
 </div>

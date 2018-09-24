@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Timesheet
 
-Timesheet can be used for track actual hours worked. It can be used for multiple purposes like:
+Timesheet can be used to track actual hours worked. It can be used for multiple purposes like:
 
 * Billable work to Customers
 * Work Order Operations
