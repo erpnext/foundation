@@ -10,11 +10,7 @@ You can create a new Employee Benefit Claim by going to,
 
 <img class="screenshot" alt="Employee Benefit Claim" src="{{docs_base_url}}/assets/img/human-resources/employee-benefit-claim.png">
 
-<<<<<<< HEAD
 Here, Employee can view the eligible amount as per their Salary Structure Assignment and claim for the amount which they wish to receive as part of their next Salary. Any remaining amount which the employee did not claim for, in a Payroll Period, will be disbursed as part of the last payroll Salary.
-=======
-Here, Employee can view the eligible amount as per their Salary Structure Assignment and claim for the amount which they wish to receive as part fo their next Salary. Any remaining amount which the employee did not claim for, in a Payroll Period, will be disbursed as part of the last payroll Salary.
->>>>>>> c1d9932d4b9cd3d2416b8339202ff8dbd59310bf
 
 > Note: Normal Tax calculation does not include Flexible Benefits as in most cases these are exempted from Tax. To tax these components anytime before the last payroll, use _Deduct Tax For Unclaimed Employee Benefits_ in Payroll Entry / Salary Slip while processing the Salary.
 
