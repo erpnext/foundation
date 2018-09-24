@@ -1,11 +1,11 @@
 [
  {
   "route": "/docs",
-  "title": "Pradžia"
+  "title": "Home"
  },
  {
-  "route": "/docs/user/manual/lt/įvadas",
-  "title": "Įvadas"
+  "route": "/docs/user/manual/en/introduction",
+  "title": "Introduction"
  },
  {
   "route": "/search_docs",
