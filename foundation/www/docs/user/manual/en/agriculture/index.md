@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
 # Agriculture
 
-Farmers know that even a small operation requires intensive recordkeeping. A well-run farm requires proper management of accounting, payroll, suppliers, customers and logistics to name a few areas. ERPNext already helps organize these activities.
+Farmers know that even a small operation requires intensive recordkeeping. A well-run farm requires proper management of accounting, payroll, suppliers customers and logistics to name a few areas. ERPNext already helps organize these activities.
 
 <img class="screenshot" alt="Land Unit" src="{{docs_base_url}}/assets/img/agriculture/land-unit.png">
 
 ### Capture Land Units and Manage Crops
 
-A farm requires additional attention to manage its productive units (plots of land), time sensitive crop activities (such as planting, irrigating, fertilizing, etc.), recording environmental and crop data for analysis, and reports to help make effective decisions.
+A farm requires additional attention to manage its productive units (plots of land), time sensitive crop activities (such as planting, irrigating, fertilizing etc.), recording environmental and crop data for analysis, and reports to help make effective decisions.
 
 <img class="screenshot" alt="Soil Texture" src="{{docs_base_url}}/assets/img/agriculture/soil-texture.png">
 
