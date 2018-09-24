@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 #Sales Invoice from Timesheet
 
-Customer can be invoiced based on total no. of hours your Employees has worked for that Customer. Timesheet can be used to track actual no. of hours Employee has worked. For example, in the IT services domain, clients are billed based on man-hour bases, where per hour billing cost is pre-determined.s
+Customer can be invoiced based on total no. of hours your Employees has worked for that Customer. Timesheet can be used to track actual no. of hours Employee has worked. For example, in the IT services domain, clients are billed based on man-hour basis, where per hour billing cost is pre-determined.
 
 ###Timesheet
 
@@ -13,7 +13,7 @@ To create new Timesheet, go to:
 
 #### Step 2: Select Employee
 
-In the Employee field, only ones having ative Salary Structure will be selectable. Further in the Salary Structure , is created for the E on the actual hours worked, Employee can create Timesheet. To be able to create Sales Invoice against this Timesheet, ensure `Billable` field is checked.
+In the Employee field, only ones having active Salary Structure will be selectable. Further in the Salary Structure , is created for the E on the actual hours worked, Employee can create Timesheet. To be able to create Sales Invoice against this Timesheet, ensure `Billable` field is checked.
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-salary-structure.png">
 
@@ -64,7 +64,7 @@ Select Customer to be billed. Select an Item, and enter rate as the billing amou
 
 ####Save
 
-After enter all required details in the Sales Invoice, Save and Submit it.
+After you enter all required details in the Sales Invoice, Save and Submit it.
 
 On submitting Sales Invoice, status of the Timesheets linked to the Sales Invoice will be updated as Billed.
 

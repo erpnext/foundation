@@ -9,7 +9,7 @@ To mark the **Attedance* based on Student Group select the group based on
   2. Course
   3. Activity **
 
-Student detials will be autofetched and you can mark the attendance of the given date.
+Student details will be autofetched and you can mark the attendance of the given date.
 
 <img class="screenshot" alt="Student Attendance" src="{{docs_base_url}}/assets/img/education/setup/student-attendance-tool.gif">
 

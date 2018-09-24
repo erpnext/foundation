@@ -9,7 +9,7 @@ To create a new Employee Tax Exemption Proof Submission, go to
 <img class="screenshot" alt="Employee Tax Exemption Proof Submission"
 	src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-proof-submission.png">
 
-The the _Total Exemption Amount_ will be exempted from annual taxable earnings of the employee while calculating the tax deductions in the last payroll.
+The _Total Exemption Amount_ will be exempted from annual taxable earnings of the employee while calculating the tax deductions in the last payroll.
 
 > Note: Even if employees submit exemption proofs anytime during the payroll period, ERPNext will only consider this in the last payroll of the Payroll Period for adjusting the final taxes based on the proof submitted. If you need to adjust any additional tax collected or consider proof submission of employees anytime before the last payroll, while processing Payroll Entry (or in the Salary Slip of the employee) check the _Deduct Tax For Unsubmitted Tax Exemption Proof_ option.
 

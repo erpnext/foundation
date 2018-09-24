@@ -7,7 +7,7 @@ At the beginning of a Payroll Period, employees can declare the amount of exempt
 <img class="screenshot" alt="Employee Tax Exemption Declaration"
 	src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-declaration.png">
 
-The the _Total Exemption Amount_ will be exempted from annual taxable earnings of the employee while calculating the tax deductions in Payroll.
+The _Total Exemption Amount_ will be exempted from annual taxable earnings of the employee while calculating the tax deductions in Payroll.
 
 > Note: Employees can only submit one Employee Tax Exemption Declaration for a Payroll Period.
 

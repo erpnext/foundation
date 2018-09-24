@@ -9,7 +9,7 @@ To create a new Employee Benefit Application,
 
 <img class="screenshot" alt="Employee Benefit Application" src="{{docs_base_url}}/assets/img/human-resources/employee-benefit-application.png">
 
-Here, Employee can view the Max Benefits as per the Salary Structure Assignment and then chose from the Earning Components which are part of the employee's assigned Salary Structure. They can also enter the amount which they wish to receive as part fo their Salary Slip.
+Here, Employee can view the Max Benefits as per the Salary Structure Assignment and then chose from the Earning Components which are part of the employee's assigned Salary Structure. They can also enter the amount which they wish to receive as part of their Salary Slip.
 
 It is based on the Employee Benefit Application that the Max Benefit Amount will be distributed among the flexible earning components while generating the Salary Slip. If an Employee fails to submit the Employee Benefit Application before processing the payroll, the Max Benefit Amount eligible to the employee will be distributed proportionately to each of the flexible component present in the Employee's salary structure.
 
