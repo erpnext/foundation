@@ -3,7 +3,7 @@
 
 Now we need to specify what our crop will be. A crop summarizes all that is necessary before creatng our first crop cycle or planting.
 
-> Agriculture > Crop
+> Agriculture > Crop .
 
 On the desk, click on the Crop icon. A list will show any existing Crops.
 
