@@ -1,2 +1,9 @@
+asset-category
 asset
+purchasing-asset
+selling-asset
+scrap-asset
+asset-depreciation
+asset-movement
+asset-value-adjustment
 asset-maintenance

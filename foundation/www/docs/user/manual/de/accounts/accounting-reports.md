@@ -20,7 +20,7 @@ Eine Probebilanz ist eine Liste von Kontoständen aller Konten (Bücher und Grup
 * Summe Haben
 * Schlußstand
 
-<img alt="Probebilanz" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/trial-balance.png">
+<img alt="Probebilanz" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/trial-balance.png">
 
 Die Summe aller Schlußstände in einer Probebilanz muss 0 sein.
 
@@ -28,12 +28,12 @@ Die Summe aller Schlußstände in einer Probebilanz muss 0 sein.
 
 Diese Berichte helfen Ihnen dabei, die offenen Posten bei Rechnungen von Kunden und Lieferanten nachzuverfolgen. In diesem Bericht sehen Sie die offenen Beträge nach Zeiträumen geordnet, d. h. 0-30 Tage, 30-60 Tage und so weiter.
 
-<img alt="Forderungskonten" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/accounts-receivable.png">
+<img alt="Forderungskonten" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/accounts-receivable.png">
 
 ### Auflistung der Verkäufe und Einkäufe
 
 In diesem Bericht wird jedes Steuerkonto in Spalten dargestellt. Für jede Rechnung und jeden Rechnungsposten erhalten Sie den Betrag und die individuelle Steuer, die gezahlt wurde, basierend auf der Tabelle der Steuern und Abgaben.
 
-<img alt="Übersicht Verkäufe" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/sales-register.png">
+<img alt="Übersicht Verkäufe" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/sales-register.png">
 
 {next}
