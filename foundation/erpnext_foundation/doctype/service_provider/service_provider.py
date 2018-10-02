@@ -4,32 +4,12 @@
 
 from __future__ import unicode_literals
 import frappe
-from frappe.website.website_generator import WebsiteGenerator
 from frappe.utils import get_datetime
+from frappe.model.document import Document
 
-class ServiceProvider(WebsiteGenerator):
-	website = frappe._dict(
-		condition_field = "show_in_website",
-	)
-	def validate(self):
-		if not self.route:
-			self.route = 'service-providers/' + self.scrub(self.name)
-
-	def get_context(self, context):
-		context.parents = [dict(label='All Service Providers',
-			route='service-providers',
-			title='All Service Providers')]
-		if self.member:
-			context.membership_type = frappe.get_value('Member', self.member, 'membership_type')
-		if context.website and not context.website.startswith('http'):
-			context.website = 'http://' + context.website
-		if not context.image:
-			if context.membership_type == "Gold":
-				context.image = "/assets/foundation/img/gold.png"
-			elif context.membership_type == "Silver":
-				context.image = "/assets/foundation/img/silver.png"
-			else:
-				context.image = "/assets/foundation/img/default-membership-logo.png"
+class ServiceProvider(Document):
+	def autoname(self):
+		self.name = self.title
 
 def send_alert_to_inactive_service_providers():
 	for service_provider in frappe.get_all("Service Provider", fields=['email', 'title']):
