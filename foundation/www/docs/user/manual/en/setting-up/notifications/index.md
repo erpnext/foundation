@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
-# Email Alerts
+# Notifications
 
-You can configure various email alerts in your system to remind you of important activities such as:
+You can configure various Notifications in your system to remind you of important activities such as:
 
 1. Completion date of a Task.
 2. Expected Delivery Date of a Sales Order.
@@ -11,13 +11,13 @@ You can configure various email alerts in your system to remind you of important
 6. Expiry notification for a Contract.
 7. Completion / Status change of a Task.
 
-For this, you need to setup an Email Alert.
+For this, you need to setup an Notification.
 
-> Setup > Email > Email Alert
+> Setup > Email > Notification
 
 ### Setting Up An Alert
 
-To setup an Email Alert:
+To setup an Notification:
 
 1. Select which Document Type you want watch changes on
 2. Define what events you want to watch. Events are:
@@ -33,15 +33,15 @@ To setup an Email Alert:
 ### Setting a Subject
 You can retrieve the data for a particular field by using `doc.[field_name]`. To use it in your subject / message, you have to surround it with `{% raw %}{{ }}{% endraw %}`. These are called [Jinja](http://jinja.pocoo.org/) tags. So, for example to get the name of a document, you use `{% raw %}{{ doc.name }}{% endraw %}`. The below example sends an email on saving a Task with the Subject, "TASK##### has been created"
 
-<img class="screenshot" alt="Setting Subject" src="{{docs_base_url}}/assets/img/setup/email/email-alert-subject.png">
+<img class="screenshot" alt="Setting Subject" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-subject.png">
 
 ### Setting Conditions
 
-Email alerts allow you to set conditions according to the field data in your documents. For example, if you want to recieve an Email if a Lead has been saved as "Interested" as it's status, you put `doc.status == "Interested"` in the conditions textbox. You can also set more complex conditions by combining them.
+Notifications allow you to set conditions according to the field data in your documents. For example, if you want to recieve an Email if a Lead has been saved as "Interested" as it's status, you put `doc.status == "Interested"` in the conditions textbox. You can also set more complex conditions by combining them.
 
-<img class="screenshot" alt="Setting Condition" src="{{docs_base_url}}/assets/img/setup/email/email-alert-condition.png">
+<img class="screenshot" alt="Setting Condition" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-condition.png">
 
-The above example will send an Email Alert when a Task is saved with the status "Open" and the Expected End Date for the Task is the date on or before the date on which it was saved on.
+The above example will send an Notification when a Task is saved with the status "Open" and the Expected End Date for the Task is the date on or before the date on which it was saved on.
 
 
 ### Setting a Message
@@ -68,21 +68,42 @@ You can use both Jinja Tags (`{% raw %}{{ doc.[field_name] }}{% endraw %}`) and 
 
 ### Setting a Value after the Alert is Set
 
-Sometimes to make sure that the email alert is not sent multiple times, you can
-define a custom property (via Customize Form) like "Email Alert Sent" and then
+Sometimes to make sure that the Notification is not sent multiple times, you can
+define a custom property (via Customize Form) like "Notification Sent" and then
 set this property after the alert is sent by setting the **Set Property After Alert**
 field.
 
 Then you can use that as a condition in the **Condition** rules to ensure emails are not sent multiple times
 
-<img class="screenshot" alt="Setting Property in Email Alert" src="{{docs_base_url}}/assets/img/setup/email/email-alert-subject.png">
+<img class="screenshot" alt="Setting Property in Notification" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-subject.png">
 
 ### Example
 
 1. Defining the Criteria
-    <img class="screenshot" alt="Defining Criteria" src="{{docs_base_url}}/assets/img/setup/email/email-alert-1.png">
+    <img class="screenshot" alt="Defining Criteria" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-1.png">
 
 1. Setting the Recipients and Message
-    <img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/email/email-alert-2.png">
+    <img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-2.png">
 
-{next}
+
+---
+
+### Configuring Slack notifications
+
+Instead of sending a notification through emails, you can configure a Slack Webhook URL and receive your notification directly in Slack.
+
+1. Create a Slack App
+
+<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_1.png">
+
+2. Create new Slack Webhook URLs
+
+<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_2.png">
+
+3. Add the Slack Webhook URL to ERPNext
+
+<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_3.png">
+
+4. Select Slack and your Slack channel in the channel and Slack channel fields within your notification
+
+<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_4.png">
