@@ -17,6 +17,12 @@ class ConferenceTalkProposal(WebsiteGenerator):
 		autoname = frappe.get_meta(self.get("doctype")).autoname or ""
 		self.name = make_autoname(autoname)
 
+	def validate(self):
+		self.conference = '2018'
+		if self.owner not in ["Guest", "Administrator"] and not self.get("email") \
+			and frappe.db.get_value("User", self.owner, "user_type") == "Website User":
+			self.email = frappe.db.get_value('User', self.owner, "email")
+
 def get_list_context(context):
 	context.title = 'Talk Proposals'
 	context.no_breadcrumbs = 1
