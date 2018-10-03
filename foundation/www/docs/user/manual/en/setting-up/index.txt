@@ -3,6 +3,7 @@ users-and-permissions
 settings
 data
 email
+notifications
 print
 setting-up-taxes
 pos-setting

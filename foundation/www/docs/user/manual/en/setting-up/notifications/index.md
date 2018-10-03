@@ -11,13 +11,13 @@ You can configure various Notifications in your system to remind you of importan
 6. Expiry notification for a Contract.
 7. Completion / Status change of a Task.
 
-For this, you need to setup an Notification.
+For this, you need to setup a Notification.
 
 > Setup > Email > Notification
 
 ### Setting Up An Alert
 
-To setup an Notification:
+To setup a Notification:
 
 1. Select which Document Type you want watch changes on
 2. Define what events you want to watch. Events are:
@@ -41,7 +41,7 @@ Notifications allow you to set conditions according to the field data in your do
 
 <img class="screenshot" alt="Setting Condition" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-condition.png">
 
-The above example will send an Notification when a Task is saved with the status "Open" and the Expected End Date for the Task is the date on or before the date on which it was saved on.
+The above example will send a Notification when a Task is saved with the status "Open" and the Expected End Date for the Task is the date on or before the date on which it was saved on.
 
 
 ### Setting a Message
@@ -80,10 +80,10 @@ Then you can use that as a condition in the **Condition** rules to ensure emails
 ### Example
 
 1. Defining the Criteria
-    <img class="screenshot" alt="Defining Criteria" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-1.png">
+	<img class="screenshot" alt="Defining Criteria" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-1.png">
 
 1. Setting the Recipients and Message
-    <img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-2.png">
+	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/email-alert-2.png">
 
 
 ---
@@ -93,17 +93,13 @@ Then you can use that as a condition in the **Condition** rules to ensure emails
 Instead of sending a notification through emails, you can configure a Slack Webhook URL and receive your notification directly in Slack.
 
 1. Create a Slack App
-
-<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_1.png">
+	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_1.png">
 
 2. Create new Slack Webhook URLs
-
-<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_2.png">
+	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_2.png">
 
 3. Add the Slack Webhook URL to ERPNext
-
-<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_3.png">
+	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_3.png">
 
 4. Select Slack and your Slack channel in the channel and Slack channel fields within your notification
-
-<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_4.png">
+	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_4.png">

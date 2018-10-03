@@ -4,4 +4,3 @@ email-alerts
 email-digest
 email-reports
 sending-email
-use-cases
