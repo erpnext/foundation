@@ -88,18 +88,53 @@ Then you can use that as a condition in the **Condition** rules to ensure emails
 
 ---
 
-### Configuring Slack notifications
+# Slack Notifications
 
-Instead of sending a notification through emails, you can configure a Slack Webhook URL and receive your notification directly in Slack.
+If you prefer to have your notifications sent to a dedicated Slack channel, you can also choose the option "Slack" in the channel options and select the appropriate Slack Webhook URL.
 
-1. Create a Slack App
+### Slack Webhook url
+
+A Slack webhook URL is an URL pointing directly to a Slack channel.
+
+In order to generate webhook URLs, you need to create a new Slack App:
+
+1. Go to https://api.slack.com/slack-apps
+2. Click on "Create a Slack App"
 	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_1.png">
 
-2. Create new Slack Webhook URLs
+3. Give your App a name and choose the right workspace
+	Once your app is created, go to the "Incoming Webhooks" section and add a new Webhook to Workspace.  
 	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_2.png">
 
-3. Add the Slack Webhook URL to ERPNext
+4. Copy the created link, go back to ERPNext and use it to create a new Slack Webhook URL in Integrations > Slack Webhook URL.
 	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_3.png">
 
-4. Select Slack and your Slack channel in the channel and Slack channel fields within your notification
-	<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_4.png">
+5. Select Slack and your Slack channel in the channel and Slack channel fields within your notification
+	
+
+### Message Format
+
+Unlike Email messages, Slack doesn't allow HTML formatting.
+
+Instead you can use markdown formatting: [Slack Documentation](https://get.slack.help/hc/en-us/articles/202288908-Format-your-messages)
+
+Example:
+	{% raw %}
+	*Order Overdue*
+
+	Transaction {{ doc.name }} has exceeded Due Date. Please take necessary action.
+
+
+	{% if comments %}
+	Last comment: {{ comments[-1].comment }} by {{ comments[-1].by }}
+	{% endif %}
+
+	*Details*
+
+	• Customer: {{ doc.customer }}
+	• Amount: {{ doc.grand_total }}
+	{% endraw %}
+
+<img class="screenshot" alt="Set Message" src="{{docs_base_url}}/assets/img/setup/notifications/slack_notification_4.png">
+
+{next}
