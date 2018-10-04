@@ -6,3 +6,5 @@ Leave Block List is a list of dates in a year, on which employees can not apply 
 
 <img class="screenshot" alt="Leave Block List"
 	src="{{docs_base_url}}/assets/img/human-resources/leave-block-list.png">
+
+{next}

@@ -56,3 +56,5 @@ Based on the progress on the Tasks, progress can be updated in the Employee Onbo
   <iframe src="https://www.youtube.com/embed/2zbMW1YKtWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </div>
+
+{next}

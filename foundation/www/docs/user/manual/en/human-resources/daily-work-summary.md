@@ -3,7 +3,7 @@
 
 Daily Work Summary is way to get a automated way to get a summary of work done by users.
 
-Replies of all users who choose to respond is collected and sent as a summary at midnight. Emails are only sent based on the Holiday List selected for the group 
+Replies of all users who choose to respond is collected and sent as a summary at midnight. Emails are only sent based on the Holiday List selected for the group
 
 **Note:**
 > You must have one active incoming email account setup for this to work.
@@ -23,3 +23,4 @@ You can also choose to customize the _Message_ you send to users.
 >2. Name of a "Daily Work Summary Group" will be sent as the title for daily summary email.
 >3. Mail will not be sent to the users of a disabled Daily Work Summary Group.
 
+{next}

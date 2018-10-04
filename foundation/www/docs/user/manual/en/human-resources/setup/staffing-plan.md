@@ -17,3 +17,5 @@ Staffing Plan helps you to plan human resource recruitments for your Company. ER
 	src="{{docs_base_url}}/assets/img/human-resources/staffing-plan-detail.png">
 
 **Total Estimated Budget** Once you enter the recruitment plan for all the designations, Staffing Plan will draw up the total estimated budget as per the plan.
+
+{next}

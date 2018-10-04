@@ -43,3 +43,5 @@ Human Resources > Shift Management > Shift Request
 
 	<img class="screenshot" alt="Shift Assignment Calendar"
 	src="{{docs_base_url}}/assets/img/human-resources/shift-assignment-calendar.png">
+
+	{next}

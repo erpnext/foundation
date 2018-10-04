@@ -23,3 +23,5 @@ For the current fiscal year, in India, House Rent Allowance (HRA) exemption from
 As part of the Employee Tax Exemption Proof Submission, employees shall also submit proof for HRA Exemption. ERPNext will calculate the exemption eligible for HRA and exempt it while calculating the taxable earnings in the last payroll of the Payroll Period.
 
 > Note: HRA component shall be configured in Company for HRA exemption to work
+
+{next}
