@@ -1,12 +1,12 @@
 patient
 appointment
 vital_signs
-consultation
+patient_encounter
 medical_record
 sample_collection
 lab_test
 invoicing
-physician
-physician_schedule
+healthcare_practitioner
+practitioner_schedule
 medical_codes
 setup

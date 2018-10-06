@@ -4,7 +4,7 @@
 If you wish to use features of Laboratory, you can create Users with "Laboratory User". Lab Tests, Sample Collection etc. are only visible to users with this Role enabled.
 
 ### Laboratory Settings
-> Healthcare > Setup > Healthcare Settings > Laboratory Settings
+`Healthcare > Setup > Healthcare Settings > Laboratory Settings`
 
 * Manage Sample Collection - If this flag is enabled, every time you create a Lab Test, a Sample Collection document will be created.
 
@@ -13,15 +13,17 @@ If you wish to use features of Laboratory, you can create Users with "Laboratory
 * Enable the third option if you want the name and designation of the Employee associated with the User who submits the document to be printed in the Lab Test Report.
 
 ##### SMS Alerts
-You can configure ERPNext Healthcare to alert Patients via SMS when the Lab Test result gets ready (Submit) and when you Email the result. You an configure the templates for the SMS as registered with your provider here.
-> Healthcare > Setup > Healthcare Settings > Laboratory SMS Alerts
+You can configure ERPNext Healthcare to alert Patients via SMS when the Lab Test result gets ready (Submit) and when you Email the result. You can configure the templates for the SMS as registered with your provider here.
+
+`Healthcare > Setup > Healthcare Settings > Laboratory SMS Alerts`
 
 
 ### Lab Test Templates
 Whenever you create a new Lab Test, the Lab Test document is loaded based on the template configured for that particular test. This means, you will have to have separate templates configured for each Lab Test.
 
 Here's how you can configure various types of templates.
-> Healthcare > Setup > Lab Test Template > New Lab Test Template
+
+`Healthcare > Setup > Lab Test Template > New Lab Test Template`
 
 After providing the Name for the Test you will have to select a Code and Item group for creating the mapped Item. ERPNext Healthcare maps every Lab Test (every other billable healthcare service) to an Item with "Maintain Stock" set to false. This way, the Accounts Module will invoice the Item and you can see the Sales related reports of Selling Module. You can also set selling rate of the Lab Test here - this will update the Selling Price List.
 
@@ -46,23 +48,28 @@ You will have to select the Sample required for the test. You can also mention t
 
 ### Medical Department
 To organize your clinic into departments, you can create multiple Medical Departments. You can select appropriate departments in Lab Test Template and will be included in the Lab Test result print.
-> Healthcare > Setup > Medical Department > New Medical Department
+
+`Healthcare > Setup > Medical Department > New Medical Department`
 
 ### Lab Test Sample
 You can create various masters for Samples that are to be collected for a Lab Test.
-> Healthcare > Setup > Lab Test Sample > New Lab Test Sample
+
+`Healthcare > Setup > Lab Test Sample > New Lab Test Sample`
 
 
 ### Lab Test UOM
 You can create various masters for Unit of Measures to be used in Lab Test document.
-> Healthcare > Setup > Lab Test UOM > New Lab Test UOM
+
+`Healthcare > Setup > Lab Test UOM > New Lab Test UOM`
 
 ### Antibiotic
 You can create masters for a list of Antibiotics.
-> Healthcare > Setup > Antibiotic > New Antibiotic
+
+`Healthcare > Setup > Antibiotic > New Antibiotic`
 
 ### Sensitivity
 You can create masters for a list of Sensitivity to various Antibiotics.
-> Healthcare > Setup > Sensitivity > New Sensitivity
+
+`Healthcare > Setup > Sensitivity > New Sensitivity`
 
 {next}
