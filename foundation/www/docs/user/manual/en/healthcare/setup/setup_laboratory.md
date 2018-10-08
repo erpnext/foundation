@@ -3,20 +3,7 @@
 
 If you wish to use features of Laboratory, you can create Users with "Laboratory User". Lab Tests, Sample Collection etc. are only visible to users with this Role enabled.
 
-### Laboratory Settings
-`Healthcare > Setup > Healthcare Settings > Laboratory Settings`
-
-* Manage Sample Collection - If this flag is enabled, every time you create a Lab Test, a Sample Collection document will be created.
-
-* Require Lab Test Approval - Turning this on will restrict printing and emailing of Lab Tests only if the documents are in Approved status. You can use this flag to ensure that every Test result leaves your facility after verification.
-
-* Enable the third option if you want the name and designation of the Employee associated with the User who submits the document to be printed in the Lab Test Report.
-
-##### SMS Alerts
-You can configure ERPNext Healthcare to alert Patients via SMS when the Lab Test result gets ready (Submit) and when you Email the result. You can configure the templates for the SMS as registered with your provider here.
-
-`Healthcare > Setup > Healthcare Settings > Laboratory SMS Alerts`
-
+Read [Healthcare Settings](https://erpnext.org/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up the Healthcare module.
 
 ### Lab Test Templates
 Whenever you create a new Lab Test, the Lab Test document is loaded based on the template configured for that particular test. This means, you will have to have separate templates configured for each Lab Test.
@@ -34,11 +21,11 @@ The Is Billable flag in Lab Test Template creates the Item, but as Disabled. Lik
 ###### Result Format
 Following are the result formats available in ERPNext Healthcare
 
-* Single - select this format for results which require only a single input, result UOM and normal value
-* Compound - allows you to configure results which require multiple input fields with corresponding event names, result UOMs and normal values
-* Descriptive - this format is helpful for results which have multiple result components and corresponding result entry fields.
-* Grouped - You can group test templates which are already configured and combine as a single test. For such templates select "Grouped".
-* No Result - Select this if you don not need to enter or manage test result. Also, no Lab Test document will be created. e.g., Sub Tests for Grouped results.
+* Single: select this format for results which require only a single input, result UOM and normal value
+* Compound: allows you to configure results which require multiple input fields with corresponding event names, result UOMs and normal values
+* Descriptive: this format is helpful for results which have multiple result components and corresponding result entry fields.
+* Grouped: You can group test templates which are already configured and combine as a single test. For such templates select "Grouped".
+* No Result: Select this if you don not need to enter or manage test result. Also, no Lab Test document will be created. e.g., Sub Tests for Grouped results.
 
 ###### Normal values
 For Single and Compound result formats, you can set the normal values.
@@ -55,7 +42,6 @@ To organize your clinic into departments, you can create multiple Medical Depart
 You can create various masters for Samples that are to be collected for a Lab Test.
 
 `Healthcare > Setup > Lab Test Sample > New Lab Test Sample`
-
 
 ### Lab Test UOM
 You can create various masters for Unit of Measures to be used in Lab Test document.

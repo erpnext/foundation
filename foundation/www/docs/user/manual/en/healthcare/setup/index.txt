@@ -1,3 +1,4 @@
+healthcare_settings
 setup_practice
 setup_laboratorySetting
 setup_pharmacy

@@ -1,20 +1,7 @@
 <!-- add-breadcrumbs -->
 # Clinic / Practice
-Configuring ERPNext Healthcare for your practice is simple.
 
-`Healthcare > Setup > Healthcare Settings > Out Patient Settings`
-
-By default Patient document uses the patient name as the name, but you can also opt to use a naming series if required.
-
-The `Manage Customer` option will enable the system to create and link a Customer whenever a new Patient is created. This Customer is used while booking all transactions.
-
-Here, you can also select the default Medical Code Standard to use.
-
-###### Collect Fee for Patient Registration
-If you enable this, all new Patients you create will be _Disabled_ by default and will be only be enabled after Invoicing the Registration Fee. To create Invoice and record the payment receipt, you can use the `Invoice Patient Registration` button in the Patient document. Also note that all ERPNext Healthcare documents, filters out Patient records that are disabled. You can also set the registration fee to be collected here.
-
-###### Consultation Fee validity
-Many healthcare facilities do not charge for follow up consultations within a time period after the first visit. You can configure the number of free visits allowed as well as the time period for free consultations here.
+You can easily configure the masters for setting up ERPNext Healthcare for your practice. Below are a list of documents which helps you speed up data entry. Also read [Healthcare Settings](https://erpnext.org/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up the Healthcare module.
 
 ### Medical Department
 To organize your clinic into departments, you can create multiple Medical Departments.

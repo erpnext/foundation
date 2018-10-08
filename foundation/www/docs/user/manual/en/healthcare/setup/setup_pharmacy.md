@@ -4,7 +4,7 @@ ERPNext Healthcare do not have a Pharmacy module as such. However, [ERPNext Stoc
 
 For a Healthcare setup, features like [Items](https://erpnext.org/docs/user/manual/en/stock/item) with Reorder Levels, [Batch Number and Expiry Dates](https://erpnext.org/docs/user/manual/en/stock/batch) etc. will be worth looking at.
 
-ERPNext Healthcare adds a few custom fields to `Item` document so that you can effectively configure medicines.
+ERPNext Healthcare adds a few custom fields to `Item` document so that you can effectively configure medicines. Also read [Healthcare Settings](https://erpnext.org/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up default Items, Accounts etc.
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/items_custom_fields.png">
 
