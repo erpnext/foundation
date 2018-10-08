@@ -7,6 +7,8 @@ Most of the global settings for the Healthcare module can be done via the Health
 > Note: Ensure that you have `Healthcare Administrator` role enabled for your User to access this page.
 
 ### Outpatient Settings
+<img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_1.png">
+
 * **Patient Auto Name**: By default Patient document uses naming series for naming but you can also opt to change this to Patient Name if required.
 
 * **Link Patient with Customer**: The `Manage Customer` option will enable the system to create and link a Customer whenever a new Patient is created. This Customer is used while booking all transactions. If you do not enable this, you wont be able to ling the Patient with a Customer while invoicing any of the services.
@@ -20,15 +22,23 @@ Most of the global settings for the Healthcare module can be done via the Health
 * **Validity for Followups**: Many healthcare facilities do not charge for follow up consultations within a time period after the first visit. You can configure the number of free follow ups (_Patient Encounters in valid days_) allowed as well as the time period (_Valid number of days_) for free consultations here.
 
 ### Healthcare Service Items
+<img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_2.png">
+
 ERPNext Healthcare utilizes the Accounts module for billing Patients. You can configure default `Items` for billing consultation charges, procedure consumption items etc. here.
 
 ### SMS Alerts
+<img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_3.png">
+
 You can enable sending SMS alerts on Patient appointment Booking etc. and also configure SMS text in this section.
 
 ### Income Account and Receivable Account
+<img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_4.png">
+
 If you wish to override default accounts settings and set custom Income and receivable accounts, you can do so here.
 
 ### Laboratory Settings
+<img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_5.png">
+
 * **Create Lab Test(s) on Sales Invoice Submit**: If your facility creates Invoices and collect payments from Patients before performing the Lab Test, you can enable this option to create Lab tests automatically for all the Tests that are billed. If you have enabled _Manage Sample Collection_ and has a _Sample_ configured in the Lab Test Template, a Sample Collection document will also be created.
 
 * **Manage Sample Collection**: If this flag is enabled, every time you create a Lab Test, a Sample Collection document will be created.
