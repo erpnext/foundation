@@ -10,3 +10,5 @@ Most companies manage leaves based on a Leave Period. ERPNext allows you to crea
 ### Granting Leaves to Employees
 
 Leave Management in ERPNext is based on Leave Allocations created for each employee. This means, Employees can only avail as many leaves (of each Leave Type) allocated to them. There are multiple ways by which you can create Leave Allocations for Employees.
+
+{next}

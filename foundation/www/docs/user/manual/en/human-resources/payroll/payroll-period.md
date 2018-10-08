@@ -12,3 +12,5 @@ You can add multiple tax slabs for the payroll period depending on the tax regul
 <img class="screenshot" alt="Payroll Period" src="/docs/assets/img/human-resources/payroll-period-tax-slab.png">
 
 > Note: Configuring Payroll Period is optional if you do not intend to use Flexible Benefits or Tax Slabs
+
+{next}

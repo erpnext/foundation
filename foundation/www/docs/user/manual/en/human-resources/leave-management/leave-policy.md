@@ -22,3 +22,5 @@ This will ensure all leave allocations for all employees of this grade will be a
 
 <img class="screenshot" alt="Employee Leave Policy"
 	src="{{docs_base_url}}/assets/img/human-resources/employee-leave-policy.png">
+
+{next}

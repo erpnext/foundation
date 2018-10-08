@@ -12,7 +12,7 @@ To use Fleet Management in ERPNext,
 
 ### Vehicle Set Up
 
-The Vehicle Set Up allows you to define the different types of Vehicles in your Organization.It acts as the Vehicle Master for Fleet Management. 
+The Vehicle Set Up allows you to define the different types of Vehicles in your Organization.It acts as the Vehicle Master for Fleet Management.
 
 To create a new Vehicle go to:
 
@@ -26,7 +26,7 @@ Human Resources > Fleet Management > Vehicle
 
 	<img class="screenshot" alt="Vehicle" src="{{docs_base_url}}/assets/img/human-resources/vehicle-1.2.png">
 
-* Enter Vehicle attributes like color, wheels, doors and last carbon check 
+* Enter Vehicle attributes like color, wheels, doors and last carbon check
 
 	<img class="screenshot" alt="Vehicle" src="{{docs_base_url}}/assets/img/human-resources/vehicle-1.3.png">
 
@@ -65,3 +65,5 @@ When you click on 'Make Expense Claim',
 * To track and monitor Vehicle Expenses you can use the Vehicle Expenses report.This report gives a one stop view of all your vehicle expenses month wise.
 
 	<img class="screenshot" alt="Vehicle Log" src="{{docs_base_url}}/assets/img/human-resources/vehicle-expenses.png">
+
+{next}

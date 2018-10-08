@@ -19,3 +19,5 @@ To manually allocate leaves for an Employee, select the period and the number of
 
 <img class="screenshot" alt="Manual Leave Allocation"
 	src="{{docs_base_url}}/assets/img/human-resources/manual-leave-allocation.png">
+
+{next}

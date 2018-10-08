@@ -16,3 +16,5 @@ Transfer document can be submitted on or after Transfer Date. Once submitted all
 <img class="screenshot" alt="Employee Transfer" src="{{docs_base_url}}/assets/img/human-resources/employee_transfer_1.png">
 
 > Note : If Create New Employee ID is checked, a new Employee will be created with property changes in Transfer Details table and old Employee will be marked as relieved. Leave allocations for the new Employee has to be manually created from Leave Period.
+
+{next}

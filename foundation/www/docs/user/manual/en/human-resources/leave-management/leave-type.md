@@ -49,3 +49,4 @@ There are some pre-loaded Leave Types in the system, as below:
 - Compensatory off: These are compensatory leave allotted to employees for overtime work.
 - Casual leave: You can avail this leave to take care of urgent and unseen matters.
 
+{next}

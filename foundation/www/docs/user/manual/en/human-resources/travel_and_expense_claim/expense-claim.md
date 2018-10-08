@@ -66,5 +66,4 @@ This will update the Project cost with the Expense claim amounts
 
 <img class="screenshot" alt="Expense Claim - Project Link" src="{{docs_base_url}}/assets/img/project/project-expense-claim-2.png">
 
-
 {next}

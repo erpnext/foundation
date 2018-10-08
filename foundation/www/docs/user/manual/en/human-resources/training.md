@@ -35,3 +35,5 @@ When the Training Result is submitted, all the employees will receive an email n
 Employees can then share their feedback via Training Feedback.
 
 <img class="screenshot" alt="Employee" src="{{docs_base_url}}/assets/img/human-resources/training_feedback.png">
+
+{next}
