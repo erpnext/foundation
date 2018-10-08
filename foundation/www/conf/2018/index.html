@@ -7,13 +7,13 @@
 {% set platinum_sponsors = [
 	{
 		'image': '/assets/foundation/img/conf/sponsors/mnt-logo.png',
-		'title': 'MN Technique',
+		'title': 'MN Technique (Platinum)',
 		'website_url': 'https://www.mntechnique.com'
 	},
 	{
-		'image': '/assets/foundation/img/people/tux.png',
-		'title': 'Your Company',
-		'website_url': 'https://erpnext.org'
+		'image': '/assets/foundation/img/conf/sponsors/eso.jpg',
+		'title': 'Eso Electronic (Silver)',
+		'website_url': 'https://eso-electronic.com'
 	},
 	{
 		'image': '/assets/foundation/img/people/tux.png',
@@ -35,9 +35,9 @@
 			</div>
 			{% endif %}
 			<div class="card-body">
-				<h5>
+				<h6>
 					{{ sponsor.title }}
-				</h5>
+				</h6>
 			</div>
 		</a>
 		</div>
@@ -69,7 +69,13 @@
 <section class='section-padding text-center'>
 	<div class='container'>
 		<h3>Developer + Documentation Sprint</h3>
-		<p class='lead'>ERPNext Developer + Documentation Sprint will be held on 24th and 25th of October (2 days prior to the event).</p>
+		<p>In Assocation with</p>
+		<div class='text-left' style='max-width: 400px; margin: auto'>
+			<h5>KJ Somaiya College of Engineering</h5>
+			Dates: 24th and 25th of October<br>
+			Venue: K.J. Somaiya College of Engineering (5th Floor)<br>
+			Time: 10am-6pm
+		</div>
 		<a href='https://discuss.erpnext.com/t/conf-18-developer-documentation-sprint-on-24th-and-25th-oct/39443' class='btn btn-dark btn-sm mt-4' target='_blank'>Add your Name</a>
 	</div>
 </section>
@@ -77,18 +83,18 @@
 	<div class='container'>
 		<h3>Sponsored By</h3>
 		<p class='lead'>A big thanks to our awesome sponsors who make this event happen!</p>
+		<div class='py-4'></div>
 		{% if platinum_sponsors %}
-		<h4 class='mt-5'>Platinum Sponsors<h4>
 		{{ show_section(platinum_sponsors, color=True, with_img=True) }}
 		{% endif %}
-		{% if gold_sponsors %}
+		<!-- {% if gold_sponsors %}
 		<h4>Gold Sponsors<h4>
 		{{ show_section(gold_sponsors, with_img=True) }}
 		{% endif %}
 		{% if silver_sponsors %}
 		<h4>Silver Sponsors<h4>
 		{{ show_section(silver_sponsors) }}
-		{% endif %}
+		{% endif %} -->
 		<br>
 		<p class='lead'>Become a patron for the conference and get associated with a global community
 			of tens of thousands of users and developers. Sponsors also get complimentary passes for the conference!</p></p>
