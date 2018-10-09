@@ -2,9 +2,9 @@
 
 # WooCommerce Integration 
 
-#### Setting Up WooCommerce on ERPNEXT:-
+### Setting Up WooCommerce on ERPNEXT:-
 
-Steps:- 
+Steps: 
 
 1. From Awesome-bar, go to "Woocommerce Settings" doctype.
 
@@ -35,9 +35,9 @@ Steps:-
 	
 
 
-#### WooCommerce Integration Working:- 
+### WooCommerce Integration Working: 
 
-Steps:- 
+Steps:
 
 1. From your Woocommerce website, register yourself as a user.
 
