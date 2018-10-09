@@ -31,7 +31,7 @@ Steps:-
 <img class="screenshot" alt="Woocommerce Integration" src="{{docs_base_url}}/assets/img/erpnext_integrations/woocommerce_setting_config.gif">
 
 
-### Note:-  In above gif, inplace of delivery url on woocommerce website, you need to paste the url you will obtain after saving the "Woocommerce Settings" page (i.e. Endpoint from "Woocommerce Settings"). I pasted other url because I was using localhost. Please paste your endpoint in place of Delivery URL.
+**Note:** In above gif, inplace of delivery url on woocommerce website, you need to paste the url you will obtain after saving the "Woocommerce Settings" page (i.e. Endpoint from "Woocommerce Settings"). I pasted other url because I was using localhost. Please paste your endpoint in place of Delivery URL.
 	
 
 
