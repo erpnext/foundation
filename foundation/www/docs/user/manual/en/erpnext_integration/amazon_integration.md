@@ -7,7 +7,7 @@
 
 #### Setting Up Credentials  in ERPNext
 
-You can request the developer credentials from Amazon MWS once you are a registered seller on their website.
+You can request the developer credentials from Amazon MWS once you are a registered seller on their website. For more details on the same, click [here](https://docs.developer.amazonservices.com/en_ES/dev_guide/DG_Registering.html).
 
  1. Enter the Seller ID, AWS Access Key ID, MWS Auth Token, Secret Key, Market Place ID, Region and Domain.
 <img class="screenshot" alt="Setup Credentials" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_1.png">
