@@ -18,7 +18,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 0, 
- "modified": "2018-10-09 16:27:18.317370", 
+ "modified": "2018-10-10 18:21:49.734218",
  "modified_by": "Administrator", 
  "module": "ERPNext Foundation", 
  "name": "developer-sprint", 
@@ -26,31 +26,21 @@
  "payment_button_label": "Buy Now", 
  "published": 1, 
  "route": "developer-sprint", 
+ "route_to_success_link": 1,
+ "show_attachments": 0,
  "show_in_grid": 0, 
  "show_sidebar": 1, 
  "sidebar_items": [], 
- "success_message": "Thank you for your proposal.", 
- "success_url": "/developer-sprint", 
+ "success_message": "Thank you for submitting your proposal for the Developer Sprint. See you on the 24th of October!",
+ "success_url": "/conf/2018",
  "title": "Developer Sprint", 
  "web_form_fields": [
   {
    "allow_read_on_all_link_options": 0, 
-   "fieldname": "teamcompanychapter_name", 
+   "fieldname": "person_team_name",
    "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Team/Company/Chapter Name", 
-   "max_length": 0, 
-   "max_value": 0, 
-   "read_only": 0, 
-   "reqd": 0, 
-   "show_in_filter": 0
-  }, 
-  {
-   "allow_read_on_all_link_options": 0, 
-   "fieldname": "email_id", 
-   "fieldtype": "Data", 
-   "hidden": 0, 
-   "label": "Email ID", 
+   "label": "Person / Team / Company / Chapter Name",
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
@@ -66,7 +56,7 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0, 
+   "reqd": 1,
    "show_in_filter": 0
   }, 
   {
@@ -78,7 +68,7 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0, 
+   "reqd": 1,
    "show_in_filter": 0
   }, 
   {
@@ -91,7 +81,7 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0, 
+   "reqd": 1,
    "show_in_filter": 0
   }
  ]

@@ -12,3 +12,7 @@ class DeveloperSprint(Document):
 		autoname = 'DEV-SPRINT-.YYYY.-.###'
 		self.name = make_autoname(autoname)
 
+	def validate(self):
+		self.year = '2018'
+		if self.owner not in ["Guest", "Administrator"] and not self.get("email"):
+			self.email = frappe.db.get_value('User', self.owner, "email")
