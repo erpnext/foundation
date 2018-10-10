@@ -9,8 +9,7 @@ from frappe.model.document import Document
 class ConferenceParticipant(Document):
 	def validate(self):
 		self.conference = '2018'
-		if self.owner not in ["Guest", "Administrator"] and not self.get("email") \
-			and frappe.db.get_value("User", self.owner, "user_type") == "Website User":
+		if self.owner not in ["Guest", "Administrator"] and not self.get("email"):
 			self.email = frappe.db.get_value('User', self.owner, "email")
 
 	def validate_payment(self):
