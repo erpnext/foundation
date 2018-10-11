@@ -18,7 +18,7 @@
  "is_standard": 1,
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2018-10-11 16:03:47.220653",
+ "modified": "2018-10-11 20:19:17.933821",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "developer-sprint",
@@ -33,7 +33,7 @@
  "sidebar_items": [],
  "success_message": "Thank you for submitting your proposal for the Developer Sprint. See you on the 24th of October!",
  "success_url": "/conf/2018",
- "title": "Developer Sprint",
+ "title": "Developer Sprint Proposal",
  "web_form_fields": [
   {
    "allow_read_on_all_link_options": 0,
@@ -64,7 +64,7 @@
    "fieldname": "proposal",
    "fieldtype": "Text",
    "hidden": 0,
-   "label": "Proposal",
+   "label": "What Would You Like To Work On?",
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
