@@ -27,4 +27,9 @@ Just [add your topics to this list](https://discuss.erpnext.com/t/articles-for-e
 
 #### How to Submit
 
-Just submit your request by emailing us at write@erpnext.org and we will get back to you!
+1. Think of a topic that is relevant to the ERP / ERPNext community
+1. Write an outline and share with us at write@erpnext.org
+1. If we think it is good, we will give you a go ahead to write it out
+1. Share your complete article at the same id
+1. Our review team will come back with feedback.
+
