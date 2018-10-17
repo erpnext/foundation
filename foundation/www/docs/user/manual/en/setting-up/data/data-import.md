@@ -103,7 +103,7 @@ If this is checked, rows with valid data will be imported and invalid rows will 
 
 #### 3. Submit after importing
 
-If this is checked, in case there are submittable transactions which are imoported ()
+If this is checked, in case there are submittable transactions which are imported ()
 
 #### 4. Ignore encoding errors
 
