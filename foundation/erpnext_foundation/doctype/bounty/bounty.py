@@ -4,12 +4,12 @@
 
 from __future__ import unicode_literals
 import frappe
-from frappe.website.website_generator import WebsiteGenerator
+from frappe.model.document import Document
 from frappe.website.utils import get_comment_list
 from frappe.utils import date_diff, nowdate, fmt_money, add_months
 from frappe.website.utils import get_comment_list
 
-class Bounty(WebsiteGenerator):
+class Bounty(Document):
 	def get_context(self, context):
 		paid_backers = get_paid_backers(self.bounty_backer)
 		no_of_backers = len(paid_backers)
