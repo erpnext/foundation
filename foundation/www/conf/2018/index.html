@@ -7,18 +7,31 @@
 {% set platinum_sponsors = [
 	{
 		'image': '/assets/foundation/img/conf/sponsors/mnt-logo.png',
-		'title': 'MN Technique (Platinum!)',
+		'title': 'MN Technique',
 		'website_url': 'https://www.mntechnique.com'
 	},
 	{
+		'image': '/assets/foundation/img/conf/sponsors/frappe-logo.png',
+		'title': 'Frappe Technologies',
+		'website_url': 'https://frappe.io'
+	},
+] %}
+
+{% set silver_sponsors = [
+	{
 		'image': '/assets/foundation/img/conf/sponsors/eso.jpg',
-		'title': 'Eso Electronic (Silver)',
+		'title': 'Eso Electronic',
 		'website_url': 'https://eso-electronic.com'
 	},
 	{
 		'image': '/assets/foundation/img/conf/sponsors/indictrans.png',
-		'title': 'New Indictrans (Silver)',
+		'title': 'New Indictrans',
 		'website_url': 'https://indictranstech.com'
+	},
+	{
+		'image': '/assets/foundation/img/conf/sponsors/yagna.png',
+		'title': 'Yagna Entrepreneur Success Services',
+		'website_url': 'https://www.yagnaworld.com'
 	},
 ] %}
 
@@ -29,7 +42,7 @@
 		<a href='{{ ("{}{}".format("" if sponsor.website_url.startswith("http") else "//", sponsor.website_url)) if sponsor.website_url else "#" }}' target='_blank' class='card h-100'>
 			{% if with_img %}
 			<div class='square-img'>
-				<img class="{% if not color %}greyscale{% endif %}"
+				<img class="{% if not color %}greyscale{% endif %} p-3"
 					src="{{ sponsor.image or "/assets/foundation/img/people/tux.png" }}"
 					alt="{{ sponsor.title }}">
 			</div>
@@ -140,7 +153,7 @@
 	<li>Venue: Mysore Association Auditorium, King's Circle, Matunga</li>
 	<li>Breakfast starts at 8.30am</li>
 	<li>Lunch break will be at 1pm</li>
-	<li>Dinner starts at 6.30am at Matunga Gujarati Seva Mandal</li>
+	<li>Dinner starts at 6.30m at Matunga Gujarati Seva Mandal</li>
 </ul>
 </div>
 	</div>
@@ -151,16 +164,17 @@
 		<p class='lead'>A big thanks to our awesome sponsors who make this event happen!</p>
 		<div class='py-4'></div>
 		{% if platinum_sponsors %}
+		<h4>Platinum Sponsors<h4>
 		{{ show_section(platinum_sponsors, color=True, with_img=True) }}
 		{% endif %}
 		<!-- {% if gold_sponsors %}
 		<h4>Gold Sponsors<h4>
 		{{ show_section(gold_sponsors, with_img=True) }}
-		{% endif %}
+		{% endif %} -->
 		{% if silver_sponsors %}
 		<h4>Silver Sponsors<h4>
-		{{ show_section(silver_sponsors) }}
-		{% endif %} -->
+		{{ show_section(silver_sponsors, with_img=True) }}
+		{% endif %}
 		<br>
 		<p class='lead'>Become a patron for the conference and get associated with a global community
 			of tens of thousands of users and developers. Sponsors also get complimentary passes for the conference!</p></p>
