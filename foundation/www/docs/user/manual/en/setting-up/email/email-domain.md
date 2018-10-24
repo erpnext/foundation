@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Email Domains
 
-You can configure your Email Domain in ERPNext for easy setup of all Email Accounts. You can find domain settings under Setup-->Email Domain.
+You can configure your Email Domain in ERPNext for easy setup of all Email Accounts. You can find Email Domain settings under Setup-->Email Domain.
 
 > **What is my Email Domain?:** You might have purchased Email service from your internet service provider or your IT service provider. For example, if you access your business mailbox with URL like http://mail.mybusiness.com, then mybusiness.com is your email domain. And without setting up email domain correctly, your ERPNext instance might not be able to receive mails even though outgoing mails might work. You may be using commercial mail services like gmail or yahoo. In this case google.com or yahoo.com is your email domain.
 
