@@ -19,7 +19,7 @@ Example Email Address is where you enter your business email address. For exampl
 
 This is the internet address or URL of your mail server or the email service that you have purchased. For example, it may be mail.mybusiness.com or imap.mybusiness.com. 
 
-### USE IMAP
+### [USE IMAP] (https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)
 
 IMAP and POP are two services used by most mail servers for incoming mails. If your Email server uses IMAP service for the incoming mails keep this checked. Otherwise leave this unchecked.
 
