@@ -1,9 +1,9 @@
 <!-- add-breadcrumbs -->
 # Assessment Reports
 
-This section contains 'Fee' related documents.
+This section contains 'Assessment Reports' related documents.
 
-<img class="screenshot" alt="Fees Section" src="{{docs_base_url}}/assets/img/education/fees/fees-section.png">
+<img class="screenshot" alt="Assessment Reports" src="{{docs_base_url}}/assets/img/education/assessment-report/assessment-report.png">
 
 ### Topics
 
