@@ -1,4 +1,4 @@
-fees
-fee-structure
-fee-category
-fee-schedule
+course-wise-assessment-report
+final-assessment-grades
+assessment-plan-status
+student-report-generation-tool
