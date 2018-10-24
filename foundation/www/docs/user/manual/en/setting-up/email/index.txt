@@ -1,3 +1,4 @@
+email-domain
 email-account
 email-inbox
 email-alerts
