@@ -8,8 +8,7 @@ Similar to your Sales Taxes and Charges Template is the Purchase Taxes and
 Charges Master. This is the tax template that you can use in your Purchase
 Orders and Purchase Invoices.
 
-> Buying > Setup > Purchase Taxes and Charges Template > New Purchase Taxes and Charges
-Master
+> Buying > Setup > Purchase Taxes and Charges Template > New 
 
 <img class="screenshot" alt="Purchase taxes" src="{{docs_base_url}}/assets/img/buying/purchase-taxes.png">
 
