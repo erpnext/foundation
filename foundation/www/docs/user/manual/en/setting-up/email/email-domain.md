@@ -3,7 +3,7 @@
 
 You can configure your Email Domain in ERPNext for easy setup of all Email Accounts. You can find Email Domain settings under Setup-->Email Domain.
 
-> **What is my Email Domain?:** You might have purchased Email service from your internet service provider or your IT service provider. For example, if you access your business mailbox with URL like http://mail.mybusiness.com, then mybusiness.com is your email domain. And without setting up email domain correctly, your ERPNext instance may not be able to receive mails. You may be using free mail services like gmail or yahoo. In this case google.com or yahoo.com is your email domain.
+> **What is my Email Domain?:** You might have purchased Email service from your internet service provider or your IT services provider. For example, if you access your business mailbox with URL like http://mail.mybusiness.com, then mybusiness.com is your email domain. Without setting up email domain correctly, your ERPNext instance may not be able to receive mails. You may be using free mail services like gmail or yahoo. In this case google.com or yahoo.com is your email domain.
 
 ### Default Email Domain
 
@@ -13,16 +13,15 @@ ERPNext creates a template email domain using example.com for your reference. Yo
 
 ### Example Email Address
 
-Example Email Address is where you enter your business email address, For example, if your email ID is myname@mybusinessdomain.com you should enter this here.
+Example Email Address is where you enter your business email address. For example, if your email ID is myname@mybusinessdomain.com you should enter this.
 
 ### Email Server
 
-This is the internet address or URL of your mail server or the email service that you have purchased. For Example it may be mail.mybusiness.com or imap.mybusiness.com. 
+This is the internet address or URL of your mail server or the email service that you have purchased. For example, it may be mail.mybusiness.com or imap.mybusiness.com. 
 
 ### USE IMAP
 
-IMAP and POP are two services used by most mail servers used for incoming mails.
-If your Email server uses IMAP service for the incoming mails keep this checked. Otherwise leave this unchecked.
+IMAP and POP are two services used by most mail servers for incoming mails. If your Email server uses IMAP service for the incoming mails keep this checked. Otherwise leave this unchecked.
 
 ### USE SSL
 
@@ -36,11 +35,11 @@ If you want to limit the size of file attachments for emails sent from within ER
 
 ### SMTP Server
 
-This is the address of service of outgoing mails of your email server.
+This is the outgoing email service adress of your email server.
 
 ### Use TLS
 
-Set this up if your SMTP service is setup with TLS.
+Set this up if your SMTP service is setup with TLS for security.
 
 ### Default port
 
@@ -48,8 +47,8 @@ SMTP service is usually set on port 25. If your email server is setup on a separ
 
 ### Save entered domain
 
-Once you click on save, these settings are validated by ERPNext and the Email Domain gets saved. Sometimes this could take a second and you might have to wait. This email domain is then available in a dropdown called Domain under Email Accounts screen
+Once you click on save, these settings are validated by ERPNext and the Email Domain gets saved. Sometimes this could take a few seconds and you might have to wait. This email domain is then available in a dropdown called Domain under Email Accounts screen
 
-### Entered data but still unable to setup Email Domain
+### Entered everything but still unable to setup Email Domain
 
 If you've verified the above settings and are still unable to setup Email Domain, you can contact ERPNext support for help.
