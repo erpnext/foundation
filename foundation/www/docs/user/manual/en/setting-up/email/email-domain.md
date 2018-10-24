@@ -49,6 +49,6 @@ SMTP service is usually set on port 25. If your email server is setup on a separ
 
 Once you click on save, these settings are validated by ERPNext and the Email Domain gets saved. Sometimes this could take a few seconds and you might have to wait. This email domain is then available in a dropdown called Domain under Email Accounts screen
 
-### Entered everything but still unable to setup Email Domain
+## Entered everything but still unable to setup Email Domain?
 
-If you've verified the above settings and are still unable to setup Email Domain, you can contact ERPNext support for help.
+If you've entered and verified the above settings and are still unable to setup Email Domain, you can contact ERPNext support for help.
