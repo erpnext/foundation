@@ -71,6 +71,14 @@ The Sales and Purchase Register report shows all the Sales and Purchase transact
 
 <img alt="Sales Register" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/sales-register.png">
 
+### Item wise Sales and Purchase Register
+
+The Item Wise Sales and Purchase Register report shows all the Sales and Purchase transactions for a given period with item rate, quantity, amount and tax details. In this report, taxes has a separate column, so you can easily get individual taxes for each individual item. From this report you can have a look of which items are sold or purchase most.
+
+<img alt="Item Wise Sales Register" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/item-wise-sales-report.png">
+
+
+
 ### Budget Variance
 
 In ERPNext, you can assign expense budget for an expense account against any specific cost center. This report gives a comparison between budgeted and actual expenses and the variance (the difference between the two) in monthly / quarterly / yearly view.
@@ -88,6 +96,14 @@ The GSTR-1 report helps Indian users to file monthly return of outward supplies.
 The GSTR-2 report helps Indian users to file monthly return of inward supplies. The report gives the details of all inward supplies of goods or services received during a month, in Govt specified format.
 
 <img alt="GSTR-2" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/gstr-2.png">
+
+### Sales or Purchase Invoice Trends
+
+Another very useful report is invoice trends, From this report you can easily get the trending items on monthly, quaterly, half yearly or yearly basis. You will get the idea of sales and purchase both in quantity and amount.
+
+<img alt="Sales Invoice Trends" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/sales-invoice-trends.png">
+
+
 
 ### Other Reports:
 
