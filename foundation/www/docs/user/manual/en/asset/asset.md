@@ -10,7 +10,7 @@ For the existing asset, you can create the asset record directly checking "Is Ex
 
 <img class="screenshot" alt="Existing Asset" src="{{docs_base_url}}/assets/img/asset/existing-asset.png">
 
-For new asset, you cannot create the asset record directly from Asset master. Asset record will be created automatically on submission of Purchase Receipt / Purchase Invoice for the Asset. And later you can modify the details of the asset record. Find more details in (Purchasing Asset)[/docs/user/manual/en/asset/purchasing-asset.html] section.
+For new asset, you cannot create the asset record directly from Asset master. Asset record will be created automatically on submission of Purchase Receipt / Purchase Invoice for the Asset. And later you can modify the details of the asset record. Find more details in [Purchasing Asset.]({{ docs_base_url }}/user/manual/en/asset/purchasing-asset.html)
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset.png">
 
@@ -23,7 +23,7 @@ Explanation of the fields:
 2. Asset Category: The category of assets it belongs to.
 3. Is Existing Asset: Check if the asset is being carried forward from the previous Fiscal Year. The existing assets which are partially / fully depreciated can also be created/maintained for the future reference.
 4. Status: The options are - Draft, Submitted, Partially Depreciated, Fully Depreciated, Sold and Scrapped.
-5. Warehouse: Set the location of the asset.
+5. Location: Set the location of the asset.
 6. Gross Purchase Amount: The purchase cost of the asset.
 7. Depreciation Start Date: The date from which booking of depreciation will be started.
 8. Expected Value After Useful Life: Useful Life is the time period over in which the company expects that the asset will be productive. After that period, either the asset is scrapped or sold. In case it is sold, mention the estimated value here. This value is also known as Salvage Value, Scrap Value or Residual Value.
