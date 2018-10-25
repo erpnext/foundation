@@ -1,0 +1,34 @@
+{% extends "templates/web.html" %}
+
+{% block title %}
+ERPNext Conference 2018 - Livestream
+{% endblock %}
+
+{% block page_content %}
+<section class='section-padding text-center section-bg'>
+    <div class='container'>
+    <h1>
+        Livestream begins on<br>
+        <small class="text-muted">26 October 2018 10:00 AM IST</small>
+    </h1>
+    <p>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=ERPNextConference2018&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #ERPNextConference2018</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </p>
+</div>
+<p>
+    <iframe width="1120" height="630" src="{{ frappe.db.get_value('Conference Settings', 'Conference Settings', 'livestream_url') or 'https://www.youtube.com/embed/IWMYnp3CggA'}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+</p>
+</section>
+{% endblock %}
+
+{% block body_include %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+{% endblock %}
