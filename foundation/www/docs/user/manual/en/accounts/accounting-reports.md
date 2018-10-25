@@ -27,6 +27,13 @@ There are some other options as well to include or exclude Period Closing Entrie
 
 <img alt="Trial Balance" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/trial-balance.png">
 
+### Party Wise Trail Balance
+
+Usually you might need to see the trail balance for your customesrs and suppliers. You can easily get for all of your customers or suppliers and also for individual.
+
+<img alt="Sales Invoice Trends" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/party-wise-trail-balance.png">
+
+
 ### Balance Sheet
 
 A Balance Sheet is the financial statement of a company which states assets, liabilities and equity at a particular point in time.
@@ -102,8 +109,6 @@ The GSTR-2 report helps Indian users to file monthly return of inward supplies. 
 Another very useful report is invoice trends, From this report you can easily get the trending items on monthly, quaterly, half yearly or yearly basis. You will get the idea of sales and purchase both in quantity and amount.
 
 <img alt="Sales Invoice Trends" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/sales-invoice-trends.png">
-
-
 
 ### Other Reports:
 
