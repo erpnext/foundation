@@ -1,4 +1,3 @@
-<!-- add-breadcrumbs -->
 # Production Plan
 
 Production Plan helps user to plan production aginst the multiple sales orders or the material requests. Also, it helps in Material Procuremnt planning for the raw-material item, based on the quantity of finished product to be manufactured.

@@ -1,8 +1,9 @@
 introduction
-bill-of-materials
-work-order
 workstation
 operation
+bill-of-materials
+work-order
+job-card
 subcontracting
 item-alternative
 tools
