@@ -1,4 +1,4 @@
-# Frappe Quality Management
+# Quality Management System
 
  Quality management is the act of overseeing all activities and tasks needed to maintain a desired level of excellence.
 
