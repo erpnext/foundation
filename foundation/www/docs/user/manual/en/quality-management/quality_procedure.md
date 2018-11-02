@@ -4,7 +4,7 @@
 
  A Procedure can be of two types ie a Procedure consiting of simply steps that you must follow to achieve the Goal and Procedure having a nested Procedure along with steps that must be followed.
  
-## Creating a Procedure
+## Creating a Quality Procedure
 
  Steps for creating a Procedure
 
@@ -18,14 +18,14 @@
 
 * Procedure consisting of Steps :
 
-  * If a Procedure only has a set of steps to be followed, select Step from Dropdown.
-  * Document the step.
-  * Select the Individual responsible for carrying out the task.
+  - If a Procedure only has a set of steps to be followed, select Step from Dropdown.
+  - Document the step.
+  - Select the Individual responsible for carrying out the task.
 
 * Procedure consisting of Nested Procedure :
 
-  * If a Procedure multiple procedures, select Procedure from Dropdown.
-  * Select the Child Procedure.(When this field is set, the Parent Procedure field of the Child Procedures will contain the name of the Parent Procedure)
-  * Select the Individual responsible for carrying out the task.
+  - If a Procedure multiple procedures, select Procedure from Dropdown.
+  - Select the Child Procedure.(When this field is set, the Parent Procedure field of the Child Procedures will contain the name of the Parent Procedure)
+  - Select the Individual responsible for carrying out the task.
 
 {next}
