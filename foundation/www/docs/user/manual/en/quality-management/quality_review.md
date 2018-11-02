@@ -4,7 +4,7 @@
 
  The Quality Review can be conducted manually or scheduled based on Goal's Monitoring Frequency. The Quality Review checks whether all Objectives of a Goal have been achieved and if it has not, Quality Action can be initialised.
 
-<img src='https://github.com/himanshu-96/quality_management/blob/master/images/Quality_review.png' width='1000'>
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality_review.png">
 
 ### Quality Review Properties:
 

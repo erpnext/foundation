@@ -4,7 +4,7 @@
 
  Every Review that has been generated can be reviewed in Meeting to discuss about many Quality aspects such as Quality Goals and Quality Reviews. As usual these meeting also have a particular agenda and minutes.
 
-<img src='https://github.com/hrwX/quality_management/blob/master/images/Quality_meeting.png' width='1000'>
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality_meeting.png">
  
 ### Quality Meeting properties:
 

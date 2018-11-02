@@ -8,6 +8,5 @@
 
  The Tree structure of the Procedures can be seen in Chart of Procedures.
 
-<img src='https://github.com/hrwX/quality_management/blob/master/images/new-sop.png' width='1000'>
-
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/new-sop.png">
 ## Standard operating procedures properties:

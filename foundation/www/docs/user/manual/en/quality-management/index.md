@@ -4,8 +4,7 @@
 
  Quality Management Module helps to meet quality program and product expectations, conform with certification systems and deliver to customer standards.
 
-<img class="screenshot" alt="Quality Mangement" src="{{docs_base_url}}/assets/img/quality-management/desk.py">
-<img class="screenshot" alt="BOM" src="{{docs_base_url}}/assets/img/manufacturing/BOM-hero.png">
+<img class="screenshot" alt="Quality Mangement" src="{{docs_base_url}}/assets/img/quality-management/desk.png">
 
 {index}
 
