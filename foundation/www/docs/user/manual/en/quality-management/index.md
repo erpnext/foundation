@@ -7,5 +7,3 @@
 ### Topics
 
 {index}
-
-

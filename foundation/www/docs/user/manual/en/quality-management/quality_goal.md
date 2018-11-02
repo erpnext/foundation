@@ -6,7 +6,7 @@
 
 <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality-goal.png">
 
-## Creatng a Quality Goal
+## Creating a Quality Goal
 
  Steps for creating a Quality Goal
 
