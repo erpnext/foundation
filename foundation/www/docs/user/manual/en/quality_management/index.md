@@ -7,4 +7,6 @@
 <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality_management/desk.png">
 <img class="screenshot" alt="BOM" src="{{docs_base_url}}/assets/img/manufacturing/BOM-hero.png">
 
+{index}
+
 
