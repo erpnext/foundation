@@ -4,5 +4,7 @@
 
  Quality Management Module helps to meet quality program and product expectations, conform with certification systems and deliver to customer standards.
 
-<img src='https://github.com/hrwX/quality_management/blob/master/images/desk.png' width='1000'>
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality_management/desk.png">
+<img class="screenshot" alt="BOM" src="{{docs_base_url}}/assets/img/manufacturing/BOM-hero.png">
+
 
