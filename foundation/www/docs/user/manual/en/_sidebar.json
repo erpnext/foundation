@@ -72,5 +72,9 @@
   "route": "/search_docs",
   "title": "Search",
   "type": "input"
+ },
+ {
+    "route": "/docs/user/manual/en/quality_management",
+    "title": "Quality Management"
  }
 ]
