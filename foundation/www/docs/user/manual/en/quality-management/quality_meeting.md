@@ -34,3 +34,5 @@ In case to create the Quality Meeting first you have to decide the different rev
   - Status of minutes.
     - Under Review.
     - Planned.
+
+{next}
