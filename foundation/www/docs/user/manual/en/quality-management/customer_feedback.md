@@ -1,40 +1,46 @@
 # Customer Feedback
 
- It is the information directly coming from customer about the satisfaction or dissatisfaction about the products or services.
+ It is the information that a customer expresses about the satisfaction or dissatisfaction about the products or services.
 
- Customers can give their feedbacks depending upon their experiences. The customer has to rate different parameters and can provide their Qualitative feedbacks too using the pre-determined Feedback Templates.
+ The Customer Feedback has to rate different parameters and provide Qualitative Feedbacks using the pre-determined Feedback Templates.
 
-## Creating a Customer Feedback Template
+## Customer Feedback Template
  
  For creating the Quality Feedback first you must to decide the parameters by creating the Quality Feedback Template. The templates generally contains the title of the template, scope and the different parameter to be entered. The diffrent parameter which can be decided on the basis of different occssions and survey.
 
-## Steps for creating the templates
-
-* Template : The title of the template intended.
-
-* Procedure : Select procedure associated with the feedback.
-
-* Parameter : Create the different parameter.
-
-* Scope : Select the Scope of the Feedback can may be Company and Department.
-
-    - Department(If scope is deparment): Select the deparment related to it.
+## Creating a Customer Feedback Template
 
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback_template.png">
 
+ Steps for creating a Customer Feedback Template
+
+ * Template : The name of the template 
+
+ * Procedure : Select procedure associated with the Feedback.
+
+ * Parameter : Listing down various processes/parameters to which you want the user to rate and give the feedback.
+
+ * Scope : Whether the Feedback Template is a generic for the whole company or only for a particular department.
+
+ * Department : Deparment related to the Feedback Template.(If scope is deparment)
+
 ## Customer Feedback
 
- The customer can easily give there feedbacks by selecting there template to rate us on different parameter and can also provide the qualitative feedback on the various parameters. The Quality action may be initialised on the basis of the seriousness of the feedback.
+ The customer can easily give there feedbacks by selecting there template to rate on different parameter and also provide the qualitative feedback on the parameters.
+ If the Feedback is not as per expectations, Quality Action may be initialised on the basis of the seriousness of the Feedback.
 
-## Steps for Customer Feedback
+## Creating a Customer Feedback
 
-* Customer : Enter your name.
+ <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.png">
 
-* Template : Select templatea and the parameter ia autofilled.
+ Steps for creating a Customer Feedback
 
-* Feedback : 
+ * Customer : Name of the Customer who is giving the Feedback.
 
-    - Rating : Please rate us out of 5 oon basis of our experience.
-    - Qulitative Feedback : provide the feedback if needed.
+ * Template : Selecting the template for the Feedback and the parameters are automatically populated for the Feedback.
 
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.png">
+ * Feedback : 
+    
+    - Parameter : Various Parameters that are pre-defined in the Feedback Template.
+    - Rating : Rate a parameter.
+    - Qualitative Feedback : Feedback regarding the parameter.

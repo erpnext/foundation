@@ -1,38 +1,24 @@
 # Quality Meeting
 
- It is an assembly of people for a particular Quality purpose or agenda, especially for formal discussion about Quality aspects.
+ It is an assembly of people for a particular purpose or agenda, especially for formal discussion about Quality aspects.
 
- Every Review that has been generated can be reviewed in Meeting to discuss about many Quality aspects such as Quality Goals and Quality Reviews. As usual these meeting also have a particular agenda and minutes.
+ Quality Meetings are conducted to review the Quality Reviews that have been generated. The minutes of these meetings would include the discussion on the various Quality Reviews.
 
-## Creating Quality Meeting:
+## Creating a Quality Meeting:
+ 
+ <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality_meeting.png">
 
-In case to create the Quality Meeting first you have to decide the different reviews to be discussed in the meeting along with evalution the date.
+ Steps for creating a Meeting
 
-### Steps for creating:
+ * Meeting Date: Date on which the Meeting is held.
 
-- Meeting Date: Select the meeting date for the evalution.
+ * Status: The status of the Meeting is generated based in the status of every individual Minutes discussed. IF the status of all the minutes is Close, then Status of the Meeting will be 'Close' else 'Open'.
 
-- Status: It will auto generated on the basis of the multiple minutes status.
+ * Minute:
 
-- Minute: Generate the minutes by simply adding row.
-
-    - Review: Select the Quality Review to be discussed..
-    - Action: Can be Under Review and Planned
-    - Responsible: Select the Responsible one.
-    - Status: Status of minute can be Open or close.
-
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality_meeting.png">
-
-## Quality Meeting properties
-
-- Date of the Meeting.
-- Status of the Meeting :
-   - Open.
-   - Close.
-- Minutes of the Meeting :
-  - Quality Review being analysed.
-  - Status of minutes.
-    - Under Review.
-    - Planned.
+    - Review: Select the Quality Review to be discussed.
+    - Action: It is the action that is proposed for the Review which can be either Under Review or Planned if any action is planned.
+    - Responsible: The individual who is responsible for carrying out the action for the Review.
+    - Status: Status of minute can be Open or Close depending upon whether the action has been carried out or not.
 
 {next}
