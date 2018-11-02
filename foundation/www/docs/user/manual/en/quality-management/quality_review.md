@@ -1,4 +1,4 @@
-## Quality Review:
+## Quality Review
 
 > A Quality Review is an inspection with a specific structure, defined roles and procedure designed to ensure a product's completeness and adherence to standards.
 
@@ -6,7 +6,7 @@
 
 <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality_review.png">
 
-### Quality Review Properties:
+### Quality Review Properties
 
 - Quality Goal which is to be reviewed
 - Quality Procedure associated with the Quality Goal

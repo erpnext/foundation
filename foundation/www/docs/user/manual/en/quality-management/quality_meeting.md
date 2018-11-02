@@ -1,4 +1,4 @@
-## Quality Meeting:
+## Quality Meeting
 
  It is an assembly of people for a particular Quality purpose or agenda, especially for formal discussion about Quality aspects
 
@@ -6,7 +6,7 @@
 
 <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality_meeting.png">
  
-### Quality Meeting properties:
+### Quality Meeting properties
 
 - Date of the Meeting
 - Status of the Meeting :

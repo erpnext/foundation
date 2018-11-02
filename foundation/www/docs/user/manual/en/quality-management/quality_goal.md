@@ -1,4 +1,4 @@
-## Quality Goal:
+## Quality Goal
 
   It is collection of individual metrics that helps to quantify quality of application. It is a basic quality management process to establish a set of quality objectives.
 
@@ -6,7 +6,7 @@
 
 <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality-goal.png">
 
-### Quality Goal Properties:
+### Quality Goal Properties
 
  - Name of the Quality Goal
  - The Standard Procedure associated with the Quality Goal
