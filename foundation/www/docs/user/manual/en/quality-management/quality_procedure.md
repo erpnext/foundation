@@ -1,12 +1,29 @@
-## Quality Procedure (Standard Operating Procedures)
+# Quality Procedure (Standard Operating Procedure)
 
  A standard operating procedure (SOP) is a set of step-by-step instructions compiled by an organisation to help workers carry out complex routine operations. SOPs aim to achieve efficiency, quality output and uniformity of performance, while reducing miscommunication and failure to comply with industry regulations.
 
- You can create Quality Procedures related to or unrelated to a particular Department. Everything revolve around the Quality Procedures, which must be followed for fulfilling Quality Goals.
+ A Procedure can be of two types ie a Procedure consiting of simply steps that you must follow to achieve the Goal and Procedure having a nested Procedure along with steps that must be followed.
  
- Every Procedure can be a sub-Procedure for another Root Procedure.
+## Creating a Procedure
 
- The Tree structure of the Procedures can be seen in Chart of Procedures.
+ Steps for creating a Procedure
 
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/new-sop.png">
-## Quality Procedure
+* Procedure : Name of the Procedure that you intend to create.
+
+* Department : The Department to which the Procedure is associated with. For Example, A Procedure regarding a product sales is associated with the Sales Department.
+
+* Parent Procedure : If a Procedure is child to a Parent Procedure, then this field will contain the name of the Parent Procedure.
+
+* Is Group : If a Procedure has chile Procedures, selecting Is Group, groups all the Procedures into the Parent Procedure in the TreeView.
+
+* Procedure consisting of Steps :
+
+  * If a Procedure only has a set of steps to be followed, select Step from Dropdown.
+  * Document the step.
+  * Select the Individual responsible for carrying out the task.
+
+* Procedure consisting of Nested Procedure :
+
+  * If a Procedure multiple procedures, select Procedure from Dropdown.
+  * Select the Child Procedure.(When this field is set, the Parent Procedure field of the Child Procedures will contain the name of the Parent Procedure)
+  * Select the Individual responsible for carrying out the task.
