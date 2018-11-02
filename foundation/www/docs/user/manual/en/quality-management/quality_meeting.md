@@ -1,12 +1,16 @@
-## Quality Meeting
+# Quality Meeting
 
  It is an assembly of people for a particular Quality purpose or agenda, especially for formal discussion about Quality aspects
 
  Every Review that has been generated can be reviewed in Meeting to discuss about many Quality aspects such as Quality Goals and Quality Reviews. As usual these meeting also have a particular agenda and minutes.
 
 <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality_meeting.png">
+
+## Creating Quality Meeting:
+
+In case to create the Quality Meeting first you have to decide the different reviews to be discussed in the meeting along with evalution the date
  
-### Quality Meeting properties
+## Quality Meeting properties
 
 - Date of the Meeting
 - Status of the Meeting :
