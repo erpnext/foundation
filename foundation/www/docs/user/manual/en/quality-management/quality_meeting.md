@@ -1,6 +1,6 @@
 ## Quality Meeting:
 
-> It is an assembly of people for a particular Quality purpose or agenda, especially for formal discussion about Quality aspects
+ It is an assembly of people for a particular Quality purpose or agenda, especially for formal discussion about Quality aspects
 
  Every Review that has been generated can be reviewed in Meeting to discuss about many Quality aspects such as Quality Goals and Quality Reviews. As usual these meeting also have a particular agenda and minutes.
 
