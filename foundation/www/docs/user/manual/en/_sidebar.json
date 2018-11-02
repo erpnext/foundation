@@ -65,6 +65,10 @@
   "title": "Non Profit"
  },
  {
+    "route": "/docs/user/manual/en/quality-management",
+    "title": "Quality Management"
+ },
+ {
   "route": "/docs/user/manual/en/customize-erpnext",
   "title": "Customize"
  },
@@ -72,9 +76,5 @@
   "route": "/search_docs",
   "title": "Search",
   "type": "input"
- },
- {
-    "route": "/docs/user/manual/en/quality_management",
-    "title": "Quality Management"
  }
 ]

@@ -13,3 +13,4 @@ customer-portal
 website
 using-erpnext
 customize-erpnext
+quality-management
