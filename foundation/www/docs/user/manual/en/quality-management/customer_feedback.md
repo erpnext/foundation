@@ -16,7 +16,7 @@
 
 - Parameter: Create the different parameter.
 
-- Scope: Select the Scope of the Feedback can may be both Company and Department.
+- Scope: Select the Scope of the Feedback can may be Company and Department.
 
     - Department(If scope is deparment): Select the deparment related to it.
 
