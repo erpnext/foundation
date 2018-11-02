@@ -18,4 +18,4 @@ regional
 customize-erpnext
 education
 erpnext_integration
-quality_management
+quality-management
