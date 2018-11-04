@@ -23,13 +23,13 @@ After setting up all the configurations, click on Enable Amazon and save the set
 integration.
  
  4. Synch Products
-   To synch products, you can click on Synch Products. Once this is successful you should see your Amazon products
+   Click on this button to synch products. Once this is successful you should see your Amazon products
    as Items in ERPNext.
 <img class="screenshot" alt="Sync Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_4.png">
 <img class="screenshot" alt="Sync Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_5.png">
  
- 5. Synch Sales Orders
-   To synch orders, you can click on Synch Orders. Once this is successful you should see your Amazon Orders
+ 5. Synch Orders
+   Click on this button to synch sales orders. Once this is successful you should see your Amazon Orders
    as Sales Orders in ERPNext. You can also set up scheduler to synch orders automatically.
 <img class="screenshot" alt="Sync Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/amazon_mws_settings_6.png">
 
