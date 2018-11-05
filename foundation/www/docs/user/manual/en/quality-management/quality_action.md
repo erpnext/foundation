@@ -9,7 +9,7 @@
  
 ## Creating a Quality Action
 
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality-goal.png">
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/action.gif">
 
  Steps for creating an Action:
 

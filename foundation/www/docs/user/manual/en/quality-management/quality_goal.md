@@ -4,7 +4,7 @@
 
  You can create a Quality Goal for your business having multiple Quality Objectives. Different Quality Objectives for a Goal can have definite numeric target or target measured in terms of completion status(yes or no). It is monitored based on Frequency which is set for that Goal.
 
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Quality-goal.png">
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Goal.gif">
 
 ## Creating a Quality Goal
 

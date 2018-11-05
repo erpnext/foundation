@@ -10,7 +10,7 @@
 
 ## Creating a Customer Feedback Template
 
- <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback_template.png">
+ <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback_template.gif">
 
  Steps for creating a Customer Feedback Template
 
@@ -31,7 +31,7 @@
 
 ## Creating a Customer Feedback
 
- <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.png">
+ <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.gif">
 
  Steps for creating a Customer Feedback
 
