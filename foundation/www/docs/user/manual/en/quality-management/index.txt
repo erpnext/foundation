@@ -1,6 +1,6 @@
 quality_goal
 quality_procedure
-chart_of_procedure
+tree_of_procedure
 quality_review
 quality_action
 quality_meeting
