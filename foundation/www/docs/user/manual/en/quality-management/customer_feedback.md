@@ -6,7 +6,7 @@
 
 ## Customer Feedback Template
  
- For creating the Quality Feedback first you must to decide the parameters by creating the Quality Feedback Template. The templates generally contains the title of the template, scope and the different parameter to be entered. The diffrent parameter which can be decided on the basis of different occssions and survey.
+ For creating the Customer Feedback first you must to decide the parameters by creating the Customer Feedback Template. The templates generally contains the title of the template, scope and the different parameter to be entered. The diffrent parameter which can be decided on the basis of different occssions and survey.
 
 ## Creating a Customer Feedback Template
 
