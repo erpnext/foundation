@@ -11,4 +11,9 @@ Click [here](/docs/user/manual/en/customize-erpnext/articles/module-visibility.h
 
 > Note: Modules are automatically hidden for users that have no permissions on the documents within that module. For example, if a User has no permissions on Purchase Order, Purchase Request, Supplier, the “Buying” module will automatically hidden for that User.
 
+Any kind of Reports or DocTypes can also added as a shortcut to the desktop
+
+<img alt="Add to desktop directly" class="screenshot" src="{{docs_base_url}}/assets/img/customize/add_to_desktop_image.png">
+
+
 {next}
