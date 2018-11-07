@@ -11,6 +11,8 @@ app_color = "grey"
 app_email = "foundation@erpnext.org"
 app_license = "MIT"
 
+hide_in_installer = True
+
 # Includes in <head>
 # ------------------
 
