@@ -1,4 +1,3 @@
-<!-- add-breadcrumbs -->
 #Material consumption
 
 Material Consumption functionality allows you to have multiple consumption `Stock Entry` against a Work Order. To enable this, go to Manufacturing > Manufacturing Settings.
