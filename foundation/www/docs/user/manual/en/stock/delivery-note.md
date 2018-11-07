@@ -45,10 +45,10 @@ the Delivery Note.
 
 * * *
 
-#### Q. How to Print Without Amounts?
+#### Q. How to Print Without Amount?
 
-If you want to print your Delivery Notes without the amount (this might be
-useful if you are shipping high value items), just check the “Print without
+If you want to print your Delivery Note without the amount (this might be
+useful if you are shipping high value items), check the “Print without
 Amount” box in the “More Info” section.
 
 #### What happens when the Delivery Note is “Submitted”?
