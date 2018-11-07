@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Stock
 
-Distributors have large part of their net worth is invested in the stock in hand. With ERPNext, you can always keep a birds eye view on your stock availability, replineshment, procurement and sales.
+Distributors have large part of their net worth is invested in the stock in hand. With ERPNext, you can always keep a birds eye view on your stock availability, replenishment, procurement and sales.
 
 <img class="screenshot" alt="ERPNext Stock" src="{{docs_base_url}}/assets/img/stock/stock-hero.jpg">
 
