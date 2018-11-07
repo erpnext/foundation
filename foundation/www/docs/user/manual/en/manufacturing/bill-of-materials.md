@@ -24,6 +24,7 @@ To make a new BOM:
 <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/manufacturing/bom-operations.png">
 
   * Select the Item for which you want to make the BOM.
+  * Check 'Inspection Required' to make the 'Quality Inspection' mandatory for raw materials and the finished goods.
   * Add the operations that you have to go through to make that particular Item in the “Operations” table. For each operation, you will be asked to enter a Workstation. You must create new Workstations as and when necessary.
   * Workstations are defined only for product costing and Work Order Operations scheduling purposes not inventory. 
   * Inventory is tracked in Warehouses not Workstations.
