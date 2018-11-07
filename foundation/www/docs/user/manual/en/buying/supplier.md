@@ -5,9 +5,17 @@ Suppliers are companies or individuals who provide you with products or services
 
 You can create a new Supplier from:
 
-`Explore > Supplier > New Supplier`
+`Explore > Buying > Supplier > New 
 
-<img class="screenshot" alt="Supplier Master" src="{{docs_base_url}}/assets/img/buying/supplier1.1.png">
+<img class="screenshot" alt="Supplier Master" src="{{docs_base_url}}/assets/img/buying/supplier-master.png">
+
+
+In the Supplier master you can add all regular information related to the supplier as well like Tax ID, Billing Currency, Price List and Payment Terms.   So that in all future transactions, these default values will populate in the forms.  
+
+You can also choose a default Supplier Type and add a new type if you want to. 
+
+Each Supplier can have a default price list so that every time when you buy a new item from the supplier, the supplier price list would be updated as well. 
+
 
 ### Contacts and Addresses
 

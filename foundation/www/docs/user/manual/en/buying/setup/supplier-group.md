@@ -14,7 +14,7 @@ type for them and name them accordingly.
 Based on what the suppliers supply, they are classified into different
 Supplier Groups. You can create your own category of Supplier Group.
 
-> Buying > Setup > Supplier Group > New Supplier Group
+> Buying  > Supplier > Supplier Group > New 
 
 <img class="screenshot" alt="Supplier Group" src="{{docs_base_url}}/assets/img/buying/supplier-group.png">
 
