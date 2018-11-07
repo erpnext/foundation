@@ -24,12 +24,10 @@ Permissions are applied on a combination of:
 
   * **Document Stages:** Permissions are applied on each stage of the document like on Creation, Saving, Submission, Cancellation and Amendment. A role can be permitted to Print, Email, Import or Export data, access Reports, or define User Permissions.
 
-  * **Apply User Permissions:** This switch decides whether User Permissions should be applied for the role on selected Document Stages.
-
-	If enabled, a user with that role will be able to access only specific Documents for that Document Type. Such specific Document access is defined in the list of User Permissions. Additionally, User Permissions defined for other Document Types also get applied if they are related to the current Document Type through Link Fields.
+  * **User Permissions:** There is a concept of user permission using which a user can be restricted to access only specific Documents for that Document Type. Such specific Document access is defined in the list of User Permissions. Additionally, User Permissions defined for other Document Types also get applied if they are related to the current Document Type through Link Fields.
 
 	To set, User Permissions go to:
-    > Setup > Permissions > [User Permissions Manager](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions.html)
+    > Setup > Permissions > [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions.html)
 
 ---
 
@@ -47,7 +45,7 @@ Leave Application is a good **example** that encompasses all areas of Permission
 <img class="screenshot" alt="Giving Read, Write and Create Permissions to Employee for Leave Application"  src="{{docs_base_url}}/assets/img/users-and-permissions/setting-up-permissions-employee-role.png">
 
    1. **An Employee should only be able to access his/her Leave Application.**
-     Hence, Apply User Permissions should be enabled for Employee Role, and a User Permission record should be created for each User Employee combination. (This effort is reduced for Employee Document Type, by programmatically creating User Permission records.)
+     Hence, User Permissions record should be created for each User Employee combination.
 
 <img class="screenshot" alt="Limiting access to Leave Applications for a user with Employee Role via User Permissions Manager" src="/docs/assets/img/users-and-permissions/setting-up-permissions-employee-user-permissions.png">
 
