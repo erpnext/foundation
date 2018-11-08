@@ -1,3 +1,4 @@
+<!-- add-breadcrumbs -->
 # Quality Meeting
 
  It is an assembly of people for a particular purpose or agenda, especially for formal discussion about Quality aspects.
@@ -12,7 +13,7 @@
 
  * Meeting Date: Date on which the Meeting is held.
 
- * Status: The status of the Meeting is generated based in the status of every individual Minutes discussed. IF the status of all the minutes is Close, then Status of the Meeting will be 'Close' else 'Open'.
+ * Status: The status of the Meeting is generated based in the status of every individual Minutes discussed. If the status of all the minutes is Close, then Status of the Meeting will be 'Close' else 'Open'.
 
  * Minute:
 

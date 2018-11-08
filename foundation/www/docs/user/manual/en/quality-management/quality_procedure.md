@@ -1,3 +1,4 @@
+<!-- add-breadcrumbs -->
 # Quality Procedure (Standard Operating Procedure)
 
  A standard operating procedure (SOP) is a set of step-by-step instructions compiled by an organisation to help workers carry out complex routine operations. SOPs aim to achieve efficiency, quality output and uniformity of performance, while reducing miscommunication and failure to comply with industry regulations.

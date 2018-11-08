@@ -1,3 +1,4 @@
+<!-- add-breadcrumbs -->
 # Quality Goal
 
   It is collection of individual metrics that helps to quantify quality of application. It is a basic quality management process to establish a set of quality objectives.
