@@ -16,14 +16,14 @@ When you create a new record you will have to specify
 2. The type of document which will be allowed (for example "Company")
 3. The specific item that you want to allow (the name of the "Company)
 
-<img src="../../../../../assets/img/users-and-permissions/user-perms/new-user-permission.png" class="screenshot" alt="Creating a new user permission">
+<img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/new-user-permission.png" class="screenshot" alt="Creating a new user permission">
 
 ### Advanced control
 
 You can optionally apply user permission only for specific Document Type by setting the Document Type in the Applicable For field under Advanced Control.
 Setting **Applicable For** option will make the current user permission applicable only under the selected Document Type master.
 
-<img src="../../../../../assets/img/users-and-permissions/user-perms/advanced-control.png" class="screenshot" alt="Creating a new user permission">
+<img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/advanced-control.png" class="screenshot" alt="Creating a new user permission">
 In the above User Permission, user michael.corleone@gadgets.com will be able to access blog posts created by blogger Michael Corleone.
 
 **Note:** If **Applicable For** is not set, User Permission will applicable across all related Document Types.
@@ -35,7 +35,7 @@ Another way of allowing documents to be seen that have been restricted by User P
 For example you don't want Assets to be restricted for any user, then select **Asset** in **Customize Form** and in the Company field, check on "Ignore User Permissions"
 
 
-<img src="../../../../../assets/img/users-and-permissions/user-perms/ignore-user-permissions.png" class="screenshot" alt="Ignore User Permissions on specific properties">
+<img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/ignore-user-permissions.png" class="screenshot" alt="Ignore User Permissions on specific properties">
 
 
 ### Strict Permissions
@@ -48,6 +48,6 @@ You can change this setting incase you want the user permissions to be assigned 
 
 Finally once you have created your air-tight permission model, and you want to check how it applies to various users, you can see it via the **Permitted Documents for User** report. Using this report, you can select the **User** and document type and check how user permissions get applied.
 
-<img src="../../../../../assets/img/users-and-permissions/user-perms/permitted-documents.png" class="screenshot" alt="Permitted Documents for User report">
+<img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/permitted-documents.png" class="screenshot" alt="Permitted Documents for User report">
 
 {next}
