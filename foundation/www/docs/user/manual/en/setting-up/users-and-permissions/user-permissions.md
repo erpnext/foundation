@@ -20,13 +20,13 @@ When you create a new record you will have to specify
 
 ### Advanced control
 
-You can optionally apply user permission only for specific doctype by setting the doctype in the Applicable For field under Advanced Control.
-Setting **Applicable For** option will make the current user permission applicable only under the selected doctype master.
+You can optionally apply user permission only for specific Document Type by setting the Document Type in the Applicable For field under Advanced Control.
+Setting **Applicable For** option will make the current user permission applicable only under the selected Document Type master.
 
 <img src="../../../../../assets/img/users-and-permissions/user-perms/advanced-control.png" class="screenshot" alt="Creating a new user permission">
 In the above User Permission, user michael.corleone@gadgets.com will be able to access blog posts created by blogger Michael Corleone.
 
-**Note:** If **Applicable For** is not set, User Permission will applicable across all related doctypes.
+**Note:** If **Applicable For** is not set, User Permission will applicable across all related Document Types.
 
 ### Ignoring User Permissions on Certain Fields
 
