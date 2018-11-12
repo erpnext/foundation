@@ -4,3 +4,4 @@ erpnext-for-services-organization
 shipping-rule
 sales-persons-in-the-sales-transactions
 close-sales-order
+request-for-raw-materials-from-sales-order
