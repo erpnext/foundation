@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Production Plan
 
-Production Plan helps user to plan production aginst the multiple sales orders or the material requests. Also, it helps in Material Procuremnt planning for the raw-material item, based on the quantity of finished product to be manufactured.
+Production Plan helps user to plan production against multiple sales orders or the material requests. Also, it helps in Material Procurement planning for the raw-material item, based on the quantity of finished product to be manufactured.
 
 To use the Production Plan, go to:
 
@@ -41,7 +41,7 @@ To use the Production Plan, go to:
 <img class="screenshot" alt="Material Request Item" src="/docs/assets/img/manufacturing/material_request_items.png">
 
 ## Planning for Material Requests
-* Click on get raw materials for production button to fetech raw materials required in the production.
+* Click on get raw materials for production button to fetch raw materials required in the production.
 
 <img class="screenshot" alt="Material Request Plan" src="/docs/assets/img/manufacturing/material_request_plan.png">
 
