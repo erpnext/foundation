@@ -63,11 +63,15 @@ Inspection Required: If an incoming inspection (at the time of delivery from the
 
 Inspection Criteria: If a Quality Inspection is prepared for this Item, then this template of criteria will automatically be updated in the Quality Inspection table of the Quality Inspection. Examples of Criteria are: Weight, Length, Finish etc.
 
-### Purchase Details
+### Purchase, Replenishment Details
 
 <img alt="Item Purchase Details" class="screenshot" src="{{docs_base_url}}/assets/img/stock/item-purchase.png">
 
 <img class="screenshot" alt="Purchase details" src="{{docs_base_url}}/assets/img/stock/item-purchase.png">
+
+* **Is Purchase Item:** Checked if Item is purchased through a supplier and follows `Buying Cycle`.
+
+* **Is Customer Provided Item:** Checked if Item is provided by a customer and received through `Stock Entry - Material Receipt`. If Checked, `Customer` field is Mandatory as the default customer for `Material Request`.
 
 * **Lead time days:** Lead time days are the number of days required for the Item to reach the warehouse.
 

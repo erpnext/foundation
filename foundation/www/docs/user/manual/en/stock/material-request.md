@@ -10,7 +10,7 @@ To generate a Material Request manually go to:
 
 > Stock > Documents > Material Request > New
 
-#### Creating Material Request 
+#### Creating Material Request
 
 <img class="screenshot" alt="Material Request" src="{{docs_base_url}}/assets/img/buying/material-request.png">
 
@@ -27,6 +27,7 @@ A Material Request can be of type:
 * Material Transfer - If the requested material is to be shifted from one warehouse to another.
 * Material Issue - If the requested material is to be Issued.
 * Manufacture - If the requested material is to be Produced.
+* Customer Provided - If the requested material is to be provided by Customer.
 
 The User can also raise a [Request For Quotation](/docs/user/manual/en/buying/request-for-quotation.html) against a Material Request. To create a Request For Quotation the user can click on 'Make'.
 
