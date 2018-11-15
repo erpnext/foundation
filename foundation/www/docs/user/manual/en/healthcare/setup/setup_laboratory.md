@@ -1,9 +1,9 @@
 <!-- add-breadcrumbs -->
-# Laboratory
+# Setting Up Laboratory
 
-If you wish to use features of Laboratory, you can create Users with "Laboratory User". Lab Tests, Sample Collection etc. are only visible to users with this Role enabled.
+If you wish to use features of Laboratory, you can create Users with _Laboratory User_. Lab Tests, Sample Collection etc. are only visible to users with this Role enabled.
 
-Read [Healthcare Settings](https://erpnext.org/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up the Healthcare module.
+Read [Healthcare Settings](/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up the Healthcare module.
 
 ### Lab Test Templates
 Whenever you create a new Lab Test, the Lab Test document is loaded based on the template configured for that particular test. This means, you will have to have separate templates configured for each Lab Test.
@@ -16,7 +16,7 @@ After providing the Name for the Test you will have to select a Code and Item gr
 
 > The Standard Selling Rate field behaves similar to the Item Standard Selling Rate, updating this will not update the Selling Price List
 
-The Is Billable flag in Lab Test Template creates the Item, but as Disabled. Likewise, unchecking this flag will Enable the Item.
+The `Is Billable` flag in Lab Test Template creates the Item, but as Disabled. Likewise, unchecking this flag will Enable the Item.
 
 ###### Result Format
 Following are the result formats available in ERPNext Healthcare
@@ -24,7 +24,7 @@ Following are the result formats available in ERPNext Healthcare
 * Single: select this format for results which require only a single input, result UOM and normal value
 * Compound: allows you to configure results which require multiple input fields with corresponding event names, result UOMs and normal values
 * Descriptive: this format is helpful for results which have multiple result components and corresponding result entry fields.
-* Grouped: You can group test templates which are already configured and combine as a single test. For such templates select "Grouped".
+* Grouped: You can group test templates which are already configured and combine as a single test. For such templates select `Grouped`.
 * No Result: Select this if you don not need to enter or manage test result. Also, no Lab Test document will be created. e.g., Sub Tests for Grouped results.
 
 ###### Normal values

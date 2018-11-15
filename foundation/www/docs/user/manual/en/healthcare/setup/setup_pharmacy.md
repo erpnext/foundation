@@ -1,15 +1,15 @@
 <!-- add-breadcrumbs -->
-# Pharmacy
-ERPNext Healthcare do not have a Pharmacy module as such. However, [ERPNext Stock](https://erpnext.org/docs/user/manual/en/stock), [Buying](https://erpnext.org/docs/user/manual/en/buying) and [Accounts](https://erpnext.org/docs/user/manual/en/accounts) Module will do all that's needed to seamlessly manage your Pharmacy Stock as well as other supplies, their billing and purchases.
+# Setting Up Pharmacy
+ERPNext Healthcare do not have a Pharmacy module as such. However, [ERPNext Stock](/docs/user/manual/en/stock), [Buying](/docs/user/manual/en/buying) and [Accounts](/docs/user/manual/en/accounts) Module will do all that's needed to seamlessly manage your Pharmacy Stock as well as other supplies, their billing and purchases.
 
-For a Healthcare setup, features like [Items](https://erpnext.org/docs/user/manual/en/stock/item) with Reorder Levels, [Batch Number and Expiry Dates](https://erpnext.org/docs/user/manual/en/stock/batch) etc. will be worth looking at.
+You can also consider creating multiple [POS Profiles](/docs/user/manual/en/setting-up/pos-setting) for each Pharmacy user. ERPNext Stock module features like [Items](/docs/user/manual/en/stock/item) with Reorder Levels and [Auto Reordering](/docs/user/manual/en/stock/item/reorder), [Batch Number and Expiry Dates](/docs/user/manual/en/stock/batch) etc. will be worth looking at.
 
-ERPNext Healthcare adds a few custom fields to `Item` document so that you can effectively configure medicines. Also read [Healthcare Settings](https://erpnext.org/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up default Items, Accounts etc.
+ERPNext Healthcare adds a few custom fields to `Item` document so that you can effectively configure medicines. Also read [Healthcare Settings](/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up default Items, Accounts etc.
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/items_custom_fields.png">
 
-> Note that these fields are made available only if your setup has Healthcare domain enabled.
+>Note that these fields are made available only if your setup has Healthcare domain enabled.
 
-Moreover, all the three modules comes with exhaustive reports, and you can even configure auto email to to have reports emailed automatically emailed to you.
+Furthermore, all the three modules comes with exhaustive reporting and you can also configure auto email to have reports emailed automatically to you.
 
 {next}

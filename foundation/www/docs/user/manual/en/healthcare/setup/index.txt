@@ -1,4 +1,5 @@
 healthcare_settings
 setup_practice
-setup_laboratorySetting
+setup_inpatient
+setup_laboratory
 setup_pharmacy

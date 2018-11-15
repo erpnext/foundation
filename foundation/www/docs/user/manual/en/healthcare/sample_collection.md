@@ -12,6 +12,6 @@ You can optionally automate the creation of Sample Collection document for each 
 
 You will have to enter the sample collected date and time to Submit the document signaling that the sample is collected.
 
-Printing of sample identification tags is also possible. By default a sample sticker print template is made available, but you can always customize this directly using the [Print Format Builder](https://erpnext.org/docs/user/manual/en/setting-up/print/print-format-builder) or even create a custom [Print Format](https://erpnext.org/docs/user/manual/en/customize-erpnext/print-format) if required.
+Printing of sample identification tags is also possible. By default a sample sticker print template is made available, but you can always customize this directly using the [Print Format Builder](/docs/user/manual/en/setting-up/print/print-format-builder) or even create a custom [Print Format](/docs/user/manual/en/customize-erpnext/print-format) if required.
 
 {next}

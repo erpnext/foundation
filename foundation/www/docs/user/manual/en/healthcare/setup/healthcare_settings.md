@@ -1,3 +1,4 @@
+<!-- add-breadcrumbs -->
 # Healthcare Settings
 
 Most of the global settings for the Healthcare module can be done via the Healthcare Settings page.
