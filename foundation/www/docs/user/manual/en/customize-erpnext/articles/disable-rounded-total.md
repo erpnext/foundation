@@ -7,9 +7,9 @@ All the sales transactions like Sales Order, Sales Invoice has Rounded Total in 
 
 Follow steps given below to hide rounded total from Standard Print Formats, for all the sales transactions.
 
-#### Step 1: Global Settings
+#### Step 1: Global Defaults
 
-`Setup > Settings > Global Settings`
+`Setup > Settings > Global Defaults`
 
 #### Step 2: Disable Rounded Total
 
