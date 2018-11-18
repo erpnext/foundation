@@ -12,7 +12,7 @@ As part of the Admission Order, the practitioner can provide necessary details a
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_admission_order.png">
 
-On ordering a patient for admission, ERPNext Healthcare creates an IP record for the Patient with all instructions provided by the Practitioner. Any prescribed medications and investigations or procedure orders as part of the ordered Encounter will be carried to the IP record.
+On ordering a patient for admission, ERPNext Healthcare creates an Inpatient Record for the Patient with all instructions provided by the Practitioner. Any prescribed medications and investigations or procedure orders as part of the ordered Encounter will be carried to the IP record.
 
 > Note: Field Level permissions are by default applied so that Diagnosis information, Admission Instructions and other details are only visible to users with roles Physician and Nursing User enabled
 
@@ -20,11 +20,11 @@ Inpatient admission officer can see the Inpatient Record with status _Admission 
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_admit_patient.png">
 
-Once a Service Unit is assigned for the patient, the Inpatient Record status will be updated to _Admitted_
+Once a Service Unit is assigned for the patient, the Inpatient Record status will be updated to _Admitted_.
 
 ## Discharge
 
-Similar to the Schedule Admission, Patient Encounters for admitted Patients will have the option to `Order Discharge`.
+Similar to the Schedule Admission, Patient Encounters for admitted Patients will have the option to `Order Discharge` triggering the status of the impatient Record to _Discharge Scheduled_.
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_order_discharge.png">
 
@@ -32,7 +32,9 @@ The Practitioner can order an inpatient's discharge through a Patient Encounter 
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_discharge_order.png">
 
-The admission officer can print the Discharge Notes from the Inpatient Record while recording the patient's leave.
+The admission officer can print the Discharge Notes from the Inpatient Record and use the `Discharge` button to record patient's leave and marking the status to _Discharged_
+
+>Note: ERPNext healthcare validates that all services availed during the stay at the facility are Invoiced to successfully complete the `Discharge` option. However, note that this validation _does not_ consider the Invoice status.
 
 ## Transfer
 The Inpatient Record holds all data related to the Patient's stay at the facility including all the wards beds (Service Unit) utilized.

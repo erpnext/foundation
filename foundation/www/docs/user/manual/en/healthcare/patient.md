@@ -9,6 +9,8 @@ In ERPNext Healthcare, the Patient document corresponds any individual who is th
 
 The Patient document holds most details that are required to identify and qualify a patient. You can enter as much information available while creating the Patient. All information in the patient document is presented on the Consultation screen for easy lookup and you can always update this information. Other data like observations, vital signs etc. are all linked to the Patient document. These could be recorded during patient encounters and will be available as part of the Patient Medical History.
 
+The Patient document holds the Patient barcode and can be used in any the default print formats or any [Custom Print Formats](docs/user/manual/en/customize-erpnext/print-format.html) that you create for printing patient identification tags.
+
 ### Patient as a Customer
 
 ERPNext, especially the Accounts module, makes use of **Customer** document for booking all transactions. So, you may want to associate every Patient to be associated with a Customer in ERPNext. By default, ERPNext Healthcare creates a Customer alongside a Patient and links to it - every transaction against a Patient is booked against the associated Customer. If, for some reason you do not intend to use the ERPNext Accounts module you can turn this behavior off by unchecking this flag

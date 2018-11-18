@@ -40,7 +40,7 @@ If you wish to override default accounts settings and set custom Income and rece
 ### Laboratory Settings
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_5.png">
 
-* **Create Lab Test(s) on Sales Invoice Submit**: If your facility creates Invoices and collect payments from Patients before performing the Lab Test, you can enable this option to create Lab tests automatically for all the Tests that are billed. If you have enabled _Manage Sample Collection_ and has a _Sample_ configured in the Lab Test Template, a Sample Collection document will also be created.
+* **Create Lab Test(s) on Sales Invoice Submit**: If your facility creates Invoices and collect payments from Patients before performing the Lab Test, you can enable this option to create Lab tests automatically for all the Tests that are billed. If you have enabled `Manage Sample Collection` and has a _Sample_ configured in the Lab Test Template, a Sample Collection document will also be created.
 
 * **Manage Sample Collection**: If this flag is enabled, every time you create a Lab Test, a Sample Collection document will be created.
 

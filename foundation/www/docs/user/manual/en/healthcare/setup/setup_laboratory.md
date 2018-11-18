@@ -3,7 +3,7 @@
 
 If you wish to use features of Laboratory, you can create Users with _Laboratory User_. Lab Tests, Sample Collection etc. are only visible to users with this Role enabled.
 
-Read [Healthcare Settings](/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up the Healthcare module.
+Read [Healthcare Settings](/docs/user/manual/en/healthcare/setup/healthcare_settings.html) for setting up the Healthcare module.
 
 ### Lab Test Templates
 Whenever you create a new Lab Test, the Lab Test document is loaded based on the template configured for that particular test. This means, you will have to have separate templates configured for each Lab Test.

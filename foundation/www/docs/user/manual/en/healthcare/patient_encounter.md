@@ -1,20 +1,19 @@
 <!-- add-breadcrumbs -->
 # Patient Encounter
 ERPNext Healthcare allows you to record every encounter with patients through the Patient Encounter document. You can create a Patient Encounter based on a previously booked Appointment or directly by creating a new Patient Encounter
+
 `Healthcare > Patient Care > Patient Encounter`
 
-If you are creating the Patient Encounter document from an Appointment, Patient and other related data will automatically be populated else you can search the Patient by name, email phone number etc. The Patient Details section will list the latest Vital Signs record of the patient and other information captured in the Patient screen.
+You can also create and record encounter details for a patient from Patient Appointment, the Patient Encounter or the Patient master documents by using the `Create > Patient Encounter` button. If creating a Patient Encounter manually, you can search for a Patient by name, email phone number etc. In the Patient Encounter document, all Patient related details will automatically be populated enabling easy access to relevant data. The Patient Details section will list the latest Vital Signs record of the patient and other information captured in the Patient screen. You can also look up the Patient Health History by using the `View > Medical Record` button.
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/encounter_1.png">
 
 ### Assessment
-
 Encounter Impression section allows you to select (or create new) Complaints and your Diagnosis based on the presented complaints. You can opt to include the captured data in Patient Encounter print by selecting the "In Print" flag
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/encounter_2.png">
 
 ### Order Entry
-
 You can prescribe medicines in the Drug Prescription section by selecting the drug codes (Stock Item) and appropriate dosages. If you are not managing Stock and Items are not configured, you can simply enter the Medicine name and strength in the Strength field which will printed.
 
 Ordering a laboratory investigation is similar and if you have Lab Tests configured, you can select from the list. Or key in the Lab Test name to be printed as part of the Prescription. You can also order a Clinical Procedure to performed in a similar fashion.
