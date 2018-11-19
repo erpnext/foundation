@@ -3,7 +3,7 @@
 
 Item alternative feature is very useful in manufacturing industries, if the raw material defined in the BOM is not available during the production process then their respective available alternative item used to complete the production process.
 
-To make item alaternative for an item, kindly enable the "Allow Alternative Item" in the item.
+To make item alternative for an item, kindly enable the "Allow Alternative Item" in the item.
 <img class="screenshot" alt="Item" src="{{docs_base_url}}/assets/img/manufacturing/allow-alternative-item.png">
 
 * To make item alternative, goto module Stock > Items and Pricing > Item Alternative
