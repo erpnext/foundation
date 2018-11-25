@@ -184,10 +184,10 @@ it is up to you to modify or add or remove accounts.
 
 Typically, you might want to create Accounts for
 
-  * Types of Expenses (travel, salaries, telephone etc) under Expenses.
-  * Taxes (VAT, Sales Tax etc based on your country) under Current Liabilities.
-  * Types of Sales (for example, Product Sales, Service Sales etc.) under Income.
-  * Types of Assets (building, machinery, furniture etc.) under Fixed Assets.
+  * Travel, salaries, telephone, etc. under **Expenses**.
+  * Value Added Tax (VAT), Sales Tax, etc. under **Current Liabilities**.
+  * Product Sales, Service Sales, etc. under **Income**.
+  * Building, machinery, furniture, etc. under **Fixed Assets**.
 
 
 <div>
