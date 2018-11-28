@@ -45,4 +45,4 @@ You can also Archive and Restore the columns added in a Kanban board. To do so c
 
 You can create multiple Kanban Boards based on different filters. To save filters for a Kanban Board, click on Menu and then "Save filters"
 
-<img class="screenshot" alt="Archive and Restore in Kanban Board" src="{{docs_base_url}}/assets/img/customize/kanban-board-8.gif">
+<img class="screenshot" alt="Save filters in Kanban Board" src="{{docs_base_url}}/assets/img/customize/kanban-board-8.gif">
