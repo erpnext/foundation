@@ -43,4 +43,9 @@ To understand how ERPNext allows you configure leaves for employees, check [Leav
     </iframe>
 </div>
 
+### Leave Application and Attendance Link Flowchart
+
+<img class="screenshot" alt="Leave Application and Attendance Link"
+	src="{{docs_base_url}}/assets/img/human-resources/LeaveApplication-Attendance-Link.png">
+
 {next}
