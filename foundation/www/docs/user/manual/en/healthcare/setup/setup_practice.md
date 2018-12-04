@@ -11,6 +11,8 @@ To organize your clinic into departments, you can create multiple Medical Depart
 ## Appointment Type
 You can create masters for various type of Appointments. Appointment Type allows you to predefine the duration of the appointment so that while selecting Appointment Type, the duration gets set in the Appointment automatically. This will allow you to override the duration of appointments set by the Practitioner Schedule and the time slots will adjust to the next available time automatically.
 
+>Note: To disable this behavior, you can enable `Always Use Slot Duration as Appointment Duration` in the Practitioner master. This is will always set the slot duration configured in the Practitioner Schedule as the Appointment duration. 
+
 You can also set a color for each Appointment Type which will help you identify the appointments of a particular type in the Calendar view.
 
 `Healthcare > Setup > Appointment Type > New Appointment Type`
