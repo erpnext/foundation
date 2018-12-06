@@ -5,6 +5,7 @@ You can use this document to map all the clinical procedures, for example, wound
 You can lookup and book Patient Appointment from the ordered procedures for a patient by using the `Get Prescribed Procedures` button available in Patient Appointment. The performing practitioner can easily create a new procedure from a booked appointment using the `Create > Procedure` button.
 
 You can also create a Clinical Procedure by going to
+
 `Healthcare > Patient Care > New Clinical Procedure`
 
 If you are creating a Clinical Procedure manually, you may want to select a Patient Appointment for the procedure so that all details as provided by the Practitioner while ordering the procedure will be made available. Or you can also select a Clinical Procedure template so as to fetch the details of the procedure as configured in the template.
