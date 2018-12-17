@@ -14,7 +14,7 @@ Report Builder is an in-built report customization tool in ERPNext. This allows 
 
 ### 2. Query Report
 
-Query Report is written in SQL which pull values from account's database and fetch in the report. Though SQL queries can be written from front end, like HTML, its restricted in hosted users. Because it will allow users with no access to specific report to query data directly from the database.
+Query Report is written in SQL which pull values from account's database and fetch in the report. Though SQL queries can be written from front end, like HTML, it's restricted for erpnext.com cloud users. Because it will allow users with no access to specific report to query data directly from the database.
 
 Check Purchase Order Item to be Received report in Stock module for example of Query report. Click [here](https://frappe.io/docs/user/en/guides/reports-and-printing/how-to-make-query-report.html) to learn how to create Query Report.
 
