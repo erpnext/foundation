@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Role Based Permissions
+# Navigation
 
 Frappe offers two primary views: Desktop and Desktop Sidebar; Desktop is default view.
 
