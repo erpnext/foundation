@@ -72,6 +72,9 @@ These reports help you to track the outstanding amount of Customers and Supplier
 
 <img alt="Accounts Receivable" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/accounts-receivable.png">
 
+For more information on accounts receivable report based on payment terms
+<a href="accounts-receivable.md">click here</a>
+
 ### Sales and Purchase Register
 
 The Sales and Purchase Register report shows all the Sales and Purchase transactions for a given period with invoiced amount and tax details. In this report, each taxes has a separate column, so you can easily get total taxes collected / paid for a period for each individual tax type, which helps to pay the taxes to government.
@@ -112,7 +115,7 @@ Another very useful report is invoice trends, From this report you can easily ge
 
 ### Other Reports:
 
-- **Ordered Items To Be Billed:** The report shows the items which has been ordered by customers, against which Sales 
+- **Ordered Items To Be Billed:** The report shows the items which has been ordered by customers, against which Sales
 Invoice has not been created / partially been created.
 - **Delivered Items To Be Billed:** The items which has been delivered to the customers, but Sales Invoice has not been created / partially been created.
 - **Purchase Order Items To Be Billed:** The report shows the items which has been ordered from the suppliers, but Purchase Invoice has not been created / partially been created.
