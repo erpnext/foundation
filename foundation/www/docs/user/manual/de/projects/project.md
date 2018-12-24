@@ -8,7 +8,7 @@ Das Projektmanagement in ERPNext ist aufgabengesteuert. Sie können ein Projekt 
 
 ### Aufgaben verwalten
 
-Ein Projekt kann in mehrere verschiedene Aufgaben aufgeteilt werden. 
+Ein Projekt kann in mehrere verschiedene Aufgaben aufgeteilt werden.
 Eine Aufgabe kann über das Projektdokument selbst erstellt werden oder über die Schaltfläche [Aufgabe](/docs/user/manual/de/projects/tasks.html).
 
 <img class="screenshot" alt="Projekt" src="{{docs_base_url}}/assets/img/project/project_task.png">
@@ -55,7 +55,7 @@ Sie können [Aufwandsabrechnungen](/docs/user/manual/de/human-resources/expense-
 
 ### Kostenstelle
 
-Sie können zu einem Projekt eine [Kostenstelle](/docs/user/manual/de/accounts/setup/cost-center.html) erstellen oder Sie können eine existierende Kostenstelle verwenden um alle Aufwände die zu einem Projekt entstehen mitzuverfolgen.
+Sie können zu einem Projekt eine [Kostenstelle](/docs/user/manual/de/accounting/setup/cost-center.html) erstellen oder Sie können eine existierende Kostenstelle verwenden um alle Aufwände die zu einem Projekt entstehen mitzuverfolgen.
 
 <img class="screenshot" alt="Projekt - Kostenstelle" src="{{docs_base_url}}/assets/img/project/project_cost_center.png">
 

@@ -13,7 +13,7 @@ Steps:
 
   * As existing warehouses are linked to stock transactions which does not have corresponding accounting entries, those warehouses can not be used for perpetual inventory. You have to create new warehouses for the future stock transactions which will be linked to their respective accounts. While creating new warehouses, select an account group under which the child account for the warehouse will be created.
 
-  * Setup the following default accounts for each Company 
+  * Setup the following default accounts for each Company
 
     * Stock Received But Not Billed
     * Stock Adjustment Account
@@ -22,9 +22,9 @@ Steps:
   * Activate Perpetual Inventory
 
 	`Explore > Accounts > Accounts Settings`
-	
-	<img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-1.png">
-  
+
+	<img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounting/perpetual-1.png">
+
 
   * Create Stock Entry (Material Transfer) to transfer available stock from existing warehouse to new warehouse. As stock will be available in the new warehouse, you should select the new warehouse for all the future transactions.
 

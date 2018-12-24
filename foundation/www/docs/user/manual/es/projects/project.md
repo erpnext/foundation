@@ -77,7 +77,7 @@ El sistema actualizará el monto total de las reclamaciones de gastos en la secc
 
 ### Centro de Costo
 
-Puedes crear un [Cost Center](/docs/user/manual/en/accounts/setup/cost-center.html) sobre un proyecto o usar un centro de costo existente para hacer el seguimiento de todos los gastos realizados al proyecto.
+Puedes crear un [Cost Center](/docs/user/manual/en/accounting/setup/cost-center.html) sobre un proyecto o usar un centro de costo existente para hacer el seguimiento de todos los gastos realizados al proyecto.
 
 <img class="screenshot" alt="Project - Cost Center" src="{{docs_base_url}}/assets/img/project/project_cost_center.png">
 

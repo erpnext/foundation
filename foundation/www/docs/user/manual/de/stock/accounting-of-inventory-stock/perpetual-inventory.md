@@ -4,7 +4,7 @@
 
 In der Ständigen Inventur erstellt das System Buchungen für jede Lagertransaktion, so dass das Lager und der Kontostand immer synchron bleiben. Der Kontostand wird für jedes Lager mit der zutreffenden  Kontobezeichnung verbucht. Wenn das Lager gespeichert wird, erstellt das System automatisch eine Kontobezeichnung mit dem selben Namen wie das Lager. Da für jedes Lager ein Kontostand verwaltet wird, sollten Sie Lager auf Basis der in ihnen eingelagerten Artikel (Umlaufvermögen/Anlagevermögen) erstellen.
 
-Wenn Artikel in einem bestimmten Lager ankommen, erhöht sich der Stand des Vermögenskontos (das mit dem Lager verknüpft ist). Analog dazu wird ein Aufwand verbucht, wenn Sie Waren ausliefern, und der Stand des Vermögenskontos nimmt ab, basierend auf der Bewertung der entsprechenden Artikel. 
+Wenn Artikel in einem bestimmten Lager ankommen, erhöht sich der Stand des Vermögenskontos (das mit dem Lager verknüpft ist). Analog dazu wird ein Aufwand verbucht, wenn Sie Waren ausliefern, und der Stand des Vermögenskontos nimmt ab, basierend auf der Bewertung der entsprechenden Artikel.
 
 ### Aktivierung
 
@@ -26,7 +26,7 @@ Wir nehmen folgenden Kontenplan und folgende Lagereinstellungen für Ihre Firma 
 
 Kontenplan
 
-  * Vermögen (Soll) 
+  * Vermögen (Soll)
     * Umlaufvermögen
     * Forderungen
       * Jane Doe
@@ -42,7 +42,7 @@ Kontenplan
     * Kurzfristige Verbindlichkeiten
     * Verbindlichkeiten aus Lieferungen und Leistungen
       * East Wind Inc.
-    * Lagerverbindlichkeiten 
+    * Lagerverbindlichkeiten
       * Lagerware erhalten aber noch nicht abgerechnet
     * Steuerverbindlichkeiten
       * Dienstleistungssteuer
@@ -134,11 +134,11 @@ Nehmen wir an, Sie haben 10 Stück des Artikels "RM0001" zu 200€ und 5 Stück 
 <p><strong>Lagerbuch</strong>
 </p>
 
-<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-receipt-sl-1.png">
+<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-receipt-sl-1.png">
 
 **Hauptbuch:**
 
-<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-receipt-gl-2.png">
+<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-receipt-gl-2.png">
 
 Um ein System der doppelten Buchhaltung zu erhalten, werden dadurch, dass sich der Kontensaldo durch den Kaufbeleg erhöht, die Konten "In Verkaufsstellen" und "Anlagevermögen im Lager" belastet und das temporäre Konto "Lagerware erhalten aber noch nicht abgerechnet" entlastet. Zum selben Zeitpunkt wird eine negative Aufwendung auf das Konto "In der Bewertung enthaltene Kosten" verbucht, um die Bewertung hinzuzufügen und um eine doppelte Aufwandsverbuchung zu vermeiden.
 
@@ -150,7 +150,7 @@ Wenn eine Rechnung des Lieferanten für den oben angesprochenen Kaufbeleg eintri
 
 #### Hauptbuch
 
-<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-pinv-gl-3.png">
+<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-pinv-gl-3.png">
 
 Hier wird das Konto "Lagerware erhalten aber noch nicht bewertet" belastet und hebt den Effekt des Kaufbeleges auf.
 
@@ -207,22 +207,22 @@ Nehmen wir an, dass Sie eine Kundenbestellung von "Utah Automation Services" üb
 
 **Lagerbuch**
 
-<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-dn-sl-4.png">
+<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-dn-sl-4.png">
 
 **Hauptbuch**
 
-<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-dn-gl-5.png">
+<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-dn-gl-5.png">
 
 Da der Artikel aus dem Lager "In Verkaufsstellen" geliefert wird, wird das Konto "In Verkaufsstellen" entlastet und ein Betrag in gleicher Höhe dem Aufwandskonto "Selbstkosten" belastet. Der belastete/entlastete Betrag ist gleich dem Gesamtwert (Einkaufskosten) des Verkaufsartikels. Und der Wert wird gemäß der bevorzugten Bewertungsmethode (FIFO/Gleitender Durchschnitt) oder den tatsächlichen Kosten eines serialisierten Artikels kalkuliert.
 
-      
-    In diesem Beispiel gehen wir davon aus, dass wir als Berwertungsmethode FIFO verwenden. 
-    Bewertungpreis  = Einkaufpreis + In der Bewertung enthaltene Abgaben/Gebühren 
-                    = 200 + (250 * (2000 / 2500) / 10) 
+
+    In diesem Beispiel gehen wir davon aus, dass wir als Berwertungsmethode FIFO verwenden.
+    Bewertungpreis  = Einkaufpreis + In der Bewertung enthaltene Abgaben/Gebühren
+                    = 200 + (250 * (2000 / 2500) / 10)
                     = 220
-    Gesamtsumme der Bewertung = 220 * 5 
+    Gesamtsumme der Bewertung = 220 * 5
                             = 1100
-        
+
 
 * * *
 
@@ -232,11 +232,11 @@ Nehmen wir an, dass Sie zur obigen Bestellung keinen Lieferschein erstellt haben
 
 **Lagerbuch**
 
-<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-inv-sl-6.png">
+<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-inv-sl-6.png">
 
 **Hauptbuch**
 
-<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-inv-gl-7.png">
+<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-inv-gl-7.png">
 
 Hier werden, im Gegensatz zu den normalen Buchungen für Rechnungen, die Konten "In Verkaufsstellen" und "Selbstkosten" basierend auf der Bewertung beeinflusst.
 
@@ -269,11 +269,11 @@ Hier werden, im Gegensatz zu den normalen Buchungen für Rechnungen, die Konten 
 
 **Lagerbuch**
 
-<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-receipt-sl.png">
+<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-st-receipt-sl.png">
 
 **Hauptbuch**
 
-<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-receipt-gl.png">
+<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-st-receipt-gl.png">
 
 * * *
 
@@ -304,11 +304,11 @@ Hier werden, im Gegensatz zu den normalen Buchungen für Rechnungen, die Konten 
 
 **Lagerbuch**
 
-<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-issue-sl.png">
+<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-st-issue-sl.png">
 
 **Hauptbuch**
 
-<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-issue-gl.png">
+<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-st-issue-gl.png">
 
 * * *
 
@@ -341,8 +341,8 @@ Hier werden, im Gegensatz zu den normalen Buchungen für Rechnungen, die Konten 
 
 **Lagerbuch**
 
-<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-transfer-sl.png">
+<img class="screenshot" alt="Lagerbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-st-transfer-sl.png">
 
 **Hauptbuch**
 
-<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-transfer-gl.png">
+<img class="screenshot" alt="Hauptbuch" src="{{docs_base_url}}/assets/img/accounting/perpetual-st-transfer-gl.png">

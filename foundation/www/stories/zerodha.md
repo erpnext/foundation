@@ -19,7 +19,7 @@ We worked with HR team to understand the existing processes and looked for the o
 
 #### What modules did you end up using? And how?
 
-We use Accounts and HR module. In HR, we use attendance, appraisals, employee records,  recruitment and expense claims. We use the accounting module for our customer ledgers and our IT asset management.
+We use Accounting and HR module. In HR, we use attendance, appraisals, employee records,  recruitment and expense claims. We use the accounting module for our customer ledgers and our IT asset management.
 
 In the attendance module, data is imported from a biometric system every day. Employees get to see their attendance, leave balances and can also apply for leaves. All employee records are maintained in ERPNext. We use the recruitment module to maintain our job vacancy lists and process applicants.
 

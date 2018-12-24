@@ -6,9 +6,9 @@ ERPNext Version 11 brings tons of new features in almost every module. Here are 
 
 You can manage multiple Loyalty Programs right within EPRNext. Set multiple tiers, define different rules for earning and redemption of points. Keep track of points earned by each customer against each transaction.
 
-[Learn more about the Loyalty Program](https://erpnext.org/docs/user/manual/en/accounts/loyalty-program)
+[Learn more about the Loyalty Program](https://erpnext.org/docs/user/manual/en/accounting/loyalty-program)
 
-<img class='screenshot' alt='Loyalty Program' src='https://erpnext.org/docs/assets/img/accounts/loyalty-program.png'>
+<img class='screenshot' alt='Loyalty Program' src='https://erpnext.org/docs/assets/img/accounting/loyalty-program.png'>
 
 ### Subscriptions
 

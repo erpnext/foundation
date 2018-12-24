@@ -48,7 +48,7 @@ to create an Account in another Company, just change the Company value and
 By default, the system does not generate an account for every customer. All
 Customers can be booked in one account called Debitors. In order to manage a
 separate account for each customer, you have to first create the account under
-Accounts Receivable in the [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts.html) and then add it on the customer's
+Accounts Receivable in the [Chart of Accounts](/docs/user/manual/en/accounting/chart-of-accounts.html) and then add it on the customer's
 form accounts table.
 
 ### Customer Settings

@@ -24,16 +24,16 @@ ERPNext will now automatically calculate tax to be withheld from suppliers based
 
 If you are servicing subscriptions or contracts that go across financial periods, it makes sense to book revenue in the correct period so you can defer the tax liability to the actual period where you deliver the service. ERPNext will now let you setup subscriptions and automatically book revenue monthly or quarterly based on your settings.
 
-[Learn about Deferred Revenue](https://erpnext.org/docs/user/manual/en/accounts/deferred-revenue)
+[Learn about Deferred Revenue](https://erpnext.org/docs/user/manual/en/accounting/deferred-revenue)
 
 <img class='screenshot' alt='Setting up Deferred Revenue' src=
-'https://erpnext.org/docs/assets/img/accounts/deferred-invoice.gif'>
+'https://erpnext.org/docs/assets/img/accounting/deferred-invoice.gif'>
 
 ### Inter Company Transactions
 
 Inter-company transactions allow you to post validated back-to-back transactions across companies. These include Journal Entries, Sales and Purchase Invoices. In the company master you have to specify which companies are allowed to transact with each other and then you can make inter company transactions on those companies.
 
-[Learn more about Inter Company Journal Entry](https://erpnext.org/docs/user/manual/en/accounts/inter-company-journal-entry) and [Inter Company Invoice](https://erpnext.org/docs/user/manual/en/accounts/inter-company-invoices)
+[Learn more about Inter Company Journal Entry](https://erpnext.org/docs/user/manual/en/accounting/inter-company-journal-entry) and [Inter Company Invoice](https://erpnext.org/docs/user/manual/en/accounting/inter-company-invoices)
 
 ### Standalone Credit / Debit Note
 
@@ -51,7 +51,7 @@ You can now automatically pass a reverse Journal Entry to that will swap the deb
 
 You can now track Bank Guarantees in given to customers and track its expiry via Email Alert
 
-[Learn more about Bank Guarantee](https://erpnext.org/docs/user/manual/en/accounts/bank-guarantee)
+[Learn more about Bank Guarantee](https://erpnext.org/docs/user/manual/en/accounting/bank-guarantee)
 
 ### Cost Center Numbering
 

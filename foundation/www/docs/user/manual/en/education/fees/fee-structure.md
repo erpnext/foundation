@@ -3,7 +3,7 @@
 
 A Fee Structure is a template that can be used while making Fees records or generating them via the Fee Schedule. In the Accounts section, you can set also the different accounts as for the Fees is an accounting transaction.
 
-You can create the Fee Structure directly from 
+You can create the Fee Structure directly from
 
 > Education > Fees > Fee Structure > New Fee Structure
 
@@ -17,9 +17,9 @@ If the Fee amount doesn't change every academic year then Fee Structure can be c
 
 #### Accounting Impact
 
-You can set the "Income Account" and "Receivable Account" in the Accounts section which refers to an Account of you [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts.md). You must also mention the Cost Center in which your income will be booked.
+You can set the "Income Account" and "Receivable Account" in the Accounts section which refers to an Account of you [Chart of Accounts](/docs/user/manual/en/accounting/chart-of-accounts.md). You must also mention the Cost Center in which your income will be booked.
 
-If you are going to use this in the Fee Schedule, you must select the Accounts carefully as Fee Schedule updates the respected Accounts in bulk. 
+If you are going to use this in the Fee Schedule, you must select the Accounts carefully as Fee Schedule updates the respected Accounts in bulk.
 
 #### Video Tutorial for Fee Structure
 

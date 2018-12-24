@@ -11,7 +11,7 @@ You can find the Discount (%) field in the Item table. Discount (%) is applied o
 
 The feature of Discount (%) is available in all sales and purchase transactions.
 
-You can use Pricing Rule for auto-application of Discount (%). [Click here to learn how Pricing Rule functions.](/docs/user/manual/en/accounts/pricing-rule.html)
+You can use Pricing Rule for auto-application of Discount (%). [Click here to learn how Pricing Rule functions.](/docs/user/manual/en/accounting/pricing-rule.html)
 
 #### 2. Discount on Net Total and Grand Total
 

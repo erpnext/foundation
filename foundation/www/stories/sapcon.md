@@ -20,7 +20,7 @@ One of our key challenges is to make more than 1 million items and their BOMs ac
 
 #### What modules did you end up using? And how?
 
-Stock, Manufacturing, Selling, CRM, Buying, Accounts, in that order.
+Stock, Manufacturing, Selling, CRM, Buying, Accounting, in that order.
 
 #### What are the best things about ERPNext?
 

@@ -17,7 +17,7 @@ Since we are self hosting, I had to learn a bit about using Linux and MySQL. It 
 
 #### What modules did you end up using? And how?
 
-We are very happy with Accounts, Selling, Buying, HR, and projects. We tried using stock and manufacturing for sometime and then dropped it. We'd like to use CRM but it's very basic and not useful compared to other options in the market.
+We are very happy with Accounting, Selling, Buying, HR, and projects. We tried using stock and manufacturing for sometime and then dropped it. We'd like to use CRM but it's very basic and not useful compared to other options in the market.
 
 #### What are the best things about ERPNext?
 

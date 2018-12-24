@@ -24,5 +24,5 @@ If auto creation of Material Request is failed, User with Purchase Manager role 
 **An error occurred for certain Items while creating Material Requests based on Re-order level.**
 **Date 01-04-2016 not in any Fiscal Year.**
 
-One of the reason of error could be Fiscal Year as well. Click [here](/docs/user/manual/en/accounts/articles/fiscal-year-error.html) to learn more about it.
+One of the reason of error could be Fiscal Year as well. Click [here](/docs/user/manual/en/accounting/articles/fiscal-year-error.html) to learn more about it.
 <!-- markdown -->
