@@ -4,7 +4,7 @@
 Along with Role based permissions, you can also set user level permissions that are based on rules that are evaluated against the data contained in the document being accessed. This is particularly useful when you want to restrict based on:
 
 1. Allow user to access data belonging to one Company
-1. Allow user to access data related to a specific Customer or Territory
+2. Allow user to access data related to a specific Customer or Territory
 
 ### Creating User Permissions
 
@@ -13,10 +13,20 @@ To create a User Permission, go to Setup > Permission > User Permissions
 When you create a new record you will have to specify
 
 1. The user for which the rule has to be applied
-1. The type of document which will be allowed (for example "Company")
-1. The specific item that you want to allow (the name of the "Company)
+2. The type of document which will be allowed (for example "Company")
+3. The specific item that you want to allow (the name of the "Company)
 
 <img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/new-user-permission.png" class="screenshot" alt="Creating a new user permission">
+
+### Advanced control
+
+You can optionally apply user permission only for specific Document Type by setting the Document Type in the Applicable For field under Advanced Control.
+Setting **Applicable For** option will make the current user permission applicable only under the selected Document Type master.
+
+<img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/advanced-control.png" class="screenshot" alt="Creating a new user permission">
+In the above User Permission, user michael.corleone@gadgets.com will be able to access blog posts created by blogger Michael Corleone.
+
+**Note:** If **Applicable For** is not set, User Permission will applicable across all related Document Types.
 
 ### Ignoring User Permissions on Certain Fields
 
