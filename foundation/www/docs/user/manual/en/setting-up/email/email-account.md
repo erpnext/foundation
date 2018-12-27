@@ -45,7 +45,7 @@ If you would like ERPNext to notify you if an email is unreplied for a certain a
 
 
 <div class="embed-container">
-    <iframe src="https://www.youtube.com/embed/YFYe0DrB95o?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/ChsFbIuG06g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 {next}
