@@ -4,7 +4,7 @@ Large Enterprises have a large number of assets and they form a large part of th
 
 ### Serialised Assets
 
-Assets in ERPNext are not integrated with Serial Numbers so that you can directly create Serialised Assets from Purchase Invoices. This is ideal if you are buying large number of assets like laptops or furniture and want to track each asset separately with a Serial Number.
+Assets in ERPNext are now integrated with Serial Numbers so that you can directly create Serialised Assets from Purchase Invoices. This is ideal if you are buying large number of assets like laptops or furniture and want to track each asset separately with a Serial Number.
 
 ### Capital-Work-in-Progress (CWIP) Accounting
 
