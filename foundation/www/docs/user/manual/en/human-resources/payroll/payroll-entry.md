@@ -25,13 +25,13 @@ In Payroll Entry,
 
 Once all Salary Slips are created, you can use _View Salary Slips_ to verify if they are created correctly or edit it if you want to deduct Leave Without Pay (LWP).
 
-After checking, you can "Submit" them all together by clicking on "Submit Salary Slip".
+### Booking Salary Accrual and Payment
 
->Note: Submitting Salary Slips will also book the default Payroll Payable account to record the accrual of salary.
+After verifying the Salary Slips, you can _Submit_ them all together by clicking on `Submit Salary Slip`. This will also book the default Payroll Payable account against respective Expense Heads (as configured in Salary Components) to record the accrual of salary to employees.
 
-### Booking Salaries in Accounts
+> Note: Submitting Salary Slips one by one manually will _not_ create the Journal Entry to record salary accrual.
 
-The final step is to book the Salaries in your Accounts.
+The final step is to book the Salary Payment.
 
 Salaries in businesses are usually dealt with extreme privacy. In most cases, the companies issues a single payment to the bank combining all salaries and the bank distributes the salaries to each employee’s salary account. This way there is only one payment entry in the company’s books of accounts and anyone with access to the company’s accounts will not have access to the individual salaries.
 
