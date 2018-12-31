@@ -1,39 +1,53 @@
 <!-- add-breadcrumbs -->
 # Patient Appointment
-ERPNext Healthcare allows you to book Patient appointments for any date and if configured, send them alerts via Email or SMS.
+ERPNext Healthcare allows you to book Patient appointments for any date and alert patients via Email or SMS. You can easily organize appointments for each Practitioner based on their availability schedules.
 
-You can create a Patient Appointment from
-> Healthcare > Patient Appointment > New Patient Appointment
+<img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/appointment_calendar.png">
 
-You can book appointments for a registered Patient by searching and selecting the Patient field. You can search the Patient by Patient ID, Name, Email or Mobile number. You can also register a new Patient from the Appointment screen by selecting "Create a new patient" in the Patient field.
+You can create a Patient Appointment from,
+
+`Healthcare > Appointment Booking > Patient Appointment`
+
+You can book appointments for a registered Patient by searching for Patient by Patient ID, Name, Email or Mobile number. It is also possible to register a new Patient from the Appointment screen itself by selecting `Create a new Patient` in the Patient field.
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/appointment_1.png">
 
-If you have a front desk executive to manage your appointments, you can configure a user role to have access to Patient Appointment so that she can do the bookings by selecting the Physician whom the Patient wish to consult and the date for booking. "Check Availability" button will pop up all the available time slots with status indicators for the date. She can select a time slot and "Book" the Appointment for the Patient.
+If you need to book appointments for procedures select a Procedure or use `Get Ordered Procedures` to select from a list of Procedures that are ordered for the selected Patient.
+
+`Check Availability` button will allow you to select the Practitioner, Appointment Type and Date for which the appointment is to be booked. On selecting the details, all the available time slots for the practitioner be displayed with status indicators for the selected date. You can select a time slot and `Book` an Appointment for the Patient.
+
+Note that, selecting the `Appointment Type` will automatically set the duration of the appointment as configured in the Appointment Type. This will allow you to override the duration of appointments set by the Practitioner Schedule and the time slots will adjust to the next available time automatically. To disable this behavior, you can enable `Always Use Slot Duration as Appointment Duration` in the Practitioner master. This will always set the slot duration configured in the Practitioner Schedule as the Appointment duration.
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/appointment_2.png">
 
-After Booking, the scheduled time of the Appointment and duration will be updated and seved in the document.
+> Note: Appointment booking considers any 'approved' Leave Applications for the Practitioner (Employee linked in the master) and does not allow bookings on such days.
+
+Once booked, the scheduled time of the Appointment and the Service Unit as per the Practitioner and appropriate Status will be set in the document. The More Info section of Patient Appointment, user can add *Notes* and also select a *Referring Practitioner* to help you track referrals.
+
+Optionally, you can configure ERPNext to automatically send an SMS alert to the Patient about the booking confirmation -
+
+`Healthcare > Healthcare Settings > Out Patient SMS Alerts`
+
+### Invoicing
+ERPNext Healthcare allows you to automatically create an Invoice as you book an Appointment. To enable this option, you can turn on this option
+
+`Healthcare > Healthcare Settings > Invoice Appointments Automatically`
+
+If enabled, the Patient Appointment will prompt you to select the *Mode of Payment* and enter the *Amount* collected as the Consultation Charge.
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/appointment_3.png">
 
-You can configure ERPNext to send an SMS alert to the Patient about the booking confirmation or a reminder on the day of Appointment by doing necessary configurations in -
-
-> Healthcare > Healthcare Settings > Out Patient SMS Alerts
-
-The screen also allows the executive to select a Referring Physician so that you can track the source the appointment.
+>Note: If you have not enabled this, you can always use *Get Items From > Healthcare Services* in Sales Invoice
 
 ### Actions
-  * Billing: If you collect the consultation fee while booking the Appointment itself you can do so by using the "Create > Invoice" button. This will take you to the ERPNext Accounts Sales Invoice screen.
+  * Vital Signs: `Create > Vital Signs` button will take you to the new Vital Signs screen to record the vitals of the Patient.
 
-  * Vital Signs: "Create > Vital Signs" button will take you to the new Vital Signs screen to record the vitals of the Patient.
+  * Encounter: From the Appointment screen you can directly create and record the `Patient Encounter` to record the details of the visit.
 
-  * Consultation: From the Appointment screen you can directly create a Consultation to record the details of patient encounter.
+  * View `Patient Medical History`.
 
-  * View Patient Medical Record.
+> Note: User should have appropriate privileges (User Role) to view the buttons
 
-> Note: User should have privileges (User Role) to view the buttons
-
-A Patient can also book an appointment with a Physician by checking the Physician's availability directly through the **ERPNext Portal**.
+Booking appointments via the ERPNext portal by patients directly checking a Practitioner's availability is not currently available.
 
 {next}

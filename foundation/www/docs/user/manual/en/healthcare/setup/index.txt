@@ -1,3 +1,5 @@
-Setting up Practice Management
-Setting up Laboratory
-Setting up Pharmacy (Stock)
+healthcare_settings
+setup_practice
+setup_inpatient
+setup_laboratory
+setup_pharmacy
