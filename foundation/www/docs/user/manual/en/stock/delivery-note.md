@@ -56,4 +56,8 @@ Amount” box in the “More Info” section.
 A Stock Ledger Entry is made for each Item and stock is updated. Pending
 Quantity in the Sales Order is updated (if applicable).
 
+#### Q. How to not allow the creation of delievery notes without a sales order against it ?
+
+Go to Sales Settings > Sales Order Required, then turn this setting to YES
+
 {next}
