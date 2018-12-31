@@ -3,6 +3,11 @@
 
 Timesheets can be tracked against Project and Tasks so that you can get reports on how much time was spent on each Task or Project.
 
+If standard working hours are set up in the Company master and the user enters from time and to time, the system would
+automatically calculate the number of hours. Eg: standard working hours are set up as 8 at the company level and start
+time and end time are 4 days apart, the calculated hours would be 32. If the standard working hours are not set up, then
+the system would calculate the hours as 96 hours in this case.
+
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-project.gif">
 
 <div class="embed-container">
