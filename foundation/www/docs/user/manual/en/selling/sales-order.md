@@ -3,7 +3,7 @@
 The Sales Order confirms the receipt of an order from your customer. It is usually a binding Contract with your Customer. Once your customer confirms the Quotation you can convert your Quotation into
 a Sales Order.
 
-There are various transactions which can be trigerred from Sales Order like;
+There are various transactions which can be triggered from Sales Order like;
 
 * Delivery Note
 * Sales Invoice
