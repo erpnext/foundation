@@ -1,0 +1,4 @@
+course-wise-assessment-report
+final-assessment-grades
+assessment-plan-status
+student-report-generation-tool

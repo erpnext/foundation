@@ -8,6 +8,7 @@ You can create the Fee Structure directly from
 > Education > Fees > Fee Structure > New Fee Structure
 
 or you can create the Fee Structure from Program also.
+Here Fee can be split into different categories such as Tuition Fee, Laboratory Fee, Library Fee, Transport Fee, etc...
 
 <img class="screenshot" alt="Fees Structure" src="{{docs_base_url}}/assets/img/education/fees/fee-structure.png">
 
