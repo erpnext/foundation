@@ -1,5 +1,6 @@
 asset-category
 asset
+asset-location
 purchasing-asset
 selling-asset
 scrap-asset
