@@ -122,17 +122,50 @@ scenario like Bank Account or a Tax Account and has no effect on the Chart
 itself.
 
 Explanation of account types:
-- **Bank:** The account group under which bank account will be created.
-- **Cash:** The account group under which cash account will be created.
-- **Cost of Goods Sold:** The account to book the accumulated total of all costs used to manufacture / purchase a product or service, sold by a company.
-- **Depreciation:** The expense account to book the depreciation of the fixed assets.
-- **Expenses Included In Valuation:** The account to book the expenses (apart from direct material costs) included in landed cost of an item/product, used in Perpetual Inventory, .
-- **Fixed Asset:** The account to maintain the costs of fixed assets.
-- **Payable:** The account which represents the amount owed by a company to its creditors.
-- **Receivable:** The account which represents the amount owed by a company by its debtors.
-- **Stock:** The account group under which the warehouse account will be created.
-- **Stock Adjustment:** An expense account to book any adjustment entry of stock/inventory, and generally comes at the same level of Cost of Goods Sold.
-- **Stock Received But Not Billed:** A temporary liability account which holds the value of stock received but not billed yet and used in Perpetual Inventory.
+
+* **Bank** 
+
+    The account group under which bank account will be created.
+
+* **Cash** 
+
+    The account group under which cash account will be created.
+
+* **Cost of Goods Sold** 
+
+    The account to book the accumulated total of all costs used to manufacture / purchase a product or service, sold by a company.
+
+* **Depreciation** 
+
+    The expense account to book the depreciation of the fixed assets.
+
+* **Expenses Included In Valuation** 
+
+    The account to book the expenses (apart from direct material costs) included in landed cost of an item/product, used in Perpetual Inventory.
+
+* **Fixed Asset** 
+
+    The account to maintain the costs of fixed assets.
+
+* **Payable** 
+
+    The account which represents the amount owed by a company to its creditors.
+
+* **Receivable** 
+
+    The account which represents the amount owed to a company by its debtors.
+
+* **Stock** 
+
+    The account group under which the warehouse account will be created.
+
+* **Stock Adjustment** 
+
+    An expense account to book any adjustment entry of stock/inventory. Generally comes at the same level of Cost of Goods Sold.
+
+* **Stock Received But Not Billed** 
+
+    A temporary liability account which holds the value of stock received but not billed yet and used in Perpetual Inventory.
 
 ### Creating / Editing Accounts
 
@@ -151,10 +184,10 @@ it is up to you to modify or add or remove accounts.
 
 Typically, you might want to create Accounts for
 
-  * Types of Expenses (travel, salaries, telephone etc) under Expenses.
-  * Taxes (VAT, Sales Tax etc based on your country) under Current Liabilities.
-  * Types of Sales (for example, Product Sales, Service Sales etc.) under Income.
-  * Types of Assets (building, machinery, furniture etc.) under Fixed Assets.
+  * Travel, salaries, telephone, etc. under **Expenses**.
+  * Value Added Tax (VAT), Sales Tax, etc. under **Current Liabilities**.
+  * Product Sales, Service Sales, etc. under **Income**.
+  * Building, machinery, furniture, etc. under **Fixed Assets**.
 
 
 <div>
