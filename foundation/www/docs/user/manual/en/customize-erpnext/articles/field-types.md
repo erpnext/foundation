@@ -25,7 +25,7 @@ Currency field holds numeric value, like item price, amount etc. Currency field 
 
 - Data
 
-Data field will be simple text field. It allows entering value upto 255 characters.
+Data field will be simple text field. It allows entering value upto 140 characters.
 
 - Date and Time
 
