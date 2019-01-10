@@ -64,13 +64,9 @@ In the sales and purchase transactions, you can add apply multiple taxes on the 
 
 You can enable print server by fill the print server IP and port then chose default printer
 
-Befor enabling this feature you have to install pycups in the env using the command
+Before enabling this feature you have to install pycups library.
 
-`./env/bin/pip install pycups`
-
-executed from the `frappe-bench` directory.
-
-And install cups package
+You may need first to install cups library if is not already on your system
 
 For Debian OS Family:
 
@@ -79,5 +75,11 @@ For Debian OS Family:
 For Redhat OS Family:
 
 `sudo yum install cups-libs`
+
+After that, install pycups in the env using the command
+
+`./env/bin/pip install pycups`
+
+executed from the `frappe-bench` directory.
 
 {next}
