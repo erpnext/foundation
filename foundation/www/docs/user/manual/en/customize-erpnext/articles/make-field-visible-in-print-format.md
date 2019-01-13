@@ -26,3 +26,5 @@ click to open field to be made visible in the Standard Print Format. Uncheck **P
 #### Step 4: Update
 
 Update Customize Form to save changed. Reload your ERPNext account, and then check Print Format for confirmation.
+
+{next}

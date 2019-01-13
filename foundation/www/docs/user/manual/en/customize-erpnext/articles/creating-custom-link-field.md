@@ -27,4 +27,6 @@ To set field as Link, enter values as below.
 
 <img alt="Enter Values" class="screenshot" src="{{docs_base_url}}/assets/img/articles/link-field-2.png">
 
+{next}
+
 <!-- markdown -->

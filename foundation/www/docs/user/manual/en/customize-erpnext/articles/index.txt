@@ -16,6 +16,7 @@ set-precision
 user-restriction
 maximum-numbers-of-fields-in-a-form
 child-table
+table-multiselect
 fetching-data-from-a-document
 signature-field
 geolocation-field

@@ -25,4 +25,6 @@ While creating transaction, to get filtered result for Customer, you should firs
 
 <img alt="Search By in Customize Form" class="screenshot" src="{{docs_base_url}}/assets/img/articles/search-by-2.png">
 
+{next}
+
 <!-- markdown -->

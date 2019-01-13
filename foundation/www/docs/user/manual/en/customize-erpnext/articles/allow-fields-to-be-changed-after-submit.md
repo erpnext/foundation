@@ -27,4 +27,6 @@ In the fields section, click on the Custom field and check the **Allow On Submit
 
 After updating Customize Form, you should reload your ERPNext account. Then check form, and field to confirm its editable in submitted form as well.
 
+{next}
+
 <!-- markdown -->

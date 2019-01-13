@@ -21,4 +21,6 @@ Or you can open that report, and delete it from File menu option.
 
 <img alt="Report Delete" class="screenshot" src="{{docs_base_url}}/assets/img/articles/delete-report-3.png">
 
+{next}
+
 <!-- markdown -->

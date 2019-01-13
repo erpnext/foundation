@@ -15,5 +15,7 @@ You can also set field specific precision. To do that go to `Setup > Customize >
 
 <img alt="Field-wise Precision" class="screenshot" src="{{docs_base_url}}/assets/img/articles/precision-2.png">
 
+{next}
+
 
 <!-- markdown -->

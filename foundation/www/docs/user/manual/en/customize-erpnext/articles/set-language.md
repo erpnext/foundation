@@ -40,4 +40,6 @@ Save System Settings, and refresh your EPRNext account. On refreshing, you shoul
 <img alt="Select Language" class="screenshot" src="{{docs_base_url}}/assets/img/articles/set-language-2.gif">
 
 Note: For now, we have translation available only for few languages. You can contribute to make translation better, and add new languages from [here](https://translate.erpnext.com).
+
+{next}
 <!-- markdown -->
