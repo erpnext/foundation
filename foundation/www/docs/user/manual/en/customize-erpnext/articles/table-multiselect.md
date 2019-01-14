@@ -24,6 +24,8 @@ Create a field with type 'Table MultiSelect' and add the DocType created in firs
 
 <img alt="Field with type Table MultiSelect" class="screenshot" src="{{docs_base_url}}/assets/img/articles/multi-select-field.png">
 
-You can remove any selected value by clicking on the cross sign next to selected value or by placing the cursor to pressing Backspace
+You can remove any selected value by clicking on the cross sign next to selected value or by placing the cursor next to the value and pressing Backspace.
+
+This field allows one value to be selected only once.
 
 {next}
