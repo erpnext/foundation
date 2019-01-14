@@ -13,6 +13,8 @@ You can add a Table MultiSelect Field by following below steps.
 
 Create a new DocType, check 'Is Child Table' and 'Editable Grid' checkboxes and add a field with 'Link' type as shown below.
 
+Set the link field as mandatory.
+
 <img alt="DocType for Table MultiSelect" class="screenshot" src="{{docs_base_url}}/assets/img/articles/doctype-for-table-multi-select.png">
 
 
