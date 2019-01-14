@@ -32,3 +32,5 @@ Once Editable Grid is disabled for the Quotation Item, the following is how valu
 To have specific field's value shown in the preview, ensure that for that field, in the Customize Form tool, "In List View" property is checked.
 
 <img alt="Role Desk Permission" class="screenshot" src="{{docs_base_url}}/assets/img/articles/child-6.png">
+
+{next}

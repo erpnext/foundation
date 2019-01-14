@@ -23,3 +23,5 @@ To add more fields in the system, you can do some changes.
 
 1. Convert some of the fields to "Text", "Small Text", "Text Editor" or "Code" type field. In MySQL, BLOB and TEXT columns count from one to four plus eight bytes each toward the row-size limit because their contents are stored separately from the rest of the row. So, converting to those fieldtypes will free up some spaces and will allow to add some more fields.
 2. Set smaller value in the "Length" property while creating fields, default value is 140. System sets length of `VARCHAR` based on this property and allocates size for that columns. Hence, smaller Length leads to add more fields.
+
+{next}
