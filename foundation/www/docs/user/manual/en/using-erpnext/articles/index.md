@@ -2,3 +2,7 @@
 # Articles
 
 {index}
+
+{next}
+
+<!-- markdown -->

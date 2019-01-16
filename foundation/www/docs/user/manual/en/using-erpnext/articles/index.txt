@@ -11,3 +11,4 @@ tree-master-renaming
 letter-head-in-the-report
 global-search
 copy-pasting-multiple-records-from-excel
+bulk-update
