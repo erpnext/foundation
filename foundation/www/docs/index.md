@@ -19,7 +19,7 @@ blogs.
 
 To install ERPNext on a server, you will need to install [Frappe Bench](https://github.com/frappe/bench).
 
-You can also start a free 30 day trial at [https://erpnext.com](https://erpnext.com)
+You can also start a free 15 day trial at [https://erpnext.com](https://erpnext.com)
 
 ### Getting Started
 
