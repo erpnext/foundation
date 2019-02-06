@@ -1,3 +1,0 @@
-amazon_integration
-shopify_integration
-woocommerce_integration

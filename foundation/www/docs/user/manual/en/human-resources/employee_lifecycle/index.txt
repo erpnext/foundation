@@ -1,3 +1,0 @@
-employee-promotion
-employee-transfer
-employee-onboarding-and-separation

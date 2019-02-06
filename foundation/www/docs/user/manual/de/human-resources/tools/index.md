@@ -1,5 +1,0 @@
-<!-- add-breadcrumbs -->
-# Werkzeuge
-
-
-{next}
