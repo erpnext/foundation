@@ -21,7 +21,7 @@ After saving you can see the JSON output in the text field below which can also 
 
 If you want to print the report it can also be printed and viewed in GSTR3B Form by clicking on View Form as shown below
 
-<img class="screenshot" alt="GST Settings" src="{{docs_base_url}}/assets/img/regional/india/gstr-3b-report.png">
+<img class="screenshot" alt="GST Settings" src="{{docs_base_url}}/assets/img/regional/india/gstr-3b-download.png">
 
 Note: To make sure the report is calculated accurately and correctly please make sure of the following things.
 
