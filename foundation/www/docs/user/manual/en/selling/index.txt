@@ -1,6 +1,0 @@
-quotation
-sales-order
-sales-analytics
-setup
-articles
-selling-reports

@@ -1,5 +1,0 @@
-employee
-employee-attendance-tool
-attendance
-attendance-request
-upload-attendance

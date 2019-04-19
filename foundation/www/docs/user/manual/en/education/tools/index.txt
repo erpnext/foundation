@@ -1,5 +1,0 @@
-student-attendance-tool
-assessment-result-tool
-student-group-creation-tool
-program-enrolment-tool
-course-scheduling-tool

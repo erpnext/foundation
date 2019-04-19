@@ -1,4 +1,0 @@
-assessment_criteria
-assessment_group
-assessment_plan
-assessment_result

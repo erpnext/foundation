@@ -1,3 +1,0 @@
-employee-advance
-expense-claim
-travel-request
