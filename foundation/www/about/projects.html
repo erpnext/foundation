@@ -1,0 +1,38 @@
+{% extends "templates/base.html" %}
+
+{% block title %}Foundation Projects{% endblock %}
+
+{% block content %}
+<section class='top-section'>
+	<div class='container'>
+		<h1>Foundation Projects</h1>
+		<p class='lead'>
+			ERPNext Foundation uses the membership funds to drive projects and events
+		</p>
+	</div>
+</section>
+<section class='section-padding section-bg'>
+	<div class='container'>
+	{% for item in frappe.get_all("Foundation Project", "title, description, status, url",
+		{"show_in_website": 1}, order_by = "project_date desc", limit=50) %}
+		<a href="{{ item.url }}" class='card mb-4' target="_blank">
+			<div class="card-body">
+				<h5>
+					{{ item.title }}
+				</h5>
+				<div>{{ html2text(item.description or "No Description")|truncate(240) }}</div>
+				<div class="text-muted mt-3">
+					{{ frappe.format_date(item.project_date) }}
+					<span class='pull-right'>{{ item.status }}</span>
+				</div>
+			</div>
+		</a>
+	{% endfor %}
+	</div>
+</section>
+<section class='section-padding'>
+	<div class='container text-center'>
+		<a class='btn btn-dark' href="mailto:foundation@erpnext.org">Propose A Project</a>
+	</div>
+</section>
+{% endblock %}

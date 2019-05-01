@@ -1,0 +1,40 @@
+{% extends "templates/base.html" %}
+
+{% block title %}Annual Reports{% endblock %}
+
+{% block content %}
+<section class='top-section'>
+	<div class='container'>
+		<h1>Annual Reports</h1>
+		<p class='lead'>
+            ERPNext Foundation is a not-for-profit committed to full transparency.
+            If you would like further data, feel free to <a href="https://discuss.erpnext.com">post queries on the forum</a>
+		</p>
+	</div>
+</section>
+<section class='section-padding section-bg'>
+	<div class='container'>
+		<a href="/about/reports/2018-19" class='card mb-4'>
+			<div class="card-body">
+				<h5>
+					Annual Report 2018-19
+				</h5>
+				<div>
+					A year of transition for the foundation from hiring people to do projects to supporting internships and community projects.
+				</div>
+			</div>
+		</a>
+		<a href="/about/reports/2017-18" class='card mb-4'>
+			<div class="card-body">
+				<h5>
+					Annual Report 2017-18
+				</h5>
+				<div>
+					First year of the foundation, where the goal was to hire a team of dedicated developers under the foundation.
+				</div>
+			</div>
+		</a>
+	</div>
+</section>
+
+{% endblock %}

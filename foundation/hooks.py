@@ -42,7 +42,7 @@ template_apps = ['foundation', 'frappe_theme', 'erpnext', 'frappe']
 website_context = {
 	# "navbar_search": 1,
 	"repo": "erpnext/foundation",
-	"brand_html": "<img class='mr-2 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo-black.svg' alt='Opensource ERP Software'/>ERPNext.org",
+	"brand_html": "<img class='mr-2 d-inline-block align-top' width='30px' height='30px' src='/assets/foundation/img/erpnext-logo-black.svg' alt='Opensource ERP Software'/>ERPNext Foundation",
 	"top_bar_items": [
 			{"label": "ERPNext", "child_items":[
 				{"label": "User Stories", "url": "/stories"},
@@ -55,17 +55,18 @@ website_context = {
 			], "right":1},
 			{"label": "Community", "child_items":[
 				{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "target='_blank'"},
-				{"label": "Conference 2018", "url": "/conf/2018"},
 				{"label": "Chapters", "url": "/chapter-list"},
 				{"label": "Fellows", "url": "/fellows"},
-				{"label": "Write for ERPNext", "url": "/write-for-us"}
+				{"label": "Conference 2018", "url": "/conf/2018"},
 			], "right":1},
 			{"label": "Services", "child_items":[
-				{"label": "Service Providers", "url": "/service-providers"},
+				{"label": "Member Listing", "url": "/service-providers"},
 				{"label": "Freelancer Jobs", "url": "/erpnext-jobs"},
-				{"label": "Become a Service Provider", "url": "/faq"}
+				{"label": "Become a Member", "url": "/faq"}
 			], "right":1},
 			{"label": "Foundation", "child_items":[
+				{"label": "Projects", "url": "/about/projects"},
+				{"label": "Annual Reports", "url": "/about/reports"},
 				{"label": "About", "url": "/about"},
 				{"label": "Blog", "url": "/blog"},
 				{"label": "Memberships", "url": "/members"},
