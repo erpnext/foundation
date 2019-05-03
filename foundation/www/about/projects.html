@@ -13,7 +13,7 @@
 </section>
 <section class='section-padding section-bg'>
 	<div class='container'>
-	{% for item in frappe.get_all("Foundation Project", "title, description, status, url",
+	{% for item in frappe.get_all("Foundation Project", "title, description, status, url, project_date",
 		{"show_in_website": 1}, order_by = "project_date desc", limit=50) %}
 		<a href="{{ item.url }}" class='card mb-4' target="_blank">
 			<div class="card-body">
