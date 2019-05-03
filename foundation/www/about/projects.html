@@ -15,6 +15,7 @@
 	<div class='container'>
 	{% for item in frappe.get_all("Foundation Project", "title, description, status, url, project_date",
 		{"show_in_website": 1}, order_by = "project_date desc", limit=50) %}
+		{% set color = {"Ongoing": "orange", "Completed": "green", "Abandoned": "red"}[item.status] %}
 		<a href="{{ item.url }}" class='card mb-4' target="_blank">
 			<div class="card-body">
 				<h5>
@@ -23,7 +24,7 @@
 				<div>{{ html2text(item.description) }}</div>
 				<div class="text-muted mt-3">
 					{{ frappe.format_date(item.project_date) }}
-					<span class='pull-right'>{{ item.status }}</span>
+					<span class='pull-right'><span class='indicator {{ color }}'>{{ item.status }}</span></span>
 				</div>
 			</div>
 		</a>
