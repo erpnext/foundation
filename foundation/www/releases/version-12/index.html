@@ -1,0 +1,58 @@
+{% extends "templates/base.html" %}
+{% block title %}ERPNext Version 12{% endblock %}
+
+
+{% macro card(title, body, link) %}
+<div class="col-sm-4 mb-4">
+  <a href='{{ link }}' class="card">
+	  <div class="card-body">
+		<h5>{{ title }}</h5>
+	    <div class="card-text mb-3">{{ body }}</div>
+	    <span class="text-muted">Details</span>
+	  </div>
+  </a>
+</div>
+{% endmacro %}
+
+{% block content %}
+<section class="top-section">
+	<div class='container'>
+		<h1>ERPNext Version 12</h1>
+		<p class="lead">ERPNext v12 release is here, with more feature, security, usability and performance updates than ever before.<p>
+		<a class="btn btn-dark mt-4" href="/releases/version-11/features/accounting">Explore</a></p>
+		<div class="row mt-5 text-left">
+			{{ card(
+				"New Desktop",
+				"Multi-book financials, consolidated financials, inter-company transactions, deferred revenue, bank upload and more.",
+				"/releases/version-11/features/accounting"
+				) }}
+			{{ card(
+				"Dashboard",
+				"Upgraded payroll, with configurable benefits and deductions, Upgraded leave management, leave periods, employee lifecycle and more.",
+				"/releases/version-11/features/human-resources"
+				) }}
+			{{ card(
+				"Supplier Schemes",
+				"Improved asset management with serialized assets, Capital Work in Progress (CWIP) accounting, asset movement tracking.",
+				"/releases/version-11/features/asset-management"
+				) }}
+			{{ card(
+				"Marketplace",
+				"List your products for free in the in-app marketplace, and web portal, and communicate with buyers and sellers from inside ERPNext.",
+				"/releases/version-11/features/marketplace"
+				) }}
+			{{ card(
+				"Framework",
+				"Postgres support, Enery Point System and Leaderboard, link previews, better DocType JSON diffs, Milestone tracker",
+				"/releases/version-11/features/framework"
+				) }}
+			{{ card(
+				"Other Features",
+				"Tons of other new features like Loyalty points and coupons, new integrations including Woocommerce and much much more.",
+				"/releases/version-11/features/other"
+				) }}
+		</div>
+	</div>
+</section>
+{% endblock %}
+
