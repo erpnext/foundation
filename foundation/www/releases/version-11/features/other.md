@@ -35,7 +35,7 @@ Split Work Orders into individual Job Cards that can be issued per Workstation. 
 
 Timesheets have now been updated with a timer, so you can simply hit the "Start" and "Stop" buttons to track time.
 
-[Learn more about updated timesheets](https://erpnext.org/docs/user/manual/en/projects/timesheet)
+[Learn more about updated timesheets](https://erpnext.org/docs/user/manual/en/projects)
 
 <img class='screenshot' alt='Timers in Timesheets' src='https://erpnext.org/docs/assets/img/project/timesheet/timesheet-timer.gif'>
 
