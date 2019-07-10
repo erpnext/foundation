@@ -1,0 +1,75 @@
+{% extends "templates/base.html" %}
+{% block title %}ERPNext Version 12{% endblock %}
+
+
+{% macro card(title, body, link) %}
+<div class="col-sm-4 mb-4">
+  <a href='{{ link }}' class="h-100 card">
+	  <div class="card-body d-flex flex-column justify-content-between">
+	  	<div>
+			<h5>{{ title }}</h5>
+	    	<div class="card-text mb-3">{{ body }}</div>
+		</div>
+	    <span class="text-muted">Details</span>
+	  </div>
+  </a>
+</div>
+{% endmacro %}
+
+{% block content %}
+<section class="top-section">
+	<div class='container'>
+		<h1>ERPNext Version 12</h1>
+		<p class="lead">With Refreshed UI, Dashboards and over 100 new features and enhancements it is our greatest release yet.<p>
+		<a class="btn btn-dark mt-4" href="/releases/version-12">Explore Features</a></p>
+		<div class="row mt-5 text-left">
+			{{ card(
+				"New Desktop",
+				"The new Desk is built from first principles, keeping information heirarchy in mind. It is more accessible and navigable.",
+				"/releases/version-11/features/accounting"
+				) }}
+			{{ card(
+				"Dashboard",
+				"A long requested feature, developers and administrators can now create custom dashboards for each DocType.",
+				"/releases/version-11/features/human-resources"
+				) }}
+			{{ card(
+				"Keyboard Navigation",
+				"Users can now navigate all of ERPNext through the keyboard, allowing quicker access to workflows, documents and other actions.",
+				"/releases/version-11/features/other"
+				) }}
+			{{ card(
+				"Energy Points",
+				"With energy points users can gain points based on configurable rules on actions like finishing tasks, closing leads, etc.",
+				"/releases/version-11/features/asset-management"
+				) }}
+			{{ card(
+				"Website Module",
+				"Rewritten from the ground up, the new website modules allows creation of custom themes with improved SEO and page speed.",
+				"/releases/version-11/features/marketplace"
+				) }}
+			{{ card(
+				"Accounting Dimensions",
+				"You can now create you own configurable dimensions and use them across accounting transactions and reports.",
+				"/releases/version-11/features/framework"
+				) }}
+			{{ card(
+				"Bank Remittance",
+				"Tons of other new features like Loyalty points and coupons, new integrations including Woocommerce and much much more.",
+				"/releases/version-11/features/other"
+				) }}
+			{{ card(
+				"Raw Printing",
+				"Now you can print barcodes, labels and receipts using thermal printers from ERPNext.",
+				"/releases/version-11/features/other"
+				) }}
+			{{ card(
+				"Other Features",
+				"Version 12 ships with tonnes of new features like SLAs, document follow, CoA importer, assignment rules, and many more.",
+				"/releases/version-11/features/other"
+				) }}
+		</div>
+	</div>
+</section>
+{% endblock %}
+
