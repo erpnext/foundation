@@ -1,37 +1,6 @@
 {% extends "templates/base.html" %}
 {% block title %}ERPNext Conference 2019{% endblock %}
 
-{% set platinum_sponsors = [
-	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #1',
-		'website_url': 'http://www.example.com/'
-	},
-	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #2',
-		'website_url': 'http://www.example.com/'
-	}
-] %}
-
-{% set silver_sponsors = [
-	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #3',
-		'website_url': 'http://www.example.com/'
-	},
-	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #4',
-		'website_url': 'http://www.example.com/'
-	},
-	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #5',
-		'website_url': 'http://www.example.com/'
-	},
-] %}
-
 {% block content %}
 <section class='hero-section'>
 	<div class='container d-md-flex justify-content-between flex-row-reverse'>
@@ -67,27 +36,13 @@
 			<h2>Events</h2>
 			<p class='lead'>Connect with the core team, maintainers, developers, implementors. If you are connected to ERPNext, this is an event you cannot miss.</p>
 		</div>
-		<div class="mt-7">
-			<!-- <div class="card no-border// mb-5">
-				<div class="card-body d-flex flex-row-reverse">
-					<img class="flex-item-30 px-4" src='/assets/foundation/img/illustrations/group.png' alt='Group of people'>
-					<div>
-						<h3>Talks and Sessions</h3>
-						<p>Interact about the product road-map, learn about the new and
-							exciting features, stories and best practices.</p>
-						<p>Mysore Association Auditorium, Matunga <br> 17 and 18 October</p>
+		<div class="mt-7 container-md mx-auto">
+			<a href="/conf/2019/sprint" class="no-border">
+				<div class="card-body row">
+					<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
+						<img class="px-5" src='/assets/foundation/img/illustrations/typing-on-a-computer.png' alt='Person Contributing'>
 					</div>
-				</div>
-				<div class="card-footer">
-					<a href="/conf/2019/sprint" class="card-link">Propose a talk</a>
-				</div>
-			</div> -->
-			<a href="/conf/2019/sprint" class="card no-border mb-5">
-				<div class="card-body d-flex flex-row-reverse">
-					<div class="flex-item-30">
-						<img class="px-4" src='/assets/foundation/img/illustrations/typing-on-a-computer.png' alt='Person Contributing'>
-					</div>
-					<div>
+					<div class="col-xs-12 col-sm-7">
 						<h3>Contribution Sprint</h3>
 						<p>Join the global community of ERPNext developers and users for a
 							two day contribution sprint and contribute new features,
@@ -96,12 +51,12 @@
 					</div>
 				</div>
 			</a>
-			<a href="/conf/2019/talks" class="card no-border mb-5">
-				<div class="card-body d-flex flex-row-reverse">
-					<div class="flex-item-30">
-						<img class="flex-item-30 px-4" src='/assets/foundation/img/illustrations/group.png' alt='Group of people'>
+			<a href="/conf/2019/talks" class="no-border">
+				<div class="card-body row">
+					<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
+						<img class="px-5" src='/assets/foundation/img/illustrations/group.png' alt='Group of people'>
 					</div>
-					<div>
+					<div class="col-xs-12 col-sm-7">
 						<h3>Talks and Sessions</h3>
 						<p>Interact about the product road-map, learn about the new and
 							exciting features, stories and best practices.</p>
@@ -109,16 +64,15 @@
 					</div>
 				</div>
 			</a>
-			<a href="/conf/2019/expo" class="card no-border mb-5">
-				<div class="card-body d-flex flex-row-reverse">
-					<div class="flex-item-30">
-						<img class="flex-item-30 px-4" src='/assets/foundation/img/illustrations/people-hand-shake.png' alt='Bussiness People'>
+			<a href="/conf/2019/expo" class="no-border">
+				<div class="card-body row">
+					<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
+						<img class="px-5" src='/assets/foundation/img/illustrations/people-hand-shake.png' alt='Bussiness People'>
 					</div>
-					<div>
+					<div class="col-xs-12 col-sm-7">
 						<h3>Expo</h3>
 						<p>Showcase the services you provide for ERPNext to the global community,
 							understand their challenges and explore solutions with them.</p>
-						<!-- <a href="#">Book a Stall</a> -->
 					</div>
 				</div>
 			</a>
@@ -126,58 +80,8 @@
 	</div>
 </section>
 
-
-{% macro show_section(sponsors, with_img = False, color=False) %}
-	<div class='row mt-4'>
-	{% for sponsor in sponsors %}
-		<div class='col-sm-3 mb-4'>
-		<a href='{{ ("{}{}".format("" if sponsor.website_url.startswith("http") else "//", sponsor.website_url)) if sponsor.website_url else "#" }}' target='_blank' class='card h-100'>
-			{% if with_img %}
-			<div class='square-img'>
-				<img class="{% if not color %}greyscale{% endif %} p-5"
-					src="{{ sponsor.image or "/assets/foundation/img/people/tux.png" }}"
-					alt="{{ sponsor.title }}">
-			</div>
-			{% endif %}
-			<div class="card-body">
-				<h6>
-					{{ sponsor.title }}
-				</h6>
-			</div>
-		</a>
-		</div>
-	{% if loop.index is divisibleby 4 %}
-	</div><div class='row'>
-	{% endif %}
-	{% endfor %}
-	</div>
-{% endmacro %}
-
-<section class="section-padding section-bg">
-	<div class='container text-center'>
-		<div>
-			<h2>Become a Sponsor</h2>
-			<p class='lead'>Become a patron for the conference and get associated with a global community of tens of thousands of users and developers.</p>
-			<a class="mt-3 btn btn-dark btn" href="/contact">Sponsor</a>
-		</div>
-		<div class="mt-7">
-		{% if platinum_sponsors %}
-			<h4>Platinum Sponsors<h4>
-			{{ show_section(platinum_sponsors, color=True, with_img=True) }}
-		{% endif %}
-
-		{% if gold_sponsors %}
-			<h4 class="mt-4">Gold Sponsors<h4>
-			{{ show_section(gold_sponsors, with_img=True) }}
-		{% endif %}
-
-		{% if silver_sponsors %}
-			<h4 class="mt-4">Silver Sponsors<h4>
-			{{ show_section(silver_sponsors, with_img=True) }}
-		{% endif %}
-		</div>
-	</div>
-</section>
+{% from "www/conf/2019/sponsor.html" import sponsor %}
+{{ sponsor() }}
 
 <section class="section-padding text-center">
 	<div class='container'>
