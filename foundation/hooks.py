@@ -57,7 +57,7 @@ website_context = {
 				{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "target='_blank'"},
 				{"label": "Chapters", "url": "/chapter-list"},
 				{"label": "Fellows", "url": "/fellows"},
-				{"label": "Conference 2018", "url": "/conf/2018"},
+				{"label": "Conference 2019", "url": "/conf/2019"},
 			], "right":1},
 			{"label": "Services", "child_items":[
 				{"label": "Member Listing", "url": "/service-providers"},
