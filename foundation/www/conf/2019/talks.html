@@ -1,0 +1,187 @@
+{% extends "templates/base.html" %}
+{% block title %}Talks and Sessions{% endblock %}
+
+
+{% set platinum_sponsors = [
+	{
+		'image': '/assets/foundation/img/no-image.png',
+		'title': 'Global Company #1',
+		'website_url': 'http://www.example.com/'
+	},
+	{
+		'image': '/assets/foundation/img/no-image.png',
+		'title': 'Global Company #2',
+		'website_url': 'http://www.example.com/'
+	}
+] %}
+
+{% set silver_sponsors = [
+	{
+		'image': '/assets/foundation/img/no-image.png',
+		'title': 'Global Company #3',
+		'website_url': 'http://www.example.com/'
+	},
+	{
+		'image': '/assets/foundation/img/no-image.png',
+		'title': 'Global Company #4',
+		'website_url': 'http://www.example.com/'
+	},
+	{
+		'image': '/assets/foundation/img/no-image.png',
+		'title': 'Global Company #5',
+		'website_url': 'http://www.example.com/'
+	},
+] %}
+
+{% block content %}
+<section class='top-section'>
+	<div class='container d-md-flex align-self-center justify-content-between flex-row-reverse'>
+		<div class="flex-item-40 d-none d-md-block">
+			<img src='/assets/foundation/img/illustrations/group.png' alt='blocks' class="h-75">
+		</div>
+		<div>
+			<h1>Talks and Sessions</h1>
+			<p class='lead'>
+				Interact about the product road-map, learn about the new and
+				exciting features, stories and best practices.
+			</p>
+			<p><a class="mt-4 btn btn-dark btn" href="/get-started">Buy Tickets</a></p>
+		</div>
+	</div>
+</section>
+
+<section class="section-padding section-bg">
+	<div class='container'>
+		<div class="text-center">
+			<h2>Agenda</h2>
+			<p class='lead'>Mysore Association Auditorium, Matunga East <br> 17 and 18 October, 8:30 AM onwards</p>
+		</div>
+		<div class="mt-7 container-md mx-auto">
+			<div class="mb-5">
+				<h3>Details</h3>
+				<ul class="list">
+					<li>Venue: Mysore Association Auditorium, King’s Circle Matunga East, Mumbai - 400019</li>
+					<li>Breakfast starts at 8:30 AM</li>
+					<li>Lunch break will be at 1:00 PM</li>
+					<li>Dinner starts at 6:30 PM at Matunga Gujarati Seva Mandal</li>
+				</ul>
+			</div>
+			<div class="mb-5">
+				<h3>Sessions on 17th October</h3>
+				<p>To be announced</p>
+				<!--<ul class="list">
+					<li>Venue: Mysore Association Auditorium, King’s Circle Matunga East, Mumbai - 400019</li>
+					<li>Breakfast starts at 8.30 AM</li>
+					<li>Lunch break will be at 1pm</li>
+					<li>Dinner starts at 6.30pm at Matunga Gujarati Seva Mandal</li>
+				</ul>-->
+			</div>
+			<div class="mb-5">
+				<h3>Session on 18th October</h3>
+				<p>To be announced</p>
+				<!--<ul class="list">
+					<li>Venue: Mysore Association Auditorium, King’s Circle Matunga East, Mumbai - 400019</li>
+					<li>Breakfast starts at 8.30 AM</li>
+					<li>Lunch break will be at 1pm</li>
+					<li>Dinner starts at 6.30pm at Matunga Gujarati Seva Mandal</li>
+				</ul>-->
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-padding">
+	<div class='container'>
+		<div class='text-center'>
+			<h2>Other Events</h2>
+			<p class='lead'>Connect with the core team, maintainers, developers, implementors. If you are connected to ERPNext, this is an event you cannot miss.</p>
+		</div>
+		<div class="mt-7">
+			<a href="/conf/2019/sprint" class="card no-border mb-5">
+				<div class="card-body d-flex flex-row-reverse">
+					<img class="flex-item-30 px-4" src='/assets/foundation/img/illustrations/typing-on-a-computer.png' alt='Person Contributing'>
+					<div>
+						<h3>Contribution Sprint</h3>
+						<p>Join the global community of ERPNext developers and users for a
+							two day contribution sprint and contribute new features,
+							fixes and documentation.</p>
+						<p>KJ Somaiya College of Engineering <br> 15 and 16 October</p>
+					</div>
+				</div>
+			</a>
+			<a href="/conf/2019/expo" class="card no-border mb-5">
+				<div class="card-body d-flex flex-row-reverse">
+					<img class="flex-item-30 px-4" src='/assets/foundation/img/illustrations/people-hand-shake.png' alt='Bussiness People'>
+					<div>
+						<h3>Expo</h3>
+						<p>Showcase the services you provide for ERPNext to the global community,
+							understand their challenges and explore solutions with them.</p>
+						<!-- <a href="#">Book a Stall</a> -->
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+
+{% macro show_section(sponsors, with_img = False, color=False) %}
+	<div class='row mt-4'>
+	{% for sponsor in sponsors %}
+		<div class='col-sm-3 mb-4'>
+		<a href='{{ ("{}{}".format("" if sponsor.website_url.startswith("http") else "//", sponsor.website_url)) if sponsor.website_url else "#" }}' target='_blank' class='card h-100'>
+			{% if with_img %}
+			<div class='square-img'>
+				<img class="{% if not color %}greyscale{% endif %} p-5"
+					src="{{ sponsor.image or "/assets/foundation/img/people/tux.png" }}"
+					alt="{{ sponsor.title }}">
+			</div>
+			{% endif %}
+			<div class="card-body">
+				<h6>
+					{{ sponsor.title }}
+				</h6>
+			</div>
+		</a>
+		</div>
+	{% if loop.index is divisibleby 4 %}
+	</div><div class='row'>
+	{% endif %}
+	{% endfor %}
+	</div>
+{% endmacro %}
+
+<section class="section-padding section-bg">
+	<div class='container text-center'>
+		<div>
+			<h2>Become a Sponsor</h2>
+			<p class='lead'>Become a patron for the conference and get associated with a global community of tens of thousands of users and developers.</p>
+			<a class="mt-3 btn btn-dark btn" href="/contact">Sponsor</a>
+		</div>
+		<div class="mt-7">
+		{% if platinum_sponsors %}
+			<h4>Platinum Sponsors<h4>
+			{{ show_section(platinum_sponsors, color=True, with_img=True) }}
+		{% endif %}
+
+		{% if gold_sponsors %}
+			<h4 class="mt-4">Gold Sponsors<h4>
+			{{ show_section(gold_sponsors, with_img=True) }}
+		{% endif %}
+
+		{% if silver_sponsors %}
+			<h4 class="mt-4">Silver Sponsors<h4>
+			{{ show_section(silver_sponsors, with_img=True) }}
+		{% endif %}
+		</div>
+	</div>
+</section>
+
+<section class="section-padding text-center">
+	<div class='container'>
+	<h2>ERPNext Foundation</h2>
+	<p class="lead m-auto">ERPNext Conference is a community event driven by the community and organized by the ERPNext Open Source Software Foundation.</p>
+	<a href="/get-started" class="my-4 btn btn-dark">Buy Tickets</a>
+	</div>
+</section>
+{% endblock %}
