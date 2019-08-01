@@ -13,3 +13,7 @@ body[data-path*="erpnext-jobs"] .breadcrumb {
 .embed-responsive {
 	margin-bottom: 2rem;
 }
+
+.splash {
+	display: none;
+}
