@@ -7,27 +7,32 @@
 <!-- <section class='section-padding splash'
 	style='background-image: url(/assets/foundation/img/unsplash/digital-2.jpeg)'>
 </section> -->
-<section class='top-section'>
-	<div class='container'>
+<section class='hero-section'>
+	<div class='container d-md-flex justify-content-between flex-row-reverse'>
 	<!-- <img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'> -->
-	<h1>Building ERPNext Together</h1>
-	<p class='lead'>
-		ERPNext Foundation is a registered not for profit that helps build the ERPNext community and drive projects.
-	</p>
-	<p><a class="mt-4 btn btn-dark btn" href="/get-started">Get Started with ERPNext</a></p>
-	<p><a class="text-muted" href="/stories">Read user stories</a></p>
+		<div class="flex-item-40 d-none d-md-block">
+			<img src='/assets/foundation/img/illustrations/baton.png' alt='baton'>
+		</div>
+		<div>
+			<h1>Building ERPNext Together</h1>
+			<p class='lead'>
+				ERPNext Foundation is a registered not for profit that helps build the ERPNext community and drive projects.
+			</p>
+			<p><a class="mt-4 btn btn-dark btn" href="/get-started">Get Started with ERPNext</a></p>
+			<p><a class="text-muted" href="/stories">Read user stories</a></p>
+		</div>
 	</div>
 </section>
 
-{% macro card(title, body, btnlink, badges) %}
+{% macro card(title, body, badges) %}
 <div class="col-sm mb-4">
-	<a href="{{ btnlink }}" class="card h-100">
+	<div class="card h-100">
 		<div class="card-body">
 			<h5>{{ title }}</h5>
 			<div class="card-text">{{ body }}</div>
 			<!-- <a href="{{ btnlink }}" class="btn btn-dark btn-sm">{{ btnlabel }}</a> -->
 		</div>
-	</a>
+	</div>
 </div>
 {% endmacro %}
 <section class="section-padding section-bg">
@@ -36,25 +41,22 @@
 			<h2>Everything Included</h2>
 			<p class='lead'>ERPNext includes all modules and integrations out of the box so you can get started immediately</p>
 		</div>
-		<div class="row mt-5">
+		<div class="row deck">
 			{{ card(
 				"Financial Accounting",
 				"The heart of your business, everything flows through here.",
-				"/docs/user/manual/en/accounts",
 				["All"]
 			) }}
 
 			{{ card(
 				"CRM",
 				"Everything about your customers, stay in touch and keep them updated.",
-				"/docs/user/manual/en/CRM",
 				["All"]
 			) }}
 
 			{{ card(
 				"Inventory",
 				"What goes in, what comes out and where you can find it.",
-				"/docs/user/manual/en/stock",
 				["All"]
 			) }}
 		</div>
@@ -63,21 +65,18 @@
 			{{ card(
 				"Sales",
 				"Closing a deal and ensuring that it is successfully fulfilled.",
-				"/docs/user/manual/en/selling",
 				["All"]
 			) }}
 
 			{{ card(
 				"Purchasing",
 				"Keep track of purchases and stay on top of costs and budgets.",
-				"/docs/user/manual/en/buying",
 				["All"]
 			) }}
 
 			{{ card(
 				"Projects",
 				"Manage teams with multiple tasks, track time and costs.",
-				"/docs/user/manual/en/projects",
 				["All"]
 			) }}
 		</div>
@@ -86,21 +85,18 @@
 			{{ card(
 				"Manufacturing",
 				"From Bill of Material to Work Orders and movement of stock.",
-				"/docs/user/manual/en/manufacturing",
 				["Manufacturing"]
 			) }}
 
 			{{ card(
 				"Education",
 				"Manage students, classes, attendance, timetables, grades and fees.",
-				"/docs/user/manual/en/education",
 				["Education"]
 			) }}
 
 			{{ card(
 				"Healthcare",
 				"Patient care with appointments, consultation and lab reports.",
-				"/docs/user/manual/en/healthcare",
 				["Healthcare"]
 			) }}
 		</div>
@@ -109,21 +105,18 @@
 			{{ card(
 				"E-Commerce",
 				"Website listings, shopping cart, billing, payments and much more.",
-				"/docs/user/manual/en/website/shopping-cart",
 				["All"]
 			) }}
 
 			{{ card(
 				"Website",
 				"Fully featured content management with blogs, web pages and forms.",
-				"/docs/user/manual/en/website",
 				["All"]
 			) }}
 
 			{{ card(
 				"Support",
 				"Email integrated ticketing system with threaded replies and assignments.",
-				"/docs/user/manual/en/support",
 				["All"]
 			) }}
 		</div>
@@ -164,7 +157,7 @@
 <section class="section-padding text-center section-bg">
 	<div class='container'>
 	<h2>ERPNext Foundation</h2>
-	<p class="lead lead-max m-auto text-muted">ERPNext Foundation is a
+	<p class="lead lead-max m-auto">ERPNext Foundation is a
 		registered not-for-profit organization that enables community to build and enhance ERPNext.</p>
 	<a href="/get-started" class="my-4 btn btn-dark">Get Started with ERPNext</a>
 	</div>
