@@ -9,7 +9,7 @@ from frappe.model.document import Document
 class ConferenceParticipant(Document):
 	def validate(self):
 		self.conference = '2019'
-		self.send_ticket_mail()
+		# self.send_ticket_mail()
 
 	def validate_payment(self):
 		self.amount = self.full_conference_tickets * (5000 if self.currency == 'INR' else 70)
