@@ -1,5 +1,5 @@
 {
- "attach_print": 0,
+ "attach_print": 1,
  "condition": "doc.paid and doc.amount and not doc.thank_you_email_sent",
  "creation": "2017-07-07 11:29:54.935820",
  "days_in_advance": 0,
@@ -25,5 +25,6 @@
   }
  ],
  "set_property_after_alert": "thank_you_email_sent",
- "subject": "Thank you for Registering for the Conference"
+ "subject": "Thank you for Registering for the Conference",
+ "print_format": "Conference Ticket"
 }
