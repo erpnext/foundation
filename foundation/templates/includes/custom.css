@@ -17,3 +17,7 @@ body[data-path*="erpnext-jobs"] .breadcrumb {
 .splash {
 	display: none;
 }
+
+.row-index .hidden-xs {
+	display: inline-block !important;
+}
