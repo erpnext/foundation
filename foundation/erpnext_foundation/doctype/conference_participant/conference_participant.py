@@ -12,7 +12,7 @@ class ConferenceParticipant(Document):
 		self.send_ticket_mail()
 
 	def validate_payment(self):
-		self.amount = self.full_conference_tickets * (4000 if self.currency == 'INR' else 60)
+		self.amount = self.full_conference_tickets * (5000 if self.currency == 'INR' else 70)
 
 	def on_payment_authorized(self, status_changed_to=None):
 		self.paid = 1
