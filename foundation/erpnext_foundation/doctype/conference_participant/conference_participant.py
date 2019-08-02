@@ -19,7 +19,7 @@ class ConferenceParticipant(Document):
 		self.save(ignore_permissions=True)
 
 	def send_ticket_mail(self):
-		if self.paid == 1:
+		if self.paid == 1 and self.email:
 			message = """Thank you for participating in the ERPNext Conference {0}.
 			<br> You can find your ticket attached with this email,
 			 for more details about the conference please visit https://erpnext.com/conf/{0}""".format(self.conference)

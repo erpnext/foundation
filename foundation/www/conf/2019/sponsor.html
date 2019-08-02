@@ -1,34 +1,15 @@
 {% set platinum_sponsors = [
 	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #1',
-		'website_url': 'http://www.example.com/'
+		'image': '/assets/foundation/img/conf/sponsors/frappe-logo.png',
+		'title': 'Frappe Technologies',
+		'website_url': 'http://frappe.io/'
 	},
 	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #2',
+		'image': '/assets/foundation/img/people/tux.png',
+		'title': 'Your Awesome Company',
 		'website_url': 'http://www.example.com/'
 	}
 ] %}
-
-{% set silver_sponsors = [
-	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #3',
-		'website_url': 'http://www.example.com/'
-	},
-	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #4',
-		'website_url': 'http://www.example.com/'
-	},
-	{
-		'image': '/assets/foundation/img/no-image.png',
-		'title': 'Global Company #5',
-		'website_url': 'http://www.example.com/'
-	},
-] %}
-
 
 {% macro show_section(sponsors, with_img = False, color=False) %}
 	<div class='row mt-4'>
@@ -62,7 +43,8 @@
 		<div>
 			<h2>Become a Sponsor</h2>
 			<p class='lead'>Become a patron for the conference and get associated with a global community of tens of thousands of users and developers.</p>
-			<a class="mt-3 btn btn-dark btn" href="/contact">Sponsor</a>
+			<a class="mt-4 btn btn-dark btn" href="/request-a-call">Sponsor</a>
+			<a class="mt-4 btn btn-dark btn" href="/request-a-call">Sponsor</a>
 		</div>
 		<div class="mt-7">
 		{% if platinum_sponsors %}

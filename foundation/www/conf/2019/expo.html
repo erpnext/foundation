@@ -1,5 +1,5 @@
 {% extends "templates/base.html" %}
-{% block title %}ERPNext Expo{% endblock %}
+{% block title %}Exhibit Program{% endblock %}
 
 {% block content %}
 <section class='top-section'>
@@ -8,12 +8,14 @@
 			<img src='/assets/foundation/img/illustrations/people-hand-shake.png' alt='People Meeting at Expo'>
 		</div>
 		<div>
-			<h1>Expo</h1>
+			<h1>Exhibit Program</h1>
 			<p class='lead'>
 				Showcase the services you provide for ERPNext to the global community,
 				understand their challenges and explore solutions with them.
 			</p>
-			<p><a class="mt-4 btn btn-dark btn" href="/get-started">Book a Stall</a></p>
+			<p>
+				<a class="mt-4 btn btn-dark btn" href="/request-a-call">Book a Stall</a>
+			</p>
 		</div>
 	</div>
 </section>
@@ -99,7 +101,10 @@
 	<div class='container'>
 	<h2>ERPNext Foundation</h2>
 	<p class="lead m-auto">ERPNext Conference is a community event driven by the community and organized by the ERPNext Open Source Software Foundation.</p>
-	<a href="/get-started" class="my-4 btn btn-dark">Buy Tickets</a>
+	<p>
+		<a class="mt-4 btn btn-dark btn" href="/buy-tickets-inr">Buy Tickets (INR)</a>
+		<a class="mt-4 btn btn-dark btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>
+	</p>
 	</div>
 </section>
 {% endblock %}
