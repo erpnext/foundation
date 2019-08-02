@@ -8,9 +8,8 @@ from frappe.model.document import Document
 
 class ConferenceParticipant(Document):
 	def validate(self):
-		self.conference = '2018'
-		if self.owner not in ["Guest", "Administrator"] and not self.get("email"):
-			self.email = frappe.db.get_value('User', self.owner, "email")
+		self.conference = '2019'
+		self.send_ticket_mail()
 
 	def validate_payment(self):
 		self.amount = self.full_conference_tickets * (4000 if self.currency == 'INR' else 60)
@@ -18,3 +17,19 @@ class ConferenceParticipant(Document):
 	def on_payment_authorized(self, status_changed_to=None):
 		self.paid = 1
 		self.save(ignore_permissions=True)
+
+	def send_ticket_mail(self):
+		if self.paid == 1:
+			message = """Thank you for participating in the ERPNext Conference {0}.
+			<br> You can find your ticket attached with this email,
+			 for more details about the conference please visit https://erpnext.com/conf/{0}""".format(self.conference)
+			email_args = {
+				"recipients": [self.email],
+				"message": _(message),
+				"subject": 'Your Ticket for ERPNext Conference 2019',
+				"attachments": [frappe.attach_print(self.doctype, self.name, file_name=self.name, print_format='Conference Ticket')],
+				"reference_doctype": self.doctype,
+				"reference_name": self.name
+			}
+			frappe.sendmail(**email_args)
+			self.thank_you_email_sent = 1

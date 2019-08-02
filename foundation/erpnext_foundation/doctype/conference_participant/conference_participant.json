@@ -7,6 +7,7 @@
  "field_order": [
   "participant_details_section",
   "participant_name",
+  "participant_designation",
   "column_break_3",
   "email",
   "conference_details_section",
@@ -42,7 +43,7 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
-   "options": "User"
+   "options": "Email"
   },
   {
    "fieldname": "conference_details_section",
@@ -53,7 +54,7 @@
    "fieldname": "conference",
    "fieldtype": "Select",
    "label": "Conference",
-   "options": "\n2017\n2018"
+   "options": "\n2017\n2018\n2019"
   },
   {
    "fieldname": "full_conference_tickets",
@@ -107,9 +108,15 @@
    "fieldtype": "Table",
    "label": "T-Shirt Sizes",
    "options": "TShirt Sizes"
+  },
+  {
+   "fieldname": "participant_designation",
+   "fieldtype": "Select",
+   "label": "Participant Designation",
+   "options": "\nCxO\nAnalyst\nConsultant\nDeveloper\nSystem Administrator\nOther"
   }
  ],
- "modified": "2019-08-02 10:29:22.188416",
+ "modified": "2019-08-02 19:07:44.339770",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "Conference Participant",
