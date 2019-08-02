@@ -97,9 +97,9 @@
 			<img class="card-img-top greyscale"
 				src="{{ item.image }}" alt="{{ item.name }}">
 			<div class="card-body">
-				<h5>{{ item.name }}</h5>
+				<h5 class="mb-1">{{ item.name }}</h5>
 				<div>{{ item.designation }}</div>
-				<div class='small'>{{ item.bio }}</div>
+				<div class='small mt-2'>{{ item.bio }}</div>
 			</div>
 		</div>
 	{% if loop.index is divisibleby 3 %}

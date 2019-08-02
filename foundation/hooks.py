@@ -47,11 +47,11 @@ website_context = {
 			{"label": "ERPNext", "child_items":[
 				{"label": "User Stories", "url": "/stories"},
 				{"label": "Get ERPNext", "url": "/get-started"},
-				{"label": "User Manual", "url": "/docs/user"},
+				{"label": "User Manual", "url": "https://erpnext.com/docs/user"},
 				{"label": "Free Trial", "url": "https://erpnext.com"},
 				{"label": "Open Source", "url": "/open-source"},
 				{"label": "Contribute", "url": "/contribute"},
-				{"label": "Version 11", "url": "/releases/version-11"}
+				{"label": "Version 12", "url": "https://erpnext.com/version-12"}
 			], "right":1},
 			{"label": "Community", "child_items":[
 				{"label": "Forum", "url": "https://discuss.erpnext.com", "target": "target='_blank'"},
