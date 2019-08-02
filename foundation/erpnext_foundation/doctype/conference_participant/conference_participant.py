@@ -25,7 +25,7 @@ class ConferenceParticipant(Document):
 			 for more details about the conference please visit https://erpnext.com/conf/{0}""".format(self.conference)
 			email_args = {
 				"recipients": [self.email],
-				"message": _(message),
+				"message": message,
 				"subject": 'Your Ticket for ERPNext Conference 2019',
 				"attachments": [frappe.attach_print(self.doctype, self.name, file_name=self.name, print_format='Conference Ticket')],
 				"reference_doctype": self.doctype,
