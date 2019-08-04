@@ -1,0 +1,110 @@
+{% extends "templates/base.html" %}
+{% block title %}Exhibit Program{% endblock %}
+
+{% block content %}
+<section class='top-section'>
+	<div class='container d-md-flex align-self-center justify-content-between flex-row-reverse'>
+		<div class="flex-item-30 d-none d-md-block">
+			<img src='/assets/foundation/img/illustrations/people-hand-shake.png' alt='People Meeting at Expo'>
+		</div>
+		<div>
+			<h1>Exhibit Program</h1>
+			<p class='lead'>
+				Showcase the services you provide for ERPNext to the global community,
+				understand their challenges and explore solutions with them.
+			</p>
+			<p>
+				<a class="mt-4 btn btn-dark btn" href="/request-a-call">Book a Stall</a>
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="section-padding section-bg">
+	<div class='container'>
+		<div class="text-center">
+			<h2>Details</h2>
+			<p class='lead'>Mysore Association Auditorium, Matunga East <br> 17 and 18 October, 8:30 AM onwards</p>
+		</div>
+		<div class="mt-7 container-md mx-auto">
+			<div class="mb-5">
+				<ul class="list">
+					<li>Venue: Mysore Association Auditorium, King’s Circle Matunga East, Mumbai - 400019</li>
+					<li>Breakfast starts at 8:30 AM</li>
+					<li>Lunch break will be at 1:00 PM</li>
+					<li>Dinner starts at 6:30 PM at Matunga Gujarati Seva Mandal</li>
+				</ul>
+			</div>
+			<!--<div class="mb-5">
+				<h3>Stalls</h3>
+				<ul class="list">
+					<li>Issue Cleanup Sprint: Review and respond to un-replied issues. Review all old issues and either tag them or close them if they are not relevant.</li>
+					<li>Documentation Sprint: Writing missing documentation for ERPNext modules or features.</li>
+					<li>Article Writing Sprint: Write general purpose articles on ERP systems, benefits, challenges, implementation strategies that can be published on ERPNext.org</li>
+				</ul>
+			</div>
+			<div class="mb-5">
+				<h3>Developer Activities</h3>
+				<ul class="list">
+					<li>Bug quashing sprint: Try and fix all issues tagged as “bug” on GitHub Issues.</li>
+					<li>Build a feature: Scratch your own itch by contributing a feature you really want in the product.</li>
+					<li>Test Coverage Sprint: Add test coverage, refactor tests where missing.</li>
+					<li>Documentation Sprint: Add missing developer documentation.</li>
+				</ul>
+			</div>-->
+		</div>
+	</div>
+</section>
+
+<section class="section-padding">
+	<div class='container'>
+		<div class='text-center'>
+			<h2>Other Events</h2>
+			<p class='lead'>Connect with the core team, maintainers, developers, implementors. If you are connected to ERPNext, this is an event you cannot miss.</p>
+		</div>
+		<div class="mt-7">
+			<a href="/conf/2019/sprint" class="no-border">
+				<div class="card-body row">
+					<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
+						<img class="px-5" src='/assets/foundation/img/illustrations/typing-on-a-computer.png' alt='Person Contributing'>
+					</div>
+					<div class="col-xs-12 col-sm-7">
+						<h3>Contribution Sprint</h3>
+						<p>Join the global community of ERPNext developers and users for a
+							two day contribution sprint and contribute new features,
+							fixes and documentation.</p>
+						<p>KJ Somaiya College of Engineering <br> 15 and 16 October</p>
+					</div>
+				</div>
+			</a>
+			<a href="/conf/2019/talks" class="no-border">
+				<div class="card-body row">
+					<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
+						<img class="px-5" src='/assets/foundation/img/illustrations/group.png' alt='Group of people'>
+					</div>
+					<div class="col-xs-12 col-sm-7">
+						<h3>Talks and Sessions</h3>
+						<p>Interact about the product road-map, learn about the new and
+							exciting features, stories and best practices.</p>
+						<p>Mysore Association Auditorium, Matunga <br> 17 and 18 October</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+{% from "www/conf/2019/sponsor.html" import sponsor %}
+{{ sponsor() }}
+
+<section class="section-padding text-center">
+	<div class='container'>
+	<h2>ERPNext Foundation</h2>
+	<p class="lead m-auto">ERPNext Conference is a community event driven by the community and organized by the ERPNext Open Source Software Foundation.</p>
+	<p>
+		<a class="mt-4 btn btn-dark btn" href="/buy-tickets-inr">Buy Tickets (INR)</a>
+		<a class="mt-4 btn btn-dark btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>
+	</p>
+	</div>
+</section>
+{% endblock %}

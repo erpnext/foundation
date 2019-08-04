@@ -1,6 +1,6 @@
 <p>Dear {{ doc.participant_name }},</p>
 
-<p>Thank you for registering for the 2018 ERPNext Conference!</p>
+<p>Thank you for registering for the 2019 ERPNext Conference!</p>
 
 <p>Here are your ticket details:</p>
 
@@ -15,7 +15,7 @@
 	<tr>
 		<td>Conference Tickets + Lunch + Dinner</td>
 		<td>{{ doc.full_conference_tickets or 0 }}</td>
-		<td>{% if doc.currency=="INR" %}4000{% else %}60{% endif %}</td>
+		<td>{% if doc.currency=="INR" %}5000{% else %}70{% endif %}</td>
 	</tr>
 </table>
 

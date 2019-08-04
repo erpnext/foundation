@@ -8,12 +8,10 @@ from frappe.model.document import Document
 
 class ConferenceParticipant(Document):
 	def validate(self):
-		self.conference = '2018'
-		if self.owner not in ["Guest", "Administrator"] and not self.get("email"):
-			self.email = frappe.db.get_value('User', self.owner, "email")
+		self.conference = '2019'
 
 	def validate_payment(self):
-		self.amount = self.full_conference_tickets * (4000 if self.currency == 'INR' else 60)
+		self.amount = self.full_conference_tickets * (5000 if self.currency == 'INR' else 70)
 
 	def on_payment_authorized(self, status_changed_to=None):
 		self.paid = 1
