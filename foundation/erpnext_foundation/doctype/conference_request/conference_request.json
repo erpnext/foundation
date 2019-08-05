@@ -37,7 +37,7 @@
    "fieldname": "request_type",
    "fieldtype": "Select",
    "label": "Request Type",
-   "options": "Sponsorship\nExhibit Program"
+   "options": "Sponsorship\nExhibition"
   },
   {
    "fieldname": "message",
