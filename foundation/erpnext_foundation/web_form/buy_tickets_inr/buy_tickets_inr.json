@@ -20,7 +20,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-08-02 20:42:18.541094",
+ "modified": "2019-08-05 16:32:20.478032",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "buy-tickets-inr",
@@ -73,7 +73,7 @@
    "max_value": 0,
    "options": "Email",
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -86,7 +86,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
