@@ -91,7 +91,7 @@
    "label": "Request Type",
    "max_length": 0,
    "max_value": 0,
-   "options": "Sponsorship\nExhibit Program",
+   "options": "Sponsorship\nExhibition",
    "read_only": 0,
    "reqd": 1,
    "show_in_filter": 0
