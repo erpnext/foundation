@@ -12,49 +12,24 @@ class ConferenceParticipant(Document):
 		self.conference = '2019'
 
 	def validate_payment(self):
-		self.amount = self.full_conference_tickets * (5000 if self.currency == 'INR' else 70)
+		self.amount = self.full_conference_tickets * (5000 if self.currency == 'INR' else 80)
 
 	def on_payment_authorized(self, status_changed_to=None):
 		self.paid = 1
 		self.save(ignore_permissions=True)
+		self.create_and_send_invoice()
 
-	def on_update(self):
+	def create_and_send_invoice(self):
 		transaction = get_integration_request(self.name, self.currency)
-		if self.paid and transaction:
-			self.create_and_send_invoice(transaction)
-
-	def create_and_send_invoice(self, transaction):
+		if not transaction:
+			return
 		series = 'BC-19-20-'
 		rate = '5000'
 		currency = 'INR'
+		customer = 'ERPNext Conference 2019 Participant'
 		item_income_account = 'Sales - Event Tickets - EF'
-
-		if transaction.service == 'Paypal':
-			series = 'EXP-19-20-'
-			rate = '70'
-			currency = 'USD'
-			item_income_account = 'Sales - Event Tickets (International) - EF'
-
-
-		invoice = frappe.get_doc({
-			'doctype': 'Sales Invoice',
-			'customer': 'ERPNext Conference 2019 Participant',
-			'taxes_and_charges': 'In State GST',
-			'debit_to': 'Debtors - EF',
-			'remarks': json.dumps(transaction),
-			'currency': currency,
-			'series': series,
-			'items': [
-				{
-					'item_code': 'ERPNext Conference',
-					'rate': rate,
-					'qty': self.full_conference_tickets,
-					'cost_center': 'Conference - EF',
-					'income_account': item_income_account,
-					'description': self.name
-				}
-			],
-			'taxes': [
+		account_type = 'Debtors - EF'
+		taxes = [
 				{
 					'charge_type': 'On Net Total',
 					'account_head': 'SGST - EF',
@@ -70,9 +45,64 @@ class ConferenceParticipant(Document):
 					'included_in_print_rate': 1,
 				}
 			]
+
+		if transaction.service == 'Paypal':
+			series = 'EXP-19-20-'
+			rate = '80'
+			currency = 'USD'
+			account_type = 'Debtors USD - EF'
+			customer = 'ERPNext Conference 2019 Participant International'
+			item_income_account = 'Sales - Event Tickets (International) - EF'
+			taxes = []
+
+		invoice = frappe.get_doc({
+			'doctype': 'Sales Invoice',
+			'customer': customer,
+			'debit_to': account_type,
+			'remarks': json.dumps(transaction),
+			'currency': currency,
+			'selling_price_list': currency,
+			'series': series,
+			'payment_mode': transaction.service,
+			'items': [
+				{
+					'item_code': 'ERPNext Conference',
+					'rate': rate,
+					'qty': self.full_conference_tickets,
+					'cost_center': 'Conference - EF',
+					'income_account': item_income_account,
+					'description': self.name
+				}
+			],
+			'taxes': taxes
 		})
 
 		invoice.insert()
+		invoice.submit()
+
+		self.make_payment_entry(invoice, transaction, currency)
+		self.send_email(invoice)
+
+	def make_payment_entry(self, invoice, transaction, currency):
+		from erpnext.accounts.doctype.payment_entry.payment_entry import get_payment_entry
+		pe = get_payment_entry(dt='Sales Invoice', dn=invoice.name, bank_amount=invoice.grand_total)
+		pe.paid_to = frappe.get_value("Mode of Payment Account",
+					{'parent': transaction.service,
+					'parenttype': 'Mode of Payment'},
+					['default_account'])
+
+		pe.paid_to_account_currency = currency
+
+		pe.target_exchange_rate = invoice.conversion_rate
+		pe.source_exchange_rate = invoice.conversion_rate
+		pe.mode_of_paypment = transaction.service
+
+		pe.reference_no = transaction.transaction_id
+		pe.reference_date = invoice.posting_date
+		pe.save(ignore_permissions=True)
+		pe.submit()
+
+	def send_email(self, invoice):
 		email_args = {
 			"recipients": [self.email],
 			"message": "Thank you for registering for the ERPNext Conference, Attached herewith is the invoice for the ticket.",
@@ -82,8 +112,6 @@ class ConferenceParticipant(Document):
 			"reference_name": invoice.name
 		}
 		frappe.sendmail(**email_args)
-
-
 
 def get_integration_request(docname, currency):
 	service = 'Paypal'
