@@ -19,7 +19,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-08-02 20:43:12.676233",
+ "modified": "2019-08-06 18:58:48.782274",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "buy-tickets-paypal",
@@ -78,12 +78,12 @@
    "max_value": 0,
    "options": "Email",
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
    "allow_read_on_all_link_options": 0,
-   "description": "$70 per person. Includes lunch and dinner on both days",
+   "description": "$80 per person. Includes lunch and dinner on both days",
    "fieldname": "full_conference_tickets",
    "fieldtype": "Int",
    "hidden": 0,
@@ -91,7 +91,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
