@@ -77,7 +77,7 @@ class ConferenceParticipant(Document):
 			'taxes': taxes
 		})
 
-		invoice.insert()
+		invoice.insert(ignore_permissions=True)
 		invoice.submit()
 
 		self.make_payment_entry(invoice, transaction, currency)
@@ -85,7 +85,9 @@ class ConferenceParticipant(Document):
 
 	def make_payment_entry(self, invoice, transaction, currency):
 		from erpnext.accounts.doctype.payment_entry.payment_entry import get_payment_entry
+		frappe.flags.ignore_account_permission=True
 		pe = get_payment_entry(dt='Sales Invoice', dn=invoice.name, bank_amount=invoice.grand_total)
+		frappe.flags.ignore_account_permission=False
 		pe.paid_to = frappe.get_value("Mode of Payment Account",
 					{'parent': transaction.service,
 					'parenttype': 'Mode of Payment'},
@@ -128,7 +130,7 @@ def get_integration_request(docname, currency):
 	}
 
 	try:
-		transaction = frappe.get_list('Integration Request', filters=filters, fields=['name', 'data'])[0]
+		transaction = frappe.get_all('Integration Request', filters=filters, fields=['name', 'data'])[0]
 	except IndexError:
 		return None
 	else:
