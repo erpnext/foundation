@@ -23,7 +23,7 @@ class ConferenceParticipant(Document):
 		transaction = get_integration_request(self.name, self.currency)
 		if not transaction:
 			return
-		series = 'BC-19-20-'
+		naming_series = 'BC-19-20-'
 		rate = '5000'
 		currency = 'INR'
 		customer = 'ERPNext Conference 2019 Participant'
@@ -47,7 +47,7 @@ class ConferenceParticipant(Document):
 			]
 
 		if transaction.service == 'Paypal':
-			series = 'EXP-19-20-'
+			naming_series = 'EXP-19-20-'
 			rate = '80'
 			currency = 'USD'
 			account_type = 'Debtors USD - EF'
