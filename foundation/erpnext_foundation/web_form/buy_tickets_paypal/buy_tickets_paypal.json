@@ -9,6 +9,7 @@
  "amount": 0.0,
  "amount_based_on_field": 1,
  "amount_field": "amount",
+ "button_label": "Buy",
  "creation": "2017-07-06 16:22:37.464680",
  "currency": "USD",
  "doc_type": "Conference Participant",
@@ -19,7 +20,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-08-06 18:58:48.782274",
+ "modified": "2019-08-08 16:23:30.523688",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "buy-tickets-paypal",
@@ -39,7 +40,7 @@
    "title": "My Tickets"
   }
  ],
- "success_url": "/conf/2017",
+ "success_url": "/conf/2019",
  "title": "Buy Tickets Paypal",
  "web_form_fields": [
   {
