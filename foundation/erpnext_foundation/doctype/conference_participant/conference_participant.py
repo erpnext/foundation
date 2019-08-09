@@ -62,7 +62,7 @@ class ConferenceParticipant(Document):
 			'remarks': json.dumps(transaction),
 			'currency': currency,
 			'selling_price_list': currency,
-			'series': series,
+			'naming_series': naming_series,
 			'payment_mode': transaction.service,
 			'items': [
 				{
