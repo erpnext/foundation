@@ -21,3 +21,31 @@ body[data-path*="erpnext-jobs"] .breadcrumb {
 .row-index .hidden-xs {
 	display: inline-block !important;
 }
+
+.btn-primary {
+	background-color: #38C172;
+	border-color: #38C172;
+}
+
+.btn-primary:hover {
+	background-color: #1F9D55;
+	border-color: #1F9D55;
+}
+
+.section-bg {
+	background-color: #E3FCEC;
+	border: none;
+}
+
+.navbar {
+	background-color: #E3FCEC;
+	border-color: rgb(211, 238, 223);
+}
+
+.section-bg .lead, .navbar-light .navbar-nav .nav-link, .card-body {
+	color: rgb(122, 175, 144) !important;
+}
+
+.bg-dark {
+	background-color: #0F2F21 !important;
+}
