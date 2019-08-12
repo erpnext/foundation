@@ -14,19 +14,21 @@
 {% macro show_section(sponsors, with_img = False, color=False) %}
 	<div class='row mt-4'>
 	{% for sponsor in sponsors %}
-		<div class='col-sm-4 mb-4'>
+		<div class='mx-3 mx-md-0 col-sm-4 mb-4'>
 		<a href='{{ ("{}{}".format("" if sponsor.website_url.startswith("http") else "//", sponsor.website_url)) if sponsor.website_url else "#" }}' target='_blank' class='card h-100'>
-			{% if with_img %}
-			<div class='square-img'>
-				<img class="{% if not color %}greyscale{% endif %} p-5"
-					src="{{ sponsor.image or "/assets/foundation/img/people/tux.png" }}"
-					alt="{{ sponsor.title }}">
-			</div>
-			{% endif %}
 			<div class="card-body">
-				<h6>
-					{{ sponsor.title }}
-				</h6>
+				{% if with_img %}
+				<div class='square-img'>
+					<img class="{% if not color %}greyscale{% endif %} p-5"
+						src="{{ sponsor.image or "/assets/foundation/img/people/tux.png" }}"
+						alt="{{ sponsor.title }}">
+				</div>
+				{% endif %}
+				<div>
+					<h6>
+						{{ sponsor.title }}
+					</h6>
+				</div>
 			</div>
 		</a>
 		</div>
