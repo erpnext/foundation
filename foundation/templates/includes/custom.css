@@ -10,6 +10,11 @@ body[data-path*="erpnext-jobs"] .breadcrumb {
 	padding-left: 0px;
 }
 
+.section-padding {
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
 .embed-responsive {
 	margin-bottom: 2rem;
 }
@@ -22,30 +27,20 @@ body[data-path*="erpnext-jobs"] .breadcrumb {
 	display: inline-block !important;
 }
 
-.btn-primary {
-	background-color: #38C172;
-	border-color: #38C172;
+.section-dark {
+	background-color: #5661B3;
+	color: #ffffff;
+	border: none !important;
 }
 
-.btn-primary:hover {
-	background-color: #1F9D55;
-	border-color: #1F9D55;
+.section-dark .lead {
+	color: #B2B7FF;
 }
 
-.section-bg {
-	background-color: #E3FCEC;
-	border: none;
+footer {
+	border: none !important;
 }
 
-.navbar {
-	background-color: #E3FCEC;
-	border-color: rgb(211, 238, 223);
-}
-
-.section-bg .lead, .navbar-light .navbar-nav .nav-link, .card-body {
-	color: rgb(122, 175, 144) !important;
-}
-
-.bg-dark {
-	background-color: #0F2F21 !important;
+.lead-max {
+	font-weight: 400;
 }
