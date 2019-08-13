@@ -1,4 +1,5 @@
 {% extends "templates/base.html" %}
+{% from "www/conf/2019/macros.html" import hero %}
 {% block title %}ERPNext Foundation - Open Source ERP Software{% endblock %}
 {% block content %}
 <style>
@@ -7,23 +8,13 @@
 <!-- <section class='section-padding splash'
 	style='background-image: url(/assets/foundation/img/unsplash/digital-2.jpeg)'>
 </section> -->
-<section class='hero-section text-center bg-dark' style='background-image: url("/assets/foundation/img/conf/2019/foundation-splash.png") !important; background-size: cover;'>
-	<div class='container'>
-	<!-- <img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'> -->
-		<div>
-			<p class='lead text-white' style="font-size:1.5em;">
-				ERPNext Conference 2019
-			</p>
-			<h1 class='text-white'>Next Generation Enterprise</h1>
-			<p class='lead mt-4'>
-				October 15 - 18, Mumbai
-			</p>
-			<p>
-				<a class="mt-4 mr-2 btn btn-primary btn" href="/conf/2019">Register Now</a>
-			</p>
-		</div>
-	</div>
-</section>
+{{ hero(
+	'Next Generation Enterprise',
+	'ERPNext Conference 2019',
+	'October 15 - 18, Mumbai',
+	'/assets/foundation/img/conf/2019/foundation-splash.png',
+	'<a class="mt-4 mr-2 btn btn-primary btn" href="/conf/2019">Register Now</a>'
+) }}
 
 {% macro card(title, body, badges) %}
 <div class="col-sm mb-4">
