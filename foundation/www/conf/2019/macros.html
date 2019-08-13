@@ -1,0 +1,106 @@
+{% macro event_card(title, link, body, image, image_alt, footer) %}
+<a href="{{ link }}" class="no-border">
+	<div class="mb-4 card-body row text-body">
+		<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
+			<img class="px-3" src='{{ image }}' alt='{{ image_alt }}'>
+		</div>
+		<div class="col-xs-12 col-sm-7">
+			<h4>{{ title }}</h4>
+			<p>{{ body }}</p>
+			<p>{{ footer }}</p>
+		</div>
+	</div>
+</a>
+{% endmacro %}
+
+{% macro lead_max(bg) %}
+<section class="section-padding text-center {{ 'section-bg' if bg }}">
+	<div class='container'>
+	<p class="lead-max">
+		The 6th edition of the ERPNext Conference is here!
+		The conference is an event for the entire community to meet the people
+		you chat with on the forum and understand what is happening in the ecosystem.
+	</p>
+</section>
+{% endmacro %}
+
+{% macro hero(title, pre_title, subtitle, bg_image, cta_html) %}
+<section class='hero-section text-center bg-dark' style='background-image: url("{{ bg_image }}") !important; background-size: cover;'>
+	<div class='container'>
+	<!-- <img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'> -->
+		<div>
+			<p class='lead text-white' style="font-size:1.5em;">
+				{{ pre_title }}
+			</p>
+			<h1 class='text-white'>{{ title }}</h1>
+			<p class='lead mt-4 text-white'>
+				{{ subtitle }}
+			</p>
+			<p>
+				{{ cta_html }}
+			</p>
+		</div>
+	</div>
+</section>
+{% endmacro %}
+
+{% macro events(title, events) %}
+<section class="section-padding section-bg">
+	<div class='container'>
+		<div class='text-center'>
+			<h2>{{ title }}</h2>
+			<p class='lead'>Connect with the core team, maintainers, developers, implementors. This is an event you cannot miss.</p>
+		</div>
+		<div class="mt-6 container-md mx-auto">
+			{% if 'sprint' in events %}
+				{{ event_card(
+					'Contribution Sprint',
+					'/conf/2019/sprint',
+					'Join the global ERPNext community for a
+					two day sprint and contribute new features,
+					fixes and documentation.',
+					'/assets/foundation/img/conf/2019/sprint.png',
+					'Sprint',
+					'KJ Somaiya College of Engineering <br> 15 and 16 October'
+				) }}
+			{% endif %}
+
+			{% if 'talks' in events %}
+				{{ event_card(
+					'Talks and Sessions',
+					'/conf/2019/talks',
+					'Interact about the product road-map, learn about the new and
+					exciting features, stories and best practices.',
+					'/assets/foundation/img/conf/2019/talks.png',
+					'Talks and Sessions',
+					'Mysore Association Auditorium, Matunga <br> 17 and 18 October'
+				) }}
+			{% endif %}
+
+			{% if 'expo' in events %}
+				{{ event_card(
+					'Exhibition',
+					'/conf/2019/exhibition',
+					'Showcase the services you provide for ERPNext to the global community,
+					understand their challenges and explore solutions with them.',
+					'/assets/foundation/img/conf/2019/expo.png',
+					'Exhibition',
+					'Mysore Association Auditorium, Matunga <br> 17 and 18 October'
+				) }}
+			{% endif %}
+		</div>
+	</div>
+</section>
+{% endmacro %}
+
+{% macro footer(title, subtitle, cta_html) %}
+<section class="section-padding text-center section-dark">
+	<div class='container'>
+	<h2></h2>
+	<p class="lead m-auto">{{ subtitle }}</p>
+	<p>
+		{{ cta_html }}
+	</p>
+	</div>
+</section>
+{% endmacro %}

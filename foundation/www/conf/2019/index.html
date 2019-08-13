@@ -1,97 +1,24 @@
 {% extends "templates/base.html" %}
+{% from "www/conf/2019/macros.html" import hero, events, lead_max, footer %}
+{% from "www/conf/2019/sponsor.html" import sponsor %}
 {% block title %}ERPNext Conference 2019{% endblock %}
 
 {% block content %}
-<section class='hero-section text-center bg-dark' style='background-image: url("/assets/foundation/img/conf/2019/foundation-splash.png") !important; background-size: cover;'>
-	<div class='container'>
-	<!-- <img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'> -->
-		<div>
-			<p class='lead text-white' style="font-size:1.5em;">
-				ERPNext Conference 2019
-			</p>
-			<h1 class='text-white'>Next Generation Enterprise</h1>
-			<p class='lead mt-4 text-white'>
-				October 15 - 18, Mumbai
-			</p>
-			<p>
-				<a class="mt-4 mr-2 btn btn-primary btn" href="/buy-tickets-inr">Buy Tickets (INR)</a>
-				<a class="mt-4 btn btn-primary btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>
-			</p>
-		</div>
-	</div>
-</section>
+{{ hero(
+	'Next Generation Enterprise',
+	'ERPNext Conference 2019',
+	'October 15 - 18, Mumbai',
+	'/assets/foundation/img/conf/2019/foundation-splash.png',
+	'<a class="mt-4 mr-2 btn btn-primary btn" href="/buy-tickets-inr">Buy Tickets (INR)</a>
+	<a class="mt-4 btn btn-primary btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>'
+) }}
 
-<section class="section-padding text-center">
-	<div class='container'>
-	<p class="lead-max">
-		The 6th edition of the ERPNext Conference is here!
-		The conference is an event for the entire community to meet the people
-		you chat with on the forum and understand what is happening in the ecosystem.
-	</p>
-</section>
-
-<section class="section-padding section-bg">
-	<div class='container'>
-		<div class='text-center'>
-			<h2>Events</h2>
-			<p class='lead'>Connect with the core team, maintainers, developers, implementors. This is an event you cannot miss.</p>
-		</div>
-		<div class="mt-6 container-md mx-auto">
-			<a href="/conf/2019/sprint" class="no-border">
-				<div class="mb-4 card-body row text-body">
-					<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
-						<img class="px-3" src='/assets/foundation/img/conf/2019/sprint.png' alt='Person Contributing'>
-					</div>
-					<div class="col-xs-12 col-sm-7">
-						<h4>Contribution Sprint</h4>
-						<p>Join the global ERPNext community for a
-							two day sprint and contribute new features,
-							fixes and documentation.</p>
-						<p>KJ Somaiya College of Engineering <br> 15 and 16 October</p>
-					</div>
-				</div>
-			</a>
-			<a href="/conf/2019/talks" class="no-border">
-				<div class="mb-4 card-body row text-body">
-					<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
-						<img class="px-3" src='/assets/foundation/img/conf/2019/talks.png' alt='Group of people'>
-					</div>
-					<div class="col-xs-12 col-sm-7">
-						<h4>Talks and Sessions</h4>
-						<p>Interact about the product road-map, learn about the new and
-							exciting features, stories and best practices.</p>
-						<p>Mysore Association Auditorium, Matunga <br> 17 and 18 October</p>
-					</div>
-				</div>
-			</a>
-			<a href="/conf/2019/exhibition" class="no-border">
-				<div class="card-body row text-body">
-					<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
-						<img class="px-3" src='/assets/foundation/img/conf/2019/expo.png' alt='Bussiness People'>
-					</div>
-					<div class="col-xs-12 col-sm-7">
-						<h4>Exhibition</h4>
-						<p>Showcase the services you provide for ERPNext to the global community,
-							understand their challenges and explore solutions with them.</p>
-						<p>Mysore Association Auditorium, Matunga <br> 17 and 18 October</p>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-</section>
-
-{% from "www/conf/2019/sponsor.html" import sponsor %}
+{{ lead_max(false) }}
+{{ events('Events' ,['sprint', 'talks', 'expo' ]) }}
 {{ sponsor() }}
-
-<section class="section-padding text-center section-dark">
-	<div class='container'>
-	<h2>Community Organized</h2>
-	<p class="lead m-auto">ERPNext Conference is a community event organized by the ERPNext Open Source Software Foundation.</p>
-	<p>
-		<a class="mt-4 btn btn-light btn" href="/buy-tickets-inr">Buy Tickets (INR)</a>
-		<a class="mt-4 btn btn-light btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>
-	</p>
-	</div>
-</section>
+{{ footer(
+	'Community Organized',
+	'ERPNext Conference is a community event organized by the ERPNext Open Source Software Foundation.',
+	'<a class="mt-4 mr-2 btn btn-light btn" href="/buy-tickets-inr">Buy Tickets (INR)</a> <a class="mt-4 btn btn-light btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>'
+) }}
 {% endblock %}
