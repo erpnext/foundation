@@ -1,5 +1,5 @@
 {% extends "templates/base.html" %}
-{% from "www/conf/2019/macros.html" import hero, events, lead_max, footer %}
+{% from "www/conf/2019/macros.html" import hero, events, lead_max, footer, speaker_card %}
 {% from "www/conf/2019/sponsor.html" import sponsor %}
 {% block title %}Talks and Sessions{% endblock %}
 
@@ -33,16 +33,44 @@
 			<div class="mb-5">
 				<h3>Sessions on 17th October</h3>
 				<p>To be announced</p>
-				<!--<ul class="list">
+				<!-- <div class='row mt-5'>
+					{{ speaker_card(
+						'Kailash Nadh',
+						'/assets/foundation/img/conf/2019/kailash.jpeg',
+						'CTO - Zerodha',
+						'https://zerodha.com'
+					) }}
+					{{ speaker_card(
+						'Prashant Soni',
+						'/assets/foundation/img/conf/2019/kailash.jpeg',
+						'IT Head - AWGP',
+						'http://www.awgp.org/'
+					) }}
+				</div> -->
+				<!-- <ul class="list">
 					<li>Venue: Mysore Association Auditorium, King’s Circle Matunga East, Mumbai - 400019</li>
 					<li>Breakfast starts at 8.30 AM</li>
 					<li>Lunch break will be at 1pm</li>
 					<li>Dinner starts at 6.30pm at Matunga Gujarati Seva Mandal</li>
-				</ul>-->
+				</ul> -->
 			</div>
 			<div class="mb-5">
 				<h3>Sessions on 18th October</h3>
 				<p>To be announced</p>
+				<!-- <div class='row mt-5'>
+					{{ speaker_card(
+						'Nikhil Sharma',
+						'/assets/foundation/img/conf/2019/nikhil.jpg',
+						'VP Technology <br> ElasticRun',
+						'https://www.elastic.run/'
+					) }}
+					{{ speaker_card(
+						'Antonius Tara',
+						'/assets/foundation/img/conf/2019/kailash.jpeg',
+						'Founder & CEO <br> Nusantara Digital',
+						'https://ridhosribumi.com/'
+					) }}
+				</div> -->
 				<!--<ul class="list">
 					<li>Venue: Mysore Association Auditorium, King’s Circle Matunga East, Mumbai - 400019</li>
 					<li>Breakfast starts at 8.30 AM</li>
