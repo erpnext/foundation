@@ -1,4 +1,4 @@
-{% macro event_card(title, link, body, image, image_alt, footer) %}
+{% macro devent_card(title, link, body, image, image_alt, footer) %}
 <a href="{{ link }}" class="no-border">
 	<div class="mb-4 card-body row text-body">
 		<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
@@ -7,7 +7,26 @@
 		<div class="col-xs-12 col-sm-7">
 			<h4>{{ title }}</h4>
 			<p>{{ body }}</p>
-			<p>{{ footer }}</p>
+			<p class="small font-weight-bold text-uppercase">{{ footer }}</p>
+		</div>
+	</div>
+</a>
+{% endmacro %}
+
+{% macro event_card(title, link, body, image, image_alt, footer) %}
+<a href="{{ link }}" class="card mb-4">
+	<div class="row text-body">
+		<div class="col-xs-12 col-sm-5 mb-4 mb-md-0">
+			<div class="h-100" style='background: url("{{ image }}"); background-size: cover; background-position: center center;'></div>
+		</div>
+		<div class="col-xs-12 col-sm-7">
+			<div class="card-body px-0 d-inline-flex flex-column justify-content-between">
+					<div class="d-block">
+						<h4>{{ title }}</h4>
+						<p>{{ body }}</p>
+					</div>
+					<p class="small mt-3 font-weight-bold text-uppercase">{{ footer }}</p>
+			</div>
 		</div>
 	</div>
 </a>
@@ -61,7 +80,7 @@
 					fixes and documentation.',
 					'/assets/foundation/img/conf/2019/sprint.png',
 					'Sprint',
-					'KJ Somaiya College of Engineering <br> 15 and 16 October'
+					'15 and 16 October <br> KJ Somaiya College of Engineering'
 				) }}
 			{% endif %}
 
@@ -73,7 +92,7 @@
 					exciting features, stories and best practices.',
 					'/assets/foundation/img/conf/2019/talks.png',
 					'Talks and Sessions',
-					'Mysore Association Auditorium, Matunga <br> 17 and 18 October'
+					'17 and 18 October <br> Mysore Association Auditorium, Matunga'
 				) }}
 			{% endif %}
 
@@ -85,7 +104,7 @@
 					understand their challenges and explore solutions with them.',
 					'/assets/foundation/img/conf/2019/expo.png',
 					'Exhibition',
-					'Mysore Association Auditorium, Matunga <br> 17 and 18 October'
+					'17 and 18 October <br> Mysore Association Auditorium, Matunga'
 				) }}
 			{% endif %}
 		</div>
