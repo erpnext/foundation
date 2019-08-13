@@ -28,13 +28,15 @@ body[data-path*="erpnext-jobs"] .breadcrumb {
 }
 
 .section-dark {
-	background-color: #5661B3;
+	background-color: #718096;
 	color: #ffffff;
 	border: none !important;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .section-dark .lead {
-	color: #B2B7FF;
+	color: #fff;
 }
 
 footer {
