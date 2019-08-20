@@ -83,6 +83,18 @@
 			<p class='lead'>Connect with the core team, maintainers, developers, implementors. This is an event you cannot miss.</p>
 		</div>
 		<div class="mt-6 container-md mx-auto">
+			{% if 'talks' in events %}
+				{{ event_card(
+					'Talks and Sessions',
+					'/conf/2019/talks',
+					'Interact about the product road-map, learn about the new and
+					exciting features, stories and best practices.',
+					'/assets/foundation/img/conf/2019/talks.png',
+					'Talks and Sessions',
+					'17 and 18 October <br> Mysore Association Auditorium, Matunga'
+				) }}
+			{% endif %}
+
 			{% if 'sprint' in events %}
 				{{ event_card(
 					'Contribution Sprint',
@@ -93,18 +105,6 @@
 					'/assets/foundation/img/conf/2019/sprint.png',
 					'Sprint',
 					'15 and 16 October <br> KJ Somaiya College of Engineering'
-				) }}
-			{% endif %}
-
-			{% if 'talks' in events %}
-				{{ event_card(
-					'Talks and Sessions',
-					'/conf/2019/talks',
-					'Interact about the product road-map, learn about the new and
-					exciting features, stories and best practices.',
-					'/assets/foundation/img/conf/2019/talks.png',
-					'Talks and Sessions',
-					'17 and 18 October <br> Mysore Association Auditorium, Matunga'
 				) }}
 			{% endif %}
 
