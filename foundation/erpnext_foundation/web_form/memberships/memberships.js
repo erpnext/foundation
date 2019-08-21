@@ -1,7 +1,7 @@
 frappe.ready(function() {
 	setTimeout(() => {
 		// bind events here
-		form = frappe.web_form.field_group.fields_dict;
+		form = frappe.web_form.fields_dict;
 
 		$(".page-header-actions-block .btn-primary, .page-header-actions-block .btn-default").addClass('hidden');
 		$(".text-right .btn-primary").addClass('hidden');
