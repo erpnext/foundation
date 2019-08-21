@@ -3,8 +3,8 @@ frappe.ready(function() {
 		// bind events here
 		form = frappe.web_form.fields_dict;
 
-		$(".page-header-actions-block .btn-primary, .page-header-actions-block .btn-default").addClass('hidden');
-		$(".text-right .btn-primary").addClass('hidden');
+		// $(".page-header-actions-block .btn-primary, .page-header-actions-block .btn-default").addClass('hidden');
+		// $(".text-right .btn-primary").addClass('hidden');
 
 		var set_amount = function() {
 			var membership_type = $('input[data-fieldname="membership_type"]').val();
