@@ -5,7 +5,7 @@
  "allow_edit": 0,
  "allow_incomplete": 0,
  "allow_multiple": 1,
- "allow_print": 1,
+ "allow_print": 0,
  "amount": 0.0,
  "amount_based_on_field": 1,
  "amount_field": "amount",
@@ -21,7 +21,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-08-08 16:27:57.975819",
+ "modified": "2019-08-22 19:20:39.660291",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "buy-tickets-inr",
@@ -35,7 +35,8 @@
  "show_in_grid": 0,
  "show_sidebar": 0,
  "sidebar_items": [],
- "success_url": "/conf/2019",
+ "success_message": "Thank you for registering for the conference, you will receive an email with your ticket and invoice.",
+ "success_url": "/conf/2019/travel",
  "title": "Buy Tickets INR",
  "web_form_fields": [
   {
