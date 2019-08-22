@@ -15,7 +15,7 @@
 	<tr>
 		<td>Conference Tickets + Lunch + Dinner</td>
 		<td>{{ doc.full_conference_tickets or 0 }}</td>
-		<td>{% if doc.currency=="INR" %}5000{% else %}70{% endif %}</td>
+		<td>{% if doc.currency=="INR" %}5000{% else %}80{% endif %}</td>
 	</tr>
 </table>
 
