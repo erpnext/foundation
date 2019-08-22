@@ -3,6 +3,23 @@
 {% from "www/conf/2019/sponsor.html" import sponsor %}
 {% block title %}Contribution Sprint{% endblock %}
 
+{% block head_include %}
+<meta name="description" content="Join the global community of ERPNext developers and users for a two day contribution sprint and contribute new features, fixes and documentation at the ERPNext Conference 2019" />
+<meta name="keywords" content="erpnext conference sprint, conference 2019 events, erp conference, open source erp, open source code sprint, frappe contribution sprint, erpnext conference, erpnext conference, erpnext conf 2019, erpnext conf" />
+<meta name="author" content="erpnext.org">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 days">
+<meta property="og:title" content="Contribution Sprint | ERPNext Conference 2019">
+<meta property="og:description" content="Join the global community of ERPNext developers and users for a two day contribution sprint and contribute new features, fixes and documentation at the ERPNext Conference 2019">
+<meta property="og:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/sprint.png">
+<meta property="og:url" content="https://erpnext.org/conf/2019">
+<meta name="twitter:title" content="Contribution Sprint | ERPNext Conference 2019">
+<meta name="twitter:description" content="Join the global community of ERPNext developers and users for a two day contribution sprint and contribute new features, fixes and documentation at the ERPNext Conference 2019">
+<meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/sprint.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- ERPNext Conference, Frappe Conference, ERP Conference 2019 -->
+{% endblock %}
+
 {% block content %}
 {{ hero(
 	'Contribution Sprint',

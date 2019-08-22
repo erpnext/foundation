@@ -3,6 +3,23 @@
 {% from "www/conf/2019/sponsor.html" import sponsor %}
 {% block title %}Exhibition{% endblock %}
 
+{% block head_include %}
+<meta name="description" content="Showcase the services you provide for ERPNext to the global community, understand their challenges and explore solutions with them at the ERPNext Conference 2019" />
+<meta name="keywords" content="erpnext conference, conference 2019, erpnext conference expo, erpnext conference exhibition, erp conference, open source erp, open source conference, frappe conference, erpnext conference, erpnext conference, erpnext conf 2019, erpnext conf" />
+<meta name="author" content="erpnext.org">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 days">
+<meta property="og:title" content="Exhibition | ERPNext Conference 2019">
+<meta property="og:description" content="Showcase the services you provide for ERPNext to the global community, understand their challenges and explore solutions with them at the ERPNext Conference 2019">
+<meta property="og:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/exhibition.png">
+<meta property="og:url" content="https://erpnext.org/conf/2019">
+<meta name="twitter:title" content="Exhibition | ERPNext Conference 2019">
+<meta name="twitter:description" content="Showcase the services you provide for ERPNext to the global community, understand their challenges and explore solutions with them at the ERPNext Conference 2019">
+<meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/exhibition.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- ERPNext Conference, Frappe Conference, ERP Conference 2019 -->
+{% endblock %}
+
 {% block content %}
 {{ hero(
 	'Exhibition',
