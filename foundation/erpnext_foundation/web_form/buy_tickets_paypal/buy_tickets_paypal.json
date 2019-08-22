@@ -5,7 +5,7 @@
  "allow_edit": 0,
  "allow_incomplete": 0,
  "allow_multiple": 1,
- "allow_print": 1,
+ "allow_print": 0,
  "amount": 0.0,
  "amount_based_on_field": 1,
  "amount_field": "amount",
@@ -20,7 +20,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-08-08 16:23:30.523688",
+ "modified": "2019-08-22 19:20:32.545373",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "buy-tickets-paypal",
@@ -40,7 +40,7 @@
    "title": "My Tickets"
   }
  ],
- "success_url": "/conf/2019",
+ "success_url": "/conf/2019/travel",
  "title": "Buy Tickets Paypal",
  "web_form_fields": [
   {
