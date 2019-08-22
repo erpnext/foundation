@@ -3,6 +3,23 @@
 {% from "www/conf/2019/sponsor.html" import sponsor %}
 {% block title %}Talks and Sessions{% endblock %}
 
+{% block head_include %}
+<meta name="description" content="Interact about the product road-map, learn about the new and exciting features, stories and best practices at the ERPNext Conference 2019" />
+<meta name="keywords" content="erpnext conference, conference 2019, erpnext conference speakers, erpnext conference talks, erp conference, open source erp, open source conference, frappe conference, erpnext conference, erpnext conference, erpnext conf 2019, erpnext conf" />
+<meta name="author" content="erpnext.org">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 days">
+<meta property="og:title" content="Talks and Sessions | ERPNext Conference 2019">
+<meta property="og:description" content="Interact about the product road-map, learn about the new and exciting features, stories and best practices at the ERPNext Conference 2019">
+<meta property="og:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/talks.png">
+<meta property="og:url" content="https://erpnext.org/conf/2019">
+<meta name="twitter:title" content="Talks and Sessions | ERPNext Conference 2019">
+<meta name="twitter:description" content="Interact about the product road-map, learn about the new and exciting features, stories and best practices at the ERPNext Conference 2019">
+<meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/talks.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- ERPNext Conference, Frappe Conference, ERP Conference 2019 -->
+{% endblock %}
+
 {% block content %}
 {{ hero(
 	'Talks and Sessions',

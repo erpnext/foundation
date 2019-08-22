@@ -3,6 +3,23 @@
 {% from "www/conf/2019/sponsor.html" import sponsor %}
 {% block title %}ERPNext Conference 2019{% endblock %}
 
+{% block head_include %}
+<meta name="description" content="The 6th edition of the ERPNext Conference. Experience the Next Generation Enterprise on October 15th to 18th, Mumbai" />
+<meta name="keywords" content="erpnext conference, conference 2019, erp conference, open source erp, open source conference, frappe conference, erpnext conference, erpnext conference, erpnext conf 2019, erpnext conf" />
+<meta name="author" content="erpnext.org">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 days">
+<meta property="og:title" content="ERPNext Conference 2019">
+<meta property="og:description" content="The 6th edition of the ERPNext Conference. Experience the Next Generation Enterprise on October 15th to 18th, Mumbai">
+<meta property="og:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/conf.png">
+<meta property="og:url" content="https://erpnext.org/conf/2019">
+<meta name="twitter:title" content="ERPNext Conference 2019">
+<meta name="twitter:description" content="The 6th edition of the ERPNext Conference. Experience the Next Generation Enterprise on October 15th to 18th, Mumbai">
+<meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/conf.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- ERPNext Conference, Frappe Conference, ERP Conference 2019 -->
+{% endblock %}
+
 {% block content %}
 {{ hero(
 	'Next Generation Enterprise',
@@ -13,7 +30,13 @@
 	<a class="mt-4 btn btn-primary btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>'
 ) }}
 
-{{ lead_max(false) }}
+{{ lead_max(
+	"""The 6th edition of the ERPNext Conference is here!
+	The conference is an event for the entire community to meet the people
+	you chat with on the forum and understand what is happening in the ecosystem.""",
+	False
+) }}
+
 {{ events('Events' ,['sprint', 'talks', 'expo' ]) }}
 {{ sponsor() }}
 {{ footer(
