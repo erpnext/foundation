@@ -21,5 +21,4 @@
 
 <h5>Total Amount: {{ doc.currency }} {{ doc.get_formatted('amount') }}</h5>
 
-
-<p>If you need any help, please email us at foundation@erpnext.com</p>
+<p>Here's a <a href="https://erpnext.org/conf/2019/travel">travel guide</a> for first timers. For any further questions, you can email us at foundation@erpnext.org</p>
