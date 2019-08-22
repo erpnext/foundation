@@ -1,0 +1,90 @@
+{% extends "templates/base.html" %}
+{% from "www/conf/2019/macros.html" import hero, events, lead_max, footer, speaker_card %}
+{% from "www/conf/2019/sponsor.html" import sponsor %}
+{% block title %}Travel and Hotels{% endblock %}
+
+{% block head_include %}
+<meta name="description" content="A quick primer for those traveling to Mumbai for the ERPNext Conference 2019" />
+<meta name="keywords" content="erpnext conference, conference 2019, open source conference, frappe conference, erpnext conference venue, erpnext conference hotels, erpnext conf 2019, erpnext conf travel guide" />
+<meta name="author" content="erpnext.org">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="1 days">
+<meta property="og:title" content="Travel and Hotels | ERPNext Conference 2019">
+<meta property="og:description" content="A quick primer for those traveling to Mumbai for the ERPNext Conference 2019">
+<meta property="og:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/mumbai.png">
+<meta property="og:url" content="https://erpnext.org/conf/2019/travel">
+<meta name="twitter:title" content="Travel and Hotels | ERPNext Conference 2019">
+<meta name="twitter:description" content="A quick primer for those traveling to Mumbai for the ERPNext Conference 2019">
+<meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/foundation/img/conf/2019/metacards/mumbai.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- ERPNext Conference, Frappe Conference, ERP Conference 2019 -->
+{% endblock %}
+
+{% block content %}
+<section class='hero-section text-center bg-dark hero-bg-mumbai'>
+	<div class='container'>
+	<!-- <img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'> -->
+		<div>
+			<h1 class='text-white'>Travel and Hotels</h1>
+			<p class='lead mt-4 text-white'>
+				A quick primer for those traveling to Mumbai.
+			</p>
+			<p>
+				<a class="mt-4 mr-2 btn btn-primary btn" href="/buy-tickets-inr">Buy Tickets (INR)</a>
+				<a class="mt-4 btn btn-primary btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="section-padding">
+	<div class='container'>
+		<div class="text-center">
+			<h2>Mumbai</h2>
+			<p class='lead'>Mumbai has a fascinating history with plenty of interesting stories, and people of undaunting spirits</p>
+		</div>
+		<div class="mt-7 container-md mx-auto">
+			<div class="mb-5">
+				<h3>Things to Do</h3>
+				<ul class="list">
+					<li>There are lots of places to visit from ancient <a href="https://en.wikipedia.org/wiki/Elephanta_Caves">Buddhist caves</a>
+						to <a href="https://en.wikipedia.org/wiki/Gateway_of_India">British monuments</a> across the city.</li>
+					<li>You can enjoy the view of the sea at <a href="https://goo.gl/maps/ASP8KxDpwW3BEvwZ9">Bandstand</a> at Bandra and <a href="https://goo.gl/maps/QhYufjoci1LnUhSR7">Marine Drive</a> at Churchgate.</li>
+					<li>A culinary experience like no other, Mumbai hosts many amazing <a href="https://zoma.to/uc/3-lYlbO">Cafes and Bars.</a></li>
+				</ul>
+			</div>
+			<div class="mb-5">
+				<h3>Hotels to Stay</h3>
+				<ul class="list">
+					<li>Hotels in Mumbai are generally expensive, so avoid staying very close to the venue. There are a lot of hotels around the airport and that might be the best option for getting a deal.</li>
+					<li>The venue would be around 30-45 mins for the airport based on where you are.</li>
+					<li><a href='https://www.cleartrip.com/hotels/india/mumbai/'>Cleartrip</a> might have the best deals. <a href='https://www.airbnb.co.in/s/Mumbai--India'>Airbnb</a> might also have good options.</li>
+				</ul>
+			</div>
+			<div class="mb-5">
+				<h3>Getting Around</h3>
+				<ul class="list">
+					<li><a href='https://www.uber.com/'>Uber</a> and <a href='https://www.olacabs.com/'>Ola Cabs</a> are app based taxi services that will work very well. We 100% recommend these over local taxis and auto-rickshaws (tuk-tuks) which are likely to over-charge out station passengers.</li>
+					<li>If you do travel by local taxis or auto-rickshaws, they are not allowed to charge a fare greater than the one calculated by the meter after the trip.</li>
+					<li>If you are up for some adventure, you can try the Mumbai local trains. Here's a <a href="https://www.tripsavvy.com/how-to-ride-mumbai-local-train-1539513">guide</a> for that.</li>
+				</ul>
+			</div>
+			<div class="mb-5">
+				<h3>Venue</h3>
+				<ul class="list">
+					<li>The venue is at the <a href='https://www.google.co.in/maps/place/Mysore+Association+Auditorium,+393,+Bhau+Daji+Road,+Matunga+East,+Mumbai,+Maharashtra+400019/@19.0284125,72.8549753,16z/data=!4m2!3m1!1s0x3be7cf2892c6d671:0xd31576f646dcbc86'>Mysore Association Auditorium</a> and has all modern facilities you would expect from a venue. It is centrally located and easily accessible from all corners.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+{{ events('Events', ['talks', 'sprint', 'expo']) }}
+
+{{ sponsor() }}
+{{ footer(
+	'Community Organized',
+	'ERPNext Conference is a community event organized by the ERPNext Open Source Software Foundation.',
+	'<a class="mt-4 mr-2 btn btn-light btn" href="/buy-tickets-inr">Buy Tickets (INR)</a> <a class="mt-4 btn btn-light btn" href="/buy-tickets-paypal">Buy Tickets (USD)</a>'
+) }}
+{% endblock %}
