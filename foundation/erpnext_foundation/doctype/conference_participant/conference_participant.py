@@ -117,7 +117,7 @@ class ConferenceParticipant(Document):
 
 def get_integration_request(docname, currency):
 	service = 'Paypal'
-	transaction_field = 'correlation_id'
+	transaction_field = 'transaction_id'
 	if currency == 'INR':
 		service = 'Razorpay'
 		transaction_field = 'razorpay_payment_id'
