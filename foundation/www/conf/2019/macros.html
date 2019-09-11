@@ -45,7 +45,7 @@
 {% endmacro %}
 
 {% macro lead_max(txt, bg) %}
-<section class="section-padding text-center {{ 'section-bg' if bg }}">
+<section class="section-padding text-center section-light {{ 'section-bg' if bg }}">
 	<div class='container'>
 	<p class="lead-max">
 		{{ txt }}
@@ -54,20 +54,20 @@
 {% endmacro %}
 
 {% macro hero(title, pre_title, subtitle, bg_image, cta_html) %}
-<section class='hero-section text-center bg-dark hero-bg'>
+<section class='section text-center'>
 	<div class='container'>
 	<!-- <img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'> -->
 		<div>
-			<span class='lead text-white' style="font-size:1.5em; margin-bottom: 0.6em;">
+			<span class='lead'>
 				{{ pre_title }}
 			</span>
-			<h1 class='text-white'>{{ title }}</h1>
-			<p class='lead mt-4 text-white'>
+			<h1 class='mt-2'>{{ title }}</h1>
+			<div class='lead my-3'>
 				{{ subtitle }}
-			</p>
-			<p>
+			</div>
+			<div class='my-3'>
 				{{ cta_html }}
-			</p>
+			</div>
 		</div>
 	</div>
 </section>
