@@ -53,7 +53,7 @@
 </section>
 {% endmacro %}
 
-{% macro hero(title, pre_title, subtitle, bg_image, cta_html) %}
+{% macro hero(title, pre_title, subtitle, bg_image, cta_html, footer_message='') %}
 <section class='section text-center'>
 	<div class='container'>
 	<!-- <img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'> -->
@@ -67,6 +67,9 @@
 			</div>
 			<div class='my-3'>
 				{{ cta_html }}
+			</div>
+			<div class='my-3 small text-muted'>
+				{{ footer_message }}
 			</div>
 		</div>
 	</div>
