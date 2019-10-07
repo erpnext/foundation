@@ -84,7 +84,7 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "description": "$80 per person. Includes lunch and dinner on both days",
+   "description": "$90 per person. Includes lunch and dinner on both days",
    "fieldname": "full_conference_tickets",
    "fieldtype": "Int",
    "hidden": 0,

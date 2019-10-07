@@ -80,7 +80,7 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "description": "\u20b9 5000 per person. Includes lunch and dinner on both days",
+   "description": "\u20b9 6000 per person. Includes lunch and dinner on both days",
    "fieldname": "full_conference_tickets",
    "fieldtype": "Int",
    "hidden": 0,
