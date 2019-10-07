@@ -12,7 +12,7 @@ class ConferenceParticipant(Document):
 		self.conference = '2019'
 
 	def validate_payment(self):
-		self.amount = self.full_conference_tickets * (5000 if self.currency == 'INR' else 80)
+		self.amount = self.full_conference_tickets * (6000 if self.currency == 'INR' else 90)
 
 	def on_payment_authorized(self, status_changed_to=None):
 		self.paid = 1
@@ -24,7 +24,7 @@ class ConferenceParticipant(Document):
 		if not transaction:
 			return
 		naming_series = 'BC-19-20-'
-		rate = '5000'
+		rate = '6000'
 		currency = 'INR'
 		customer = 'ERPNext Conference 2019 Participant'
 		item_income_account = 'Sales - Event Tickets - EF'
@@ -48,7 +48,7 @@ class ConferenceParticipant(Document):
 
 		if transaction.service == 'Paypal':
 			naming_series = 'EXP-19-20-'
-			rate = '80'
+			rate = '90'
 			currency = 'USD'
 			account_type = 'Debtors USD - EF'
 			customer = 'ERPNext Conference 2019 Participant International'
