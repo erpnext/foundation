@@ -37,7 +37,7 @@
 ] %}
 
 {% macro show_section(sponsors, with_img = False) %}
-	<div class='row mt-4'>
+	<div class='row mt-4 justify-content-center'>
 	{% for sponsor in sponsors %}
 		<div class='mx-3 mx-md-0 col-sm-3 mb-4'>
 		<a href='{{ ("{}{}".format("" if sponsor.website_url.startswith("http") else "//", sponsor.website_url)) if sponsor.website_url else "#" }}' target='_blank' class='card h-100'>
@@ -58,7 +58,7 @@
 		</a>
 		</div>
 	{% if loop.index is divisibleby 4 %}
-	</div><div class='row'>
+	</div><div class='row justify-content-center'>
 	{% endif %}
 	{% endfor %}
 	</div>
