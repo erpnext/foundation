@@ -20,7 +20,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-08-22 19:20:32.545373",
+ "modified": "2019-10-08 08:17:38.540858",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "buy-tickets-paypal",
