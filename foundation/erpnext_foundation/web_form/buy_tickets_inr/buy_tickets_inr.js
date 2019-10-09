@@ -10,10 +10,10 @@ frappe.ready(function() {
 
 	frappe.web_form.events.on('after_load', () => {
 		frappe.web_form.set_df_property('tshirt_table', 'hidden', 1);
+		frappe.web_form.doc.currency = "USD"
 		$('input[data-fieldname="full_conference_tickets"]').on('keyup', function() {
 			frappe._calculate();
 			let value = frappe.web_form.get_value('full_conference_tickets')
-			console.log(value)
 			if (value > 1) {
 				frappe.web_form.set_df_property('tshirt_table', 'hidden', 0);
 				frappe.web_form.set_df_property('tshirt_size', 'hidden', 1);
