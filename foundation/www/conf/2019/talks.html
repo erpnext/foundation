@@ -84,6 +84,27 @@
 					) }}
 				</div>
 			</div>
+			<div>
+				<h3>Full Schedule</h3>
+				{% for schedule in schedules %}
+				<table class="table table-bordered bg-white mt-4">
+					<thead>
+						<tr>
+							<th width="30%">{{ schedule[0][0] }}</th>
+							<th>{{ schedule[0][1] }}</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for row in schedule[1:] %}
+						<tr {{ schedule_row_styles[row[0]] or ""}}>
+							<td>{{ row[0] }}</td>
+							<td>{{ row[1] }}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+				{% endfor %}
+			</div>
 			<!-- <div class="mb-5">
 				<h3>Sessions on 18th October</h3>
 				<p>To be announced</p>
