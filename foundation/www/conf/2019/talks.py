@@ -7,7 +7,7 @@ def get_context(context):
 			["08:00 - 09:30", "Registrations & Breakfast"],
 			["09:45 - 10:00", "Opening Ceremony, Welcome"],
 			["10:00 - 10:30", "Dr. Kailash Nadh (CTO, Zerodha)"],
-			["", "<span class='text-muted'>Thoughts on FOSS and \"Enterprise\"</span>"],
+			["", "<span class='text-muted'>Thoughts on FOSS and \"enterprise\"</span>"],
 			["10:40 - 11:10", "Prof. Satish Annegiri (Registrar, VTU)"],
 			["", "<span class='text-muted'><i>To Be Announced</i></span>"],
 			["11:15 - 11:45", "Nikhil Sharma (VP,  Elastic Run)"],
