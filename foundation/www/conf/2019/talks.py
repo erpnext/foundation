@@ -38,7 +38,7 @@ def get_context(context):
 		[
 			["October 18th, 2019" ,"User Stories, Partners, and Foundation"],
 			["08:00 - 09:30" ,"Breakfast"],
-			["10:00 - 10:30" ,"Keynote by Rushabh Mehta (Founder & CEO, Frappe)"],
+			["10:15 - 10:30" ,"Keynote by Rushabh Mehta (Founder & CEO, Frappe)"],
 			["", "<span class='text-muted'>What's next for Frappe?</span>"],
 			["10:30 - 11:00" ,"Keynote by Ketan & Smital (VP for Partner & Alliances, Frappe)"],
 			["", "<span class='text-muted'><i>To Be Announced</i></span>"],
