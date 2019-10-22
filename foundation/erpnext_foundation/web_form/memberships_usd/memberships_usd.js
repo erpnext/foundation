@@ -9,8 +9,8 @@ frappe.ready(function() {
 		let from_date = get_date();
 		let to_date = get_date(1);
 
-		form.from_date.set_input(from_date);
-		form.to_date.set_input(to_date);
+		frappe.web_form.set_value('from_date', from_date);
+		frappe.web_form.set_value('to_date', to_date);
 
 		let membership_type = $('input[data-fieldname="membership_type"]').val();
 		amount = {
@@ -18,7 +18,7 @@ frappe.ready(function() {
 			'Silver': 1500,
 			'Individual': 200
 		}
-		form.amount.set_input(amount[membership_type]);
+		frappe.web_form.set_value('amount', amount[membership_type]);
 	}
 
 	var get_date = (add_year = 0) => {
@@ -30,7 +30,7 @@ frappe.ready(function() {
 	}
 
 	frappe.web_form.events.on('after_load', () => {
-		form.currency.set_input('USD');
+		frappe.web_form.set_value('currency', 'USD');
 		if(frappe.utils.get_url_arg('name')) {
 			$('input[data-fieldname="membership_type"]').prop('disabled', true);
 			$('input[data-fieldname="currency"]').prop('disabled', true);
