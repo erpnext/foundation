@@ -58,9 +58,11 @@
 	<div class='container'>
 	<!-- <img src='/assets/foundation/img/icons/microprocessor.svg' style='height: 100px; margin-bottom: 2rem; margin-top: -1rem'> -->
 		<div>
+			{% if pre_title %}
 			<span class='lead'>
 				{{ pre_title }}
 			</span>
+			{% endif %}
 			<h1 class='mt-2'>{{ title }}</h1>
 			<div class='lead my-3'>
 				{{ subtitle }}
