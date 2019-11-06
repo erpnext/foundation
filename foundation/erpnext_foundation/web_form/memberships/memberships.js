@@ -6,8 +6,8 @@ frappe.ready(function() {
 	// $(".text-right .btn-primary").addClass('hidden');
 
 	frappe._set_values = function() {
-		let from_date = get_date();
-		let to_date = get_date(1);
+		let from_date = frappe.datetime.now_date();
+		let to_date = frappe.datetime.add_months(from_date, 12)
 
 		frappe.web_form.set_value('from_date', from_date);
 		frappe.web_form.set_value('to_date', to_date);
@@ -19,14 +19,6 @@ frappe.ready(function() {
 			'Individual': 10000
 		}
 		frappe.web_form.set_value('amount', amount[membership_type]);
-	}
-
-	var get_date = (add_year = 0) => {
-		const today = new Date();
-		const year = today.getFullYear() + add_year;
-		const month = ((today.getMonth() + 1) + '').padStart(2, '0');
-		const day = today.getDate();
-		return year + '-' + month + '-' + day;
 	}
 
 	frappe.web_form.events.on('after_load', () => {
