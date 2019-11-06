@@ -17,7 +17,7 @@
  "is_standard": 1,
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2018-07-16 15:08:08.555163",
+ "modified": "2019-11-06 12:31:16.600174",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "jobs",
@@ -25,12 +25,16 @@
  "payment_button_label": "Buy Now",
  "published": 1,
  "route": "my-jobs",
+ "route_to_success_link": 0,
+ "show_attachments": 0,
+ "show_in_grid": 1,
  "show_sidebar": 1,
  "sidebar_items": [],
  "success_url": "/erpnext-jobs",
  "title": "Jobs",
  "web_form_fields": [
   {
+   "allow_read_on_all_link_options": 0,
    "fieldname": "title",
    "fieldtype": "Data",
    "hidden": 0,
@@ -38,9 +42,11 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 1
+   "reqd": 1,
+   "show_in_filter": 0
   },
   {
+   "allow_read_on_all_link_options": 0,
    "fieldname": "job_type",
    "fieldtype": "Select",
    "hidden": 0,
@@ -49,9 +55,11 @@
    "max_value": 0,
    "options": "Setup\nImplementation\nTraining\nCustomization\nPrint Format\nIntegration\nFeature Development\nApp Development",
    "read_only": 0,
-   "reqd": 0
+   "reqd": 0,
+   "show_in_filter": 0
   },
   {
+   "allow_read_on_all_link_options": 0,
    "fieldname": "status",
    "fieldtype": "Select",
    "hidden": 0,
@@ -60,9 +68,11 @@
    "max_value": 0,
    "options": "Open\nCompleted\nDeveloper Hired\nExpired\nWithdrawn",
    "read_only": 0,
-   "reqd": 0
+   "reqd": 0,
+   "show_in_filter": 0
   },
   {
+   "allow_read_on_all_link_options": 1,
    "fieldname": "country",
    "fieldtype": "Link",
    "hidden": 0,
@@ -71,9 +81,11 @@
    "max_value": 0,
    "options": "Country",
    "read_only": 0,
-   "reqd": 0
+   "reqd": 0,
+   "show_in_filter": 0
   },
   {
+   "allow_read_on_all_link_options": 0,
    "fieldname": "company_name",
    "fieldtype": "Data",
    "hidden": 0,
@@ -81,9 +93,11 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0
+   "reqd": 0,
+   "show_in_filter": 0
   },
   {
+   "allow_read_on_all_link_options": 0,
    "fieldname": "contact_number",
    "fieldtype": "Data",
    "hidden": 0,
@@ -92,9 +106,11 @@
    "max_value": 0,
    "options": "",
    "read_only": 0,
-   "reqd": 0
+   "reqd": 0,
+   "show_in_filter": 0
   },
   {
+   "allow_read_on_all_link_options": 0,
    "fieldname": "description",
    "fieldtype": "Text",
    "hidden": 0,
@@ -102,7 +118,8 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0
+   "reqd": 0,
+   "show_in_filter": 0
   }
  ]
 }

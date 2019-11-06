@@ -23,7 +23,7 @@ class PortalJob(WebsiteGenerator):
 
 
 def get_list_context(context):
-	context.allow_guest = True
+	context.allow_guest = False
 	context.no_cache = True
 	context.title = 'ERPNext Jobs'
 	context.no_breadcrumbs = True
