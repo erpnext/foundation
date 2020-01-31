@@ -69,7 +69,6 @@ website_context = {
 				{"label": "Annual Reports", "url": "/about/reports"},
 				{"label": "About", "url": "/about"},
 				{"label": "Blog", "url": "/blog"},
-				{"label": "Memberships", "url": "/members"},
 			], "right":1},
 	],
 	"hide_login": 0,
@@ -91,8 +90,6 @@ website_context = {
 
 portal_menu_items = [
 	{'label': 'My Profile', 'route': '/service-provider-settings'},
-	{'label': 'Module Leader', 'route': '/module-leader-settings'},
-	{'label': 'Membership', 'route': '/members/details'},
 	{'label': 'Conference Talks', 'route': '/conference-talk-proposal'},
 	{'label': 'Jobs', 'route': '/my-jobs'},
 	{'label': 'Events', 'route': '/add-event'},
