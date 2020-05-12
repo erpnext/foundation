@@ -17,7 +17,7 @@
  "is_standard": 1,
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2019-11-06 12:31:16.600174",
+ "modified": "2020-05-12 12:52:21.038425",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "jobs",
@@ -55,7 +55,7 @@
    "max_value": 0,
    "options": "Setup\nImplementation\nTraining\nCustomization\nPrint Format\nIntegration\nFeature Development\nApp Development",
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -68,7 +68,7 @@
    "max_value": 0,
    "options": "Open\nCompleted\nDeveloper Hired\nExpired\nWithdrawn",
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -81,7 +81,7 @@
    "max_value": 0,
    "options": "Country",
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -93,7 +93,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -106,7 +106,7 @@
    "max_value": 0,
    "options": "",
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   },
   {
@@ -118,7 +118,7 @@
    "max_length": 0,
    "max_value": 0,
    "read_only": 0,
-   "reqd": 0,
+   "reqd": 1,
    "show_in_filter": 0
   }
  ]
