@@ -80,7 +80,7 @@
   }
  ],
  "links": [],
- "modified": "2020-01-20 20:25:49.139080",
+ "modified": "2020-05-12 12:49:28.878533",
  "modified_by": "Administrator",
  "module": "ERPNext Foundation",
  "name": "Frappe App",
@@ -96,6 +96,14 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "role": "All",
    "write": 1
   }
  ],
