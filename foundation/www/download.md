@@ -1,6 +1,6 @@
 <section class="top-section">
 	<div class='container'>
-		<h1>Download EPRNext VM</h1>
+		<h1>Download ERPNext VM</h1>
 	</div>
 </section>
 
