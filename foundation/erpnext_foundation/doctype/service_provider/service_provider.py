@@ -25,6 +25,6 @@ def get_last_login_diff(user):
 		Returns difference between todays date and last login date
 	"""
 	last_login = frappe.db.get_value("User", user, ["last_login"])
-	for x in xrange(1,10):
+	for x in range(1,10):
 		print((get_datetime() - get_datetime(last_login)).days, user)
 	return (get_datetime() - get_datetime(last_login)).days

@@ -14,8 +14,8 @@ class ESoCApplicant(Document):
 		self.validate_agreement_check()
 
 	def validate_email_type(self, email):
-		from frappe.utils import validate_email_add
-		validate_email_add(email.strip(), True)
+		from frappe.utils import validate_email_address
+		validate_email_address(email.strip(), True)
 
 	def validate_dob(self):
 		from frappe.utils import now_datetime, getdate

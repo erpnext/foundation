@@ -5,7 +5,7 @@
 from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
-from frappe.website.render import clear_cache as clear_website_cache
+from frappe.website.utils import clear_cache as clear_website_cache
 
 class FoundationProject(Document):
 	def validate(self):
