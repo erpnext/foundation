@@ -5,7 +5,6 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
-from frappe.website.utils import get_comment_list
 from frappe.utils import date_diff, nowdate, fmt_money, add_months
 from frappe.website.utils import get_comment_list
 
